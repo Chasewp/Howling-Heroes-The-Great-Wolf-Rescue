@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://b8slyshlqv5fw"]
+[gd_scene load_steps=2 format=3 uid="uid://b8slyshlqv5fw"]
+
+[ext_resource type="Texture2D" uid="uid://bcp2jscu15xne" path="res://Assets/Image/images/Background/Game_Over/_05103563-7cfd-43ed-b5bd-2cb1f01de6a0.jpeg" id="1_j0xxr"]
 
 [node name="GameOver" type="Control"]
 layout_mode = 3
@@ -15,3 +17,5 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("1_j0xxr")
+expand_mode = 1

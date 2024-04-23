@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://brw20wuua0l7c"
-path="res://.godot/imported/How to play 1.mp3-43ee399bdbd0f19e1651ebdf9a46a940.mp3str"
+path="res://.godot/imported/How to Play 1.mp3-9b8d67427737fc54f9cbef94a0858eee.mp3str"
 
 [deps]
 
-source_file="res://Assets/Music/Dialogues/How to Play/How to play 1.mp3"
-dest_files=["res://.godot/imported/How to play 1.mp3-43ee399bdbd0f19e1651ebdf9a46a940.mp3str"]
+source_file="res://Assets/Music/Dialogues/How to Play/How to Play 1.mp3"
+dest_files=["res://.godot/imported/How to Play 1.mp3-9b8d67427737fc54f9cbef94a0858eee.mp3str"]
 
 [params]
 

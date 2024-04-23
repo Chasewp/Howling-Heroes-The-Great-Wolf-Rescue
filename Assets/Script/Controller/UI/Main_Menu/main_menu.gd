@@ -41,7 +41,7 @@ func _on_furafinity_pressed():
 #Github
 func _on_github_pressed():
 	normalbutton.play()
-	OS.shell_open("https://github.com/Blizzard03/Howling-Heroes---The-Great-Wolf-Rescue-4.3.1/tree/main")
+	OS.shell_open("https://github.com/Chasewp/Howling-Heroes-The-Great-Wolf-Rescue")
 	
 #Discord Server
 func _on_discord_pressed():
