@@ -1,20 +1,45 @@
 [gd_scene load_steps=7 format=3 uid="uid://buos6ae1qvw78"]
 
-[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Exit_Confirmation/Exit Confirmation.gd" id="1_fief4"]
 [ext_resource type="Theme" uid="uid://br2uoqpi38ygc" path="res://Assets/Theme/Dialouge/Exit_Confirmation.tres" id="2_0k7ty"]
 [ext_resource type="AudioStream" uid="uid://c8ygb4nqbs03p" path="res://Assets/Music/Warning/exclamation-101soundboards.mp3" id="3_ct1th"]
 [ext_resource type="AudioStream" uid="uid://ty2bg0clrp0t" path="res://Assets/Music/All Button/Quit_Button.mp3" id="4_87xpo"]
 [ext_resource type="AudioStream" uid="uid://bpkfmkyhxykdk" path="res://Assets/Music/Dialogues/Good bye/Goodbye.mp3" id="5_5hn7p"]
 [ext_resource type="FontFile" uid="uid://daews5bmpatgf" path="res://Assets/Fonts/WolfpackHalloweed-EaGOl.otf" id="6_lj7vy"]
 
-[node name="ExitConfirmation" type="Control"]
+[sub_resource type="GDScript" id="GDScript_byx8a"]
+script/source = "extends Control
+
+@onready var Warning = $Warning
+@onready var Button_Sound = $Button_sound
+@onready var Bye = $Bye
+@onready var window = $ConfirmationDialog
+@onready var gbye = $Good_Bye_Label
+#For sound
+func _ready():
+	Warning.play()
+	
+#Yes	
+func _on_confirmation_dialog_confirmed():
+	Button_Sound.play()
+	Bye.play()
+#No 
+func _on_confirmation_dialog_canceled():
+	Button_Sound.play()
+	LoadingScreen.load_scence(\"res://Assets/Scences/UI/Main_Menu/main_menu.tscn\")
+	gbye.hide()
+#Qoutes
+func _on_bye_finished():
+	get_tree().quit()
+"
+
+[node name="Exit_Game_Over" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_fief4")
+script = SubResource("GDScript_byx8a")
 
 [node name="ConfirmationDialog" type="ConfirmationDialog" parent="."]
 title = ""
@@ -44,7 +69,7 @@ stream = ExtResource("5_5hn7p")
 bus = &"Voices"
 area_mask = 2
 
-[node name="Label" type="Label" parent="."]
+[node name="Good_Bye_Label" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5

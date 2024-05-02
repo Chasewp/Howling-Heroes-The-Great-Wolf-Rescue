@@ -135,6 +135,7 @@ theme = SubResource("Theme_oaio5")
 theme_override_fonts/font = ExtResource("5_vrfc0")
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_7vasw")
+disabled = true
 text = "Continue
 "
 

@@ -1,4 +1,5 @@
 Button
+HBoxContainer
 Label
 LineEdit
 CenterContainer
@@ -11,4 +12,3 @@ AnimatedSprite2D
 CanvasLayer
 AnimationPlayer
 RichTextLabel
-ColorRect

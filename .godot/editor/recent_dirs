@@ -1,3 +1,5 @@
+res://Assets/Script/Controller/UI/Game Over
+res://Assets/Script/Controller/UI/Exit_Game_Over
 res://Assets/Scences/UI/Character_Name
 res://Assets/Script/Controller/UI/Player_Name
 res://Assets/Theme/Player_Name
@@ -18,6 +20,4 @@ res://Assets/Scences/Character
 res://Assets/Music/How_To_Play
 res://Assets/Script/Controller/UI/How to play
 res://Assets/Scences/Location/How_to_Play
-res://Assets/Music/Dialogues/How to Play
-res://Assets/Script/Controller/UI/Load_slot
 C:/Users/Blizzard/Documents/GitHub/Howling Heroes _ The Great Wolf Rescue
