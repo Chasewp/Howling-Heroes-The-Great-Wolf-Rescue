@@ -14,12 +14,14 @@ Mr_Wolf: Utilize the [wave amp=45 freq=3][b]A[/b][/wave] key to [b]retreat backw
 Mr_Wolf: To [b]access the Inventory Menu[/b], please press the [wave amp=45 freq=3][b]I[/b][/wave] key.
 [voice path="res://Assets/Music/Dialogues/How to Play/How to play 6.mp3" volume="0.0"]
 Mr_Wolf: To [b]open the Wolf Almanac Menu[/b], press the [wave amp=45 freq=3][b]Q[/b][/wave] key.
-[voice path="res://Assets/Music/Dialogues/How to Play/How to play 7.mp3" volume="0.0"]
-[signal arg="Change_Scence"]
+[voice path="res://Assets/Music/Dialogues/How to Play/How to Play 7.mp3" volume="0.0"]
 Mr_Wolf: To [b]Access The Map Region[/b], Please Press The [wave amp=45 freq=3][b]M[/b][/wave] Key.
+[voice path="res://Assets/Music/Dialogues/How to Play/Mission 1 .mp3" volume="0.0"]
+Mr_Wolf: Your Objective Is To Liberate All The Wolves From Their Captors. In The Process, You Must Neutralize Any Hostile Forces And Eliminate Any Formidable Opponents.
+[voice path="res://Assets/Music/Dialogues/How to Play/Mission 2 .mp3" volume="0.0"]
+Mr_Wolf: Once These Threats Are Vanquished, Locate The Key Secured Within A Chest.  The Possession Of This Key Will Grant You Access To The Wolves' Enclosure, Allowing For Their Escape.
 [voice path="res://Assets/Music/Dialogues/How to Play/How to play 8.mp3" volume="0.0"]
 Mr_Wolf: With this knowledge bestowed upon you, may your quest be successful! Farewell, and good fortune in your endeavors.
 leave Mr_Wolf [animation="Fade Out Down" length="0.6" wait="true"]
 [music fade="0.0" volume="0.0"]
-[end_timeline]
 [signal arg="Change_Scence"]
