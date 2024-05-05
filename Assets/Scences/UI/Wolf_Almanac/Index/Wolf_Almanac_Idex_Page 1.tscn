@@ -28,12 +28,13 @@ expand_mode = 1
 
 [node name="Tittle_Label" type="Label" parent="Background"]
 layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -139.0
-offset_right = 177.0
-offset_bottom = 44.0
+anchors_preset = -1
+anchor_left = 0.391
+anchor_right = 0.638
+anchor_bottom = 0.061
+offset_left = 0.519958
+offset_right = 0.359985
+offset_bottom = 0.079998
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.87451, 0.87451, 0.87451, 1)
 theme_override_colors/font_shadow_color = Color(0.290196, 0.290196, 0.290196, 1)
