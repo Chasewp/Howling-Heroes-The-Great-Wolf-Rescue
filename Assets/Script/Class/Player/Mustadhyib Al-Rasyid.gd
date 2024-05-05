@@ -67,5 +67,7 @@ func ready():
 
 func moveCharacter():
 	pass
+	
+	
 func is_Dead():
 	pass

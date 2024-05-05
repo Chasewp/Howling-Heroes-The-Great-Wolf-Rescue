@@ -338,8 +338,9 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 8981.0
-offset_bottom = 5240.0
+offset_top = -720.0
+offset_right = 1280.0
+offset_bottom = 200.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_yvege")
@@ -347,20 +348,23 @@ expand_mode = 1
 metadata/_edit_lock_ = true
 
 [node name="Wolf_Picture" type="TextureRect" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.123
-anchor_top = 0.036
-anchor_right = 0.482
-anchor_bottom = 0.91
-offset_left = 1100.64
-offset_top = 181.52
-offset_right = 4316.76
-offset_bottom = 4573.2
+anchor_left = 0.126
+anchor_top = 0.06
+anchor_right = 0.448
+anchor_bottom = 0.901
+offset_left = -360.0
+offset_top = 450.0
+offset_right = 52.0001
+offset_bottom = 1056.0
 texture = SubResource("GradientTexture2D_ne1gk")
 expand_mode = 1
+metadata/_edit_lock_ = true
 
 [node name="Name_Wolf" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.583
@@ -380,6 +384,7 @@ vertical_alignment = 1
 metadata/_edit_group_ = true
 
 [node name="Name_Species" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.517
@@ -398,6 +403,7 @@ vertical_alignment = 1
 metadata/_edit_group_ = true
 
 [node name="Species" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 841.0
 offset_top = 79.0
@@ -411,6 +417,7 @@ vertical_alignment = 1
 metadata/_edit_group_ = true
 
 [node name="Height_sizE" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.516
@@ -429,6 +436,7 @@ vertical_alignment = 1
 metadata/_edit_group_ = true
 
 [node name="Height_Label" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 custom_minimum_size = Vector2(175, 25)
 layout_mode = 1
 anchors_preset = -1
@@ -448,6 +456,7 @@ vertical_alignment = 1
 metadata/_edit_group_ = true
 
 [node name="Weight" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.516
@@ -466,6 +475,7 @@ vertical_alignment = 1
 metadata/_edit_group_ = true
 
 [node name="Weight_Label" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 custom_minimum_size = Vector2(175, 25)
 layout_mode = 1
 anchors_preset = -1
@@ -503,6 +513,7 @@ vertical_alignment = 1
 metadata/_edit_group_ = true
 
 [node name="Leght_Label" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 custom_minimum_size = Vector2(175, 25)
 layout_mode = 1
 anchors_preset = -1
@@ -522,6 +533,7 @@ vertical_alignment = 1
 metadata/_edit_group_ = true
 
 [node name="CONSERVATION STATUS" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.519
@@ -541,6 +553,7 @@ autowrap_mode = 3
 metadata/_edit_group_ = true
 
 [node name="Status" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.656
@@ -559,6 +572,7 @@ vertical_alignment = 1
 metadata/_edit_group_ = true
 
 [node name="Region" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.516
@@ -577,6 +591,7 @@ vertical_alignment = 1
 metadata/_edit_group_ = true
 
 [node name="Region_List" type="RichTextLabel" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 841.0
 offset_top = 334.0
@@ -598,6 +613,7 @@ scroll_active = false
 metadata/_edit_group_ = true
 
 [node name="Morphology" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.516
@@ -617,6 +633,7 @@ vertical_alignment = 1
 metadata/_edit_group_ = true
 
 [node name="MORPHOLOGY_details" type="RichTextLabel" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 841.0
 offset_top = 434.0
@@ -638,6 +655,7 @@ scroll_active = false
 metadata/_edit_group_ = true
 
 [node name="Diets" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.516
@@ -655,6 +673,7 @@ vertical_alignment = 1
 metadata/_edit_group_ = true
 
 [node name="Diets_List" type="RichTextLabel" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 841.0
 offset_top = 552.0
@@ -676,17 +695,17 @@ scroll_active = false
 metadata/_edit_group_ = true
 
 [node name="Back_Button" type="Button" parent="."]
-custom_minimum_size = Vector2(59, 64)
+custom_minimum_size = Vector2(64, 64)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.098
 anchor_top = 0.903
 anchor_right = 0.148
 anchor_bottom = 0.992
-offset_left = 942.64
-offset_top = 4614.96
-offset_right = 1390.64
-offset_bottom = 5063.44
+offset_left = 208.0
+offset_top = -714.0
+offset_right = 272.0
+offset_bottom = -650.0
 rotation = 3.14159
 icon = ExtResource("5_o7qkd")
 flat = true
@@ -698,8 +717,8 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 12800.0
-offset_bottom = 7200.0
+offset_right = 15360.0
+offset_bottom = 8640.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0)

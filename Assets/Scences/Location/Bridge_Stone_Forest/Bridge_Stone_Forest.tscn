@@ -1,5 +1,15 @@
-[gd_scene format=3 uid="uid://cp86kv5xyir10"]
+[gd_scene load_steps=2 format=3 uid="uid://cp86kv5xyir10"]
+
+[ext_resource type="PackedScene" uid="uid://c1ph53byo1unb" path="res://Assets/Scences/UI/Game_Play/GUI_Play.tscn" id="1_1ik14"]
 
 [node name="Bridge_Stone_Forest" type="Node2D"]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="GuiPlay" parent="." instance=ExtResource("1_1ik14")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Tile_set" type="TileMap" parent="."]
+format = 2

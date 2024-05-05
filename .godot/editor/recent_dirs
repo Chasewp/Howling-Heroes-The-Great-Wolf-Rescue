@@ -1,10 +1,14 @@
-res://Assets/Music/Dialogues/How to Play
+res://Assets/Script/Controller/UI/GUI
+res://Assets/Script/Class/Player
+res://Assets/Script/Controller/UI/Mission_Log
+res://Assets/Theme/Player_Name
+res://Assets/Scences/UI/Mission_Log
 res://Assets/Fonts
+res://Assets/Music/Dialogues/How to Play
 res://Assets/Script/Controller/UI/Game Over
 res://Assets/Script/Controller/UI/Exit_Game_Over
 res://Assets/Scences/UI/Character_Name
 res://Assets/Script/Controller/UI/Player_Name
-res://Assets/Theme/Player_Name
 res://Assets/Scences/UI/Wolf_Almanac/Index
 res://Assets/Music/Start_Buton_Sound
 res://Assets/Script/Controller/UI/Wolf Alamanac/Index
@@ -16,8 +20,4 @@ res://Assets/Image/Wolves/Gray Wolf
 res://Assets/Image/images/Buttons
 res://Assets/Script/Controller/UI/Wolf Alamanac
 res://Assets/Scences/UI/Wolf_Almanac
-res://Assets/Script/Class/Player
-res://Assets/Scences/Character
-res://Assets/Music/How_To_Play
-res://Assets/Script/Controller/UI/How to play
 C:/Users/Blizzard/Documents/GitHub/Howling Heroes _ The Great Wolf Rescue
