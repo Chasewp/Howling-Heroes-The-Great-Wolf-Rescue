@@ -1,13 +1,5 @@
-res://Assets/Dialogue/TimeLines/How To Play.dtl
-res://Assets/Scences/Character/Mustadhyib Al-Rasyid.tscn
+res://Assets/Scences/UI/Main_Menu/main_menu.tscn
 res://Assets/Dialogue/Theme/Speaker_Mode.tres
 res://Assets/Dialogue/Theme/Pixelize_Visual_Novel.tres
-res://Assets/Scences/UI/Wolf_Almanac/Book/wolf_almanac.tscn
-res://Assets/Scences/UI/Main_Menu/main_menu.tscn
-res://Assets/Scences/Location/Bridge_Stone_Forest/Bridge_Stone_Forest.tscn
-res://Assets/Scences/UI/Credits/credit.tscn
 res://Assets/Scences/UI/Character_Name/Player_Name.tscn
-res://Assets/Scences/UI/Game_Play/GUI_Play.tscn
-res://Assets/Scences/UI/Mission_Log/mission.tscn
-res://Assets/Scences/UI/Wolf_Almanac/Index/Wolf_Almanac_Idex_Page 1.tscn
-res://Assets/Scences/UI/Word map/World Map.tscn
+res://Assets/Scences/UI/Options/Options_Menu.tscn

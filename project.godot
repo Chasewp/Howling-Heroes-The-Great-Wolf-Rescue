@@ -15,6 +15,10 @@ config/description="An interactive role-playing game called Howling Heroes: The 
 config/version="V 1.0"
 config/tags=PackedStringArray("final_project")
 run/main_scene="res://Assets/Scences/UI/Splash/Splash_Screen_Played.tscn"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="HOWLING HEROES - THE GREAT WOLF RESCUE"
+config/auto_accept_quit=false
+config/quit_on_go_back=false
 config/features=PackedStringArray("4.2")
 run/max_fps=144
 config/icon="res://Assets/Image/Logo/Logo Project Howling Heroes The Great Wolf Rescue.png"
@@ -160,6 +164,7 @@ extensions_folder="res://addons/dialogic_additions"
 window/size/viewport_width=1280
 window/size/viewport_height=720
 window/size/resizable=false
+window/size/always_on_top=true
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 mouse_cursor/custom_image="res://Assets/Image/images/Cursor/Cursor 32x32.png"
@@ -167,6 +172,10 @@ mouse_cursor/custom_image="res://Assets/Image/images/Cursor/Cursor 32x32.png"
 [dotnet]
 
 project/assembly_name="Dialogic Test Project"
+
+[editor]
+
+movie_writer/speaker_mode=3
 
 [editor_plugins]
 
@@ -254,7 +263,6 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
-renderer/rendering_method="gl_compatibility"
 textures/vram_compression/import_etc2_astc=true
 shading/overrides/force_vertex_shading=true
 shading/overrides/force_lambert_over_burley=true

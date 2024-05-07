@@ -1,6 +1,13 @@
 extends Node
 func _ready():
+	
+	#Hide Cursor 
+	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	
 	change_Scence()
+	get_tree().set_auto_accept_quit(false)
+
+
 
 func change_Scence():
 	$AnimationPlayer.play("Fade_In")

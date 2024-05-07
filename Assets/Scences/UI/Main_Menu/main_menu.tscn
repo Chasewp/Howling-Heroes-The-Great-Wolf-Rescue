@@ -56,13 +56,14 @@ expand_mode = 2
 
 [node name="Tittle 1" type="Label" parent="Background"]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 270.0
+anchors_preset = -1
+anchor_left = 0.211
+anchor_right = 1.035
+anchor_bottom = 0.205
+offset_left = -0.0800171
 offset_top = -10.0
-offset_right = 45.0
-offset_bottom = -541.0
+offset_right = 0.199951
+offset_bottom = 31.4
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.831373, 0.898039, 0.941176, 1)
@@ -101,10 +102,14 @@ vertical_alignment = 1
 [node name="New Game Button" type="Button" parent="Background"]
 layout_direction = 1
 layout_mode = 2
-offset_left = 760.0
-offset_top = 210.0
-offset_right = 1210.0
-offset_bottom = 275.0
+anchor_left = 0.594
+anchor_top = 0.292
+anchor_right = 0.945
+anchor_bottom = 0.382
+offset_left = -0.320068
+offset_top = -0.240021
+offset_right = 0.399902
+offset_bottom = -0.0400085
 theme = SubResource("Theme_oaio5")
 theme_override_fonts/font = ExtResource("5_vrfc0")
 theme_override_font_sizes/font_size = 40
@@ -114,10 +119,14 @@ text = "New Game"
 [node name="Credits" type="Button" parent="Background"]
 layout_direction = 1
 layout_mode = 2
-offset_left = 759.0
-offset_top = 485.0
-offset_right = 1209.0
-offset_bottom = 550.0
+anchor_left = 0.593
+anchor_top = 0.674
+anchor_right = 0.945
+anchor_bottom = 0.764
+offset_left = -0.0400391
+offset_top = -0.280029
+offset_right = -0.600098
+offset_bottom = -0.0800171
 theme = SubResource("Theme_oaio5")
 theme_override_fonts/font = ExtResource("5_vrfc0")
 theme_override_font_sizes/font_size = 40
@@ -126,11 +135,16 @@ text = "Credits"
 
 [node name="Continue Button" type="Button" parent="Background"]
 layout_direction = 1
-layout_mode = 0
-offset_left = 760.0
-offset_top = 300.0
-offset_right = 1210.0
-offset_bottom = 365.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.594
+anchor_top = 0.417
+anchor_right = 0.945
+anchor_bottom = 0.507
+offset_left = -0.320068
+offset_top = -0.240021
+offset_right = 0.399902
+offset_bottom = -0.0400085
 theme = SubResource("Theme_oaio5")
 theme_override_fonts/font = ExtResource("5_vrfc0")
 theme_override_font_sizes/font_size = 40
@@ -141,11 +155,16 @@ text = "Continue
 
 [node name="Option Button" type="Button" parent="Background"]
 layout_direction = 1
-layout_mode = 0
-offset_left = 760.0
-offset_top = 390.0
-offset_right = 1210.0
-offset_bottom = 455.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.594
+anchor_top = 0.542
+anchor_right = 0.945
+anchor_bottom = 0.632
+offset_left = -0.320068
+offset_top = -0.240051
+offset_right = 0.399902
+offset_bottom = -0.0400085
 theme = SubResource("Theme_oaio5")
 theme_override_fonts/font = ExtResource("5_vrfc0")
 theme_override_font_sizes/font_size = 40
@@ -154,11 +173,16 @@ text = "Options"
 
 [node name="Quit Button" type="Button" parent="Background"]
 layout_direction = 1
-layout_mode = 0
-offset_left = 757.0
-offset_top = 575.0
-offset_right = 1207.0
-offset_bottom = 640.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.591
+anchor_top = 0.799
+anchor_right = 0.943
+anchor_bottom = 0.889
+offset_left = 0.519958
+offset_top = -0.280029
+offset_right = -0.0400391
+offset_bottom = -0.0800171
 theme = SubResource("Theme_oaio5")
 theme_override_fonts/font = ExtResource("5_vrfc0")
 theme_override_font_sizes/font_size = 40
@@ -177,7 +201,7 @@ bus = &"Sound Effects"
 stream = ExtResource("6_h2jsk")
 bus = &"Sound Effects"
 
-[node name="Label" type="Label" parent="."]
+[node name="Label_Version" type="Label" parent="."]
 layout_mode = 0
 offset_left = 1206.0
 offset_top = 681.0
@@ -205,10 +229,11 @@ expand_icon = true
 [node name="Github" type="Button" parent="."]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
+anchor_right = 0.885
+anchor_bottom = 1.0
 offset_left = 1069.0
 offset_top = 656.0
-offset_right = 1133.0
-offset_bottom = 720.0
+offset_right = 0.199951
 icon = ExtResource("11_d0eax")
 flat = true
 expand_icon = true

@@ -7,6 +7,14 @@ extends Control
 
 func _ready():
 	backsound.play()
+	#show Cursor 
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+
+# Close Notification
+func _notification(exit):
+	if exit == NOTIFICATION_WM_CLOSE_REQUEST:
+		get_tree().change_scene_to_file("res://Assets/Scences/UI/Exit_Confirmation/Exit_Confirmation.tscn")
+		
 	
 #New Game Button
 func _on_new_game_main_menu_buttons_pressed():
