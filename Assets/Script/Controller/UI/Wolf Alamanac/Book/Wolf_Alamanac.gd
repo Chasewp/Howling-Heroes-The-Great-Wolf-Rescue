@@ -7,8 +7,18 @@ extends Node
 @onready var Name_Wolf = $Name_Wolf
 #Wolf Species
 @onready var Species = $Species
-#Wolf 
-#@onready var 
+#Wolf Height
+@onready var height = $Height_Label
+#Wolf Weight
+@onready var weight = $Weight_Label
+#Wolf Lenght
+@onready var lenght = $Leght_Label
+#Wolf Status
+@onready var status = $Status
+#Wolf Region List
+@onready var region = $Region_List
+#Wolf Morphology
+@onready var morphology = $MORPHOLOGY_details
 
 #Effect
 @onready var animations = $Animation

@@ -1,13 +1,41 @@
-[gd_scene load_steps=7 format=3 uid="uid://wh1qjrf1tb56"]
+[gd_scene load_steps=16 format=3 uid="uid://wh1qjrf1tb56"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Options_Menu/Options_Menu.gd" id="1_my3m4"]
 [ext_resource type="Texture2D" uid="uid://ca37ndc8femkj" path="res://Assets/Image/images/Background/Option/Settings.jpeg" id="1_o1l7c"]
 [ext_resource type="AudioStream" uid="uid://ty2bg0clrp0t" path="res://Assets/Music/All Button/Quit_Button.mp3" id="2_1nk4j"]
 [ext_resource type="FontFile" uid="uid://bsmkjcem4b3i1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="2_al8ah"]
+[ext_resource type="FontFile" uid="uid://bv6xsykw7vcai" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="5_dxle5"]
+[ext_resource type="FontFile" uid="uid://b37vftxdinymo" path="res://Assets/Fonts/DisposableDroidBB_ital.ttf" id="6_d8eh8"]
+[ext_resource type="FontFile" uid="uid://ccpiomxr4hnwi" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="7_whvaq"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_klgu7"]
+[sub_resource type="Gradient" id="Gradient_wjivt"]
+colors = PackedColorArray(1, 1, 0, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_t04d6"]
+gradient = SubResource("Gradient_wjivt")
+width = 16
+height = 16
+use_hdr = true
+
+[sub_resource type="Gradient" id="Gradient_p3cgd"]
+colors = PackedColorArray(1, 1, 0, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_m46is"]
+gradient = SubResource("Gradient_p3cgd")
+width = 16
+height = 16
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_n2hhr"]
+color = Color(0.745098, 0.745098, 0.745098, 1)
+thickness = 5
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_nm11b"]
+color = Color(1, 0.843137, 0, 1)
+thickness = 5
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ifj1x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_klgu7"]
 
 [node name="OptionsMenu" type="Control"]
 layout_mode = 3
@@ -32,7 +60,6 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_o1l7c")
 expand_mode = 1
-metadata/_edit_lock_ = true
 
 [node name="Options Menu" type="VBoxContainer" parent="Backkground"]
 custom_minimum_size = Vector2(800, 450)
@@ -57,6 +84,9 @@ theme_override_font_sizes/font_size = 32
 
 [node name="Video" type="TabBar" parent="Backkground/Options Menu/Settings_Option_Tab_Menu"]
 layout_mode = 2
+clip_tabs = false
+scrolling_enabled = false
+scroll_to_selected = false
 
 [node name="Video_Settings" type="GridContainer" parent="Backkground/Options Menu/Settings_Option_Tab_Menu/Video"]
 custom_minimum_size = Vector2(760, 180)
@@ -116,6 +146,9 @@ offset_bottom = 0.00802994
 [node name="Audio" type="TabBar" parent="Backkground/Options Menu/Settings_Option_Tab_Menu"]
 visible = false
 layout_mode = 2
+clip_tabs = false
+scrolling_enabled = false
+scroll_to_selected = false
 
 [node name="Audio_Settings" type="GridContainer" parent="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio"]
 custom_minimum_size = Vector2(760, 180)
@@ -143,7 +176,13 @@ size_flags_horizontal = 3
 layout_direction = 1
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_icons/grabber = SubResource("GradientTexture2D_t04d6")
+theme_override_icons/grabber_highlight = SubResource("GradientTexture2D_m46is")
+theme_override_styles/slider = SubResource("StyleBoxLine_n2hhr")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_nm11b")
 max_value = 6.0
+rounded = true
+ticks_on_borders = true
 
 [node name="Master_Max_Label" type="Label" parent="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings/Master_Volume_Setings"]
 layout_mode = 2
@@ -221,15 +260,6 @@ custom_minimum_size = Vector2(800, 40)
 layout_mode = 2
 theme_override_constants/separation = 707
 
-[node name="Back_Button" type="Button" parent="Backkground/Options Menu/Buttons"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 5.0
-theme_override_fonts/font = ExtResource("2_al8ah")
-theme_override_font_sizes/font_size = 20
-theme_override_styles/normal = SubResource("StyleBoxEmpty_klgu7")
-text = "Back"
-
 [node name="Save_Button" type="Button" parent="Backkground/Options Menu/Buttons"]
 layout_mode = 2
 size_flags_horizontal = 3
@@ -239,11 +269,53 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_ifj1x")
 text = "Save
 "
 
+[node name="Back_Button" type="Button" parent="Backkground/Options Menu/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 5.0
+theme_override_fonts/font = ExtResource("2_al8ah")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_klgu7")
+text = "Back"
+
+[node name="Info Label" type="RichTextLabel" parent="Backkground"]
+layout_mode = 0
+offset_left = 45.0
+offset_top = 489.0
+offset_right = 1255.0
+offset_bottom = 648.0
+theme_override_fonts/normal_font = ExtResource("2_al8ah")
+theme_override_fonts/bold_font = ExtResource("5_dxle5")
+theme_override_fonts/italics_font = ExtResource("6_d8eh8")
+theme_override_fonts/bold_italics_font = ExtResource("7_whvaq")
+theme_override_font_sizes/normal_font_size = 24
+theme_override_font_sizes/bold_font_size = 24
+theme_override_font_sizes/italics_font_size = 24
+theme_override_font_sizes/bold_italics_font_size = 24
+bbcode_enabled = true
+text = "[b]Info[/b]
+
+[b] 1. Volume 0 [/b]           : For Volume number 0, this means 0 db [b][i]<default> or Normal[/i]
+ 2. Silder Increment[/b]  : For silder increment numbers just slide to right, this means + db number and increase loudness
+ 3. Slider Decrement : For silder decrement numbers just slide to left, this means - db number and decrease loudness"
+scroll_active = false
+shortcut_keys_enabled = false
+
 [connection signal="item_selected" from="Backkground/Options Menu/Settings_Option_Tab_Menu/Video/Video_Settings/Display_Mode_Option" to="." method="_on_display_mode_option_item_selected"]
 [connection signal="toggled" from="Backkground/Options Menu/Settings_Option_Tab_Menu/Video/Video_Settings/V_Sync_Switch" to="." method="_on_v_sync_switch_pressed"]
+[connection signal="mouse_entered" from="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio" to="." method="_on_audio_mouse_entered"]
+[connection signal="mouse_exited" from="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio" to="." method="_on_audio_mouse_exited"]
+[connection signal="mouse_entered" from="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings/Master_Volume_Setings/Master_Slider" to="." method="_on_master_slider_mouse_entered"]
+[connection signal="mouse_exited" from="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings/Master_Volume_Setings/Master_Slider" to="." method="_on_master_slider_mouse_exited"]
 [connection signal="value_changed" from="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings/Master_Volume_Setings/Master_Slider" to="." method="_on_master_slider_value_changed"]
+[connection signal="mouse_entered" from="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings/Music_Volume_Setings/Music_Slider" to="." method="_on_music_slider_mouse_entered"]
+[connection signal="mouse_exited" from="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings/Music_Volume_Setings/Music_Slider" to="." method="_on_music_slider_mouse_exited"]
 [connection signal="value_changed" from="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings/Music_Volume_Setings/Music_Slider" to="." method="_on_music_slider_value_changed"]
+[connection signal="mouse_entered" from="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings/Voice_Volume_Setings/Voice_Slider" to="." method="_on_voice_slider_mouse_entered"]
+[connection signal="mouse_exited" from="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings/Voice_Volume_Setings/Voice_Slider" to="." method="_on_voice_slider_mouse_exited"]
 [connection signal="value_changed" from="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings/Voice_Volume_Setings/Voice_Slider" to="." method="_on_voice_slider_value_changed"]
+[connection signal="mouse_entered" from="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings/SFX_Volume_Setings/SFX_Slider" to="." method="_on_sfx_slider_mouse_entered"]
+[connection signal="mouse_exited" from="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings/SFX_Volume_Setings/SFX_Slider" to="." method="_on_sfx_slider_mouse_exited"]
 [connection signal="value_changed" from="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings/SFX_Volume_Setings/SFX_Slider" to="." method="_on_sfx_slider_value_changed"]
-[connection signal="pressed" from="Backkground/Options Menu/Buttons/Back_Button" to="." method="_on_back_button_pressed"]
 [connection signal="pressed" from="Backkground/Options Menu/Buttons/Save_Button" to="." method="_on_save_button_pressed"]
+[connection signal="pressed" from="Backkground/Options Menu/Buttons/Back_Button" to="." method="_on_back_button_pressed"]

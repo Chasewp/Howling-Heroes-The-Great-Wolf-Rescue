@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://c5oh08utk31s2"]
+[gd_scene load_steps=6 format=3 uid="uid://c5oh08utk31s2"]
 
 [ext_resource type="FontFile" uid="uid://bv6xsykw7vcai" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="1_vi86i"]
 [ext_resource type="Theme" uid="uid://cya18eaoptu42" path="res://Assets/Theme/Player_Name/Player_Name.tres" id="2_jj1ar"]
+[ext_resource type="Texture2D" uid="uid://d6bdufp2f3dh" path="res://Assets/Image/images/Background/Character Selector/wolf-den-cave-taiga-forest 800x 600.png" id="3_prlmh"]
+[ext_resource type="FontFile" uid="uid://bsmkjcem4b3i1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="4_ru70u"]
 
 [sub_resource type="GDScript" id="GDScript_36vk4"]
 script/source = "extends Control
@@ -38,6 +40,13 @@ grow_vertical = 2
 script = SubResource("GDScript_36vk4")
 metadata/_edit_lock_ = true
 
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("3_prlmh")
+expand_mode = 1
+
 [node name="Comand Info" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = -1
@@ -51,6 +60,11 @@ offset_right = -0.359985
 offset_bottom = -0.120026
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.647059, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_constants/line_spacing = 2
 theme_override_fonts/font = ExtResource("1_vi86i")
 theme_override_font_sizes/font_size = 18
 text = "INPUT YOUR CHARACTER NAME : "
@@ -70,6 +84,11 @@ offset_right = -0.160034
 offset_bottom = -0.160034
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.647059, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_constants/line_spacing = 2
 theme_override_fonts/font = ExtResource("1_vi86i")
 theme_override_font_sizes/font_size = 16
 horizontal_alignment = 1
@@ -87,6 +106,11 @@ offset_right = 0.579956
 offset_bottom = -0.0400085
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.647059, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_constants/line_spacing = 2
 theme_override_fonts/font = ExtResource("1_vi86i")
 theme_override_font_sizes/font_size = 18
 text = "PLEASE PRESS 'ENTER' AFTER ENTERING THE NAME"
@@ -108,6 +132,9 @@ offset_bottom = 16.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("2_jj1ar")
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/selection_color = Color(0, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_ru70u")
 alignment = 1
 max_length = 32
 expand_to_text_length = true

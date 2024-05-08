@@ -22,6 +22,7 @@ config/quit_on_go_back=false
 config/features=PackedStringArray("4.2")
 run/max_fps=144
 config/icon="res://Assets/Image/Logo/Logo Project Howling Heroes The Great Wolf Rescue.png"
+config/size/always_on_top=false
 
 [autoload]
 

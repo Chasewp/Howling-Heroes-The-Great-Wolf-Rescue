@@ -1,8 +1,10 @@
+TextureRect
+RichTextLabel
+Label
+Camera2D
 TileMap
 AnimationPlayer
 Button
-TextureRect
-Label
 VBoxContainer
 CanvasLayer
 Popup
@@ -10,6 +12,3 @@ ProgressBar
 HBoxContainer
 LineEdit
 CenterContainer
-ConfirmationDialog
-AudioStreamPlayer2D
-GridContainer

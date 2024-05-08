@@ -1,6 +1,9 @@
 class_name Option_Menu
 extends Control
 
+#Info Label
+@onready var info_lbl = $"Backkground/Info Label"
+
 #Button Sound
 @onready var button_sound = $Button
 
@@ -41,6 +44,7 @@ func _ready():
 	Music_Volume.value = SaveSettings.Data_Settings.Music_Volume
 	sfx_Volume.value = SaveSettings.Data_Settings.SFX_Volume
 	Dialogue_Volume.value = SaveSettings.Data_Settings.Dialogue_Volume
+	info_lbl.hide()
 	
 	#Label V-Sync On/Off
 	label_switch.text = str(V_Sync.button_pressed)
@@ -100,4 +104,44 @@ func _on_sfx_slider_value_changed(value):
 func _on_save_button_pressed():
 	button_sound.play()
 	GlobalSettings._toggle_fullscreen(SaveSettings.Data_Settings.FullScreen_on)
+	
 	LoadingScreen.load_scence("res://Assets/Scences/UI/Main_Menu/main_menu.tscn")
+
+func _on_audio_mouse_entered():
+	info_lbl.show()
+
+
+func _on_audio_mouse_exited():
+	info_lbl.hide()
+
+
+func _on_sfx_slider_mouse_entered():
+	info_lbl.show()
+
+
+func _on_sfx_slider_mouse_exited():
+	info_lbl.hide()
+
+
+func _on_music_slider_mouse_exited():
+	info_lbl.hide()
+
+
+func _on_music_slider_mouse_entered():
+	info_lbl.show()
+
+
+func _on_master_slider_mouse_entered():
+	info_lbl.show()
+
+
+func _on_master_slider_mouse_exited():
+	info_lbl.hide()
+
+
+func _on_voice_slider_mouse_entered():
+	info_lbl.show()
+
+
+func _on_voice_slider_mouse_exited():
+	info_lbl.hide()

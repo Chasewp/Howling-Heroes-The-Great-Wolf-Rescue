@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://cp86kv5xyir10"]
+[gd_scene load_steps=3 format=3 uid="uid://cp86kv5xyir10"]
 
 [ext_resource type="PackedScene" uid="uid://c1ph53byo1unb" path="res://Assets/Scences/UI/Game_Play/GUI_Play.tscn" id="1_1ik14"]
+[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Location/Taiga/Bridge_Stone_Forest.gd" id="1_25p6p"]
 
 [node name="Bridge_Stone_Forest" type="Node2D"]
+script = ExtResource("1_25p6p")
 
 [node name="GuiPlay" parent="." instance=ExtResource("1_1ik14")]
 anchors_preset = 0
@@ -13,3 +15,6 @@ grow_vertical = 1
 
 [node name="Tile_set" type="TileMap" parent="."]
 format = 2
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(43, 638)

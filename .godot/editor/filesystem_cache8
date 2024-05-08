@@ -1,5 +1,5 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1715047951
+::res://::1715146681
 default_bus_layout.tres::AudioBusLayout::196888898710771457::1713830022::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1713830022::0::1::::<><>::
 icon.svg::CompressedTexture2D::1128398145262920593::1713830022::1713847246::1::::<><>::
@@ -584,9 +584,9 @@ TimelineResourceSaver.gd::GDScript::-1::1713830021::0::1::::DialogicTimelineForm
 ::res://Assets/Dialogue/::1713830017
 ::res://Assets/Dialogue/Character/::1713830017
 Mr_Wolf.dch::Resource::-1::1713830017::0::1::::<><>::
-::res://Assets/Dialogue/Theme/::1714996929
-Pixelize_Visual_Novel.tres::Resource/DialogicStyle::4396765608337922874::1714996929::0::1::::<><>::uid://c1k5m0w3r40xf::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://cy1y14inwkplb::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn<>uid://bquja8jyk8kbr::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_layer.tscn<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>uid://dsbwnp5hegnu3::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn<>uid://dhk6j6eb6e3q::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn<>uid://cvgf4c6gg0tsy::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn<>uid://lx24i8fl6uo::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn<>res://addons/dialogic/Resources/dialogic_style.gd
-Speaker_Mode.tres::Resource/DialogicStyle::5794453110338011654::1714996929::0::1::::<><>::uid://c1k5m0w3r40xf::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://by6waso0mjpjp::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_SpeakerPortraitTextbox/textbox_with_speaker_portrait.tscn<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>uid://dsbwnp5hegnu3::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn<>uid://dhk6j6eb6e3q::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn<>uid://cvgf4c6gg0tsy::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn<>uid://lx24i8fl6uo::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn<>res://addons/dialogic/Resources/dialogic_style.gd
+::res://Assets/Dialogue/Theme/::1715069642
+Pixelize_Visual_Novel.tres::Resource/DialogicStyle::4396765608337922874::1715069642::0::1::::<><>::uid://c1k5m0w3r40xf::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://cy1y14inwkplb::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn<>uid://bquja8jyk8kbr::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_layer.tscn<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>uid://dsbwnp5hegnu3::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn<>uid://dhk6j6eb6e3q::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn<>uid://cvgf4c6gg0tsy::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn<>uid://lx24i8fl6uo::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn<>res://addons/dialogic/Resources/dialogic_style.gd
+Speaker_Mode.tres::Resource/DialogicStyle::5794453110338011654::1715069642::0::1::::<><>::uid://c1k5m0w3r40xf::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://by6waso0mjpjp::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_SpeakerPortraitTextbox/textbox_with_speaker_portrait.tscn<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>uid://dsbwnp5hegnu3::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn<>uid://dhk6j6eb6e3q::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn<>uid://cvgf4c6gg0tsy::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn<>uid://lx24i8fl6uo::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn<>res://addons/dialogic/Resources/dialogic_style.gd
 ::res://Assets/Dialogue/TimeLines/::1714915907
 How To Play.dtl::Resource::-1::1714915907::0::1::::<><>::
 Intro.dtl::Resource::-1::1713830017::0::1::::<><>::
@@ -1048,9 +1048,11 @@ pixel_art_A_breathtaking_view_ (2).jpeg::CompressedTexture2D::684736336917681050
 pixel_art_A_breathtaking_view_.jpeg::CompressedTexture2D::7926333829803106113::1713830017::1713847259::1::::<><>::
 pixel_art_A_stunning_and_capti (1).jpeg::CompressedTexture2D::3490004070944419246::1713830017::1713847259::1::::<><>::
 pixel_art_A_stunning_and_capti.jpeg::CompressedTexture2D::2221207725176682561::1713830017::1713847259::1::::<><>::
-::res://Assets/Image/images/Cursor/::1713847259
+::res://Assets/Image/images/Cursor/::1715085386
 Cursor 32x32.png::CompressedTexture2D::5384442301746302760::1713830017::1713847258::1::::<><>::
 Cursor.png::CompressedTexture2D::6406101330161508959::1713830017::1713847259::1::::<><>::
+::res://Assets/Image/images/Cursor/1x/::1715085394
+Layer 1.png::CompressedTexture2D::4803099018692788880::1715085388::1715085394::1::::<><>::
 ::res://Assets/Image/images/Dialogue/::1713847258
 Dialogbox-transformed 600x150.png::CompressedTexture2D::2682034354070564179::1713830017::1713847258::1::::<><>::
 ::res://Assets/Image/images/enemies/::1713847260
@@ -1939,13 +1941,13 @@ exclamation-101soundboards.mp3::AudioStreamMP3::7138985905277861131::1713830021:
 ::res://Assets/Scences/Character/::1714920045
 Mustadhyib Al-Rasyid.tscn::PackedScene::1613442018075110151::1714920045::0::1::::<><>::res://Assets/Script/Class/Player/Mustadhyib Al-Rasyid.gd<>uid://bo8ky70qah4nu::::res://Assets/Scences/UI/Wolf_Almanac/Index/Wolf_Almanac_Idex_Page 1.tscn
 ::res://Assets/Scences/Location/::1713830021
-::res://Assets/Scences/Location/Bridge_Stone_Forest/::1714996783
-Bridge_Stone_Forest.tscn::PackedScene::5895699722967377137::1714996783::0::1::::<><>::uid://c1ph53byo1unb::::res://Assets/Scences/UI/Game_Play/GUI_Play.tscn
+::res://Assets/Scences/Location/Bridge_Stone_Forest/::1715096007
+Bridge_Stone_Forest.tscn::PackedScene::5895699722967377137::1715096007::0::1::::<><>::uid://c1ph53byo1unb::::res://Assets/Scences/UI/Game_Play/GUI_Play.tscn<>res://Assets/Script/Controller/UI/Location/Taiga/Bridge_Stone_Forest.gd
 ::res://Assets/Scences/Location/How_to_Play/::1714805825
 How_To_Play.tscn::PackedScene::5079252934453415338::1714805825::0::1::::<><>::res://Assets/Script/Controller/UI/How to play/How_To_Play.gd
 ::res://Assets/Scences/UI/::1714800308
-::res://Assets/Scences/UI/Character_Name/::1714999225
-Player_Name.tscn::PackedScene::6907879393925408839::1714999225::0::1::::<><>::uid://bv6xsykw7vcai::::res://Assets/Fonts/DisposableDroidBB_bld.ttf<>uid://cya18eaoptu42::::res://Assets/Theme/Player_Name/Player_Name.tres
+::res://Assets/Scences/UI/Character_Name/::1715096007
+Player_Name.tscn::PackedScene::6907879393925408839::1715096007::0::1::::<><>::uid://bv6xsykw7vcai::::res://Assets/Fonts/DisposableDroidBB_bld.ttf<>uid://cya18eaoptu42::::res://Assets/Theme/Player_Name/Player_Name.tres
 ::res://Assets/Scences/UI/Credits/::1714920045
 credit.tscn::PackedScene::2507636290248716165::1714920045::0::1::::<><>::uid://d4bb46msror13::::res://Assets/Image/images/Credits/pixel_art_A_breathtaking_lands.jpeg<>uid://74m415i5q2nb::::res://Assets/Fonts/Wolf Moon.ttf<>uid://2gbyqhhtj8i7::::res://Assets/Fonts/Roboto/Roboto-BoldItalic.ttf<>uid://bsmkjcem4b3i1::::res://Assets/Fonts/DisposableDroidBB.ttf
 ::res://Assets/Scences/UI/Exit_Confirmation/::1714805824
@@ -1960,12 +1962,12 @@ GUI_Play.tscn::PackedScene::6629197034361265659::1714920045::0::1::::<><>::uid:/
 loading_screen.tscn::PackedScene::6266683255097803947::1713830021::0::1::::<><>::res://Assets/Script/Controller/UI/Loading/loading_screen_Menu.gd<>uid://bs4ejchvb0yx4::::res://Assets/Image/Background/Loading_Screen/Firefly Gray Wolf-Howling night fullmoon pixel art 1441.jpeg<>uid://ccpiomxr4hnwi::::res://Assets/Fonts/DisposableDroidBB_bldital.ttf
 ::res://Assets/Scences/UI/Load_slot/::1714807320
 loader_screen.tscn::PackedScene::3471102995414826311::1714807320::0::1::::<><>::uid://d1sw3q5r06tf8::::res://Assets/Image/images/Moonlight Night Scenery Acrylic Painting for beginners 2019.png<>res://Assets/Script/Controller/UI/Load_slot/loader_screen.gd<>uid://c4ipkih8u305j::::res://Assets/Fonts/DEADLY CLAWS[.ttf<>uid://bv6xsykw7vcai::::res://Assets/Fonts/DisposableDroidBB_bld.ttf
-::res://Assets/Scences/UI/Main_Menu/::1715013375
-main_menu.tscn::PackedScene::4804210801108702186::1715013375::0::1::::<><>::res://Assets/Script/Controller/UI/Main_Menu/main_menu.gd<>uid://cp0mdrgknw0x1::::res://Assets/Music/Start_Buton_Sound/Start_Buton_Sound.mp3<>uid://c5mw58h2ajhr::::res://Assets/Image/images/Background/Main_Menu/w2BsPEmg.jpeg<>uid://ty2bg0clrp0t::::res://Assets/Music/All Button/Quit_Button.mp3<>uid://c4aec0kompmv8::::res://Assets/Image/Logo/Logo Project Howling Heroes The Great Wolf Rescue.png<>uid://daews5bmpatgf::::res://Assets/Fonts/WolfpackHalloweed-EaGOl.otf<>uid://bv6xsykw7vcai::::res://Assets/Fonts/DisposableDroidBB_bld.ttf<>uid://bvycrbomgp75i::::res://Assets/Music/Main_Menu/Night Fullmoon wolf howling tock and roll horor-Mubert.mp3<>uid://ccpiomxr4hnwi::::res://Assets/Fonts/DisposableDroidBB_bldital.ttf<>uid://bm28mptpxjf7k::::res://Assets/Image/images/Buttons/Discord.png<>uid://dyvag8ysn7o6g::::res://Assets/Image/images/Buttons/Github.png<>uid://ydktuoqad1lc::::res://Assets/Image/images/Buttons/FA.png
+::res://Assets/Scences/UI/Main_Menu/::1715096007
+main_menu.tscn::PackedScene::4804210801108702186::1715096007::0::1::::<><>::res://Assets/Script/Controller/UI/Main_Menu/main_menu.gd<>uid://cp0mdrgknw0x1::::res://Assets/Music/Start_Buton_Sound/Start_Buton_Sound.mp3<>uid://c5mw58h2ajhr::::res://Assets/Image/images/Background/Main_Menu/w2BsPEmg.jpeg<>uid://ty2bg0clrp0t::::res://Assets/Music/All Button/Quit_Button.mp3<>uid://c4aec0kompmv8::::res://Assets/Image/Logo/Logo Project Howling Heroes The Great Wolf Rescue.png<>uid://daews5bmpatgf::::res://Assets/Fonts/WolfpackHalloweed-EaGOl.otf<>uid://bv6xsykw7vcai::::res://Assets/Fonts/DisposableDroidBB_bld.ttf<>uid://bvycrbomgp75i::::res://Assets/Music/Main_Menu/Night Fullmoon wolf howling tock and roll horor-Mubert.mp3<>uid://ccpiomxr4hnwi::::res://Assets/Fonts/DisposableDroidBB_bldital.ttf<>uid://bm28mptpxjf7k::::res://Assets/Image/images/Buttons/Discord.png<>uid://dyvag8ysn7o6g::::res://Assets/Image/images/Buttons/Github.png<>uid://ydktuoqad1lc::::res://Assets/Image/images/Buttons/FA.png
 ::res://Assets/Scences/UI/Mission_Log/::1714920045
 mission.tscn::PackedScene::9075895523834649921::1714920045::0::1::::<><>::res://Assets/Script/Controller/UI/Mission_Log/mission.gd<>uid://dxkdku0q6k01n::::res://Assets/Image/Background/Mission Log/1x/Asset 3.png<>uid://cya18eaoptu42::::res://Assets/Theme/Player_Name/Player_Name.tres<>uid://bsmkjcem4b3i1::::res://Assets/Fonts/DisposableDroidBB.ttf<>uid://bv6xsykw7vcai::::res://Assets/Fonts/DisposableDroidBB_bld.ttf<>uid://b37vftxdinymo::::res://Assets/Fonts/DisposableDroidBB_ital.ttf
-::res://Assets/Scences/UI/Options/::1714805825
-Options_Menu.tscn::PackedScene::1560212918064034487::1714805825::0::1::::<><>::res://Assets/Script/Controller/UI/Options_Menu/Options_Menu.gd<>uid://ca37ndc8femkj::::res://Assets/Image/images/Background/Option/Settings.jpeg<>uid://ty2bg0clrp0t::::res://Assets/Music/All Button/Quit_Button.mp3<>uid://bsmkjcem4b3i1::::res://Assets/Fonts/DisposableDroidBB.ttf
+::res://Assets/Scences/UI/Options/::1715096271
+Options_Menu.tscn::PackedScene::1560212918064034487::1715096271::0::1::::<><>::res://Assets/Script/Controller/UI/Options_Menu/Options_Menu.gd<>uid://ca37ndc8femkj::::res://Assets/Image/images/Background/Option/Settings.jpeg<>uid://ty2bg0clrp0t::::res://Assets/Music/All Button/Quit_Button.mp3<>uid://bsmkjcem4b3i1::::res://Assets/Fonts/DisposableDroidBB.ttf<>uid://bv6xsykw7vcai::::res://Assets/Fonts/DisposableDroidBB_bld.ttf<>uid://b37vftxdinymo::::res://Assets/Fonts/DisposableDroidBB_ital.ttf<>uid://ccpiomxr4hnwi::::res://Assets/Fonts/DisposableDroidBB_bldital.ttf
 ::res://Assets/Scences/UI/Pause Menu/::1713830021
 Pause_Menu.tscn::PackedScene::1060863744242428003::1713830021::0::1::::<><>::uid://bsmkjcem4b3i1::::res://Assets/Fonts/DisposableDroidBB.ttf
 ::res://Assets/Scences/UI/Settings_Confrimation/::1713830021
@@ -1974,8 +1976,8 @@ settings_confrimation.tscn::PackedScene::4792057750461397828::1713830021::0::1::
 Splash_Screen.tscn::PackedScene::2923839636953089034::1714998118::0::1::::<><>::res://Assets/Script/Controller/UI/Splash_Screen/Splash_Screen.gd<>uid://d16hkoquk0jh::::res://Assets/Image/Splash Screen/Splash Screen.png
 Splash_Screen_Played.tscn::PackedScene::960210786821005025::1714998300::0::1::::<><>::res://Assets/Script/Controller/UI/Splash_Screen/Splash_Screen_Played.gd<>uid://cs44rsscdpaxf::::res://Assets/Image/Keyboard and Mouse/478401-PHEZK8-856.png<>uid://bv6xsykw7vcai::::res://Assets/Fonts/DisposableDroidBB_bld.ttf
 ::res://Assets/Scences/UI/Wolf_Almanac/::1713830021
-::res://Assets/Scences/UI/Wolf_Almanac/Book/::1714920045
-wolf_almanac.tscn::PackedScene::450897493247575815::1714920045::0::1::::<><>::res://Assets/Script/Controller/UI/Wolf Alamanac/Book/Wolf_Alamanac.gd<>uid://ds5e17l3qjw75::::res://Assets/Image/images/Book Open/opened_notebook_isolated_on_background.png<>uid://bv6xsykw7vcai::::res://Assets/Fonts/DisposableDroidBB_bld.ttf<>uid://ccpiomxr4hnwi::::res://Assets/Fonts/DisposableDroidBB_bldital.ttf<>uid://bsmkjcem4b3i1::::res://Assets/Fonts/DisposableDroidBB.ttf<>uid://dhongn88fciri::::res://Assets/Image/images/Buttons/right-arrow.png<>uid://b37vftxdinymo::::res://Assets/Fonts/DisposableDroidBB_ital.ttf
+::res://Assets/Scences/UI/Wolf_Almanac/Book/::1715096007
+wolf_almanac.tscn::PackedScene::450897493247575815::1715096007::0::1::::<><>::res://Assets/Script/Controller/UI/Wolf Alamanac/Book/Wolf_Alamanac.gd<>uid://ds5e17l3qjw75::::res://Assets/Image/images/Book Open/opened_notebook_isolated_on_background.png<>uid://bv6xsykw7vcai::::res://Assets/Fonts/DisposableDroidBB_bld.ttf<>uid://ccpiomxr4hnwi::::res://Assets/Fonts/DisposableDroidBB_bldital.ttf<>uid://bsmkjcem4b3i1::::res://Assets/Fonts/DisposableDroidBB.ttf<>uid://dhongn88fciri::::res://Assets/Image/images/Buttons/right-arrow.png<>uid://b37vftxdinymo::::res://Assets/Fonts/DisposableDroidBB_ital.ttf
 ::res://Assets/Scences/UI/Wolf_Almanac/Index/::1714920045
 Wolf_Almanac_Idex_Page 1.tscn::PackedScene::3437840709585500090::1714920045::0::1::::<><>::res://Assets/Script/Controller/UI/Wolf Alamanac/Index/Wolf_Almanac_Idex.gd<>uid://dkcpwot8r1ksg::::res://Assets/Image/images/Background/Wolf Almanac Index/Wood Texture.png<>uid://bv6xsykw7vcai::::res://Assets/Fonts/DisposableDroidBB_bld.ttf<>uid://bsmkjcem4b3i1::::res://Assets/Fonts/DisposableDroidBB.ttf<>uid://ccpiomxr4hnwi::::res://Assets/Fonts/DisposableDroidBB_bldital.ttf<>uid://cp0mdrgknw0x1::::res://Assets/Music/Start_Buton_Sound/Start_Buton_Sound.mp3
 wolf_almanac_idex_page_2.tscn::PackedScene::2854970328556676315::1713830021::0::1::::<><>::res://Assets/Script/Controller/UI/Wolf Alamanac/Index/Wolf_Almanac_Idex.gd<>uid://dkcpwot8r1ksg::::res://Assets/Image/images/Background/Wolf Almanac Index/Wood Texture.png<>uid://bv6xsykw7vcai::::res://Assets/Fonts/DisposableDroidBB_bld.ttf<>uid://bsmkjcem4b3i1::::res://Assets/Fonts/DisposableDroidBB.ttf<>uid://ccpiomxr4hnwi::::res://Assets/Fonts/DisposableDroidBB_bldital.ttf<>uid://cp0mdrgknw0x1::::res://Assets/Music/Start_Buton_Sound/Start_Buton_Sound.mp3
@@ -2021,13 +2023,15 @@ loading_screen.gd::GDScript::-1::1713830021::0::1::::<>Node<>::
 loading_screen_Menu.gd::GDScript::-1::1713830021::0::1::::<>CanvasLayer<>::
 ::res://Assets/Script/Controller/UI/Load_slot/::1713830021
 loader_screen.gd::GDScript::-1::1713830021::0::1::::<>RefCounted<>::
-::res://Assets/Script/Controller/UI/Location/::1714996284
+::res://Assets/Script/Controller/UI/Location/::1715082839
+::res://Assets/Script/Controller/UI/Location/Taiga/::1715085512
+Bridge_Stone_Forest.gd::GDScript::-1::1715085512::0::1::::taiga_biome<>Node2D<>::
 ::res://Assets/Script/Controller/UI/Main_Menu/::1714999206
 main_menu.gd::GDScript::-1::1714999206::0::1::::Main_Menu<>Control<>::
 ::res://Assets/Script/Controller/UI/Mission_Log/::1714807390
 mission.gd::GDScript::-1::1714807390::0::1::::mission_log<>Control<>::
-::res://Assets/Script/Controller/UI/Options_Menu/::1713830021
-Options_Menu.gd::GDScript::-1::1713830021::0::1::::Option_Menu<>Control<>::
+::res://Assets/Script/Controller/UI/Options_Menu/::1715093188
+Options_Menu.gd::GDScript::-1::1715093188::0::1::::Option_Menu<>Control<>::
 ::res://Assets/Script/Controller/UI/Player_Name/::1713830021
 Player_Name.gd::GDScript::-1::1713830021::0::1::::<>LineEdit<>::
 ::res://Assets/Script/Controller/UI/Quit_Notification/::1714998270
@@ -2037,8 +2041,8 @@ settings_confrimation.gd::GDScript::-1::1713830021::0::1::::<>Control<>::
 Splash_Screen.gd::GDScript::-1::1714997269::0::1::::<>Node<>::
 Splash_Screen_Played.gd::GDScript::-1::1714996978::0::1::::<>Node<>::
 ::res://Assets/Script/Controller/UI/Wolf Alamanac/::1713830021
-::res://Assets/Script/Controller/UI/Wolf Alamanac/Book/::1713830021
-Wolf_Alamanac.gd::GDScript::-1::1713830021::0::1::::Wolf_Alamac<>Node<>::
+::res://Assets/Script/Controller/UI/Wolf Alamanac/Book/::1715082648
+Wolf_Alamanac.gd::GDScript::-1::1715082648::0::1::::Wolf_Alamac<>Node<>::
 ::res://Assets/Script/Controller/UI/Wolf Alamanac/Index/::1713830021
 Wolf_Almanac_Idex.gd::GDScript::-1::1713830021::0::1::::Wolf_Alamac_Index<>Control<>::
 ::res://Assets/Script/Controller/UI/World_Map/::1713830021
