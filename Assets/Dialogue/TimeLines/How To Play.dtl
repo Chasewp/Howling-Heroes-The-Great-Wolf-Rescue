@@ -3,7 +3,7 @@
 [music path="res://Assets/Music/How_To_Play/Clift.mp3" fade="5.0" volume="0.0"]
 join Mr_Wolf (no_Background) 1 [animation="Slide In Left"]
 [voice path="res://Assets/Music/Dialogues/How to Play/How to play 1.mp3" volume="0.0"]
-Mr_Wolf (no_Background): Welcome, esteemed dventurers! I am Mr. Wolf, Your esteemed guide. It is my honor to provide an explanation of the intricacies of "Howling Heroes\: The Great Wolf Rescue." Kindly press the [wave amp=45 freq=3][b]Z[/b][/wave] key to [b]move on to the next dialogue or interaction[/b].
+Mr_Wolf (no_Background): Welcome, esteemed adventurers! I am Mr. Wolf, Your esteemed guide. It is my honor to provide an explanation of the intricacies of "Howling Heroes\: The Great Wolf Rescue." Kindly press the [wave amp=45 freq=3][b]Z[/b][/wave] key to [b]move on to the next dialogue or interaction[/b].
 [voice path="res://Assets/Music/Dialogues/How to Play/How to play 2.mp3" volume="0.0"]
 Mr_Wolf: To [b]perform a jump[/b], please press the [wave amp=45 freq=3][b]W[/b][/wave] key.
 [voice path="res://Assets/Music/Dialogues/How to Play/How to play 3.mp3" volume="0.0"]

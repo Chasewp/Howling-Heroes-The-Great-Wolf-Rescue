@@ -33,7 +33,7 @@ extends Control
 #Wolf Picture 15 - British Columbian Wolf
 @onready var britishcolumbianwolfimage = $"Background/Alamac Index/VBoxContainer15/Wolf 15"
 #Wolf Picture 16 - Vancouver Coastal Island Wolf
-@onready var vancouvercoastalislandwolf
+@onready var vancouvercoastalislandwolf 
 #Wolf Picture 17 - Hudson Bay Wolf
 @onready var hudsonbaywolfimage 
 #Wolf Picture 18 - Alexander Archipelago Wolf
@@ -123,13 +123,13 @@ extends Control
 #next button to page 5
 @onready var nextbtn5 = $Background/Next_Button_Page_4
 #next button to page 6
-@onready var nextbtn6
+@onready var nextbtn6 = $Background/Next_Button_Page_5
 #next button to page 7
-@onready var nextbtn7
+@onready var nextbtn7 = $Background/Next_Button_Page_6
 #next button to page 8
-@onready var nextbtn8
+@onready var nextbtn8  = $Background/Next_Button_Page_7
 #next button to page 9
-@onready var nextbtn9
+@onready var nextbtn9 = $Background/Next_Button_Page_4
 
 """Back Buttons"""
 #back button to page 1
@@ -141,13 +141,13 @@ extends Control
 #back button to page 4 
 @onready var backbtn4 = $Background/Back_Button_Page_5
 #back button to page 5
-@onready var backbtn5
+@onready var backbtn5 = $Background/Back_Button_Page_6
 #back button to page 6
-@onready var backbtn6
+@onready var backbtn6 = $Background/Back_Button_Page_7
 #back button to page 7
-@onready var backbtn7
+@onready var backbtn7 = $Background/Back_Button_Page_8
 #back button to page 8
-@onready var backbtn8 
+@onready var backbtn8 = $Background/Back_Button_Page_9
 
 
 """Inisiate Page"""
@@ -155,4 +155,7 @@ extends Control
 
 #Button Click Sound
 @onready var buttonsound = $Button_Click
+
+
+
 

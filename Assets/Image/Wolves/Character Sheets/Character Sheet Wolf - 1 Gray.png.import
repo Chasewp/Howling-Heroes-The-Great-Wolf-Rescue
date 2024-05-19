@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhc7b7ny04l76"
-path="res://.godot/imported/Idle__004.png-a10d0315a56ff999843e776237f76c32.ctex"
+uid="uid://daqryb1jcos4"
+path="res://.godot/imported/Character Sheet Wolf - 1 Gray.png-af6ce6285302913499bf81bb97cf88db.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Image/Character/Player/templerun/Idle__004.png"
-dest_files=["res://.godot/imported/Idle__004.png-a10d0315a56ff999843e776237f76c32.ctex"]
+source_file="res://Assets/Image/Wolves/Character Sheets/Character Sheet Wolf - 1 Gray.png"
+dest_files=["res://.godot/imported/Character Sheet Wolf - 1 Gray.png-af6ce6285302913499bf81bb97cf88db.ctex"]
 
 [params]
 

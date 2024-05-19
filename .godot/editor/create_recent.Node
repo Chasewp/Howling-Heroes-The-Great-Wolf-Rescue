@@ -1,3 +1,4 @@
+CollisionShape2D
 TextureRect
 RichTextLabel
 Label
@@ -11,4 +12,3 @@ Popup
 ProgressBar
 HBoxContainer
 LineEdit
-CenterContainer

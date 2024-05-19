@@ -1,0 +1,83 @@
+[gd_scene load_steps=17 format=3 uid="uid://w8tfinbfyqkd"]
+
+[ext_resource type="Script" path="res://Assets/Script/Class/Player/Player.gd" id="1_tvrgc"]
+[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Wolf Alamanac/Menu/Wolf almanac.gd" id="2_kk1nf"]
+[ext_resource type="Texture2D" uid="uid://dbqqxkfm1a1rg" path="res://Assets/Image/Character/Player/templerun/Idle__001.png" id="2_s4o6c"]
+[ext_resource type="PackedScene" uid="uid://bo8ky70qah4nu" path="res://Assets/Scences/UI/Wolf_Almanac/Index/Wolf_Almanac_Idex_Page 1.tscn" id="2_ukp57"]
+[ext_resource type="Texture2D" uid="uid://bq8e6tfutt5ct" path="res://Assets/Image/Character/Player/templerun/Idle__002.png" id="3_sk3dx"]
+[ext_resource type="Texture2D" uid="uid://cw1siw7wa285c" path="res://Assets/Image/Character/Player/templerun/Idle__003.png" id="4_w2l5x"]
+[ext_resource type="Texture2D" uid="uid://bhc7b7ny04l76" path="res://Assets/Image/Character/Player/templerun/Idle__004.png" id="5_wo5d3"]
+[ext_resource type="Texture2D" uid="uid://dehyywnl8ew6d" path="res://Assets/Image/Character/Player/templerun/Idle__005.png" id="6_dr8ic"]
+[ext_resource type="Texture2D" uid="uid://7s6ea1ew3fxb" path="res://Assets/Image/Character/Player/templerun/Idle__006.png" id="7_nwpgc"]
+[ext_resource type="Texture2D" uid="uid://b8cxd400bdw72" path="res://Assets/Image/Character/Player/templerun/Idle__007.png" id="8_fstn8"]
+[ext_resource type="Texture2D" uid="uid://wum44lgrjcv5" path="res://Assets/Image/Character/Player/templerun/Idle__008.png" id="9_ktulb"]
+[ext_resource type="Texture2D" uid="uid://14olp88y01j6" path="res://Assets/Image/Character/Player/templerun/Idle__009.png" id="10_1fonq"]
+[ext_resource type="Texture2D" uid="uid://bsl22rpg7rw2p" path="res://Assets/Image/Character/Player/templerun/Idle__000.png" id="11_rc1r8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y8nt8"]
+size = Vector2(38, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gd5cf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_s4o6c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_sk3dx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_w2l5x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_wo5d3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_dr8ic")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_nwpgc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_fstn8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ktulb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_1fonq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_rc1r8")
+}],
+"loop": true,
+"name": &"Iddle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_47ieg"]
+size = Vector2(53, 8)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_tvrgc")
+name_character = "<null>"
+
+[node name="fire_area" type="CollisionShape2D" parent="."]
+position = Vector2(1, 14)
+shape = SubResource("RectangleShape2D_y8nt8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+sprite_frames = SubResource("SpriteFrames_gd5cf")
+animation = &"Iddle"
+autoplay = "Iddle"
+frame_progress = 0.280551
+
+[node name="Ground" type="CollisionShape2D" parent="."]
+position = Vector2(3.5, 56)
+shape = SubResource("RectangleShape2D_47ieg")
+
+[node name="Wolf almanac" type="CanvasLayer" parent="."]
+script = ExtResource("2_kk1nf")
+
+[node name="WolfAlmanacIdex" parent="Wolf almanac" instance=ExtResource("2_ukp57")]

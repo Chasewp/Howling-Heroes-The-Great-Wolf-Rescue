@@ -30,7 +30,7 @@ LoadingScreen="*res://Assets/Script/Controller/UI/Loading/loading_screen.gd"
 Dialogic="*res://addons/dialogic/Other/DialogicGameHandler.gd"
 SaveSettings="*res://Assets/Script/Controller/Save/Settings/save_settings.gd"
 GlobalSettings="*res://Assets/Script/Controller/Save/Global_Settings/Global_Settings.gd"
-user="*res://Assets/Script/Class/Player/Mustadhyib Al-Rasyid.gd"
+user="*res://Assets/Script/Class/Player/Player.gd"
 
 [dialogic]
 
