@@ -76,7 +76,6 @@ vertical_alignment = 1
 [node name="TLT_WR" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("5_ob1tj")
-text = " 0 / 0"
 horizontal_alignment = 1
 vertical_alignment = 1
 

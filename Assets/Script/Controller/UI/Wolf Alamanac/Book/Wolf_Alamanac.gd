@@ -22,10 +22,12 @@ extends Node
 
 #Effect
 @onready var animations = $Animation
+
 func _ready():
 	animations.play("Open_Book")
 	await get_tree().create_timer(6).timeout
 
-
-func _on_back_button_pressed():
-	LoadingScreen.load_scence("")
+#quit Wolf Almanac
+func _process(delta):
+	if Input.is_action_just_pressed("open_wolf_almanac"):
+		self.visible =!self.visible

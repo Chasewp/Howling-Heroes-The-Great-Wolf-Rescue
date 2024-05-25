@@ -33,29 +33,29 @@ extends Control
 #Wolf Picture 15 - British Columbian Wolf
 @onready var britishcolumbianwolfimage = $"Background/Alamac Index/VBoxContainer15/Wolf 15"
 #Wolf Picture 16 - Vancouver Coastal Island Wolf
-@onready var vancouvercoastalislandwolf 
+@onready var vancouvercoastalislandwolf = $"Background/Alamac Index/WolfVBoxContainer16/Wolf 16"
 #Wolf Picture 17 - Hudson Bay Wolf
-@onready var hudsonbaywolfimage 
+@onready var hudsonbaywolfimage = $"Background/Alamac Index/WolfVBoxContainer17/Wolf 17"
 #Wolf Picture 18 - Alexander Archipelago Wolf
-@onready var alexanderarchipelagowolf
+@onready var alexanderarchipelagowolf = $"Background/Alamac Index/VBoxContainer18/Wolf 18"
 #Wolf Picture 19 - Eastern Wolf
-@onready var easternwolfimage
+@onready var easternwolfimage = $"Background/Alamac Index/WolfVBoxContainer19/Wolf 19"
 #Wolf Picture 20 - Mackenzie River Wolf
-@onready var mackenzieriverwolfimage
+@onready var mackenzieriverwolfimage = $"Background/Alamac Index/WolfVBoxContainer20/Wolf 20"
 #Wolf Picture 21 - Baffin Island Wolf
-@onready var baffinislandwolfiamge
+@onready var baffinislandwolfiamge = $"Background/Alamac Index/VBoxContainer21/Wolf 21"
 #Wolf Picture 22 - Greenland Wolf
-@onready var greenlandwolfimage
+@onready var greenlandwolfimage = $"Background/Alamac Index/WolfVBoxContainer22/Wolf 22"
 #Wolf Picture 23 - Alaskan Tundra Wolf
-@onready var alaskantundrawolfimage
+@onready var alaskantundrawolfimage = $"Background/Alamac Index/WolfVBoxContainer23/Wolf 23"
 #Wolf Picture 24 - Iberian Wolf
-@onready var iberianwolfimage
+@onready var iberianwolfimage = $"Background/Alamac Index/VBoxContainer24/Wolf 24"
 #Wolf Picture 25 - Italian Wolf
-@onready var italianwolfimage
+@onready var italianwolfimage = $"Background/Alamac Index/WolfVBoxContainer25/Wolf 25"
 #Wolf Picture 26 - Labrador Wolf
-@onready var labradorwolf
+@onready var labradorwolf = $"Background/Alamac Index/WolfVBoxContainer26/Wolf 26"
 #Wolf Picture 27 - Great Plains Wolf
-@onready var greatplainswolfimage
+@onready var greatplainswolfimage = $"Background/Alamac Index/VBoxContainer27/Wolf 27"
 
 """Wolves Labels"""
 #Wolf Label 1 - Gray Wolf
@@ -89,29 +89,29 @@ extends Control
 #Wolf Label 15 - British Columbian Wolf
 @onready var britshcolumbianwolflabel = $"Background/Alamac Index/VBoxContainer15/Label Wolf15"
 #Wolf Label 16 - Vancouver Coastal IslandWolf
-@onready var vancouvercoastalislandwolflabel 
+@onready var vancouvercoastalislandwolflabel = $"Background/Alamac Index/WolfVBoxContainer16/Label_Wolf 16"
 #Wolf Label 17 - Hudson Bay Wolf
-@onready var hudsonbaywolflabel
+@onready var hudsonbaywolflabel = $"Background/Alamac Index/WolfVBoxContainer17/Label Wolf17"
 #Wolf Label 18 - Alexander Archipelago Wolf
-@onready var alexanderarchipelagowolflabel
+@onready var alexanderarchipelagowolflabel = $"Background/Alamac Index/VBoxContainer18/Label Wolf18"
 #Wolf Label 19 - Eastern Wolf
-@onready var easternwolflabel
+@onready var easternwolflabel = $"Background/Alamac Index/WolfVBoxContainer19/Label_Wolf 19"
 #Wolf Label 20 - Mackenzie River Wolf
-@onready var machenzieriverwolflabel
+@onready var machenzieriverwolflabel = $"Background/Alamac Index/WolfVBoxContainer20/Label Wolf20"
 #Wolf Label 21 - Baffin Island Wolf
-@onready var baffinislandwolflabel
+@onready var baffinislandwolflabel = $"Background/Alamac Index/VBoxContainer21/Label Wolf21"
 #Wolf Label 22 - Greenland Wolf
-@onready var greenlandwolflabel
+@onready var greenlandwolflabel = $"Background/Alamac Index/WolfVBoxContainer22/Label_Wolf 22"
 #Wolf Label 23 - Alaskan Tundra Wolf
-@onready var alaskantundrawolflabel
+@onready var alaskantundrawolflabel = $"Background/Alamac Index/WolfVBoxContainer23/Label Wolf23"
 #Wolf Label 24 - Iberian Wolf
-@onready var iberianwolflabel
+@onready var iberianwolflabel = $"Background/Alamac Index/VBoxContainer24/Label Wolf24"
 #Wolf Label 25 - Italian Wolf
-@onready var italianwolflabel
+@onready var italianwolflabel = $"Background/Alamac Index/WolfVBoxContainer25/Label_Wolf 25"
 #Wolf Label 26 - Labrador Wolf
-@onready var labradorwolflabel
+@onready var labradorwolflabel = $"Background/Alamac Index/WolfVBoxContainer26/Label Wolf26"
 #Wolf Label 27 - Great Plains Wolf
-@onready var greatplainswolflabel
+@onready var greatplainswolflabel = $"Background/Alamac Index/VBoxContainer27/Label Wolf27"
 
 """Next Buttons"""
 #next button to page 2
@@ -152,10 +152,99 @@ extends Control
 
 """Inisiate Page"""
 @export var indexpage1 = load("res://Assets/Scences/UI/Wolf_Almanac/Index/Wolf_Almanac_Idex_Page 1.tscn")
+@export var indexpage2 = load("res://Assets/Scences/UI/Wolf_Almanac/Index/wolf_almanac_idex_page_2.tscn")
+@export var indexpage3 = load("res://Assets/Scences/UI/Wolf_Almanac/Index/wolf_almanac_idex_page_3.tscn")
+@export var indexpage4 = load("res://Assets/Scences/UI/Wolf_Almanac/Index/wolf_almanac_idex_page_4.tscn")
+@export var indexpage5 = load("res://Assets/Scences/UI/Wolf_Almanac/Index/wolf_almanac_idex_page_5.tscn")
+@export var indexpage6 = load("res://Assets/Scences/UI/Wolf_Almanac/Index/wolf_almanac_idex_page_6.tscn")
+@export var indexpage7 = load("res://Assets/Scences/UI/Wolf_Almanac/Index/wolf_almanac_idex_page_7.tscn")
+@export var indexpage8 = load("res://Assets/Scences/UI/Wolf_Almanac/Index/wolf_almanac_idex_page_8.tscn")
+@export var indexpage9 = load("res://Assets/Scences/UI/Wolf_Almanac/Index/wolf_almanac_idex_page_9.tscn")
+
 
 #Button Click Sound
 @onready var buttonsound = $Button_Click
 
 
 
+"""Next Button"""
+#Next Button Page 2
+func _on_next_pressed():
+	buttonsound.play()
+	get_tree().change_scene_to_packed(indexpage2)
 
+#Next Buttton Page 3
+func _on_next_button_page_2_pressed():
+	buttonsound.play()
+	get_tree().change_scene_to_packed(indexpage3)
+
+#Next Button Page  4
+func _on_next_button_page_3_pressed():
+	buttonsound.play()
+	get_tree().change_scene_to_packed(indexpage4)
+
+#Next Button Page 5
+func _on_next_button_page_4_pressed():
+	buttonsound.play()
+	get_tree().change_scene_to_packed(indexpage5)
+	
+#Next Button Page 6
+func _on_next_button_page_5_pressed():
+	buttonsound.play()
+	get_tree().change_scene_to_packed(indexpage6)
+	
+#Next Button Page 7
+func _on_next_button_page_6_pressed():
+	buttonsound.play()
+	get_tree().change_scene_to_packed(indexpage7)
+
+#Next Button Page 8
+func _on_next_button_page_7_pressed():
+	buttonsound.play()
+	get_tree().change_scene_to_packed(indexpage8)
+
+#Next Button Page 9
+func _on_next_button_page_8_pressed():
+	buttonsound.play()
+	get_tree().change_scene_to_packed(indexpage9)
+
+"""Back Button"""
+#Back Button Page 1
+func _on_back_button_page_2_pressed():
+	buttonsound.play()
+	get_tree().change_scene_to_packed(indexpage1)
+	
+#Back Button Page 2
+func _on_back_button_page_3_pressed():
+	buttonsound.play()
+	get_tree().change_scene_to_packed(indexpage2)
+
+#Back Button Page 3
+func _on_back_button_page_4_pressed():
+	buttonsound.play()
+	get_tree().change_scene_to_packed(indexpage3)
+
+#Back Button Page 4
+func _on_back_button_page_5_pressed():
+	buttonsound.play()
+	get_tree().change_scene_to_packed(indexpage4)
+
+#Back Button Page 5
+func _on_back_button_page_6_pressed():
+	buttonsound.play()
+	get_tree().change_scene_to_packed(indexpage5)
+
+#Back Button Page 6
+func _on_back_button_page_7_pressed():
+	buttonsound.play()
+	get_tree().change_scene_to_packed(indexpage6)
+
+#Back Button Page 7
+func _on_back_button_page_8_pressed():
+	buttonsound.play()
+	get_tree().change_scene_to_packed(indexpage7)
+
+#Back button Page 8
+func _on_back_button_page_9_pressed():
+	buttonsound.play()
+	get_tree().change_scene_to_packed(indexpage8)

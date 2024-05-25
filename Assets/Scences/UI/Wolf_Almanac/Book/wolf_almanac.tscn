@@ -1,11 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://goohlrisktw6"]
+[gd_scene load_steps=12 format=3 uid="uid://goohlrisktw6"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Wolf Alamanac/Book/Wolf_Alamanac.gd" id="1_xueej"]
 [ext_resource type="Texture2D" uid="uid://ds5e17l3qjw75" path="res://Assets/Image/images/Book Open/opened_notebook_isolated_on_background.png" id="1_yvege"]
 [ext_resource type="FontFile" uid="uid://bv6xsykw7vcai" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="2_t802j"]
 [ext_resource type="FontFile" uid="uid://ccpiomxr4hnwi" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="3_0i132"]
 [ext_resource type="FontFile" uid="uid://bsmkjcem4b3i1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="5_lsxhx"]
-[ext_resource type="Texture2D" uid="uid://dhongn88fciri" path="res://Assets/Image/images/Buttons/right-arrow.png" id="5_o7qkd"]
 [ext_resource type="FontFile" uid="uid://b37vftxdinymo" path="res://Assets/Fonts/DisposableDroidBB_ital.ttf" id="6_7vj1j"]
 
 [sub_resource type="Gradient" id="Gradient_8nkh0"]
@@ -39,252 +38,241 @@ tracks/1/keys = {
 "points": PackedFloat32Array(-720, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0, 1.8)
 }
-tracks/2/type = "bezier"
+tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Back_Button:position:y")
+tracks/2/path = NodePath("Wolf_Picture:self_modulate")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(-714, -0.25, 0, 0.25, 0, 704, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0, 1.8)
+"times": PackedFloat32Array(1.6, 2),
+"transitions": PackedFloat32Array(2.37841, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Wolf_Picture:self_modulate")
+tracks/3/path = NodePath("Name_Wolf:self_modulate")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(1.6, 2),
-"transitions": PackedFloat32Array(2.37841, 1),
+"times": PackedFloat32Array(1.7, 2),
+"transitions": PackedFloat32Array(2.07053, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Name_Wolf:self_modulate")
+tracks/4/path = NodePath("Name_Species:self_modulate")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(1.7, 2),
-"transitions": PackedFloat32Array(2.07053, 1),
+"transitions": PackedFloat32Array(3.73213, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Name_Species:self_modulate")
+tracks/5/path = NodePath("Species:self_modulate")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(1.7, 2),
-"transitions": PackedFloat32Array(3.73213, 1),
+"transitions": PackedFloat32Array(4.75683, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Species:self_modulate")
+tracks/6/path = NodePath("Height_sizE:self_modulate")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
 "times": PackedFloat32Array(1.7, 2),
-"transitions": PackedFloat32Array(4.75683, 1),
+"transitions": PackedFloat32Array(5.09825, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("Height_sizE:self_modulate")
+tracks/7/path = NodePath("Height_Label:self_modulate")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
 "times": PackedFloat32Array(1.7, 2),
-"transitions": PackedFloat32Array(5.09825, 1),
+"transitions": PackedFloat32Array(6.06286, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("Height_Label:self_modulate")
+tracks/8/path = NodePath("Weight_Label:self_modulate")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
 "times": PackedFloat32Array(1.7, 2),
-"transitions": PackedFloat32Array(6.06286, 1),
+"transitions": PackedFloat32Array(8.2821, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("Weight_Label:self_modulate")
+tracks/9/path = NodePath("Weight:self_modulate")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
 "times": PackedFloat32Array(1.7, 2),
-"transitions": PackedFloat32Array(8.2821, 1),
+"transitions": PackedFloat32Array(7.21, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("Weight:self_modulate")
+tracks/10/path = NodePath("Length_size:self_modulate")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
 "times": PackedFloat32Array(1.7, 2),
-"transitions": PackedFloat32Array(7.21, 1),
+"transitions": PackedFloat32Array(9.18957, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("Length_size:self_modulate")
+tracks/11/path = NodePath("Leght_Label:self_modulate")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
 "times": PackedFloat32Array(1.7, 2),
-"transitions": PackedFloat32Array(9.18957, 1),
+"transitions": PackedFloat32Array(10.1965, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Leght_Label:self_modulate")
+tracks/12/path = NodePath("CONSERVATION STATUS:self_modulate")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
 "times": PackedFloat32Array(1.7, 2),
-"transitions": PackedFloat32Array(10.1965, 1),
+"transitions": PackedFloat32Array(11.3137, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("CONSERVATION STATUS:self_modulate")
+tracks/13/path = NodePath("Status:self_modulate")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
 "times": PackedFloat32Array(1.7, 2),
-"transitions": PackedFloat32Array(11.3137, 1),
+"transitions": PackedFloat32Array(12.5533, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("Status:self_modulate")
+tracks/14/path = NodePath("Region:self_modulate")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/keys = {
 "times": PackedFloat32Array(1.7, 2),
-"transitions": PackedFloat32Array(12.5533, 1),
+"transitions": PackedFloat32Array(13.9288, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("Region:self_modulate")
+tracks/15/path = NodePath("Region_List:self_modulate")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
 "times": PackedFloat32Array(1.7, 2),
-"transitions": PackedFloat32Array(13.9288, 1),
+"transitions": PackedFloat32Array(14.9285, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 tracks/16/type = "value"
 tracks/16/imported = false
 tracks/16/enabled = true
-tracks/16/path = NodePath("Region_List:self_modulate")
+tracks/16/path = NodePath("Morphology:self_modulate")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/keys = {
 "times": PackedFloat32Array(1.7, 2),
-"transitions": PackedFloat32Array(14.9285, 1),
+"transitions": PackedFloat32Array(16, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 tracks/17/type = "value"
 tracks/17/imported = false
 tracks/17/enabled = true
-tracks/17/path = NodePath("Morphology:self_modulate")
+tracks/17/path = NodePath("MORPHOLOGY_details:self_modulate")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/keys = {
 "times": PackedFloat32Array(1.7, 2),
-"transitions": PackedFloat32Array(16, 1),
+"transitions": PackedFloat32Array(16.5642, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 tracks/18/type = "value"
 tracks/18/imported = false
 tracks/18/enabled = true
-tracks/18/path = NodePath("MORPHOLOGY_details:self_modulate")
+tracks/18/path = NodePath("Diets:self_modulate")
 tracks/18/interp = 1
 tracks/18/loop_wrap = true
 tracks/18/keys = {
 "times": PackedFloat32Array(1.7, 2),
-"transitions": PackedFloat32Array(16.5642, 1),
+"transitions": PackedFloat32Array(17.1483, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 tracks/19/type = "value"
 tracks/19/imported = false
 tracks/19/enabled = true
-tracks/19/path = NodePath("Diets:self_modulate")
+tracks/19/path = NodePath("Diets_List:self_modulate")
 tracks/19/interp = 1
 tracks/19/loop_wrap = true
 tracks/19/keys = {
 "times": PackedFloat32Array(1.7, 2),
-"transitions": PackedFloat32Array(17.1483, 1),
+"transitions": PackedFloat32Array(18.3791, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 tracks/20/type = "value"
 tracks/20/imported = false
 tracks/20/enabled = true
-tracks/20/path = NodePath("Diets_List:self_modulate")
+tracks/20/path = NodePath("Wolf_Picture:position")
 tracks/20/interp = 1
 tracks/20/loop_wrap = true
 tracks/20/keys = {
-"times": PackedFloat32Array(1.7, 2),
-"transitions": PackedFloat32Array(18.3791, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
-}
-tracks/21/type = "value"
-tracks/21/imported = false
-tracks/21/enabled = true
-tracks/21/path = NodePath("Wolf_Picture:position")
-tracks/21/interp = 1
-tracks/21/loop_wrap = true
-tracks/21/keys = {
 "times": PackedFloat32Array(1.3, 1.5),
 "transitions": PackedFloat32Array(4.43828, 7.72748),
 "update": 0,
 "values": [Vector2(-360, 450), Vector2(156, 26)]
 }
-tracks/22/type = "value"
-tracks/22/imported = false
-tracks/22/enabled = true
-tracks/22/path = NodePath("fade_effect:position")
-tracks/22/interp = 1
-tracks/22/loop_wrap = true
-tracks/22/keys = {
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("fade_effect:position")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
 "times": PackedFloat32Array(0, 1.8),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
@@ -337,23 +325,26 @@ script = ExtResource("1_xueej")
 [node name="Book_Texturee" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(1280, 0)
 layout_mode = 0
+offset_top = -720.0
 offset_right = 1280.0
-offset_bottom = 903.0
+offset_bottom = 183.0
 texture = ExtResource("1_yvege")
 expand_mode = 1
 metadata/_edit_lock_ = true
 
 [node name="Wolf_Picture" type="TextureRect" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 custom_minimum_size = Vector2(430, 615)
 layout_mode = 0
-offset_left = 165.0
-offset_top = 26.0
-offset_right = 595.0
-offset_bottom = 641.0
+offset_left = -360.0
+offset_top = 450.0
+offset_right = 70.0
+offset_bottom = 1065.0
 texture = SubResource("GradientTexture2D_ne1gk")
 expand_mode = 1
 
 [node name="Name_Wolf" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.583
@@ -373,6 +364,7 @@ vertical_alignment = 1
 metadata/_edit_group_ = true
 
 [node name="Name_Species" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.517
@@ -390,6 +382,7 @@ text = "SPECIES"
 vertical_alignment = 1
 
 [node name="Species" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 841.0
 offset_top = 79.0
@@ -402,6 +395,7 @@ text = "Species_Name"
 vertical_alignment = 1
 
 [node name="Height_sizE" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.516
@@ -419,6 +413,7 @@ text = "HEIGHT"
 vertical_alignment = 1
 
 [node name="Height_Label" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 custom_minimum_size = Vector2(175, 25)
 layout_mode = 1
 anchors_preset = -1
@@ -437,6 +432,7 @@ text = "HEIGHT SIZE"
 vertical_alignment = 1
 
 [node name="Weight" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.517
@@ -454,6 +450,7 @@ text = "WEIGHT"
 vertical_alignment = 1
 
 [node name="Weight_Label" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 custom_minimum_size = Vector2(175, 25)
 layout_mode = 1
 anchors_preset = -1
@@ -489,6 +486,7 @@ text = "LENGHT"
 vertical_alignment = 1
 
 [node name="Leght_Label" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 custom_minimum_size = Vector2(175, 25)
 layout_mode = 1
 anchors_preset = -1
@@ -507,6 +505,7 @@ text = "LENGHT SIZE"
 vertical_alignment = 1
 
 [node name="CONSERVATION STATUS" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.519
@@ -526,6 +525,7 @@ autowrap_mode = 3
 metadata/_edit_lock_ = true
 
 [node name="Status" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.656
@@ -543,6 +543,7 @@ text = "STATUS"
 vertical_alignment = 1
 
 [node name="Region" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.516
@@ -561,6 +562,7 @@ vertical_alignment = 1
 metadata/_edit_lock_ = true
 
 [node name="Region_List" type="RichTextLabel" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 841.0
 offset_top = 370.0
@@ -581,6 +583,7 @@ fit_content = true
 scroll_active = false
 
 [node name="Morphology" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.516
@@ -600,6 +603,7 @@ vertical_alignment = 1
 metadata/_edit_lock_ = true
 
 [node name="MORPHOLOGY_details" type="RichTextLabel" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 841.0
 offset_top = 455.0
@@ -620,6 +624,7 @@ fit_content = true
 scroll_active = false
 
 [node name="Diets" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.516
@@ -638,6 +643,7 @@ vertical_alignment = 1
 metadata/_edit_lock_ = true
 
 [node name="Diets_List" type="RichTextLabel" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 841.0
 offset_top = 564.0
@@ -658,27 +664,14 @@ fit_content = true
 scroll_active = false
 metadata/_edit_lock_ = true
 
-[node name="Back_Button" type="Button" parent="."]
-custom_minimum_size = Vector2(64, 64)
-layout_direction = 1
-layout_mode = 0
-offset_left = 180.0
-offset_top = 704.0
-offset_right = 244.0
-offset_bottom = 768.0
-rotation = 3.14159
-icon = ExtResource("5_o7qkd")
-flat = true
-icon_alignment = 1
-expand_icon = true
-
 [node name="fade_effect" type="ColorRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 31120.0
-offset_bottom = 29660.0
+offset_top = -125.0
+offset_right = 37520.0
+offset_bottom = 34110.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0)
@@ -689,5 +682,3 @@ deterministic = true
 libraries = {
 "": SubResource("AnimationLibrary_g5a1p")
 }
-
-[connection signal="pressed" from="Back_Button" to="." method="_on_back_button_pressed"]

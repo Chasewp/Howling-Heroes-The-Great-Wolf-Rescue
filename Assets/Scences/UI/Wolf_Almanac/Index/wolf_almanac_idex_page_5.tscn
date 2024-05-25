@@ -162,3 +162,6 @@ text = "Page 5 of 9"
 
 [node name="Button_Click" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("6_4igvt")
+
+[connection signal="pressed" from="Background/Next_Button_Page_5" to="." method="_on_next_button_page_5_pressed"]
+[connection signal="pressed" from="Background/Back_Button_Page_5" to="." method="_on_back_button_page_5_pressed"]

@@ -26,6 +26,7 @@ Mr_Wolf: Your Objective Is To Liberate All The Wolves From Their Captors. In The
 Mr_Wolf: Once These Threats Are Vanquished, Locate The Key Secured Within A Chest.  The Possession Of This Key Will Grant You Access To The Wolves' Enclosure, Allowing For Their Escape.
 [voice path="res://Assets/Music/Dialogues/How to Play/How to play 8.mp3" volume="0.0"]
 Mr_Wolf: With this knowledge bestowed upon you, may your quest be successful! Farewell, and good fortune in your endeavors.
+[voice volume="0.0"]
 leave Mr_Wolf [animation="Fade Out Down" length="0.6" wait="true"]
 [music fade="0.0" volume="0.0"]
 [signal arg="Change_Scence"]

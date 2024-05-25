@@ -1,20 +1,20 @@
-[gd_scene load_steps=7 format=3 uid="uid://bgw77dqvxt5fr"]
+[gd_scene load_steps=7 format=3 uid="uid://ce81cd2lgp6yp"]
 
-[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Wolf Alamanac/Index/Wolf_Almanac_Idex.gd" id="1_rlcdf"]
-[ext_resource type="Texture2D" uid="uid://dkcpwot8r1ksg" path="res://Assets/Image/images/Background/Wolf Almanac Index/Wood Texture.png" id="2_33m6h"]
-[ext_resource type="FontFile" uid="uid://bv6xsykw7vcai" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="3_dism6"]
-[ext_resource type="FontFile" uid="uid://bsmkjcem4b3i1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="4_7g2dc"]
-[ext_resource type="FontFile" uid="uid://ccpiomxr4hnwi" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="5_yh7em"]
-[ext_resource type="AudioStream" uid="uid://cp0mdrgknw0x1" path="res://Assets/Music/Start_Buton_Sound/Start_Buton_Sound.mp3" id="6_jxf38"]
+[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Wolf Alamanac/Index/Wolf_Almanac_Idex.gd" id="1_575qs"]
+[ext_resource type="Texture2D" uid="uid://dkcpwot8r1ksg" path="res://Assets/Image/images/Background/Wolf Almanac Index/Wood Texture.png" id="2_ole10"]
+[ext_resource type="FontFile" uid="uid://bv6xsykw7vcai" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="3_m33v2"]
+[ext_resource type="FontFile" uid="uid://bsmkjcem4b3i1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="4_borbn"]
+[ext_resource type="FontFile" uid="uid://ccpiomxr4hnwi" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="5_3ymxq"]
+[ext_resource type="AudioStream" uid="uid://cp0mdrgknw0x1" path="res://Assets/Music/Start_Buton_Sound/Start_Buton_Sound.mp3" id="6_7nlv5"]
 
-[node name="WolfAlmanacIdexPage2" type="Control"]
+[node name="WolfAlmanacIdexPage5" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_rlcdf")
+script = ExtResource("1_575qs")
 
 [node name="Background" type="TextureRect" parent="."]
 layout_mode = 1
@@ -23,7 +23,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_33m6h")
+texture = ExtResource("2_ole10")
 expand_mode = 1
 
 [node name="Tittle_Label" type="Label" parent="Background"]
@@ -41,7 +41,7 @@ theme_override_colors/font_outline_color = Color(0.976471, 0.592157, 0.415686, 1
 theme_override_constants/shadow_offset_x = 10
 theme_override_constants/shadow_offset_y = 5
 theme_override_constants/outline_size = 9
-theme_override_fonts/font = ExtResource("3_dism6")
+theme_override_fonts/font = ExtResource("3_m33v2")
 theme_override_font_sizes/font_size = 44
 text = "Wolf Species List
 "
@@ -58,61 +58,61 @@ theme_override_constants/h_separation = 25
 theme_override_constants/v_separation = 10
 columns = 3
 
-[node name="WolfVBoxContainer4" type="VBoxContainer" parent="Background/Alamac Index"]
+[node name="WolfVBoxContainer22" type="VBoxContainer" parent="Background/Alamac Index"]
 custom_minimum_size = Vector2(245, 245)
 layout_direction = 1
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Wolf 4" type="TextureRect" parent="Background/Alamac Index/WolfVBoxContainer4"]
+[node name="Wolf 22" type="TextureRect" parent="Background/Alamac Index/WolfVBoxContainer22"]
 custom_minimum_size = Vector2(385, 555)
 layout_direction = 2
 layout_mode = 2
 expand_mode = 1
 
-[node name="Label_Wolf 4" type="Label" parent="Background/Alamac Index/WolfVBoxContainer4"]
+[node name="Label_Wolf 22" type="Label" parent="Background/Alamac Index/WolfVBoxContainer22"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("3_dism6")
+theme_override_fonts/font = ExtResource("3_m33v2")
 theme_override_font_sizes/font_size = 24
 text = "Wolf Label"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="WolfVBoxContainer5" type="VBoxContainer" parent="Background/Alamac Index"]
+[node name="WolfVBoxContainer23" type="VBoxContainer" parent="Background/Alamac Index"]
 layout_mode = 2
 
-[node name="Wolf 5" type="TextureRect" parent="Background/Alamac Index/WolfVBoxContainer5"]
+[node name="Wolf 23" type="TextureRect" parent="Background/Alamac Index/WolfVBoxContainer23"]
 custom_minimum_size = Vector2(385, 555)
 layout_direction = 2
 layout_mode = 2
 expand_mode = 1
 
-[node name="Label Wolf5" type="Label" parent="Background/Alamac Index/WolfVBoxContainer5"]
+[node name="Label Wolf23" type="Label" parent="Background/Alamac Index/WolfVBoxContainer23"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("3_dism6")
+theme_override_fonts/font = ExtResource("3_m33v2")
 theme_override_font_sizes/font_size = 24
 text = "Wolf Label"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="WolfVBoxContainer6" type="VBoxContainer" parent="Background/Alamac Index"]
+[node name="VBoxContainer24" type="VBoxContainer" parent="Background/Alamac Index"]
 layout_mode = 2
 
-[node name="Wolf 6" type="TextureRect" parent="Background/Alamac Index/WolfVBoxContainer6"]
+[node name="Wolf 24" type="TextureRect" parent="Background/Alamac Index/VBoxContainer24"]
 custom_minimum_size = Vector2(385, 555)
 layout_direction = 2
 layout_mode = 2
 expand_mode = 1
 
-[node name="Label Wolf6" type="Label" parent="Background/Alamac Index/WolfVBoxContainer6"]
+[node name="Label Wolf24" type="Label" parent="Background/Alamac Index/VBoxContainer24"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("3_dism6")
+theme_override_fonts/font = ExtResource("3_m33v2")
 theme_override_font_sizes/font_size = 24
 text = "Wolf Label"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Next_Button_Page_2" type="Button" parent="Background"]
+[node name="Next_Button_Page_8" type="Button" parent="Background"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.927
@@ -123,12 +123,12 @@ offset_left = 0.439941
 offset_top = 0.0799561
 offset_right = -0.600098
 offset_bottom = -0.320068
-theme_override_fonts/font = ExtResource("4_7g2dc")
+theme_override_fonts/font = ExtResource("4_borbn")
 theme_override_font_sizes/font_size = 24
 text = "Next"
 flat = true
 
-[node name="Back_Button_Page_2" type="Button" parent="Background"]
+[node name="Back_Button_Page_8" type="Button" parent="Background"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.075
@@ -138,7 +138,7 @@ anchor_bottom = 0.931
 offset_top = 0.0799561
 offset_right = 0.23999
 offset_bottom = -0.320068
-theme_override_fonts/font = ExtResource("4_7g2dc")
+theme_override_fonts/font = ExtResource("4_borbn")
 theme_override_font_sizes/font_size = 24
 text = "Back"
 flat = true
@@ -156,12 +156,12 @@ offset_right = -12.0
 offset_bottom = -0.200073
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_fonts/font = ExtResource("5_yh7em")
+theme_override_fonts/font = ExtResource("5_3ymxq")
 theme_override_font_sizes/font_size = 24
-text = "Page 2 of 9"
+text = "Page 8 of 9"
 
 [node name="Button_Click" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("6_jxf38")
+stream = ExtResource("6_7nlv5")
 
-[connection signal="pressed" from="Background/Next_Button_Page_2" to="." method="_on_next_button_page_2_pressed"]
-[connection signal="pressed" from="Background/Back_Button_Page_2" to="." method="_on_back_button_page_2_pressed"]
+[connection signal="pressed" from="Background/Next_Button_Page_8" to="." method="_on_next_button_page_8_pressed"]
+[connection signal="pressed" from="Background/Back_Button_Page_8" to="." method="_on_back_button_page_8_pressed"]

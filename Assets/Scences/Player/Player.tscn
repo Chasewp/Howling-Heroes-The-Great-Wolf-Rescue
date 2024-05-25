@@ -78,6 +78,7 @@ position = Vector2(3.5, 56)
 shape = SubResource("RectangleShape2D_47ieg")
 
 [node name="Wolf almanac" type="CanvasLayer" parent="."]
+visible = false
 script = ExtResource("2_kk1nf")
 
 [node name="WolfAlmanacIdex" parent="Wolf almanac" instance=ExtResource("2_ukp57")]

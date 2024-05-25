@@ -5,7 +5,7 @@
 [ext_resource type="FontFile" uid="uid://bv6xsykw7vcai" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="2_vgvp7"]
 [ext_resource type="FontFile" uid="uid://bsmkjcem4b3i1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="4_vah5o"]
 [ext_resource type="FontFile" uid="uid://ccpiomxr4hnwi" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="5_t037p"]
-[ext_resource type="AudioStream" uid="uid://cp0mdrgknw0x1" path="res://Assets/Music/Start_Buton_Sound/Start_Buton_Sound.mp3" id="6_ct74t"]
+[ext_resource type="AudioStream" uid="uid://c358vsk45c50y" path="res://Assets/Music/Click button.mp3" id="6_qxd5a"]
 
 [node name="WolfAlmanacPage1Idex" type="Control"]
 layout_mode = 3
@@ -147,4 +147,6 @@ theme_override_font_sizes/font_size = 24
 text = "Page 1 of 9"
 
 [node name="Button_Click" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("6_ct74t")
+stream = ExtResource("6_qxd5a")
+
+[connection signal="pressed" from="Background/Next" to="." method="_on_next_pressed"]
