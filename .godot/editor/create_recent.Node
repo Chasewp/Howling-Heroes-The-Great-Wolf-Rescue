@@ -1,14 +1,15 @@
+AudioStreamPlayer2D
 CollisionShape2D
+AnimationTree
+AnimationPlayer
 TextureRect
 RichTextLabel
 Label
 Camera2D
 TileMap
-AnimationPlayer
 Button
 VBoxContainer
 CanvasLayer
 Popup
 ProgressBar
 HBoxContainer
-LineEdit
