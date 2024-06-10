@@ -1,7 +1,6 @@
-[gd_scene load_steps=44 format=3 uid="uid://w8tfinbfyqkd"]
+[gd_scene load_steps=47 format=3 uid="uid://w8tfinbfyqkd"]
 
-[ext_resource type="Script" path="res://Assets/Script/Class/Player/Player.gd" id="1_tvrgc"]
-[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Wolf Alamanac/Menu/Wolf almanac.gd" id="2_kk1nf"]
+[ext_resource type="Script" path="res://Assets/Script/Class/Character/Player/Player.gd" id="1_ki55x"]
 [ext_resource type="Texture2D" uid="uid://bsl22rpg7rw2p" path="res://Assets/Image/Character/Player/templerun/Iddle/Idle__000.png" id="2_mrea1"]
 [ext_resource type="PackedScene" uid="uid://bo8ky70qah4nu" path="res://Assets/Scences/UI/Wolf_Almanac/Index/Wolf_Almanac_Idex_Page 1.tscn" id="2_ukp57"]
 [ext_resource type="Texture2D" uid="uid://dbqqxkfm1a1rg" path="res://Assets/Image/Character/Player/templerun/Iddle/Idle__001.png" id="3_iqndt"]
@@ -36,13 +35,14 @@
 [ext_resource type="Texture2D" uid="uid://fvs3r2r11uwd" path="res://Assets/Image/Character/Player/templerun/Jump/Jump__008.png" id="31_s787f"]
 [ext_resource type="Texture2D" uid="uid://c8lpxh2wtvq4l" path="res://Assets/Image/Character/Player/templerun/Jump/Jump__009.png" id="32_hmu7j"]
 [ext_resource type="AudioStream" uid="uid://c1m18l8e756gt" path="res://Assets/Music/Player/headbutt-101soundboards.Metalgarurumonmp3.mp3" id="34_0q3ty"]
+[ext_resource type="PackedScene" uid="uid://bli5mfb2fgf2e" path="res://Assets/Scences/UI/Inventory/inventory.tscn" id="37_h5ysl"]
 
 [sub_resource type="Animation" id="Animation_8d1l8"]
 resource_name = "Dead"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Player_Char:texture")
+tracks/0/path = NodePath("Sprite2D:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -54,7 +54,7 @@ tracks/0/keys = {
 tracks/1/type = "audio"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Player_Char/SFX")
+tracks/1/path = NodePath("Sprite2D/SFX")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -67,13 +67,44 @@ tracks/1/keys = {
 }
 tracks/1/use_blend = true
 
+[sub_resource type="Animation" id="Animation_ohcuy"]
+resource_name = "Ground"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("28_x0hng"), ExtResource("29_ng8k0"), ExtResource("30_vnuq8"), ExtResource("31_s787f"), ExtResource("32_hmu7j"), ExtResource("2_mrea1")]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D/SFX")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("34_0q3ty")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/1/use_blend = true
+
 [sub_resource type="Animation" id="Animation_gwxgm"]
 resource_name = "Iddle"
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Player_Char:texture")
+tracks/0/path = NodePath("Sprite2D:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -89,7 +120,7 @@ length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Player_Char:texture")
+tracks/0/path = NodePath("Sprite2D:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -101,7 +132,7 @@ tracks/0/keys = {
 tracks/1/type = "audio"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Player_Char/SFX")
+tracks/1/path = NodePath("Sprite2D/SFX")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -119,7 +150,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Player_Char:texture")
+tracks/0/path = NodePath("Sprite2D:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -128,37 +159,6 @@ tracks/0/keys = {
 "update": 1,
 "values": [ExtResource("2_mrea1")]
 }
-
-[sub_resource type="Animation" id="Animation_ohcuy"]
-resource_name = "Ground"
-length = 0.6
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Player_Char:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("28_x0hng"), ExtResource("29_ng8k0"), ExtResource("30_vnuq8"), ExtResource("31_s787f"), ExtResource("32_hmu7j"), ExtResource("2_mrea1")]
-}
-tracks/1/type = "audio"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Player_Char/SFX")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"clips": [{
-"end_offset": 0.0,
-"start_offset": 0.0,
-"stream": ExtResource("34_0q3ty")
-}],
-"times": PackedFloat32Array(0)
-}
-tracks/1/use_blend = true
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_71fy2"]
 _data = {
@@ -169,35 +169,82 @@ _data = {
 "RESET": SubResource("Animation_a507v")
 }
 
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_t3j15"]
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_n8uk2"]
 radius = 24.0
 height = 120.0
 
-[node name="Player" type="CharacterBody2D"]
-script = ExtResource("1_tvrgc")
-name_character = "<null>"
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6vr3q"]
+size = Vector2(55, 58)
 
-[node name="Player_Char" type="Sprite2D" parent="."]
+[sub_resource type="GDScript" id="GDScript_8rbut"]
+script/source = "extends CanvasLayer
+
+func _process(delta):
+	if Input.is_action_just_pressed(\"open_wolf_almanac\"):
+		self.visible =!self.visible
+		
+"
+
+[node name="Player" type="CharacterBody2D"]
+process_mode = 3
+collision_layer = 0
+collision_mask = 7
+script = ExtResource("1_ki55x")
+_acceleration = 10.0
+_deceleration = 5.0
+_max_health = 100
+_attack_damage = 5
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("2_mrea1")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Player_Char"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
 root_node = NodePath("../..")
 libraries = {
 "": SubResource("AnimationLibrary_71fy2")
 }
 
-[node name="AnimationTree" type="AnimationTree" parent="Player_Char"]
+[node name="AnimationTree" type="AnimationTree" parent="Sprite2D"]
+tree_root = SubResource("AnimationNodeStateMachine_t3j15")
 
-[node name="SFX" type="AudioStreamPlayer2D" parent="Player_Char"]
+[node name="SFX" type="AudioStreamPlayer2D" parent="Sprite2D"]
 scale = Vector2(4, 4)
 bus = &"Sound Effects"
 
+[node name="Shape_fullbody" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_n8uk2")
+
+[node name="Hurt_Box" type="Area2D" parent="."]
+
+[node name="Invicible" type="Timer" parent="Hurt_Box"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurt_Box"]
+shape = SubResource("CapsuleShape2D_n8uk2")
+debug_color = Color(0.741176, 0.282353, 0.921569, 0.419608)
+
+[node name="Hit_Box" type="Area2D" parent="."]
+
+[node name="InputBuffer" type="Timer" parent="Hit_Box"]
+
+[node name="Cooldown" type="Timer" parent="Hit_Box"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hit_Box"]
+position = Vector2(3.5, 32)
+shape = SubResource("RectangleShape2D_6vr3q")
+debug_color = Color(1, 0, 0, 0.682353)
+
 [node name="Wolf almanac" type="CanvasLayer" parent="."]
 visible = false
-script = ExtResource("2_kk1nf")
+script = SubResource("GDScript_8rbut")
 
 [node name="WolfAlmanacIdex" parent="Wolf almanac" instance=ExtResource("2_ukp57")]
 
-[node name="Shape_fullbody" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_n8uk2")
+[node name="Inventory" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="Inventory_UI" parent="Inventory" instance=ExtResource("37_h5ysl")]
+
+[connection signal="area_entered" from="Hit_Box" to="." method="_on_hit_box_area_entered"]

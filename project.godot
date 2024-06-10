@@ -19,7 +19,7 @@ config/use_custom_user_dir=true
 config/custom_user_dir_name="HOWLING HEROES - THE GREAT WOLF RESCUE"
 config/auto_accept_quit=false
 config/quit_on_go_back=false
-config/features=PackedStringArray("4.2")
+config/features=PackedStringArray("4.2", "C#")
 run/max_fps=144
 config/icon="res://Assets/Image/Logo/Logo Project Howling Heroes The Great Wolf Rescue.png"
 config/size/always_on_top=false
@@ -30,7 +30,8 @@ LoadingScreen="*res://Assets/Script/Controller/UI/Loading/loading_screen.gd"
 Dialogic="*res://addons/dialogic/Other/DialogicGameHandler.gd"
 SaveSettings="*res://Assets/Script/Controller/Save/Settings/save_settings.gd"
 GlobalSettings="*res://Assets/Script/Controller/Save/Global_Settings/Global_Settings.gd"
-user="*res://Assets/Script/Class/Player/Player.gd"
+user="*res://Assets/Script/Class/Character/Player/Player.gd"
+GlobalTilesets="*res://Assets/Script/Global_Tilesets/Global_Tilesets.gd"
 
 [dialogic]
 
@@ -142,13 +143,15 @@ text/skippable_delay=0.1
 text/input_action="interact"
 save/autosave=true
 directories/dch_directory={
-"Mr_Wolf": "res://Assets/Dialogue/Character/Mr_Wolf.dch"
+"Mr_Wolf": "res://Assets/Dialogue/Character/Mr_Wolf.dch",
+"Player": "res://Assets/Dialogue/Character/Player.dch"
 }
 directories/dtl_directory={
 "How To Play": "res://Assets/Dialogue/TimeLines/How To Play.dtl",
-"Intro": "res://Assets/Dialogue/TimeLines/Intro.dtl"
+"Intro": "res://Assets/Dialogue/TimeLines/Intro.dtl",
+"Player": "res://Assets/Dialogue/TimeLines/Player.dtl"
 }
-layout/style_list=["res://Assets/Dialogue/Theme/Speaker_Mode.tres", "res://Assets/Dialogue/Theme/Pixelize_Visual_Novel.tres"]
+layout/style_list=["res://Assets/Dialogue/Theme/Speaker_Mode.tres", "res://Assets/Dialogue/Theme/Pixelize_Visual_Novel.tres", "res://Assets/Theme/Dialouge/Bubble_Dialogue.tres"]
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
 text/text_reveal_skip_delay=0.1
@@ -194,7 +197,7 @@ move_right={
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":68,"key_label":0,"unicode":100,"echo":false,"script":null)
 ]
 }
-move_up={
+Jump={
 "deadzone": 0.5,
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":87,"key_label":0,"unicode":119,"echo":false,"script":null)
 ]
@@ -260,6 +263,7 @@ locale/test="en"
 
 [physics]
 
+2d/default_gravity=1254.4
 common/enable_pause_aware_picking=true
 
 [rendering]

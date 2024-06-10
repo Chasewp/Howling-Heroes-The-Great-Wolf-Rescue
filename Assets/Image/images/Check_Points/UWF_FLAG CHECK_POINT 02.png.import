@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgumxtlfrfytu"
-path="res://.godot/imported/wolf-den-cave-taiga-forest.png-a7a45ddf29a2427d18835da26f57a26d.ctex"
+uid="uid://dojnd4oun87e"
+path="res://.godot/imported/UWF_FLAG CHECK_POINT 02.png-0d2bfc33cb6b7abefbef6083d11822aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Image/images/Background/Bridge Stone Forest/wolf-den-cave-taiga-forest.png"
-dest_files=["res://.godot/imported/wolf-den-cave-taiga-forest.png-a7a45ddf29a2427d18835da26f57a26d.ctex"]
+source_file="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 02.png"
+dest_files=["res://.godot/imported/UWF_FLAG CHECK_POINT 02.png-0d2bfc33cb6b7abefbef6083d11822aa.ctex"]
 
 [params]
 

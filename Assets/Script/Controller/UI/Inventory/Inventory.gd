@@ -30,3 +30,4 @@ func getter_descriptions_items():
 func getter_quantity_items():
 	return quantity
 
+

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cuh433hdbnick"]
+
+[ext_resource type="Texture2D" uid="uid://d11xlirrkrj3v" path="res://Assets/Image/Weapon/Player/machete.png" id="1_uj46q"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rk5tw"]
+height = 98.0
+
+[node name="Machete" type="RigidBody2D"]
+mass = 0.6
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_uj46q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_rk5tw")

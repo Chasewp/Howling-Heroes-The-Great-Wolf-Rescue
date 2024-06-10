@@ -1,23 +1,26 @@
+res://Assets/Script/Controller/Save/Player
+res://Assets/Script/Controller/UI/Check_Poinys
+res://Assets/Script/Controller/UI/Biomes
+res://Assets/Scences/UI/Check_Points
+res://Assets/Dialogue/Character
+res://Assets/Dialogue/TimeLines
+res://Assets/Theme/Dialouge
+res://Assets/Scences/Stages/Taiga
+res://Assets/Image/images/tilesets
+res://Assets/Scences/UI/Location/Taiga
+res://Assets/Script/Global_Tilesets
+res://Assets/Script/Class/Character
 res://Assets/Script/Controller/UI/Wolf Alamanac/Menu
 res://Assets/Scences/UI/Inventory
 res://Assets/Script/Controller/UI/Inventory
 res://Assets/Script/Controller/UI/Location/Taiga
 res://Assets/Music/Dialogues/How to Play
 res://Assets/Script/Controller/UI/GUI
-res://Assets/Script/Class/Player
 res://Assets/Script/Controller/UI/Mission_Log
 res://Assets/Theme/Player_Name
 res://Assets/Scences/UI/Mission_Log
 res://Assets/Fonts
-res://Assets/Script/Controller/UI/Game Over
-res://Assets/Script/Controller/UI/Exit_Game_Over
-res://Assets/Scences/UI/Character_Name
-res://Assets/Script/Controller/UI/Player_Name
-res://Assets/Scences/UI/Wolf_Almanac/Index
-res://Assets/Music/Start_Buton_Sound
-res://Assets/Script/Controller/UI/Wolf Alamanac/Index
 C:/Users/Blizzard/AppData/Roaming/Godot/import_FBX2glTF/FBX2glTF-windows-x86_64
 C:/Program Files/Adobe/Adobe Photoshop 2024
 C:/Users/Blizzard/AppData/Local/Programs/Microsoft VS Code Insiders
-res://Assets/Image/Wolves/Gray Wolf
 C:/Users/Blizzard/Documents/GitHub/Howling Heroes _ The Great Wolf Rescue

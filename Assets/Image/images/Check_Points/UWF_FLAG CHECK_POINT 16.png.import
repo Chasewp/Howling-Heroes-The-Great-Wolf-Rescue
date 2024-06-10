@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bn6g6wxaf6npr"
-path="res://.godot/imported/corkboard.jpg-45f8c4235fad0cded69acbbf08743877.ctex"
+uid="uid://bk56pbmdtdpxn"
+path="res://.godot/imported/UWF_FLAG CHECK_POINT 16.png-0a76c915beac78ab81902512ba9d47dc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Image/images/Background/Bridge Stone Forest/corkboard.jpg"
-dest_files=["res://.godot/imported/corkboard.jpg-45f8c4235fad0cded69acbbf08743877.ctex"]
+source_file="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 16.png"
+dest_files=["res://.godot/imported/UWF_FLAG CHECK_POINT 16.png-0a76c915beac78ab81902512ba9d47dc.ctex"]
 
 [params]
 
