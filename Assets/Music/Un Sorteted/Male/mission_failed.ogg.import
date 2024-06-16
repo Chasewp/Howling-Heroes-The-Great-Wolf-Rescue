@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dufq2gay7bdjg"
+path="res://.godot/imported/mission_failed.ogg-e5cadff6479a2d3839338f8de9bb7cfc.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Male/mission_failed.ogg"
+dest_files=["res://.godot/imported/mission_failed.ogg-e5cadff6479a2d3839338f8de9bb7cfc.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

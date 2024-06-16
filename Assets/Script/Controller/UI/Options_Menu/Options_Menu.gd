@@ -104,7 +104,7 @@ func _on_sfx_slider_value_changed(value):
 func _on_save_button_pressed():
 	button_sound.play()
 	GlobalSettings._toggle_fullscreen(SaveSettings.Data_Settings.FullScreen_on)
-	
+	print("Settings Mode Saved")
 	LoadingScreen.load_scence("res://Assets/Scences/UI/Main_Menu/main_menu.tscn")
 
 func _on_audio_mouse_entered():

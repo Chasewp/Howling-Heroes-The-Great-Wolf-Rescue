@@ -219,20 +219,20 @@ var Data_Wolves = {
 		"Image" : "res://Assets/Image/Wolves/Vancouver Coastal Island Wolf/Wolf_Coast.jpg",
 		"Name_Wolf" : "Vancouver Coastal Island Wolf",
 		"Species":"Canis lupus crassodon",
-		"Height" : "",
-		"Weight" : "",
-		"Lenght" : "",
-		"Conservation_status" : "",
-		"Location" : "",
-		"Morphology": "",
-		"Diets" : ""
+		"Height" : "66.04 cm - 81.28 cm",
+		"Weight" : "27 kg",
+		"Lenght" : "121.92 cm - 152.40 cm",
+		"Conservation_status" : "Least Conscern",
+		"Location" : "Northern Vancouver Island, north of Campbell River and along the west coast of the Island down to Ucluelet",
+		"Morphology": "Mix of brown, grey, and black.",
+		"Diets" : "Fish and relatively small deer."
 	},
 
 	#Index 16
-			"" :{
-		"Image" : "",
-		"Name_Wolf" : "",
-		"Species":"",
+		"Hudson Bay Wolf" :{
+		"Image" : "Assets\Image\Wolves\Hudson Bay Wolf\1280px-Canis.lupus.occidentalis-ZOO.Olomouc3.jpg",
+		"Name_Wolf" : "Hudson Bay Wolf",
+		"Species":"Canis lupus hudsonicus",
 		"Height" : "",
 		"Weight" : "",
 		"Lenght" : "",

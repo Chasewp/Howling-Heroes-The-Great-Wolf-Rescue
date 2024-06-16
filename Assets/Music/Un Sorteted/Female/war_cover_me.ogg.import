@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bqv2mhuinkpwg"
+path="res://.godot/imported/war_cover_me.ogg-9b4838c8853ffa824602a01723db19a7.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Female/war_cover_me.ogg"
+dest_files=["res://.godot/imported/war_cover_me.ogg-9b4838c8853ffa824602a01723db19a7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

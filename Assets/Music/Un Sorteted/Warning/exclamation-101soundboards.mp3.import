@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c8ygb4nqbs03p"
+path="res://.godot/imported/exclamation-101soundboards.mp3-b012830178049c90d1ae6e94691374c2.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Warning/exclamation-101soundboards.mp3"
+dest_files=["res://.godot/imported/exclamation-101soundboards.mp3-b012830178049c90d1ae6e94691374c2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

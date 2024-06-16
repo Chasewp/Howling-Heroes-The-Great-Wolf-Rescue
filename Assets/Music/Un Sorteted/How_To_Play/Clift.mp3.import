@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://drg57s02op25p"
+path="res://.godot/imported/Clift.mp3-1e611aa874933528e6d61b5635d30476.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/How_To_Play/Clift.mp3"
+dest_files=["res://.godot/imported/Clift.mp3-1e611aa874933528e6d61b5635d30476.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

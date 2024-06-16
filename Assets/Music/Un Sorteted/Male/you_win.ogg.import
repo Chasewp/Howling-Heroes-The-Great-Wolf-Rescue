@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://brna5vnmcu5ce"
+path="res://.godot/imported/you_win.ogg-40456fbfa0a58f8b254309b4a829b1cc.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Male/you_win.ogg"
+dest_files=["res://.godot/imported/you_win.ogg-40456fbfa0a58f8b254309b4a829b1cc.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

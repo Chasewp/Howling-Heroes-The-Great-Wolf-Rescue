@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://foteax0uohed"
+path="res://.godot/imported/war_target_engaged.ogg-b0fcd43e233b38506712915b0840a109.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Female/war_target_engaged.ogg"
+dest_files=["res://.godot/imported/war_target_engaged.ogg-b0fcd43e233b38506712915b0840a109.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

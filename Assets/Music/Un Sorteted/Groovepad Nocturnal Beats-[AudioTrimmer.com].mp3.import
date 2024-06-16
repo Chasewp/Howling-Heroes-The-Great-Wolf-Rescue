@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b723scib02q86"
+path="res://.godot/imported/Groovepad Nocturnal Beats-[AudioTrimmer.com].mp3-76570614313305b5b3c1dc62560bff7f.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Groovepad Nocturnal Beats-[AudioTrimmer.com].mp3"
+dest_files=["res://.godot/imported/Groovepad Nocturnal Beats-[AudioTrimmer.com].mp3-76570614313305b5b3c1dc62560bff7f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

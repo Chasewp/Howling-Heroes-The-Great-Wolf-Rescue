@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://jeaxd765g6n3"
+path="res://.godot/imported/congratulations.ogg-e41dfd9733251e839e7c6d9a19b02ce6.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Male/congratulations.ogg"
+dest_files=["res://.godot/imported/congratulations.ogg-e41dfd9733251e839e7c6d9a19b02ce6.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

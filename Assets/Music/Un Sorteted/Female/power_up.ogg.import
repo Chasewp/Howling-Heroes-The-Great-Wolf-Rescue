@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cxq38jwo8ap7e"
+path="res://.godot/imported/power_up.ogg-d4c8041a8f03e650378c44978911a975.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Female/power_up.ogg"
+dest_files=["res://.godot/imported/power_up.ogg-d4c8041a8f03e650378c44978911a975.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

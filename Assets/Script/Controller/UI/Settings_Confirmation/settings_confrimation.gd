@@ -6,6 +6,7 @@ extends Control
 func _ready():
 	Warning.play()
 	
+#Yes Button
 func _on_confirmation_dialog_confirmed():
 	button_sound.play()
 	GlobalSettings._toggle_fullscreen(false)
@@ -15,7 +16,7 @@ func _on_confirmation_dialog_confirmed():
 	GlobalSettings._update_SFX_Volume(0)
 	GlobalSettings._update_dialogue_Volume(0)
 	LoadingScreen.load_scence("res://Assets/Scences/UI/Main_Menu/main_menu.tscn")
-	
+	print("Settings Mode Reset To Default")
 
 func _on_confirmation_dialog_canceled():
 	button_sound.play()

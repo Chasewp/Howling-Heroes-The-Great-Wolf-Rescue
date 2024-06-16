@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dodogssvyyyef"
+path="res://.godot/imported/wrong.ogg-846ff76a50edee10218edf65231d83f0.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Female/wrong.ogg"
+dest_files=["res://.godot/imported/wrong.ogg-846ff76a50edee10218edf65231d83f0.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

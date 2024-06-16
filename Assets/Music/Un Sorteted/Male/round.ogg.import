@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://qaqyaditcwv1"
+path="res://.godot/imported/round.ogg-818a514c6a84978b43f7db7ada672cfc.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Male/round.ogg"
+dest_files=["res://.godot/imported/round.ogg-818a514c6a84978b43f7db7ada672cfc.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

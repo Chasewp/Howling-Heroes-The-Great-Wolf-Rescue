@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://w8tfinbfyqkd"]
+[gd_scene load_steps=50 format=3 uid="uid://w8tfinbfyqkd"]
 
 [ext_resource type="Script" path="res://Assets/Script/Class/Character/Player/Player.gd" id="1_ki55x"]
 [ext_resource type="Texture2D" uid="uid://bsl22rpg7rw2p" path="res://Assets/Image/Character/Player/templerun/Iddle/Idle__000.png" id="2_mrea1"]
@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://wum44lgrjcv5" path="res://Assets/Image/Character/Player/templerun/Iddle/Idle__008.png" id="10_53a62"]
 [ext_resource type="Texture2D" uid="uid://14olp88y01j6" path="res://Assets/Image/Character/Player/templerun/Iddle/Idle__009.png" id="11_m70na"]
 [ext_resource type="Texture2D" uid="uid://3v1r1s5y2osk" path="res://Assets/Image/Character/Player/templerun/Dead/Dead__000.png" id="12_8b7x6"]
-[ext_resource type="AudioStream" uid="uid://4845doyus4v2" path="res://Assets/Music/Player/deathknell-tlk-101soundboards-metalgarurumon. 1secmp3.mp3" id="13_odu47"]
+[ext_resource type="AudioStream" uid="uid://4845doyus4v2" path="res://Assets/Music/SFX/Player/deathknell-tlk-101soundboards-metalgarurumon. 1secmp3.mp3" id="13_odu47"]
 [ext_resource type="Texture2D" uid="uid://dkh2x5f6cccy1" path="res://Assets/Image/Character/Player/templerun/Dead/Dead__001.png" id="13_taif1"]
 [ext_resource type="Texture2D" uid="uid://cnkc00kvijp83" path="res://Assets/Image/Character/Player/templerun/Dead/Dead__002.png" id="14_7finj"]
 [ext_resource type="Texture2D" uid="uid://cdo1u6vwjqt48" path="res://Assets/Image/Character/Player/templerun/Dead/Dead__003.png" id="15_ld38b"]
@@ -28,14 +28,17 @@
 [ext_resource type="Texture2D" uid="uid://clac25tdouq0u" path="res://Assets/Image/Character/Player/templerun/Jump/Jump__002.png" id="25_1mjch"]
 [ext_resource type="Texture2D" uid="uid://1tlvqnso3enl" path="res://Assets/Image/Character/Player/templerun/Jump/Jump__003.png" id="26_xsrfo"]
 [ext_resource type="Texture2D" uid="uid://dbk8fy4xqvdaa" path="res://Assets/Image/Character/Player/templerun/Jump/Jump__004.png" id="27_7308t"]
-[ext_resource type="AudioStream" uid="uid://da0mtbojhys5n" path="res://Assets/Music/Player/grunt-tlk-101soundboards.mp3" id="28_2w8yc"]
+[ext_resource type="AudioStream" uid="uid://da0mtbojhys5n" path="res://Assets/Music/SFX/Player/grunt-tlk-101soundboards.mp3" id="28_2w8yc"]
 [ext_resource type="Texture2D" uid="uid://dvr5m7j5jwyaw" path="res://Assets/Image/Character/Player/templerun/Jump/Jump__005.png" id="28_x0hng"]
 [ext_resource type="Texture2D" uid="uid://brualkuy14t6x" path="res://Assets/Image/Character/Player/templerun/Jump/Jump__006.png" id="29_ng8k0"]
 [ext_resource type="Texture2D" uid="uid://dw33uakp20816" path="res://Assets/Image/Character/Player/templerun/Jump/Jump__007.png" id="30_vnuq8"]
 [ext_resource type="Texture2D" uid="uid://fvs3r2r11uwd" path="res://Assets/Image/Character/Player/templerun/Jump/Jump__008.png" id="31_s787f"]
 [ext_resource type="Texture2D" uid="uid://c8lpxh2wtvq4l" path="res://Assets/Image/Character/Player/templerun/Jump/Jump__009.png" id="32_hmu7j"]
-[ext_resource type="AudioStream" uid="uid://c1m18l8e756gt" path="res://Assets/Music/Player/headbutt-101soundboards.Metalgarurumonmp3.mp3" id="34_0q3ty"]
+[ext_resource type="AudioStream" uid="uid://c1m18l8e756gt" path="res://Assets/Music/SFX/Player/headbutt-101soundboards.Metalgarurumonmp3.mp3" id="34_0q3ty"]
+[ext_resource type="Script" path="res://Assets/Scences/Player/Inventory.gd" id="36_3vjba"]
 [ext_resource type="PackedScene" uid="uid://bli5mfb2fgf2e" path="res://Assets/Scences/UI/Inventory/inventory.tscn" id="37_h5ysl"]
+[ext_resource type="PackedScene" uid="uid://c8it7bbd20xdf" path="res://Assets/Scences/Player/Weapons/brust_garou_riffle_player.tscn" id="38_dlyag"]
+[ext_resource type="PackedScene" uid="uid://cuh433hdbnick" path="res://Assets/Scences/Player/Weapons/Machete.tscn" id="39_p6p0m"]
 
 [sub_resource type="Animation" id="Animation_8d1l8"]
 resource_name = "Dead"
@@ -192,10 +195,6 @@ process_mode = 3
 collision_layer = 0
 collision_mask = 7
 script = ExtResource("1_ki55x")
-_acceleration = 10.0
-_deceleration = 5.0
-_max_health = 100
-_attack_damage = 5
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.25, 0.25)
@@ -215,6 +214,7 @@ scale = Vector2(4, 4)
 bus = &"Sound Effects"
 
 [node name="Shape_fullbody" type="CollisionShape2D" parent="."]
+visible = false
 shape = SubResource("CapsuleShape2D_n8uk2")
 
 [node name="Hurt_Box" type="Area2D" parent="."]
@@ -226,6 +226,7 @@ shape = SubResource("CapsuleShape2D_n8uk2")
 debug_color = Color(0.741176, 0.282353, 0.921569, 0.419608)
 
 [node name="Hit_Box" type="Area2D" parent="."]
+visible = false
 
 [node name="InputBuffer" type="Timer" parent="Hit_Box"]
 
@@ -243,8 +244,21 @@ script = SubResource("GDScript_8rbut")
 [node name="WolfAlmanacIdex" parent="Wolf almanac" instance=ExtResource("2_ukp57")]
 
 [node name="Inventory" type="CanvasLayer" parent="."]
+layer = 2
 visible = false
+script = ExtResource("36_3vjba")
 
 [node name="Inventory_UI" parent="Inventory" instance=ExtResource("37_h5ysl")]
+
+[node name="Brust Garou-Riffle-Player" parent="." instance=ExtResource("38_dlyag")]
+visible = false
+position = Vector2(73, 22)
+
+[node name="Projectile" type="Marker2D" parent="Brust Garou-Riffle-Player"]
+position = Vector2(42, 0)
+
+[node name="Machete" parent="." instance=ExtResource("39_p6p0m")]
+visible = false
+position = Vector2(76, 17)
 
 [connection signal="area_entered" from="Hit_Box" to="." method="_on_hit_box_area_entered"]

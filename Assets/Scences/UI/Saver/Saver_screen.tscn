@@ -1,0 +1,86 @@
+[gd_scene load_steps=5 format=3 uid="uid://dpalcuvsrqsj0"]
+
+[ext_resource type="Script" path="res://Assets/Script/Controller/Save/Save_Load_Slot/Save_Load_Slot.gd" id="1_q82sx"]
+[ext_resource type="Texture2D" uid="uid://brqgb3qqlr2xm" path="res://Assets/Image/Background/Moonlight Clift/Clift.png" id="2_6087o"]
+[ext_resource type="FontFile" uid="uid://c4ipkih8u305j" path="res://Assets/Fonts/DEADLY CLAWS[.ttf" id="3_14ouc"]
+[ext_resource type="FontFile" uid="uid://bv6xsykw7vcai" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="4_l478o"]
+
+[node name="First_Save_Screen" type="Node2D"]
+script = ExtResource("1_q82sx")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(1280, 720)
+offset_right = 1268.0
+offset_bottom = 692.0
+texture = ExtResource("2_6087o")
+
+[node name="Action Label" type="Label" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 15.0
+offset_bottom = 38.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.607843, 0.0156863, 1)
+theme_override_colors/font_shadow_color = Color(0.176471, 0.0784314, 0.0235294, 1)
+theme_override_colors/font_outline_color = Color(0.227451, 0.466667, 0.454902, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 2
+theme_override_constants/shadow_outline_size = 5
+theme_override_fonts/font = ExtResource("3_14ouc")
+theme_override_font_sizes/font_size = 32
+text = "SAVE GAME"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Slot Container" type="VBoxContainer" parent="."]
+layout_direction = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 339.0
+offset_top = 197.0
+offset_right = 979.0
+offset_bottom = 490.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 15
+
+[node name="Save_Slot 1" type="Button" parent="Slot Container"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("4_l478o")
+theme_override_font_sizes/font_size = 24
+text = "Slot 1"
+
+[node name="Save_Slot 2" type="Button" parent="Slot Container"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("4_l478o")
+theme_override_font_sizes/font_size = 24
+text = "Slot 2"
+
+[node name="Save_Slot 3" type="Button" parent="Slot Container"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("4_l478o")
+theme_override_font_sizes/font_size = 24
+text = "Slot 3
+"
+
+[node name="Save_Slot 4" type="Button" parent="Slot Container"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("4_l478o")
+theme_override_font_sizes/font_size = 24
+text = "Slot 4
+"
+
+[connection signal="pressed" from="Slot Container/Save_Slot 1" to="." method="_on_save_slot_1_pressed"]
+[connection signal="pressed" from="Slot Container/Save_Slot 2" to="." method="_on_save_slot_2_pressed"]
+[connection signal="pressed" from="Slot Container/Save_Slot 3" to="." method="_on_save_slot_3_pressed"]
+[connection signal="pressed" from="Slot Container/Save_Slot 4" to="." method="_on_save_slot_4_pressed"]

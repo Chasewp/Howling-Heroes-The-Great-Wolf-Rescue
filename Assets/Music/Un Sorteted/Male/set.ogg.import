@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b76yj6bjx0fme"
+path="res://.godot/imported/set.ogg-93b3330186697b61de02b881c698e8fb.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Male/set.ogg"
+dest_files=["res://.godot/imported/set.ogg-93b3330186697b61de02b881c698e8fb.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

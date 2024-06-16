@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cr4nyjitfqqvc"
+path="res://.godot/imported/Burned Forest.wav-78b3ba92ded6def87b5b33c37bae849d.sample"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Intro_Backsound/Burned Forest.wav"
+dest_files=["res://.godot/imported/Burned Forest.wav-78b3ba92ded6def87b5b33c37bae849d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

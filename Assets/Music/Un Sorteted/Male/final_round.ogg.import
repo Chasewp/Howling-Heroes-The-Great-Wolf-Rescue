@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b808ww4w3s0sj"
+path="res://.godot/imported/final_round.ogg-c6f690ab2e6db56ea61ed08832080f64.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Male/final_round.ogg"
+dest_files=["res://.godot/imported/final_round.ogg-c6f690ab2e6db56ea61ed08832080f64.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -4,12 +4,14 @@ extends Control
 @onready var backsound = $Back_Sound
 @onready var startbtn = $StartBtn
 @onready var normalbutton = $Normal_button
+@onready var continuebutton = $"Background/Continue Button"
 
 func _ready():
 	backsound.play()
 	#show Cursor 
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-
+	
+	
 # Close Notification
 func _notification(exit):
 	if exit == NOTIFICATION_WM_CLOSE_REQUEST:

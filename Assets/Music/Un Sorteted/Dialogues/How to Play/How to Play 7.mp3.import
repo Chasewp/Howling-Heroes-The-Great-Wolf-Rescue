@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dyhr135581iri"
+path="res://.godot/imported/How to Play 7.mp3-dd2021f0661bc63d5e22f611d6ffa5eb.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Dialogues/How to Play/How to Play 7.mp3"
+dest_files=["res://.godot/imported/How to Play 7.mp3-dd2021f0661bc63d5e22f611d6ffa5eb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

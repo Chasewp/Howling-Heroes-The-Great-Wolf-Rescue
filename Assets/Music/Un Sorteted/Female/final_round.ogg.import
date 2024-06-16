@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b7ai3atd1b8sn"
+path="res://.godot/imported/final_round.ogg-b1d588fd0c8f6f236ed31f6309543c66.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Female/final_round.ogg"
+dest_files=["res://.godot/imported/final_round.ogg-b1d588fd0c8f6f236ed31f6309543c66.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://yb4j1kxqmitx"
+path="res://.godot/imported/Intro_5.mp3-7fb20d1ac66f567a1e7b324fde081a58.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Intro/Intro_5.mp3"
+dest_files=["res://.godot/imported/Intro_5.mp3-7fb20d1ac66f567a1e7b324fde081a58.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

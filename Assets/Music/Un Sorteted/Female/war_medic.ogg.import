@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b2nqvcg56nogx"
+path="res://.godot/imported/war_medic.ogg-44b4946ca91323adb914d70a0f54eef2.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Female/war_medic.ogg"
+dest_files=["res://.godot/imported/war_medic.ogg-44b4946ca91323adb914d70a0f54eef2.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

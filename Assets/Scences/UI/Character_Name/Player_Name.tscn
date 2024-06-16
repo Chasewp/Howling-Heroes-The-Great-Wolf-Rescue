@@ -26,6 +26,7 @@ func _process(delta):
 func _on_player_name_text_submitted(new_text):
 	user.setter_name(new_text)
 	user.setter_location(\"Taiga\")
+	user.setter_Armor(100)
 	get_tree().change_scene_to_file(\"res://Assets/Scences/Location/Bridge_Stone_Forest/Bridge_Stone_Forest.tscn\")
 
 "

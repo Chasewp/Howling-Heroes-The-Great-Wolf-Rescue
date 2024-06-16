@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://6fvs5kvjilcl"
+path="res://.godot/imported/boing_x.wav-482d2852c6e0dfd78fdf972c4a0e9d6e.sample"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/boing_x.wav"
+dest_files=["res://.godot/imported/boing_x.wav-482d2852c6e0dfd78fdf972c4a0e9d6e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

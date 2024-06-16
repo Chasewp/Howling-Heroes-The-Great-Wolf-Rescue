@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://cajkqxvd8efkm"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Settings_Confirmation/settings_confrimation.gd" id="1_f8o3j"]
-[ext_resource type="AudioStream" uid="uid://ty2bg0clrp0t" path="res://Assets/Music/All Button/Quit_Button.mp3" id="1_jggl6"]
-[ext_resource type="AudioStream" uid="uid://c8ygb4nqbs03p" path="res://Assets/Music/Warning/exclamation-101soundboards.mp3" id="1_mqbtp"]
+[ext_resource type="AudioStream" uid="uid://ty2bg0clrp0t" path="res://Assets/Music/Un Sorteted/All Button/Quit_Button.mp3" id="1_jggl6"]
+[ext_resource type="AudioStream" uid="uid://c8ygb4nqbs03p" path="res://Assets/Music/Un Sorteted/Warning/exclamation-101soundboards.mp3" id="1_mqbtp"]
 [ext_resource type="Theme" uid="uid://br2uoqpi38ygc" path="res://Assets/Theme/Dialouge/Exit_Confirmation.tres" id="1_wyah5"]
 
 [node name="Setting_Confirmation" type="Control"]

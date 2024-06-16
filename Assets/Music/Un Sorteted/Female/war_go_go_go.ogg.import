@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b27bd4au0xyjf"
+path="res://.godot/imported/war_go_go_go.ogg-f706efac87234b6aebb13b3caa119d0e.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Female/war_go_go_go.ogg"
+dest_files=["res://.godot/imported/war_go_go_go.ogg-f706efac87234b6aebb13b3caa119d0e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

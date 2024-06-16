@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://de6mww5weujui"
+path="res://.godot/imported/war_medic.ogg-deb333e59987d756301eeb3b7eceb7ab.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Male/war_medic.ogg"
+dest_files=["res://.godot/imported/war_medic.ogg-deb333e59987d756301eeb3b7eceb7ab.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

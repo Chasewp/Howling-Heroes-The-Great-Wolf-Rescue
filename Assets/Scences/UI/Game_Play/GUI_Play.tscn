@@ -42,6 +42,17 @@ theme_override_fonts/font = ExtResource("2_68s4u")
 theme_override_font_sizes/font_size = 18
 text = "LABEL"
 
+[node name="Coordinate" type="Label" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.805
+anchor_right = 1.0
+anchor_bottom = 0.039
+offset_left = -0.400146
+offset_top = 4.0
+offset_bottom = -0.0799999
+theme_override_fonts/font = ExtResource("2_68s4u")
+theme_override_font_sizes/font_size = 18
+
 [node name="Health_Bar" type="ProgressBar" parent="CanvasLayer"]
 anchors_preset = -1
 anchor_left = 0.112

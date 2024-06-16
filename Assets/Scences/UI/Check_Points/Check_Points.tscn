@@ -1,31 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://ctyfcjvef5jlv"]
-
-[ext_resource type="Texture2D" uid="uid://di506cf6lqn5g" path="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 01.png" id="1_kv8li"]
-[ext_resource type="Texture2D" uid="uid://dojnd4oun87e" path="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 02.png" id="2_pigt4"]
-[ext_resource type="Texture2D" uid="uid://dn2ks7shsqogv" path="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 03.png" id="3_v8mq4"]
-[ext_resource type="Texture2D" uid="uid://pku3qi6itdu" path="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 04.png" id="4_mbvff"]
-[ext_resource type="Texture2D" uid="uid://npqje2a5h6rs" path="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 05.png" id="5_xeyqi"]
-[ext_resource type="Texture2D" uid="uid://0co7015rrcw6" path="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 06.png" id="6_savrj"]
-[ext_resource type="Texture2D" uid="uid://c7rp8s1p4u8kf" path="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 07.png" id="7_787rc"]
-[ext_resource type="Texture2D" uid="uid://cki6k4vdq4kop" path="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 08.png" id="8_ttepa"]
-[ext_resource type="Texture2D" uid="uid://cjyrdfj54m1y7" path="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 09.png" id="9_vcat4"]
-[ext_resource type="Texture2D" uid="uid://c5j724u8ernu7" path="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 10.png" id="10_e3783"]
-[ext_resource type="Texture2D" uid="uid://0lc2fio4piij" path="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 11.png" id="11_vbx3h"]
-[ext_resource type="Texture2D" uid="uid://ci8rochjunbvk" path="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 12.png" id="12_yt7pu"]
-[ext_resource type="Texture2D" uid="uid://dal2nlba0k4lh" path="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 13.png" id="13_51q0v"]
-[ext_resource type="Texture2D" uid="uid://bl258fs0b3761" path="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 14.png" id="14_bgf1w"]
-[ext_resource type="Texture2D" uid="uid://b3a7kycqakpas" path="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 15.png" id="15_retv1"]
-[ext_resource type="Texture2D" uid="uid://bk56pbmdtdpxn" path="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 16.png" id="16_eolna"]
-[ext_resource type="Texture2D" uid="uid://bqk0fnwd2cicn" path="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 17.png" id="17_lqvmk"]
-[ext_resource type="Texture2D" uid="uid://bbxs5nwvcixkk" path="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 18.png" id="18_d8sbk"]
-[ext_resource type="Texture2D" uid="uid://cwjxcyo1wnu2w" path="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 19.png" id="19_qe6vl"]
-[ext_resource type="Texture2D" uid="uid://bspw7187j878p" path="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 20.png" id="20_plmgc"]
-[ext_resource type="Texture2D" uid="uid://dx6m5n2q5ovle" path="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 21.png" id="21_psecl"]
-[ext_resource type="Texture2D" uid="uid://b37d6tpe2b1vw" path="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 22.png" id="22_vdfo7"]
-[ext_resource type="Texture2D" uid="uid://cn41rk72myo5n" path="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 23.png" id="23_cqxw3"]
-[ext_resource type="Texture2D" uid="uid://bv12ssoi6g3fi" path="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 24.png" id="24_chxyi"]
-[ext_resource type="Texture2D" uid="uid://bewdlivwefk57" path="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 25.png" id="25_515dj"]
-[ext_resource type="Texture2D" uid="uid://dahs854jt3v6b" path="res://Assets/Image/images/Check_Points/UWF_FLAG CHECK_POINT 26.png" id="26_teb8m"]
+[gd_scene load_steps=4 format=3 uid="uid://ctyfcjvef5jlv"]
 
 [sub_resource type="GDScript" id="GDScript_y6f1s"]
 script/source = "class_name Checkpoint extends Area2D
@@ -36,7 +9,7 @@ var  id : int
 func _on_body_entered(_body : Node2D):
 	_sfx.play()
 	collision_mask = 0
-	SaveProgressPlayerData.data.checkpoint = id
+	#SaveProgressPlayerData.data.ch eckpoint = id
  
 "
 
@@ -47,82 +20,82 @@ size = Vector2(6, 223)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_kv8li")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_pigt4")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_v8mq4")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_mbvff")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_xeyqi")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_savrj")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_787rc")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_ttepa")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_vcat4")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_e3783")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_vbx3h")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_yt7pu")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_51q0v")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_bgf1w")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_retv1")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("16_eolna")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("17_lqvmk")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("18_d8sbk")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("19_qe6vl")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("20_plmgc")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("21_psecl")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("22_vdfo7")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("23_cqxw3")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("24_chxyi")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("25_515dj")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("26_teb8m")
+"texture": null
 }],
 "loop": true,
 "name": &"Flag_Waving",

@@ -1,0 +1,103 @@
+[gd_scene load_steps=7 format=3 uid="uid://bppotao2cssdj"]
+
+[ext_resource type="Texture2D" uid="uid://d1sw3q5r06tf8" path="res://Assets/Image/images/Moonlight Night Scenery Acrylic Painting for beginners 2019.png" id="1_jgcl1"]
+[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Load_slot/loader_screen.gd" id="1_kd02q"]
+[ext_resource type="FontFile" uid="uid://c4ipkih8u305j" path="res://Assets/Fonts/DEADLY CLAWS[.ttf" id="2_n7m1k"]
+[ext_resource type="FontFile" uid="uid://bv6xsykw7vcai" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="4_6rv3h"]
+
+[sub_resource type="Gradient" id="Gradient_hq6s7"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_lir2b"]
+gradient = SubResource("Gradient_hq6s7")
+
+[node name="Loader_Screen" type="Node2D"]
+script = ExtResource("1_kd02q")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(1280, 720)
+offset_right = 1268.0
+offset_bottom = 692.0
+texture = ExtResource("1_jgcl1")
+
+[node name="Action Label" type="Label" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 15.0
+offset_bottom = 38.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.607843, 0.0156863, 1)
+theme_override_colors/font_shadow_color = Color(0.176471, 0.0784314, 0.0235294, 1)
+theme_override_colors/font_outline_color = Color(0.227451, 0.466667, 0.454902, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 2
+theme_override_constants/shadow_outline_size = 5
+theme_override_fonts/font = ExtResource("2_n7m1k")
+theme_override_font_sizes/font_size = 32
+text = "LOAD GAME"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Back Button" type="Button" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.472
+anchor_top = 0.904
+anchor_right = 0.523
+anchor_bottom = 0.958
+offset_left = 9.83997
+offset_top = 8.12
+offset_right = -10.44
+offset_bottom = 0.239929
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("4_6rv3h")
+theme_override_font_sizes/font_size = 30
+text = "Back"
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect"]
+visible = false
+layout_mode = 2
+offset_left = 827.0
+offset_top = 123.0
+offset_right = 891.0
+offset_bottom = 187.0
+texture = SubResource("GradientTexture2D_lir2b")
+
+[node name="CenterContainer" type="CenterContainer" parent="TextureRect"]
+custom_minimum_size = Vector2(750, 650)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.059
+anchor_top = 0.25
+anchor_right = 0.645
+anchor_bottom = 1.153
+offset_left = -0.520004
+offset_right = -0.600037
+offset_bottom = -0.159973
+use_top_left = true
+
+[node name="Slot Container" type="VBoxContainer" parent="TextureRect/CenterContainer"]
+clip_contents = true
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="Save 1" type="Button" parent="TextureRect/CenterContainer/Slot Container"]
+layout_mode = 2
+text = "Save 1"
+
+[node name="Save 2" type="Button" parent="TextureRect/CenterContainer/Slot Container"]
+layout_mode = 2
+text = "Save 2"
+
+[node name="Save 3" type="Button" parent="TextureRect/CenterContainer/Slot Container"]
+layout_mode = 2
+text = "Save 3
+"
+
+[node name="Save 4" type="Button" parent="TextureRect/CenterContainer/Slot Container"]
+layout_mode = 2
+text = "Save 4
+"

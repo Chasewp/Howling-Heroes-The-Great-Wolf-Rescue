@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://crpj4qv32msf5"
+path="res://.godot/imported/war_fire_in_the_hole.ogg-f849a760f377e5eb4029a0991f59c31e.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Male/war_fire_in_the_hole.ogg"
+dest_files=["res://.godot/imported/war_fire_in_the_hole.ogg-f849a760f377e5eb4029a0991f59c31e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

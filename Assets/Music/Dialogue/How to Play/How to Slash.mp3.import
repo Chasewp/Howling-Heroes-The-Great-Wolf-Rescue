@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cesbcwscyje25"
+path="res://.godot/imported/How to Slash.mp3-fd7d6d4c10f85e6d20d68db8e171b6e3.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Dialogue/How to Play/How to Slash.mp3"
+dest_files=["res://.godot/imported/How to Slash.mp3-fd7d6d4c10f85e6d20d68db8e171b6e3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -5,35 +5,10 @@
 [ext_resource type="PackedScene" uid="uid://w8tfinbfyqkd" path="res://Assets/Scences/Player/Player.tscn" id="3_6ial2"]
 [ext_resource type="PackedScene" uid="uid://duapb0cjxsh0d" path="res://Assets/Scences/UI/Location/Taiga/taiga_background.tscn" id="3_uvlbp"]
 [ext_resource type="PackedScene" uid="uid://bhbell7p0r466" path="res://Assets/Scences/Stages/Taiga/Taiga_Stage.tscn" id="4_htljp"]
+[ext_resource type="Script" path="res://Assets/Scences/Location/Bridge_Stone_Forest/Game_Control.gd" id="7_xqeh4"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_jd0kl"]
-
-[node name="Bridge_Stone_Forest" type="Node2D"]
+[node name="Taiga_Biome" type="Node2D"]
 script = ExtResource("1_25p6p")
-
-[node name="Rest" type="Area2D" parent="."]
-position = Vector2(87, 521)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Rest"]
-shape = SubResource("RectangleShape2D_jd0kl")
-debug_color = Color(0.839216, 0.623529, 1, 0.419608)
-
-[node name="Background" type="CanvasLayer" parent="."]
-layer = -1
-
-[node name="Taiga Background" parent="Background" instance=ExtResource("3_uvlbp")]
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(641, 359)
-
-[node name="TaigaStage" parent="." instance=ExtResource("4_htljp")]
-position = Vector2(17, 636)
-
-[node name="Player" parent="." instance=ExtResource("3_6ial2")]
-position = Vector2(452, -24)
-_max_health = 5
-
-[node name="Control_Player" type="Node" parent="Player"]
 
 [node name="InterfaceLayer" type="CanvasLayer" parent="."]
 
@@ -43,3 +18,20 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 grow_horizontal = 1
 grow_vertical = 1
+
+[node name="Background" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Taiga Background" parent="Background" instance=ExtResource("3_uvlbp")]
+
+[node name="TaigaStage" parent="." instance=ExtResource("4_htljp")]
+
+[node name="Player" parent="." instance=ExtResource("3_6ial2")]
+position = Vector2(184, 628)
+_name_character = ""
+_location = ""
+_Armor = 0
+_has_machete = false
+
+[node name="Game_Control" type="Node" parent="Player"]
+script = ExtResource("7_xqeh4")

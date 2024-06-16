@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bxtk45ivdf86i"
+path="res://.godot/imported/war_watch_my_back.ogg-58e53df2f737be051dcf5560da59cebc.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Female/war_watch_my_back.ogg"
+dest_files=["res://.godot/imported/war_watch_my_back.ogg-58e53df2f737be051dcf5560da59cebc.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

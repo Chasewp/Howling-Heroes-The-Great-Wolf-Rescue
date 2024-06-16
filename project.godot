@@ -30,7 +30,6 @@ LoadingScreen="*res://Assets/Script/Controller/UI/Loading/loading_screen.gd"
 Dialogic="*res://addons/dialogic/Other/DialogicGameHandler.gd"
 SaveSettings="*res://Assets/Script/Controller/Save/Settings/save_settings.gd"
 GlobalSettings="*res://Assets/Script/Controller/Save/Global_Settings/Global_Settings.gd"
-user="*res://Assets/Script/Class/Character/Player/Player.gd"
 GlobalTilesets="*res://Assets/Script/Global_Tilesets/Global_Tilesets.gd"
 
 [dialogic]

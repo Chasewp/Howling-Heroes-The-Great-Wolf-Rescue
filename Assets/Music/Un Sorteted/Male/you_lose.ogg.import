@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dtm8p3k6icbs5"
+path="res://.godot/imported/you_lose.ogg-0f550ddf4aa20e2937540f2d53258d01.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Male/you_lose.ogg"
+dest_files=["res://.godot/imported/you_lose.ogg-0f550ddf4aa20e2937540f2d53258d01.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

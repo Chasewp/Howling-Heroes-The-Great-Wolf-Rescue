@@ -1,12 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://bppotao2cssdj"]
+[gd_scene load_steps=6 format=3 uid="uid://bppotao2cssdj"]
 
 [ext_resource type="Texture2D" uid="uid://d1sw3q5r06tf8" path="res://Assets/Image/images/Moonlight Night Scenery Acrylic Painting for beginners 2019.png" id="1_jgcl1"]
-[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Load_slot/loader_screen.gd" id="1_kd02q"]
+[ext_resource type="Script" path="res://Assets/Script/Controller/Save/Save_Load_Slot/Save_Load_Slot.gd" id="1_utfo1"]
 [ext_resource type="FontFile" uid="uid://c4ipkih8u305j" path="res://Assets/Fonts/DEADLY CLAWS[.ttf" id="2_n7m1k"]
 [ext_resource type="FontFile" uid="uid://bv6xsykw7vcai" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="4_6rv3h"]
+[ext_resource type="FontFile" uid="uid://bsmkjcem4b3i1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="5_d01ls"]
 
 [node name="Loader_Screen" type="Node2D"]
-script = ExtResource("1_kd02q")
+script = ExtResource("1_utfo1")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(1280, 720)
@@ -52,18 +53,166 @@ theme_override_font_sizes/font_size = 30
 text = "Back"
 flat = true
 
-[node name="CenterContainer" type="CenterContainer" parent="TextureRect"]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.094
-anchor_right = 0.998
-anchor_bottom = 0.904
-offset_top = 0.32
-offset_right = 0.559937
-offset_bottom = 0.119995
+[node name="Slot Container" type="VBoxContainer" parent="."]
+layout_direction = 1
+offset_left = 92.0
+offset_top = 92.0
+offset_right = 732.0
+offset_bottom = 385.0
 grow_horizontal = 2
 grow_vertical = 2
-use_top_left = true
+size_flags_horizontal = 3
+theme_override_constants/separation = 15
 
-[node name="Slot Container" type="VBoxContainer" parent="TextureRect/CenterContainer"]
+[node name="Load_Slot 1" type="Button" parent="Slot Container"]
 layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("4_6rv3h")
+theme_override_font_sizes/font_size = 24
+text = "Slot 1"
+
+[node name="Load_Slot 2" type="Button" parent="Slot Container"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("4_6rv3h")
+theme_override_font_sizes/font_size = 24
+text = "Slot 2"
+
+[node name="Load_Slot 3" type="Button" parent="Slot Container"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("4_6rv3h")
+theme_override_font_sizes/font_size = 24
+text = "Slot 3
+"
+
+[node name="Load_Slot 4" type="Button" parent="Slot Container"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("4_6rv3h")
+theme_override_font_sizes/font_size = 24
+text = "Slot 4
+"
+
+[node name="Location" type="TextureRect" parent="."]
+offset_left = 807.0
+offset_top = 81.0
+offset_right = 1189.0
+offset_bottom = 397.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 813.0
+offset_top = 407.0
+offset_right = 1189.0
+offset_bottom = 434.0
+theme_override_constants/separation = 5
+
+[node name="Character_Container" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Character_Label" type="Label" parent="VBoxContainer/Character_Container"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.529412, 0.529412, 0.529412, 1)
+theme_override_colors/font_outline_color = Color(0.752941, 0.752941, 0.752941, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("5_d01ls")
+theme_override_font_sizes/font_size = 26
+text = "Character  "
+
+[node name="_" type="Label" parent="VBoxContainer/Character_Container"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.529412, 0.529412, 0.529412, 1)
+theme_override_colors/font_outline_color = Color(0.752941, 0.752941, 0.752941, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("5_d01ls")
+theme_override_font_sizes/font_size = 26
+text = ":
+"
+
+[node name="Name" type="Label" parent="VBoxContainer/Character_Container"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_d01ls")
+theme_override_font_sizes/font_size = 26
+text = " "
+
+[node name="Biome_Container" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Biome_Label" type="Label" parent="VBoxContainer/Biome_Container"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.529412, 0.529412, 0.529412, 1)
+theme_override_colors/font_outline_color = Color(0.752941, 0.752941, 0.752941, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("5_d01ls")
+theme_override_font_sizes/font_size = 26
+text = "Biome       "
+
+[node name="_" type="Label" parent="VBoxContainer/Biome_Container"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.529412, 0.529412, 0.529412, 1)
+theme_override_colors/font_outline_color = Color(0.752941, 0.752941, 0.752941, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("5_d01ls")
+theme_override_font_sizes/font_size = 26
+text = ":
+"
+
+[node name="Name" type="Label" parent="VBoxContainer/Biome_Container"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_d01ls")
+theme_override_font_sizes/font_size = 26
+text = " "
+
+[node name="Coordinate_Container" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Coordinate_Label" type="Label" parent="VBoxContainer/Coordinate_Container"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.529412, 0.529412, 0.529412, 1)
+theme_override_colors/font_outline_color = Color(0.752941, 0.752941, 0.752941, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("5_d01ls")
+theme_override_font_sizes/font_size = 26
+text = "Coordinate "
+
+[node name="_" type="Label" parent="VBoxContainer/Coordinate_Container"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.529412, 0.529412, 0.529412, 1)
+theme_override_colors/font_outline_color = Color(0.752941, 0.752941, 0.752941, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("5_d01ls")
+theme_override_font_sizes/font_size = 26
+text = ":
+"
+
+[node name="Name" type="Label" parent="VBoxContainer/Coordinate_Container"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_d01ls")
+theme_override_font_sizes/font_size = 26
+text = " "
+
+[connection signal="pressed" from="Slot Container/Load_Slot 1" to="." method="_on_load_slot_1_pressed"]
+[connection signal="pressed" from="Slot Container/Load_Slot 2" to="." method="_on_load_slot_2_pressed"]
+[connection signal="pressed" from="Slot Container/Load_Slot 3" to="." method="_on_load_slot_3_pressed"]
+[connection signal="pressed" from="Slot Container/Load_Slot 4" to="." method="_on_load_slot_4_pressed"]

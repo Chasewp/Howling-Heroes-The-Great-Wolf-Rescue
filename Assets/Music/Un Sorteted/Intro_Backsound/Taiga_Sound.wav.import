@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b6tnpo0e63ql1"
+path="res://.godot/imported/Taiga_Sound.wav-b47e9a7aeb68f2c574ea08d796e1d7b4.sample"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Intro_Backsound/Taiga_Sound.wav"
+dest_files=["res://.godot/imported/Taiga_Sound.wav-b47e9a7aeb68f2c574ea08d796e1d7b4.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

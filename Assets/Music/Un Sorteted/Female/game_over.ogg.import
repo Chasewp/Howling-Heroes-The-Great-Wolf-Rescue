@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://sh6mpoth80kl"
+path="res://.godot/imported/game_over.ogg-5cef771789c78974032aa3ba70c567aa.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Female/game_over.ogg"
+dest_files=["res://.godot/imported/game_over.ogg-5cef771789c78974032aa3ba70c567aa.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cdwtw4pc7pepn"
+path="res://.godot/imported/mission_completed.ogg-f5ac68a48a0023766c1f88674639f6ed.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Female/mission_completed.ogg"
+dest_files=["res://.godot/imported/mission_completed.ogg-f5ac68a48a0023766c1f88674639f6ed.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

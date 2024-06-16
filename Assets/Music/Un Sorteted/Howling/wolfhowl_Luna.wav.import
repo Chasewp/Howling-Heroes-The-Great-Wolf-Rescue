@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dbprw1m7lml7u"
+path="res://.godot/imported/wolfhowl_Luna.wav-91b8760499cad459f32f32173c71c5f3.sample"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Howling/wolfhowl_Luna.wav"
+dest_files=["res://.godot/imported/wolfhowl_Luna.wav-91b8760499cad459f32f32173c71c5f3.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

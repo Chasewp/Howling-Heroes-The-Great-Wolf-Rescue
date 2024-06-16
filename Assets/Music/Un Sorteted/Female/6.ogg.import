@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://crrcqgf3aedwa"
+path="res://.godot/imported/6.ogg-531958bb9ce4824ddc7853037a0b014f.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Female/6.ogg"
+dest_files=["res://.godot/imported/6.ogg-531958bb9ce4824ddc7853037a0b014f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

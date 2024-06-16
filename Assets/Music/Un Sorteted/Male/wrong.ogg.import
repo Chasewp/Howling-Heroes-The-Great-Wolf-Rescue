@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d0c88k752qy7s"
+path="res://.godot/imported/wrong.ogg-8862711947902dbb54fc4cf4cbaf8dba.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Music/Un Sorteted/Male/wrong.ogg"
+dest_files=["res://.godot/imported/wrong.ogg-8862711947902dbb54fc4cf4cbaf8dba.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
