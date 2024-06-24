@@ -94,6 +94,14 @@ theme_override_font_sizes/font_size = 24
 text = "Slot 4
 "
 
+[node name="Load_Slot 5" type="Button" parent="Slot Container"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("4_6rv3h")
+theme_override_font_sizes/font_size = 24
+text = "Auto Save
+"
+
 [node name="Location" type="TextureRect" parent="."]
 offset_left = 807.0
 offset_top = 81.0
@@ -138,9 +146,15 @@ text = ":
 
 [node name="Name" type="Label" parent="VBoxContainer/Character_Container"]
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.529412, 0.529412, 0.529412, 1)
+theme_override_colors/font_outline_color = Color(0.752941, 0.752941, 0.752941, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("5_d01ls")
 theme_override_font_sizes/font_size = 26
-text = " "
+text = " Name"
 
 [node name="Biome_Container" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
@@ -171,11 +185,11 @@ theme_override_font_sizes/font_size = 26
 text = ":
 "
 
-[node name="Name" type="Label" parent="VBoxContainer/Biome_Container"]
+[node name="Location" type="Label" parent="VBoxContainer/Biome_Container"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("5_d01ls")
 theme_override_font_sizes/font_size = 26
-text = " "
+text = " Biome_Name"
 
 [node name="Coordinate_Container" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
@@ -206,13 +220,14 @@ theme_override_font_sizes/font_size = 26
 text = ":
 "
 
-[node name="Name" type="Label" parent="VBoxContainer/Coordinate_Container"]
+[node name="Coordinate" type="Label" parent="VBoxContainer/Coordinate_Container"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("5_d01ls")
 theme_override_font_sizes/font_size = 26
-text = " "
+text = " Coordinate"
 
 [connection signal="pressed" from="Slot Container/Load_Slot 1" to="." method="_on_load_slot_1_pressed"]
 [connection signal="pressed" from="Slot Container/Load_Slot 2" to="." method="_on_load_slot_2_pressed"]
 [connection signal="pressed" from="Slot Container/Load_Slot 3" to="." method="_on_load_slot_3_pressed"]
 [connection signal="pressed" from="Slot Container/Load_Slot 4" to="." method="_on_load_slot_4_pressed"]
+[connection signal="pressed" from="Slot Container/Load_Slot 5" to="." method="_on_load_autosave_pressed"]

@@ -1,4 +1,6 @@
+res://Assets/Image/Wolves/Pixel Art/Character Sheets
 res://Assets/Script/Controller/Save/Save_Load_Slot
+res://Assets/Script/Class/Character/Player
 res://Assets/Music/Music/Main_Menu
 res://Assets/Script/Controller/Weapons
 res://Assets/Music/SFX/Player
@@ -17,9 +19,6 @@ res://Assets/Scences/Stages/Taiga
 res://Assets/Scences/UI/Location/Taiga
 res://Assets/Script/Global_Tilesets
 res://Assets/Script/Class/Character
-res://Assets/Script/Controller/UI/Wolf Alamanac/Menu
-res://Assets/Scences/UI/Inventory
-res://Assets/Script/Controller/UI/Inventory
 C:/Users/Blizzard/AppData/Roaming/Godot/import_FBX2glTF/FBX2glTF-windows-x86_64
 C:/Program Files/Adobe/Adobe Photoshop 2024
 C:/Users/Blizzard/AppData/Local/Programs/Microsoft VS Code Insiders

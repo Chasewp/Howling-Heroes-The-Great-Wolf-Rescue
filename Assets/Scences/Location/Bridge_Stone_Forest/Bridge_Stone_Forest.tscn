@@ -28,10 +28,6 @@ layer = -1
 
 [node name="Player" parent="." instance=ExtResource("3_6ial2")]
 position = Vector2(184, 628)
-_name_character = ""
-_location = ""
-_Armor = 0
-_has_machete = false
 
 [node name="Game_Control" type="Node" parent="Player"]
 script = ExtResource("7_xqeh4")

@@ -31,6 +31,8 @@ Dialogic="*res://addons/dialogic/Other/DialogicGameHandler.gd"
 SaveSettings="*res://Assets/Script/Controller/Save/Settings/save_settings.gd"
 GlobalSettings="*res://Assets/Script/Controller/Save/Global_Settings/Global_Settings.gd"
 GlobalTilesets="*res://Assets/Script/Global_Tilesets/Global_Tilesets.gd"
+player="*res://Assets/Script/Class/Character/Player/Player.gd"
+SaveLoadSlot="*res://Assets/Script/Controller/Save/Save_Load_Slot/Save_Load_Slot.gd"
 
 [dialogic]
 

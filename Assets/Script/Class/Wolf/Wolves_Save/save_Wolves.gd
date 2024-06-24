@@ -230,7 +230,7 @@ var Data_Wolves = {
 
 	#Index 16
 		"Hudson Bay Wolf" :{
-		"Image" : "Assets\Image\Wolves\Hudson Bay Wolf\1280px-Canis.lupus.occidentalis-ZOO.Olomouc3.jpg",
+		"Image" : "res://Assets/Image/Wolves/Hudson Bay Wolf/1280px-Canis.lupus.occidentalis-ZOO.Olomouc3.jpg",
 		"Name_Wolf" : "Hudson Bay Wolf",
 		"Species":"Canis lupus hudsonicus",
 		"Height" : "",
@@ -383,3 +383,6 @@ var Data_Wolves = {
 	},
 
 }
+
+func save_wolves_data():
+	var wolf_data =	FileAccess.open_encrypted_with_pass(save_wolves,FileAccess.WRITE,"Blizzard_WP403")

@@ -5,11 +5,11 @@ extends Control
 @onready var Health = $CanvasLayer/Health_Bar
 @onready var Armor = $CanvasLayer/Armor_Bar
 @onready var Coordinate = $CanvasLayer/Coordinate
-var _char = Player.new()
+
 
 func _ready():
-	character_name.set_text(_char.getter_name())
-	biome_location.set_text("Location : "+ _char.getter_location())
-	Health.set_value_no_signal(_char.get_health())
-	Armor.set_value_no_signal(_char.getter_Armor())
+	character_name.set_text(player.getter_name())
+	biome_location.set_text("Location : "+ player.getter_location())
+	Health.set_value_no_signal(player.getter_health())
+	Armor.set_value_no_signal(player.getter_armor())
 	#Coordinate.set_text(user.)

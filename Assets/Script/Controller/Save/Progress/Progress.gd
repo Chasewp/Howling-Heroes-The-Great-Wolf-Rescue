@@ -4,6 +4,8 @@ extends Resource
 @export_category("Save Data")
 #Stage Biomes 
 @export var Biomes_path : String
+#Player Name
+@export var player_name : String
 #Player Coordinates
 @export var player_position: Vector2
 #Player Health
@@ -12,3 +14,9 @@ extends Resource
 @export var player_armor : int
 #Save data for all dynamic part of the Stages
 @export var save_data:Array[SavedData]
+
+
+func UpdatePos(value : Vector2):
+	player_position = value
+
+	

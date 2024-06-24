@@ -12,7 +12,7 @@ script/source = "extends Control
 @onready var name_player = $Player_Name
 @onready var infochar = $info_char
 var number_text
-
+var player = Player.new
 func _ready():
 	name_player.grab_focus()
 	#set_caret_collom(len(name_player.text))
@@ -26,9 +26,7 @@ func _process(delta):
 func _on_player_name_text_submitted(new_text):
 	player.setter_name(new_text)
 	player.setter_location(\"Taiga\")
-	player.setter_armor(100)
-	player.setter_health(100)
-	SaveLoadSlot.auto_save()
+	player.setter_Armor(100)
 	get_tree().change_scene_to_file(\"res://Assets/Scences/Location/Bridge_Stone_Forest/Bridge_Stone_Forest.tscn\")
 
 "
