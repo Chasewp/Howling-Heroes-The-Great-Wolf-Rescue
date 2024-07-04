@@ -1,0 +1,73 @@
+[gd_scene load_steps=10 format=3 uid="uid://ckk77642n2fto"]
+
+[ext_resource type="Texture2D" uid="uid://cajg537rmu45l" path="res://Assets/Image/Wolves/Pixel Art/Character Sheets/Character Sheet Wolf - 4 golden.png" id="1_t5li3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eqo3g"]
+size = Vector2(64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rnifk"]
+atlas = ExtResource("1_t5li3")
+region = Rect2(192, 256, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_36npx"]
+atlas = ExtResource("1_t5li3")
+region = Rect2(256, 256, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_out1c"]
+atlas = ExtResource("1_t5li3")
+region = Rect2(320, 256, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_82xtt"]
+atlas = ExtResource("1_t5li3")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7clfh"]
+atlas = ExtResource("1_t5li3")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w2mv3"]
+atlas = ExtResource("1_t5li3")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rdvkc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rnifk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_36npx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_out1c")
+}],
+"loop": false,
+"name": &"Howling",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_82xtt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7clfh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w2mv3")
+}],
+"loop": true,
+"name": &"Iddle",
+"speed": 4.0
+}]
+
+[node name="Himalayan_Wolf" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_eqo3g")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_rdvkc")
+animation = &"Howling"
+autoplay = "Iddle"
+frame = 2
+frame_progress = 1.0

@@ -1,0 +1,72 @@
+[gd_scene load_steps=10 format=3 uid="uid://bicefdxfi2faf"]
+
+[ext_resource type="Texture2D" uid="uid://bhykba7bam65" path="res://Assets/Image/Wolves/Pixel Art/Character Sheets/Character Sheet Wolf - 3 brown.png" id="1_vpmci"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eqo3g"]
+size = Vector2(64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qbkdj"]
+atlas = ExtResource("1_vpmci")
+region = Rect2(192, 256, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7uwjx"]
+atlas = ExtResource("1_vpmci")
+region = Rect2(256, 256, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l063d"]
+atlas = ExtResource("1_vpmci")
+region = Rect2(320, 256, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ve2j5"]
+atlas = ExtResource("1_vpmci")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b7feo"]
+atlas = ExtResource("1_vpmci")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5cltw"]
+atlas = ExtResource("1_vpmci")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rdvkc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qbkdj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7uwjx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l063d")
+}],
+"loop": false,
+"name": &"Howling",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ve2j5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b7feo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5cltw")
+}],
+"loop": true,
+"name": &"Iddle",
+"speed": 4.0
+}]
+
+[node name="Yukon_Wolf" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_eqo3g")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_rdvkc")
+animation = &"Iddle"
+autoplay = "Iddle"
+frame_progress = 0.896483

@@ -1,0 +1,73 @@
+[gd_scene load_steps=10 format=3 uid="uid://bwvgckm0q8354"]
+
+[ext_resource type="Texture2D" uid="uid://3nkr4f8h1e2t" path="res://Assets/Image/Wolves/Pixel Art/Character Sheets/Character Sheet Wolf - 2 Black.png" id="1_0q01a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eqo3g"]
+size = Vector2(64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x3cws"]
+atlas = ExtResource("1_0q01a")
+region = Rect2(192, 256, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ha52v"]
+atlas = ExtResource("1_0q01a")
+region = Rect2(256, 256, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f0y14"]
+atlas = ExtResource("1_0q01a")
+region = Rect2(320, 256, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u82tx"]
+atlas = ExtResource("1_0q01a")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dwi4s"]
+atlas = ExtResource("1_0q01a")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_06n7s"]
+atlas = ExtResource("1_0q01a")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rdvkc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x3cws")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ha52v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f0y14")
+}],
+"loop": false,
+"name": &"Howling",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u82tx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dwi4s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_06n7s")
+}],
+"loop": true,
+"name": &"Iddle",
+"speed": 4.0
+}]
+
+[node name="Britis_Colimbian_Wolf" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_eqo3g")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_rdvkc")
+animation = &"Howling"
+autoplay = "Iddle"
+frame = 2
+frame_progress = 1.0

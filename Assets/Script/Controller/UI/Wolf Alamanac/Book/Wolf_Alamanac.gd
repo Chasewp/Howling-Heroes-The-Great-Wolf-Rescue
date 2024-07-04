@@ -1,4 +1,4 @@
-class_name Wolf_Alamac
+class_name Wolf_Alamac_Book
 extends Node
 
 #Wolf Picture

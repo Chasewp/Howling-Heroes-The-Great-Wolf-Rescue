@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cajg537rmu45l"
-path="res://.godot/imported/Character Sheet Wolf - 4 golden.png-3666154430215637a6fcb2dcfba06182.ctex"
+uid="uid://c768fwvsa16iq"
+path="res://.godot/imported/Wolf_Stone.png-b3dccf83b611ec21677b76af7aa02a2c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Image/Wolves/Character Sheets/Character Sheet Wolf - 4 golden.png"
-dest_files=["res://.godot/imported/Character Sheet Wolf - 4 golden.png-3666154430215637a6fcb2dcfba06182.ctex"]
+source_file="res://Assets/Image/Item/Wolf_Stone/Wolf_Stone.png"
+dest_files=["res://.godot/imported/Wolf_Stone.png-b3dccf83b611ec21677b76af7aa02a2c.ctex"]
 
 [params]
 

@@ -233,156 +233,161 @@ var Data_Wolves = {
 		"Image" : "res://Assets/Image/Wolves/Hudson Bay Wolf/1280px-Canis.lupus.occidentalis-ZOO.Olomouc3.jpg",
 		"Name_Wolf" : "Hudson Bay Wolf",
 		"Species":"Canis lupus hudsonicus",
-		"Height" : "",
-		"Weight" : "",
-		"Lenght" : "",
-		"Conservation_status" : "",
-		"Location" : "",
-		"Morphology": "",
-		"Diets" : ""
+		"Height" : "71.12 cm - 88.90 cm",
+		"Weight" : "38 kg - 70 kg",
+		"Lenght" : "119.38 cm - 149.86 cm",
+		"Conservation_status" : "Endangered",
+		"Location" : "Canada, west of the Hudson Bay from Northern Manitoba through the Northwest Territories and above",
+		"Morphology": "White colored, medium-sized subSpesies similar to C. l. arctos, but with a flatter skull",
+		"Diets" : "Elk and Caribou"
 	},
 
 	#Index 17
-			   	"" :{
-		"Image" : "",
-		"Name_Wolf" : "",
-		"Species":"",
-		"Height" : "",
-		"Weight" : "",
-		"Lenght" : "",
-		"Conservation_status" : "",
-		"Location" : "",
-		"Morphology": "",
-		"Diets" : ""
+		"Alexander Archipelago Wolf" :{
+		"Image" : "res://Assets/Image/Wolves/Alexander Archipelago Wolf/Alexander Archipelago Wolf.webp",
+		"Name_Wolf" : "Alexander Archipelago Wolf",
+		"Species":"Canis lupus ligoni",
+		"Height" : "60.96 cm",
+		"Weight" : "14 kg - 23 kg",
+		"Lenght" : "106.68 cm",
+		"Conservation_status" : "Vulnerable",
+		"Location" : "South-eastern Alaska",
+		"Morphology": "While arctic animals tend to be lighter colored, the Alexander Archipelago wolf majestically rocks its darkly-colored coat",
+		"Diets" : "Sitka black-tailed deer, beaver, mountain goat, and moose"
 	},
 
 	#Index 18
-				  	"" :{
-		"Image" : "",
-		"Name_Wolf" : "",
-		"Species":"",
-		"Height" : "",
-		"Weight" : "",
-		"Lenght" : "",
-		"Conservation_status" : "",
-		"Location" : "",
-		"Morphology": "",
-		"Diets" : ""
+		"Eastern Wolf" :{
+		"Image" : "res://Assets/Image/Wolves/Eastern Wolf/Eastern-Wolf-Hunting-in-the-Wild.jpg",
+		"Name_Wolf" : "Canis lupus lycaon",
+		"Species":"Canis lupus lycaon",
+		"Height" : "63.5 cm - 68.58 cm",
+		"Weight" : "24 kg - 30 kg",
+		"Lenght" : "167.24 cm",
+		"Conservation_status" : "Imperiled",
+		"Location" : "Canadian provinces Ontario and Quebec, North America’s eastern coasts",
+		"Morphology": "Grayish-brown coat complemented by cinnamon, rufous or creamy flank and chest, and a mix of black and gray fur on the shoulders, nape, and tail region",
+		"Diets" : "Beavers and white-tailed deer, blueberries"
 	},
 
 	#Index 19
-						"" :{
-		"Image" : "",
-		"Name_Wolf" : "",
-		"Species":"",
-		"Height" : "",
-		"Weight" : "",
-		"Lenght" : "",
-		"Conservation_status" : "",
-		"Location" : "",
-		"Morphology": "",
-		"Diets" : ""
+		"Mackenzie River Wolf" :{
+		"Image" : "res://Assets/Image/Wolves/Mackenzie River Wolf/1280px-Loup_du_Canada_(Canis_lupus_mackenzii).jpg",
+		"Name_Wolf" : "Mackenzie River Wolf",
+		"Species":"Canis lupus mackenzii",
+		"Height" : "81.28 cm - 101.6 cm",
+		"Weight" : "46 kg - 62 kg",
+		"Lenght" : "152,40 cm - 213,36 cm",
+		"Conservation_status" : "Secure",
+		"Location" : "Southern region of the Northwest Territories",
+		"Morphology": "Thick, long limbs. Its deep chest allows it to breathe more efficiently at higher altitudes. The wolf maximizes heat retention through its bushy tail during the winter and sheds its undercoat during the summer",
+		"Diets" : "Mountain goats, Dall sheep, snowshoe hares, lemmings, and fish like salmon"
 	},
 
 	#Index 20
-			 	"" :{
-		"Image" : "",
-		"Name_Wolf" : "",
-		"Species":"",
-		"Height" : "",
-		"Weight" : "",
-		"Lenght" : "",
-		"Conservation_status" : "",
-		"Location" : "",
-		"Morphology": "",
-		"Diets" : ""
+	"Baffin Island Wolf" :{
+		"Image" : "res://Assets/Image/Wolves/Baffin Island Wolf/Dogs,_jackals,_wolves,_and_foxes_(Plate_IV)_C._l._manningi_mod.jpg",
+		"Name_Wolf" : "Baffin Island Wolf",
+		"Species":"Canis lupus manningi",
+		"Height" : "60.96 cm - 106.68 cm",
+		"Weight" : "13.6 kg - 22.70 kg",
+		"Lenght" : "106.68 cm",
+		"Conservation_status" : "Secure",
+		"Location" : "Baffin Island and several nearby islands",
+		"Morphology": "light or white-colored fur turfs",
+		"Diets" : "Arctic hares, lemmings, and barren-ground caribou"
 	},
 
 	#Index 21
-					"" :{
-		"Image" : "",
-		"Name_Wolf" : "",
-		"Species":"",
-		"Height" : "",
-		"Weight" : "",
-		"Lenght" : "",
-		"Conservation_status" : "",
-		"Location" : "",
-		"Morphology": "",
-		"Diets" : ""
+		"Greenland Wolf" :{
+		"Image" : "res://Assets/Image/Wolves/Greenland Wolf/canis-lupus-orion_64c64b38-c6b2-4929-9c2d-6e189c37bbab.jpg",
+		"Name_Wolf" : "Greenland Wolf",
+		"Species":"Canis lupus orion",
+		"Height" : "Unknown",
+		"Weight" : "26 kg",
+		"Lenght" : "154.53 cm",
+		"Conservation_status" : "Unknown",
+		"Location" : "Polar regions, including Greenland",
+		"Morphology": "Similar in look to their arctic counterparts, mostly white-pelted.",
+		"Diets" : "Seals to muskox"
 	},
 
 	#Index 22
-						"" :{
-		"Image" : "",
-		"Name_Wolf" : "",
-		"Species":"",
-		"Height" : "",
-		"Weight" : "",
-		"Lenght" : "",
-		"Conservation_status" : "",
-		"Location" : "",
-		"Morphology": "",
-		"Diets" : ""
+		"Alaskan Tundra Wolf" :{
+		"Image" : "res://Assets/Image/Wolves/Alaskan Tundra Wolf/Canis_lupus_tundrarum_Lobo_Park.jpg",
+		"Name_Wolf" : "Alaskan Tundra Wolf",
+		"Species":"Canis lupus tundrarum",
+		"Height" : "66.04 cm - 96.52 cm",
+		"Weight" : "38.5 kg - 80 kg",
+		"Lenght" : "127 cm - 160.02 cm",
+		"Conservation_status" : "Apparently Secure ",
+		"Location" : "Icy American state, Hudson Bay, Alaska’s tundra, taiga near the Arctic coast, and boreal forests",
+		"Morphology": "Mostly white-colored, like many arctic subSpesies, and are identical cousins to the Great Plains wolf in skull and tooth Morfologi and the Interior Alaskan wolf. However, their narrower rostrum and palate and whiter coat differentiate them from both.",
+		"Diets" : "Moose, caribou, muskoxen, and bison"
 	},
 
 	#Index 23
-					 	"" :{
-		"Image" : "",
-		"Name_Wolf" : "",
-		"Species":"",
-		"Height" : "",
-		"Weight" : "",
-		"Lenght" : "",
-		"Conservation_status" : "",
-		"Location" : "",
-		"Morphology": "",
-		"Diets" : ""
+	"Labrador Wolf" :{
+		"Image" : "res://Assets/Image/Wolves/Labrador Wolf/hl9mpkuo.png",
+		"Name_Wolf" : "Labrador Wolf",
+		"Species":"Canis lupus labradorius",
+		"Height" : "Unknown",
+		"Weight" : "27 kg - 32 kg",
+		"Lenght" : "132.08 cm - 187.96 cm",
+		"Conservation_status" : "Vulnerable",
+		"Location" : "Labrador and northern Quebec",
+		"Morphology": "Dark grizzly-gray or nearly white coat",
+		"Diets" : "White-tailed deer and caribou"
 	},
 
 	#Index 24
-					 	"" :{
-		"Image" : "",
-		"Name_Wolf" : "",
-		"Species":"",
-		"Height" : "",
-		"Weight" : "",
-		"Lenght" : "",
-		"Conservation_status" : "",
-		"Location" : "",
-		"Morphology": "",
-		"Diets" : ""
+	"Iberian Wolf" :{
+		"Image" : "res://Assets/Image/Wolves/Iberian Wolf/1280px-Iberian_Wolf_AdF_001.jpg",
+		"Name_Wolf" : "Iberian Wolf",
+		"Species":"Canis lupus signatus",
+		"Height" : "68.58 cm - 78.74 cm",
+		"Weight" : "25 kg - 55 kg",
+		"Lenght" : "139.70 cm - 180.34 cm",
+		"Conservation_status" : "Vulnerable",
+		"Location" : "Northwestern Iberian Peninsula in northern Portugal and northwestern Spain, feeling at home in this range’s forests and mountain ecosystems",
+		"Morphology": "Slighter frame, with white and dark marks on specific parts",
+		"Diets" : "Red deer, roe deer, ibexes, rabbits, and fish"
 	},
 
 	#Index 25
-					 	"" :{
-		"Image" : "",
-		"Name_Wolf" : "",
-		"Species":"",
-		"Height" : "",
-		"Weight" : "",
-		"Lenght" : "",
-		"Conservation_status" : "",
-		"Location" : "",
-		"Morphology": "",
-		"Diets" : ""
+	"Italian Wolf" :{
+		"Image" : "res://Assets/Image/Wolves/Italian Wolf/C._l._italicus_in_MNP.jpg",
+		"Name_Wolf" : "Italian Wolf",
+		"Species":"Canis lupus italicus",
+		"Height" : "50.80 cm - 71.12 cm",
+		"Weight" : "25 kg - 45 kg",
+		"Lenght" : "106.68 cm - 144.78 cm",
+		"Conservation_status" : "Vulnerable",
+		"Location" : "Apennine Mountains and the Western Alps",
+		"Morphology": "Grey-fulvous pelt that reddens in summer. Lighter-colored belly and cheeks, dark bands on the back and tail tip, and occasionally along the forelimbs complement the colorful coat",
+		"Diets" : "	Chamois, Roe Deer, Red Deer and Wild Boar"
 	},
 
 	#Index 26
-					 	"" :{
-		"Image" : "",
-		"Name_Wolf" : "",
-		"Species":"",
-		"Height" : "",
-		"Weight" : "",
-		"Lenght" : "",
-		"Conservation_status" : "",
-		"Location" : "",
-		"Morphology": "",
-		"Diets" : ""
+		"Great Plains Wolf" :{
+		"Image" : "res://Assets/Image/Wolves/Greenland Wolf/canis-lupus-orion_64c64b38-c6b2-4929-9c2d-6e189c37bbab.jpg",
+		"Name_Wolf" : "Great Plains Wolf",
+		"Species":"Canis lupus nubilus",
+		"Height" : "Unknown",
+		"Weight" : "45 kg",
+		"Lenght" : "139.70 cm - 195.58 cm",
+		"Conservation_status" : "Unknown",
+		"Location" : "American states of Michigan, Minnesota, and Wisconsin",
+		"Morphology": "Mostly lightly colored, white and black variants still appear within individuals",
+		"Diets" : "Moose, white-tailed deer, beaver, snowshoe hare, smaller mammals, and birds"
 	},
 
 }
 
 func save_wolves_data():
-	var wolf_data =	FileAccess.open_encrypted_with_pass(save_wolves,FileAccess.WRITE,"Blizzard_WP403")
+	var wolf_data_save = FileAccess.open_encrypted_with_pass(save_wolves,FileAccess.WRITE,"Blizzard_WP403")
+	wolf_data_save.close()
+	
+
+func load_wolves_data():
+	var wolf_data_load = FileAccess.open_encrypted_with_pass(save_wolves,FileAccess.READ,"Blizzard_WP403")
