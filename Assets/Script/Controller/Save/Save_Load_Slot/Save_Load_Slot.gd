@@ -16,11 +16,11 @@ const  _autosave = "user://Save/Progress/Auto.WPA"
 var _Image_Location : Image
 var _Data : ProgressedGame
 
-@onready var _player : Player = %Player as Player
-@onready var _screen_Shoot_Location = $Location
-@onready var _character_Name = $VBoxContainer/Character_Container/Name
-@onready var _Biome_Location = $VBoxContainer/Biome_Container/Location
-@onready var _Coordinate = $VBoxContainer/Coordinate_Container/Coordinate
+#@onready var _player : Player = %Player as Player
+#@onready var _screen_Shoot_Location = $Location
+#@onready var _character_Name = $VBoxContainer/Character_Container/Name
+#@onready var _Biome_Location = $VBoxContainer/Biome_Container/Location
+#@onready var _Coordinate = $VBoxContainer/Coordinate_Container/Coordinate
 
 
 #Save Screen Shoot
@@ -31,12 +31,13 @@ func set_save_image_location(img: Image):
 func auto_save():
 	var _Auto_save = FileAccess.open_encrypted_with_pass(_autosave,FileAccess.WRITE,"Bl1zz4rd03")
 	_Auto_save.store_var(_Data)
+	print("Progress Saved")
 	_Auto_save.close()
 
 #Save Slot 1
 func save_slot1():
 	var _Save_Slot_1 = FileAccess.open_encrypted_with_pass(_fileprogressslot1,FileAccess.WRITE,"Bl1zz4rd03")
-	# _Save_Slot_1.store_var(Data variable)
+	_Save_Slot_1.store_var(_Data)
 	_Save_Slot_1.close()
 
 #Save Slot 2
@@ -129,4 +130,8 @@ func _on_load_autosave_pressed():
 	pass # Replace with function body.
 	
 func _ready():
+	pass
+
+func _process(delta):
+	
 	pass

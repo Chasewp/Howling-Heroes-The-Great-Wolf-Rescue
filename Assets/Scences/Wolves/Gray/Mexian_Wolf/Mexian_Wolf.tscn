@@ -68,4 +68,5 @@ shape = SubResource("RectangleShape2D_eqo3g")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_rdvkc")
 animation = &"Iddle"
-frame_progress = 0.968657
+autoplay = "Iddle"
+frame_progress = 0.310396

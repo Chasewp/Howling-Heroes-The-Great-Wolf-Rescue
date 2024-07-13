@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://mikkyt8m316m"
+path="res://.godot/imported/Gold is in our hearths (online-audio-converter.com).mp3-2cd109ae62744164d58c76b18d0a5e4a.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Gold is in our hearths (online-audio-converter.com).mp3"
+dest_files=["res://.godot/imported/Gold is in our hearths (online-audio-converter.com).mp3-2cd109ae62744164d58c76b18d0a5e4a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

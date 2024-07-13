@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dpalcuvsrqsj0"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/Save/Save_Load_Slot/Save_Load_Slot.gd" id="1_q82sx"]
-[ext_resource type="Texture2D" uid="uid://brqgb3qqlr2xm" path="res://Assets/Image/Background/Moonlight Clift/Clift.png" id="2_6087o"]
+[ext_resource type="Texture2D" uid="uid://brqgb3qqlr2xm" path="res://Assets/Image/images/Background/Moonlight Clift/Clift.png" id="2_6087o"]
 [ext_resource type="FontFile" uid="uid://c4ipkih8u305j" path="res://Assets/Fonts/DEADLY CLAWS[.ttf" id="3_14ouc"]
 [ext_resource type="FontFile" uid="uid://bv6xsykw7vcai" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="4_l478o"]
 

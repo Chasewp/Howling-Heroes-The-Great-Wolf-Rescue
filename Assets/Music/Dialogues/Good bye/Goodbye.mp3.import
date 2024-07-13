@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bpkfmkyhxykdk"
+path="res://.godot/imported/Goodbye.mp3-be0bb2ae3cc48d4d4b5e208d249d5cb5.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Dialogues/Good bye/Goodbye.mp3"
+dest_files=["res://.godot/imported/Goodbye.mp3-be0bb2ae3cc48d4d4b5e208d249d5cb5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

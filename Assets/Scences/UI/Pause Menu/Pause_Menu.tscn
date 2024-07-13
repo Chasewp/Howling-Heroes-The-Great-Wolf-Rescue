@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://pd5jheoce1lf"]
+[gd_scene load_steps=3 format=3 uid="uid://pd5jheoce1lf"]
 
+[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Pause_Screen/Pause_Menu.gd" id="1_q3f14"]
 [ext_resource type="FontFile" uid="uid://bsmkjcem4b3i1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="1_qxc33"]
 
 [node name="PauseMenu" type="Control"]
@@ -9,6 +10,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_q3f14")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0, 1, 1, 0.27451)
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 custom_minimum_size = Vector2(250, 145)

@@ -5,7 +5,7 @@
 [ext_resource type="FontFile" uid="uid://bv6xsykw7vcai" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="2_vgvp7"]
 [ext_resource type="FontFile" uid="uid://bsmkjcem4b3i1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="4_vah5o"]
 [ext_resource type="FontFile" uid="uid://ccpiomxr4hnwi" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="5_t037p"]
-[ext_resource type="AudioStream" uid="uid://c358vsk45c50y" path="res://Assets/Music/Click button.mp3" id="6_qxd5a"]
+[ext_resource type="AudioStream" uid="uid://c358vsk45c50y" path="res://Assets/Music/Un Sorteted/Click button.mp3" id="6_qxd5a"]
 
 [node name="WolfAlmanacPage1Idex" type="Control"]
 layout_mode = 3

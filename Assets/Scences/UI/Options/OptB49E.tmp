@@ -1,0 +1,243 @@
+[gd_scene load_steps=7 format=3 uid="uid://wh1qjrf1tb56"]
+
+[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Options_Menu/Options_Menu.gd" id="1_my3m4"]
+[ext_resource type="Texture2D" uid="uid://ca37ndc8femkj" path="res://Assets/Image/images/Background/Option/Settings.jpeg" id="1_o1l7c"]
+[ext_resource type="AudioStream" uid="uid://ty2bg0clrp0t" path="res://Assets/Music/All Button/Quit_Button.mp3" id="2_1nk4j"]
+[ext_resource type="FontFile" uid="uid://bsmkjcem4b3i1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="2_al8ah"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_klgu7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ifj1x"]
+
+[node name="OptionsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_my3m4")
+
+[node name="Button" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(11, 14)
+stream = ExtResource("2_1nk4j")
+bus = &"Sound Effects"
+
+[node name="Backkground" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_o1l7c")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="Options Menu" type="VBoxContainer" parent="Backkground"]
+custom_minimum_size = Vector2(800, 450)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.195
+anchor_top = 0.164
+anchor_right = 0.82
+anchor_bottom = 0.789
+offset_left = 0.399994
+offset_top = -0.0800018
+offset_right = 0.399902
+offset_bottom = -0.0800171
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Settings_Option_Tab_Menu" type="TabContainer" parent="Backkground/Options Menu"]
+custom_minimum_size = Vector2(750, 300)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_al8ah")
+theme_override_font_sizes/font_size = 32
+
+[node name="Video" type="TabBar" parent="Backkground/Options Menu/Settings_Option_Tab_Menu"]
+layout_mode = 2
+
+[node name="Video_Settings" type="GridContainer" parent="Backkground/Options Menu/Settings_Option_Tab_Menu/Video"]
+custom_minimum_size = Vector2(760, 180)
+layout_mode = 2
+anchor_left = 0.012
+anchor_top = 0.058
+anchor_right = 0.975
+anchor_bottom = 0.75
+offset_left = 0.4
+offset_top = -0.0800009
+offset_bottom = -1.52588e-05
+theme_override_constants/h_separation = 487
+theme_override_constants/v_separation = 15
+columns = 2
+
+[node name="Display_Mode" type="Label" parent="Backkground/Options Menu/Settings_Option_Tab_Menu/Video/Video_Settings"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_al8ah")
+theme_override_font_sizes/font_size = 24
+text = "Display Mode"
+
+[node name="Display_Mode_Option" type="OptionButton" parent="Backkground/Options Menu/Settings_Option_Tab_Menu/Video/Video_Settings"]
+layout_direction = 3
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_al8ah")
+theme_override_font_sizes/font_size = 24
+item_count = 2
+selected = 0
+popup/item_0/text = "Windowed"
+popup/item_0/id = 0
+popup/item_1/text = "Full Screen"
+popup/item_1/id = 1
+
+[node name="V_Sync" type="Label" parent="Backkground/Options Menu/Settings_Option_Tab_Menu/Video/Video_Settings"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_al8ah")
+theme_override_font_sizes/font_size = 24
+text = "V-Sync
+"
+
+[node name="V_Sync_Switch" type="CheckButton" parent="Backkground/Options Menu/Settings_Option_Tab_Menu/Video/Video_Settings"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_al8ah")
+theme_override_font_sizes/font_size = 24
+
+[node name="Switch_vsyin" type="Label" parent="Backkground/Options Menu/Settings_Option_Tab_Menu/Video/Video_Settings/V_Sync_Switch"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.439
+anchor_right = 0.697
+anchor_bottom = 0.958
+offset_left = -0.0449371
+offset_top = 3.05176e-05
+offset_right = -0.0349426
+offset_bottom = 0.00802994
+
+[node name="Audio" type="TabBar" parent="Backkground/Options Menu/Settings_Option_Tab_Menu"]
+visible = false
+layout_mode = 2
+
+[node name="Audio_Settings" type="GridContainer" parent="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio"]
+custom_minimum_size = Vector2(760, 180)
+layout_mode = 0
+offset_left = 16.0
+offset_top = 32.0
+offset_right = 776.0
+offset_bottom = 212.0
+theme_override_constants/h_separation = 450
+theme_override_constants/v_separation = 25
+columns = 2
+
+[node name="Master_Volume" type="Label" parent="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_al8ah")
+theme_override_font_sizes/font_size = 24
+text = "Master Volume"
+
+[node name="Master_Volume_Setings" type="HBoxContainer" parent="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings"]
+layout_direction = 1
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Master_Slider" type="HSlider" parent="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings/Master_Volume_Setings"]
+layout_direction = 1
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 6.0
+
+[node name="Master_Max_Label" type="Label" parent="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings/Master_Volume_Setings"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_al8ah")
+theme_override_font_sizes/font_size = 24
+
+[node name="Music_Volume" type="Label" parent="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_al8ah")
+theme_override_font_sizes/font_size = 24
+text = "Music Volume"
+
+[node name="Music_Volume_Setings" type="HBoxContainer" parent="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings"]
+layout_direction = 1
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Music_Slider" type="HSlider" parent="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings/Music_Volume_Setings"]
+layout_direction = 1
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 6.0
+
+[node name="Music_Max-Label" type="Label" parent="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings/Music_Volume_Setings"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_al8ah")
+theme_override_font_sizes/font_size = 24
+
+[node name="Voice_Volume" type="Label" parent="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_al8ah")
+theme_override_font_sizes/font_size = 24
+text = "Voice Volume"
+
+[node name="Voice_Volume_Setings" type="HBoxContainer" parent="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings"]
+layout_direction = 1
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Voice_Slider" type="HSlider" parent="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings/Voice_Volume_Setings"]
+layout_direction = 1
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 6.0
+
+[node name="Max_Voice_Label" type="Label" parent="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings/Voice_Volume_Setings"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_al8ah")
+theme_override_font_sizes/font_size = 24
+
+[node name="SFX_Volume" type="Label" parent="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_al8ah")
+theme_override_font_sizes/font_size = 24
+text = "SFX Volume"
+
+[node name="SFX_Volume_Setings" type="HBoxContainer" parent="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings"]
+layout_direction = 1
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SFX_Slider" type="HSlider" parent="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings/SFX_Volume_Setings"]
+layout_direction = 1
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 6.0
+
+[node name="Max_SFX_Label" type="Label" parent="Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings/SFX_Volume_Setings"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_al8ah")
+theme_override_font_sizes/font_size = 24
+
+[node name="Buttons" type="HBoxContainer" parent="Backkground/Options Menu"]
+custom_minimum_size = Vector2(800, 40)
+layout_mode = 2
+theme_override_constants/separation = 707
+
+[node name="Back_Button" type="Button" parent="Backkground/Options Menu/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 5.0
+theme_override_fonts/font = ExtResource("2_al8ah")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_klgu7")
+text = "Back"
+
+[node name="Save_Button" type="Button" parent="Backkground/Options Menu/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2_al8ah")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ifj1x")
+text = "Save
+"
+
+[connection signal="pressed" from="Backkground/Options Menu/Buttons/Back_Button" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="Backkground/Options Menu/Buttons/Save_Button" to="." method="_on_save_button_pressed"]

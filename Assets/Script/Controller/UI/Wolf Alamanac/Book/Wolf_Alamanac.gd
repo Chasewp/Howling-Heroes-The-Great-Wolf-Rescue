@@ -1,5 +1,6 @@
-class_name Wolf_Alamac
+class_name Wolf_Alamac_Book
 extends Node
+
 
 #Wolf Picture
 @onready var Wolf_Picture = $Wolf_Picture
@@ -26,7 +27,7 @@ extends Node
 func _ready():
 	animations.play("Open_Book")
 	await get_tree().create_timer(6).timeout
-
+	
 #quit Wolf Almanac
 func _process(delta):
 	if Input.is_action_just_pressed("open_wolf_almanac"):

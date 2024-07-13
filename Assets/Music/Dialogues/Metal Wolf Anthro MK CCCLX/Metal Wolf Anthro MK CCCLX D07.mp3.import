@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ba32wbonvi45p"
+path="res://.godot/imported/Metal Wolf Anthro MK CCCLX D07.mp3-bb96e10d167329c2a8f99f0761bf7964.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Dialogues/Metal Wolf Anthro MK CCCLX/Metal Wolf Anthro MK CCCLX D07.mp3"
+dest_files=["res://.godot/imported/Metal Wolf Anthro MK CCCLX D07.mp3-bb96e10d167329c2a8f99f0761bf7964.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
