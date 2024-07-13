@@ -1,7 +1,1 @@
-res://Assets/Scences/UI/Wolf_Almanac/Book/wolf_almanac.tscn
-res://Assets/Dialogue/Theme/Speaker_Mode.tres
-res://Assets/Dialogue/Theme/Pixelize_Visual_Novel.tres
-res://Assets/Theme/Dialouge/Bubble_Dialogue.tres
-res://Assets/Theme/Options_Menu/Options_Menu_Grabber_Hightlight.tres
-res://Assets/Theme/Options_Menu/Options_Menu_Grabber_Theme.tres
 res://Assets/Script/Class/Wolf/Wolves_Save/save_Wolves.gd

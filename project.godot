@@ -33,11 +33,6 @@ GlobalSettings="*res://Assets/Script/Controller/Save/Global_Settings/Global_Sett
 GlobalTilesets="*res://Assets/Script/Global_Tilesets/Global_Tilesets.gd"
 player="*res://Assets/Script/Class/Character/Player/Player.gd"
 SaveLoadSlot="*res://Assets/Script/Controller/Save/Save_Load_Slot/Save_Load_Slot.gd"
-Wolves_Data="*res://Assets/Script/Class/Wolf/Wolves_Save/save_Wolves.gd"
-
-[collada]
-
-use_ambient=true
 
 [dialogic]
 
@@ -277,7 +272,6 @@ common/enable_pause_aware_picking=true
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
-renderer/rendering_method.web="forward_plus"
 driver/threads/thread_model=2
 textures/vram_compression/import_etc2_astc=true
 global_illumination/voxel_gi/quality=1

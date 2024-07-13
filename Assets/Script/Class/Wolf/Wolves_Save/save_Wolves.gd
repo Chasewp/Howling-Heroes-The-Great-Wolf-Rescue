@@ -1266,17 +1266,17 @@ func _get_British_Columbian_Wolf_Species():
 	
 #Hight
 func _get_British_Columbian_Wolf_Height():
-	var _british_Columbian_Wolf_Height = Data_Wolves["British Columbian Wolf"]["Height"]
+	var _british_Columbian_Wolf_Height = Data_Wolves["Labrador Wolf"]["Height"]
 	return _british_Columbian_Wolf_Height
 
 #Weight
 func _get_British_Columbian_Wolf_Weight():
-	var _british_Columbian_Wolf_Weight = Data_Wolves["British Columbian Wolf"]["Weight"]	
+	var _british_Columbian_Wolf_Weight = Data_Wolves["Labrador Wolf"]["Weight"]	
 	return _british_Columbian_Wolf_Weight
 	
 #Lenght
 func _get_British_Columbian_Wolf_Lenght():
-	var _british_Columbian_Wolf_Lenght = Data_Wolves["British Columbian Wolf"]["Lenght"]
+	var _british_Columbian_Wolf_Lenght = Data_Wolves["Labrador Wolf"]["Lenght"]
 	return _british_Columbian_Wolf_Lenght
 	
 #Conservation Status

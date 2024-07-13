@@ -1,5 +1,5 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1720789904
+::res://::1720847688
 default_bus_layout.tres::AudioBusLayout::196888898710771457::1713830022::0::1::::<><>::
 Example.gd::GDScript::-1::1720254774::0::1::::<>Control<>::
 example.tscn::PackedScene::5501643119822258770::1720255438::0::1::::<><>::res://Example.gd
@@ -587,9 +587,9 @@ TimelineResourceSaver.gd::GDScript::-1::1713830021::0::1::::DialogicTimelineForm
 ::res://Assets/Dialogue/Character/::1720081721
 Mr_Wolf.dch::Resource::-1::1720081721::0::1::::<><>::
 Player.dch::Resource::-1::1720081719::0::1::::<><>::
-::res://Assets/Dialogue/Theme/::1720253179
-Pixelize_Visual_Novel.tres::Resource/DialogicStyle::4396765608337922874::1720253179::0::1::::<><>::uid://c1k5m0w3r40xf::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://cy1y14inwkplb::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn<>uid://bquja8jyk8kbr::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_layer.tscn<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>uid://dsbwnp5hegnu3::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn<>uid://dhk6j6eb6e3q::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn<>uid://cvgf4c6gg0tsy::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn<>uid://lx24i8fl6uo::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn<>res://addons/dialogic/Resources/dialogic_style.gd
-Speaker_Mode.tres::Resource/DialogicStyle::5794453110338011654::1720253179::0::1::::<><>::uid://c1k5m0w3r40xf::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://by6waso0mjpjp::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_SpeakerPortraitTextbox/textbox_with_speaker_portrait.tscn<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>uid://dsbwnp5hegnu3::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn<>uid://dhk6j6eb6e3q::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn<>uid://cvgf4c6gg0tsy::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn<>uid://lx24i8fl6uo::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn<>res://addons/dialogic/Resources/dialogic_style.gd
+::res://Assets/Dialogue/Theme/::1720847673
+Pixelize_Visual_Novel.tres::Resource/DialogicStyle::4396765608337922874::1720847673::0::1::::<><>::uid://c1k5m0w3r40xf::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://cy1y14inwkplb::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn<>uid://bquja8jyk8kbr::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_layer.tscn<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>uid://dsbwnp5hegnu3::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn<>uid://dhk6j6eb6e3q::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn<>uid://cvgf4c6gg0tsy::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn<>uid://lx24i8fl6uo::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn<>res://addons/dialogic/Resources/dialogic_style.gd
+Speaker_Mode.tres::Resource/DialogicStyle::5794453110338011654::1720847673::0::1::::<><>::uid://c1k5m0w3r40xf::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://by6waso0mjpjp::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_SpeakerPortraitTextbox/textbox_with_speaker_portrait.tscn<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>uid://dsbwnp5hegnu3::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn<>uid://dhk6j6eb6e3q::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn<>uid://cvgf4c6gg0tsy::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn<>uid://lx24i8fl6uo::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn<>res://addons/dialogic/Resources/dialogic_style.gd
 ::res://Assets/Dialogue/TimeLines/::1717725240
 How To Play.dtl::Resource::-1::1716204322::0::1::::<><>::
 Intro.dtl::Resource::-1::1713830017::0::1::::<><>::
@@ -2346,7 +2346,7 @@ bow relese3.png::CompressedTexture2D::5939941028946378272::1717585452::171819057
 Brust Garou.png::CompressedTexture2D::3658551926036169694::1718419403::1718419408::1::::<><>::
 machete.png::CompressedTexture2D::9039262389075203193::1713830017::1718190577::1::::<><>::
 sniper.png::CompressedTexture2D::2529475930944583478::1713830017::1718190577::1::::<><>::
-::res://Assets/Image/Wolves/::1720194964
+::res://Assets/Image/Wolves/::1720847516
 ::res://Assets/Image/Wolves/Alaskan Tundra Wolf/::1718190577
 Canis_lupus_tundrarum_Lobo_Park.jpg::CompressedTexture2D::2255198888716765561::1713830017::1718190577::1::::<><>::
 ::res://Assets/Image/Wolves/Alexander Archipelago Wolf/::1718190577
@@ -2359,13 +2359,6 @@ Arctic-Wolf-in-Winter-Standing-on-Snow.jpg.webp::CompressedTexture2D::7135611999
 Dogs,_jackals,_wolves,_and_foxes_(Plate_IV)_C._l._manningi_mod.jpg::CompressedTexture2D::3403877651558986089::1713830017::1718190577::1::::<><>::
 ::res://Assets/Image/Wolves/British Columbian Wolf/::1718190577
 canis-lupus-columbianus.jpg::CompressedTexture2D::710988581873660273::1713830017::1718190577::1::::<><>::
-::res://Assets/Image/Wolves/Character Sheets/::1720194964
-Character Sheet Wolf - 1 Gray.png::CompressedTexture2D::211569624593395161::1715658800::1715659241::1::::<><>::
-Character Sheet Wolf - 2 Black.png::CompressedTexture2D::1992763593502658777::1715658819::1715659241::1::::<><>::
-Character Sheet Wolf - 3 brown.png::CompressedTexture2D::86114607660529916::1715658834::1715659241::1::::<><>::
-Character Sheet Wolf - 4 golden.png::CompressedTexture2D::4791840163823289979::1715658865::1715659241::1::::<><>::
-Character Sheet Wolf - 5 silver.png::CompressedTexture2D::7796536763998454330::1715658877::1715659241::1::::<><>::
-Character Sheet Wolf - 6 white.png::CompressedTexture2D::5733553940668456189::1715658887::1715659241::1::::<><>::
 ::res://Assets/Image/Wolves/Eastern Wolf/::1718190577
 Eastern-Wolf-Hunting-in-the-Wild.jpg::CompressedTexture2D::8029692598537768022::1713830017::1718190577::1::::<><>::
 ::res://Assets/Image/Wolves/Eurasian Wolf/::1718190578
@@ -2864,12 +2857,12 @@ Pause_Menu.tscn::PackedScene::1060863744242428003::1720082198::0::1::::<><>::res
 Saver_screen.tscn::PackedScene::8212767247907130787::1720082683::0::1::::<><>::res://Assets/Script/Controller/Save/Save_Load_Slot/Save_Load_Slot.gd<>uid://brqgb3qqlr2xm::::res://Assets/Image/images/Background/Moonlight Clift/Clift.png<>uid://c4ipkih8u305j::::res://Assets/Fonts/DEADLY CLAWS[.ttf<>uid://bv6xsykw7vcai::::res://Assets/Fonts/DisposableDroidBB_bld.ttf
 ::res://Assets/Scences/UI/Settings_Confrimation/::1719677215
 settings_confrimation.tscn::PackedScene::4792057750461397828::1719677215::0::1::::<><>::res://Assets/Script/Controller/UI/Settings_Confirmation/settings_confrimation.gd<>uid://ty2bg0clrp0t::::res://Assets/Music/Un Sorteted/All Button/Quit_Button.mp3<>uid://c8ygb4nqbs03p::::res://Assets/Music/Un Sorteted/Warning/exclamation-101soundboards.mp3<>uid://br2uoqpi38ygc::::res://Assets/Theme/Dialouge/Exit_Confirmation.tres
-::res://Assets/Scences/UI/Splash/::1720194969
+::res://Assets/Scences/UI/Splash/::1720847673
 Splash_Screen.tscn::PackedScene::2923839636953089034::1718377040::0::1::::<><>::res://Assets/Script/Controller/UI/Splash_Screen/Splash_Screen.gd<>uid://d16hkoquk0jh::::res://Assets/Image/Splash Screen/Splash Screen.png
-Splash_Screen_Played.tscn::PackedScene::960210786821005025::1718377040::0::1::::<><>::res://Assets/Script/Controller/UI/Splash_Screen/Splash_Screen_Played.gd<>uid://rwlb23e81dbs::::res://Assets/Image/images/Background/Splash Screen/—Pngtree—flat wind keyboard mouse vector_5458958.png<>uid://bv6xsykw7vcai::::res://Assets/Fonts/DisposableDroidBB_bld.ttf
+Splash_Screen_Played.tscn::PackedScene::960210786821005025::1720847673::0::1::::<><>::res://Assets/Script/Controller/UI/Splash_Screen/Splash_Screen_Played.gd<>uid://rwlb23e81dbs::::res://Assets/Image/images/Background/Splash Screen/—Pngtree—flat wind keyboard mouse vector_5458958.png<>uid://bv6xsykw7vcai::::res://Assets/Fonts/DisposableDroidBB_bld.ttf
 ::res://Assets/Scences/UI/Wolf_Almanac/::1713830021
-::res://Assets/Scences/UI/Wolf_Almanac/Book/::1720279890
-wolf_almanac.tscn::PackedScene::450897493247575815::1720279890::0::1::::<><>::res://Assets/Script/Controller/UI/Wolf Alamanac/Book/Wolf_Alamanac.gd<>uid://ds5e17l3qjw75::::res://Assets/Image/images/Book Open/opened_notebook_isolated_on_background.png<>uid://bv6xsykw7vcai::::res://Assets/Fonts/DisposableDroidBB_bld.ttf<>uid://ccpiomxr4hnwi::::res://Assets/Fonts/DisposableDroidBB_bldital.ttf<>uid://bsmkjcem4b3i1::::res://Assets/Fonts/DisposableDroidBB.ttf<>uid://b37vftxdinymo::::res://Assets/Fonts/DisposableDroidBB_ital.ttf
+::res://Assets/Scences/UI/Wolf_Almanac/Book/::1720790843
+wolf_almanac.tscn::PackedScene::450897493247575815::1720790843::0::1::::<><>::res://Assets/Script/Controller/UI/Wolf Alamanac/Book/Wolf_Alamanac.gd<>uid://ds5e17l3qjw75::::res://Assets/Image/images/Book Open/opened_notebook_isolated_on_background.png<>uid://bv6xsykw7vcai::::res://Assets/Fonts/DisposableDroidBB_bld.ttf<>uid://ccpiomxr4hnwi::::res://Assets/Fonts/DisposableDroidBB_bldital.ttf<>uid://bsmkjcem4b3i1::::res://Assets/Fonts/DisposableDroidBB.ttf<>uid://b37vftxdinymo::::res://Assets/Fonts/DisposableDroidBB_ital.ttf
 ::res://Assets/Scences/UI/Wolf_Almanac/Index/::1719846528
 Wolf_Almanac_Idex_Page 1.tscn::PackedScene::3437840709585500090::1719846528::0::1::::<><>::res://Assets/Script/Controller/UI/Wolf Alamanac/Index/Wolf_Almanac_Idex.gd<>uid://dkcpwot8r1ksg::::res://Assets/Image/images/Background/Wolf Almanac Index/Wood Texture.png<>uid://bv6xsykw7vcai::::res://Assets/Fonts/DisposableDroidBB_bld.ttf<>uid://bsmkjcem4b3i1::::res://Assets/Fonts/DisposableDroidBB.ttf<>uid://ccpiomxr4hnwi::::res://Assets/Fonts/DisposableDroidBB_bldital.ttf<>uid://c358vsk45c50y::::res://Assets/Music/Un Sorteted/Click button.mp3
 wolf_almanac_idex_page_2.tscn::PackedScene::2854970328556676315::1717424202::0::1::::<><>::res://Assets/Script/Controller/UI/Wolf Alamanac/Index/Wolf_Almanac_Idex.gd<>uid://dkcpwot8r1ksg::::res://Assets/Image/images/Background/Wolf Almanac Index/Wood Texture.png<>uid://bv6xsykw7vcai::::res://Assets/Fonts/DisposableDroidBB_bld.ttf<>uid://bsmkjcem4b3i1::::res://Assets/Fonts/DisposableDroidBB.ttf<>uid://ccpiomxr4hnwi::::res://Assets/Fonts/DisposableDroidBB_bldital.ttf<>uid://cp0mdrgknw0x1::::res://Assets/Music/Start_Buton_Sound/Start_Buton_Sound.mp3
@@ -2958,8 +2951,8 @@ Player.gd::GDScript::-1::1716121868::0::1::::Player<>CharacterBody2D<>::
 wolf_almanac.gd::GDScript::-1::1713830021::0::1::::Wolf_Almanac<>Node<>::
 ::res://Assets/Script/Class/Wolf/Wolf_Rescue/::1719681413
 Wolf_Rescue.gd::GDScript::-1::1719681413::0::1::::Wolf_Rescue<>Node<>::
-::res://Assets/Script/Class/Wolf/Wolves_Save/::1720275671
-save_Wolves.gd::GDScript::-1::1720279880::0::1::::save_Wolves<>Node<>::
+::res://Assets/Script/Class/Wolf/Wolves_Save/::1720847516
+save_Wolves.gd::GDScript::-1::1720847516::0::1::::save_Wolves<>Node<>::
 Wolves.json::JSON::-1::1720252482::0::1::::<><>::
 ::res://Assets/Script/Controller/::1718420028
 ::res://Assets/Script/Controller/Game_Manager/::1718195864
@@ -3033,15 +3026,15 @@ brust_garou_riffle_player.gd::GDScript::-1::1718522437::0::1::::<>RigidBody2D<>:
 ::res://Assets/Script/Global_Tilesets/::1717598585
 Global_Tilesets.gd::GDScript::-1::1717598585::0::1::::<>Node<>::
 ::res://Assets/Theme/::1718191209
-::res://Assets/Theme/Dialouge/::1720253179
-Bubble_Dialogue.tres::Resource/DialogicStyle::7394029707513099234::1720253179::0::1::::<><>::res://addons/dialogic/Modules/DefaultLayoutParts/Base_TextBubble/text_bubble_base.gd<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://d2it0xiap3gnt::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/text_bubble_layer.tscn<>res://addons/dialogic/Resources/dialogic_style.gd
+::res://Assets/Theme/Dialouge/::1720847673
+Bubble_Dialogue.tres::Resource/DialogicStyle::7394029707513099234::1720847673::0::1::::<><>::res://addons/dialogic/Modules/DefaultLayoutParts/Base_TextBubble/text_bubble_base.gd<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://d2it0xiap3gnt::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/text_bubble_layer.tscn<>res://addons/dialogic/Resources/dialogic_style.gd
 Exit_Confirmation.tres::Theme::3636609429817157686::1713830021::0::1::::<><>::uid://bsmkjcem4b3i1::::res://Assets/Fonts/DisposableDroidBB.ttf
 ::res://Assets/Theme/Main Menu/::1713830021
 main_menu_button.tres::StyleBoxFlat::5387923169860628167::1713830021::0::1::::<><>::
-::res://Assets/Theme/Options_Menu/::1720195634
+::res://Assets/Theme/Options_Menu/::1720790843
 Options_Menu_Grabber_Area_Highlight.tres::StyleBoxLine::3577362507875303502::1718191323::0::1::::<><>::
-Options_Menu_Grabber_Hightlight.tres::GradientTexture2D::1991669114843106770::1720195634::0::1::::<><>::
-Options_Menu_Grabber_Theme.tres::GradientTexture2D::8971696749209915811::1720195634::0::1::::<><>::
+Options_Menu_Grabber_Hightlight.tres::GradientTexture2D::1991669114843106770::1720790843::0::1::::<><>::
+Options_Menu_Grabber_Theme.tres::GradientTexture2D::8971696749209915811::1720790843::0::1::::<><>::
 Options_Menu_Slider.tres::StyleBoxLine::5816168605563242376::1718191272::0::1::::<><>::
 ::res://Assets/Theme/Player_Name/::1713830021
 Player_Name.tres::Theme::6459011398460081421::1713830021::0::1::::<><>::uid://bv6xsykw7vcai::::res://Assets/Fonts/DisposableDroidBB_bld.ttf
