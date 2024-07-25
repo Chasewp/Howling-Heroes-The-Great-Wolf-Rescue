@@ -1,3 +1,9 @@
+res://Assets/Script/Controller/UI/Credits
+res://Assets/Theme/Credit
+res://Assets/Script/Class/Wolf/Wolf Alamanac/Index
+res://Assets/Script/Class/Wolf/Wolf Alamanac
+res://Assets/Script/Class/Wolf/Wolf Alamanac/Book
+res://Assets/Script/Class/Wolf/Wolves_Save
 res://Assets/Script/Controller/UI/Pause_Screen
 res://Assets/Image/Wolves/Pixel Art/Character Sheets
 res://Assets/Script/Controller/Save/Save_Load_Slot
@@ -14,12 +20,6 @@ res://Assets/Script/Controller/UI/Check_Poinys
 res://Assets/Script/Controller/UI/Biomes
 res://Assets/Scences/UI/Check_Points
 res://Assets/Dialogue/Character
-res://Assets/Dialogue/TimeLines
-res://Assets/Theme/Dialouge
-res://Assets/Scences/Stages/Taiga
-res://Assets/Scences/UI/Location/Taiga
-res://Assets/Script/Global_Tilesets
-res://Assets/Script/Class/Character
 C:/Users/Blizzard/AppData/Roaming/Godot/import_FBX2glTF/FBX2glTF-windows-x86_64
 C:/Program Files/Adobe/Adobe Photoshop 2024
 C:/Users/Blizzard/AppData/Local/Programs/Microsoft VS Code Insiders

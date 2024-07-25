@@ -1,28 +1,17 @@
 [gd_scene load_steps=7 format=3 uid="uid://bgw77dqvxt5fr"]
 
-[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Wolf Alamanac/Index/Wolf_Almanac_Idex.gd" id="1_rlcdf"]
+[ext_resource type="Script" path="res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Idex.gd" id="1_tf48s"]
 [ext_resource type="Texture2D" uid="uid://dkcpwot8r1ksg" path="res://Assets/Image/images/Background/Wolf Almanac Index/Wood Texture.png" id="2_33m6h"]
 [ext_resource type="FontFile" uid="uid://bv6xsykw7vcai" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="3_dism6"]
 [ext_resource type="FontFile" uid="uid://bsmkjcem4b3i1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="4_7g2dc"]
 [ext_resource type="FontFile" uid="uid://ccpiomxr4hnwi" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="5_yh7em"]
-[ext_resource type="AudioStream" uid="uid://cp0mdrgknw0x1" path="res://Assets/Music/Start_Buton_Sound/Start_Buton_Sound.mp3" id="6_jxf38"]
+[ext_resource type="AudioStream" uid="uid://cp0mdrgknw0x1" path="res://Assets/Music/Un Sorteted/Start_Buton_Sound/Start_Buton_Sound.mp3" id="6_jxf38"]
 
-[node name="WolfAlmanacIdexPage2" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("1_rlcdf")
+[node name="Wolf_Almanac_Idex_Page 2" type="Node2D"]
+script = ExtResource("1_tf48s")
 
 [node name="Background" type="TextureRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+custom_minimum_size = Vector2(1280, 720)
 texture = ExtResource("2_33m6h")
 expand_mode = 1
 
@@ -162,6 +151,3 @@ text = "Page 2 of 9"
 
 [node name="Button_Click" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("6_jxf38")
-
-[connection signal="pressed" from="Background/Next_Button_Page_2" to="." method="_on_next_button_page_2_pressed"]
-[connection signal="pressed" from="Background/Back_Button_Page_2" to="." method="_on_back_button_page_2_pressed"]

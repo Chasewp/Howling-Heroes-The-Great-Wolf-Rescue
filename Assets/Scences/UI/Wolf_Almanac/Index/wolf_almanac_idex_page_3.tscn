@@ -1,11 +1,11 @@
 [gd_scene load_steps=7 format=3 uid="uid://b6c6f7cxoirey"]
 
-[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Wolf Alamanac/Index/Wolf_Almanac_Idex.gd" id="1_3ey1s"]
+[ext_resource type="Script" path="res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Idex.gd" id="1_3ey1s"]
 [ext_resource type="Texture2D" uid="uid://dkcpwot8r1ksg" path="res://Assets/Image/images/Background/Wolf Almanac Index/Wood Texture.png" id="2_uux2b"]
 [ext_resource type="FontFile" uid="uid://bv6xsykw7vcai" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="3_a1t00"]
 [ext_resource type="FontFile" uid="uid://bsmkjcem4b3i1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="4_eurl3"]
 [ext_resource type="FontFile" uid="uid://ccpiomxr4hnwi" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="5_el0bm"]
-[ext_resource type="AudioStream" uid="uid://cp0mdrgknw0x1" path="res://Assets/Music/Start_Buton_Sound/Start_Buton_Sound.mp3" id="6_ecdol"]
+[ext_resource type="AudioStream" uid="uid://cp0mdrgknw0x1" path="res://Assets/Music/Un Sorteted/Start_Buton_Sound/Start_Buton_Sound.mp3" id="6_ecdol"]
 
 [node name="WolfAlmanacIdexPage3" type="Control"]
 layout_mode = 3

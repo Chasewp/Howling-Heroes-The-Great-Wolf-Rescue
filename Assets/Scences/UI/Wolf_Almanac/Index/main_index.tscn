@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmoq011eur2mk"]
+
+[ext_resource type="Script" path="res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/main_index.gd" id="1_7kv5a"]
+
+[node name="MainIndex" type="Node2D"]
+script = ExtResource("1_7kv5a")
+start_scence = "res://Assets/Scences/UI/Wolf_Almanac/Index/Wolf_Almanac_Idex_Page 1.tscn"
+
+[node name="Index" type="Node2D" parent="."]

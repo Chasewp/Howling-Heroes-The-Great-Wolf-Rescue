@@ -1,3 +1,4 @@
+"""Singleton <AutoLoad> - Save & Load Manager"""
 class_name  save_load_progress
 extends Node
 
@@ -18,9 +19,9 @@ var _Data : ProgressedGame
 
 #@onready var _player : Player = %Player as Player
 #@onready var _screen_Shoot_Location = $Location
-#@onready var _character_Name = $VBoxContainer/Character_Container/Name
-#@onready var _Biome_Location = $VBoxContainer/Biome_Container/Location
-#@onready var _Coordinate = $VBoxContainer/Coordinate_Container/Coordinate
+@onready var _character_Name = $VBoxContainer/Character_Container/Name
+@onready var _Biome_Location = $VBoxContainer/Biome_Container/Location
+@onready var _Coordinate = $VBoxContainer/Coordinate_Container/Coordinate
 
 
 #Save Screen Shoot
@@ -91,7 +92,7 @@ func load_slot4():
 func load_auto_save():
 	if FileAccess.file_exists(_autosave):
 		var _Load_Auto_Save = FileAccess.open_encrypted_with_pass(_autosave,FileAccess.READ,"Bl1zz4rd03")
-		#Data varibles = _Load_Auto_save.get_var()
+		Data varibles = _Load_Auto_save.get_var()
 		_Load_Auto_Save.close()
 	
 	

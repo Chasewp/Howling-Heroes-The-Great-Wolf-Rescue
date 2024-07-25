@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://bhwlhgwnhwc3k"]
 
-[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Splash_Screen/Splash_Screen.gd" id="1_buojd"]
-[ext_resource type="Texture2D" uid="uid://d16hkoquk0jh" path="res://Assets/Image/Splash Screen/Splash Screen.png" id="2_rgff4"]
+[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Splash_Screen/Splash_Screen 2.gd" id="1_xsbvj"]
+[ext_resource type="Texture2D" uid="uid://d16hkoquk0jh" path="res://Assets/Image/Splash Screen/Splash Screen.png" id="2_gexym"]
 
 [sub_resource type="Animation" id="Animation_rejm7"]
 resource_name = "Fade_In"
@@ -58,7 +58,7 @@ _data = {
 }
 
 [node name="Splash_Logo" type="Node"]
-script = ExtResource("1_buojd")
+script = ExtResource("1_xsbvj")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 anchors_preset = 15
@@ -66,7 +66,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_rgff4")
+texture = ExtResource("2_gexym")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchors_preset = 15

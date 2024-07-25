@@ -1,0 +1,13 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://dc1ctcksywkhs"]
+
+[ext_resource type="FontFile" uid="uid://2gbyqhhtj8i7" path="res://Assets/Fonts/Roboto/Roboto-BoldItalic.ttf" id="1_ai1y7"]
+
+[resource]
+default_font = ExtResource("1_ai1y7")
+Label/colors/font_color = Color(1, 0.843137, 0, 1)
+Label/colors/font_outline_color = Color(1, 1, 1, 1)
+Label/colors/font_shadow_color = Color(1, 0.647059, 0, 1)
+Label/constants/line_spacing = 3
+Label/constants/outline_size = 2
+Label/constants/shadow_offset_x = 1
+Label/constants/shadow_offset_y = 1

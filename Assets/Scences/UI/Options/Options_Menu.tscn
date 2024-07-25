@@ -90,6 +90,7 @@ layout_direction = 3
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_al8ah")
 theme_override_font_sizes/font_size = 24
+flat = true
 item_count = 2
 selected = 0
 popup/item_0/text = "Windowed"

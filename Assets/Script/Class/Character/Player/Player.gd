@@ -2,11 +2,11 @@
 extends CharacterBody2D
 
 # Variables class
-@export var _name_character : String : set = setter_name, get= getter_name
+@export var _nameCharacter : String : set = setter_name, get= getter_name
 @export var _location : String : set = setter_location, get=getter_location
 @export var _health : int : set = setter_health, get = getter_health
 #@export var coolingdown
-@export var _Armor : int : set = setter_armor, get = getter_armor
+@export var _armor : int : set = setter_armor, get = getter_armor
 #@export var _Bullets : PackedScene
 #@export var _Biome_Stage : NodePath
 
@@ -20,25 +20,25 @@ var _riffle : RigidBody2D
 
 
 #Variables Scence Tree Node Reffrence 
-#@onready var Wolf_Almanac_Menu = $"Wolf almanac"
-#@onready var Inventory_UI = $Inventory
-#@onready var _Projectiles_Spawns : Node2D = $"Brust Garou-Riffle-Player/Projectile"
+#@onready var wolfAlmanacMenu = $"Wolf almanac"
+#@onready var inventoryUI = $Inventory
+#@onready var _projectilesspawns : Node2D = $"Brust Garou-Riffle-Player/Projectile"
 
 #var _executed = false
-#var _cooling_down : float = 0
-#var _biomes_root : Node2D = null
+#var _coolingDown : float = 0
+#var _biomesRoot : Node2D = null
 
 func _ready():
 	pass
 	#_biomes_root = get_node(_Biome_Stage)
 	
 #Setter Name Character
-func setter_name(name):
-	_name_character = name
+func setter_name(nm):
+	_nameCharacter = nm
 	
 #Getter Name Character
 func getter_name():
-	return _name_character
+	return _nameCharacter
 	
 #Setter Location
 func setter_location(lct):
@@ -58,11 +58,11 @@ func getter_health():
 	
 #Setter Armor
 func setter_armor(arm):
-	_Armor = arm
+	_armor = arm
 
 #Getter Armor
 func getter_armor():
-	return _Armor
+	return _armor
 
 #func is_Dead():
 		#pass

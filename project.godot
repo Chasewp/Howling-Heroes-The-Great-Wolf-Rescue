@@ -14,7 +14,7 @@ config/name="HOWLING HEROES : THE GREAT WOLF RESCUE"
 config/description="An interactive role-playing game called Howling Heroes: The Great Wolf Rescue takes place in the fascinating world of wolves, more especially the Canis lupus species. Navigating through difficult platformer stages, players must solve puzzles and face enemies in order to save endangered wolf packs. It's an engrossing trip. The game conveys a strong message about conservation in addition to providing an interesting and instructive experience about the complex lives of wolves in the wild. Howling Heroes seeks to raise awareness of environmental issues and motivate players to take action to safeguard animals and preserve the environment by means of its breathtaking visuals and engrossing gameplay."
 config/version="V 1.0"
 config/tags=PackedStringArray("final_project")
-run/main_scene="res://Assets/Scences/UI/Splash/Splash_Screen_Played.tscn"
+run/main_scene="res://Assets/Scences/UI/Splash/Splash_Screen_1.tscn"
 config/use_custom_user_dir=true
 config/custom_user_dir_name="HOWLING HEROES - THE GREAT WOLF RESCUE"
 config/auto_accept_quit=false
@@ -33,6 +33,12 @@ GlobalSettings="*res://Assets/Script/Controller/Save/Global_Settings/Global_Sett
 GlobalTilesets="*res://Assets/Script/Global_Tilesets/Global_Tilesets.gd"
 player="*res://Assets/Script/Class/Character/Player/Player.gd"
 SaveLoadSlot="*res://Assets/Script/Controller/Save/Save_Load_Slot/Save_Load_Slot.gd"
+WolfData="*res://Assets/Script/Class/Wolf/Wolves_Save/Wolf_Data.gd"
+almanac="*res://Assets/Script/Class/Wolf/Wolf Alamanac/Almanac.gd"
+
+[collada]
+
+use_ambient=true
 
 [dialogic]
 
@@ -168,8 +174,10 @@ extensions_folder="res://addons/dialogic_additions"
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
+window/size/initial_position_type=0
 window/size/resizable=false
 window/size/always_on_top=true
+window/subwindows/embed_subwindows=false
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 mouse_cursor/custom_image="res://Assets/Image/images/Cursor/Cursor 32x32.png"
@@ -272,11 +280,12 @@ common/enable_pause_aware_picking=true
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
-driver/threads/thread_model=2
 textures/vram_compression/import_etc2_astc=true
+textures/lossless_compression/force_png=true
 global_illumination/voxel_gi/quality=1
 shading/overrides/force_vertex_shading=true
 shading/overrides/force_lambert_over_burley=true
+textures/default_filters/anisotropic_filtering_level=4
 camera/depth_of_field/depth_of_field_bokeh_quality=3
 camera/depth_of_field/depth_of_field_use_jitter=true
 environment/ssao/quality=4
@@ -285,7 +294,11 @@ scaling_3d/mode=2
 environment/screen_space_reflection/roughness_quality=3
 environment/subsurface_scattering/subsurface_scattering_quality=3
 environment/defaults/default_clear_color=Color(0.128906, 0.148438, 0.179688, 1)
+anti_aliasing/quality/msaa_2d=3
+anti_aliasing/quality/msaa_3d=3
 viewport/hdr_2d=true
+anti_aliasing/quality/screen_space_aa=1
+anti_aliasing/quality/use_taa=true
 anti_aliasing/quality/use_debanding=true
 
 [threading]

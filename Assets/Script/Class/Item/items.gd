@@ -1,6 +1,6 @@
 class_name  Items
 extends Node
 
-const items_locations = "user:/save/Item/item.json"
+const ITEMS_LOCATION_PATH= "user:/save/Item/item.json"
 
-var Items = {}
+var Item = {}

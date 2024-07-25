@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://nxesci8m8pft"]
 
-[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Splash_Screen/Splash_Screen_Played.gd" id="1_x25oj"]
-[ext_resource type="Texture2D" uid="uid://rwlb23e81dbs" path="res://Assets/Image/images/Background/Splash Screen/—Pngtree—flat wind keyboard mouse vector_5458958.png" id="2_j2wj7"]
-[ext_resource type="FontFile" uid="uid://bv6xsykw7vcai" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="3_6teo4"]
+[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Splash_Screen/Splash_Screen 1.gd" id="1_25wxe"]
+[ext_resource type="Texture2D" uid="uid://rwlb23e81dbs" path="res://Assets/Image/images/Background/Splash Screen/—Pngtree—flat wind keyboard mouse vector_5458958.png" id="2_0sd3d"]
+[ext_resource type="FontFile" uid="uid://bv6xsykw7vcai" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="3_8egvh"]
 
 [sub_resource type="Animation" id="Animation_dtfix"]
 resource_name = "Fade_In"
@@ -58,8 +58,8 @@ _data = {
 "RESET": SubResource("Animation_gua5f")
 }
 
-[node name="Splash_Screen_Played" type="Node"]
-script = ExtResource("1_x25oj")
+[node name="Splash_Screen_1" type="Node"]
+script = ExtResource("1_25wxe")
 
 [node name="Back_GroundColorRect" type="ColorRect" parent="."]
 offset_right = 1278.0
@@ -78,7 +78,7 @@ offset_right = 0.0799561
 offset_bottom = -0.0800171
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_j2wj7")
+texture = ExtResource("2_0sd3d")
 expand_mode = 1
 
 [node name="Label" type="Label" parent="."]
@@ -91,7 +91,7 @@ offset_right = -314.0
 offset_bottom = -113.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("3_6teo4")
+theme_override_fonts/font = ExtResource("3_8egvh")
 theme_override_font_sizes/font_size = 40
 text = "Play with a keyboard and mouse"
 horizontal_alignment = 1
