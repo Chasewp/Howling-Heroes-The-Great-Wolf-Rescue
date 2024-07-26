@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://bppotao2cssdj"]
 
 [ext_resource type="Texture2D" uid="uid://d1sw3q5r06tf8" path="res://Assets/Image/images/Moonlight Night Scenery Acrylic Painting for beginners 2019.png" id="1_jgcl1"]
-[ext_resource type="Script" path="res://Assets/Script/Controller/Save/Save_Load_Slot/Save_Load_Slot.gd" id="1_utfo1"]
+[ext_resource type="Script" path="res://Assets/Script/Class/Player/Player.gd" id="1_utfo1"]
 [ext_resource type="FontFile" uid="uid://c4ipkih8u305j" path="res://Assets/Fonts/DEADLY CLAWS[.ttf" id="2_n7m1k"]
 [ext_resource type="FontFile" uid="uid://bv6xsykw7vcai" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="4_6rv3h"]
 [ext_resource type="FontFile" uid="uid://bsmkjcem4b3i1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="5_d01ls"]
@@ -226,8 +226,19 @@ theme_override_fonts/font = ExtResource("5_d01ls")
 theme_override_font_sizes/font_size = 26
 text = " Coordinate"
 
+[connection signal="pressed" from="TextureRect/Back Button" to="." method="_on_back_button_pressed"]
+[connection signal="mouse_entered" from="Slot Container/Load_Slot 1" to="." method="_on_load_slot_1_mouse_entered"]
+[connection signal="mouse_exited" from="Slot Container/Load_Slot 1" to="." method="_on_load_slot_1_mouse_exited"]
 [connection signal="pressed" from="Slot Container/Load_Slot 1" to="." method="_on_load_slot_1_pressed"]
+[connection signal="mouse_entered" from="Slot Container/Load_Slot 2" to="." method="_on_load_slot_2_mouse_entered"]
+[connection signal="mouse_exited" from="Slot Container/Load_Slot 2" to="." method="_on_load_slot_2_mouse_exited"]
 [connection signal="pressed" from="Slot Container/Load_Slot 2" to="." method="_on_load_slot_2_pressed"]
+[connection signal="mouse_entered" from="Slot Container/Load_Slot 3" to="." method="_on_load_slot_3_mouse_entered"]
+[connection signal="mouse_exited" from="Slot Container/Load_Slot 3" to="." method="_on_load_slot_3_mouse_exited"]
 [connection signal="pressed" from="Slot Container/Load_Slot 3" to="." method="_on_load_slot_3_pressed"]
+[connection signal="mouse_entered" from="Slot Container/Load_Slot 4" to="." method="_on_load_slot_4_mouse_entered"]
+[connection signal="mouse_exited" from="Slot Container/Load_Slot 4" to="." method="_on_load_slot_4_mouse_exited"]
 [connection signal="pressed" from="Slot Container/Load_Slot 4" to="." method="_on_load_slot_4_pressed"]
+[connection signal="mouse_entered" from="Slot Container/Load_Slot 5" to="." method="_on_load_slot_5_mouse_entered"]
+[connection signal="mouse_exited" from="Slot Container/Load_Slot 5" to="." method="_on_load_slot_5_mouse_exited"]
 [connection signal="pressed" from="Slot Container/Load_Slot 5" to="." method="_on_load_autosave_pressed"]

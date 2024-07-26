@@ -39,7 +39,7 @@ extends Node2D
 #Wolf Picture 17 - Italian Wolf
 @onready var italianwolfimage = $"Background/Alamac Index/WolfVBoxContainer17/Wolf 17"
 #Wolf Picture 18 - Labrador Wolf
-@onready var labradorwolf = $"Background/Alamac Index/WolfVBoxContainer18/Wolf 18" 
+@onready var labradorwolfimage = $"Background/Alamac Index/WolfVBoxContainer18/Wolf 18" 
 #Wolf Picture 19 - Mackenzie River Wolf
 @onready var mackenzieriverwolfimage = $"Background/Alamac Index/WolfVBoxContainer19/Wolf 19" 
 #Wolf Picture 20 - Mexican Wolf
@@ -57,7 +57,7 @@ extends Node2D
 #Wolf Picture 26 -Thundra Wolf
 @onready var thundrawolfimage = $"Background/Alamac Index/WolfVBoxContainer26/Wolf 26"
 #Wolf Picture 27 -Vancouver Coastal Island Wolf 
-@onready var vancouvercoastalislandwolf = $"Background/Alamac Index/WolfVBoxContainer27/Wolf 27"
+@onready var vancouvercoastalislandwolfimage = $"Background/Alamac Index/WolfVBoxContainer27/Wolf 27"
 
 """Wolves Labels"""
 #Wolf Label 1 - Alaskan Tundra Wolf
@@ -267,7 +267,8 @@ func _british_columbian_wolf_image():
 	britishcolumbianwolfimage.set_texture_normal(texture)
 
 func _british_columbian_wolf_name():
-	britishcolumbianwolflabel.set_text(WolfData._get_British_Columbian_Wolf_Name())
+	pass
+	#britishcolumbianwolflabel.set_text(WolfData._get_British_Columbian_Wolf_Name())
 #######################################################################
 #Eastern Wolf
 func _eastern_wolf_image():
@@ -282,10 +283,11 @@ func _eastern_wolf_name():
 func _eurasian_wolf_image():
 	var image = Image.load_from_file(WolfData._get_Eurasian_Wolf_Image_Path())
 	var texture = ImageTexture.create_from_image(image)
-	eurasiawolfimage.set_texture_normal(texture)
+	#eurasiawolfimage.set_texture_normal(texture)
 
 func _eurasian_wolf_name():
-	eurasiawolflabel.set_text(WolfData._get_Eurasian_Wolf_Name())
+	pass
+	#eurasiawolflabel.set_text(WolfData._get_Eurasian_Wolf_Name())
 #######################################################################
 #Gray Wolf
 func _gray_wolf_image():
@@ -303,7 +305,7 @@ func _great_plains_wolf_image():
 	greatplainswolfimage.set_texture_normal(texture)
 
 func _great_plains_wolf_name():
-	greatplainswolflabel.set_text(WolfData._get_Great_Plains_Wolf_Name())
+	greatplainwolflabel.set_text(WolfData._get_Great_Plains_Wolf_Name())
 #######################################################################
 #Greenland Wolf
 func _greenland_wolf_image():
@@ -321,7 +323,7 @@ func _himalayan_wolf_image():
 	himalayanwolfimage.set_texture_normal(texture)
 
 func _himalayan_wolf_name():
-	himalayanwolflabel.set_text(WolfData._get_Himalayan_Wolf_Name())
+	Himalayanwolflabel.set_text(WolfData._get_Himalayan_Wolf_Name())
 #######################################################################
 #Hudson Bay Wolf
 func _hudson_bay_wolf_image():
@@ -384,7 +386,7 @@ func _mackenzie_river_wolf_image():
 	mackenzieriverwolfimage.set_texture_normal(texture)
 
 func _mackenzie_river_wolf_name():
-	mackenzieriverwolflabel.set_text(WolfData._get_Mackenzie_River_Wolf_Name())
+	machenzieriverwolflabel.set_text(WolfData._get_Mackenzie_River_Wolf_Name())
 #######################################################################
 #Red Wolf
 func _red_wolf_image():
@@ -915,7 +917,7 @@ func _on_labrador_wolf_pressed():
 #Mackenzie River Wolf
 func _on_mackenzie_river_wolf_pressed():
 	#Image
-	almanc.setter_Wolf_Image(WolfData._get_Mackenzie_River_Wolf_Image_Path())
+	almanac.setter_Wolf_Image(WolfData._get_Mackenzie_River_Wolf_Image_Path())
 	#Name
 	almanac.setter_Wolf_Name(WolfData._get_Mackenzie_River_Wolf_Name())
 	#Species
@@ -1054,21 +1056,21 @@ func _on_red_wolf_pressed():
 	#Name
 	almanac.setter_Wolf_Name(WolfData._get_Red_Wolf_Name())
 	#Species
-	almanac.setter_Wolf_Species(WolfData.)
+	almanac.setter_Wolf_Species(WolfData._get_Red_Wolf_Species())
 	#Height
-	almanac.setter_Wolf_Height(WolfData.)
+	almanac.setter_Wolf_Height(WolfData._get_Red_Wolf_Height())
 	#Weight
-	almanac.setter_Wolf_Weight(WolfData.)
+	almanac.setter_Wolf_Weight(WolfData._get_Red_Wolf_Weight())
 	#Lenght
-	almanac.setter_Wolf_Lenght(WolfData.)
+	almanac.setter_Wolf_Lenght(WolfData._get_Red_Wolf_Lenght())
 	#Conservation Status
-	almanac.setter_Wolf_Conservation_Status(WolfData.)
+	almanac.setter_Wolf_Conservation_Status(WolfData._get_Red_Wolf_Conservation_Status())
 	#Region
-	almanac.setter_Wolf_Region(WolfData.)
+	almanac.setter_Wolf_Region(WolfData._get_Red_Wolf_Location())
 	#Morphology
-	almanac.setter_Wolf_Morphology(WolfData.)
+	almanac.setter_Wolf_Morphology(WolfData._get_Red_Wolf_Morphology())
 	#Diets
-	almanac.setter_Wolf_Diets(WolfData.)
+	almanac.setter_Wolf_Diets(WolfData._get_Red_Wolf_Diets())
 	buttonsound.play()
 	get_tree().change_scene_to_packed(book_Almanac)
 	get_tree().root.add_child(book_Almanac)
@@ -1077,25 +1079,25 @@ func _on_red_wolf_pressed():
 #Steppe Wolf (Caspian Sea Wolf)
 func _on_steppe_wolf_pressed():
 	#Image
-	almanac.setter_Wolf_Image(WolfData.)
+	almanac.setter_Wolf_Image(WolfData._get_Steppe_Wolf_Image_Path())
 	#Name
-	almanac.setter_Wolf_Name(WolfData.)
+	almanac.setter_Wolf_Name(WolfData._get_Steppe_Wolf_Name())
 	#Species
-	almanac.setter_Wolf_Species(WolfData.)
+	almanac.setter_Wolf_Species(WolfData._get_Steppe_Wolf_Species())
 	#Height
-	almanac.setter_Wolf_Height(WolfData.)
+	almanac.setter_Wolf_Height(WolfData._get_Steppe_Wolf_Height())
 	#Weight
-	almanac.setter_Wolf_Weight(WolfData.)
+	almanac.setter_Wolf_Weight(WolfData._get_Steppe_Wolf_Weight())
 	#Lenght
-	almanac.setter_Wolf_Lenght(WolfData.)
+	almanac.setter_Wolf_Lenght(WolfData._get_Steppe_Wolf_Lenght())
 	#Conservation Status
-	almanac.setter_Wolf_Conservation_Status(WolfData.)
+	almanac.setter_Wolf_Conservation_Status(WolfData._get_Steppe_Wolf_Conservation_Status())
 	#Region
-	almanac.setter_Wolf_Region(WolfData.)
+	almanac.setter_Wolf_Region(WolfData._get_Steppe_Wolf_Location())
 	#Morphology
-	almanac.setter_Wolf_Morphology(WolfData.)
+	almanac.setter_Wolf_Morphology(WolfData._get_Steppe_Wolf_Morphology())
 	#Diets
-	almanac.setter_Wolf_Diets(WolfData.)
+	almanac.setter_Wolf_Diets(WolfData._get_Steppe_Wolf_Diets())
 	buttonsound.play()
 	get_tree().change_scene_to_packed(book_Almanac)
 	get_tree().root.add_child(book_Almanac)
@@ -1104,25 +1106,25 @@ func _on_steppe_wolf_pressed():
 #Tundra Wolf
 func _on_tundra_wolf_pressed():
 	#Image
-	almanac.setter_Wolf_Image(WolfData.)
+	almanac.setter_Wolf_Image(WolfData._get_Tundra_Wolf_Image_Path())
 	#Name
-	almanac.setter_Wolf_Name(WolfData.)
+	almanac.setter_Wolf_Name(WolfData._get_Tundra_Wolf_Name())
 	#Species
-	almanac.setter_Wolf_Species(WolfData.)
+	almanac.setter_Wolf_Species(WolfData._get_Tundra_Wolf_Species())
 	#Height
-	almanac.setter_Wolf_Height(WolfData.)
+	almanac.setter_Wolf_Height(WolfData._get_Tundra_Wolf_Height())
 	#Weight
-	almanac.setter_Wolf_Weight(WolfData.)
+	almanac.setter_Wolf_Weight(WolfData._get_Tundra_Wolf_Weight())
 	#Lenght
-	almanac.setter_Wolf_Lenght(WolfData.)
+	almanac.setter_Wolf_Lenght(WolfData._get_Tundra_Wolf_Lenght())
 	#Conservation Status
-	almanac.setter_Wolf_Conservation_Status(WolfData.)
+	almanac.setter_Wolf_Conservation_Status(WolfData._get_Tundra_Wolf_Conservation_Status())
 	#Region
-	almanac.setter_Wolf_Region(WolfData.)
+	almanac.setter_Wolf_Region(WolfData._get_Tundra_Wolf_Location())
 	#Morphology
-	almanac.setter_Wolf_Morphology(WolfData.)
+	almanac.setter_Wolf_Morphology(WolfData._get_Tundra_Wolf_Morphology())
 	#Diets
-	almanac.setter_Wolf_Diets(WolfData.)
+	almanac.setter_Wolf_Diets(WolfData._get_Tundra_Wolf_Diets())
 	buttonsound.play()
 	get_tree().change_scene_to_packed(book_Almanac)
 	get_tree().root.add_child(book_Almanac)

@@ -142,7 +142,7 @@ scale = Vector2(0.5, 0.364)
 sprite_frames = SubResource("SpriteFrames_174s0")
 animation = &"Flag_Waving"
 autoplay = "Flag_Waving"
-frame_progress = 0.631494
+frame_progress = 0.318275
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 

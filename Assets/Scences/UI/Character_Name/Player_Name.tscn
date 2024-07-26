@@ -11,6 +11,7 @@ script/source = "extends Control
 # Called when the node enters the scene tree for the first time.
 @onready var name_player = $Player_Name
 @onready var infochar = $info_char
+
 var number_text
 
 func _ready():
@@ -30,7 +31,7 @@ func _on_player_name_text_submitted(new_text):
 	player.setter_health(100)
 	SaveLoadSlot.auto_save()
 	get_tree().change_scene_to_file(\"res://Assets/Scences/Location/Bridge_Stone_Forest/Bridge_Stone_Forest.tscn\")
-
+	
 "
 
 [node name="PlayerName" type="Control"]

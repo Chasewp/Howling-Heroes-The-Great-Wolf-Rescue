@@ -1,3 +1,9 @@
+res://Assets/Script/Controller/UI/Location/Biome_Exit
+res://Assets/Image/Wolf Howl Coins/Fanish
+res://Assets/Image/Wolf Howl Coins/360
+res://Assets/Script/Controller/Save/Progress
+res://Assets/Script/Class/Player
+res://Assets/Script/Class/Character/Player
 res://Assets/Script/Controller/UI/Credits
 res://Assets/Theme/Credit
 res://Assets/Script/Class/Wolf/Wolf Alamanac/Index
@@ -6,8 +12,6 @@ res://Assets/Script/Class/Wolf/Wolf Alamanac/Book
 res://Assets/Script/Class/Wolf/Wolves_Save
 res://Assets/Script/Controller/UI/Pause_Screen
 res://Assets/Image/Wolves/Pixel Art/Character Sheets
-res://Assets/Script/Controller/Save/Save_Load_Slot
-res://Assets/Script/Class/Character/Player
 res://Assets/Music/Music/Main_Menu
 res://Assets/Script/Controller/Weapons
 res://Assets/Music/SFX/Player
@@ -16,10 +20,6 @@ res://Assets/Scences/UI/Options
 res://Assets/Image/images/Cursor
 res://Assets/Image/Logo
 res://Assets/Script/Controller/UI/Camera
-res://Assets/Script/Controller/UI/Check_Poinys
-res://Assets/Script/Controller/UI/Biomes
-res://Assets/Scences/UI/Check_Points
-res://Assets/Dialogue/Character
 C:/Users/Blizzard/AppData/Roaming/Godot/import_FBX2glTF/FBX2glTF-windows-x86_64
 C:/Program Files/Adobe/Adobe Photoshop 2024
 C:/Users/Blizzard/AppData/Local/Programs/Microsoft VS Code Insiders

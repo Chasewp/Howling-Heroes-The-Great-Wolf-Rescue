@@ -3,3 +3,4 @@ extends Resource
 
 @export var Coordinate : Vector2
 @export var Scence_path : String
+

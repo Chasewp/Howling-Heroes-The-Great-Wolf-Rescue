@@ -1,17 +1,7 @@
-res://Assets/Scences/UI/Wolf_Almanac/Index/wolf_almanac_idex_page_2.tscn
+res://Assets/Scences/Stages/Taiga/Taiga_Stage.tscn
 res://Assets/Dialogue/Theme/Speaker_Mode.tres
 res://Assets/Dialogue/Theme/Pixelize_Visual_Novel.tres
 res://Assets/Theme/Dialouge/Bubble_Dialogue.tres
 res://Assets/Theme/Credit/Tittles.tres
 res://Assets/Theme/Credit/Label Details.tres
 res://Assets/Theme/Credit/Buttons.tres
-res://Assets/Theme/Options_Menu/Options_Menu_Grabber_Hightlight.tres
-res://Assets/Theme/Options_Menu/Options_Menu_Grabber_Theme.tres
-res://Assets/Dialogue/TimeLines/How To Play.dtl
-res://Assets/Scences/UI/Splash/Splash_Screen_1.tscn
-res://Assets/Scences/UI/Main_Menu/main_menu.tscn
-res://Assets/Scences/UI/Credits/credit_1.tscn
-res://Assets/Scences/UI/Credits/credit_2.tscn
-res://Assets/Scences/UI/Options/Options_Menu.tscn
-res://Assets/Scences/UI/Load_slot/loader_screen.tscn
-res://Assets/Script/Controller/Save/Save_Load_Slot/Save_Load_Slot.gd

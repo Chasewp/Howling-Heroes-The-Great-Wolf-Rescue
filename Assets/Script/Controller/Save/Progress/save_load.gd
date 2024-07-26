@@ -1,24 +1,26 @@
 """Singleton <AutoLoad> - Save & Load Manager"""
-class_name  save_load_progress
+class_name save_load
 extends Node
 
 
 #Directory File Slot 1
-const  _fileprogressslot1 = "user://Save/Progress/Slot1.WPA"
+const  _fileprogressslot1 = "user://Save/Progress/Slot1.tres"
 #Directory File Slot 2
-const _fileprogressslot2 = "user://Save/Progress/Slot2.WPA"
+const _fileprogressslot2 = "user://Save/Progress/Slot2.tres"
 #Directory File Slot 3
-const _fileprogressslot3 = "user://Save/Progress/Slot3.WPA"
+const _fileprogressslot3 = "user://Save/Progress/Slot3.tres"
 #Directory File Slot 4
-const _fileprogressslot4 = "user://Save/Progress/Slot4.WPA"
+const _fileprogressslot4 = "user://Save/Progress/Slot4.tres"
 #Directory Auto Save
-const  _autosave = "user://Save/Progress/Auto.WPA"
+const  _autosave = "user://Save/Progress/Auto.tres"
 
 var _Image_Location : Image
-var _Data : ProgressedGame
+
+
 
 #@onready var _player : Player = %Player as Player
 #@onready var _screen_Shoot_Location = $Location
+
 @onready var _character_Name = $VBoxContainer/Character_Container/Name
 @onready var _Biome_Location = $VBoxContainer/Biome_Container/Location
 @onready var _Coordinate = $VBoxContainer/Coordinate_Container/Coordinate
@@ -30,14 +32,24 @@ func set_save_image_location(img: Image):
 
 #Auto Save
 func auto_save():
-	var _Auto_save = FileAccess.open_encrypted_with_pass(_autosave,FileAccess.WRITE,"Bl1zz4rd03")
-	_Auto_save.store_var(_Data)
-	print("Progress Saved")
-	_Auto_save.close()
+	
+	#var _Auto_save = FileAccess.open(_autosave,FileAccess.WRITE)
+	#var _Data =  ProgressedGame.new()
+	#_Data.player_position = player.global_position
+	#_Data.player_health = player.getter_health()
+	#_Data.player_armor = player.getter_armor()
+	#_Data.player_biome_location = player.getter_location()
+	#_Data.player_name = player.getter_name()
+	#_Data.speed = player.speed
+	#_Auto_save.store_var(_Data)
+	#print(_Data)
+	#_Auto_save.close()
 
 #Save Slot 1
 func save_slot1():
+	
 	var _Save_Slot_1 = FileAccess.open_encrypted_with_pass(_fileprogressslot1,FileAccess.WRITE,"Bl1zz4rd03")
+	var _Data = ProgressedGame.new()
 	_Save_Slot_1.store_var(_Data)
 	_Save_Slot_1.close()
 
@@ -91,8 +103,9 @@ func load_slot4():
 #Load Auto Save
 func load_auto_save():
 	if FileAccess.file_exists(_autosave):
-		var _Load_Auto_Save = FileAccess.open_encrypted_with_pass(_autosave,FileAccess.READ,"Bl1zz4rd03")
-		Data varibles = _Load_Auto_save.get_var()
+		var _Load_Auto_Save = FileAccess.open(_autosave,FileAccess.READ)
+		var _Data = ProgressedGame.new()
+		_Data = _Load_Auto_Save.get_var()
 		_Load_Auto_Save.close()
 	
 	
@@ -136,3 +149,47 @@ func _ready():
 func _process(delta):
 	
 	pass
+
+
+func _on_load_slot_1_mouse_entered():
+	pass # Replace with function body.
+
+
+func _on_load_slot_1_mouse_exited():
+	pass # Replace with function body.
+
+
+func _on_load_slot_2_mouse_entered():
+	pass # Replace with function body.
+
+
+func _on_load_slot_2_mouse_exited():
+	pass # Replace with function body.
+
+
+func _on_load_slot_3_mouse_entered():
+	pass # Replace with function body.
+
+
+func _on_load_slot_4_mouse_entered():
+	pass # Replace with function body.
+
+
+func _on_load_slot_4_mouse_exited():
+	pass # Replace with function body.
+
+
+func _on_load_slot_3_mouse_exited():
+	pass # Replace with function body.
+
+
+func _on_load_slot_5_mouse_entered():
+	pass # Replace with function body.
+
+
+func _on_load_slot_5_mouse_exited():
+	pass # Replace with function body.
+
+
+func _on_back_button_pressed():
+	pass # Replace with function body.
