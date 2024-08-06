@@ -15,7 +15,7 @@ var Progress = ProgressedGame.new()
 @export var ypos : int : set = setter_Ypos, get = getter_Ypos
 
 #Variables Scence Tree Node Reffrence 
-@onready var Wolf_Almanac_Menu = $"Wolf almanac/WolfAlmanacIdex"
+#@onready var Wolf_Almanac_Menu = $"Wolf almanac/WolfAlmanacIdex"
 var game_over = preload("res://Assets/Scences/UI/Game over/Game_Over.tscn").instantiate()
 
 #Vector2

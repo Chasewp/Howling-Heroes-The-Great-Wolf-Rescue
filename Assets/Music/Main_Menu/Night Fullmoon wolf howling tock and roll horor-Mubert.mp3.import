@@ -2,7 +2,7 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-uid="uid://bvycrbomgp75i"
+uid="uid://dmnstvt6yeoax"
 path="res://.godot/imported/Night Fullmoon wolf howling tock and roll horor-Mubert.mp3-4927b2c18850958866bb8a77cc91729c.mp3str"
 
 [deps]
@@ -12,8 +12,8 @@ dest_files=["res://.godot/imported/Night Fullmoon wolf howling tock and roll hor
 
 [params]
 
-loop=true
-loop_offset=0.0
-bpm=0.0
+loop=false
+loop_offset=0
+bpm=0
 beat_count=0
 bar_beats=4

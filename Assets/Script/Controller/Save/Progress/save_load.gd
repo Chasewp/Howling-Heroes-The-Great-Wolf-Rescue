@@ -32,7 +32,7 @@ func set_save_image_location(img: Image):
 
 #Auto Save
 func auto_save():
-	
+	pass
 	#var _Auto_save = FileAccess.open(_autosave,FileAccess.WRITE)
 	#var _Data =  ProgressedGame.new()
 	#_Data.player_position = player.global_position
@@ -102,11 +102,12 @@ func load_slot4():
 		
 #Load Auto Save
 func load_auto_save():
-	if FileAccess.file_exists(_autosave):
-		var _Load_Auto_Save = FileAccess.open(_autosave,FileAccess.READ)
-		var _Data = ProgressedGame.new()
-		_Data = _Load_Auto_Save.get_var()
-		_Load_Auto_Save.close()
+	pass
+	#if FileAccess.file_exists(_autosave):
+		#var _Load_Auto_Save = FileAccess.open(_autosave,FileAccess.READ)
+		#var _Data = ProgressedGame.new()
+		#_Data = _Load_Auto_Save.get_var()
+		#_Load_Auto_Save.close()
 	
 	
 func _on_load_slot_1_pressed():

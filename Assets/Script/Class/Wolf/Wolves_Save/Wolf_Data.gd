@@ -29,7 +29,7 @@ func _get_Alaskan_Tundra_Wolf_Image_Path():
 	var _alaskan_Tundra_Wolf_Image = Data_Wolves["Alaskan Tundra Wolf"]["Image"]
 	return _alaskan_Tundra_Wolf_Image
 
-#Wolf Name
+#Name_Wolf
 func _get_Alaskan_Tundra_Wolf_Name():
 	var _alaskan_Tundra_Wolf_Name = Data_Wolves["Alaskan Tundra Wolf"]["Name_Wolf"]
 	return _alaskan_Tundra_Wolf_Name
@@ -81,9 +81,9 @@ func _get_Alexander_Archipelago_Wolf_Image_Path():
 	var _alexander_Archipelago_Wolf_Image = Data_Wolves["Alexander Archipelago Wolf"]["Image"]
 	return _alexander_Archipelago_Wolf_Image
 
-#Wolf Name
+#Name_Wolf
 func _get_Alexander_Archipelago_Wolf_Name():
-	var _alexander_Archipelago_Wolf_Name = Data_Wolves["Alexander Archipelago Wolf"]["Wolf Name"]
+	var _alexander_Archipelago_Wolf_Name = Data_Wolves["Alexander Archipelago Wolf"]["Name_Wolf"]
 	return _alexander_Archipelago_Wolf_Name
 
 #Species
@@ -132,9 +132,9 @@ func _get_Arabian_Wolf_Image_Path():
 	var _arabian_Wolf_Image = Data_Wolves["Arabian Wolf"]["Image"]
 	return _arabian_Wolf_Image
 
-#Wolf Name
+#Name_Wolf
 func _get_Arabian_Wolf_Name():
-	var _arabian_Wolf_Name = Data_Wolves["Arabian Wolf"]["Wolf Name"]
+	var _arabian_Wolf_Name = Data_Wolves["Arabian Wolf"]["Name_Wolf"]
 	return _arabian_Wolf_Name
 	
 #Species
@@ -183,9 +183,9 @@ func _get_Arctic_Wolf_Image_Path():
 	var _arctic_Wolf_Image = Data_Wolves["Arctic Wolf"]["Image"]
 	return _arctic_Wolf_Image
 
-#Wolf Name
+#Name_Wolf
 func _get_Arctic_Wolf_Name():
-	var _arctic_Wolf_Name = Data_Wolves["Arctic Wolf"]["Wolf Name"]
+	var _arctic_Wolf_Name = Data_Wolves["Arctic Wolf"]["Name_Wolf"]
 	return _arctic_Wolf_Name
 	
 #Species
@@ -233,9 +233,9 @@ func _get_Baffin_Island_Wolf_Image_Path():
 	var _baffin_Island_Wolf_Image = Data_Wolves["Baffin Island Wolf"]["Image"]
 	return _baffin_Island_Wolf_Image
 
-#Wolf Name
+#Name_Wolf
 func _get_Baffin_Island_Wolf_Name():
-	var _baffin_Island_Wolf_Name = Data_Wolves["Baffin Island Wolf"]["Wolf Name"]
+	var _baffin_Island_Wolf_Name = Data_Wolves["Baffin Island Wolf"]["Name_Wolf"]
 	return _baffin_Island_Wolf_Name
 	
 #Species
@@ -286,9 +286,9 @@ func _get_British_Columbian_Wolf_Image_Path():
 	var _british_Columbian_Wolf_Image = Data_Wolves["British Columbian Wolf"]["Image"]
 	return _british_Columbian_Wolf_Image
 
-#Wolf Name
+#Name_Wolf
 func _get_British_Columbian_Wolf_Name():
-	var _british_Columbian_Wolf_Name = Data_Wolves["British Columbian Wolf"]["Wolf Name"]
+	var _british_Columbian_Wolf_Name = Data_Wolves["British Columbian Wolf"]["Name_Wolf"]
 	return _british_Columbian_Wolf_Name
 	
 #Species
@@ -339,9 +339,9 @@ func _get_Eastern_Wolf_Image_Path():
 	var _eastern_Wolf_Image = Data_Wolves["Eastern Wolf"]["Image"]
 	return _eastern_Wolf_Image
 
-#Wolf Name
+#Name_Wolf
 func _get_Eastern_Wolf_Name():
-	var _eastern_Wolf_Name = Data_Wolves["Eastern Wolf"]["Wolf Name"]
+	var _eastern_Wolf_Name = Data_Wolves["Eastern Wolf"]["Name_Wolf"]
 	return _eastern_Wolf_Name
 	
 #Species
@@ -392,9 +392,9 @@ func _get_Eurasian_Wolf_Image_Path():
 	var _eurasian_Wolf_Image = Data_Wolves["Eurasian Wolf"]["Image"]
 	return _eurasian_Wolf_Image
 
-#Wolf Name
+#Name_Wolf
 func _get_Eurasian_Wolf_Name():
-	var _eurasian_Wolf_Name = Data_Wolves["Eurasian Wolf"]["Wolf Name"]
+	var _eurasian_Wolf_Name = Data_Wolves["Eurasian Wolf"]["Name_Wolf"]
 	return _eurasian_Wolf_Name
 	
 #Species
@@ -445,7 +445,7 @@ func _get_Gray_Wolf_Image_Path():
 	var _gray_Wolf_Image = Data_Wolves["Gray Wolf"]["Image"]
 	return _gray_Wolf_Image
 
-#Wolf Name
+#Name_Wolf
 func _get_Gray_Wolf_Name():
 	var _gray_Wolf_Name = Data_Wolves["Gray Wolf"]["Name_Wolf"]
 	return _gray_Wolf_Name
@@ -497,9 +497,9 @@ func _get_Great_Plains_Wolf_Image_Path():
 	var _great_Plains_Wolf_Image = Data_Wolves["Great Plains Wolf"]["Image"]
 	return _great_Plains_Wolf_Image
 
-#Wolf Name
+#Name_Wolf
 func _get_Great_Plains_Wolf_Name():
-	var _great_Plains_Wolf_Name = Data_Wolves["Great Plains Wolf"]["Wolf Name"]
+	var _great_Plains_Wolf_Name = Data_Wolves["Great Plains Wolf"]["Name_Wolf"]
 	return _great_Plains_Wolf_Name
 	
 #Species
@@ -550,9 +550,9 @@ func _get_Greenland_Wolf_Image_Path():
 	var _greenland_Wolf_Image = Data_Wolves["Greenland Wolf"]["Image"]
 	return _greenland_Wolf_Image
 
-#Wolf Name
+#Name_Wolf
 func _get_Greenland_Wolf_Name():
-	var _greenland_Wolf_Name = Data_Wolves["Greenland Wolf"]["Wolf Name"]
+	var _greenland_Wolf_Name = Data_Wolves["Greenland Wolf"]["Name_Wolf"]
 	return _greenland_Wolf_Name
 	
 #Species
@@ -603,9 +603,9 @@ func _get_Himalayan_Wolf_Image_Path():
 	var _himalayan_Wolf_Image = Data_Wolves["Himalayan Wolf"]["Image"]
 	return _himalayan_Wolf_Image
 
-#Wolf Name
+#Name_Wolf
 func _get_Himalayan_Wolf_Name():
-	var _himalayan_Wolf_Name = Data_Wolves["Himalayan Wolf"]["Wolf Name"]
+	var _himalayan_Wolf_Name = Data_Wolves["Himalayan Wolf"]["Name_Wolf"]
 	return _himalayan_Wolf_Name
 	
 #Species
@@ -656,9 +656,9 @@ func _get_Hudson_Bay_Wolf_Image_Path():
 	var _hudson_Bay_Wolf_Image = Data_Wolves["Hudson Bay Wolf"]["Image"]
 	return _hudson_Bay_Wolf_Image
 
-#Wolf Name
+#Name_Wolf
 func _get_Hudson_Bay_Wolf_Name():
-	var _hudson_Bay_Wolf_Name = Data_Wolves["Hudson Bay Wolf"]["Wolf Name"]
+	var _hudson_Bay_Wolf_Name = Data_Wolves["Hudson Bay Wolf"]["Name_Wolf"]
 	return _hudson_Bay_Wolf_Name
 	
 #Species
@@ -708,9 +708,9 @@ func _get_Iberian_Wolf_Image_Path():
 	var _iberian_Wolf_Image = Data_Wolves["Iberian Wolf"]["Image"]
 	return _iberian_Wolf_Image
 
-#Wolf Name
+#Name_Wolf
 func _get_Iberian_Wolf_Name():
-	var _iberian_Wolf_Name = Data_Wolves["Iberian Wolf"]["Wolf Name"]
+	var _iberian_Wolf_Name = Data_Wolves["Iberian Wolf"]["Name_Wolf"]
 	return _iberian_Wolf_Name
 	
 #Species
@@ -761,9 +761,9 @@ func _get_Indian_Wolf_Image_Path():
 	var _indian_Wolf_Image = Data_Wolves["Indian Wolf"]["Image"]
 	return _indian_Wolf_Image
 
-#Wolf Name
+#Name_Wolf
 func _get_Indian_Wolf_Name():
-	var _indian_Wolf_Name = Data_Wolves["Indian Wolf"]["Wolf Name"]
+	var _indian_Wolf_Name = Data_Wolves["Indian Wolf"]["Name_Wolf"]
 	return _indian_Wolf_Name
 	
 #Species
@@ -814,9 +814,9 @@ func _get_Interior_Alaskan_Wolf_Image_Path():
 	var _interior_Alaskan_Wolf_Image = Data_Wolves["Interior Alaskan Wolf (Yukon Wolf)"]["Image"]
 	return _interior_Alaskan_Wolf_Image
 
-#Wolf Name
+#Name_Wolf
 func _get_Interior_Alaskan_Wolf_Name():
-	var _interior_Alaskan_Wolf_Name = Data_Wolves["Interior Alaskan Wolf (Yukon Wolf)"]["Wolf Name"]
+	var _interior_Alaskan_Wolf_Name = Data_Wolves["Interior Alaskan Wolf (Yukon Wolf)"]["Name_Wolf"]
 	return _interior_Alaskan_Wolf_Name
 	
 #Species
@@ -867,9 +867,9 @@ func _get_Italian_Wolf_Image_Path():
 	var _italian_Wolf_Image = Data_Wolves["Italian Wolf"]["Image"]
 	return _italian_Wolf_Image
 
-#Wolf Name
+#Name_Wolf
 func _get_Italian_Wolf_Name():
-	var _italian_Wolf_Name = Data_Wolves["Italian Wolf"]["Wolf Name"]
+	var _italian_Wolf_Name = Data_Wolves["Italian Wolf"]["Name_Wolf"]
 	return _italian_Wolf_Name
 	
 #Species
@@ -921,9 +921,9 @@ func _get_Labrador_Wolf_Image_Path():
 	var _labrador_Wolf_Image = Data_Wolves["Labrador Wolf"]["Image"]
 	return _labrador_Wolf_Image
 
-#Wolf Name
+#Name_Wolf
 func _get_Labrador_Wolf_Name():
-	var _labrador_Wolf_Name = Data_Wolves["Labrador Wolf"]["Wolf Name"]
+	var _labrador_Wolf_Name = Data_Wolves["Labrador Wolf"]["Name_Wolf"]
 	return _labrador_Wolf_Name
 	
 #Species
@@ -975,9 +975,9 @@ func _get_Mackenzie_River_Wolf_Image_Path():
 	var _mackenzie_River_Wolf_Image = Data_Wolves["Mackenzie River Wolf"]["Image"]
 	return _mackenzie_River_Wolf_Image
 
-#Wolf Name
+#Name_Wolf
 func _get_Mackenzie_River_Wolf_Name():
-	var _mackenzie_River_Wolf_Name = Data_Wolves["Mackenzie River Wolf"]["Wolf Name"]
+	var _mackenzie_River_Wolf_Name = Data_Wolves["Mackenzie River Wolf"]["Name_Wolf"]
 	return _mackenzie_River_Wolf_Name
 	
 #Species
@@ -1028,9 +1028,9 @@ func _get_Mexican_Wolf_Image_Path():
 	var _mexican_Wolf_Image = Data_Wolves["Mexican Wolf"]["Image"]
 	return _mexican_Wolf_Image
 
-#Wolf Name
+#Name_Wolf
 func _get_Mexican_Wolf_Name():
-	var _mexican_Wolf_Name = Data_Wolves["Mexican Wolf"]["Wolf Name"]
+	var _mexican_Wolf_Name = Data_Wolves["Mexican Wolf"]["Name_Wolf"]
 	return _mexican_Wolf_Name
 	
 #Species
@@ -1081,9 +1081,9 @@ func _get_Mongolian_Wolf_Image_Path():
 	var _mongolian_Wolf_Image = Data_Wolves["Mongolian Wolf"]["Image"]
 	return _mongolian_Wolf_Image
 
-#Wolf Name
+#Name_Wolf
 func _get_Mongolian_Wolf_Name():
-	var _mongolian_Wolf_Name = Data_Wolves["Mongolian Wolf"]["Wolf Name"]
+	var _mongolian_Wolf_Name = Data_Wolves["Mongolian Wolf"]["Name_Wolf"]
 	return _mongolian_Wolf_Name
 	
 #Species
@@ -1134,9 +1134,9 @@ func _get_Northern_Rocky_Mountain_Wolf_Image_Path():
 	var _northern_Rocky_Mountain_Wolf_Image = Data_Wolves["Northern Rocky Mountain Wolf"]["Image"]
 	return _northern_Rocky_Mountain_Wolf_Image
 
-#Wolf Name
+#Name_Wolf
 func _get_Northern_Rocky_Mountain_Wolf_Name():
-	var _northern_Rocky_Mountain_Wolf_Name = Data_Wolves["Northern Rocky Mountain Wolf"]["Wolf Name"]
+	var _northern_Rocky_Mountain_Wolf_Name = Data_Wolves["Northern Rocky Mountain Wolf"]["Name_Wolf"]
 	return _northern_Rocky_Mountain_Wolf_Name
 	
 #Species
@@ -1187,9 +1187,9 @@ func _get_Northwestern_Wolf_Image_Path():
 	var _northwestern_Wolf_Image = Data_Wolves["Northwestern Wolf"]["Image"]
 	return _northwestern_Wolf_Image
 
-#Wolf Name
+#Name_Wolf
 func _get_Northwestern_Wolf_Name():
-	var _northwestern_Wolf_Name = Data_Wolves["Northwestern Wolf"]["Wolf Name"]
+	var _northwestern_Wolf_Name = Data_Wolves["Northwestern Wolf"]["Name_Wolf"]
 	return _northwestern_Wolf_Name
 	
 #Species
@@ -1241,9 +1241,9 @@ func _get_Red_Wolf_Image_Path():
 	var _red_Wolf_Image = Data_Wolves["Red Wolf"]["Image"]
 	return _red_Wolf_Image
 
-#Wolf Name
+#Name_Wolf
 func _get_Red_Wolf_Name():
-	var _red_Wolf_Name = Data_Wolves["Red Wolf"]["Wolf Name"]
+	var _red_Wolf_Name = Data_Wolves["Red Wolf"]["Name_Wolf"]
 	return _red_Wolf_Name
 	
 #Species
@@ -1294,9 +1294,9 @@ func _get_Steppe_Wolf_Image_Path():
 	var _steppe_Wolf_Image = Data_Wolves["Steppe Wolf (Caspian Sea Wolf)"]["Image"]
 	return _steppe_Wolf_Image
 
-#Wolf Name
+#Name_Wolf
 func _get_Steppe_Wolf_Name():
-	var _steppe_Wolf_Name = Data_Wolves["Steppe Wolf (Caspian Sea Wolf)"]["Wolf Name"]
+	var _steppe_Wolf_Name = Data_Wolves["Steppe Wolf (Caspian Sea Wolf)"]["Name_Wolf"]
 	return _steppe_Wolf_Name
 	
 #Species
@@ -1347,9 +1347,9 @@ func _get_Tundra_Wolf_Image_Path():
 	var _tundra_Wolf_Image = Data_Wolves["Tundra Wolf"]["Image"]
 	return _tundra_Wolf_Image
 
-#Wolf Name
+#Name_Wolf
 func _get_Tundra_Wolf_Name():
-	var _tundra_Wolf_Name = Data_Wolves["Tundra Wolf"]["Wolf Name"]
+	var _tundra_Wolf_Name = Data_Wolves["Tundra Wolf"]["Name_Wolf"]
 	return _tundra_Wolf_Name
 	
 #Species
@@ -1400,9 +1400,9 @@ func _get_Vancouver_Coastal_Island_Wolf_Image_Path():
 	var _vancouver_Coastal_Island_Wolf_Image = Data_Wolves["Vancouver Coastal Island Wolf"]["Image"]
 	return _vancouver_Coastal_Island_Wolf_Image
 
-#Wolf Name
+#Name_Wolf
 func _get_Vancouver_Coastal_Island_Wolf_Name():
-	var _vancouver_Coastal_Island_Wolf_Name = Data_Wolves["Vancouver Coastal Island Wolf"]["Wolf Name"]
+	var _vancouver_Coastal_Island_Wolf_Name = Data_Wolves["Vancouver Coastal Island Wolf"]["Name_Wolf"]
 	return _vancouver_Coastal_Island_Wolf_Name
 	
 #Species

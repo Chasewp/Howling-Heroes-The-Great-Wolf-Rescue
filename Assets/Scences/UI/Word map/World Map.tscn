@@ -1,14 +1,14 @@
 [gd_scene load_steps=10 format=3 uid="uid://d3i1eu4qsr25g"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/World_Map/World Map.gd" id="1_oqnmy"]
-[ext_resource type="Texture2D" uid="uid://h1p0uirdgfcq" path="res://Assets/Image/images/World Map/bluemarble-2048.png" id="1_ux8d8"]
-[ext_resource type="FontFile" uid="uid://bsmkjcem4b3i1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="2_jnec3"]
-[ext_resource type="Texture2D" uid="uid://cf3hluv2j6iuk" path="res://Assets/Image/images/Pin/Pin 2.png" id="3_hdtvj"]
-[ext_resource type="Texture2D" uid="uid://ypngbnr182p3" path="res://Assets/Image/images/Pin/Pin 1.png" id="4_yhki5"]
-[ext_resource type="Texture2D" uid="uid://chrq18ycsrh5p" path="res://Assets/Image/images/Pin/Pin 7.png" id="5_wowp6"]
-[ext_resource type="Texture2D" uid="uid://t6mrqsae1anb" path="res://Assets/Image/images/Pin/Pin 5.png" id="6_8ae6k"]
-[ext_resource type="Texture2D" uid="uid://dx16qymdpjp" path="res://Assets/Image/images/Pin/Pin 6.png" id="8_pkoc1"]
-[ext_resource type="Texture2D" uid="uid://bwcdwpn15pgq4" path="res://Assets/Image/images/Pin/Pin 4.png" id="9_hrn4m"]
+[ext_resource type="Texture2D" uid="uid://cip6bv3iupqo6" path="res://Assets/Image/World Map/bluemarble-2048.png" id="1_ux8d8"]
+[ext_resource type="FontFile" uid="uid://b1bqdo4jtrst1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="2_jnec3"]
+[ext_resource type="Texture2D" uid="uid://b2hv8umjpka6d" path="res://Assets/Image/Pin/Pin 2.png" id="3_hdtvj"]
+[ext_resource type="Texture2D" uid="uid://cgyku8ugltku8" path="res://Assets/Image/Pin/Pin 1.png" id="4_yhki5"]
+[ext_resource type="Texture2D" uid="uid://be7t3ut5ce03" path="res://Assets/Image/Pin/Pin 7.png" id="5_wowp6"]
+[ext_resource type="Texture2D" uid="uid://bt0uoj1i6bdyi" path="res://Assets/Image/Pin/Pin 5.png" id="6_8ae6k"]
+[ext_resource type="Texture2D" uid="uid://ci72mfnedc0v5" path="res://Assets/Image/Pin/Pin 6.png" id="8_pkoc1"]
+[ext_resource type="Texture2D" uid="uid://c3uwfigpffkdl" path="res://Assets/Image/Pin/Pin 4.png" id="9_hrn4m"]
 
 [node name="World-Map-Regions" type="Control"]
 layout_mode = 3

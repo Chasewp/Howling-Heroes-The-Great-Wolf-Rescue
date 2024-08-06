@@ -1,45 +1,42 @@
-[gd_scene load_steps=52 format=3 uid="uid://w8tfinbfyqkd"]
+[gd_scene load_steps=48 format=3 uid="uid://w8tfinbfyqkd"]
 
 [ext_resource type="Script" path="res://Assets/Script/Class/Player/Player.gd" id="1_lyxhd"]
-[ext_resource type="Texture2D" uid="uid://bsl22rpg7rw2p" path="res://Assets/Image/Character/Player/templerun/Idle__000.png" id="2_mrea1"]
-[ext_resource type="Texture2D" uid="uid://dbqqxkfm1a1rg" path="res://Assets/Image/Character/Player/templerun/Idle__001.png" id="3_iqndt"]
-[ext_resource type="Texture2D" uid="uid://bq8e6tfutt5ct" path="res://Assets/Image/Character/Player/templerun/Idle__002.png" id="4_nuoh4"]
-[ext_resource type="Texture2D" uid="uid://cw1siw7wa285c" path="res://Assets/Image/Character/Player/templerun/Idle__003.png" id="5_ptobr"]
-[ext_resource type="Texture2D" uid="uid://bhc7b7ny04l76" path="res://Assets/Image/Character/Player/templerun/Idle__004.png" id="6_4n872"]
-[ext_resource type="Texture2D" uid="uid://dehyywnl8ew6d" path="res://Assets/Image/Character/Player/templerun/Idle__005.png" id="7_5boof"]
-[ext_resource type="Texture2D" uid="uid://7s6ea1ew3fxb" path="res://Assets/Image/Character/Player/templerun/Idle__006.png" id="8_4ibv2"]
-[ext_resource type="Texture2D" uid="uid://b8cxd400bdw72" path="res://Assets/Image/Character/Player/templerun/Idle__007.png" id="9_8qh3c"]
-[ext_resource type="Texture2D" uid="uid://wum44lgrjcv5" path="res://Assets/Image/Character/Player/templerun/Idle__008.png" id="10_53a62"]
-[ext_resource type="Texture2D" uid="uid://14olp88y01j6" path="res://Assets/Image/Character/Player/templerun/Idle__009.png" id="11_m70na"]
-[ext_resource type="Texture2D" uid="uid://3v1r1s5y2osk" path="res://Assets/Image/Character/Player/templerun/Dead__000.png" id="12_8b7x6"]
-[ext_resource type="AudioStream" uid="uid://4845doyus4v2" path="res://Assets/Music/SFX/Player/deathknell-tlk-101soundboards-metalgarurumon. 1secmp3.mp3" id="13_odu47"]
-[ext_resource type="Texture2D" uid="uid://dkh2x5f6cccy1" path="res://Assets/Image/Character/Player/templerun/Dead__001.png" id="13_taif1"]
-[ext_resource type="Texture2D" uid="uid://cnkc00kvijp83" path="res://Assets/Image/Character/Player/templerun/Dead__002.png" id="14_7finj"]
-[ext_resource type="Texture2D" uid="uid://cdo1u6vwjqt48" path="res://Assets/Image/Character/Player/templerun/Dead__003.png" id="15_ld38b"]
-[ext_resource type="Texture2D" uid="uid://duqawveleemfn" path="res://Assets/Image/Character/Player/templerun/Dead__004.png" id="16_esxxk"]
-[ext_resource type="Texture2D" uid="uid://ch6pqqfn5u5n1" path="res://Assets/Image/Character/Player/templerun/Dead__005.png" id="17_g23m0"]
-[ext_resource type="Texture2D" uid="uid://dtp5x5smp0hv6" path="res://Assets/Image/Character/Player/templerun/Dead__006.png" id="18_tkww7"]
-[ext_resource type="Texture2D" uid="uid://bc6bbmxc8bnwv" path="res://Assets/Image/Character/Player/templerun/Dead__007.png" id="19_q6nno"]
-[ext_resource type="Texture2D" uid="uid://bp5lihpi0465w" path="res://Assets/Image/Character/Player/templerun/Dead__008.png" id="20_8nukb"]
-[ext_resource type="Texture2D" uid="uid://d14h1w33bovpy" path="res://Assets/Image/Character/Player/templerun/Dead__009.png" id="21_l50ca"]
-[ext_resource type="Texture2D" uid="uid://bsmv7kxpgjpnu" path="res://Assets/Image/Character/Player/templerun/Jump__000.png" id="23_vl11b"]
-[ext_resource type="Texture2D" uid="uid://b7cxra4rmv2jx" path="res://Assets/Image/Character/Player/templerun/Jump__001.png" id="24_hxphx"]
-[ext_resource type="Texture2D" uid="uid://clac25tdouq0u" path="res://Assets/Image/Character/Player/templerun/Jump__002.png" id="25_1mjch"]
-[ext_resource type="Texture2D" uid="uid://1tlvqnso3enl" path="res://Assets/Image/Character/Player/templerun/Jump__003.png" id="26_xsrfo"]
-[ext_resource type="Texture2D" uid="uid://dbk8fy4xqvdaa" path="res://Assets/Image/Character/Player/templerun/Jump__004.png" id="27_7308t"]
-[ext_resource type="AudioStream" uid="uid://da0mtbojhys5n" path="res://Assets/Music/SFX/Player/grunt-tlk-101soundboards.mp3" id="28_2w8yc"]
-[ext_resource type="Texture2D" uid="uid://dvr5m7j5jwyaw" path="res://Assets/Image/Character/Player/templerun/Jump__005.png" id="28_x0hng"]
-[ext_resource type="Texture2D" uid="uid://brualkuy14t6x" path="res://Assets/Image/Character/Player/templerun/Jump__006.png" id="29_ng8k0"]
-[ext_resource type="Texture2D" uid="uid://dw33uakp20816" path="res://Assets/Image/Character/Player/templerun/Jump__007.png" id="30_vnuq8"]
-[ext_resource type="Texture2D" uid="uid://fvs3r2r11uwd" path="res://Assets/Image/Character/Player/templerun/Jump__008.png" id="31_s787f"]
-[ext_resource type="Texture2D" uid="uid://c8lpxh2wtvq4l" path="res://Assets/Image/Character/Player/templerun/Jump__009.png" id="32_hmu7j"]
-[ext_resource type="AudioStream" uid="uid://c1m18l8e756gt" path="res://Assets/Music/SFX/Player/headbutt-101soundboards.Metalgarurumonmp3.mp3" id="34_0q3ty"]
-[ext_resource type="PackedScene" uid="uid://bo8ky70qah4nu" path="res://Assets/Scences/UI/Wolf_Almanac/Index/Wolf_Almanac_Idex_Page 1.tscn" id="35_mo7gd"]
-[ext_resource type="Script" path="res://Assets/Scences/Player/Inventory.gd" id="36_3vjba"]
-[ext_resource type="PackedScene" uid="uid://bli5mfb2fgf2e" path="res://Assets/Scences/UI/Inventory/inventory.tscn" id="37_h5ysl"]
+[ext_resource type="Texture2D" uid="uid://oj0ee17cpt4p" path="res://Assets/Image/Character/Player/templerun/Idle__000.png" id="2_mrea1"]
+[ext_resource type="Texture2D" uid="uid://b687q061j046g" path="res://Assets/Image/Character/Player/templerun/Idle__001.png" id="3_iqndt"]
+[ext_resource type="Texture2D" uid="uid://ctkt5nhlk8xxi" path="res://Assets/Image/Character/Player/templerun/Idle__002.png" id="4_nuoh4"]
+[ext_resource type="Texture2D" uid="uid://cs08pttn88dlf" path="res://Assets/Image/Character/Player/templerun/Idle__003.png" id="5_ptobr"]
+[ext_resource type="Texture2D" uid="uid://doj215s7p1ku0" path="res://Assets/Image/Character/Player/templerun/Idle__004.png" id="6_4n872"]
+[ext_resource type="Texture2D" uid="uid://ci6g4wii0irg8" path="res://Assets/Image/Character/Player/templerun/Idle__005.png" id="7_5boof"]
+[ext_resource type="Texture2D" uid="uid://mdyxfbmv3qa3" path="res://Assets/Image/Character/Player/templerun/Idle__006.png" id="8_4ibv2"]
+[ext_resource type="Texture2D" uid="uid://uv37718tjoux" path="res://Assets/Image/Character/Player/templerun/Idle__007.png" id="9_8qh3c"]
+[ext_resource type="Texture2D" uid="uid://cpp8maiy2cx8a" path="res://Assets/Image/Character/Player/templerun/Idle__008.png" id="10_53a62"]
+[ext_resource type="Texture2D" uid="uid://dvlq6tklvdma7" path="res://Assets/Image/Character/Player/templerun/Idle__009.png" id="11_m70na"]
+[ext_resource type="Texture2D" uid="uid://1dhpn7e8vt76" path="res://Assets/Image/Character/Player/templerun/Dead__000.png" id="12_8b7x6"]
+[ext_resource type="AudioStream" uid="uid://dqy3fkicgr1g4" path="res://Assets/Music/SFX/Player/deathknell-tlk-101soundboards-metalgarurumon. 1secmp3.mp3" id="13_odu47"]
+[ext_resource type="Texture2D" uid="uid://dndmfcyd8f0lt" path="res://Assets/Image/Character/Player/templerun/Dead__001.png" id="13_taif1"]
+[ext_resource type="Texture2D" uid="uid://6i3nxacc864" path="res://Assets/Image/Character/Player/templerun/Dead__002.png" id="14_7finj"]
+[ext_resource type="Texture2D" uid="uid://dxuitrtrxwuej" path="res://Assets/Image/Character/Player/templerun/Dead__003.png" id="15_ld38b"]
+[ext_resource type="Texture2D" uid="uid://bxjy4mlgifynf" path="res://Assets/Image/Character/Player/templerun/Dead__004.png" id="16_esxxk"]
+[ext_resource type="Texture2D" uid="uid://8hf2cd5sd34k" path="res://Assets/Image/Character/Player/templerun/Dead__005.png" id="17_g23m0"]
+[ext_resource type="Texture2D" uid="uid://mpaesush1cbo" path="res://Assets/Image/Character/Player/templerun/Dead__006.png" id="18_tkww7"]
+[ext_resource type="Texture2D" uid="uid://ciighlrw58ajh" path="res://Assets/Image/Character/Player/templerun/Dead__007.png" id="19_q6nno"]
+[ext_resource type="Texture2D" uid="uid://bf3y1ync601ib" path="res://Assets/Image/Character/Player/templerun/Dead__008.png" id="20_8nukb"]
+[ext_resource type="Texture2D" uid="uid://pl8b0d4mgfg" path="res://Assets/Image/Character/Player/templerun/Dead__009.png" id="21_l50ca"]
+[ext_resource type="Texture2D" uid="uid://jrqa28a4lafe" path="res://Assets/Image/Character/Player/templerun/Jump__000.png" id="23_vl11b"]
+[ext_resource type="Texture2D" uid="uid://c40lensl3cixf" path="res://Assets/Image/Character/Player/templerun/Jump__001.png" id="24_hxphx"]
+[ext_resource type="Texture2D" uid="uid://c53vv5fvebrcv" path="res://Assets/Image/Character/Player/templerun/Jump__002.png" id="25_1mjch"]
+[ext_resource type="Texture2D" uid="uid://dypc15uri2ead" path="res://Assets/Image/Character/Player/templerun/Jump__003.png" id="26_xsrfo"]
+[ext_resource type="Texture2D" uid="uid://dgx22csrwe12" path="res://Assets/Image/Character/Player/templerun/Jump__004.png" id="27_7308t"]
+[ext_resource type="AudioStream" uid="uid://d2oqfhql1oh7k" path="res://Assets/Music/SFX/Player/grunt-tlk-101soundboards.mp3" id="28_2w8yc"]
+[ext_resource type="Texture2D" uid="uid://cm2mc3kyk58xm" path="res://Assets/Image/Character/Player/templerun/Jump__005.png" id="28_x0hng"]
+[ext_resource type="Texture2D" uid="uid://ctx1f6ww7ybwu" path="res://Assets/Image/Character/Player/templerun/Jump__006.png" id="29_ng8k0"]
+[ext_resource type="Texture2D" uid="uid://dngm4tqu2ygdu" path="res://Assets/Image/Character/Player/templerun/Jump__007.png" id="30_vnuq8"]
+[ext_resource type="Texture2D" uid="uid://cistbraj8vr14" path="res://Assets/Image/Character/Player/templerun/Jump__008.png" id="31_s787f"]
+[ext_resource type="Texture2D" uid="uid://cay7avp4q62cs" path="res://Assets/Image/Character/Player/templerun/Jump__009.png" id="32_hmu7j"]
+[ext_resource type="AudioStream" uid="uid://c071bg8hlu7yd" path="res://Assets/Music/SFX/Player/headbutt-101soundboards.Metalgarurumonmp3.mp3" id="34_0q3ty"]
 [ext_resource type="PackedScene" uid="uid://c8it7bbd20xdf" path="res://Assets/Scences/Player/Weapons/brust_garou_riffle_player.tscn" id="38_dlyag"]
 [ext_resource type="Script" path="res://Assets/Script/Class/Character/Player/coordinate.gd" id="39_3g6ho"]
-[ext_resource type="FontFile" uid="uid://bsmkjcem4b3i1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="39_bu8e3"]
+[ext_resource type="FontFile" uid="uid://b1bqdo4jtrst1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="39_bu8e3"]
 [ext_resource type="PackedScene" uid="uid://cuh433hdbnick" path="res://Assets/Scences/Player/Weapons/Machete.tscn" id="39_p6p0m"]
 
 [sub_resource type="Animation" id="Animation_8d1l8"]
@@ -183,15 +180,6 @@ height = 120.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6vr3q"]
 size = Vector2(55, 58)
 
-[sub_resource type="GDScript" id="GDScript_8rbut"]
-script/source = "extends CanvasLayer
-
-func _process(delta):
-	if Input.is_action_just_pressed(\"open_wolf_almanac\"):
-		self.visible =!self.visible
-		
-"
-
 [node name="Player" type="CharacterBody2D"]
 process_mode = 3
 collision_layer = 0
@@ -238,19 +226,6 @@ visible = false
 position = Vector2(3.5, 32)
 shape = SubResource("RectangleShape2D_6vr3q")
 debug_color = Color(1, 0, 0, 0.682353)
-
-[node name="Wolf almanac" type="CanvasLayer" parent="."]
-script = SubResource("GDScript_8rbut")
-
-[node name="Wolf_Almanac_Idex_Page 1" parent="Wolf almanac" instance=ExtResource("35_mo7gd")]
-visible = false
-
-[node name="Inventory" type="CanvasLayer" parent="."]
-layer = 2
-visible = false
-script = ExtResource("36_3vjba")
-
-[node name="Inventory_UI" parent="Inventory" instance=ExtResource("37_h5ysl")]
 
 [node name="Brust Garou-Riffle-Player" parent="." instance=ExtResource("38_dlyag")]
 visible = false

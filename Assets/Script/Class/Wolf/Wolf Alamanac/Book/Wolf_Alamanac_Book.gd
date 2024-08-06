@@ -24,7 +24,7 @@ extends Node
 @onready var diets = $Diets_List
 
 func _ready():
-	$Animation.play("Open_Book")
+	
 	setimage(str(almanac.getter_Wolf_Image()))
 	$Name_Wolf.set_text(almanac.getter_Wolf_Name())
 	$Species.set_text(almanac.getter_Wolf_Species())
@@ -36,13 +36,15 @@ func _ready():
 	$MORPHOLOGY_details.set_text(almanac.getter_Wolf_Morphology())
 	$Diets_List.set_text(almanac.getter_Wolf_Diets())
 	
-#quit Wolf Almanac
 
-func _process(_delta):
-	pass
-	
+
 #Wolves Data
 func setimage(img):
 	var image = Image.load_from_file(img)
 	var texture = ImageTexture.create_from_image(image)
 	$Wolf_Picture.set_texture(texture)
+
+#quit Wolf Almanac
+func _on_back_button_pressed():
+		get_parent().remove_child(self)
+	

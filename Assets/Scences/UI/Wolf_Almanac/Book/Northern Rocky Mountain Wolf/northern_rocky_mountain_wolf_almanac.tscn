@@ -1,0 +1,378 @@
+[gd_scene load_steps=8 format=3 uid="uid://evcan1davfd1"]
+
+[ext_resource type="Script" path="res://Assets/Script/Class/Wolf/Wolf Alamanac/Book/Wolf_Alamanac_Book.gd" id="1_l3lr2"]
+[ext_resource type="Texture2D" uid="uid://dweg6u8sm1nm6" path="res://Assets/Image/images/Book Open/opened_notebook_isolated_on_background.png" id="2_vmsvn"]
+[ext_resource type="FontFile" uid="uid://cx2jakxqhnvbt" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="3_eo25t"]
+[ext_resource type="FontFile" uid="uid://6thsxv1vtpj8" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="4_4563w"]
+[ext_resource type="FontFile" uid="uid://b1bqdo4jtrst1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="5_xdf8i"]
+[ext_resource type="FontFile" uid="uid://byp7dyvr65jj2" path="res://Assets/Fonts/DisposableDroidBB_ital.ttf" id="6_5h2cx"]
+[ext_resource type="Texture2D" uid="uid://cqnk8j7cmvuc6" path="res://Assets/Image/Buttons/right-arrow.png" id="7_xijui"]
+
+[node name="Northern_Rocky_Mountain_Wolf_Almanac" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 3.0
+offset_bottom = 198.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l3lr2")
+
+[node name="Book_Texturee" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(1280, 0)
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 903.0
+texture = ExtResource("2_vmsvn")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="Wolf_Picture" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(430, 615)
+layout_mode = 0
+offset_left = 156.0
+offset_top = 26.0
+offset_right = 586.0
+offset_bottom = 641.001
+expand_mode = 1
+
+[node name="Name_Wolf" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.583
+anchor_top = 0.039
+anchor_right = 0.82
+anchor_bottom = 0.072
+offset_left = -0.23999
+offset_top = -0.0799999
+offset_right = 0.399902
+offset_bottom = -0.840004
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_eo25t")
+theme_override_font_sizes/font_size = 24
+text = "WOLF NAME"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_group_ = true
+
+[node name="Name_Species" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.517
+anchor_top = 0.086
+anchor_right = 0.63
+anchor_bottom = 0.12
+offset_left = 3.23999
+offset_top = 0.309998
+offset_right = -0.400085
+offset_bottom = -0.365005
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_eo25t")
+theme_override_font_sizes/font_size = 24
+text = "SPECIES"
+vertical_alignment = 1
+
+[node name="Species" type="Label" parent="."]
+layout_mode = 0
+offset_left = 841.0
+offset_top = 79.0
+offset_right = 982.0
+offset_bottom = 103.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_4563w")
+theme_override_font_sizes/font_size = 24
+text = "Species_Name"
+vertical_alignment = 1
+
+[node name="Height_sizE" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.516
+anchor_top = 0.131
+anchor_right = 0.627
+anchor_bottom = 0.164
+offset_left = 1.52002
+offset_top = 0.134987
+offset_right = 0.439819
+offset_bottom = 0.375015
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_eo25t")
+theme_override_font_sizes/font_size = 24
+text = "HEIGHT"
+vertical_alignment = 1
+
+[node name="Height_Label" type="Label" parent="."]
+custom_minimum_size = Vector2(175, 25)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.657
+anchor_top = 0.131
+anchor_right = 0.794
+anchor_bottom = 0.166
+offset_left = 0.039978
+offset_top = 0.134987
+offset_right = -0.320068
+offset_bottom = -0.455017
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_eo25t")
+theme_override_font_sizes/font_size = 24
+text = "HEIGHT SIZE"
+vertical_alignment = 1
+
+[node name="Weight" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.517
+anchor_top = 0.176
+anchor_right = 0.627
+anchor_bottom = 0.209
+offset_left = 0.23999
+offset_top = -0.0400085
+offset_right = 0.439697
+offset_bottom = 0.394989
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_eo25t")
+theme_override_font_sizes/font_size = 24
+text = "WEIGHT"
+vertical_alignment = 1
+
+[node name="Weight_Label" type="Label" parent="."]
+custom_minimum_size = Vector2(175, 25)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.657
+anchor_top = 0.176
+anchor_right = 0.794
+anchor_bottom = 0.211
+offset_left = 0.039978
+offset_top = -0.0400085
+offset_right = -0.320068
+offset_bottom = -0.0650177
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_eo25t")
+theme_override_font_sizes/font_size = 24
+text = "WEIGHT SIZE"
+vertical_alignment = 1
+
+[node name="Length_size" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.516
+anchor_top = 0.221
+anchor_right = 0.627
+anchor_bottom = 0.255
+offset_left = 0.52002
+offset_top = -0.215012
+offset_right = -0.560059
+offset_bottom = -0.325027
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_eo25t")
+theme_override_font_sizes/font_size = 24
+text = "LENGHT"
+vertical_alignment = 1
+
+[node name="Leght_Label" type="Label" parent="."]
+custom_minimum_size = Vector2(175, 25)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.657
+anchor_top = 0.249
+anchor_right = 0.794
+anchor_bottom = 0.284
+offset_left = 0.039978
+offset_top = -25.835
+offset_right = -0.320068
+offset_bottom = -26.035
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_eo25t")
+theme_override_font_sizes/font_size = 24
+text = "LENGHT SIZE"
+vertical_alignment = 1
+
+[node name="CONSERVATION STATUS" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.519
+anchor_top = 0.266
+anchor_right = 0.627
+anchor_bottom = 0.336
+offset_left = -3.32001
+offset_top = -0.389999
+offset_right = -0.560059
+offset_bottom = -0.440033
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_eo25t")
+theme_override_font_sizes/font_size = 24
+text = "CONSERVATION STATUS "
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Status" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.657
+anchor_top = 0.266
+anchor_right = 0.767
+anchor_bottom = 0.299
+offset_left = 0.039978
+offset_top = -0.389999
+offset_right = 0.239929
+offset_bottom = 0.0449829
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_eo25t")
+theme_override_font_sizes/font_size = 24
+text = "STATUS"
+vertical_alignment = 1
+
+[node name="Region" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.516
+anchor_top = 0.336
+anchor_right = 0.627
+anchor_bottom = 0.369
+offset_left = 0.52002
+offset_top = -0.440033
+offset_right = -0.560425
+offset_bottom = -0.200043
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_eo25t")
+theme_override_font_sizes/font_size = 24
+text = "REGION"
+vertical_alignment = 1
+
+[node name="Region_List" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.657
+anchor_top = 0.336
+anchor_right = 0.858
+anchor_bottom = 0.422
+offset_left = 0.039978
+offset_top = -22.44
+offset_right = -0.23999
+offset_bottom = -22.13
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("5_xdf8i")
+theme_override_fonts/bold_font = ExtResource("3_eo25t")
+theme_override_fonts/italics_font = ExtResource("6_5h2cx")
+theme_override_fonts/bold_italics_font = ExtResource("4_4563w")
+theme_override_font_sizes/normal_font_size = 18
+theme_override_font_sizes/bold_font_size = 18
+theme_override_font_sizes/italics_font_size = 18
+theme_override_font_sizes/bold_italics_font_size = 18
+bbcode_enabled = true
+text = "Region List"
+fit_content = true
+scroll_following = true
+tab_size = 24
+context_menu_enabled = true
+
+[node name="Morphology" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.516
+anchor_top = 0.422
+anchor_right = 0.627
+anchor_bottom = 0.455
+offset_left = 0.52002
+offset_top = -0.130005
+offset_right = -0.560425
+offset_bottom = 0.304993
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_eo25t")
+theme_override_font_sizes/font_size = 24
+text = "MORPHOLOGY
+"
+vertical_alignment = 1
+
+[node name="MORPHOLOGY_details" type="RichTextLabel" parent="."]
+custom_minimum_size = Vector2(257, 102)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.657
+anchor_top = 0.422
+anchor_right = 0.858
+anchor_bottom = 0.568
+offset_left = 0.039978
+offset_top = -0.130005
+offset_right = -0.23999
+offset_bottom = 0.279968
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("5_xdf8i")
+theme_override_fonts/bold_font = ExtResource("3_eo25t")
+theme_override_fonts/italics_font = ExtResource("6_5h2cx")
+theme_override_fonts/bold_italics_font = ExtResource("4_4563w")
+theme_override_font_sizes/normal_font_size = 18
+theme_override_font_sizes/bold_font_size = 18
+theme_override_font_sizes/italics_font_size = 18
+theme_override_font_sizes/bold_italics_font_size = 18
+bbcode_enabled = true
+text = "Morphology Details"
+fit_content = true
+tab_size = 24
+context_menu_enabled = true
+
+[node name="Diets" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.516
+anchor_top = 0.656
+anchor_right = 0.627
+anchor_bottom = 0.689
+offset_left = 0.52002
+offset_top = -0.23999
+offset_right = -0.560303
+offset_bottom = -6.10352e-05
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_eo25t")
+theme_override_font_sizes/font_size = 24
+text = "DIETS"
+vertical_alignment = 1
+
+[node name="Diets_List" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.657
+anchor_top = 0.656
+anchor_right = 0.858
+anchor_bottom = 0.767
+offset_left = 0.039978
+offset_top = -0.23999
+offset_right = -0.23999
+offset_bottom = 0.195007
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("5_xdf8i")
+theme_override_fonts/bold_font = ExtResource("3_eo25t")
+theme_override_fonts/italics_font = ExtResource("6_5h2cx")
+theme_override_fonts/bold_italics_font = ExtResource("4_4563w")
+theme_override_font_sizes/normal_font_size = 18
+theme_override_font_sizes/bold_font_size = 18
+theme_override_font_sizes/italics_font_size = 18
+theme_override_font_sizes/bold_italics_font_size = 18
+bbcode_enabled = true
+text = "Diets List"
+fit_content = true
+scroll_following = true
+tab_size = 24
+context_menu_enabled = true
+
+[node name="TextureButton" type="TextureButton" parent="."]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.038
+anchor_top = 0.703
+anchor_right = 0.088
+anchor_bottom = 0.773
+offset_left = 0.359997
+offset_top = -0.244995
+offset_right = 0.359993
+offset_bottom = -0.295044
+texture_normal = ExtResource("7_xijui")
+ignore_texture_size = true
+stretch_mode = 0
+flip_h = true
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_back_button_pressed"]

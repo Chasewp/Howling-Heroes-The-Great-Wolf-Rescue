@@ -10,8 +10,8 @@ func load_level_async(path:String):
 	get_tree().paused = true
 	
 	# load the next level
-	var next_level:Level = load(path).instantiate()
-	next_level.exit_reached.connect(_on_level_exit_reached)
+	#var next_level:Level = load(path).instantiate()
+	#next_level.exit_reached.connect(_on_level_exit_reached)
 	
 	# kill everything below the world root
 	for child in get_children():
@@ -21,7 +21,7 @@ func load_level_async(path:String):
 		
 	# instantiate the new level
 	# add to world root
-	add_child(next_level)
+	#add_child(next_level)
 
 	# move any other nodes to front so they render above the level
 	for child in get_children():

@@ -1,8 +1,8 @@
 [gd_scene load_steps=10 format=3 uid="uid://bhbell7p0r466"]
 
-[ext_resource type="Texture2D" uid="uid://vciecd27u7ew" path="res://Assets/Image/tilesets/Outside_A4.png" id="1_3sb5t"]
+[ext_resource type="Texture2D" uid="uid://b3fx6smqrh2h" path="res://Assets/Image/tilesets/Outside_A4.png" id="1_3sb5t"]
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Biomes/Taiga_Stage.gd" id="1_kfjpg"]
-[ext_resource type="Texture2D" uid="uid://45itfcoge8ok" path="res://Assets/Image/tilesets/Outside_B.png" id="2_tlyib"]
+[ext_resource type="Texture2D" uid="uid://dmqti0dn8j1m6" path="res://Assets/Image/tilesets/Outside_B.png" id="2_tlyib"]
 [ext_resource type="PackedScene" uid="uid://ctyfcjvef5jlv" path="res://Assets/Scences/UI/Check_Points/Check_Points.tscn" id="3_n68od"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u87gb"]

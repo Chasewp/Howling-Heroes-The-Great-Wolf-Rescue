@@ -2,7 +2,7 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-uid="uid://4845doyus4v2"
+uid="uid://dqy3fkicgr1g4"
 path="res://.godot/imported/deathknell-tlk-101soundboards-metalgarurumon. 1secmp3.mp3-727d2221e0e149bec5518a824beb8cd9.mp3str"
 
 [deps]
@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/deathknell-tlk-101soundboards-metalgarurumon.
 [params]
 
 loop=false
-loop_offset=0.0
-bpm=0.0
+loop_offset=0
+bpm=0
 beat_count=0
 bar_beats=4

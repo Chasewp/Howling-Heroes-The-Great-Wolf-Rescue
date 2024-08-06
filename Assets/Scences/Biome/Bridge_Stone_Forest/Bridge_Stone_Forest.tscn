@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://cp86kv5xyir10"]
+[gd_scene load_steps=6 format=3 uid="uid://fldrife7s05d"]
 
 [ext_resource type="PackedScene" uid="uid://c1ph53byo1unb" path="res://Assets/Scences/UI/Game_Play/GUI_Play.tscn" id="1_1ik14"]
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Location/Taiga/Bridge_Stone_Forest.gd" id="1_25p6p"]

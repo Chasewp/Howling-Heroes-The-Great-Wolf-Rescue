@@ -1,7 +1,18 @@
-res://Assets/Scences/Stages/Taiga/Taiga_Stage.tscn
+res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Idex.gd
+res://Assets/Script/Controller/UI/Options_Menu/Options_Menu.gd
+res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Index_Page_2.gd
+res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Index_Page_5.gd
+res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Index_Page_6.gd
+res://Assets/Script/Class/Wolf/Wolves_Save/Wolf_Data.gd
+res://Assets/Scences/UI/Wolf_Almanac/Index/Page 6/Wolf_Alamac_Index_Page_6.tscn
 res://Assets/Dialogue/Theme/Speaker_Mode.tres
 res://Assets/Dialogue/Theme/Pixelize_Visual_Novel.tres
 res://Assets/Theme/Dialouge/Bubble_Dialogue.tres
-res://Assets/Theme/Credit/Tittles.tres
-res://Assets/Theme/Credit/Label Details.tres
-res://Assets/Theme/Credit/Buttons.tres
+res://Assets/Script/Class/Wolf/Wolf Alamanac/Book/Wolf_Alamanac_Book.gd
+res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Index_Page_1.gd
+res://Assets/Scences/UI/Splash/Splash_Screen_1.tscn
+res://Assets/Scences/UI/Wolf_Almanac/Book/Interior Alaskan Wolf (Yukon Wolf)/interior_alaskan_wolf_(yukon_wolf).tscn
+res://Assets/Scences/UI/Wolf_Almanac/Index/Page 7/Wolf_Alamac_Index_Page_7.tscn
+res://Assets/Scences/UI/Wolf_Almanac/Index/Page 8/Wolf_Alamac_Index_Page_8.tscn
+res://Assets/Scences/UI/Wolf_Almanac/Index/Page 9/Wolf_Alamac_Index_Page_9.tscn
+res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Index_Page_7.gd

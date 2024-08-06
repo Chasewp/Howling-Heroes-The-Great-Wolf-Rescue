@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://c5oh08utk31s2"]
 
-[ext_resource type="FontFile" uid="uid://bv6xsykw7vcai" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="1_vi86i"]
+[ext_resource type="FontFile" uid="uid://cx2jakxqhnvbt" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="1_vi86i"]
 [ext_resource type="Theme" uid="uid://cya18eaoptu42" path="res://Assets/Theme/Player_Name/Player_Name.tres" id="2_jj1ar"]
-[ext_resource type="Texture2D" uid="uid://d6bdufp2f3dh" path="res://Assets/Image/images/Background/Character Selector/wolf-den-cave-taiga-forest 800x 600.png" id="3_prlmh"]
-[ext_resource type="FontFile" uid="uid://bsmkjcem4b3i1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="4_ru70u"]
+[ext_resource type="Texture2D" uid="uid://bkhp7l8dodony" path="res://Assets/Image/images/Background/Character Selector/wolf-den-cave-taiga-forest 800x 600.png" id="3_prlmh"]
+[ext_resource type="FontFile" uid="uid://b1bqdo4jtrst1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="4_ru70u"]
 
 [sub_resource type="GDScript" id="GDScript_36vk4"]
 script/source = "extends Control
@@ -29,8 +29,8 @@ func _on_player_name_text_submitted(new_text):
 	player.setter_location(\"Taiga\")
 	player.setter_armor(100)
 	player.setter_health(100)
-	SaveLoadSlot.auto_save()
-	get_tree().change_scene_to_file(\"res://Assets/Scences/Location/Bridge_Stone_Forest/Bridge_Stone_Forest.tscn\")
+	#SaveLoadSlot.auto_save()
+	get_tree().change_scene_to_file(\"res://Assets/Scences/Biome/Bridge_Stone_Forest/Bridge_Stone_Forest.tscn\")
 	
 "
 
