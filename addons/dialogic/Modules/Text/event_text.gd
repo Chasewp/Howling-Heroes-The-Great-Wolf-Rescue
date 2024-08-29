@@ -11,13 +11,13 @@ extends DialogicEvent
 ## This is the content of the text event.
 ## It is supposed to be displayed by a DialogicNode_DialogText node.
 ## That means you can use bbcode, but also some custom commands.
-var text: String = ""
+var text := ""
 ## If this is not null, the given character (as a resource) will be associated with this event.
 ## The DialogicNode_NameLabel will show the characters display_name. If a typing sound is setup,
 ## it will play.
 var character: DialogicCharacter = null
 ## If a character is set, this setting can change the portrait of that character.
-var portrait: String = ""
+var portrait := ""
 
 ### Helpers
 
@@ -33,53 +33,20 @@ var character_identifier: String:
 		character_identifier = value
 		character = DialogicResourceUtil.get_character_resource(value)
 
-# Reference regex without Godot escapes: ((")?(?<name>(?(2)[^"\n]*|[^(: \n]*))(?(2)"|)(\W*\((?<portrait>.*)\))?\s*(?<!\\):)?(?<text>(.|\n)*)
-var regex := RegEx.create_from_string("((\")?(?<name>(?(2)[^\"\\n]*|[^(: \\n]*))(?(2)\"|)(\\W*(?<portrait>\\(.*\\)))?\\s*(?<!\\\\):)?(?<text>(.|\\n)*)")
-# Reference regex without godot escapes: ((\[n\]|\[n\+\])?((?!(\[n\]|\[n\+\]))(.|\n))*)
-var split_regex := RegEx.create_from_string("((\\[n\\]|\\[n\\+\\])?((?!(\\[n\\]|\\[n\\+\\]))(.|\\n))*)")
+var regex := RegEx.create_from_string(r'\s*((")?(?<name>(?(2)[^"\n]*|[^(: \n]*))(?(2)"|)(\W*(?<portrait>\(.*\)))?\s*(?<!\\):)?(?<text>(.|\n)*)')
+var split_regex := RegEx.create_from_string(r"((\[n\]|\[n\+\])?((?!(\[n\]|\[n\+\]))(.|\n))+)")
 
 enum States {REVEALING, IDLE, DONE}
-var state = States.IDLE
+var state := States.IDLE
 signal advance
 
+
+#region EXECUTION
 ################################################################################
-## 						EXECUTION
-################################################################################
 
-func _mark_as_read(final_text: String) -> void:
-	if dialogic.has_subsystem('History'):
-		if character:
-			dialogic.History.store_simple_history_entry(final_text, event_name, {'character':character.display_name, 'character_color':character.color})
-		else:
-			dialogic.History.store_simple_history_entry(final_text, event_name)
-		dialogic.History.event_was_read(self)
-
-func _connect_signals() -> void:
-	if not dialogic.Inputs.dialogic_action.is_connected(_on_dialogic_input_action):
-		dialogic.Inputs.dialogic_action.connect(_on_dialogic_input_action)
-
-		dialogic.Inputs.auto_skip.toggled.connect(_on_auto_skip_enable)
-
-	if not dialogic.Inputs.auto_advance.autoadvance.is_connected(_on_dialogic_input_autoadvance):
-		dialogic.Inputs.auto_advance.autoadvance.connect(_on_dialogic_input_autoadvance)
-
-## If the event is done, this method can clean-up signal connections.
-func _disconnect_signals() -> void:
-	dialogic.Inputs.dialogic_action.disconnect(_on_dialogic_input_action)
-	dialogic.Inputs.auto_advance.autoadvance.disconnect(_on_dialogic_input_autoadvance)
-	dialogic.Inputs.auto_skip.toggled.disconnect(_on_auto_skip_enable)
-
-## Tries to play the voice clip for the current line.
-func _try_play_current_line_voice() -> void:
-	# If Auto-Skip is enabled and we skip voice clips, we don't want to play.
-	if (dialogic.Inputs.auto_skip.enabled
-	and dialogic.Inputs.auto_skip.skip_voice):
-		return
-
-	# Plays the audio region for the current line.
-	if (dialogic.has_subsystem('Voice')
-	and dialogic.Voice.is_voiced(dialogic.current_event_idx)):
-		dialogic.Voice.play_voice()
+func _clear_state() -> void:
+	dialogic.current_state_info.erase('text_sub_idx')
+	_disconnect_signals()
 
 func _execute() -> void:
 	if text.is_empty():
@@ -89,19 +56,20 @@ func _execute() -> void:
 	if (not character or character.custom_info.get('style', '').is_empty()) and dialogic.has_subsystem('Styles'):
 		# if previous characters had a custom style change back to base style
 		if dialogic.current_state_info.get('base_style') != dialogic.current_state_info.get('style'):
-			dialogic.Styles.load_style(dialogic.current_state_info.get('base_style', 'Default'))
+			dialogic.Styles.change_style(dialogic.current_state_info.get('base_style', 'Default'))
 			await dialogic.get_tree().process_frame
 
+	var character_name_text := dialogic.Text.get_character_name_parsed(character)
 	if character:
 		if dialogic.has_subsystem('Styles') and character.custom_info.get('style', null):
-			dialogic.Styles.load_style(character.custom_info.style, false)
+			dialogic.Styles.change_style(character.custom_info.style, false)
 			await dialogic.get_tree().process_frame
 
 
 		if portrait and dialogic.has_subsystem('Portraits') and dialogic.Portraits.is_character_joined(character):
 			dialogic.Portraits.change_character_portrait(character, portrait)
 		dialogic.Portraits.change_speaker(character, portrait)
-		var check_portrait :String = portrait if !portrait.is_empty() else dialogic.current_state_info['portraits'].get(character.resource_path, {}).get('portrait', '')
+		var check_portrait: String = portrait if !portrait.is_empty() else dialogic.current_state_info['portraits'].get(character.resource_path, {}).get('portrait', '')
 
 		if check_portrait and character.portraits.get(check_portrait, {}).get('sound_mood', '') in character.custom_info.get('sound_moods', {}):
 			dialogic.Text.update_typing_sound_mood(character.custom_info.get('sound_moods', {}).get(character.portraits[check_portrait].get('sound_mood', {}), {}))
@@ -118,7 +86,7 @@ func _execute() -> void:
 
 	_connect_signals()
 
-	var final_text :String= get_property_translated('text')
+	var final_text: String = get_property_translated('text')
 	if ProjectSettings.get_setting('dialogic/text/split_at_new_lines', false):
 		match ProjectSettings.get_setting('dialogic/text/split_at_new_lines_as', 0):
 			0:
@@ -131,37 +99,50 @@ func _execute() -> void:
 		split_text.append([i.get_string().trim_prefix('[n]').trim_prefix('[n+]')])
 		split_text[-1].append(i.get_string().begins_with('[n+]'))
 
-	for section_idx in range(len(split_text)):
-		dialogic.Text.hide_next_indicators()
-		state = States.REVEALING
-		var segment: String = dialogic.Text.parse_text(split_text[section_idx][0])
+	dialogic.current_state_info['text_sub_idx'] = dialogic.current_state_info.get('text_sub_idx', -1)
 
-		var is_append: bool = split_text[section_idx][1]
+	var reveal_next_segment: bool = dialogic.current_state_info['text_sub_idx'] == -1
 
-		final_text = segment
-		dialogic.Text.about_to_show_text.emit({'text':final_text, 'character':character, 'portrait':portrait, 'append': is_append})
+	for section_idx in range(min(max(0, dialogic.current_state_info['text_sub_idx']), len(split_text)-1), len(split_text)):
+		dialogic.Inputs.block_input(ProjectSettings.get_setting('dialogic/text/text_reveal_skip_delay', 0.1))
 
-		await dialogic.Text.update_text_boxes(final_text, false)
-		_try_play_current_line_voice()
-		final_text = dialogic.Text.update_dialog_text(final_text, false, is_append)
+		if reveal_next_segment:
+			dialogic.Text.hide_next_indicators()
 
-		_mark_as_read(final_text)
+			dialogic.current_state_info['text_sub_idx'] = section_idx
 
-		# We must skip text animation before we potentially return when there
-		# is a Choice event.
-		if dialogic.Inputs.auto_skip.enabled:
-			dialogic.Text.skip_text_animation()
+			var segment: String = dialogic.Text.parse_text(split_text[section_idx][0])
+			var is_append: bool = split_text[section_idx][1]
+
+			final_text = segment
+			dialogic.Text.about_to_show_text.emit({'text':final_text, 'character':character, 'portrait':portrait, 'append': is_append})
+
+			await dialogic.Text.update_textbox(final_text, false)
+
+			state = States.REVEALING
+			_try_play_current_line_voice()
+			final_text = dialogic.Text.update_dialog_text(final_text, false, is_append)
+
+			_mark_as_read(character_name_text, final_text)
+
+			# We must skip text animation before we potentially return when there
+			# is a Choice event.
+			if dialogic.Inputs.auto_skip.enabled:
+				dialogic.Text.skip_text_reveal()
+			else:
+				await dialogic.Text.text_finished
+
+			state = States.IDLE
 		else:
-			await dialogic.Text.text_finished
-
-		state = States.IDLE
+			reveal_next_segment = true
 
 		# Handling potential Choice Events.
-		if dialogic.has_subsystem('Choices') and dialogic.Choices.is_question(dialogic.current_event_idx):
+		if section_idx == len(split_text)-1 and dialogic.has_subsystem('Choices') and dialogic.Choices.is_question(dialogic.current_event_idx):
 			dialogic.Text.show_next_indicators(true)
-			dialogic.Choices.show_current_choices(false)
-			dialogic.current_state = dialogic.States.AWAITING_CHOICE
+
+			finish()
 			return
+
 		elif dialogic.Inputs.auto_advance.is_enabled():
 			dialogic.Text.show_next_indicators(false, true)
 			dialogic.Inputs.auto_advance.start()
@@ -183,29 +164,70 @@ func _execute() -> void:
 		else:
 			await advance
 
-	_disconnect_signals()
+
 	finish()
 
-func _on_dialogic_input_action():
+
+func _mark_as_read(character_name_text: String, final_text: String) -> void:
+	if dialogic.has_subsystem('History'):
+		if character:
+			dialogic.History.store_simple_history_entry(final_text, event_name, {'character':character_name_text, 'character_color':character.color})
+		else:
+			dialogic.History.store_simple_history_entry(final_text, event_name)
+		dialogic.History.mark_event_as_visited()
+
+
+func _connect_signals() -> void:
+	if not dialogic.Inputs.dialogic_action.is_connected(_on_dialogic_input_action):
+		dialogic.Inputs.dialogic_action.connect(_on_dialogic_input_action)
+
+		dialogic.Inputs.auto_skip.toggled.connect(_on_auto_skip_enable)
+
+	if not dialogic.Inputs.auto_advance.autoadvance.is_connected(_on_dialogic_input_autoadvance):
+		dialogic.Inputs.auto_advance.autoadvance.connect(_on_dialogic_input_autoadvance)
+
+
+## If the event is done, this method can clean-up signal connections.
+func _disconnect_signals() -> void:
+	if dialogic.Inputs.dialogic_action.is_connected(_on_dialogic_input_action):
+		dialogic.Inputs.dialogic_action.disconnect(_on_dialogic_input_action)
+	if dialogic.Inputs.auto_advance.autoadvance.is_connected(_on_dialogic_input_autoadvance):
+		dialogic.Inputs.auto_advance.autoadvance.disconnect(_on_dialogic_input_autoadvance)
+	if dialogic.Inputs.auto_skip.toggled.is_connected(_on_auto_skip_enable):
+		dialogic.Inputs.auto_skip.toggled.disconnect(_on_auto_skip_enable)
+
+
+## Tries to play the voice clip for the current line.
+func _try_play_current_line_voice() -> void:
+	# If Auto-Skip is enabled and we skip voice clips, we don't want to play.
+	if (dialogic.Inputs.auto_skip.enabled
+	and dialogic.Inputs.auto_skip.skip_voice):
+		return
+
+	# Plays the audio region for the current line.
+	if (dialogic.has_subsystem('Voice')
+	and dialogic.Voice.is_voiced(dialogic.current_event_idx)):
+		dialogic.Voice.play_voice()
+
+
+func _on_dialogic_input_action() -> void:
 	match state:
 		States.REVEALING:
-			if dialogic.Text.can_skip_text_reveal():
-				dialogic.Text.skip_text_animation()
-				dialogic.Inputs.stop()
-				dialogic.Inputs.block_input(ProjectSettings.get_setting('dialogic/text/text_reveal_skip_delay', 0.1))
+			if dialogic.Text.is_text_reveal_skippable():
+				dialogic.Text.skip_text_reveal()
+				dialogic.Inputs.stop_timers()
 		_:
-			if dialogic.Inputs.is_manualadvance_enabled():
+			if dialogic.Inputs.manual_advance.is_enabled():
 				advance.emit()
-				dialogic.Inputs.stop()
-				dialogic.Inputs.block_input(ProjectSettings.get_setting('dialogic/text/text_reveal_skip_delay', 0.1))
+				dialogic.Inputs.stop_timers()
 
 
-func _on_dialogic_input_autoadvance():
+func _on_dialogic_input_autoadvance() -> void:
 	if state == States.IDLE or state == States.DONE:
 		advance.emit()
 
 
-func _on_auto_skip_enable(enabled: bool):
+func _on_auto_skip_enable(enabled: bool) -> void:
 	if not enabled:
 		return
 
@@ -218,11 +240,12 @@ func _on_auto_skip_enable(enabled: bool):
 				advance.emit()
 
 		States.REVEALING:
-			dialogic.Text.skip_text_animation()
+			dialogic.Text.skip_text_reveal()
+
+#endregion
 
 
-################################################################################
-## 						INITIALIZE
+#region INITIALIZE
 ################################################################################
 
 func _init() -> void:
@@ -231,6 +254,7 @@ func _init() -> void:
 	event_category = "Main"
 	event_sorting_index = 0
 	expand_by_default = true
+	help_page_path = "https://docs.dialogic.pro/writing-text-events.html"
 
 
 
@@ -289,7 +313,7 @@ func from_text(string:String) -> void:
 			text = ""
 
 
-func is_valid_event(string:String) -> bool:
+func is_valid_event(_string:String) -> bool:
 	return true
 
 
@@ -305,9 +329,10 @@ func get_shortcode_parameters() -> Dictionary:
 		"character"		: {"property": "character_identifier", "default": ""},
 		"portrait"		: {"property": "portrait", 					"default": ""},
 	}
+#endregion
 
-################################################################################
-## 						TRANSLATIONS
+
+#region TRANSLATIONS
 ################################################################################
 
 func _get_translatable_properties() -> Array:
@@ -321,15 +346,17 @@ func _get_property_original_translation(property:String) -> String:
 	return ''
 
 
-################################################################################
-## 						EVENT EDITOR
+#endregion
+
+
+#region EVENT EDITOR
 ################################################################################
 
 func _enter_visual_editor(editor:DialogicEditor):
 	editor.opened.connect(func(): ui_update_needed.emit())
 
 
-func build_event_editor():
+func build_event_editor() -> void:
 	add_header_edit('character_identifier', ValueType.DYNAMIC_OPTIONS,
 			{'file_extension' 	: '.dch',
 			'mode'				: 2,
@@ -340,49 +367,35 @@ func build_event_editor():
 			{'suggestions_func' : get_portrait_suggestions,
 			'placeholder' 		: "(Don't change)",
 			'icon' 				: load("res://addons/dialogic/Editor/Images/Resources/portrait.svg"),
-			'collapse_when_empty':true,},
-			'character != null and !has_no_portraits()')
+			'collapse_when_empty': true,},
+			'should_show_portrait_selector()')
 	add_body_edit('text', ValueType.MULTILINE_TEXT, {'autofocus':true})
 
-func do_any_characters_exist() -> bool:
-	return !DialogicResourceUtil.get_character_directory().is_empty()
 
-func has_no_portraits() -> bool:
-	return character and character.portraits.is_empty()
+func should_show_portrait_selector() -> bool:
+	return character and not character.portraits.is_empty() and not character.portraits.size() == 1
+
+
+func do_any_characters_exist() -> bool:
+	return not DialogicResourceUtil.get_character_directory().is_empty()
 
 
 func get_character_suggestions(search_text:String) -> Dictionary:
-	var suggestions := {}
-
-
-	var icon = load("res://addons/dialogic/Editor/Images/Resources/character.svg")
-	suggestions['(No one)'] = {'value':null, 'editor_icon':["GuiRadioUnchecked", "EditorIcons"]}
-
-	var character_directory := DialogicResourceUtil.get_character_directory()
-	for resource in character_directory.keys():
-		suggestions[resource] = {
-				'value' 	: resource,
-				'tooltip' 	: character_directory[resource],
-				'icon' 		: icon.duplicate()}
-	return suggestions
+	return DialogicUtil.get_character_suggestions(search_text, character, true, false, editor_node)
 
 
 func get_portrait_suggestions(search_text:String) -> Dictionary:
-	var suggestions := {}
-	var icon = load("res://addons/dialogic/Editor/Images/Resources/portrait.svg")
-	suggestions["Don't change"] = {'value':'', 'editor_icon':["GuiRadioUnchecked", "EditorIcons"]}
-	if character != null:
-		for portrait in character.portraits:
-			suggestions[portrait] = {'value':portrait, 'icon':icon}
-	return suggestions
+	return DialogicUtil.get_portrait_suggestions(search_text, character, true, "Don't change")
+
+#endregion
 
 
-####################### CODE COMPLETION ########################################
+#region CODE COMPLETION
 ################################################################################
 
 var completion_text_character_getter_regex := RegEx.new()
 var completion_text_effects := {}
-func _get_code_completion(CodeCompletionHelper:Node, TextNode:TextEdit, line:String, word:String, symbol:String) -> void:
+func _get_code_completion(CodeCompletionHelper:Node, TextNode:TextEdit, line:String, _word:String, symbol:String) -> void:
 	if completion_text_character_getter_regex.get_pattern().is_empty():
 		completion_text_character_getter_regex.compile("(\"[^\"]*\"|[^\\s:]*)")
 
@@ -392,9 +405,9 @@ func _get_code_completion(CodeCompletionHelper:Node, TextNode:TextEdit, line:Str
 				completion_text_effects[effect['command']] = effect
 
 	if not ':' in line.substr(0, TextNode.get_caret_column()) and symbol == '(':
-		var character := completion_text_character_getter_regex.search(line).get_string().trim_prefix('"').trim_suffix('"')
+		var completion_character := completion_text_character_getter_regex.search(line).get_string().trim_prefix('"').trim_suffix('"')
+		CodeCompletionHelper.suggest_portraits(TextNode, completion_character)
 
-		CodeCompletionHelper.suggest_portraits(TextNode, character)
 	if symbol == '[':
 		suggest_bbcode(TextNode)
 		for effect in completion_text_effects.values():
@@ -402,32 +415,36 @@ func _get_code_completion(CodeCompletionHelper:Node, TextNode:TextEdit, line:Str
 				TextNode.add_code_completion_option(CodeEdit.KIND_MEMBER, effect.command, effect.command+'=', TextNode.syntax_highlighter.normal_color, TextNode.get_theme_icon("RichTextEffect", "EditorIcons"))
 			else:
 				TextNode.add_code_completion_option(CodeEdit.KIND_MEMBER, effect.command, effect.command, TextNode.syntax_highlighter.normal_color, TextNode.get_theme_icon("RichTextEffect", "EditorIcons"), ']')
+
 	if symbol == '{':
 		CodeCompletionHelper.suggest_variables(TextNode)
 
 	if symbol == '=':
 		if CodeCompletionHelper.get_line_untill_caret(line).ends_with('[portrait='):
-			var character := completion_text_character_getter_regex.search(line).get_string('name')
-			CodeCompletionHelper.suggest_portraits(TextNode, character, ']')
+			var completion_character := completion_text_character_getter_regex.search(line).get_string('name')
+			CodeCompletionHelper.suggest_portraits(TextNode, completion_character, ']')
 
 
 func _get_start_code_completion(CodeCompletionHelper:Node, TextNode:TextEdit) -> void:
 	CodeCompletionHelper.suggest_characters(TextNode, CodeEdit.KIND_CLASS, true)
 
 
-func suggest_bbcode(text:CodeEdit):
+func suggest_bbcode(TextNode:CodeEdit):
 	for i in [['b (bold)', 'b'], ['i (italics)', 'i'], ['color', 'color='], ['font size','font_size=']]:
-		text.add_code_completion_option(CodeEdit.KIND_MEMBER, i[0], i[1],  text.syntax_highlighter.normal_color, text.get_theme_icon("RichTextEffect", "EditorIcons"),)
-		text.add_code_completion_option(CodeEdit.KIND_CLASS, 'end '+i[0], '/'+i[1],  text.syntax_highlighter.normal_color, text.get_theme_icon("RichTextEffect", "EditorIcons"), ']')
+		TextNode.add_code_completion_option(CodeEdit.KIND_MEMBER, i[0], i[1],  TextNode.syntax_highlighter.normal_color, TextNode.get_theme_icon("RichTextEffect", "EditorIcons"),)
+		TextNode.add_code_completion_option(CodeEdit.KIND_CLASS, 'end '+i[0], '/'+i[1],  TextNode.syntax_highlighter.normal_color, TextNode.get_theme_icon("RichTextEffect", "EditorIcons"), ']')
 	for i in [['new event', 'n'],['new event (same box)', 'n+']]:
-		text.add_code_completion_option(CodeEdit.KIND_MEMBER, i[0], i[1],  text.syntax_highlighter.normal_color, text.get_theme_icon("ArrowRight", "EditorIcons"),)
+		TextNode.add_code_completion_option(CodeEdit.KIND_MEMBER, i[0], i[1],  TextNode.syntax_highlighter.normal_color, TextNode.get_theme_icon("ArrowRight", "EditorIcons"),)
 
-#################### SYNTAX HIGHLIGHTING #######################################
+#endregion
+
+
+#region SYNTAX HIGHLIGHTING
 ################################################################################
 
 var text_effects := ""
 var text_effects_regex := RegEx.new()
-func load_text_effects():
+func load_text_effects() -> void:
 	if text_effects.is_empty():
 		for idx in DialogicUtil.get_indexers():
 			for effect in idx._get_text_effects():
@@ -462,7 +479,7 @@ func _get_syntax_highlighting(Highlighter:SyntaxHighlighter, dict:Dictionary, li
 		dict = Highlighter.color_region(dict, Highlighter.variable_color, line, '{', '}', result.get_start('text'))
 
 		for replace_mod_match in text_random_word_regex.search_all(result.get_string('text')):
-			var color :Color = Highlighter.string_color
+			var color: Color = Highlighter.string_color
 			color = color.lerp(Highlighter.normal_color, 0.4)
 			dict[replace_mod_match.get_start()+result.get_start('text')] = {'color':Highlighter.string_color}
 			var offset := 1
@@ -474,3 +491,5 @@ func _get_syntax_highlighting(Highlighter:SyntaxHighlighter, dict:Dictionary, li
 				offset += 1
 			dict[replace_mod_match.get_end()+result.get_start('text')] = {'color':Highlighter.normal_color}
 	return dict
+
+#endregion

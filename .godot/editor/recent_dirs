@@ -1,9 +1,17 @@
+res://Assets/Scences/UI/Lock_Button
+res://Assets/Script/Class/Wolf/Wolf Alamanac/Class_Data
+res://Assets/Script/Class/Wolf/Wolf Alamanac/Index
+res://Assets/Scences/Chest
+C:/Users/Blizzard/Documents/GitHub/Howling-Heroes-The-Great-Wolf-Rescue
+res://Assets/Script/Controller/Key/Taiga/Pine Tree
+res://Assets/Scences/Key/Taiga
+res://Assets/Script/Controller/handler
+res://Assets/Scences/UI/drop_handler
 res://Assets/Music/Start_Buton_Sound
 res://Assets/Fonts
 res://Assets/Image/images/Background/Wolf Almanac Index
 res://Assets/Theme/Wolf_Almanac_Idex
 res://Assets/Music/All Button
-res://Assets/Script/Class/Wolf/Wolf Alamanac/Index
 res://Assets/Scences/UI/Wolf_Almanac/Index
 res://Assets/Image/Character/Player/templerun
 res://Assets/Script/Class/Player
@@ -12,15 +20,3 @@ res://Assets/Script/Controller/UI/Location/Biome_Exit
 res://Assets/Image/Wolf Howl Coins/Fanish
 res://Assets/Image/Wolf Howl Coins/360
 res://Assets/Script/Controller/Save/Progress
-res://Assets/Script/Class/Character/Player
-res://Assets/Script/Controller/UI/Credits
-res://Assets/Theme/Credit
-res://Assets/Script/Class/Wolf/Wolf Alamanac
-res://Assets/Script/Class/Wolf/Wolf Alamanac/Book
-res://Assets/Script/Class/Wolf/Wolves_Save
-res://Assets/Script/Controller/UI/Pause_Screen
-res://Assets/Image/Wolves/Pixel Art/Character Sheets
-C:/Users/Blizzard/AppData/Roaming/Godot/import_FBX2glTF/FBX2glTF-windows-x86_64
-C:/Program Files/Adobe/Adobe Photoshop 2024
-C:/Users/Blizzard/AppData/Local/Programs/Microsoft VS Code Insiders
-C:/Users/Blizzard/Documents/GitHub/Howling Heroes _ The Great Wolf Rescue

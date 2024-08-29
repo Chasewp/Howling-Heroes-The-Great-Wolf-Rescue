@@ -20,7 +20,6 @@ extends Node2D
 @onready var graywolflabel = $"Background/Almanac Index/WolfVBoxContainer9/Label_Wolf_9"
 
 """Inisiate Page"""
-var indexpage2 = preload("res://Assets/Scences/UI/Wolf_Almanac/Index/Page 2/Wolf_Alamac_Index_Page_2.tscn").instantiate()
 var indexpage4 = preload("res://Assets/Scences/UI/Wolf_Almanac/Index/Page 4/Wolf_Alamac_Index_Page_4.tscn").instantiate()
 var book_almanac7 = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Main/wolf_almanac.tscn").instantiate()
 var book_almanac8 = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Main/wolf_almanac.tscn").instantiate()
@@ -39,7 +38,7 @@ func _on_next_page_4_button_pressed():
 	get_tree().root.add_child(indexpage4)
 
 """Back Button"""
-func _on_back_page_2_button_preessed():
+func _on_back_page_2_button_pressed():
 	buttonsound.play()
 	get_parent().remove_child(self)
 
@@ -228,5 +227,15 @@ func _on_gray_wolf_label_pressed():
 	get_tree().change_scene_to_packed(gray_wolf_almanac)
 	get_tree().root.add_child(gray_wolf_almanac)   
 
+func _ready():
+	#Eastern Wolf
+	_eastern_wolf_image()
+	_eastern_wolf_name()
+	#Eurasian Wolf
+	_eurasian_wolf_image()
+	_eurasian_wolf_name()
+	#Gray Wolf
+	_gray_wolf_image()
+	_gray_wolf_name()
 
 

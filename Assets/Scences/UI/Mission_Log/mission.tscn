@@ -1,11 +1,11 @@
 [gd_scene load_steps=9 format=3 uid="uid://d2kow5kkphlx6"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Mission_Log/mission.gd" id="1_3lxni"]
-[ext_resource type="Texture2D" uid="uid://dxkdku0q6k01n" path="res://Assets/Image/Background/Mission Log/1x/Asset 3.png" id="1_is4q6"]
+[ext_resource type="Texture2D" uid="uid://1wfeywiyeteg" path="res://Assets/Image/Background/Mission Log/1x/Asset 3.png" id="1_is4q6"]
 [ext_resource type="Theme" uid="uid://cya18eaoptu42" path="res://Assets/Theme/Player_Name/Player_Name.tres" id="1_ljw8f"]
-[ext_resource type="FontFile" uid="uid://bsmkjcem4b3i1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="1_ng2ve"]
-[ext_resource type="FontFile" uid="uid://bv6xsykw7vcai" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="4_dgrlg"]
-[ext_resource type="FontFile" uid="uid://b37vftxdinymo" path="res://Assets/Fonts/DisposableDroidBB_ital.ttf" id="5_ob1tj"]
+[ext_resource type="FontFile" uid="uid://c2xxg2yydtlpl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="1_ng2ve"]
+[ext_resource type="FontFile" uid="uid://ctp6d02xix3tn" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="4_dgrlg"]
+[ext_resource type="FontFile" uid="uid://bnd422wj8matr" path="res://Assets/Fonts/DisposableDroidBB_ital.ttf" id="5_ob1tj"]
 
 [sub_resource type="Animation" id="Animation_jfsuu"]
 resource_name = "Close"

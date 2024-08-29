@@ -1,11 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://b2l783lyrtvje"]
+[gd_scene load_steps=6 format=3 uid="uid://b2l783lyrtvje"]
 
-[ext_resource type="Texture2D" uid="uid://bo2y6oxufgah0" path="res://Assets/Image/images/Background/Wolf Almanac Index/Wood Texture.png" id="2_g62sh"]
-[ext_resource type="FontFile" uid="uid://6thsxv1vtpj8" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="3_umq56"]
+[ext_resource type="Script" path="res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Index_Page_9.gd" id="1_hx2to"]
+[ext_resource type="Texture2D" uid="uid://d04k2qksoa13u" path="res://Assets/Image/images/Background/Wolf Almanac Index/Wood Texture.png" id="2_g62sh"]
+[ext_resource type="FontFile" uid="uid://b0dbrpth4h70i" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="3_umq56"]
 [ext_resource type="Theme" uid="uid://dk2f873t2ffc2" path="res://Assets/Theme/Wolf_Almanac_Idex/Button.tres" id="4_p66ip"]
-[ext_resource type="AudioStream" uid="uid://ccms4c4lgm35" path="res://Assets/Music/All Button/Button.mp3" id="5_2r1e5"]
+[ext_resource type="AudioStream" uid="uid://dfx8n3eqhipk0" path="res://Assets/Music/All Button/Button.mp3" id="5_2r1e5"]
 
 [node name="WolfAlamacIndexPage9" type="Node2D"]
+script = ExtResource("1_hx2to")
 
 [node name="Background" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(1280, 720)
@@ -151,11 +153,11 @@ text = "Page 9 of 9"
 [node name="Button_Click" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("5_2r1e5")
 
-[connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer25/Wolf 25" to="." method="_on_steppe_wolf_pressed"]
-[connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer25/Label_Wolf_25" to="." method="_on_steppe_wolf_pressed"]
-[connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer26/Wolf 26" to="." method="_on_tundra_wolf_pressed"]
-[connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer26/Label_Wolf_26" to="." method="_on_tundra_wolf_pressed"]
-[connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer27/Wolf 27" to="." method="_on_vancouver_coastal_island_wolf_pressed"]
-[connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer27/Label_Wolf_27" to="." method="_on_vancouver_coastal_island_wolf_pressed"]
-[connection signal="pressed" from="Background/Back Button Page 8" to="." method="_on_back_button_page_9_pressed"]
-[connection signal="pressed" from="Background/First Page Button" to="." method="_on_back_button_page_2_pressed"]
+[connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer25/Wolf 25" to="." method="_on_steppe_wolf_image_pressed"]
+[connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer25/Label_Wolf_25" to="." method="_on_steppe_wolf_label_pressed"]
+[connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer26/Wolf 26" to="." method="_on_tundra_wolf_image_pressed"]
+[connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer26/Label_Wolf_26" to="." method="_on_tundra_wolf_label_pressed"]
+[connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer27/Wolf 27" to="." method="_on_vancouver_coastal_island_wolf_image_pressed"]
+[connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer27/Label_Wolf_27" to="." method="_on_vancouver_coastal_island_wolf_label_pressed"]
+[connection signal="pressed" from="Background/Back Button Page 8" to="." method="_on_back_page_8_button_pressed"]
+[connection signal="pressed" from="Background/First Page Button" to="." method="_on_first_page_button_pressed"]

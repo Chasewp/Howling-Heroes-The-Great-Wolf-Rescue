@@ -6,6 +6,7 @@ const WOLVES_LIST_DATA = "res://Assets/Script/Class/Wolf/Wolves_Save/Wolves.json
 var Data_Wolves = {}
 func _ready():
 	Data_Wolves = load_wolves_data(WOLVES_LIST_DATA)
+	
 func load_wolves_data(file_path : String):      
 	if FileAccess.file_exists(file_path):
 		
@@ -73,6 +74,17 @@ func _get_Alaskan_Tundra_Wolf_Morphology():
 func _get_Alaskan_Tundra_Wolf_Diets():
 	var _alaskan_Tundra_Wolf_Diets = Data_Wolves["Alaskan Tundra Wolf"]["Diets"]
 	return _alaskan_Tundra_Wolf_Diets
+	
+#Recued 
+func _get_Alaskan_Tundra_Wolf_Rescue_Status():
+	var _alaskan_Tundra_Wolf_Rescue_Status = Data_Wolves["Alaskan Tundra Wolf"]["Rescued"]
+	return _alaskan_Tundra_Wolf_Rescue_Status
+
+func set_Alaskan_Tundra_Wolf_Rescue_Status():
+	Data_Wolves["Alaskan Tundra Wolf"]["Rescued"] = true
+	var _alaskan_Tundra_Wolf_Rescue_Status = FileAccess.open(WOLVES_LIST_DATA,FileAccess.WRITE)
+	_alaskan_Tundra_Wolf_Rescue_Status.store_line(JSON.stringify(Data_Wolves))
+	_alaskan_Tundra_Wolf_Rescue_Status.close()
 #######################################################################
 #2
 #Alexander Archipelago Wolf 
@@ -124,6 +136,17 @@ func _get_Alexander_Archipelago_Wolf_Diets():
 	var _alexander_Archipelago_Wolf_Diets = Data_Wolves["Alexander Archipelago Wolf"]["Diets"]
 	return _alexander_Archipelago_Wolf_Diets
 
+#Rescued
+func _get_Alexander_Archipelago_Wolf_Rescue_Status():
+	var _alexander_Archipelago_Wolf_Rescue_Status = Data_Wolves["Alexander Archipelago Wolf"]["Rescued"]
+	return _alexander_Archipelago_Wolf_Rescue_Status
+
+
+func _set_alexander_Archipelago_Wolf_Rescue_Status():
+	Data_Wolves["Alexander Archipelago Wolf"]["Rescued"] = true
+	var _alexander_Archipelago_Wolf_Rescue_Status = FileAccess.open(WOLVES_LIST_DATA,FileAccess.WRITE)
+	_alexander_Archipelago_Wolf_Rescue_Status.store_line(JSON.stringify(Data_Wolves))
+	_alexander_Archipelago_Wolf_Rescue_Status.close()
 #######################################################################
 #3
 #Arabian Wolf 
@@ -175,6 +198,18 @@ func _get_Arabian_Wolf_Morphology():
 func _get_Arabian_Wolf_Diets():
 	var _arabian_Wolf_Diets = Data_Wolves["Arabian Wolf"]["Diets"]
 	return _arabian_Wolf_Diets
+
+#Rescued
+func _get_Arabian_Wolf_Rescue_Status():
+	var _arabian_Wolf_Rescue_Status = Data_Wolves["Arabian Wolf"]["Rescued"]
+	return _arabian_Wolf_Rescue_Status
+
+func _set_Arabian_Wolf_Rescue_Status():
+	Data_Wolves["Arabian Wolf"]["Rescued"] = true
+	var _arabian_Wolf_Rescue_Status = FileAccess.open(WOLVES_LIST_DATA,FileAccess.WRITE)
+	_arabian_Wolf_Rescue_Status.store_line(JSON.stringify(Data_Wolves))
+	_arabian_Wolf_Rescue_Status.close()
+
 #######################################################################
 #4
 #Arctic Wolf
@@ -225,6 +260,18 @@ func _get_Arctic_Wolf_Morphology():
 func _get_Arctic_Wolf_Diets():
 	var _arctic_Wolf_Diets = Data_Wolves["Arctic Wolf"]["Diets"]
 	return _arctic_Wolf_Diets
+
+
+#Recued
+func _get_Arctic_Wolf_Rescue_Status():
+	var _arctic_Wolf_Rescue_Status = Data_Wolves["Arctic Wolf"]["Rescued"]
+	return _arctic_Wolf_Rescue_Status
+
+func _get_Arctic_Wolf_Rescue_status():
+	Data_Wolves["Arctic Wolf"]["Rescued"] = true
+	var _arctic_Wolf_Rescue_Status = FileAccess.open(WOLVES_LIST_DATA,FileAccess.WRITE)
+	_arctic_Wolf_Rescue_Status.store_line(JSON.stringify(Data_Wolves))
+	_arctic_Wolf_Rescue_Status.close()
 #######################################################################
 #5
 #Baffin Island Wolf 
@@ -278,6 +325,17 @@ func _get_baffin_Island_Wolf_Diets():
 	var _baffin_Island_Wolf_Diets = Data_Wolves["Baffin Island Wolf"]["Diets"]
 	return _baffin_Island_Wolf_Diets
 	
+#Rescued
+func _get_Baffin_Island_Wolf_Rescue_Status():
+	var _baffin_Island_Wolf_Rescue_Status = Data_Wolves["Baffin Island Wolf"]["Rescued"]
+	return _baffin_Island_Wolf_Rescue_Status
+
+func _set_Baffin_Island_Wolf_Rescue_Status():
+	Data_Wolves["Baffin Island Wolf"]["Rescued"] = true
+	var _baffin_Island_Wolf_Rescue_Status = FileAccess.open(WOLVES_LIST_DATA,FileAccess.WRITE)
+	_baffin_Island_Wolf_Rescue_Status.store_line(JSON.stringify(Data_Wolves))
+	_baffin_Island_Wolf_Rescue_Status.close()
+
 #######################################################################
 #6
 #British Columbian Wolf 
@@ -331,6 +389,10 @@ func _get_British_Columbian_Wolf_Diets():
 	var _british_Columbian_Wolf_Diets = Data_Wolves["British Columbian Wolf"]["Diets"]
 	return _british_Columbian_Wolf_Diets
 
+#Rescued
+func _get_British_Columbian_Wolf_Rescue_status():
+	var _britsh_Columbian_Wolf_Rescue_Status = Data_Wolves["British Columbian Wolf"]["Rescue"]
+	return _britsh_Columbian_Wolf_Rescue_Status
 #######################################################################
 #7
 #Eastern Wolf 

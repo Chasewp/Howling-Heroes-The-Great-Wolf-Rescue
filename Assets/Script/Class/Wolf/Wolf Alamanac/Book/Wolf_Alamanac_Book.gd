@@ -36,8 +36,6 @@ func _ready():
 	$MORPHOLOGY_details.set_text(almanac.getter_Wolf_Morphology())
 	$Diets_List.set_text(almanac.getter_Wolf_Diets())
 	
-
-
 #Wolves Data
 func setimage(img):
 	var image = Image.load_from_file(img)

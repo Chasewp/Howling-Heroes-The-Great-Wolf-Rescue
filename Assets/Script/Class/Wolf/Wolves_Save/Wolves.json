@@ -8,6 +8,7 @@
 		"Location": "Icy American state, Hudson Bay, Alaska’s tundra, taiga near the Arctic coast, and boreal forests",
 		"Morphology": "Mostly white-colored, like many arctic subSpesies, and are identical cousins to the Great Plains wolf in skull and tooth Morfologi and the Interior Alaskan wolf. However, their narrower rostrum and palate and whiter coat differentiate them from both.",
 		"Name_Wolf": "Alaskan Tundra Wolf",
+		"Rescued" : false,
 		"Species": "Canis lupus tundrarum",
 		"Weight": "38.5 kg - 80 kg"
 	},
@@ -20,6 +21,7 @@
 		"Location": "South-eastern Alaska",
 		"Morphology": "While arctic animals tend to be lighter colored, the Alexander Archipelago wolf majestically rocks its darkly-colored coat",
 		"Name_Wolf": "Alexander Archipelago Wolf",
+		"Rescued" : false,
 		"Species": "Canis lupus ligoni",
 		"Weight": "14 kg - 23 kg"
 	},
@@ -32,6 +34,7 @@
 		"Location": "Western and southern Iraq, Saudi Arabia, Jordan, Yemen, southern Israel, some parts of Egypt’s Sinai Peninsula, and Oman.",
 		"Morphology": "Their coat hairs are thin, short, wiry, and light in colour, varying from light brown through to a greyish yellow, with the stomach being paler or white. The hair on the back remains long, which is thought to be an adaption against solar radiation. In winter their coats are thicker and longer, but not as long as its northern subSpesies",
 		"Name_Wolf": "Arabian Wolf",
+		"Rescued" : false,
 		"Species": "Canis lupus arabs",
 		"Weight": "20.41 kg"
 	},
@@ -44,6 +47,7 @@
 		"Location": "Canada’s high arctic tundras, inhabiting the northern treeline, the glacier regions of Alaska, Greenland, and Iceland",
 		"Morphology": "Their coat is long and silky with soft, thick under fur. The feet \tare large and digitate with non-retractable claws. The forefeet have five toes and the hind feet have four. Ears are slightly rounded and the face is less pointed than other Spesies of wolf. The year-round white coats and slightly shorter ears and noses distinguish them from the other subSpesies of Canis lupus.",
 		"Name_Wolf": "Arctic-Wolf",
+		"Rescued" : false,
 		"Species": "Canis lupus arctos",
 		"Weight": "34 kg - 46 kg"
 	},
@@ -56,6 +60,7 @@
 		"Location": "Baffin Island and several nearby islands",
 		"Morphology": "light or white-colored fur turfs",
 		"Name_Wolf": "Baffin Island Wolf",
+		"Rescued" : false,
 		"Species": "Canis lupus manningi",
 		"Weight": "13.6 kg - 22.70 kg"
 	},
@@ -68,6 +73,7 @@
 		"Location": "Vancouver Island, British Columbia, Yukon, and southeast Alaska.",
 		"Morphology": "Lighter-colored coats, unlike the British Columbian wolf’s long coats, usually black and often mixed with brown or grey.",
 		"Name_Wolf": "British Columbian Wolf",
+		"Rescued" : false,
 		"Species": "Canis lupus columbianus",
 		"Weight": "36 kg - 68 kg"
 	},
@@ -80,6 +86,7 @@
 		"Location": "Canadian provinces Ontario and Quebec, North America’s eastern coasts",
 		"Morphology": "Grayish-brown coat complemented by cinnamon, rufous or creamy flank and chest, and a mix of black and gray fur on the shoulders, nape, and tail region",
 		"Name_Wolf": "Canis lupus lycaon",
+		"Rescued" : false,
 		"Species": "Canis lupus lycaon",
 		"Weight": "24 kg - 30 kg"
 	},
@@ -92,6 +99,7 @@
 		"Location": "Asia and Europe.",
 		"Morphology": "It has a coarser and thinner coat than that of other gray wolves, and it can range from white to black, including cream, red, gray, and brown",
 		"Name_Wolf": "Eurasian Wolf",
+		"Rescued" : false,
 		"Species": "Canis lupus lupus",
 		"Weight": "69 kg - 80 kg"
 	},
@@ -104,6 +112,7 @@
 		"Location": "Greenland, Alaska, Canada, Northern United States",
 		"Morphology": "Long bushy tails that are often black-tipped. Their coat color is typically a mix of gray and brown with buffy facial markings and undersides, but the color can vary from solid white to brown or black",
 		"Name_Wolf": "Gray Wolf",
+		"Rescued" : false,
 		"Species": "Canis lupus",
 		"Weight": "23 - 80 kg"
 	},
@@ -116,6 +125,7 @@
 		"Location": "American states of Michigan, Minnesota, and Wisconsin",
 		"Morphology": "Mostly lightly colored, white and black variants still appear within individuals",
 		"Name_Wolf": "Great Plains Wolf",
+		"Rescued" : false,
 		"Species": "Canis lupus nubilus",
 		"Weight": "45 kg"
 	},
@@ -128,6 +138,7 @@
 		"Location": "Polar regions, including Greenland",
 		"Morphology": "Similar in look to their arctic counterparts, mostly white-pelted.",
 		"Name_Wolf": "Greenland Wolf",
+		"Rescued" : false,
 		"Species": "Canis lupus orion",
 		"Weight": "26 kg"
 	},
@@ -140,6 +151,7 @@
 		"Location": "Himalayas mountains, the Central Asian mountains, the Tibetan Plateau, and Ladakh, India.",
 		"Morphology": "This Spesies has a thick, wooly coat for colder climates and tolerance to the low oxygen level at high elevations. One can identify the wolf by its yellowish-white fur on the limbs, face, and belly with dull earthy-brown hairs rooted on the back and tail.",
 		"Name_Wolf": "Himalayan Wolf",
+		"Rescued" : false,
 		"Species": "Canis lupus chanco",
 		"Weight": "35 kg"
 	},
@@ -152,6 +164,7 @@
 		"Location": "Canada, west of the Hudson Bay from Northern Manitoba through the Northwest Territories and above",
 		"Morphology": "White colored, medium-sized subSpesies similar to C. l. arctos, but with a flatter skull",
 		"Name_Wolf": "Hudson Bay Wolf",
+		"Rescued" : false,
 		"Species": "Canis lupus hudsonicus",
 		"Weight": "38 kg - 70 kg"
 	},
@@ -164,6 +177,7 @@
 		"Location": "Northwestern Iberian Peninsula in northern Portugal and northwestern Spain, feeling at home in this range’s forests and mountain ecosystems",
 		"Morphology": "Slighter frame, with white and dark marks on specific parts",
 		"Name_Wolf": "Iberian Wolf",
+		"Rescued" : false,
 		"Species": "Canis lupus signatus",
 		"Weight": "25 kg - 55 kg"
 	},
@@ -176,6 +190,7 @@
 		"Location": "Indian wolves are found in India, Pakistan, Afghanistan, Nepal, Bhutan, Israel, Turkey, Iran, and Syria. They live in open grasslands, thorn forests, and scrublands",
 		"Morphology": "Uniquely coated in reddish-gray and white, with the upper body covered in the earlier color and the belly and legs in white markings.",
 		"Name_Wolf": "Indian Wolf",
+		"Rescued" : false,
 		"Species": "Canis lupus pallipes",
 		"Weight": "17 kg - 25 kg"
 	},
@@ -188,6 +203,7 @@
 		"Location": "Endemic to the arctic regions of Alaska, and Canada, including the Yukon, British Columbia, and the Northwest Territories.",
 		"Morphology": "Awny gray or tan-coated, large-sized wolves inhabit boreal forests, alpine, subalpine, and Arctic tundras, primarily differing from the Eurasian and northwestern wolf with a larger head, thicker muzzle, and robustness.",
 		"Name_Wolf": "Interior Alaskan Wolf (Yukon Wolf)",
+		"Rescued" : false,
 		"Species": "Canis lupus pambasileus",
 		"Weight": "32 kg - 60 kg"
 	},
@@ -200,6 +216,7 @@
 		"Location": "Apennine Mountains and the Western Alps",
 		"Morphology": "Grey-fulvous pelt that reddens in summer. Lighter-colored belly and cheeks, dark bands on the back and tail tip, and occasionally along the forelimbs complement the colorful coat",
 		"Name_Wolf": "Italian Wolf",
+		"Rescued" : false,
 		"Species": "Canis lupus italicus",
 		"Weight": "25 kg - 45 kg"
 	},
@@ -212,6 +229,7 @@
 		"Location": "Labrador and northern Quebec",
 		"Morphology": "Dark grizzly-gray or nearly white coat",
 		"Name_Wolf": "Labrador Wolf",
+		"Rescued" : false,
 		"Species": "Canis lupus labradorius",
 		"Weight": "27 kg - 32 kg"
 	},
@@ -224,6 +242,7 @@
 		"Location": "Southern region of the Northwest Territories",
 		"Morphology": "Thick, long limbs. Its deep chest allows it to breathe more efficiently at higher altitudes. The wolf maximizes heat retention through its bushy tail during the winter and sheds its undercoat during the summer",
 		"Name_Wolf": "Mackenzie River Wolf",
+		"Rescued" : false,
 		"Species": "Canis lupus mackenzii",
 		"Weight": "46 kg - 62 kg"
 	},
@@ -237,6 +256,7 @@
 		"Morphology": "Yellowish-gray pelt overcast with black on the back and tail and a smaller, narrower skull that differentiates it from the Great Plains wolf, an infamous subSpesies among native Americans",
 		"Name_Wolf": "Mexican Wolf",
 		"Species": "Canis lupus baileyi",
+		"Rescued" : false,
 		"Weight": "22 kg - 36 kg"
 	},
 	"Mongolian Wolf": {
@@ -248,6 +268,7 @@
 		"Location": "Russia, China, and Korea",
 		"Morphology": "Brownish-yellow, dull orange, or tawny coat with gray and black hairs scattered all over Pure white fur on the throat, chest, belly, and \tinside legs also complements the wolf’s beautiful coat.",
 		"Name_Wolf": "Mongolian Wolf",
+		"Rescued" : false,
 		"Species": "Canis lupus chanco",
 		"Weight": "22 kg - 30 kg"
 	},
@@ -261,6 +282,7 @@
 		"Morphology": "Broad snout, round ears, and a coat varying in color from black to White ",
 		"Name_Wolf": "Northern Rocky Mountain Wolf",
 		"Species": "Canis lupus irremotus",
+		"Rescued" : false,
 		"Weight": "32 kg - 68 kg"
 	},
 	"Northwestern Wolf": {
@@ -272,6 +294,7 @@
 		"Location": "Northwest United States, Alaska, and the upper Mackenzie River Valley, extending to the western Canadian provinces.",
 		"Morphology": "Black, white, gray, or yellowish, even within the same litter",
 		"Name_Wolf": "Northwestern Wolf",
+		"Rescued" : false,
 		"Species": "Canis lupus occidentalis",
 		"Weight": "45 kg - 72 kg"
 	},
@@ -284,6 +307,7 @@
 		"Location": "Northeastern North Carolina",
 		"Morphology": "Tawny or grayish coat complemented by light markings around the face",
 		"Name_Wolf": "Red Wolf",
+		"Rescued" : false,
 		"Species": "Canis rufus",
 		"Weight": "23 kg - 39 kg"
 	},
@@ -296,6 +320,7 @@
 		"Location": "Unforested grasslands in south-eastern Europe, Middle Asia, and Kazakhstan.",
 		"Morphology": "Distinctive mix of light gray, rusty gray, brown, and black hairs scattered across their flanks and backs.",
 		"Name_Wolf": "Steppe Wolf (Caspian Sea Wolf)",
+		"Rescued" : false,
 		"Species": "Canis lupus campestris",
 		"Weight": "35-40 kg"
 	},
@@ -308,6 +333,7 @@
 		"Location": "River valleys, thickets, and forest clearings.",
 		"Morphology": "Light gray, fluffy, long, dense, and soft coat differentiates it from its counterparts.",
 		"Name_Wolf": "Tundra Wolf",
+		"Rescued" : false,
 		"Species": "Canis lupus albus",
 		"Weight": "36.6 kg - 49 kg"
 	},
@@ -320,6 +346,7 @@
 		"Location": "Northern Vancouver Island, north of Campbell River and along the west coast of the Island down to Ucluelet",
 		"Morphology": "Mix of brown, grey, and black.",
 		"Name_Wolf": "Vancouver Coastal Island Wolf",
+		"Rescued" : false,
 		"Species": "Canis lupus crassodon",
 		"Weight": "27 kg"
 	}

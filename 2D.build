@@ -1,0 +1,33 @@
+{
+	"disabled_build_options": {
+		"disable_3d_physics": true,
+		"openxr": false
+	},
+	"disabled_classes": [
+		"Cubemap",
+		"CubemapArray",
+		"Curve3D",
+		"Node3D",
+		"Occluder3D",
+		"OpenXRAction",
+		"OpenXRActionMap",
+		"OpenXRActionSet",
+		"OpenXRIPBinding",
+		"OpenXRInteractionProfile",
+		"PlaceholderCubemap",
+		"PlaceholderCubemapArray",
+		"Shape3D",
+		"Texture3D",
+		"TextureCubemapArrayRD",
+		"TextureCubemapRD",
+		"VisualShaderNodeSample3D",
+		"VisualShaderNodeScreenUVToSDF",
+		"VisualShaderNodeTexture3DParameter",
+		"VisualShaderNodeVec3Constant",
+		"VisualShaderNodeVec3Parameter",
+		"VisualShaderNodeVec4Constant",
+		"VisualShaderNodeVec4Parameter",
+		"World3D"
+	],
+	"type": "build_profile"
+}

@@ -42,6 +42,7 @@ func _on_back_page_1_button_pressed():
 	buttonsound.play()
 	get_parent().remove_child(self)
 	
+	
 
 """Wolves Data"""
 #Arctic Wolf

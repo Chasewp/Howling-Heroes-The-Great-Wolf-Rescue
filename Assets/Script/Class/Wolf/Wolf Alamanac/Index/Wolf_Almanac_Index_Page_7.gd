@@ -53,7 +53,7 @@ func _mackenzie_river_wolf_name():
     machenzieriverwolflabel.set_text(WolfData._get_Mackenzie_River_Wolf_Name())
 #######################################################################
 #Mexican Wolf
-func _mexician_wolf_image():
+func _mexican_wolf_image():
     var image = Image.load_from_file(WolfData._get_Mexican_Wolf_Image_Path())
     var texture = ImageTexture.create_from_image(image)
     mexicanwolfimage.set_texture_normal(texture)
@@ -74,85 +74,168 @@ func _mongolian_wolf_name():
 """Into Wolf Almanac Book"""
 #19
 #Mackenzie River Wolf
-func _on_mackenzie_river_wolf_pressed():
+func _on_mackenzie_river_wolf_image_pressed():
 	#Image
-	almanac.setter_Wolf_Image(WolfData._get_Mackenzie_River_Wolf_Image_Path())
+    almanac.setter_Wolf_Image(WolfData._get_Mackenzie_River_Wolf_Image_Path())
 	#Name
-	almanac.setter_Wolf_Name(WolfData._get_Mackenzie_River_Wolf_Name())
+    almanac.setter_Wolf_Name(WolfData._get_Mackenzie_River_Wolf_Name())
 	#Species
-	almanac.setter_Wolf_Species(WolfData._get_Mackenzie_River_Wolf_Species())
+    almanac.setter_Wolf_Species(WolfData._get_Mackenzie_River_Wolf_Species())
 	#Height
-	almanac.setter_Wolf_Height(WolfData._get_Mackenzie_River_Wolf_Height())
+    almanac.setter_Wolf_Height(WolfData._get_Mackenzie_River_Wolf_Height())
 	#Weight
-	almanac.setter_Wolf_Weight(WolfData._get_Mackenzie_River_Wolf_Weight())
+    almanac.setter_Wolf_Weight(WolfData._get_Mackenzie_River_Wolf_Weight())
 	#Lenght
-	almanac.setter_Wolf_Lenght(WolfData._get_Mackenzie_River_Wolf_Lenght())
+    almanac.setter_Wolf_Lenght(WolfData._get_Mackenzie_River_Wolf_Lenght())
 	#Conservation Status
-	almanac.setter_Wolf_Conservation_Status(WolfData._get_Mackenzie_River_Wolf_Conservation_Status())
+    almanac.setter_Wolf_Conservation_Status(WolfData._get_Mackenzie_River_Wolf_Conservation_Status())
 	#Region
-	almanac.setter_Wolf_Region(WolfData._get_Mackenzie_River_Wolf_Location())
+    almanac.setter_Wolf_Region(WolfData._get_Mackenzie_River_Wolf_Location())
 	#Morphology
-	almanac.setter_Wolf_Morphology(WolfData._get_Mackenzie_River_Wolf_Morphology())
+    almanac.setter_Wolf_Morphology(WolfData._get_Mackenzie_River_Wolf_Morphology())
 	#Diets
-	almanac.setter_Wolf_Diets(WolfData._get_Mackenzie_River_Wolf_Diets())
-	buttonsound.play()
-	LoadingScreen.load_scence(book_Almanac)
-	get_tree().root.add_child(book_Almanac)
-############################################################################
+    almanac.setter_Wolf_Diets(WolfData._get_Mackenzie_River_Wolf_Diets())
+    buttonsound.play()
+    get_tree().change_scene_to_packed(book_almanac19)
+    get_tree().root.add_child(book_almanac19)
+
+func _on_mackenzie_river_wolf_label_pressed():
+	#Image
+    almanac.setter_Wolf_Image(WolfData._get_Mackenzie_River_Wolf_Image_Path())
+	#Name
+    almanac.setter_Wolf_Name(WolfData._get_Mackenzie_River_Wolf_Name())
+	#Species
+    almanac.setter_Wolf_Species(WolfData._get_Mackenzie_River_Wolf_Species())
+	#Height
+    almanac.setter_Wolf_Height(WolfData._get_Mackenzie_River_Wolf_Height())
+	#Weight
+    almanac.setter_Wolf_Weight(WolfData._get_Mackenzie_River_Wolf_Weight())
+	#Lenght
+    almanac.setter_Wolf_Lenght(WolfData._get_Mackenzie_River_Wolf_Lenght())
+	#Conservation Status
+    almanac.setter_Wolf_Conservation_Status(WolfData._get_Mackenzie_River_Wolf_Conservation_Status())
+	#Region
+    almanac.setter_Wolf_Region(WolfData._get_Mackenzie_River_Wolf_Location())
+	#Morphology
+    almanac.setter_Wolf_Morphology(WolfData._get_Mackenzie_River_Wolf_Morphology())
+	#Diets
+    almanac.setter_Wolf_Diets(WolfData._get_Mackenzie_River_Wolf_Diets())
+    buttonsound.play()
+    get_tree().change_scene_to_packed(machenzie_river_wolf_almanac)
+    get_tree().root.add_child(machenzie_river_wolf_almanac)
+##########################################################################
 #20
 #Mexican Wolf
-func _on_mexican_wolf_pressed():
+func _on_mexican_wolf_image_pressed():
 	#Image
-	almanac.setter_Wolf_Image(WolfData._get_Mexican_Wolf_Image_Path())
+    almanac.setter_Wolf_Image(WolfData._get_Mexican_Wolf_Image_Path())
 	#Name
-	almanac.setter_Wolf_Name(WolfData._get_Mexican_Wolf_Name())
+    almanac.setter_Wolf_Name(WolfData._get_Mexican_Wolf_Name())
 	#Species
-	almanac.setter_Wolf_Species(WolfData._get_Mexican_Wolf_Species())
+    almanac.setter_Wolf_Species(WolfData._get_Mexican_Wolf_Species())
 	#Height
-	almanac.setter_Wolf_Height(WolfData._get_Mexican_Wolf_Height())
+    almanac.setter_Wolf_Height(WolfData._get_Mexican_Wolf_Height())
 	#Weight
-	almanac.setter_Wolf_Weight(WolfData._get_Mexican_Wolf_Weight())
+    almanac.setter_Wolf_Weight(WolfData._get_Mexican_Wolf_Weight())
 	#Lenght
-	almanac.setter_Wolf_Lenght(WolfData._get_Mexican_Wolf_Lenght())
+    almanac.setter_Wolf_Lenght(WolfData._get_Mexican_Wolf_Lenght())
 	#Conservation Status
-	almanac.setter_Wolf_Conservation_Status(WolfData._get_Mexican_Wolf_Conservation_Status())
+    almanac.setter_Wolf_Conservation_Status(WolfData._get_Mexican_Wolf_Conservation_Status())
 	#Region
-	almanac.setter_Wolf_Region(WolfData._get_Mexican_Wolf_Location())
+    almanac.setter_Wolf_Region(WolfData._get_Mexican_Wolf_Location())
 	#Morphology
-	almanac.setter_Wolf_Morphology(WolfData._get_Mexican_Wolf_Morphology())
+    almanac.setter_Wolf_Morphology(WolfData._get_Mexican_Wolf_Morphology())
 	#Diets
-	almanac.setter_Wolf_Diets(WolfData._get_Mexican_Wolf_Diets())
-	buttonsound.play()
-	LoadingScreen.load_scence(book_Almanac)
-	get_tree().root.add_child(book_Almanac)
-############################################################################
+    almanac.setter_Wolf_Diets(WolfData._get_Mexican_Wolf_Diets())
+    buttonsound.play()
+    get_tree().change_scene_to_packed(book_Almanac20)
+    get_tree().root.add_child(book_Almanac20)
+
+func _on_mexican_wolf_label_pressed():
+	#Image
+    almanac.setter_Wolf_Image(WolfData._get_Mexican_Wolf_Image_Path())
+	#Name
+    almanac.setter_Wolf_Name(WolfData._get_Mexican_Wolf_Name())
+	#Species
+    almanac.setter_Wolf_Species(WolfData._get_Mexican_Wolf_Species())
+	#Height
+    almanac.setter_Wolf_Height(WolfData._get_Mexican_Wolf_Height())
+	#Weight
+    almanac.setter_Wolf_Weight(WolfData._get_Mexican_Wolf_Weight())
+	#Lenght
+    almanac.setter_Wolf_Lenght(WolfData._get_Mexican_Wolf_Lenght())
+	#Conservation Status
+    almanac.setter_Wolf_Conservation_Status(WolfData._get_Mexican_Wolf_Conservation_Status())
+	#Region
+    almanac.setter_Wolf_Region(WolfData._get_Mexican_Wolf_Location())
+	#Morphology
+    almanac.setter_Wolf_Morphology(WolfData._get_Mexican_Wolf_Morphology())
+	#Diets
+    almanac.setter_Wolf_Diets(WolfData._get_Mexican_Wolf_Diets())
+    buttonsound.play()
+    get_tree().change_scene_to_packed(mexican_wolf_almanac)
+    get_tree().root.add_child(mexican_wolf_almanac)
+##########################################################################
 #21	
 #Mongolian Wolf
-func _on_mongolian_wolf_pressed():
+func _on_mongolian_wolf_image_pressed():
 	#Image
-	almanac.setter_Wolf_Image(WolfData._get_Mongolian_Wolf_Image_Path())
+    almanac.setter_Wolf_Image(WolfData._get_Mongolian_Wolf_Image_Path())
 	#Name
-	almanac.setter_Wolf_Name(WolfData._get_Mongolian_Wolf_Name())
+    almanac.setter_Wolf_Name(WolfData._get_Mongolian_Wolf_Name())
 	#Species
-	almanac.setter_Wolf_Species(WolfData._get_Mongolian_Wolf_Species())
+    almanac.setter_Wolf_Species(WolfData._get_Mongolian_Wolf_Species())
 	#Height
-	almanac.setter_Wolf_Height(WolfData._get_Mongolian_Wolf_Weight())
+    almanac.setter_Wolf_Height(WolfData._get_Mongolian_Wolf_Weight())
 	#Weight
-	almanac.setter_Wolf_Weight(WolfData._get_Mongolian_Wolf_Weight())
+    almanac.setter_Wolf_Weight(WolfData._get_Mongolian_Wolf_Weight())
 	#Lenght
-	almanac.setter_Wolf_Lenght(WolfData._get_Mongolian_Wolf_Lenght())
+    almanac.setter_Wolf_Lenght(WolfData._get_Mongolian_Wolf_Lenght())
 	#Conservation Status
-	almanac.setter_Wolf_Conservation_Status(WolfData._get_Mongolian_Wolf_Conservation_Status())
+    almanac.setter_Wolf_Conservation_Status(WolfData._get_Mongolian_Wolf_Conservation_Status())
 	#Region
-	almanac.setter_Wolf_Region(WolfData._get_Mongolian_Wolf_Location())
+    almanac.setter_Wolf_Region(WolfData._get_Mongolian_Wolf_Location())
 	#Morphology
-	almanac.setter_Wolf_Morphology(WolfData._get_Mongolian_Wolf_Morphology())
+    almanac.setter_Wolf_Morphology(WolfData._get_Mongolian_Wolf_Morphology())
 	#Diets
-	almanac.setter_Wolf_Diets(WolfData._get_Mongolian_Wolf_Diets())
-	buttonsound.play()
-	LoadingScreen.load_scence(book_Almanac)
-	get_tree().root.add_child(book_Almanac)
-############################################################################
+    almanac.setter_Wolf_Diets(WolfData._get_Mongolian_Wolf_Diets())
+    buttonsound.play()
+    get_tree().change_scene_to_packed(book_almanac21)
+    get_tree().root.add_child(book_almanac21)
 
+func _on_mongolian_wolf_label_pressed():
+	#Image
+    almanac.setter_Wolf_Image(WolfData._get_Mongolian_Wolf_Image_Path())
+	#Name
+    almanac.setter_Wolf_Name(WolfData._get_Mongolian_Wolf_Name())
+	#Species
+    almanac.setter_Wolf_Species(WolfData._get_Mongolian_Wolf_Species())
+	#Height
+    almanac.setter_Wolf_Height(WolfData._get_Mongolian_Wolf_Weight())
+	#Weight
+    almanac.setter_Wolf_Weight(WolfData._get_Mongolian_Wolf_Weight())
+	#Lenght
+    almanac.setter_Wolf_Lenght(WolfData._get_Mongolian_Wolf_Lenght())
+	#Conservation Status
+    almanac.setter_Wolf_Conservation_Status(WolfData._get_Mongolian_Wolf_Conservation_Status())
+	#Region
+    almanac.setter_Wolf_Region(WolfData._get_Mongolian_Wolf_Location())
+	#Morphology
+    almanac.setter_Wolf_Morphology(WolfData._get_Mongolian_Wolf_Morphology())
+	#Diets
+    almanac.setter_Wolf_Diets(WolfData._get_Mongolian_Wolf_Diets())
+    buttonsound.play()
+    get_tree().change_scene_to_packed(mongolian_wolf_almanac)
+    get_tree().root.add_child(mongolian_wolf_almanac)
+##########################################################################
 
-
+func _ready():
+    #Mackenzie River Wolf
+    _mongolian_wolf_image()
+    _mongolian_wolf_name()
+    #Mexican Wolf
+    _mexican_wolf_image()
+    _mexican_wolf_name()
+    #Mongolian Wolf
+    _mongolian_wolf_image()
+    _mongolian_wolf_name()

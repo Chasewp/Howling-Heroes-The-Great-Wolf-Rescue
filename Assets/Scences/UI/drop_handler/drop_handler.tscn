@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://by3uj1agbl33d"]
+
+[node name="drop_handler" type="Node2D"]

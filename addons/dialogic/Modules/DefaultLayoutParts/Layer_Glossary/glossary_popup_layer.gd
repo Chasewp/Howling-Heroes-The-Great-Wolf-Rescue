@@ -23,7 +23,7 @@ enum TextColorModes {GLOBAL, ENTRY, CUSTOM}
 
 @export_group("Font")
 @export var font_use_global: bool = true
-@export_file('*.ttf') var font_custom: String = ""
+@export_file('*.ttf', '*.tres') var font_custom: String = ""
 
 @export_subgroup('Sizes')
 @export var font_title_size: int = 18
@@ -39,6 +39,7 @@ enum ModulateModes {BASE_COLOR_ONLY, ENTRY_COLOR_ON_BOX, GLOBAL_BG_COLOR}
 @export_subgroup("Size")
 @export var box_width: int = 200
 
+const MISSING_INDEX := -1
 func get_pointer() -> Control:
 	return $Pointer
 
@@ -73,41 +74,38 @@ func _ready() -> void:
 	_error = text_system.connect(&'animation_textbox_hide', get_pointer().hide)
 	_error = text_system.connect(&'meta_hover_started', _on_dialogic_display_dialog_text_meta_hover_started)
 	_error = text_system.connect(&'meta_hover_ended', _on_dialogic_display_dialog_text_meta_hover_ended)
-	_error = text_system.connect(&'meta_clicked', _on_dialogic_display_dialog_text_meta_clicked)
 
 
 ## Method that shows the bubble and fills in the info
-func _on_dialogic_display_dialog_text_meta_hover_started(meta:String) -> void:
-	var info: Dictionary = DialogicUtil.autoload().Glossary.get_entry(meta)
+func _on_dialogic_display_dialog_text_meta_hover_started(meta: String) -> void:
+	var entry_info := DialogicUtil.autoload().Glossary.get_entry(meta)
 
-	if not info:
+	if entry_info.is_empty():
 		return
 
 	get_pointer().show()
-	get_title().text = info.get(&'title', '')
-	get_text().text = info.get(&'text', '')
+	get_title().text = entry_info.title
+	get_text().text = entry_info.text
 	get_text().text = ['', '[center]', '[right]'][text_alignment] + get_text().text
-	get_extra().text = info.get(&'extra', '')
+	get_extra().text = entry_info.extra
 	get_extra().text = ['', '[center]', '[right]'][extra_alignment] + get_extra().text
 	get_pointer().global_position = get_pointer().get_global_mouse_position()
 
 	if title_color_mode == TextColorModes.ENTRY:
-		get_title().add_theme_color_override(&"font_color", info.get(&'color', title_custom_color) as Color)
+		get_title().add_theme_color_override(&"font_color", entry_info.color)
 	if text_color_mode == TextColorModes.ENTRY:
-		get_text().add_theme_color_override(&"default_color", info.get(&'color', text_custom_color) as Color)
+		get_text().add_theme_color_override(&"default_color", entry_info.color)
 	if extra_color_mode == TextColorModes.ENTRY:
-		get_extra().add_theme_color_override(&"default_color", info.get(&'color', extra_custom_color) as Color)
+		get_extra().add_theme_color_override(&"default_color", entry_info.color)
 
 	match box_modulate_mode:
 		ModulateModes.ENTRY_COLOR_ON_BOX:
-			get_panel().self_modulate = info.get(&'color', Color.WHITE)
-			get_panel_point().self_modulate = info.get(&'color', Color.WHITE)
-
-	DialogicUtil.autoload().Inputs.action_was_consumed = true
+			get_panel().self_modulate = entry_info.color
+			get_panel_point().self_modulate = entry_info.color
 
 
 ## Method that keeps the bubble at mouse position when visible
-func _process(_delta : float) -> void:
+func _process(_delta: float) -> void:
 	if Engine.is_editor_hint():
 		return
 
@@ -119,18 +117,15 @@ func _process(_delta : float) -> void:
 ## Method that hides the bubble
 func _on_dialogic_display_dialog_text_meta_hover_ended(_meta:String) -> void:
 	get_pointer().hide()
-	DialogicUtil.autoload().Inputs.action_was_consumed = false
 
-
-func _on_dialogic_display_dialog_text_meta_clicked(_meta:String) -> void:
-	DialogicUtil.autoload().Inputs.action_was_consumed = true
 
 
 func _apply_export_overrides() -> void:
 	# Apply fonts
 	var font: FontFile
-	if font_use_global and ResourceLoader.exists(get_global_setting(&'font', '') as String):
-		font = load(get_global_setting(&'font', '') as String)
+	var global_font_setting: String = get_global_setting(&"font", '')
+	if font_use_global and ResourceLoader.exists(global_font_setting):
+		font = load(global_font_setting)
 	elif ResourceLoader.exists(font_custom):
 		font = load(font_custom)
 
@@ -155,16 +150,17 @@ func _apply_export_overrides() -> void:
 
 
 	# Apply text colors
+	# this applies Global or Custom colors, entry colors are applied on hover
 	var controls: Array[Control] = [get_title(), get_text(), get_extra()]
-	var global_settings: Array[StringName] = [&'font_color', &'default_color', &'default_color']
+	var settings: Array[StringName] = [&'font_color', &'default_color', &'default_color']
 	var color_modes: Array[TextColorModes] = [title_color_mode, text_color_mode, extra_color_mode]
 	var custom_colors: PackedColorArray = [title_custom_color, text_custom_color, extra_custom_color]
 	for i : int in len(controls):
 		match color_modes[i]:
 			TextColorModes.GLOBAL:
-				controls[i].add_theme_color_override(global_settings[i], get_global_setting(&'font_color', custom_colors[i]) as Color)
+				controls[i].add_theme_color_override(settings[i], get_global_setting(&'font_color', custom_colors[i]) as Color)
 			TextColorModes.CUSTOM:
-				controls[i].add_theme_color_override(global_settings[i], custom_colors[i])
+				controls[i].add_theme_color_override(settings[i], custom_colors[i])
 
 	# Apply box size
 	var panel: PanelContainer = get_panel()
@@ -179,4 +175,3 @@ func _apply_export_overrides() -> void:
 		ModulateModes.GLOBAL_BG_COLOR:
 			panel.self_modulate = get_global_setting(&'bg_color', box_base_modulate)
 			get_panel_point().self_modulate = get_global_setting(&'bg_color', box_base_modulate)
-

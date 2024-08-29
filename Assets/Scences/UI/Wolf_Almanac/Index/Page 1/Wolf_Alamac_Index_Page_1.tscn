@@ -1,10 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://cwf2quaufkfsq"]
+[gd_scene load_steps=8 format=3 uid="uid://cwf2quaufkfsq"]
 
 [ext_resource type="Script" path="res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Index_Page_1.gd" id="1_0xfmm"]
-[ext_resource type="Texture2D" uid="uid://bo2y6oxufgah0" path="res://Assets/Image/images/Background/Wolf Almanac Index/Wood Texture.png" id="1_s3rvr"]
-[ext_resource type="FontFile" uid="uid://6thsxv1vtpj8" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="2_tvdd2"]
+[ext_resource type="Texture2D" uid="uid://d04k2qksoa13u" path="res://Assets/Image/images/Background/Wolf Almanac Index/Wood Texture.png" id="1_s3rvr"]
+[ext_resource type="FontFile" uid="uid://b0dbrpth4h70i" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="2_tvdd2"]
 [ext_resource type="Theme" uid="uid://dk2f873t2ffc2" path="res://Assets/Theme/Wolf_Almanac_Idex/Button.tres" id="3_knyl5"]
-[ext_resource type="AudioStream" uid="uid://ccms4c4lgm35" path="res://Assets/Music/All Button/Button.mp3" id="4_ei88u"]
+[ext_resource type="Texture2D" uid="uid://da13nuc1gskxn" path="res://Assets/Image/Buttons/Button.png" id="4_c4uqx"]
+[ext_resource type="AudioStream" uid="uid://dfx8n3eqhipk0" path="res://Assets/Music/All Button/Button.mp3" id="4_ei88u"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dtw5k"]
+atlas = ExtResource("4_c4uqx")
+region = Rect2(1389, 668, 182, 189)
 
 [node name="WolfAlamacIndexPage1" type="Node2D"]
 script = ExtResource("1_0xfmm")
@@ -54,12 +59,15 @@ layout_mode = 2
 [node name="Wolf 1" type="TextureButton" parent="Background/Almanac Index/WolfVBoxContainer1"]
 custom_minimum_size = Vector2(385, 555)
 layout_mode = 2
+disabled = true
+texture_disabled = SubResource("AtlasTexture_dtw5k")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Label_Wolf_1" type="Button" parent="Background/Almanac Index/WolfVBoxContainer1"]
 layout_mode = 2
 theme = ExtResource("3_knyl5")
+disabled = true
 text = "Wolf Label"
 flat = true
 
@@ -69,12 +77,14 @@ layout_mode = 2
 [node name="Wolf 2" type="TextureButton" parent="Background/Almanac Index/WolfVBoxContainer2"]
 custom_minimum_size = Vector2(385, 555)
 layout_mode = 2
+disabled = true
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Label_Wolf_2" type="Button" parent="Background/Almanac Index/WolfVBoxContainer2"]
 layout_mode = 2
 theme = ExtResource("3_knyl5")
+disabled = true
 text = "Wolf Label"
 flat = true
 
@@ -85,6 +95,7 @@ layout_mode = 2
 clip_contents = true
 custom_minimum_size = Vector2(385, 555)
 layout_mode = 2
+disabled = true
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -92,6 +103,7 @@ stretch_mode = 0
 custom_minimum_size = Vector2(355, 24)
 layout_mode = 2
 theme = ExtResource("3_knyl5")
+disabled = true
 text = "Wolf Label"
 flat = true
 

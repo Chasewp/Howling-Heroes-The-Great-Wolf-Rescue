@@ -46,14 +46,13 @@ layout_mode = 2
 expand_mode = 3
 stretch_mode = 4
 
-[node name="CurrentResource" type="Label" parent="VBox/Margin/VSplitContainer/VBox"]
+[node name="CurrentResource" type="LineEdit" parent="VBox/Margin/VSplitContainer/VBox"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 text = "No resource"
-horizontal_alignment = 1
-vertical_alignment = 1
-text_overrun_behavior = 1
+alignment = 1
+editable = false
 
 [node name="Search" type="LineEdit" parent="VBox/Margin/VSplitContainer/VBox"]
 unique_name_in_owner = true
@@ -77,6 +76,7 @@ size_flags_vertical = 3
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
+tooltip_text = "Label events in your timeline will appear here, allowing you to jump to them."
 theme_override_styles/selected = SubResource("StyleBoxEmpty_gxwm6")
 theme_override_styles/selected_focus = SubResource("StyleBoxEmpty_n8rql")
 allow_reselect = true
@@ -89,6 +89,11 @@ text = "Some Version"
 flat = true
 clip_text = true
 
+[node name="RightClickMenu" type="PopupMenu" parent="."]
+unique_name_in_owner = true
+size = Vector2i(164, 100)
+
 [connection signal="gui_input" from="VBox/Margin/VSplitContainer/VBox/Logo" to="." method="_on_logo_gui_input"]
 [connection signal="text_changed" from="VBox/Margin/VSplitContainer/VBox/Search" to="." method="_on_search_text_changed"]
 [connection signal="pressed" from="VBox/CurrentVersion" to="." method="_on_current_version_pressed"]
+[connection signal="id_pressed" from="RightClickMenu" to="." method="_on_right_click_menu_id_pressed"]

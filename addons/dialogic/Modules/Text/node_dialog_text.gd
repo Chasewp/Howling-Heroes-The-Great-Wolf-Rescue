@@ -1,3 +1,4 @@
+@icon("node_dialog_text_icon.svg")
 class_name DialogicNode_DialogText
 extends RichTextLabel
 
@@ -10,7 +11,7 @@ enum Alignment {LEFT, CENTER, RIGHT}
 
 @export var enabled := true
 @export var alignment := Alignment.LEFT
-@export var textbox_root : Node = self
+@export var textbox_root: Node = self
 
 @export var hide_when_empty := false
 @export var start_hidden := true
@@ -18,11 +19,10 @@ enum Alignment {LEFT, CENTER, RIGHT}
 var revealing := false
 var base_visible_characters := 0
 
-# Letter speed used per revealed character.
-var lspeed: float = 0.01
 # The used speed per revealed character.
 # May be overwritten when syncing reveal speed to voice.
-var active_speed: float = lspeed
+var active_speed: float = 0.01
+
 var speed_counter: float = 0
 
 func _set(property: StringName, what: Variant) -> bool:
@@ -36,13 +36,14 @@ func _set(property: StringName, what: Variant) -> bool:
 		return true
 	return false
 
-	return false
-
 
 func _ready() -> void:
 	# add to necessary
 	add_to_group('dialogic_dialog_text')
-
+	meta_hover_ended.connect(_on_meta_hover_ended)
+	meta_hover_started.connect(_on_meta_hover_started)
+	meta_clicked.connect(_on_meta_clicked)
+	gui_input.connect(on_gui_input)
 	bbcode_enabled = true
 	if textbox_root == null:
 		textbox_root = self
@@ -71,7 +72,7 @@ func reveal_text(_text: String, keep_previous:=false) -> void:
 
 	else:
 		base_visible_characters = len(text)
-		visible_characters = len(text)
+		visible_characters = len(get_parsed_text())
 		text = text + _text
 
 		# If Auto-Skip is enabled and we append the text (keep_previous),
@@ -80,6 +81,12 @@ func reveal_text(_text: String, keep_previous:=false) -> void:
 			visible_characters = 1
 			return
 
+	revealing = true
+	speed_counter = 0
+	started_revealing_text.emit()
+
+
+func set_speed(delay_per_character:float) -> void:
 	if DialogicUtil.autoload().Text.is_text_voice_synced() and DialogicUtil.autoload().Voice.is_running():
 		var total_characters := get_total_character_count() as float
 		var remaining_time: float = DialogicUtil.autoload().Voice.get_remaining_time()
@@ -87,12 +94,7 @@ func reveal_text(_text: String, keep_previous:=false) -> void:
 		active_speed = synced_speed
 
 	else:
-		active_speed = lspeed
-
-
-	revealing = true
-	speed_counter = 0
-	started_revealing_text.emit()
+		active_speed = delay_per_character
 
 
 ## Reveals one additional character.
@@ -115,8 +117,7 @@ func continue_reveal() -> void:
 		finish_text()
 		# if the text finished organically, add a small input block
 		# this prevents accidental skipping when you expected the text to be longer
-		# TODO! Make this configurable in the settings!
-		DialogicUtil.autoload().Inputs.block_input(0.3)
+		DialogicUtil.autoload().Inputs.block_input(ProjectSettings.get_setting('dialogic/text/advance_delay', 0.1))
 
 
 ## Reveals the entire text instantly.
@@ -139,3 +140,19 @@ func _process(delta: float) -> void:
 	while speed_counter > active_speed and revealing and !DialogicUtil.autoload().paused:
 		speed_counter -= active_speed
 		continue_reveal()
+
+
+
+func _on_meta_hover_started(_meta:Variant) -> void:
+	DialogicUtil.autoload().Inputs.action_was_consumed = true
+
+func _on_meta_hover_ended(_meta:Variant) -> void:
+	DialogicUtil.autoload().Inputs.action_was_consumed = false
+
+func _on_meta_clicked(_meta:Variant) -> void:
+	DialogicUtil.autoload().Inputs.action_was_consumed = true
+
+
+## Handle mouse input
+func on_gui_input(event:InputEvent) -> void:
+	DialogicUtil.autoload().Inputs.handle_node_gui_input(event)

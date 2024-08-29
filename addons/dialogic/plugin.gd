@@ -4,15 +4,11 @@ extends EditorPlugin
 ## Preload the main panel scene
 const MainPanel := preload("res://addons/dialogic/Editor/editor_main.tscn")
 const PLUGIN_NAME := "Dialogic"
-const PLUGIN_HANDLER_PATH := "res://addons/dialogic/Other/DialogicGameHandler.gd"
+const PLUGIN_HANDLER_PATH := "res://addons/dialogic/Core/DialogicGameHandler.gd"
 const PLUGIN_ICON_PATH := "res://addons/dialogic/Editor/Images/plugin-icon.svg"
 
 ## References used by various other scripts to quickly reference these things
 var editor_view: Control  # the root of the dialogic editor
-
-
-## Signal emitted if godot wants us to save
-signal dialogic_save
 
 
 ## Initialization
@@ -24,12 +20,12 @@ func _init() -> void:
 ################################################################################
 
 ## Activation & Editor Setup
-func _enable_plugin():
+func _enable_plugin() -> void:
 	add_autoload_singleton(PLUGIN_NAME, PLUGIN_HANDLER_PATH)
 	add_dialogic_default_action()
 
 
-func _disable_plugin():
+func _disable_plugin() -> void:
 	remove_autoload_singleton(PLUGIN_NAME)
 
 
@@ -39,6 +35,12 @@ func _enter_tree() -> void:
 	editor_view.hide()
 	get_editor_interface().get_editor_main_screen().add_child(editor_view)
 	_make_visible(false)
+
+	# Auto-update the singleton path for alpha users
+	# TODO remove at some point during beta or later
+	if not "Core" in ProjectSettings.get_setting("autoload/"+PLUGIN_NAME, ""):
+		remove_autoload_singleton(PLUGIN_NAME)
+		add_autoload_singleton(PLUGIN_NAME, PLUGIN_HANDLER_PATH)
 
 
 func _exit_tree() -> void:
@@ -61,7 +63,7 @@ func _get_plugin_name() -> String:
 	return PLUGIN_NAME
 
 
-func _get_plugin_icon():
+func _get_plugin_icon() -> Texture2D:
 	return load(PLUGIN_ICON_PATH)
 
 #endregion
@@ -87,6 +89,12 @@ func _make_visible(visible:bool) -> void:
 func _save_external_data() -> void:
 	if _editor_view_and_manager_exist():
 		editor_view.editors_manager.save_current_resource()
+
+
+func _get_unsaved_status(for_scene:String) -> String:
+	if for_scene.is_empty():
+		_save_external_data()
+	return ""
 
 
 func _handles(object) -> bool:
@@ -134,5 +142,10 @@ func add_dialogic_default_action() -> void:
 
 	ProjectSettings.set_setting('input/dialogic_default_action', {'deadzone':0.5, 'events':[input_enter, input_left_click, input_space, input_x, input_controller]})
 	ProjectSettings.save()
+
+# Create cache when project is compiled
+func _build() -> bool:
+	DialogicResourceUtil.update()
+	return true
 
 #endregion

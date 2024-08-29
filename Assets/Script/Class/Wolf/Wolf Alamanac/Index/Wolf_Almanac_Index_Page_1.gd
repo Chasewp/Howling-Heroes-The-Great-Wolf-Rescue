@@ -42,9 +42,11 @@ func _alaskan_tundra_wolf_image():
 	var image = Image.load_from_file(WolfData._get_Alaskan_Tundra_Wolf_Image_Path())
 	var texture = ImageTexture.create_from_image(image)
 	alaskantundrawolfimage.set_texture_normal(texture)
-
+	alaskantundrawolfimage.disabled = false
+	
 func _alaskan_tundra_wolf_name():
 	alaskantundrawolflabel.set_text(WolfData._get_Alaskan_Tundra_Wolf_Name())
+	alaskantundrawolflabel.disabled = false
 #######################################################################
 #Alexander Archipelago Wolf
 func _alexander_archipelago_wolf_image():
@@ -228,14 +230,16 @@ func _on_next_button_page_2_pressed():
 	buttonsound.play()
 	get_tree().change_scene_to_packed(indexpage2)
 	get_tree().root.add_child(indexpage2)
-
+	
+	
 func _ready():
-#Alaskan Tundra Wolf
-	_alaskan_tundra_wolf_image()
-	_alaskan_tundra_wolf_name()
-#Alexander Archipelago Wolf
-	_alexander_archipelago_wolf_image()
-	_alexander_archipelago_wolf_name()
-#Arabian Wolf
-	_arabian_wolf_image()
-	_arabian_wolf_name()    
+	if WolfData._get_Alaskan_Tundra_Wolf_Rescue_Status() == true :
+		 #Alaskan Tundra Wolf
+		_alaskan_tundra_wolf_image()
+		_alaskan_tundra_wolf_name()
+	#Alexander Archipelago Wolf
+		_alexander_archipelago_wolf_image()
+		_alexander_archipelago_wolf_name()
+	#Arabian Wolf
+		_arabian_wolf_image()
+		_arabian_wolf_name()    
