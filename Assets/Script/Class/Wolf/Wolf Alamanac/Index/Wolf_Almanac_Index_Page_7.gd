@@ -23,7 +23,7 @@ var indexpage8 = preload("res://Assets/Scences/UI/Wolf_Almanac/Index/Page 8/Wolf
 var book_almanac19 = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Main/wolf_almanac.tscn").instantiate()
 var book_Almanac20 = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Main/wolf_almanac.tscn").instantiate()
 var book_almanac21 = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Main/wolf_almanac.tscn").instantiate()
-var machenzie_river_wolf_almanac = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Mackenzie River Wolf/mackenzie_river_wolf_almanac.tscn").instantiate
+var machenzie_river_wolf_almanac = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Mackenzie River Wolf/mackenzie_river_wolf_almanac.tscn").instantiate()
 var mexican_wolf_almanac = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Mexican Wolf/mexican_wolf_almanac.tscn").instantiate()
 var mongolian_wolf_almanac = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Mongolian Wolf/mongolian_wolf_almanac.tscn").instantiate()
 
@@ -33,9 +33,9 @@ var mongolian_wolf_almanac = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/
 """Next Button"""
 func _on_next_page_8_button_pressed():
 	buttonsound.play()
-	get_tree().change_scence_to_packed(indexpage8)
+	get_tree().change_scene_to_packed(indexpage8)
 	get_tree().root.add_child(indexpage8)
-
+	
 """Back Button"""
 func _on_back_page_6_button_pressed():
 	buttonsound.play()

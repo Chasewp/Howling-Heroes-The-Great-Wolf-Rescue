@@ -134,6 +134,7 @@ text = "Back
 flat = true
 
 [node name="Next Buttton Page 4" type="Button" parent="Background"]
+custom_minimum_size = Vector2(54, 32)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.927
@@ -142,7 +143,7 @@ anchor_right = 0.97
 anchor_bottom = 0.931
 offset_left = 0.439941
 offset_top = 0.0799561
-offset_right = -0.600098
+offset_right = -0.60022
 offset_bottom = -0.320068
 theme_override_fonts/font = ExtResource("3_nvm1s")
 theme_override_font_sizes/font_size = 24

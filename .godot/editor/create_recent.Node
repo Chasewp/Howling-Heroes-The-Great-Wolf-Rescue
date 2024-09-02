@@ -1,3 +1,5 @@
+Node2D
+Button
 TextureButton
 CharacterBody2D
 CollisionShape2D
@@ -6,7 +8,6 @@ StaticBody2D
 RigidBody2D
 ColorRect
 AnimationPlayer
-Button
 AudioStreamPlayer2D
 AnimatedSprite2D
 TextureRect

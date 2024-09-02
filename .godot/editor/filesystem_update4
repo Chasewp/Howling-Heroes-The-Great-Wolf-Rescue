@@ -1,9 +1,15 @@
+res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Index_Page_7.gd
 res://Assets/Scences/UI/Wolf_Almanac/Index/Page 2/Wolf_Alamac_Index_Page_2.tscn
 res://Assets/Dialogue/Theme/Speaker_Mode.tres
 res://Assets/Dialogue/Theme/Pixelize_Visual_Novel.tres
 res://Assets/Theme/Dialouge/Bubble_Dialogue.tres
-res://Assets/Script/Class/Wolf/Wolf Alamanac/Book/Wolf_Alamanac_Book.gd
 res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Index_Page_1.gd
+res://Assets/Script/Class/Wolf/Wolf Alamanac/Book/Wolf_Alamanac_Book.gd
 res://Assets/Script/Class/Wolf/Wolf Alamanac/Book/Wolf_Alamanac.gd
 res://Assets/Scences/UI/Wolf_Almanac/Index/Page 3/Wolf_Alamac_Index_Page_3.tscn
-res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Index_Page_2.gd
+res://Assets/Scences/UI/Wolf_Almanac/Index/Page 1/Wolf_Almanac_Idex_Page_1.tscn
+res://Assets/Scences/UI/Wolf_Almanac/Index/Page 8/Wolf_Alamac_Index_Page_8.tscn
+res://Assets/Scences/UI/Wolf_Almanac/Index/Page 7/Wolf_Alamac_Index_Page_7.tscn
+res://Assets/Script/Class/Wolf/Wolves_Save/Wolf_Data.gd
+res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Index_Page_9.gd
+res://Assets/Scences/UI/Wolf_Almanac/Index/Page 9/Wolf_Alamac_Index_Page_9.tscn

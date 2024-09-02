@@ -19,7 +19,6 @@ extends Node2D
 @onready var vancouvercoastalislandwolflabel = $"Background/Almanac Index/WolfVBoxContainer27/Label_Wolf_27"
 
 """Inisiate Page"""
-var indexpage1 = preload("res://Assets/Scences/UI/Wolf_Almanac/Index/Page 1/Wolf_Alamac_Index_Page_1.tscn").instantiate()
 var book_alamanac25 = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Main/wolf_almanac.tscn").instantiate()
 var book_alamanac26 = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Main/wolf_almanac.tscn").instantiate()
 var book_alamanac27 = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Main/wolf_almanac.tscn").instantiate()
@@ -30,11 +29,6 @@ var vancouver_coastal_island_wolf_almanac = preload("res://Assets/Scences/UI/Wol
 #Button Click Sound
 @onready var buttonsound = $Button_Click
 
-"""First Page Button"""
-func _on_first_page_button_pressed():
-	buttonsound.play()
-	get_tree().change_scene_to_packed(indexpage1)
-	get_tree().root.add_child(indexpage1)
 
 """Back Button"""
 func _on_back_page_8_button_pressed():

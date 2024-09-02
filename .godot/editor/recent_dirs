@@ -1,10 +1,11 @@
 res://Assets/Music/All Button
+res://Assets/Script/Class/Wolf/Wolf Alamanac/Index
+res://Assets/Scences/UI/Wolf_Almanac/Index/Page 1
 res://Assets/Image/Buttons
 res://Assets/Fonts
 res://Assets/Image/Background/Wolf Almanac Index
 res://Assets/Scences/UI/Lock_Button
 res://Assets/Script/Class/Wolf/Wolf Alamanac/Class_Data
-res://Assets/Script/Class/Wolf/Wolf Alamanac/Index
 res://Assets/Scences/Chest
 C:/Users/Blizzard/Documents/GitHub/Howling-Heroes-The-Great-Wolf-Rescue
 res://Assets/Script/Controller/Key/Taiga/Pine Tree
@@ -19,4 +20,3 @@ res://Assets/Image/Character/Player/templerun
 res://Assets/Script/Class/Player
 res://Assets/Scences/Biome/Bridge_Stone_Forest
 res://Assets/Script/Controller/UI/Location/Biome_Exit
-res://Assets/Image/Wolf Howl Coins/Fanish
