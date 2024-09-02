@@ -6,7 +6,7 @@ extends Node2D
 #Wolf Picture 25 - Steppe Wolf (Caspian Sea Wolf)
 @onready var steppewolfimage = $"Background/Almanac Index/WolfVBoxContainer25/Wolf 25"
 #Wolf Picture 26 -Thundra Wolf
-@onready var thundrawolfimage = $"Background/Almanac Index/WolfVBoxContainer26/Wolf 26"
+@onready var tundrawolfimage = $"Background/Almanac Index/WolfVBoxContainer26/Wolf 26"
 #Wolf Picture 27 -Vancouver Coastal Island Wolf 
 @onready var vancouvercoastalislandwolfimage = $"Background/Almanac Index/WolfVBoxContainer27/Wolf 27"
 
@@ -14,7 +14,7 @@ extends Node2D
 #Wolf Label 25 - Steppe Wolf (Caspian Sea Wolf)
 @onready var steppewolflabel = $"Background/Almanac Index/WolfVBoxContainer25/Label_Wolf_25"
 #Wolf Label 26 - Thundra Wolf
-@onready var thundrawolflabel =$"Background/Almanac Index/WolfVBoxContainer26/Label_Wolf_26"
+@onready var tundrawolflabel =$"Background/Almanac Index/WolfVBoxContainer26/Label_Wolf_26"
 #Wolf Label 27 - Vancouver Coastal IslandWolf
 @onready var vancouvercoastalislandwolflabel = $"Background/Almanac Index/WolfVBoxContainer27/Label_Wolf_27"
 
@@ -55,10 +55,10 @@ func _steppe_wolf_name():
 func _tundra_wolf_image():
 	var image = Image.load_from_file(WolfData._get_Tundra_Wolf_Image_Path())
 	var texture = ImageTexture.create_from_image(image)
-	thundrawolfimage.set_texture_normal(texture)
+	tundrawolfimage.set_texture_normal(texture)
 
 func _tundra_wolf_name():
-	thundrawolflabel.set_text(WolfData._get_Tundra_Wolf_Name())
+	tundrawolflabel.set_text(WolfData._get_Tundra_Wolf_Name())
 #######################################################################
 #Vancouver Coastal Island Wolf
 func _vancouver_coastal_island_wolf_image():
@@ -228,13 +228,36 @@ func _on_vancouver_coastal_island_wolf_label_pressed():
 ############################################################################
 
 func _ready():
-	#Steppe Wolf (Caspian Sea Wolf)
-	_steppe_wolf_image()
-	_steppe_wolf_name()
-	#Tundra Wolf
-	_tundra_wolf_image()
-	_tundra_wolf_name()
-	#Vancouver Coastal Island Wolf
-	_vancouver_coastal_island_wolf_image()
-	_vancouver_coastal_island_wolf_name()
+	if WolfData._get_Steppe_Wolf_Rescue_Status() == false:
+		steppewolfimage.disabled = true
+		steppewolflabel.disabled = true
+		steppewolflabel.set_text("Wolf Label")
+	else : 
+		#Steppe Wolf (Caspian Sea Wolf)
+		steppewolfimage.disabled = false
+		steppewolflabel.disabled = false
+		_steppe_wolf_image()
+		_steppe_wolf_name()
+	
+	if WolfData._get_Tundra_Wolf_Rescue_Status() == false:
+		tundrawolfimage.disabled = true
+		tundrawolflabel.disabled = true
+		tundrawolflabel.set_text("Wolf Label")
+	else:
+		#Tundra Wolf
+		tundrawolfimage.disabled = false
+		tundrawolflabel.disabled = false
+		_tundra_wolf_image()
+		_tundra_wolf_name()
+	
+	if WolfData._get_Vancover_Coastal_Island_Wolf_Rescue_Status() == false:
+		vancouvercoastalislandwolfimage.disabled=true
+		vancouvercoastalislandwolflabel.disabled=true
+		vancouvercoastalislandwolflabel.set_text("Wolf Label")
+	else :
+		#Vancouver Coastal Island Wolf
+		vancouvercoastalislandwolfimage.disabled = false
+		vancouvercoastalislandwolflabel.disabled = false
+		_vancouver_coastal_island_wolf_image()
+		_vancouver_coastal_island_wolf_name()
 	

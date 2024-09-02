@@ -18,7 +18,7 @@ extends Node2D
 #Wolf Label 11 - Greenland Wolf 
 @onready var greenlandwolflabel = $"Background/Almanac Index/WolfVBoxContainer11/Label_Wolf_11"
 #Wolf Label 12 - Himalayan Wolf
-@onready var Himalayanwolflabel = $"Background/Almanac Index/WolfVBoxContainer12/Label_Wolf_12"
+@onready var himalayanwolflabel = $"Background/Almanac Index/WolfVBoxContainer12/Label_Wolf_12"
 
 
 """Inisiate Page"""
@@ -36,43 +36,43 @@ var himalayan_wolf_alamanac = preload("res://Assets/Scences/UI/Wolf_Almanac/Book
 
 """Next Button"""
 func _on_next_page_5_button_pressed():
-    buttonsound.play()
-    get_tree().change_scene_to_packed(indexpage5)
-    get_tree().root.add_child(indexpage5)
+	buttonsound.play()
+	get_tree().change_scene_to_packed(indexpage5)
+	get_tree().root.add_child(indexpage5)
 
 """Back Button"""
 func _on_back_page_3_button_pressed():
-    buttonsound.play()
-    get_parent().remove_child(self)
-    
+	buttonsound.play()
+	get_parent().remove_child(self)
+	
 
 """"Wolves Data"""
 #Great Plains Wolf
 func _great_plains_wolf_image():
-    var image = Image.load_from_file(WolfData._get_Great_Plains_Wolf_Image_Path())
-    var texture = ImageTexture.create_from_image(image)
-    greatplainswolfimage.set_texture_normal(texture)
+	var image = Image.load_from_file(WolfData._get_Great_Plains_Wolf_Image_Path())
+	var texture = ImageTexture.create_from_image(image)
+	greatplainswolfimage.set_texture_normal(texture)
 
 func _great_plains_wolf_name():
-    greatplainwolflabel.set_text(WolfData._get_Great_Plains_Wolf_Name())
+	greatplainwolflabel.set_text(WolfData._get_Great_Plains_Wolf_Name())
 #######################################################################
 #Greenland Wolf
 func _greenland_wolf_image():
-    var image = Image.load_from_file(WolfData._get_Greenland_Wolf_Image_Path())
-    var texture = ImageTexture.create_from_image(image)
-    greenlandwolfimage.set_texture_normal(texture)
+	var image = Image.load_from_file(WolfData._get_Greenland_Wolf_Image_Path())
+	var texture = ImageTexture.create_from_image(image)
+	greenlandwolfimage.set_texture_normal(texture)
 
 func _greenland_wolf_name():
-    greenlandwolflabel.set_text(WolfData._get_Greenland_Wolf_Name())
+	greenlandwolflabel.set_text(WolfData._get_Greenland_Wolf_Name())
 #######################################################################
 #Himalayan Wolf
 func _himalayan_wolf_image():
-    var image = Image.load_from_file(WolfData._get_Himalayan_Wolf_Image_Path())
-    var texture = ImageTexture.create_from_image(image)
-    himalayanwolfimage.set_texture_normal(texture)
+	var image = Image.load_from_file(WolfData._get_Himalayan_Wolf_Image_Path())
+	var texture = ImageTexture.create_from_image(image)
+	himalayanwolfimage.set_texture_normal(texture)
 
 func _himalayan_wolf_name():
-    Himalayanwolflabel.set_text(WolfData._get_Himalayan_Wolf_Name())
+	himalayanwolflabel.set_text(WolfData._get_Himalayan_Wolf_Name())
 #######################################################################
 
 """Into Wolf Almanac Book"""
@@ -80,141 +80,189 @@ func _himalayan_wolf_name():
 #Great Plain Wolf
 func _on_great_plain_wolf_image_pressed():
 	#Image
-    almanac.setter_Wolf_Image(WolfData._get_Great_Plains_Wolf_Image_Path())
+	almanac.setter_Wolf_Image(WolfData._get_Great_Plains_Wolf_Image_Path())
 	#Name
-    almanac.setter_Wolf_Name(WolfData._get_Great_Plains_Wolf_Name())
+	almanac.setter_Wolf_Name(WolfData._get_Great_Plains_Wolf_Name())
 	#Species
-    almanac.setter_Wolf_Species(WolfData._get_Great_Plains_Wolf_Species())
+	almanac.setter_Wolf_Species(WolfData._get_Great_Plains_Wolf_Species())
 	#Height
-    almanac.setter_Wolf_Height(WolfData._get_Great_Plains_Wolf_Height())
+	almanac.setter_Wolf_Height(WolfData._get_Great_Plains_Wolf_Height())
 	#Weight
-    almanac.setter_Wolf_Weight(WolfData._get_Great_Plains_Wolf_Weight())
+	almanac.setter_Wolf_Weight(WolfData._get_Great_Plains_Wolf_Weight())
 	#Lenght
-    almanac.setter_Wolf_Lenght(WolfData._get_Great_Plains_Wolf_Lenght())
+	almanac.setter_Wolf_Lenght(WolfData._get_Great_Plains_Wolf_Lenght())
 	#Conservation Status
-    almanac.setter_Wolf_Conservation_Status(WolfData._get_Great_Plains_Wolf_Conservation_status())
+	almanac.setter_Wolf_Conservation_Status(WolfData._get_Great_Plains_Wolf_Conservation_status())
 	#Region
-    almanac.setter_Wolf_Region(WolfData._get_Great_Plains_Wolf_Location())
+	almanac.setter_Wolf_Region(WolfData._get_Great_Plains_Wolf_Location())
 	#Morphology
-    almanac.setter_Wolf_Morphology(WolfData._get_Great_Plains_Wolf_Morphology())
+	almanac.setter_Wolf_Morphology(WolfData._get_Great_Plains_Wolf_Morphology())
 	#Diets
-    almanac.setter_Wolf_Diets(WolfData._get_Great_Plains_Wolf_Diets())
-    buttonsound.play()
-    get_tree().change_scene_to_packed(book_almanac10)
-    get_tree().root.add_child(book_almanac10)
+	almanac.setter_Wolf_Diets(WolfData._get_Great_Plains_Wolf_Diets())
+	buttonsound.play()
+	get_tree().change_scene_to_packed(book_almanac10)
+	get_tree().root.add_child(book_almanac10)
 
 func _on_great_plain_wolf_label_pressed():
 	#Image
-    almanac.setter_Wolf_Image(WolfData._get_Great_Plains_Wolf_Image_Path())
+	almanac.setter_Wolf_Image(WolfData._get_Great_Plains_Wolf_Image_Path())
 	#Name
-    almanac.setter_Wolf_Name(WolfData._get_Great_Plains_Wolf_Name())
+	almanac.setter_Wolf_Name(WolfData._get_Great_Plains_Wolf_Name())
 	#Species
-    almanac.setter_Wolf_Species(WolfData._get_Great_Plains_Wolf_Species())
+	almanac.setter_Wolf_Species(WolfData._get_Great_Plains_Wolf_Species())
 	#Height
-    almanac.setter_Wolf_Height(WolfData._get_Great_Plains_Wolf_Height())
+	almanac.setter_Wolf_Height(WolfData._get_Great_Plains_Wolf_Height())
 	#Weight
-    almanac.setter_Wolf_Weight(WolfData._get_Great_Plains_Wolf_Weight())
+	almanac.setter_Wolf_Weight(WolfData._get_Great_Plains_Wolf_Weight())
 	#Lenght
-    almanac.setter_Wolf_Lenght(WolfData._get_Great_Plains_Wolf_Lenght())
+	almanac.setter_Wolf_Lenght(WolfData._get_Great_Plains_Wolf_Lenght())
 	#Conservation Status
-    almanac.setter_Wolf_Conservation_Status(WolfData._get_Great_Plains_Wolf_Conservation_status())
+	almanac.setter_Wolf_Conservation_Status(WolfData._get_Great_Plains_Wolf_Conservation_status())
 	#Region
-    almanac.setter_Wolf_Region(WolfData._get_Great_Plains_Wolf_Location())
+	almanac.setter_Wolf_Region(WolfData._get_Great_Plains_Wolf_Location())
 	#Morphology
-    almanac.setter_Wolf_Morphology(WolfData._get_Great_Plains_Wolf_Morphology())
+	almanac.setter_Wolf_Morphology(WolfData._get_Great_Plains_Wolf_Morphology())
 	#Diets
-    almanac.setter_Wolf_Diets(WolfData._get_Great_Plains_Wolf_Diets())
-    buttonsound.play()
-    LoadingScreen.load_scence(great_plains_wolf_alamanac)
-    get_tree().root.add_child(great_plains_wolf_alamanac)
+	almanac.setter_Wolf_Diets(WolfData._get_Great_Plains_Wolf_Diets())
+	buttonsound.play()
+	LoadingScreen.load_scence(great_plains_wolf_alamanac)
+	get_tree().root.add_child(great_plains_wolf_alamanac)
 ############################################################################
 #11
 #Greenland Wolf
-func _on_greenland_wolf_pressed():
+func _on_greenland_wolf_image_pressed():
 	#Image
-    almanac.setter_Wolf_Image(WolfData._get_Greenland_Wolf_Image_Path())
+	almanac.setter_Wolf_Image(WolfData._get_Greenland_Wolf_Image_Path())
 	#Name
-    almanac.setter_Wolf_Name(WolfData._get_Greenland_Wolf_Name())
+	almanac.setter_Wolf_Name(WolfData._get_Greenland_Wolf_Name())
 	#Species
-    almanac.setter_Wolf_Species(WolfData._get_Greenland_Wolf_Species())
+	almanac.setter_Wolf_Species(WolfData._get_Greenland_Wolf_Species())
 	#Height
-    almanac.setter_Wolf_Height(WolfData._get_Greenland_Wolf_Height())
+	almanac.setter_Wolf_Height(WolfData._get_Greenland_Wolf_Height())
 	#Weight
-    almanac.setter_Wolf_Weight(WolfData._get_Greenland_Wolf_Weight())
+	almanac.setter_Wolf_Weight(WolfData._get_Greenland_Wolf_Weight())
 	#Lenght
-    almanac.setter_Wolf_Lenght(WolfData._get_Greenland_Wolf_Lenght())
+	almanac.setter_Wolf_Lenght(WolfData._get_Greenland_Wolf_Lenght())
 	#Conservation Status
-    almanac.setter_Wolf_Conservation_Status(WolfData._get_Greenland_Wolf_Conservation_status())
+	almanac.setter_Wolf_Conservation_Status(WolfData._get_Greenland_Wolf_Conservation_status())
 	#Region
-    almanac.setter_Wolf_Region(WolfData._get_Greenland_Wolf_Location())
+	almanac.setter_Wolf_Region(WolfData._get_Greenland_Wolf_Location())
 	#Morphology
-    almanac.setter_Wolf_Morphology( WolfData._get_Greenland_Wolf_Morphology())
+	almanac.setter_Wolf_Morphology( WolfData._get_Greenland_Wolf_Morphology())
 	#Diets
-    almanac.setter_Wolf_Diets(WolfData._get_Greenland_Wolf_Diets())
-    buttonsound.play()
-    get_tree().change_scene_to_packed(book_almanac11)
-    get_tree().root.add_child(book_almanac11)
+	almanac.setter_Wolf_Diets(WolfData._get_Greenland_Wolf_Diets())
+	buttonsound.play()
+	get_tree().change_scene_to_packed(greenland_wolf_alamanac)
+	get_tree().root.add_child(greenland_wolf_alamanac)
+	
+func _on_greenland_wolf_label_pressed():
+	#Image
+	almanac.setter_Wolf_Image(WolfData._get_Greenland_Wolf_Image_Path())
+	#Name
+	almanac.setter_Wolf_Name(WolfData._get_Greenland_Wolf_Name())
+	#Species
+	almanac.setter_Wolf_Species(WolfData._get_Greenland_Wolf_Species())
+	#Height
+	almanac.setter_Wolf_Height(WolfData._get_Greenland_Wolf_Height())
+	#Weight
+	almanac.setter_Wolf_Weight(WolfData._get_Greenland_Wolf_Weight())
+	#Lenght
+	almanac.setter_Wolf_Lenght(WolfData._get_Greenland_Wolf_Lenght())
+	#Conservation Status
+	almanac.setter_Wolf_Conservation_Status(WolfData._get_Greenland_Wolf_Conservation_status())
+	#Region
+	almanac.setter_Wolf_Region(WolfData._get_Greenland_Wolf_Location())
+	#Morphology
+	almanac.setter_Wolf_Morphology( WolfData._get_Greenland_Wolf_Morphology())
+	#Diets
+	almanac.setter_Wolf_Diets(WolfData._get_Greenland_Wolf_Diets())
+	buttonsound.play()
+	get_tree().change_scene_to_packed(book_almanac11)
+	get_tree().root.add_child(book_almanac11)
 ############################################################################
 #12
 #Himalayan Wolf
 func _on_himalayan_wolf_image_pressed():
 	#Image
-    almanac.setter_Wolf_Image(WolfData._get_Himalayan_Wolf_Image_Path())
+	almanac.setter_Wolf_Image(WolfData._get_Himalayan_Wolf_Image_Path())
 	#Name
-    almanac.setter_Wolf_Name(WolfData._get_Himalayan_Wolf_Name())
+	almanac.setter_Wolf_Name(WolfData._get_Himalayan_Wolf_Name())
 	#Species
-    almanac.setter_Wolf_Species(WolfData._get_Himalayan_Wolf_Species())
+	almanac.setter_Wolf_Species(WolfData._get_Himalayan_Wolf_Species())
 	#Height
-    almanac.setter_Wolf_Height(WolfData._get_Himalayan_Wolf_Height())
+	almanac.setter_Wolf_Height(WolfData._get_Himalayan_Wolf_Height())
 	#Weight
-    almanac.setter_Wolf_Weight(WolfData._get_Himalayan_Wolf_Weight())
+	almanac.setter_Wolf_Weight(WolfData._get_Himalayan_Wolf_Weight())
 	#Lenght
-    almanac.setter_Wolf_Lenght(WolfData._get_Himalayan_Wolf_Lenght())
+	almanac.setter_Wolf_Lenght(WolfData._get_Himalayan_Wolf_Lenght())
 	#Conservation Status
-    almanac.setter_Wolf_Conservation_Status(WolfData._get_Himalayan_Wolf_Conservation_Status())
+	almanac.setter_Wolf_Conservation_Status(WolfData._get_Himalayan_Wolf_Conservation_Status())
 	#Region
-    almanac.setter_Wolf_Region(WolfData._get_Himalayan_Wolf_Location())
+	almanac.setter_Wolf_Region(WolfData._get_Himalayan_Wolf_Location())
 	#Morphology
-    almanac.setter_Wolf_Morphology( WolfData._get_Himalayan_Wolf_Morphology())
+	almanac.setter_Wolf_Morphology( WolfData._get_Himalayan_Wolf_Morphology())
 	#Diets
-    almanac.setter_Wolf_Diets(WolfData._get_Himalayan_Wolf_Diets())
-    buttonsound.play()
-    LoadingScreen.load_scence(book_almanac12)
-    get_tree().root.add_child(book_almanac12)
+	almanac.setter_Wolf_Diets(WolfData._get_Himalayan_Wolf_Diets())
+	buttonsound.play()
+	LoadingScreen.load_scence(book_almanac12)
+	get_tree().root.add_child(book_almanac12)
 
 func _on_himalayan_wolf_label_pressed():
 	#Image
-    almanac.setter_Wolf_Image(WolfData._get_Himalayan_Wolf_Image_Path())
+	almanac.setter_Wolf_Image(WolfData._get_Himalayan_Wolf_Image_Path())
 	#Name
-    almanac.setter_Wolf_Name(WolfData._get_Himalayan_Wolf_Name())
+	almanac.setter_Wolf_Name(WolfData._get_Himalayan_Wolf_Name())
 	#Species
-    almanac.setter_Wolf_Species(WolfData._get_Himalayan_Wolf_Species())
+	almanac.setter_Wolf_Species(WolfData._get_Himalayan_Wolf_Species())
 	#Height
-    almanac.setter_Wolf_Height(WolfData._get_Himalayan_Wolf_Height())
+	almanac.setter_Wolf_Height(WolfData._get_Himalayan_Wolf_Height())
 	#Weight
-    almanac.setter_Wolf_Weight(WolfData._get_Himalayan_Wolf_Weight())
+	almanac.setter_Wolf_Weight(WolfData._get_Himalayan_Wolf_Weight())
 	#Lenght
-    almanac.setter_Wolf_Lenght(WolfData._get_Himalayan_Wolf_Lenght())
+	almanac.setter_Wolf_Lenght(WolfData._get_Himalayan_Wolf_Lenght())
 	#Conservation Status
-    almanac.setter_Wolf_Conservation_Status(WolfData._get_Himalayan_Wolf_Conservation_Status())
+	almanac.setter_Wolf_Conservation_Status(WolfData._get_Himalayan_Wolf_Conservation_Status())
 	#Region
-    almanac.setter_Wolf_Region(WolfData._get_Himalayan_Wolf_Location())
+	almanac.setter_Wolf_Region(WolfData._get_Himalayan_Wolf_Location())
 	#Morphology
-    almanac.setter_Wolf_Morphology( WolfData._get_Himalayan_Wolf_Morphology())
+	almanac.setter_Wolf_Morphology( WolfData._get_Himalayan_Wolf_Morphology())
 	#Diets
-    almanac.setter_Wolf_Diets(WolfData._get_Himalayan_Wolf_Diets())
-    buttonsound.play()
-    LoadingScreen.load_scence(himalayan_wolf_alamanac)
-    get_tree().root.add_child(himalayan_wolf_alamanac)
+	almanac.setter_Wolf_Diets(WolfData._get_Himalayan_Wolf_Diets())
+	buttonsound.play()
+	LoadingScreen.load_scence(himalayan_wolf_alamanac)
+	get_tree().root.add_child(himalayan_wolf_alamanac)
 ############################################################################
 
 func _ready():
-    #Great Plains Wolf
-    _great_plains_wolf_image()
-    _great_plains_wolf_name()
-    #Greenland Wolf
-    _greenland_wolf_image()
-    _greenland_wolf_name()
-    #Himalayan Wolf
-    _himalayan_wolf_image()
-    _himalayan_wolf_name()
+	if WolfData._get_Great_Plains_Wolf_Rescue_Status()==false:
+		greatplainswolfimage.disabled = true
+		greatplainwolflabel.disabled = true
+		greatplainwolflabel.set_text("Wolf Label")
+	else:
+		greatplainswolfimage.disabled = false
+		greatplainwolflabel.disabled = false
+		#Great Plains Wolf
+		_great_plains_wolf_image()
+		_great_plains_wolf_name()
+	
+	if WolfData._get_Greenland_Wolf_Rescue_Status()==false:
+		greenlandwolfimage.disabled = true
+		greenlandwolflabel.disabled = true
+		greenlandwolflabel.set_text("Wolf Label")
+	else:
+		#Greenland Wolf
+		greenlandwolfimage.disabled = false
+		greenlandwolflabel.disabled = false
+		_greenland_wolf_image()
+		_greenland_wolf_name()
+	
+	if WolfData._get_Himalyan_Wolf_Rescue_Status() == false:
+		himalayanwolfimage.disabled = true
+		himalayanwolflabel.disabled = true
+		himalayanwolflabel.set_text("Wolf Label")
+	else: 
+		#Himalayan Wolf
+		himalayanwolfimage.disabled = false
+		himalayanwolflabel.disabled = false		
+		_himalayan_wolf_image()
+		_himalayan_wolf_name()

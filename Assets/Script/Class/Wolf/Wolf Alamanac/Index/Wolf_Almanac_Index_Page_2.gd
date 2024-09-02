@@ -34,7 +34,7 @@ var british_columbian_wolf_almanac = preload("res://Assets/Scences/UI/Wolf_Alman
 """Next Button"""
 func _on_next_page_3_button_pressed():
 	buttonsound.play()
-	get_tree().change_scence_to_packed(indexpage3)
+	get_tree().change_scene_to_packed(indexpage3)
 	get_tree().root.add_child(indexpage3)
 
 """Back Button"""
@@ -42,8 +42,6 @@ func _on_back_page_1_button_pressed():
 	buttonsound.play()
 	get_parent().remove_child(self)
 	
-	
-
 """Wolves Data"""
 #Arctic Wolf
 func _arctic_wolf_image():
@@ -205,7 +203,6 @@ func _on_british_columbian_wolf__image_pressed():
 	get_tree().change_scene_to_packed(book_almanac6)
 	get_tree().root.add_child(book_almanac6)
 	
-
 func _on_british_columbian_wolf_label_pressed():
 	#Image
 	almanac.setter_Wolf_Image(WolfData._get_British_Columbian_Wolf_Image_Path())
@@ -232,17 +229,39 @@ func _on_british_columbian_wolf_label_pressed():
 	get_tree().root.add_child(british_columbian_wolf_almanac)
 ############################################################################
 
-
 func _ready():
-	#Arctic Wolf
-	_arctic_wolf_image()
-	_artic_wolf_name()
-	#Baffin Island Wolf
-	_baffin_island_wolf_image()
-	_baffin_island_wolf_name()
-	#British Columbian Wolf
-	_british_columbian_wolf_image()
-	_british_columbian_wolf_name()
+	if  WolfData._get_Arctic_Wolf_Rescue_Status() == false:
+		arcticwolfimage.disabled = true
+		arcticwolflabel.disabled = true
+		arcticwolflabel.set_text("Wolf Label")
+	else:
+		#Arctic Wolf
+		arcticwolfimage.disabled = false
+		arcticwolflabel.disabled = false
+		_arctic_wolf_image()
+		_artic_wolf_name()
+	
+	if WolfData._get_Baffin_Island_Wolf_Rescue_Status() == false:
+		baffinislandwolfimage.disabled = true
+		baffinislandwolflabel.disabled = true
+		baffinislandwolflabel.set_text("Wolf Label")
+	else:
+		#Baffin Island Wolf
+		baffinislandwolfimage.disabled = false
+		baffinislandwolflabel.disabled = false
+		_baffin_island_wolf_image()
+		_baffin_island_wolf_name()
+	
+	if WolfData._get_British_Columbian_Wolf_Rescue_Status() == false:
+		britishcolumbianwolfimage.disabled = true
+		britishcolumbianwolflabel.disabled = true
+		britishcolumbianwolflabel.set_text("Wolf Label")
+	else :
+		#British Columbian Wolf
+		britishcolumbianwolfimage.disabled = false
+		britishcolumbianwolflabel.disabled = false
+		_british_columbian_wolf_image()
+		_british_columbian_wolf_name()
 	
 	
 

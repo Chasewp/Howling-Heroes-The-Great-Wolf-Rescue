@@ -32,7 +32,7 @@ var red_wolf_almanac =preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Red Wol
 """Next Button"""
 func _on_next_page_9_button_pressed():
 	buttonsound.play()
-	get_tree().change_scence_to_packed(indexpage9)
+	get_tree().change_scene_to_packed(indexpage9)
 	get_tree().root.add_child(indexpage9)
 
 """Back Button"""
@@ -228,14 +228,35 @@ func _on_red_wolf__label_pressed():
 ############################################################################
 
 func _ready():
-	#Northern Rocky Mountain Wolf
-	_northern_rocky_mountain_wolf_image()
-	_northern_rocky_mountain_wolf_name()
-	#Northwestern Wolf
-	_northwestern_wolf_image()
-	_northerwestern_wolf_name()
-	#Red Wolf
-	_red_wolf_image()
-	_red_wolf_name()
+	if WolfData._get_Alaskan_Tundra_Wolf_Rescue_Status() == false:
+		northwesternwolfimage.disabled = true
+		northwesternwolflabel.disabled = true
+		northwesternwolflabel.set_text("Wolf Label")
+	else : 
+		#Northern Rocky Mountain Wolf
+		northwesternwolfimage.disabled = false
+		northwesternwolflabel.disabled = false
+		_northern_rocky_mountain_wolf_image()
+		_northern_rocky_mountain_wolf_name()
 	
+	if WolfData._get_Nortern_Rocky_Mountain_Wolf_Rescue_Status() == false:
+		northernrockymountainwolfimage.disabled = true
+		northernrockymountainwolflabel.disabled = true
+		northernrockymountainwolflabel.set_text("Wolf Label")
+	else :
+		#Northwestern Wolf
+		northernrockymountainwolfimage.disabled = false
+		northernrockymountainwolflabel.disabled = false
+		_northwestern_wolf_image()
+		_northerwestern_wolf_name()
 	
+	if WolfData._get_Red_Wolf_Rescue_Status() == false : 
+		redwolfimage.disabled = true
+		redwolflabel.disabled = true
+		redwolflabel.set_text("Wolf Label")
+	else : 
+		#Red Wolf
+		redwolfimage.disabled = false
+		redwolflabel.disabled = false
+		_red_wolf_image()
+		_red_wolf_name()

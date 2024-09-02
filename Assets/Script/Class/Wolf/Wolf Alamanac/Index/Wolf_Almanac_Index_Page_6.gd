@@ -39,7 +39,7 @@ func _on_next_page_7_button_pressed():
 	get_tree().root.add_child(indexpage7)
 
 """Back Button"""
-func _on_back_page_7_button_pressed():
+func _on_back_page_5_button_pressed():
 	buttonsound.play()
 	get_parent().remove_child(self)
 	
@@ -150,8 +150,8 @@ func _on_italian_wolf_image_pressed():
 	#Diets
 	almanac.setter_Wolf_Diets(WolfData._get_Interior_Alaskan_Wolf_Diets())
 	buttonsound.play()
-	get_tree().change_scene_to_packed(book_almanac17)
-	get_tree().root.add_child(book_almanac17)
+	get_tree().change_scene_to_packed(italian_wolf_almanac)
+	get_tree().root.add_child(italian_wolf_almanac)
 	
 func _on_italian_wolf_label_pressed():
 	#Image
@@ -175,37 +175,12 @@ func _on_italian_wolf_label_pressed():
 	#Diets
 	almanac.setter_Wolf_Diets(WolfData._get_Interior_Alaskan_Wolf_Diets())
 	buttonsound.play()
-	LoadingScreen.load_scence(book_almanac17)
+	get_tree().change_scene_to_packed(book_almanac17)
 	get_tree().root.add_child(book_almanac17)
 ############################################################################
 #18
 #Labrador Wolf
-func _on_labrador_wolf_pressed():
-	#Image
-	almanac.setter_Wolf_Image(WolfData._get_Labrador_Wolf_Image_Path())
-	#Name
-	almanac.setter_Wolf_Name(WolfData._get_Labrador_Wolf_Name())
-	#Species
-	almanac.setter_Wolf_Species(WolfData._get_Labrador_Wolf_Species())
-	#Height
-	almanac.setter_Wolf_Height(WolfData._get_Labrador_Wolf_Height())
-	#Weight
-	almanac.setter_Wolf_Weight(WolfData._get_Labrador_Wolf_Weight())
-	#Lenght
-	almanac.setter_Wolf_Lenght(WolfData._get_Labrador_Wolf_Lenght())
-	#Conservation Status
-	almanac.setter_Wolf_Conservation_Status(WolfData._get_Labrador_Wolf_Lenght())
-	#Region
-	almanac.setter_Wolf_Region(WolfData._get_Labrador_Wolf_Location())
-	#Morphology
-	almanac.setter_Wolf_Morphology(WolfData._get_Labrador_Wolf_Morphology())
-	#Diets
-	almanac.setter_Wolf_Diets(WolfData._get_Labrador_Wolf_Diets())
-	buttonsound.play()
-	LoadingScreen.load_scence(book_almanac18)
-	get_tree().root.add_child(book_almanac18)
-
-func _on_labrador_wolf_label_pressed():
+func _on_labrador_wolf_image_pressed():
 	#Image
 	almanac.setter_Wolf_Image(WolfData._get_Labrador_Wolf_Image_Path())
 	#Name
@@ -229,15 +204,65 @@ func _on_labrador_wolf_label_pressed():
 	buttonsound.play()
 	get_tree().change_scene_to_packed(labrador_wolf_almanac)
 	get_tree().root.add_child(labrador_wolf_almanac)
+	
+
+func _on_labrador_wolf_label_pressed():
+	#Image
+	almanac.setter_Wolf_Image(WolfData._get_Labrador_Wolf_Image_Path())
+	#Name
+	almanac.setter_Wolf_Name(WolfData._get_Labrador_Wolf_Name())
+	#Species
+	almanac.setter_Wolf_Species(WolfData._get_Labrador_Wolf_Species())
+	#Height
+	almanac.setter_Wolf_Height(WolfData._get_Labrador_Wolf_Height())
+	#Weight
+	almanac.setter_Wolf_Weight(WolfData._get_Labrador_Wolf_Weight())
+	#Lenght
+	almanac.setter_Wolf_Lenght(WolfData._get_Labrador_Wolf_Lenght())
+	#Conservation Status
+	almanac.setter_Wolf_Conservation_Status(WolfData._get_Labrador_Wolf_Lenght())
+	#Region
+	almanac.setter_Wolf_Region(WolfData._get_Labrador_Wolf_Location())
+	#Morphology
+	almanac.setter_Wolf_Morphology(WolfData._get_Labrador_Wolf_Morphology())
+	#Diets
+	almanac.setter_Wolf_Diets(WolfData._get_Labrador_Wolf_Diets())
+	buttonsound.play()
+	get_tree().change_scene_to_packed(book_almanac18)
+	get_tree().root.add_child(book_almanac18)
 ############################################################################
 
 func _ready():
-	#Interior Alaskan Wolf
-	_interior_alaskan_wolf_image()
-	_interior_alaskan_wolf_name()
-	#Italian Wolf
-	_italian_wolf_image()
-	_italian_wolf_name()
-	#Labrador
-	_labrador_wolf_image()
-	_labrador_wolf_name()
+	if WolfData._get_Alaskan_Tundra_Wolf_Rescue_Status()==false:
+		yukonwolfimage.disabled = true
+		yukonwolflabel.disabled = true
+		yukonwolflabel.set_text("Wolf Label")
+	else:
+		#Interior Alaskan Wolf
+		yukonwolfimage.disabled = false
+		yukonwolflabel.disabled = false
+		_interior_alaskan_wolf_image()
+		_interior_alaskan_wolf_name()
+	
+	if WolfData._get_Italian_Wolf_Rescue_Status() == false:
+		italianwolfimage.disabled = true
+		italianwolflabel.disabled = true
+		yukonwolflabel.set_text("Wolf Label")
+	else:	
+		#Italian Wolf
+		italianwolfimage.disabled = false
+		italianwolflabel.disabled = false
+		italianwolflabel.set_text("Wolf Label")
+		_italian_wolf_image()
+		_italian_wolf_name()
+	
+	if	WolfData._get_Italian_Wolf_Rescue_Status() == false:
+		labradorwolfimage.disabled = true
+		labradorwolflabel.disabled = true
+		labradorwolflabel.set_text("Wolf Label")
+	else :
+		#Labrador
+		labradorwolfimage.disabled = false
+		labradorwolflabel.disabled = false
+		_labrador_wolf_image()
+		_labrador_wolf_name()

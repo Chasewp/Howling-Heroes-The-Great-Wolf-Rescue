@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://buos6ae1qvw78"]
 
 [ext_resource type="Theme" uid="uid://br2uoqpi38ygc" path="res://Assets/Theme/Dialouge/Exit_Confirmation.tres" id="2_0k7ty"]
-[ext_resource type="AudioStream" uid="uid://c8ygb4nqbs03p" path="res://Assets/Music/Warning/exclamation-101soundboards.mp3" id="3_ct1th"]
-[ext_resource type="AudioStream" uid="uid://ty2bg0clrp0t" path="res://Assets/Music/All Button/Quit_Button.mp3" id="4_87xpo"]
-[ext_resource type="AudioStream" uid="uid://bpkfmkyhxykdk" path="res://Assets/Music/Dialogues/Good bye/Goodbye.mp3" id="5_5hn7p"]
-[ext_resource type="FontFile" uid="uid://daews5bmpatgf" path="res://Assets/Fonts/WolfpackHalloweed-EaGOl.otf" id="6_lj7vy"]
+[ext_resource type="AudioStream" uid="uid://c861obs335mgp" path="res://Assets/Music/Warning/exclamation-101soundboards.mp3" id="3_ct1th"]
+[ext_resource type="AudioStream" uid="uid://dfx8n3eqhipk0" path="res://Assets/Music/All Button/Button.mp3" id="4_87xpo"]
+[ext_resource type="AudioStream" uid="uid://dwxes12dislcl" path="res://Assets/Music/Dialogues/Good bye/Goodbye.mp3" id="5_5hn7p"]
+[ext_resource type="FontFile" uid="uid://cvsj742f3m82d" path="res://Assets/Fonts/WolfpackHalloweed-EaGOl.otf" id="6_lj7vy"]
 
 [sub_resource type="GDScript" id="GDScript_byx8a"]
 script/source = "extends Control
@@ -18,7 +18,7 @@ script/source = "extends Control
 func _ready():
 	Warning.play()
 	
-#Yes	
+#Yes
 func _on_confirmation_dialog_confirmed():
 	Button_Sound.play()
 	Bye.play()

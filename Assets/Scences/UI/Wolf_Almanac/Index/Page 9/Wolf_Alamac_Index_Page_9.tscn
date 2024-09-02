@@ -1,10 +1,20 @@
-[gd_scene load_steps=6 format=3 uid="uid://b2l783lyrtvje"]
+[gd_scene load_steps=10 format=3 uid="uid://b2l783lyrtvje"]
 
 [ext_resource type="Script" path="res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Index_Page_9.gd" id="1_hx2to"]
 [ext_resource type="Texture2D" uid="uid://d04k2qksoa13u" path="res://Assets/Image/images/Background/Wolf Almanac Index/Wood Texture.png" id="2_g62sh"]
 [ext_resource type="FontFile" uid="uid://b0dbrpth4h70i" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="3_umq56"]
+[ext_resource type="Texture2D" uid="uid://ceov1ogbf4c2w" path="res://Assets/Scences/UI/Lock_Button/Lock_buttons.tres" id="4_o3j1v"]
 [ext_resource type="Theme" uid="uid://dk2f873t2ffc2" path="res://Assets/Theme/Wolf_Almanac_Idex/Button.tres" id="4_p66ip"]
 [ext_resource type="AudioStream" uid="uid://dfx8n3eqhipk0" path="res://Assets/Music/All Button/Button.mp3" id="5_2r1e5"]
+[ext_resource type="Texture2D" uid="uid://da13nuc1gskxn" path="res://Assets/Image/Buttons/Button.png" id="6_ndcty"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_chpxy"]
+atlas = ExtResource("6_ndcty")
+region = Rect2(1389, 668, 182, 189)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_27qxp"]
+atlas = ExtResource("6_ndcty")
+region = Rect2(1389, 668, 182, 189)
 
 [node name="WolfAlamacIndexPage9" type="Node2D"]
 script = ExtResource("1_hx2to")
@@ -57,6 +67,7 @@ size_flags_vertical = 3
 [node name="Wolf 25" type="TextureButton" parent="Background/Almanac Index/WolfVBoxContainer25"]
 custom_minimum_size = Vector2(385, 555)
 layout_mode = 2
+texture_disabled = ExtResource("4_o3j1v")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -74,6 +85,7 @@ layout_mode = 2
 [node name="Wolf 26" type="TextureButton" parent="Background/Almanac Index/WolfVBoxContainer26"]
 custom_minimum_size = Vector2(385, 555)
 layout_mode = 2
+texture_disabled = SubResource("AtlasTexture_chpxy")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -90,6 +102,7 @@ layout_mode = 2
 clip_contents = true
 custom_minimum_size = Vector2(385, 555)
 layout_mode = 2
+texture_disabled = SubResource("AtlasTexture_27qxp")
 ignore_texture_size = true
 stretch_mode = 0
 

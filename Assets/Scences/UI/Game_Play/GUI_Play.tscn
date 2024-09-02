@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://c1ph53byo1unb"]
 
-[ext_resource type="Texture2D" uid="uid://begmi5hmo48f6" path="res://Assets/Image/Character/Player/templerun/Face-player.png" id="1_mpywy"]
+[ext_resource type="Texture2D" uid="uid://cqjtqmw853vfp" path="res://Assets/Image/Character/Player/templerun/Face-player.png" id="1_mpywy"]
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/GUI/GUI_Play.gd" id="1_xqce5"]
-[ext_resource type="FontFile" uid="uid://bsmkjcem4b3i1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="2_68s4u"]
+[ext_resource type="FontFile" uid="uid://c2xxg2yydtlpl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="2_68s4u"]
 [ext_resource type="PackedScene" uid="uid://d2kow5kkphlx6" path="res://Assets/Scences/UI/Mission_Log/mission.tscn" id="3_t1rl4"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_grsui"]

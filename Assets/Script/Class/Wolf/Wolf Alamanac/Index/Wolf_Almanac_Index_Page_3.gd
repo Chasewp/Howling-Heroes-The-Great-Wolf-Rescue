@@ -228,14 +228,37 @@ func _on_gray_wolf_label_pressed():
 	get_tree().root.add_child(gray_wolf_almanac)   
 
 func _ready():
-	#Eastern Wolf
-	_eastern_wolf_image()
-	_eastern_wolf_name()
-	#Eurasian Wolf
-	_eurasian_wolf_image()
-	_eurasian_wolf_name()
-	#Gray Wolf
-	_gray_wolf_image()
-	_gray_wolf_name()
+	if WolfData._get_Eastern_Wolf_Rescue_Status() == false:
+		easternwolfimage.disabled = true
+		easternwolflabel.disabled = true
+		easternwolflabel.set_text("Wolf Label")
+	else:
+		#Eastern Wolf
+		easternwolfimage.disabled = false
+		easternwolflabel.disabled = false
+		_eastern_wolf_image()
+		_eastern_wolf_name()
+	
+	if WolfData._get_Eurasian_Wolf_Rescue_Status() == false:
+		eurasianwolfimage.disabled = true
+		eurasianwolflabel.disabled = true
+		eurasianwolflabel.set_text("Wolf Label")
+	else:
+		#Eurasian Wolf
+		eurasianwolfimage.disabled = false
+		eurasianwolflabel.disabled = false
+		_eurasian_wolf_image()
+		_eurasian_wolf_name()
+	
+	if WolfData._get_Gray_Wolf_Rescue_Status() == false:
+		graywolfimage.disabled = true
+		graywolflabel.disabled = true
+		graywolflabel.set_text("Wolf Label")
+	else :
+		#Gray Wolf
+		graywolfimage.disabled = false
+		graywolflabel.disabled = false
+		_gray_wolf_image()
+		_gray_wolf_name()
 
 

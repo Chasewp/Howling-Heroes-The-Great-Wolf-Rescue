@@ -144,8 +144,8 @@ func _on_alexander_archipelago_wolf_pressed_Image():
 	#Diets
 	almanac.setter_Wolf_Diets(WolfData._get_Alexander_Archipelago_Wolf_Diets())
 	buttonsound.play()
-	get_tree().change_scene_to_packed(book_almanac2)
-	get_tree().root.add_child(book_almanac2)
+	get_tree().change_scene_to_packed(alexander_archipelago_wolf_almanac)
+	get_tree().root.add_child(alexander_archipelago_wolf_almanac )
 	
 func _on_alexander_archipelago_wolf_pressed_Label():
 	#Image
@@ -169,9 +169,8 @@ func _on_alexander_archipelago_wolf_pressed_Label():
 	#Diets
 	almanac.setter_Wolf_Diets(WolfData._get_Alexander_Archipelago_Wolf_Diets())
 	buttonsound.play()
-	get_tree().change_scene_to_packed(alexander_archipelago_wolf_almanac)
-	get_tree().root.add_child(alexander_archipelago_wolf_almanac )
-	
+	get_tree().change_scene_to_packed(book_almanac2)
+	get_tree().root.add_child(book_almanac2)
 	##########################################################################
 #3
 #Arabian Wolf
@@ -197,9 +196,9 @@ func _on_arabian_wolf_pressed_Image():
 	#Diets
 	almanac.setter_Wolf_Diets(WolfData._get_Arabian_Wolf_Diets())
 	buttonsound.play()
-	get_tree().change_scene_to_packed(book_almanac3)
-	get_tree().root.add_child(book_almanac3)
-	
+	get_tree().change_scene_to_packed(arabian_wolf_almanac)
+	get_tree().root.add_child(arabian_wolf_almanac)
+
 func _on_arabian_wolf_pressed_Label():
 	#Image
 	almanac.setter_Wolf_Image(WolfData._get_Arabian_Wolf_Image_Path())
@@ -222,8 +221,9 @@ func _on_arabian_wolf_pressed_Label():
 	#Diets
 	almanac.setter_Wolf_Diets(WolfData._get_Arabian_Wolf_Diets())
 	buttonsound.play()
-	get_tree().change_scene_to_packed(arabian_wolf_almanac)
-	get_tree().root.add_child(arabian_wolf_almanac)
+	get_tree().change_scene_to_packed(book_almanac3)
+	get_tree().root.add_child(book_almanac3)
+	
 ############################################################################   
 #Next Page 2
 func _on_next_button_page_2_pressed():
@@ -231,15 +231,36 @@ func _on_next_button_page_2_pressed():
 	get_tree().change_scene_to_packed(indexpage2)
 	get_tree().root.add_child(indexpage2)
 	
-	
 func _ready():
-	if WolfData._get_Alaskan_Tundra_Wolf_Rescue_Status() == true :
-		 #Alaskan Tundra Wolf
+	if WolfData._get_Alaskan_Tundra_Wolf_Rescue_Status() == false :
+		alaskantundrawolfimage.disabled = true
+		alaskantundrawolflabel.disabled = true
+		alaskantundrawolflabel.set_text("Wolf Label")
+	else:  
+		#Alaskan Tundra Wolf
+		alaskantundrawolfimage.disabled = false
+		alaskantundrawolflabel.disabled = false
 		_alaskan_tundra_wolf_image()
 		_alaskan_tundra_wolf_name()
+	
+	if WolfData._get_Alexander_Archipelago_Wolf_Rescue_Status() == false:
+		alexanderarchipelagowolfimage.disabled = true
+		alexanderarchipelagowolflabel.disabled = true
+		alexanderarchipelagowolflabel.set_text("Wolf Label")
+	else: 
 	#Alexander Archipelago Wolf
+		alexanderarchipelagowolfimage.disabled = true
+		alexanderarchipelagowolflabel.disabled = true
 		_alexander_archipelago_wolf_image()
 		_alexander_archipelago_wolf_name()
+	
+	if WolfData._get_Arabian_Wolf_Rescue_Status() == false:
+		arabianwolfimage.disabled = true
+		arabianwolflabel.disabled = true
+		arabianwolflabel.set_text("Wolf Label")
+	else:
 	#Arabian Wolf
+		arabianwolfimage.disabled = false
+		arabianwolflabel.disabled = false
 		_arabian_wolf_image()
 		_arabian_wolf_name()    

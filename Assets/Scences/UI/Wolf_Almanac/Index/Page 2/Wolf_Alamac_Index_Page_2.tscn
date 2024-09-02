@@ -1,10 +1,20 @@
-[gd_scene load_steps=6 format=3 uid="uid://cokoy6m8s3kf6"]
+[gd_scene load_steps=10 format=3 uid="uid://cokoy6m8s3kf6"]
 
-[ext_resource type="Texture2D" uid="uid://d04k2qksoa13u" path="res://Assets/Image/images/Background/Wolf Almanac Index/Wood Texture.png" id="1_ec662"]
+[ext_resource type="Texture2D" uid="uid://c8vpwhgqrvpou" path="res://Assets/Image/images/Background/Wolf Almanac Index/Wood Texture.png" id="1_ec662"]
 [ext_resource type="Script" path="res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Index_Page_2.gd" id="1_fk30v"]
-[ext_resource type="FontFile" uid="uid://b0dbrpth4h70i" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="2_i1e8y"]
+[ext_resource type="FontFile" uid="uid://cnhshuaxal67w" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="2_i1e8y"]
 [ext_resource type="Theme" uid="uid://dk2f873t2ffc2" path="res://Assets/Theme/Wolf_Almanac_Idex/Button.tres" id="3_0nf77"]
-[ext_resource type="AudioStream" uid="uid://dfx8n3eqhipk0" path="res://Assets/Music/All Button/Button.mp3" id="4_tctes"]
+[ext_resource type="Texture2D" uid="uid://ceov1ogbf4c2w" path="res://Assets/Scences/UI/Lock_Button/Lock_buttons.tres" id="4_1sg0b"]
+[ext_resource type="Texture2D" uid="uid://rydxjf2k4x0c" path="res://Assets/Image/Buttons/Button.png" id="4_5isah"]
+[ext_resource type="AudioStream" uid="uid://c0lhrui6o2e72" path="res://Assets/Music/All Button/Button.mp3" id="4_tctes"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h5teu"]
+atlas = ExtResource("4_5isah")
+region = Rect2(1389, 668, 182, 189)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h4sm4"]
+atlas = ExtResource("4_5isah")
+region = Rect2(1389, 668, 182, 189)
 
 [node name="WolfAlamacIndexPage2" type="Node2D"]
 script = ExtResource("1_fk30v")
@@ -57,6 +67,7 @@ size_flags_vertical = 3
 [node name="Wolf 4" type="TextureButton" parent="Background/Almanac Index/WolfVBoxContainer4"]
 custom_minimum_size = Vector2(385, 555)
 layout_mode = 2
+texture_disabled = SubResource("AtlasTexture_h5teu")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -74,6 +85,7 @@ layout_mode = 2
 [node name="Wolf 5" type="TextureButton" parent="Background/Almanac Index/WolfVBoxContainer5"]
 custom_minimum_size = Vector2(385, 555)
 layout_mode = 2
+texture_disabled = SubResource("AtlasTexture_h4sm4")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -90,6 +102,7 @@ layout_mode = 2
 clip_contents = true
 custom_minimum_size = Vector2(385, 555)
 layout_mode = 2
+texture_disabled = ExtResource("4_1sg0b")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -153,7 +166,7 @@ text = "Page 2 of 9"
 [node name="Button_Click" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_tctes")
 
-[connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer4/Wolf 4" to="." method="_on_arctic_wolf__Image_pressed"]
+[connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer4/Wolf 4" to="." method="_on_arctic_wolf_Image_pressed"]
 [connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer4/Label_Wolf_4" to="." method="_on_arctic_wolf_label_pressed"]
 [connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer5/Wolf 5" to="." method="_on_baffin_island_wolf_image_pressed"]
 [connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer5/Label_Wolf_5" to="." method="_on_baffin_island_wolf_label_pressed"]

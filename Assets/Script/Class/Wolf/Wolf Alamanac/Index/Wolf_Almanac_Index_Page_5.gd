@@ -2,7 +2,6 @@
 class_name Wolf_Index_Page_5
 extends Node2D
 
-
 """Wolves Image"""
 #Wolf Picture 13 - Hudson Bay Wolf
 @onready var hudsonbaywolfimage = $"Background/Almanac Index/WolfVBoxContainer13/Wolf 13"
@@ -33,43 +32,43 @@ var indian_wolf_alamanac  = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/I
 
 """Next Button"""
 func _on_next_page_6_button_pressed():
-    buttonsound.play()
-    get_tree().change_scene_to_packed(indexpage6)
-    get_tree().root.add_child(indexpage6)
+	buttonsound.play()
+	get_tree().change_scene_to_packed(indexpage6)
+	get_tree().root.add_child(indexpage6)
 
 """Back Button"""
 func _on_back_page_4_button_pressed():
-    buttonsound.play()
-    get_parent().remove_child(self)
-    
+	buttonsound.play()
+	get_parent().remove_child(self)
+	
 
 """"Wolves Data"""
 #Hudson Bay Wolf
 func _hudson_bay_wolf_image():
-    var image = Image.load_from_file(WolfData._get_Hudson_Bay_Wolf_Image_Path())
-    var texture = ImageTexture.create_from_image(image)
-    hudsonbaywolfimage.set_texture_normal(texture)
+	var image = Image.load_from_file(WolfData._get_Hudson_Bay_Wolf_Image_Path())
+	var texture = ImageTexture.create_from_image(image)
+	hudsonbaywolfimage.set_texture_normal(texture)
 
 func _hudson_bay_wolf_name():
-    hudsonbaywolflabel.set_text(WolfData._get_Hudson_Bay_Wolf_Name())
+	hudsonbaywolflabel.set_text(WolfData._get_Hudson_Bay_Wolf_Name())
 #######################################################################
 #Iberian Wolf
 func _iberian_wolf_image():
-    var image = Image.load_from_file(WolfData._get_Iberian_Wolf_Image_Path())
-    var texture = ImageTexture.create_from_image(image)
-    iberianwolfimage.set_texture_normal(texture)
+	var image = Image.load_from_file(WolfData._get_Iberian_Wolf_Image_Path())
+	var texture = ImageTexture.create_from_image(image)
+	iberianwolfimage.set_texture_normal(texture)
 
 func _iberian_wolf_name():
-    iberianwolflabel.set_text(WolfData._get_Iberian_Wolf_Name())
+	iberianwolflabel.set_text(WolfData._get_Iberian_Wolf_Name())
 #######################################################################
 #Indian Wolf
 func _indian_wolf_image():
-    var image = Image.load_from_file(WolfData._get_Indian_Wolf_Image_Path())
-    var texture = ImageTexture.create_from_image(image)
-    indianwolfimage.set_texture_normal(texture)
+	var image = Image.load_from_file(WolfData._get_Indian_Wolf_Image_Path())
+	var texture = ImageTexture.create_from_image(image)
+	indianwolfimage.set_texture_normal(texture)
 
 func _indian_wolf_name():
-    indianwolflabel.set_text(WolfData._get_Indian_Wolf_Name())
+	indianwolflabel.set_text(WolfData._get_Indian_Wolf_Name())
 #######################################################################
 
 """Into Wolf Almanac Book"""
@@ -77,142 +76,190 @@ func _indian_wolf_name():
 #Hudson Bay Wolf
 func _on_hudson_bay_wolf_image_pressed():
 	#Image
-    almanac.setter_Wolf_Image(WolfData._get_Hudson_Bay_Wolf_Image_Path())
+	almanac.setter_Wolf_Image(WolfData._get_Hudson_Bay_Wolf_Image_Path())
 	#Name
-    almanac.setter_Wolf_Name(WolfData._get_Hudson_Bay_Wolf_Name())
+	almanac.setter_Wolf_Name(WolfData._get_Hudson_Bay_Wolf_Name())
 	#Species
-    almanac.setter_Wolf_Species(WolfData._get_Hudson_Bay_Wolf_Species())
+	almanac.setter_Wolf_Species(WolfData._get_Hudson_Bay_Wolf_Species())
 	#Height
-    almanac.setter_Wolf_Height(WolfData._get_Hudson_Bay_Wolf_Height())
+	almanac.setter_Wolf_Height(WolfData._get_Hudson_Bay_Wolf_Height())
 	#Weight
-    almanac.setter_Wolf_Weight(WolfData._get_Hudson_Bay_Wolf_Weight())
+	almanac.setter_Wolf_Weight(WolfData._get_Hudson_Bay_Wolf_Weight())
 	#Lenght
-    almanac.setter_Wolf_Lenght(WolfData._get_Hudson_Bay_Wolf_Lenght())
+	almanac.setter_Wolf_Lenght(WolfData._get_Hudson_Bay_Wolf_Lenght())
 	#Conservation Status
-    almanac.setter_Wolf_Conservation_Status(WolfData._get_Hudson_Bay_Wolf_Conservation_Status())
+	almanac.setter_Wolf_Conservation_Status(WolfData._get_Hudson_Bay_Wolf_Conservation_Status())
 	#Region
-    almanac.setter_Wolf_Region(WolfData._get_Hudson_Bay_Wolf_Location())
+	almanac.setter_Wolf_Region(WolfData._get_Hudson_Bay_Wolf_Location())
 	#Morphology
-    almanac.setter_Wolf_Morphology(WolfData._get_Hudson_Bay_Wolf_Morphology())
+	almanac.setter_Wolf_Morphology(WolfData._get_Hudson_Bay_Wolf_Morphology())
 	#Diets
-    almanac.setter_Wolf_Diets(WolfData._get_Hudson_Bay_Wolf_Diets())
-    buttonsound.play()
-    get_tree().change_scene_to_packed(book_almanac13)
-    get_tree().root.add_child(book_almanac13)
+	almanac.setter_Wolf_Diets(WolfData._get_Hudson_Bay_Wolf_Diets())
+	buttonsound.play()
+	get_tree().change_scene_to_packed(hudson_bay_wolf_alamanac)
+	get_tree().root.add_child(hudson_bay_wolf_alamanac)
+	
 
-func _on_hudson_bay_wolf_pressed():
+func _on_hudson_bay_wolf_label_pressed():
 	#Image
-    almanac.setter_Wolf_Image(WolfData._get_Hudson_Bay_Wolf_Image_Path())
+	almanac.setter_Wolf_Image(WolfData._get_Hudson_Bay_Wolf_Image_Path())
 	#Name
-    almanac.setter_Wolf_Name(WolfData._get_Hudson_Bay_Wolf_Name())
+	almanac.setter_Wolf_Name(WolfData._get_Hudson_Bay_Wolf_Name())
 	#Species
-    almanac.setter_Wolf_Species(WolfData._get_Hudson_Bay_Wolf_Species())
+	almanac.setter_Wolf_Species(WolfData._get_Hudson_Bay_Wolf_Species())
 	#Height
-    almanac.setter_Wolf_Height(WolfData._get_Hudson_Bay_Wolf_Height())
+	almanac.setter_Wolf_Height(WolfData._get_Hudson_Bay_Wolf_Height())
 	#Weight
-    almanac.setter_Wolf_Weight(WolfData._get_Hudson_Bay_Wolf_Weight())
+	almanac.setter_Wolf_Weight(WolfData._get_Hudson_Bay_Wolf_Weight())
 	#Lenght
-    almanac.setter_Wolf_Lenght(WolfData._get_Hudson_Bay_Wolf_Lenght())
+	almanac.setter_Wolf_Lenght(WolfData._get_Hudson_Bay_Wolf_Lenght())
 	#Conservation Status
-    almanac.setter_Wolf_Conservation_Status(WolfData._get_Hudson_Bay_Wolf_Conservation_Status())
+	almanac.setter_Wolf_Conservation_Status(WolfData._get_Hudson_Bay_Wolf_Conservation_Status())
 	#Region
-    almanac.setter_Wolf_Region(WolfData._get_Hudson_Bay_Wolf_Location())
+	almanac.setter_Wolf_Region(WolfData._get_Hudson_Bay_Wolf_Location())
 	#Morphology
-    almanac.setter_Wolf_Morphology(WolfData._get_Hudson_Bay_Wolf_Morphology())
+	almanac.setter_Wolf_Morphology(WolfData._get_Hudson_Bay_Wolf_Morphology())
 	#Diets
-    almanac.setter_Wolf_Diets(WolfData._get_Hudson_Bay_Wolf_Diets())
-    buttonsound.play()
-    get_tree().change_scene_to_packed(hudson_bay_wolf_alamanac)
-    get_tree().root.add_child(hudson_bay_wolf_alamanac)
+	almanac.setter_Wolf_Diets(WolfData._get_Hudson_Bay_Wolf_Diets())
+	buttonsound.play()
+	get_tree().change_scene_to_packed(book_almanac13)
+	get_tree().root.add_child(book_almanac13)
 ############################################################################
 #14
 #Iberian Wolf
 func _on_Iberian_wolf_image_pressed():
 	#Image
-    almanac.setter_Wolf_Image(WolfData._get_Iberian_Wolf_Image_Path())
+	almanac.setter_Wolf_Image(WolfData._get_Iberian_Wolf_Image_Path())
 	#Name
-    almanac.setter_Wolf_Name(WolfData._get_Iberian_Wolf_Name())
+	almanac.setter_Wolf_Name(WolfData._get_Iberian_Wolf_Name())
 	#Species
-    almanac.setter_Wolf_Species(WolfData._get_Iberian_Wolf_Species())
+	almanac.setter_Wolf_Species(WolfData._get_Iberian_Wolf_Species())
 	#Height
-    almanac.setter_Wolf_Height(WolfData._get_Iberian_Wolf_Height())
+	almanac.setter_Wolf_Height(WolfData._get_Iberian_Wolf_Height())
 	#Weight
-    almanac.setter_Wolf_Weight(WolfData._get_Iberian_Wolf_Weight())
+	almanac.setter_Wolf_Weight(WolfData._get_Iberian_Wolf_Weight())
 	#Lenght
-    almanac.setter_Wolf_Lenght(WolfData._get_Iberian_Wolf_Lenght())
+	almanac.setter_Wolf_Lenght(WolfData._get_Iberian_Wolf_Lenght())
 	#Conservation Status
-    almanac.setter_Wolf_Conservation_Status(WolfData._get_Iberian_Wolf_Conservation_Status())
+	almanac.setter_Wolf_Conservation_Status(WolfData._get_Iberian_Wolf_Conservation_Status())
 	#Region
-    almanac.setter_Wolf_Region(WolfData._get_Iberian_Wolf_Location())
+	almanac.setter_Wolf_Region(WolfData._get_Iberian_Wolf_Location())
 	#Morphology
-    almanac.setter_Wolf_Morphology(WolfData._get_Iberian_Wolf_Morphology())
+	almanac.setter_Wolf_Morphology(WolfData._get_Iberian_Wolf_Morphology())
 	#Diets
-    almanac.setter_Wolf_Diets(WolfData._get_Iberian_Wolf_Diets())
-    buttonsound.play()
-    get_tree().change_scene_to_packed(book_almanac14)
-    get_tree().root.add_child(book_almanac14)
+	almanac.setter_Wolf_Diets(WolfData._get_Iberian_Wolf_Diets())
+	buttonsound.play()
+	get_tree().change_scene_to_packed(iberian_wolf_alamanac)
+	get_tree().root.add_child(iberian_wolf_alamanac)
 
 func _on_Iberian_wolf_label_pressed():
 	#Image
-    almanac.setter_Wolf_Image(WolfData._get_Iberian_Wolf_Image_Path())
+	almanac.setter_Wolf_Image(WolfData._get_Iberian_Wolf_Image_Path())
 	#Name
-    almanac.setter_Wolf_Name(WolfData._get_Iberian_Wolf_Name())
+	almanac.setter_Wolf_Name(WolfData._get_Iberian_Wolf_Name())
 	#Species
-    almanac.setter_Wolf_Species(WolfData._get_Iberian_Wolf_Species())
+	almanac.setter_Wolf_Species(WolfData._get_Iberian_Wolf_Species())
 	#Height
-    almanac.setter_Wolf_Height(WolfData._get_Iberian_Wolf_Height())
+	almanac.setter_Wolf_Height(WolfData._get_Iberian_Wolf_Height())
 	#Weight
-    almanac.setter_Wolf_Weight(WolfData._get_Iberian_Wolf_Weight())
+	almanac.setter_Wolf_Weight(WolfData._get_Iberian_Wolf_Weight())
 	#Lenght
-    almanac.setter_Wolf_Lenght(WolfData._get_Iberian_Wolf_Lenght())
+	almanac.setter_Wolf_Lenght(WolfData._get_Iberian_Wolf_Lenght())
 	#Conservation Status
-    almanac.setter_Wolf_Conservation_Status(WolfData._get_Iberian_Wolf_Conservation_Status())
+	almanac.setter_Wolf_Conservation_Status(WolfData._get_Iberian_Wolf_Conservation_Status())
 	#Region
-    almanac.setter_Wolf_Region(WolfData._get_Iberian_Wolf_Location())
+	almanac.setter_Wolf_Region(WolfData._get_Iberian_Wolf_Location())
 	#Morphology
-    almanac.setter_Wolf_Morphology(WolfData._get_Iberian_Wolf_Morphology())
+	almanac.setter_Wolf_Morphology(WolfData._get_Iberian_Wolf_Morphology())
 	#Diets
-    almanac.setter_Wolf_Diets(WolfData._get_Iberian_Wolf_Diets())
-    buttonsound.play()
-    get_tree().change_scene_to_packed(book_almanac14)
-    get_tree().root.add_child(book_almanac14)
+	almanac.setter_Wolf_Diets(WolfData._get_Iberian_Wolf_Diets())
+	buttonsound.play()
+	get_tree().change_scene_to_packed(book_almanac14)
+	get_tree().root.add_child(book_almanac14)
 ############################################################################
 #15
 #Indian Wolf
-func _on_indian_wolf_pressed():
+func _on_indian_wolf_Image_pressed():
 	#Image
-    almanac.setter_Wolf_Image(WolfData._get_Indian_Wolf_Image_Path())
+	almanac.setter_Wolf_Image(WolfData._get_Indian_Wolf_Image_Path())
 	#Name
-    almanac.setter_Wolf_Name(WolfData._get_Indian_Wolf_Name())
+	almanac.setter_Wolf_Name(WolfData._get_Indian_Wolf_Name())
 	#Species
-    almanac.setter_Wolf_Species(WolfData._get_Indian_Wolf_Species())
+	almanac.setter_Wolf_Species(WolfData._get_Indian_Wolf_Species())
 	#Height
-    almanac.setter_Wolf_Height(WolfData._get_Indian_Wolf_Height())
+	almanac.setter_Wolf_Height(WolfData._get_Indian_Wolf_Height())
 	#Weight
-    almanac.setter_Wolf_Weight(WolfData._get_Indian_Wolf_Weight())
+	almanac.setter_Wolf_Weight(WolfData._get_Indian_Wolf_Weight())
 	#Lenght
-    almanac.setter_Wolf_Lenght(WolfData._get_Indian_Wolf_Lenght())
+	almanac.setter_Wolf_Lenght(WolfData._get_Indian_Wolf_Lenght())
 	#Conservation Status
-    almanac.setter_Wolf_Conservation_Status(WolfData._get_Indian_Wolf_Conservation_Status())
+	almanac.setter_Wolf_Conservation_Status(WolfData._get_Indian_Wolf_Conservation_Status())
 	#Region
-    almanac.setter_Wolf_Region(WolfData._get_Indian_Wolf_Location())
+	almanac.setter_Wolf_Region(WolfData._get_Indian_Wolf_Location())
 	#Morphology
-    almanac.setter_Wolf_Morphology(WolfData._get_Indian_Wolf_Morphology())
+	almanac.setter_Wolf_Morphology(WolfData._get_Indian_Wolf_Morphology())
 	#Diets
-    almanac.setter_Wolf_Diets(WolfData._get_Indian_Wolf_Diets())
-    buttonsound.play()
-    get_tree().change_scene_to_packed(book_almanac15)
-    get_tree().root.add_child(book_almanac15)
+	almanac.setter_Wolf_Diets(WolfData._get_Indian_Wolf_Diets())
+	buttonsound.play()
+	get_tree().change_scene_to_packed(indian_wolf_alamanac)
+	get_tree().root.add_child(indian_wolf_alamanac)
+	
+func _on_indian_wolf_Label_pressed():
+	#Image
+	almanac.setter_Wolf_Image(WolfData._get_Indian_Wolf_Image_Path())
+	#Name
+	almanac.setter_Wolf_Name(WolfData._get_Indian_Wolf_Name())
+	#Species
+	almanac.setter_Wolf_Species(WolfData._get_Indian_Wolf_Species())
+	#Height
+	almanac.setter_Wolf_Height(WolfData._get_Indian_Wolf_Height())
+	#Weight
+	almanac.setter_Wolf_Weight(WolfData._get_Indian_Wolf_Weight())
+	#Lenght
+	almanac.setter_Wolf_Lenght(WolfData._get_Indian_Wolf_Lenght())
+	#Conservation Status
+	almanac.setter_Wolf_Conservation_Status(WolfData._get_Indian_Wolf_Conservation_Status())
+	#Region
+	almanac.setter_Wolf_Region(WolfData._get_Indian_Wolf_Location())
+	#Morphology
+	almanac.setter_Wolf_Morphology(WolfData._get_Indian_Wolf_Morphology())
+	#Diets
+	almanac.setter_Wolf_Diets(WolfData._get_Indian_Wolf_Diets())
+	buttonsound.play()
+	get_tree().change_scene_to_packed(book_almanac15)
+	get_tree().root.add_child(book_almanac15)
 ############################################################################
 
-
 func _ready():
-    #Hudson Bay Wolf
-    _hudson_bay_wolf_image()
-    _hudson_bay_wolf_name()
-    #Iberian Wolf
-    _iberian_wolf_image()
-    _iberian_wolf_name()
-    #Indian Wolf
-    _indian_wolf_image()
-    _indian_wolf_name()
+	if WolfData._get_Hudsom_Bay_Wolf_Rescue_Status() == false:
+		hudsonbaywolfimage.disabled = true
+		hudsonbaywolflabel.disabled = true
+		hudsonbaywolflabel.set_text("Wolf Label")
+	else:
+		#Hudson Bay Wolf
+		hudsonbaywolfimage.disabled = false
+		hudsonbaywolflabel.disabled = false
+		_hudson_bay_wolf_image()
+		_hudson_bay_wolf_name()
+	
+	if WolfData._get_Iberian_Wolf_Rescue_Status() == false:
+		iberianwolfimage.disabled = true
+		iberianwolflabel.disabled = true
+		iberianwolflabel.set_text("Wolf Label")
+	else:
+		#Iberian Wolf
+		iberianwolfimage.disabled = false
+		iberianwolflabel.disabled = false
+		_iberian_wolf_image()
+		_iberian_wolf_name()
+	
+	if WolfData._get_Indian_Wolf_Rescue_Status()==false:
+		indianwolfimage.disabled = true
+		indianwolflabel.disabled = true
+		indianwolflabel.set_text("Wolf Label")
+	else :
+		#Indian Wolf
+		indianwolfimage.disabled = false
+		indianwolflabel.disabled = false
+		_indian_wolf_image()
+		_indian_wolf_name()

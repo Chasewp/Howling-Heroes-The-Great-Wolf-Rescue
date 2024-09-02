@@ -1,6 +1,6 @@
 [gd_resource type="Theme" load_steps=2 format=3 uid="uid://br2uoqpi38ygc"]
 
-[ext_resource type="FontFile" uid="uid://b1bqdo4jtrst1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="1_20jv5"]
+[ext_resource type="FontFile" uid="uid://c2xxg2yydtlpl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="1_20jv5"]
 
 [resource]
 default_font = ExtResource("1_20jv5")
