@@ -6,6 +6,5 @@ extends Control
 func _ready():
 	Bye.play()
 
-
 func _on_bye_finished():
 	get_tree().quit()

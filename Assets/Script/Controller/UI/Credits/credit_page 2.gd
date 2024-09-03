@@ -13,6 +13,5 @@ func _on_back_page_1_pressed():
 	await get_tree().create_timer(3).timeout
 	get_tree().change_scene_to_file("res://Assets/Scences/UI/Credits/credit_1.tscn")
 
-
 func _on_next_page_3_pressed():
 	pass # Replace with function body.

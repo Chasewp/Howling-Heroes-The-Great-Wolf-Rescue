@@ -19,7 +19,6 @@ extends Node2D
 @onready var arabianwolflabel = $"Background/Almanac Index/WolfVBoxContainer3/Label_Wolf_3"
 
 """Inisiate Page"""
-var indexpage2 = preload("res://Assets/Scences/UI/Wolf_Almanac/Index/Page 2/Wolf_Alamac_Index_Page_2.tscn").instantiate()
 var book_almanac1 = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Main/wolf_almanac.tscn").instantiate()
 var book_almanac2 = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Main/wolf_almanac.tscn").instantiate()
 var book_almanac3 = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Main/wolf_almanac.tscn").instantiate()
@@ -30,11 +29,10 @@ var arabian_wolf_almanac = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Ar
 @onready var buttonsound = $Button_Click
 
 """Next Button"""
-#Next Button Page 2
-func _on_next_pressed():
+#Back Button Index
+func _on_back_pressed():
 	buttonsound.play()
-	get_tree().change_scene_to_packed(indexpage2)
-	get_tree().root.add_child(indexpage2)
+	get_parent().remove_child(self)
 	
 """Wolves Data"""
 #Alaskan Tundra Wolf
@@ -225,11 +223,7 @@ func _on_arabian_wolf_pressed_Label():
 	get_tree().root.add_child(book_almanac3)
 	
 ############################################################################   
-#Next Page 2
-func _on_next_button_page_2_pressed():
-	buttonsound.play()
-	get_tree().change_scene_to_packed(indexpage2)
-	get_tree().root.add_child(indexpage2)
+
 	
 func _ready():
 	if WolfData._get_Alaskan_Tundra_Wolf_Rescue_Status() == false :

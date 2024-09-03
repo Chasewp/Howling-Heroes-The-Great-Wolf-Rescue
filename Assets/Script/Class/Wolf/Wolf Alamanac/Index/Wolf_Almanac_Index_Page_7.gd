@@ -19,7 +19,6 @@ extends Node2D
 @onready var mongolianwolflabel = $"Background/Almanac Index/WolfVBoxContainer21/Label_Wolf_21"
 
 """Inisiate Page"""
-var indexpage8 = preload("res://Assets/Scences/UI/Wolf_Almanac/Index/Page 8/Wolf_Alamac_Index_Page_8.tscn").instantiate()
 var book_almanac19 = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Main/wolf_almanac.tscn").instantiate()
 var book_Almanac20 = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Main/wolf_almanac.tscn").instantiate()
 var book_almanac21 = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Main/wolf_almanac.tscn").instantiate()
@@ -30,14 +29,9 @@ var mongolian_wolf_almanac = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/
 #Button Click Sound
 @onready var buttonsound = $Button_Click
 
-"""Next Button"""
-func _on_next_page_8_button_pressed():
-	buttonsound.play()
-	get_tree().change_scene_to_packed(indexpage8)
-	get_tree().root.add_child(indexpage8)
-	
+
 """Back Button"""
-func _on_back_page_6_button_pressed():
+func _on_back_button_pressed():
 	buttonsound.play()
 	get_parent().remove_child(self)
 

@@ -1,24 +1,24 @@
 [gd_scene load_steps=11 format=3 uid="uid://bo8ky70qah4nu"]
 
-[ext_resource type="Script" path="res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Index_Page_1.gd" id="1_deilf"]
-[ext_resource type="Texture2D" uid="uid://c8vpwhgqrvpou" path="res://Assets/Image/images/Background/Wolf Almanac Index/Wood Texture.png" id="2_g8cnl"]
-[ext_resource type="FontFile" uid="uid://djx6ba5h1a3qs" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="3_ox33l"]
-[ext_resource type="Texture2D" uid="uid://rydxjf2k4x0c" path="res://Assets/Image/Buttons/Button.png" id="4_6o2fi"]
-[ext_resource type="Texture2D" uid="uid://ceov1ogbf4c2w" path="res://Assets/Scences/UI/Lock_Button/Lock_buttons.tres" id="4_350gy"]
-[ext_resource type="Theme" uid="uid://dk2f873t2ffc2" path="res://Assets/Theme/Wolf_Almanac_Idex/Button.tres" id="4_b1vws"]
-[ext_resource type="FontFile" uid="uid://cnhshuaxal67w" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="6_0cquw"]
-[ext_resource type="AudioStream" uid="uid://c0lhrui6o2e72" path="res://Assets/Music/All Button/Button.mp3" id="7_wp7kp"]
+[ext_resource type="Script" path="res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Index_Page_1.gd" id="1_ulxue"]
+[ext_resource type="Texture2D" uid="uid://c8vpwhgqrvpou" path="res://Assets/Image/images/Background/Wolf Almanac Index/Wood Texture.png" id="2_ygj5s"]
+[ext_resource type="FontFile" uid="uid://djx6ba5h1a3qs" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="3_curut"]
+[ext_resource type="Texture2D" uid="uid://rydxjf2k4x0c" path="res://Assets/Image/Buttons/Button.png" id="4_57avl"]
+[ext_resource type="Theme" uid="uid://dk2f873t2ffc2" path="res://Assets/Theme/Wolf_Almanac_Idex/Button.tres" id="5_li3ld"]
+[ext_resource type="Texture2D" uid="uid://ceov1ogbf4c2w" path="res://Assets/Scences/UI/Lock_Button/Lock_buttons.tres" id="6_l3en4"]
+[ext_resource type="FontFile" uid="uid://cnhshuaxal67w" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="7_g30er"]
+[ext_resource type="AudioStream" uid="uid://c0lhrui6o2e72" path="res://Assets/Music/All Button/Button.mp3" id="8_bbj54"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_r03rc"]
-atlas = ExtResource("4_6o2fi")
+atlas = ExtResource("4_57avl")
 region = Rect2(1389, 668, 182, 189)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sgmu4"]
-atlas = ExtResource("4_6o2fi")
+atlas = ExtResource("4_57avl")
 region = Rect2(1389, 668, 182, 189)
 
 [node name="WolfAlamacIndexPage1" type="Node2D"]
-script = ExtResource("1_deilf")
+script = ExtResource("1_ulxue")
 
 [node name="Background" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(1280, 720)
@@ -29,7 +29,7 @@ offset_right = 1280.0
 offset_bottom = 720.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_g8cnl")
+texture = ExtResource("2_ygj5s")
 expand_mode = 1
 metadata/_edit_lock_ = true
 
@@ -52,7 +52,7 @@ theme_override_colors/font_outline_color = Color(0.976471, 0.592157, 0.415686, 1
 theme_override_constants/shadow_offset_x = 10
 theme_override_constants/shadow_offset_y = 5
 theme_override_constants/outline_size = 9
-theme_override_fonts/font = ExtResource("3_ox33l")
+theme_override_fonts/font = ExtResource("3_curut")
 theme_override_font_sizes/font_size = 44
 text = "Wolf Species List
 "
@@ -84,7 +84,7 @@ stretch_mode = 0
 
 [node name="Label_Wolf_1" type="Button" parent="Background/Almanac Index/WolfVBoxContainer1"]
 layout_mode = 2
-theme = ExtResource("4_b1vws")
+theme = ExtResource("5_li3ld")
 text = "Wolf Label"
 flat = true
 
@@ -94,13 +94,13 @@ layout_mode = 2
 [node name="Wolf 2" type="TextureButton" parent="Background/Almanac Index/WolfVBoxContainer2"]
 custom_minimum_size = Vector2(385, 555)
 layout_mode = 2
-texture_disabled = ExtResource("4_350gy")
+texture_disabled = ExtResource("6_l3en4")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Label_Wolf_2" type="Button" parent="Background/Almanac Index/WolfVBoxContainer2"]
 layout_mode = 2
-theme = ExtResource("4_b1vws")
+theme = ExtResource("5_li3ld")
 text = "Wolf Label"
 flat = true
 
@@ -116,25 +116,25 @@ stretch_mode = 0
 
 [node name="Label_Wolf_3" type="Button" parent="Background/Almanac Index/WolfVBoxContainer3"]
 layout_mode = 2
-theme = ExtResource("4_b1vws")
+theme = ExtResource("5_li3ld")
 text = "Wolf Label"
 flat = true
 
-[node name="Next" type="Button" parent="Background"]
+[node name="Back" type="Button" parent="Background"]
 custom_minimum_size = Vector2(54, 32)
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.927
+anchor_left = 0.051
 anchor_top = 0.886
-anchor_right = 0.97
+anchor_right = 0.094
 anchor_bottom = 0.931
-offset_left = 0.440063
+offset_left = -0.280006
 offset_top = 0.0800171
-offset_right = -0.600098
-offset_bottom = -0.320007
-theme_override_fonts/font = ExtResource("6_0cquw")
+offset_right = -0.320007
+offset_bottom = -0.320068
+theme_override_fonts/font = ExtResource("7_g30er")
 theme_override_font_sizes/font_size = 24
-text = "Next"
+text = "Back"
 flat = true
 
 [node name="Page Label" type="Label" parent="Background"]
@@ -150,12 +150,12 @@ offset_right = 105.02
 offset_bottom = 24.28
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_fonts/font = ExtResource("6_0cquw")
+theme_override_fonts/font = ExtResource("7_g30er")
 theme_override_font_sizes/font_size = 24
 text = "Page 1 of 9"
 
 [node name="Button_Click" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("7_wp7kp")
+stream = ExtResource("8_bbj54")
 
 [connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer1/Wolf 1" to="." method="_on_alaskan_tundra_wolf_pressed_Image"]
 [connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer1/Label_Wolf_1" to="." method="_on_alaskan_tundra_wolf_pressed_Label"]
@@ -163,4 +163,4 @@ stream = ExtResource("7_wp7kp")
 [connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer2/Label_Wolf_2" to="." method="_on_alexander_archipelago_wolf_pressed_Label"]
 [connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer3/Wolf 3" to="." method="_on_arabian_wolf_pressed_Image"]
 [connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer3/Label_Wolf_3" to="." method="_on_arabian_wolf_pressed_Label"]
-[connection signal="pressed" from="Background/Next" to="." method="_on_next_pressed"]
+[connection signal="pressed" from="Background/Back" to="." method="_on_back_pressed"]

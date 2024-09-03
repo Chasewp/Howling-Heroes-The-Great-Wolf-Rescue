@@ -1,3 +1,8 @@
+res://Assets/Script/Class/Wolf/Wolf Alamanac/Menu
+res://Assets/Scences/UI/Wolf_Almanac/Main_Menu
+res://Assets/Script/Controller/UI/Inventory
+res://Assets/Script/Controller/UI/Credits
+res://Assets/Script/Controller/UI/Player_Input
 res://Assets/Music/All Button
 res://Assets/Script/Class/Wolf/Wolf Alamanac/Index
 res://Assets/Scences/UI/Wolf_Almanac/Index/Page 1
@@ -15,8 +20,3 @@ res://Assets/Scences/UI/drop_handler
 res://Assets/Music/Start_Buton_Sound
 res://Assets/Image/images/Background/Wolf Almanac Index
 res://Assets/Theme/Wolf_Almanac_Idex
-res://Assets/Scences/UI/Wolf_Almanac/Index
-res://Assets/Image/Character/Player/templerun
-res://Assets/Script/Class/Player
-res://Assets/Scences/Biome/Bridge_Stone_Forest
-res://Assets/Script/Controller/UI/Location/Biome_Exit

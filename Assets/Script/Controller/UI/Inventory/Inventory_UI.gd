@@ -1,10 +1,15 @@
-class_name Inventory
+class_name Inventory_Player_Item
 extends Control
+
+signal opened
+signal closed
 
 #Varibles class
 @export var nameItem : String : set = setter_name_items, get = getter_name_items
 @export var descriptions : String : set=setter_descriptions_items, get = getter_name_items
 @export var quantity : int : set = setter_quantity_items, get = getter_quantity_items
+var _isOpen : bool = false
+
 
 #Setter name Item
 func setter_name_items(itms):
@@ -29,5 +34,16 @@ func getter_descriptions_items():
 #Getter quantity 
 func getter_quantity_items():
 	return quantity
+
+func open():
+	self.visible = true
+	_isOpen = true
+	opened.emit()
+	
+func close() :
+	self.visible = false
+	_isOpen = false
+	closed.emit()
+
 
 

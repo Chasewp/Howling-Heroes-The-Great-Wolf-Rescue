@@ -116,7 +116,7 @@ theme = ExtResource("4_hc01o")
 text = "Wolf Label"
 flat = true
 
-[node name="Back Button Page 7" type="Button" parent="Background"]
+[node name="Back Button" type="Button" parent="Background"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.051
@@ -131,22 +131,6 @@ theme_override_fonts/font = ExtResource("3_ehq0v")
 theme_override_font_sizes/font_size = 24
 text = "Back
 "
-flat = true
-
-[node name="Next Buttton Page 9" type="Button" parent="Background"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.927
-anchor_top = 0.886
-anchor_right = 0.97
-anchor_bottom = 0.931
-offset_left = 0.439941
-offset_top = 0.0799561
-offset_right = -0.600098
-offset_bottom = -0.320068
-theme_override_fonts/font = ExtResource("3_ehq0v")
-theme_override_font_sizes/font_size = 24
-text = "Next"
 flat = true
 
 [node name="Page Label" type="Label" parent="Background"]
@@ -175,5 +159,4 @@ stream = ExtResource("5_j11wy")
 [connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer23/Label_Wolf_23" to="." method="_on_northwestern_wolf_label_pressed"]
 [connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer24/Wolf 24" to="." method="_on_red_wolf_image_pressed"]
 [connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer24/Label_Wolf_24" to="." method="_on_red_wolf__label_pressed"]
-[connection signal="pressed" from="Background/Back Button Page 7" to="." method="_on_back_page_7_button_pressed"]
-[connection signal="pressed" from="Background/Next Buttton Page 9" to="." method="_on_next_page_9_button_pressed"]
+[connection signal="pressed" from="Background/Back Button" to="." method="_on_back_button_pressed"]

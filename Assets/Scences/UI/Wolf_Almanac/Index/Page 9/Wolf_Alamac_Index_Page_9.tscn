@@ -113,7 +113,7 @@ theme = ExtResource("4_p66ip")
 text = "Wolf Label"
 flat = true
 
-[node name="Back Button Page 8" type="Button" parent="Background"]
+[node name="Back Button" type="Button" parent="Background"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.051
@@ -156,4 +156,4 @@ stream = ExtResource("5_2r1e5")
 [connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer26/Label_Wolf_26" to="." method="_on_tundra_wolf_label_pressed"]
 [connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer27/Wolf 27" to="." method="_on_vancouver_coastal_island_wolf_image_pressed"]
 [connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer27/Label_Wolf_27" to="." method="_on_vancouver_coastal_island_wolf_label_pressed"]
-[connection signal="pressed" from="Background/Back Button Page 8" to="." method="_on_back_page_8_button_pressed"]
+[connection signal="pressed" from="Background/Back Button" to="." method="_on_back_button_pressed"]

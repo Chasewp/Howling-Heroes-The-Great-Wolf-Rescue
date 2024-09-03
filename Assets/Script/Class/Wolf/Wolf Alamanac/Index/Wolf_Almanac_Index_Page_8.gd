@@ -21,7 +21,6 @@ extends Node2D
 @onready var buttonsound = $Button_Click
 
 """Instantiate Scence"""
-var indexpage9 = preload("res://Assets/Scences/UI/Wolf_Almanac/Index/Page 9/Wolf_Alamac_Index_Page_9.tscn").instantiate()
 var book_almanac22  = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Main/wolf_almanac.tscn").instantiate()
 var book_Almanac23  = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Main/wolf_almanac.tscn").instantiate()
 var book_Almanac24 = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Main/wolf_almanac.tscn").instantiate()
@@ -29,14 +28,9 @@ var northern_rocky_mountain_wolf_almanac = preload("res://Assets/Scences/UI/Wolf
 var northwestern_wolf_almanac = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Northwestern Wolf/northwestern_wolf_almanac.tscn").instantiate()
 var red_wolf_almanac =preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Red Wolf/red_wolf_almanac.tscn").instantiate()
 
-"""Next Button"""
-func _on_next_page_9_button_pressed():
-	buttonsound.play()
-	get_tree().change_scene_to_packed(indexpage9)
-	get_tree().root.add_child(indexpage9)
 
 """Back Button"""
-func _on_back_page_7_button_pressed():
+func _on_back_button_pressed():
 	buttonsound.play()
 	get_parent().remove_child(self)
 

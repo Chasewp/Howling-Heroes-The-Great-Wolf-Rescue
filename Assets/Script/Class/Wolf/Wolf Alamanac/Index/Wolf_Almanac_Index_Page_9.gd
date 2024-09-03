@@ -31,7 +31,7 @@ var vancouver_coastal_island_wolf_almanac = preload("res://Assets/Scences/UI/Wol
 
 
 """Back Button"""
-func _on_back_page_8_button_pressed():
+func _on_back_button_pressed():
 	buttonsound.play()
 	get_parent().remove_child(self)
 

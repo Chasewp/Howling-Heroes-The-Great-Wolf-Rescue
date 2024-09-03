@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://duapb0cjxsh0d"]
 
-[ext_resource type="Texture2D" uid="uid://c7y3elqthsoxx" path="res://Assets/Image/images/Background/Bridge Stone Forest/pixel_art_A_breathtaking_scene.jpeg" id="1_qapo8"]
+[ext_resource type="Texture2D" uid="uid://c8kbkyytjnr0c" path="res://Assets/Image/images/Background/Bridge Stone Forest/pixel_art_A_breathtaking_scene.jpeg" id="1_qapo8"]
 
 [node name="Taiga Background" type="Node2D"]
 

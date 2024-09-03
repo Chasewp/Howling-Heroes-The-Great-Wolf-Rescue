@@ -22,7 +22,6 @@ extends Node2D
 
 
 """Inisiate Page"""
-var indexpage5 = preload("res://Assets/Scences/UI/Wolf_Almanac/Index/Page 5/Wolf_Alamac_Index_Page_5.tscn").instantiate()
 var book_almanac10 = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Main/wolf_almanac.tscn").instantiate()
 var book_almanac11 = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Main/wolf_almanac.tscn").instantiate()
 var book_almanac12 = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Main/wolf_almanac.tscn").instantiate()
@@ -34,14 +33,8 @@ var himalayan_wolf_alamanac = preload("res://Assets/Scences/UI/Wolf_Almanac/Book
 #Button Click Sound
 @onready var buttonsound = $Button_Click
 
-"""Next Button"""
-func _on_next_page_5_button_pressed():
-	buttonsound.play()
-	get_tree().change_scene_to_packed(indexpage5)
-	get_tree().root.add_child(indexpage5)
-
 """Back Button"""
-func _on_back_page_3_button_pressed():
+func _on_back_button_pressed():
 	buttonsound.play()
 	get_parent().remove_child(self)
 	

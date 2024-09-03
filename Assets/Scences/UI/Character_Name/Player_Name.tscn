@@ -1,38 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://c5oh08utk31s2"]
 
-[ext_resource type="FontFile" uid="uid://cx2jakxqhnvbt" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="1_vi86i"]
+[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Player_Input/Player_Name.gd" id="1_fygib"]
+[ext_resource type="FontFile" uid="uid://djx6ba5h1a3qs" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="1_vi86i"]
 [ext_resource type="Theme" uid="uid://cya18eaoptu42" path="res://Assets/Theme/Player_Name/Player_Name.tres" id="2_jj1ar"]
-[ext_resource type="Texture2D" uid="uid://bkhp7l8dodony" path="res://Assets/Image/images/Background/Character Selector/wolf-den-cave-taiga-forest 800x 600.png" id="3_prlmh"]
-[ext_resource type="FontFile" uid="uid://b1bqdo4jtrst1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="4_ru70u"]
-
-[sub_resource type="GDScript" id="GDScript_36vk4"]
-script/source = "extends Control
-
-# Called when the node enters the scene tree for the first time.
-@onready var name_player = $Player_Name
-@onready var infochar = $info_char
-
-var number_text
-
-func _ready():
-	name_player.grab_focus()
-	#set_caret_collom(len(name_player.text))
-	
-func _process(delta):
-	number_text = str(name_player.get_text()).length()
-	infochar.set_text(str(number_text) + \" / 32\")
-	#Hide Cursor 
-	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
-
-func _on_player_name_text_submitted(new_text):
-	player.setter_name(new_text)
-	player.setter_location(\"Taiga\")
-	player.setter_armor(100)
-	player.setter_health(100)
-	#SaveLoadSlot.auto_save()
-	get_tree().change_scene_to_file(\"res://Assets/Scences/Biome/Bridge_Stone_Forest/Bridge_Stone_Forest.tscn\")
-	
-"
+[ext_resource type="Texture2D" uid="uid://8cji605iuosj" path="res://Assets/Image/images/Background/Character Selector/wolf-den-cave-taiga-forest 800x 600.png" id="3_prlmh"]
+[ext_resource type="FontFile" uid="uid://fpssaux4ispl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="4_ru70u"]
 
 [node name="PlayerName" type="Control"]
 layout_mode = 3
@@ -41,7 +13,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = SubResource("GDScript_36vk4")
+script = ExtResource("1_fygib")
 metadata/_edit_lock_ = true
 
 [node name="TextureRect" type="TextureRect" parent="."]

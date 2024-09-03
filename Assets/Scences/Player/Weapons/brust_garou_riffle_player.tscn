@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://c8it7bbd20xdf"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/Weapons/brust_garou_riffle_player.gd" id="1_fipu5"]
-[ext_resource type="Texture2D" uid="uid://bseh2y7kgxymo" path="res://Assets/Image/Weapon/Player/Brust Garou.png" id="1_okxly"]
+[ext_resource type="Texture2D" uid="uid://c2ev3dontnqow" path="res://Assets/Image/Weapon/Player/Brust Garou.png" id="1_okxly"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_2ykg5"]
 
@@ -10,6 +10,11 @@ size = Vector2(91, 40)
 
 [node name="Brust Garou-Riffle-Player" type="RigidBody2D"]
 physics_material_override = SubResource("PhysicsMaterial_2ykg5")
+lock_rotation = true
+freeze = true
+freeze_mode = 1
+max_contacts_reported = 2
+contact_monitor = true
 script = ExtResource("1_fipu5")
 
 [node name="BrustGarou" type="Sprite2D" parent="."]

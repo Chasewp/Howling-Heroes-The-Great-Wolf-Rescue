@@ -1,13 +1,13 @@
 [gd_scene load_steps=13 format=3 uid="uid://bvh6ow5o6m517"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Credits/credit_page 2.gd" id="1_vxyj8"]
-[ext_resource type="Texture2D" uid="uid://c4s6cr4on7oln" path="res://Assets/Image/images/Credits/pixel_art_A_breathtaking_view_ (2).jpeg" id="2_0uvcw"]
-[ext_resource type="FontFile" uid="uid://74m415i5q2nb" path="res://Assets/Fonts/Wolf Moon.ttf" id="3_4lloh"]
+[ext_resource type="Texture2D" uid="uid://cbc1vofke5ifi" path="res://Assets/Image/images/Credits/pixel_art_A_breathtaking_view_ (2).jpeg" id="2_0uvcw"]
+[ext_resource type="FontFile" uid="uid://ca4w7i8wmxilb" path="res://Assets/Fonts/Wolf Moon.ttf" id="3_4lloh"]
 [ext_resource type="Theme" uid="uid://dc1ctcksywkhs" path="res://Assets/Theme/Credit/Label Details.tres" id="3_i5i6g"]
 [ext_resource type="Theme" uid="uid://c5tjnvediwfog" path="res://Assets/Theme/Credit/Tittles.tres" id="3_iuhup"]
-[ext_resource type="FontFile" uid="uid://2gbyqhhtj8i7" path="res://Assets/Fonts/Roboto/Roboto-BoldItalic.ttf" id="4_vfcm5"]
+[ext_resource type="FontFile" uid="uid://dsiccyde5hohl" path="res://Assets/Fonts/Roboto/Roboto-BoldItalic.ttf" id="4_vfcm5"]
 [ext_resource type="Theme" uid="uid://4pmckqqvpja8" path="res://Assets/Theme/Credit/Buttons.tres" id="7_x7vas"]
-[ext_resource type="AudioStream" uid="uid://ty2bg0clrp0t" path="res://Assets/Music/Un Sorteted/All Button/Quit_Button.mp3" id="8_lm81o"]
+[ext_resource type="AudioStream" uid="uid://cxj3ste55sq3v" path="res://Assets/Music/Un Sorteted/All Button/Quit_Button.mp3" id="8_lm81o"]
 
 [sub_resource type="Animation" id="Animation_dh4dg"]
 resource_name = "Fade_in"

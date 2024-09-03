@@ -1,12 +1,12 @@
 [gd_scene load_steps=10 format=3 uid="uid://b3tmvuyh013w0"]
 
 [ext_resource type="Script" path="res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Index_Page_6.gd" id="1_le2w8"]
-[ext_resource type="Texture2D" uid="uid://d04k2qksoa13u" path="res://Assets/Image/images/Background/Wolf Almanac Index/Wood Texture.png" id="2_g24qa"]
-[ext_resource type="FontFile" uid="uid://b0dbrpth4h70i" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="3_rbws5"]
-[ext_resource type="Texture2D" uid="uid://da13nuc1gskxn" path="res://Assets/Image/Buttons/Button.png" id="4_bgdw6"]
+[ext_resource type="Texture2D" uid="uid://c8vpwhgqrvpou" path="res://Assets/Image/images/Background/Wolf Almanac Index/Wood Texture.png" id="2_g24qa"]
+[ext_resource type="FontFile" uid="uid://cnhshuaxal67w" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="3_rbws5"]
+[ext_resource type="Texture2D" uid="uid://rydxjf2k4x0c" path="res://Assets/Image/Buttons/Button.png" id="4_bgdw6"]
 [ext_resource type="Texture2D" uid="uid://ceov1ogbf4c2w" path="res://Assets/Scences/UI/Lock_Button/Lock_buttons.tres" id="4_dlj78"]
 [ext_resource type="Theme" uid="uid://dk2f873t2ffc2" path="res://Assets/Theme/Wolf_Almanac_Idex/Button.tres" id="4_mjybs"]
-[ext_resource type="AudioStream" uid="uid://dfx8n3eqhipk0" path="res://Assets/Music/All Button/Button.mp3" id="5_gxn3y"]
+[ext_resource type="AudioStream" uid="uid://c0lhrui6o2e72" path="res://Assets/Music/All Button/Button.mp3" id="5_gxn3y"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k0rlb"]
 atlas = ExtResource("4_bgdw6")
@@ -113,7 +113,7 @@ theme = ExtResource("4_mjybs")
 text = "Wolf Label"
 flat = true
 
-[node name="Back Button Page 5" type="Button" parent="Background"]
+[node name="Back Button" type="Button" parent="Background"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.051
@@ -128,22 +128,6 @@ theme_override_fonts/font = ExtResource("3_rbws5")
 theme_override_font_sizes/font_size = 24
 text = "Back
 "
-flat = true
-
-[node name="Next Buttton Page 7" type="Button" parent="Background"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.927
-anchor_top = 0.886
-anchor_right = 0.97
-anchor_bottom = 0.931
-offset_left = 0.439941
-offset_top = 0.0799561
-offset_right = -0.600098
-offset_bottom = -0.320068
-theme_override_fonts/font = ExtResource("3_rbws5")
-theme_override_font_sizes/font_size = 24
-text = "Next"
 flat = true
 
 [node name="Page Label" type="Label" parent="Background"]
@@ -172,5 +156,4 @@ stream = ExtResource("5_gxn3y")
 [connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer17/Label_Wolf_17" to="." method="_on_italian_wolf_label_pressed"]
 [connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer18/Wolf 18" to="." method="_on_labrador_wolf_image_pressed"]
 [connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer18/Label_Wolf_18" to="." method="_on_labrador_wolf_label_pressed"]
-[connection signal="pressed" from="Background/Back Button Page 5" to="." method="_on_back_page_5_button_pressed"]
-[connection signal="pressed" from="Background/Next Buttton Page 7" to="." method="_on_next_page_7_button_pressed"]
+[connection signal="pressed" from="Background/Back Button" to="." method="_on_back_button_pressed"]

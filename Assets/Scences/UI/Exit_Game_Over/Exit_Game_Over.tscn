@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://cb58lp4gt250m"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Exit_Game_Over/Exit_Game_Over.gd" id="1_ph16h"]
-[ext_resource type="AudioStream" uid="uid://bpkfmkyhxykdk" path="res://Assets/Music/Dialogues/Good bye/Goodbye.mp3" id="3_qsnfn"]
-[ext_resource type="FontFile" uid="uid://daews5bmpatgf" path="res://Assets/Fonts/WolfpackHalloweed-EaGOl.otf" id="4_f8c82"]
+[ext_resource type="AudioStream" uid="uid://c7fiof38bxfj7" path="res://Assets/Music/Dialogues/Good bye/Goodbye.mp3" id="3_qsnfn"]
+[ext_resource type="FontFile" uid="uid://bwh5hh7b65jlm" path="res://Assets/Fonts/WolfpackHalloweed-EaGOl.otf" id="4_f8c82"]
 
 [node name="ExitConfirmation" type="Control"]
 layout_mode = 3

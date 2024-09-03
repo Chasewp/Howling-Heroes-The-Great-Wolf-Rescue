@@ -1,0 +1,149 @@
+[gd_scene load_steps=7 format=3 uid="uid://ljy4srl7uqw4"]
+
+[ext_resource type="Texture2D" uid="uid://p302qv1oc7j8" path="res://Assets/Image/Background/Wolf Almanac Index/Wood Texture.png" id="1_3mosj"]
+[ext_resource type="Script" path="res://Assets/Script/Class/Wolf/Wolf Alamanac/Menu/alamanac_main_menu.gd" id="1_lcncl"]
+[ext_resource type="FontFile" uid="uid://djx6ba5h1a3qs" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="1_vhleb"]
+[ext_resource type="FontFile" uid="uid://cnhshuaxal67w" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="2_fv5yf"]
+[ext_resource type="AudioStream" uid="uid://c0lhrui6o2e72" path="res://Assets/Music/All Button/Button.mp3" id="4_xmvnl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qqle6"]
+bg_color = Color(0, 0, 0, 0.427451)
+
+[node name="Alamanac_Main_Menu" type="Node2D"]
+script = ExtResource("1_lcncl")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+clip_contents = true
+custom_minimum_size = Vector2(1280, 720)
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("1_3mosj")
+expand_mode = 1
+
+[node name="Tittle_Label" type="Label" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -239.0
+offset_top = 31.0
+offset_right = 291.0
+offset_bottom = 95.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.87451, 0.87451, 0.87451, 1)
+theme_override_colors/font_shadow_color = Color(0.290196, 0.290196, 0.290196, 1)
+theme_override_colors/font_outline_color = Color(0.976471, 0.592157, 0.415686, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 9
+theme_override_fonts/font = ExtResource("1_vhleb")
+theme_override_font_sizes/font_size = 64
+text = "WOLF ALMANAC INDEX"
+
+[node name="GridContainer" type="GridContainer" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.057
+anchor_top = 0.201
+anchor_right = 0.963
+anchor_bottom = 0.861
+offset_left = 0.0399933
+offset_top = -8.39301
+offset_right = 8.35986
+offset_bottom = 13.407
+theme_override_constants/h_separation = 30
+theme_override_constants/v_separation = 30
+columns = 3
+
+[node name="Page 1" type="Button" parent="TextureRect/GridContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_fv5yf")
+theme_override_font_sizes/font_size = 135
+theme_override_styles/normal = SubResource("StyleBoxFlat_qqle6")
+text = "Page 1"
+
+[node name="Page 2" type="Button" parent="TextureRect/GridContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 22
+theme_override_fonts/font = ExtResource("2_fv5yf")
+theme_override_font_sizes/font_size = 135
+theme_override_styles/normal = SubResource("StyleBoxFlat_qqle6")
+text = "Page 2"
+
+[node name="Page 3" type="Button" parent="TextureRect/GridContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 22
+theme_override_fonts/font = ExtResource("2_fv5yf")
+theme_override_font_sizes/font_size = 135
+theme_override_styles/normal = SubResource("StyleBoxFlat_qqle6")
+text = "Page 3"
+
+[node name="Page 4" type="Button" parent="TextureRect/GridContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 22
+theme_override_fonts/font = ExtResource("2_fv5yf")
+theme_override_font_sizes/font_size = 135
+theme_override_styles/normal = SubResource("StyleBoxFlat_qqle6")
+text = "Page 4"
+
+[node name="Page 5" type="Button" parent="TextureRect/GridContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 22
+theme_override_fonts/font = ExtResource("2_fv5yf")
+theme_override_font_sizes/font_size = 135
+theme_override_styles/normal = SubResource("StyleBoxFlat_qqle6")
+text = "Page 5"
+
+[node name="Page 6" type="Button" parent="TextureRect/GridContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 22
+theme_override_fonts/font = ExtResource("2_fv5yf")
+theme_override_font_sizes/font_size = 135
+theme_override_styles/normal = SubResource("StyleBoxFlat_qqle6")
+text = "Page 6"
+
+[node name="Page 7" type="Button" parent="TextureRect/GridContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 22
+theme_override_fonts/font = ExtResource("2_fv5yf")
+theme_override_font_sizes/font_size = 135
+theme_override_styles/normal = SubResource("StyleBoxFlat_qqle6")
+text = "Page 7"
+
+[node name="Page 8" type="Button" parent="TextureRect/GridContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 22
+theme_override_fonts/font = ExtResource("2_fv5yf")
+theme_override_font_sizes/font_size = 135
+theme_override_styles/normal = SubResource("StyleBoxFlat_qqle6")
+text = "Page 8"
+
+[node name="Page 9" type="Button" parent="TextureRect/GridContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 22
+theme_override_fonts/font = ExtResource("2_fv5yf")
+theme_override_font_sizes/font_size = 135
+theme_override_styles/normal = SubResource("StyleBoxFlat_qqle6")
+text = "Page 9"
+
+[node name="Button_Click" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_xmvnl")
+
+[connection signal="pressed" from="TextureRect/GridContainer/Page 1" to="." method="_on_page_1_pressed"]
+[connection signal="pressed" from="TextureRect/GridContainer/Page 2" to="." method="_on_page_2_pressed"]
+[connection signal="pressed" from="TextureRect/GridContainer/Page 3" to="." method="_on_page_3_pressed"]
+[connection signal="pressed" from="TextureRect/GridContainer/Page 4" to="." method="_on_page_4_pressed"]
+[connection signal="pressed" from="TextureRect/GridContainer/Page 5" to="." method="_on_page_5_pressed"]
+[connection signal="pressed" from="TextureRect/GridContainer/Page 6" to="." method="_on_page_6_pressed"]
+[connection signal="pressed" from="TextureRect/GridContainer/Page 7" to="." method="_on_page_7_pressed"]
+[connection signal="pressed" from="TextureRect/GridContainer/Page 8" to="." method="_on_page_8_pressed"]
+[connection signal="pressed" from="TextureRect/GridContainer/Page 9" to="." method="_on_page_9_pressed"]

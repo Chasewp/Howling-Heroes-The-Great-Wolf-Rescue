@@ -11,10 +11,3 @@ func start_dialog():
 func _on_timeline_ended():
 	Dialogic.timeline_ended.disconnect(_on_timeline_ended)
 	LoadingScreen.load_scence("res://Assets/Scences/UI/Character_Name/Player_Name.tscn")
-
-		
-
-	
-	
-	
-	

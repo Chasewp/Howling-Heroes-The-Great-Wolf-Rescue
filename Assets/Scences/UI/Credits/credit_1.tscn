@@ -1,14 +1,14 @@
 [gd_scene load_steps=14 format=3 uid="uid://bbyynyiqulvmb"]
 
-[ext_resource type="Texture2D" uid="uid://d4bb46msror13" path="res://Assets/Image/images/Credits/pixel_art_A_breathtaking_lands.jpeg" id="1_hxuib"]
-[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Credits/credit.gd" id="1_jcgt2"]
-[ext_resource type="FontFile" uid="uid://74m415i5q2nb" path="res://Assets/Fonts/Wolf Moon.ttf" id="2_n65go"]
+[ext_resource type="Texture2D" uid="uid://c0wydxignygk1" path="res://Assets/Image/images/Credits/pixel_art_A_breathtaking_lands.jpeg" id="1_hxuib"]
+[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Credits/credit_page1.gd" id="1_uhxsh"]
+[ext_resource type="FontFile" uid="uid://ca4w7i8wmxilb" path="res://Assets/Fonts/Wolf Moon.ttf" id="2_n65go"]
 [ext_resource type="Theme" uid="uid://c5tjnvediwfog" path="res://Assets/Theme/Credit/Tittles.tres" id="3_5ueon"]
-[ext_resource type="FontFile" uid="uid://2gbyqhhtj8i7" path="res://Assets/Fonts/Roboto/Roboto-BoldItalic.ttf" id="3_be0qo"]
-[ext_resource type="FontFile" uid="uid://bsmkjcem4b3i1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="4_bimxs"]
+[ext_resource type="FontFile" uid="uid://dsiccyde5hohl" path="res://Assets/Fonts/Roboto/Roboto-BoldItalic.ttf" id="3_be0qo"]
+[ext_resource type="FontFile" uid="uid://fpssaux4ispl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="4_bimxs"]
 [ext_resource type="Theme" uid="uid://dc1ctcksywkhs" path="res://Assets/Theme/Credit/Label Details.tres" id="5_2dkor"]
 [ext_resource type="Theme" uid="uid://4pmckqqvpja8" path="res://Assets/Theme/Credit/Buttons.tres" id="6_l3soc"]
-[ext_resource type="AudioStream" uid="uid://ty2bg0clrp0t" path="res://Assets/Music/Un Sorteted/All Button/Quit_Button.mp3" id="6_vu1eb"]
+[ext_resource type="AudioStream" uid="uid://cxj3ste55sq3v" path="res://Assets/Music/Un Sorteted/All Button/Quit_Button.mp3" id="6_vu1eb"]
 
 [sub_resource type="Animation" id="Animation_dh4dg"]
 resource_name = "Fade_in"
@@ -215,7 +215,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_jcgt2")
+script = ExtResource("1_uhxsh")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1

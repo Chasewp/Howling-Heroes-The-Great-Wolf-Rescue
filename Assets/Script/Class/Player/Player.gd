@@ -82,7 +82,7 @@ func ready():
 	#getter_health()
 	
 
-func moveCharacter():
+func moveCharacter(_delta):
 	pass
 
 func _process(delta):
@@ -96,3 +96,7 @@ func is_Dead():
 		
 func _start_load():
 	self.position = Progress.player_position
+
+
+func _on_inventory_ui_opened():
+	pass # Replace with function body.
