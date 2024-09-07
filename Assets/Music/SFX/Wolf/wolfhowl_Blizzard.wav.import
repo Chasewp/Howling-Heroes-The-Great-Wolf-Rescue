@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dcgj50ut38ysl"
-path="res://.godot/imported/wolfhowl_Blizzard.wav-e8bba759bb87bc7b9a1d1df4cc17f32c.sample"
+path="res://.godot/imported/wolfhowl_Blizzard.wav-13c402855cec36286907890a08bc6374.sample"
 
 [deps]
 
-source_file="res://Assets/Music/Howling/wolfhowl_Blizzard.wav"
-dest_files=["res://.godot/imported/wolfhowl_Blizzard.wav-e8bba759bb87bc7b9a1d1df4cc17f32c.sample"]
+source_file="res://Assets/Music/SFX/Wolf/wolfhowl_Blizzard.wav"
+dest_files=["res://.godot/imported/wolfhowl_Blizzard.wav-13c402855cec36286907890a08bc6374.sample"]
 
 [params]
 

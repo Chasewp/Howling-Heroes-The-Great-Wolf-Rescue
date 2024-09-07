@@ -198,7 +198,7 @@ version_control/autoload_on_startup=true
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
+enabled=PackedStringArray("res://addons/dialogic/plugin.cfg", "res://addons/ldtk-importer/plugin.cfg")
 
 [input]
 
@@ -306,6 +306,9 @@ locale/test="en"
 2d_physics/layer_1="Terains"
 2d_physics/layer_2="Waters"
 2d_physics/layer_3="Hazzard"
+2d_physics/layer_4="Items"
+2d_physics/layer_5="Details"
+2d_physics/layer_6="Rest"
 2d_physics/layer_9="Player"
 2d_physics/layer_10="Player Hurt"
 2d_physics/layer_11="Player Hit"
@@ -319,6 +322,7 @@ locale/test="en"
 [physics]
 
 2d/physics_engine="GodotPhysics2D"
+2d/default_gravity=1254.4
 common/enable_pause_aware_picking=true
 
 [rendering]

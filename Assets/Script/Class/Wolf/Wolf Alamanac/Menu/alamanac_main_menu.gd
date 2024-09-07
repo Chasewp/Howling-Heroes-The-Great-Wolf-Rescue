@@ -1,6 +1,9 @@
 class_name Wolf_alamanac_Main_Menu_Index
 extends Node2D
 
+signal opened
+signal closed
+
 """Instance Index Page Wolf Almanac"""
 var indexpage1 = preload("res://Assets/Scences/UI/Wolf_Almanac/Index/Page 1/Wolf_Almanac_Index_Page_1.tscn").instantiate()
 var indexpage2 = preload("res://Assets/Scences/UI/Wolf_Almanac/Index/Page 2/Wolf_Alamac_Index_Page_2.tscn").instantiate()
@@ -63,3 +66,5 @@ func _on_page_9_pressed():
 func _input(event):
 	if Input.is_action_just_pressed("open_wolf_almanac"):
 		self.visible =!self.visible
+
+

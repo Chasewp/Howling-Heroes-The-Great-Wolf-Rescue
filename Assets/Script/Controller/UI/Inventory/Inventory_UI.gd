@@ -44,6 +44,3 @@ func close() :
 	self.visible = false
 	_isOpen = false
 	closed.emit()
-
-
-

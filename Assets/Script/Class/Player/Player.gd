@@ -1,9 +1,5 @@
-class_name Player
 extends CharacterBody2D
-
-
-signal update_coordinate
-var Progress = ProgressedGame.new()
+ 
 
 # Variables class
 @export var name_character : String : set = setter_name, get= getter_name
@@ -14,11 +10,7 @@ var Progress = ProgressedGame.new()
 @export var xpos : int : set = setter_Xpos, get = getter_Xpos
 @export var ypos : int : set = setter_Ypos, get = getter_Ypos
 
-#Variables Scence Tree Node Reffrence 
-#@onready var Wolf_Almanac_Menu = $"Wolf almanac/WolfAlmanacIdex"
-var game_over = preload("res://Assets/Scences/UI/Game over/Game_Over.tscn").instantiate()
 
-#Vector2
 #Setter Name Character
 func setter_name(name):
 	name_character = name
@@ -75,28 +67,4 @@ func setter_armor(arm):
 func getter_armor():
 	return armor
 	
-func ready():
-	pass
-	#getter_name()
-	#getter_location()
-	#getter_health()
-	
 
-func moveCharacter(_delta):
-	pass
-
-func _process(delta):
-	emit_signal("update_coordinate",self.position)	
-	Progress.UpdatePos(self.position)
-	
-func is_Dead():
-	if getter_health()==0:
-		get_tree().change_scene_to_packed(game_over)
-		get_tree().root.add_child(game_over)
-		
-func _start_load():
-	self.position = Progress.player_position
-
-
-func _on_inventory_ui_opened():
-	pass # Replace with function body.

@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://d15sb2gtywq1s"]
+
+[ext_resource type="SpriteFrames" uid="uid://xhdut66tkog4" path="res://Assets/Scences/Enemy/sprites/Animal/Taiga/red_fox.tres" id="1_18d8h"]
+
+[sub_resource type="GDScript" id="GDScript_6d8kr"]
+script/source = "
+"
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xbp3o"]
+radius = 25.0
+height = 66.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1dlvb"]
+size = Vector2(43, 18)
+
+[node name="red_fox" type="CharacterBody2D"]
+script = SubResource("GDScript_6d8kr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_xbp3o")
+one_way_collision_margin = 64.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_18d8h")
+animation = &"iddle"
+autoplay = "iddle"
+
+[node name="hurtbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hurtbox"]
+position = Vector2(-2.5, 10)
+shape = SubResource("RectangleShape2D_1dlvb")

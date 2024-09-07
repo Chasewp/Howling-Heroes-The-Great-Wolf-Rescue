@@ -133,22 +133,6 @@ text = "Back
 "
 flat = true
 
-[node name="Next Buttton Page 8" type="Button" parent="Background"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.927
-anchor_top = 0.886
-anchor_right = 0.97
-anchor_bottom = 0.931
-offset_left = 0.439941
-offset_top = 0.0799561
-offset_right = -0.600098
-offset_bottom = -0.320068
-theme_override_fonts/font = ExtResource("3_ieqsh")
-theme_override_font_sizes/font_size = 24
-text = "Next"
-flat = true
-
 [node name="Page Label" type="Label" parent="Background"]
 layout_mode = 1
 anchors_preset = -1
@@ -176,4 +160,3 @@ stream = ExtResource("5_qfyih")
 [connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer21/Wolf 21" to="." method="_on_mongolian_wolf_image_pressed"]
 [connection signal="pressed" from="Background/Almanac Index/WolfVBoxContainer21/Label_Wolf_21" to="." method="_on_mongolian_wolf_label_pressed"]
 [connection signal="pressed" from="Background/Back Button" to="." method="_on_back_button_pressed"]
-[connection signal="pressed" from="Background/Next Buttton Page 8" to="." method="_on_next_page_8_button_pressed"]

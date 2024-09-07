@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://rdl82uv3c7v6"
-path="res://.godot/imported/wolfhowl_Luna.wav-430f619f6982cc36cee043b83fa255d3.sample"
+path="res://.godot/imported/wolfhowl_Luna.wav-2fd8523adf51dab032d628cf97ff6c2d.sample"
 
 [deps]
 
-source_file="res://Assets/Music/Howling/wolfhowl_Luna.wav"
-dest_files=["res://.godot/imported/wolfhowl_Luna.wav-430f619f6982cc36cee043b83fa255d3.sample"]
+source_file="res://Assets/Music/SFX/Wolf/wolfhowl_Luna.wav"
+dest_files=["res://.godot/imported/wolfhowl_Luna.wav-2fd8523adf51dab032d628cf97ff6c2d.sample"]
 
 [params]
 

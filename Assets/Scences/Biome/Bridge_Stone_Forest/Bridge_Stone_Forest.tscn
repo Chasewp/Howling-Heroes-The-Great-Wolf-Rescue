@@ -1,13 +1,14 @@
-[gd_scene load_steps=6 format=3 uid="uid://fldrife7s05d"]
+[gd_scene load_steps=5 format=3 uid="uid://fldrife7s05d"]
 
 [ext_resource type="PackedScene" uid="uid://c1ph53byo1unb" path="res://Assets/Scences/UI/Game_Play/GUI_Play.tscn" id="1_1ik14"]
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Location/Taiga/Bridge_Stone_Forest.gd" id="1_25p6p"]
-[ext_resource type="PackedScene" uid="uid://w8tfinbfyqkd" path="res://Assets/Scences/Player/Player.tscn" id="3_6ial2"]
 [ext_resource type="PackedScene" uid="uid://duapb0cjxsh0d" path="res://Assets/Scences/UI/Location/Taiga/taiga_background.tscn" id="3_uvlbp"]
 [ext_resource type="PackedScene" uid="uid://bhbell7p0r466" path="res://Assets/Scences/Stages/Taiga/Taiga_Stage.tscn" id="4_htljp"]
 
 [node name="Taiga_Biome" type="Node2D"]
 script = ExtResource("1_25p6p")
+
+[node name="TaigaStage" parent="." instance=ExtResource("4_htljp")]
 
 [node name="InterfaceLayer" type="CanvasLayer" parent="."]
 
@@ -23,9 +24,4 @@ layer = -1
 
 [node name="Taiga Background" parent="Background" instance=ExtResource("3_uvlbp")]
 
-[node name="TaigaStage" parent="." instance=ExtResource("4_htljp")]
-
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-
-[node name="Player" parent="." instance=ExtResource("3_6ial2")]
-position = Vector2(142, 557)
