@@ -34,7 +34,14 @@ overrides = {}
 [sub_resource type="Resource" id="Resource_a5af1"]
 script = ExtResource("3_lsv1g")
 scene = ExtResource("4_o0e7i")
-overrides = {}
+overrides = {
+"bold_font": "\"res://Assets/Fonts/DisposableDroidBB_bld.ttf\"",
+"bold_italic_font": "\"res://Assets/Fonts/DisposableDroidBB_bldital.ttf\"",
+"choices_text_font": "\"res://Assets/Fonts/DisposableDroidBB.ttf\"",
+"italic_font": "\"res://Assets/Fonts/DisposableDroidBB_ital.ttf\"",
+"name_label_font": "\"res://Assets/Fonts/DisposableDroidBB.ttf\"",
+"normal_font": "\"res://Assets/Fonts/DisposableDroidBB.ttf\""
+}
 
 [resource]
 script = ExtResource("5_bn1ur")

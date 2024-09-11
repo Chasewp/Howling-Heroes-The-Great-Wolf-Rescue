@@ -1,7 +1,8 @@
-[gd_scene load_steps=54 format=3 uid="uid://w8tfinbfyqkd"]
+[gd_scene load_steps=57 format=3 uid="uid://w8tfinbfyqkd"]
 
 [ext_resource type="Script" path="res://Assets/Script/Class/Hero/Hero.gd" id="1_3n0i7"]
 [ext_resource type="Texture2D" uid="uid://cffft7hojn8rn" path="res://Assets/Image/Character/Player/templerun/Idle__000.png" id="2_mrea1"]
+[ext_resource type="Resource" uid="uid://i7yioowruvfu" path="res://Assets/Inventory/Player_Inventory/Player_Inventory.tres" id="2_utc45"]
 [ext_resource type="Texture2D" uid="uid://3t5idevocxin" path="res://Assets/Image/Character/Player/templerun/Idle__001.png" id="3_iqndt"]
 [ext_resource type="Texture2D" uid="uid://bgy0hlpkgeuih" path="res://Assets/Image/Character/Player/templerun/Idle__002.png" id="4_nuoh4"]
 [ext_resource type="Texture2D" uid="uid://c2ijjju015g35" path="res://Assets/Image/Character/Player/templerun/Idle__003.png" id="5_ptobr"]
@@ -41,6 +42,7 @@
 [ext_resource type="Script" path="res://Assets/Script/Class/Character/Player/coordinate.gd" id="39_3g6ho"]
 [ext_resource type="FontFile" uid="uid://fpssaux4ispl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="39_bu8e3"]
 [ext_resource type="PackedScene" uid="uid://cuh433hdbnick" path="res://Assets/Scences/Player/Weapons/Machete.tscn" id="39_p6p0m"]
+[ext_resource type="Script" path="res://Assets/Script/Class/Wolf/Wolf Alamanac/Menu/Wolf_almanac_menu.gd" id="42_cnmfb"]
 [ext_resource type="PackedScene" uid="uid://ljy4srl7uqw4" path="res://Assets/Scences/UI/Wolf_Almanac/Main_Menu/alamanac_main_menu.tscn" id="43_xcu0d"]
 [ext_resource type="PackedScene" uid="uid://bli5mfb2fgf2e" path="res://Assets/Scences/UI/Inventory/inventory.tscn" id="44_c2cw8"]
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Inventory/Inventory_Menu.gd" id="44_poijv"]
@@ -210,9 +212,12 @@ _data = {
 "RESET": SubResource("Animation_a507v")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u3xmu"]
+size = Vector2(56, 20)
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_n8uk2"]
-radius = 24.0
-height = 120.0
+radius = 23.0
+height = 96.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6vr3q"]
 size = Vector2(55, 58)
@@ -222,6 +227,7 @@ process_mode = 3
 collision_layer = 0
 collision_mask = 7
 script = ExtResource("1_3n0i7")
+warehouse = ExtResource("2_utc45")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.25, 0.25)
@@ -239,8 +245,8 @@ scale = Vector2(4, 4)
 bus = &"Sound Effects"
 
 [node name="Shape_fullbody" type="CollisionShape2D" parent="."]
-visible = false
-shape = SubResource("CapsuleShape2D_n8uk2")
+position = Vector2(3, 51)
+shape = SubResource("RectangleShape2D_u3xmu")
 
 [node name="Hurt_Box" type="Area2D" parent="."]
 
@@ -250,20 +256,19 @@ shape = SubResource("CapsuleShape2D_n8uk2")
 shape = SubResource("CapsuleShape2D_n8uk2")
 debug_color = Color(0.741176, 0.282353, 0.921569, 0.419608)
 
-[node name="Hit_Box" type="Area2D" parent="."]
-visible = false
+[node name="HitBox" type="Area2D" parent="."]
+position = Vector2(-1, 0)
 
-[node name="InputBuffer" type="Timer" parent="Hit_Box"]
+[node name="InputBuffer" type="Timer" parent="HitBox"]
 
-[node name="Cooldown" type="Timer" parent="Hit_Box"]
+[node name="Cooldown" type="Timer" parent="HitBox"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Hit_Box"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
 position = Vector2(3.5, 32)
 shape = SubResource("RectangleShape2D_6vr3q")
 debug_color = Color(1, 0, 0, 0.682353)
 
 [node name="Brust Garou-Riffle-Player" parent="." instance=ExtResource("38_dlyag")]
-visible = false
 position = Vector2(73, 22)
 
 [node name="Projectile" type="Marker2D" parent="Brust Garou-Riffle-Player"]
@@ -287,17 +292,19 @@ script = ExtResource("39_3g6ho")
 custom_minimum_size = Vector2(300, 32)
 layout_mode = 0
 offset_left = 7.0
-offset_top = 2.0
+offset_top = 21.0
 offset_right = 307.0
-offset_bottom = 42.0
+offset_bottom = 61.0
 theme_override_constants/outline_size = 1
 theme_override_fonts/normal_font = ExtResource("39_bu8e3")
 theme_override_font_sizes/normal_font_size = 18
 text = "Coordinate : (???.????, ???.????)"
 
-[node name="Alamanac_Main_Menu" parent="." instance=ExtResource("43_xcu0d")]
+[node name="Alamanac_Menu" type="CanvasLayer" parent="."]
+script = ExtResource("42_cnmfb")
+
+[node name="Alamanac_Main_Menu" parent="Alamanac_Menu" instance=ExtResource("43_xcu0d")]
 process_mode = 3
-visible = false
 
 [node name="Inventory_Menu" type="CanvasLayer" parent="."]
 process_mode = 3
@@ -316,8 +323,8 @@ offset_right = 54.5
 offset_bottom = 42.0
 
 [connection signal="update_coordinate" from="." to="Text" method="_on_player_update_coordinate"]
-[connection signal="area_entered" from="Hit_Box" to="." method="_on_hit_box_area_entered"]
-[connection signal="closed" from="Alamanac_Main_Menu" to="." method="_on_alamanac_main_menu_closed"]
-[connection signal="opened" from="Alamanac_Main_Menu" to="." method="_on_alamanac_main_menu_opened"]
+[connection signal="area_entered" from="HitBox" to="." method="_on_hit_box_area_entered"]
+[connection signal="closed" from="Alamanac_Menu/Alamanac_Main_Menu" to="." method="_on_alamanac_main_menu_closed"]
+[connection signal="opened" from="Alamanac_Menu/Alamanac_Main_Menu" to="." method="_on_alamanac_main_menu_opened"]
 [connection signal="closed" from="Inventory_Menu/Inventory_UI" to="." method="_on_inventory_ui_closed"]
 [connection signal="opened" from="Inventory_Menu/Inventory_UI" to="." method="_on_inventory_ui_opened"]

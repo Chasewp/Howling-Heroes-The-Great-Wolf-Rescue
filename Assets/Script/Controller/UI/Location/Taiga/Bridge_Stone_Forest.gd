@@ -4,11 +4,11 @@ extends Node2D
 @export var _victory : AudioStream
 @export var _death : AudioStream
 @export var _game_over : AudioStream
-
-##AAriq
+@onready var _camera : Camera2D = $Camera2D
 @onready var _player_character : CharacterBody2D = $Player
-#@onready var game_controller : Node = $Player/Game_Control
-
+@onready var game_controller : Node = $Player/Game_Control
+var _stage : Area2D
+var save_progress = ProgressedGame.new()
 var _crosshair = load("res://Assets/Image/images/Cursor/1x/Layer 1.png")
 var _Stage = Area2D
 
@@ -28,7 +28,8 @@ func _ready():
 	#_player_character.set_bounds(min_boundary, max_boundary)
 	
 func _spawn_player():
-	pass
-	#_player_character.global_position = _level.get_checkpoint_position(Save.data.checkpoint)
-	#_player_character.velocity = Vector2.ZERO
+	_player_character.global_position = _stage.get_checkpoint_position(save_progress.checkpoints)
+	_player_character.velocity = Vector2.ZERO
 
+func _load_stage():
+	pass

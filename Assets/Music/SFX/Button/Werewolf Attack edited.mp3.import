@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://df1kc2q0cpqsh"
+path="res://.godot/imported/Werewolf Attack edited.mp3-5b0a4c6e271b1c9b7cba5fac2888904d.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/SFX/Button/Werewolf Attack edited.mp3"
+dest_files=["res://.godot/imported/Werewolf Attack edited.mp3-5b0a4c6e271b1c9b7cba5fac2888904d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

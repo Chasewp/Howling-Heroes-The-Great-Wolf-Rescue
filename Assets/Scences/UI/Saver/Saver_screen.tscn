@@ -1,12 +1,12 @@
 [gd_scene load_steps=5 format=3 uid="uid://dpalcuvsrqsj0"]
 
-[ext_resource type="Script" path="res://Assets/Script/Class/Player/Player.gd" id="1_q82sx"]
-[ext_resource type="Texture2D" uid="uid://brqgb3qqlr2xm" path="res://Assets/Image/images/Background/Moonlight Clift/Clift.png" id="2_6087o"]
-[ext_resource type="FontFile" uid="uid://c4ipkih8u305j" path="res://Assets/Fonts/DEADLY CLAWS[.ttf" id="3_14ouc"]
-[ext_resource type="FontFile" uid="uid://bv6xsykw7vcai" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="4_l478o"]
+[ext_resource type="Script" path="res://Assets/Script/Class/Hero/Hero.gd" id="1_x6hx6"]
+[ext_resource type="Texture2D" uid="uid://c2emamaxb1hlu" path="res://Assets/Image/images/Background/Moonlight Clift/Clift.png" id="2_6087o"]
+[ext_resource type="FontFile" uid="uid://bm4s5et4qfvc" path="res://Assets/Fonts/DEADLY CLAWS[.ttf" id="3_14ouc"]
+[ext_resource type="FontFile" uid="uid://djx6ba5h1a3qs" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="4_l478o"]
 
 [node name="First_Save_Screen" type="Node2D"]
-script = ExtResource("1_q82sx")
+script = ExtResource("1_x6hx6")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(1280, 720)

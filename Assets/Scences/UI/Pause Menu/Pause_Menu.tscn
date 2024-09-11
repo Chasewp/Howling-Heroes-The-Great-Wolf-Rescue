@@ -1,22 +1,32 @@
-[gd_scene load_steps=3 format=3 uid="uid://pd5jheoce1lf"]
+[gd_scene load_steps=6 format=3 uid="uid://pd5jheoce1lf"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Pause_Screen/Pause_Menu.gd" id="1_q3f14"]
-[ext_resource type="FontFile" uid="uid://bsmkjcem4b3i1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="1_qxc33"]
+[ext_resource type="FontFile" uid="uid://fpssaux4ispl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="1_qxc33"]
+[ext_resource type="FontFile" uid="uid://c1j6eji0op5wa" path="res://Assets/Fonts/Bloodthirsty-3j0p.ttf" id="3_151vg"]
+[ext_resource type="FontFile" uid="uid://dfyg5ghbue5e0" path="res://Assets/Fonts/Wwwolfspirit-xR0m.ttf" id="4_n4yhj"]
+[ext_resource type="AudioStream" uid="uid://c0lhrui6o2e72" path="res://Assets/Music/All Button/Button.mp3" id="5_83dcm"]
 
 [node name="PauseMenu" type="Control"]
 layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+script = ExtResource("1_q3f14")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(1280, 720)
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_q3f14")
-
-[node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 0
-offset_right = 1280.0
-offset_bottom = 720.0
-color = Color(0, 1, 1, 0.27451)
+color = Color(0.819608, 0.819608, 0.819608, 1)
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 custom_minimum_size = Vector2(250, 145)
@@ -26,15 +36,17 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -95.0
-offset_top = -70.5
-offset_right = 95.0
-offset_bottom = 70.5
+offset_left = -192.0
+offset_top = -112.0
+offset_right = 58.0
+offset_bottom = 61.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1.6, 2.04)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
 theme_override_constants/separation = 15
 
 [node name="Resume" type="Button" parent="MarginContainer/VBoxContainer"]
@@ -60,3 +72,64 @@ custom_minimum_size = Vector2(250, 32)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_qxc33")
 text = "Quit"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -264.0
+offset_top = -312.0
+offset_right = 271.0
+offset_bottom = -177.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 32
+alignment = 1
+
+[node name="Label2" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.388235, 0.941176, 0.658824, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.00392157, 0.00392157, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_fonts/font = ExtResource("4_n4yhj")
+theme_override_font_sizes/font_size = 128
+text = "r"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.388235, 0.937255, 0.658824, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.00392157, 0.00392157, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_fonts/font = ExtResource("3_151vg")
+theme_override_font_sizes/font_size = 128
+text = "PAUSE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.388235, 0.941176, 0.658824, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.00392157, 0.00392157, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_fonts/font = ExtResource("4_n4yhj")
+theme_override_font_sizes/font_size = 128
+text = "k"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="button" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_83dcm")
+bus = &"Sound Effects"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Save" to="." method="_on_save_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Save and quit" to="." method="_on_save_and_quit_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

@@ -226,7 +226,7 @@ func _on_arabian_wolf_pressed_Label():
 
 	
 func _ready():
-	if WolfData._get_Alaskan_Tundra_Wolf_Rescue_Status() == false :
+	if WolfData._get_Alaskan_Tundra_Wolf_Rescue_Status() == true :
 		alaskantundrawolfimage.disabled = true
 		alaskantundrawolflabel.disabled = true
 		alaskantundrawolflabel.set_text("Wolf Label")

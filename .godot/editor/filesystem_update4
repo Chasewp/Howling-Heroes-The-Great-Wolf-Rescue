@@ -1,4 +1,4 @@
-res://Assets/Scences/Stages/Taiga/Taiga_Stage.tscn
+res://Assets/Scences/Player/Player.tscn
 res://Assets/Dialogue/Theme/Speaker_Mode.tres
 res://Assets/Dialogue/Theme/Pixelize_Visual_Novel.tres
 res://Assets/Theme/Dialouge/Bubble_Dialogue.tres
@@ -11,8 +11,35 @@ res://Assets/Script/Controller/UI/Player_Input/Player_Name.gd
 res://Assets/Theme/Credit/Tittles.tres
 res://Assets/Theme/Credit/Label Details.tres
 res://Assets/Theme/Credit/Buttons.tres
-res://Assets/Tileset/Taiga_Stage.tres
 res://Assets/Scences/Enemy/sprites/Animal/Taiga/red_fox.tres
-res://Assets/Dialogue/TimeLines/Player.dtl
-res://Assets/Dialogue/TimeLines/How To Play.dtl
+res://Assets/Tileset/Taiga_Stage.tres
+res://Assets/Inventory/Player_Inventory/Player_Inventory.tres
+res://Assets/Script/Class/Hero/Hero.gd
+res://Assets/Scences/UI/Inventory/inventory_panel_slot.tscn
+res://Assets/Script/Controller/UI/Inventory/inventory_panel_slot.gd
+res://Assets/Script/Controller/UI/Inventory/Inventory_UI.gd
+res://Assets/Scences/UI/Inventory/inventory.tscn
+res://Assets/Scences/UI/Credits/credit_1.tscn
+res://Assets/Scences/UI/Credits/credit_2.tscn
+res://Assets/Scences/Biome/Bridge_Stone_Forest/Bridge_Stone_Forest.tscn
 res://Assets/Scences/Enemy/sprites/Animal/Taiga/red_fox.tscn
+res://Assets/Scences/Stages/Taiga/Taiga_Stage.tscn
+res://Assets/Tileset/test.tscn
+res://Assets/Scences/Cage/Taiga/pine__cage.tscn
+res://Assets/Scences/UI/Game_Play/GUI_Play.tscn
+res://Assets/Scences/UI/Pause Menu/Pause_Menu.tscn
+res://Assets/Scences/UI/Saver/Saver_screen.tscn
+res://Assets/Scences/Biome/Tundra/auto_scroller.tscn
+res://Assets/Inventory/Items/Pine_Key.tres
+res://Assets/Script/Class/Wolf/Wolf Alamanac/Menu/Wolf_almanac_menu.gd
+res://Assets/Scences/UI/Wolf_Almanac/Main_Menu/alamanac_main_menu.tscn
+res://Assets/Script/Class/Character/Player/coordinate.gd
+res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.gd
+res://addons/dialogic/Core/DialogicGameHandler.gd
+res://addons/dialogic/Modules/TextInput/node_text_input.gd
+res://Assets/Scences/UI/Inventory/Descriptions_Items.gd
+res://Assets/Script/Controller/Save/Save_Data/ProgressGameData.gd
+res://Assets/Script/Controller/Save/Save_Data/Saved_Data.gd
+res://Assets/Script/Class/Inventory/inventoryclass.gd
+res://Assets/Scences/descriptions_items.tscn
+res://Assets/Script/Controller/Save/Inventory/Items/Items_Inventory.gd

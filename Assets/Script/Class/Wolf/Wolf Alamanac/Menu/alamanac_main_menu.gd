@@ -63,8 +63,6 @@ func _on_page_9_pressed():
 	get_tree().change_scene_to_packed(indexpage9)
 	get_tree().root.add_child(indexpage9)
 
-func _input(event):
-	if Input.is_action_just_pressed("open_wolf_almanac"):
-		self.visible =!self.visible
+
 
 

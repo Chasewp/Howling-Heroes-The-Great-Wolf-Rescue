@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c1v3neivw4b5h"
+path="res://.godot/imported/Wolf Howl 8.mp3-07d0263b5dac89a7bc31a6507cd44150.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Howling/Wolf Howl 8.mp3"
+dest_files=["res://.godot/imported/Wolf Howl 8.mp3-07d0263b5dac89a7bc31a6507cd44150.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

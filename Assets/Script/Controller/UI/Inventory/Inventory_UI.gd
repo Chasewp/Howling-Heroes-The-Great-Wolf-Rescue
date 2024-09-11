@@ -1,39 +1,19 @@
 class_name Inventory_Player_Item
 extends Control
 
+
 signal opened
 signal closed
 
+
 #Varibles class
-@export var nameItem : String : set = setter_name_items, get = getter_name_items
-@export var descriptions : String : set=setter_descriptions_items, get = getter_name_items
-@export var quantity : int : set = setter_quantity_items, get = getter_quantity_items
+
 var _isOpen : bool = false
+@onready var inventory : Inventory = preload("res://Assets/Inventory/Player_Inventory/Player_Inventory.tres")
+@onready var slots : Array = $NinePatchRect/GridContainer.get_children()
+@onready var lblname = $Name
+@onready var lbldec = $Description
 
-
-#Setter name Item
-func setter_name_items(itms):
-	nameItem = itms
-	
-#Setter descriptions 
-func setter_descriptions_items(dcs):
-	descriptions = dcs
-	
-#Setter quantity
-func setter_quantity_items(qty):
-	quantity = qty
-	
-#Getter name items
-func getter_name_items():
-	return nameItem
-	
-#Getter Descriptions 
-func getter_descriptions_items():
-	return descriptions
-
-#Getter quantity 
-func getter_quantity_items():
-	return quantity
 
 func open():
 	self.visible = true
@@ -44,3 +24,29 @@ func close() :
 	self.visible = false
 	_isOpen = false
 	closed.emit()
+
+func update(): 
+	for a in range(min(inventory.items.size(),slots.size())):
+		slots[a].update(inventory.items[a])
+		
+		
+		
+func _ready():
+	update()
+	print()
+
+
+
+func _on_inventory_panel_slot_mouse_entered():
+	lblname.set_text("Name :" + " " + inventory.items[0]["_name"])
+	lbldec.set_text("Descriptions :" + " " + inventory.items[0]["_description_Item"])
+	
+	
+
+	
+func _details_items_clear():
+	lblname.set_text("")
+	lbldec.set_text("")
+	
+func _on_inventory_panel_slot_mouse_exited():
+	_details_items_clear()

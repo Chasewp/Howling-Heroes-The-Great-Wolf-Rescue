@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cn0pcu5wb550t"
+path="res://.godot/imported/Wolf Howl 21.mp3-2b274a0406191f067465c198944eba7d.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Howling/Wolf Howl 21.mp3"
+dest_files=["res://.godot/imported/Wolf Howl 21.mp3-2b274a0406191f067465c198944eba7d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

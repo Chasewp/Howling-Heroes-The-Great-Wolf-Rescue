@@ -1,13 +1,13 @@
 [gd_scene load_steps=6 format=3 uid="uid://bppotao2cssdj"]
 
-[ext_resource type="Texture2D" uid="uid://kjcwub1w7gt6" path="res://Assets/Image/images/Moonlight Night Scenery Acrylic Painting for beginners 2019.png" id="1_jgcl1"]
-[ext_resource type="Script" path="res://Assets/Script/Class/Player/Player.gd" id="1_utfo1"]
-[ext_resource type="FontFile" uid="uid://c8yaosbtdn174" path="res://Assets/Fonts/DEADLY CLAWS[.ttf" id="2_n7m1k"]
-[ext_resource type="FontFile" uid="uid://ctp6d02xix3tn" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="4_6rv3h"]
-[ext_resource type="FontFile" uid="uid://c2xxg2yydtlpl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="5_d01ls"]
+[ext_resource type="Texture2D" uid="uid://w4uxyskdxhsi" path="res://Assets/Image/images/Moonlight Night Scenery Acrylic Painting for beginners 2019.png" id="1_jgcl1"]
+[ext_resource type="Script" path="res://Assets/Script/Class/Hero/Hero.gd" id="1_v7syo"]
+[ext_resource type="FontFile" uid="uid://bm4s5et4qfvc" path="res://Assets/Fonts/DEADLY CLAWS[.ttf" id="2_n7m1k"]
+[ext_resource type="FontFile" uid="uid://djx6ba5h1a3qs" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="4_6rv3h"]
+[ext_resource type="FontFile" uid="uid://fpssaux4ispl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="5_d01ls"]
 
 [node name="Loader_Screen" type="Node2D"]
-script = ExtResource("1_utfo1")
+script = ExtResource("1_v7syo")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(1280, 720)
@@ -226,19 +226,13 @@ theme_override_fonts/font = ExtResource("5_d01ls")
 theme_override_font_sizes/font_size = 26
 text = " Coordinate"
 
-[connection signal="pressed" from="TextureRect/Back Button" to="." method="_on_back_button_pressed"]
 [connection signal="mouse_entered" from="Slot Container/Load_Slot 1" to="." method="_on_load_slot_1_mouse_entered"]
 [connection signal="mouse_exited" from="Slot Container/Load_Slot 1" to="." method="_on_load_slot_1_mouse_exited"]
-[connection signal="pressed" from="Slot Container/Load_Slot 1" to="." method="_on_load_slot_1_pressed"]
 [connection signal="mouse_entered" from="Slot Container/Load_Slot 2" to="." method="_on_load_slot_2_mouse_entered"]
 [connection signal="mouse_exited" from="Slot Container/Load_Slot 2" to="." method="_on_load_slot_2_mouse_exited"]
-[connection signal="pressed" from="Slot Container/Load_Slot 2" to="." method="_on_load_slot_2_pressed"]
 [connection signal="mouse_entered" from="Slot Container/Load_Slot 3" to="." method="_on_load_slot_3_mouse_entered"]
 [connection signal="mouse_exited" from="Slot Container/Load_Slot 3" to="." method="_on_load_slot_3_mouse_exited"]
-[connection signal="pressed" from="Slot Container/Load_Slot 3" to="." method="_on_load_slot_3_pressed"]
 [connection signal="mouse_entered" from="Slot Container/Load_Slot 4" to="." method="_on_load_slot_4_mouse_entered"]
 [connection signal="mouse_exited" from="Slot Container/Load_Slot 4" to="." method="_on_load_slot_4_mouse_exited"]
-[connection signal="pressed" from="Slot Container/Load_Slot 4" to="." method="_on_load_slot_4_pressed"]
 [connection signal="mouse_entered" from="Slot Container/Load_Slot 5" to="." method="_on_load_slot_5_mouse_entered"]
 [connection signal="mouse_exited" from="Slot Container/Load_Slot 5" to="." method="_on_load_slot_5_mouse_exited"]
-[connection signal="pressed" from="Slot Container/Load_Slot 5" to="." method="_on_load_autosave_pressed"]

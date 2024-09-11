@@ -2,12 +2,15 @@ class_name Hero extends Character
 
 signal update_coordinate
 
-@export var _has_sword : bool
+@export var _has_machete : bool
+@export var warehouse : Inventory
 @onready var _attack_input_buffer : Timer = $HitBox/InputBuffer
 @warning_ignore("unused_private_class_variable")
 @onready var _cooldown : Timer = $HitBox/Cooldown
-var _sword : RigidBody2D
+var _machete : RigidBody2D
+var _brust_garou : RigidBody2D
 var Progress = ProgressedGame.new()
+
 
 func attack():
 	_wants_to_attack = true
@@ -15,19 +18,19 @@ func attack():
 	await _attack_input_buffer.timeout
 	_wants_to_attack = false
 
-func can_equip_sword() -> bool:
-	return not _has_sword && not _is_dead
+func can_equip_machete() -> bool:
+	return not _has_machete && not _is_dead
 
-func equip_sword(sword : RigidBody2D):
-	_sword = sword
-	_has_sword = true
+func equip_machete(machete : RigidBody2D):
+	_machete = machete
+	_has_machete = true
 
-func drop_sword():
-	if not _has_sword:
+func drop_machete():
+	if not _has_machete:
 		return
-	_has_sword = false
-	_sword.be_dropped(global_position)
-	_sword = null
+	_has_machete = false
+	_machete.be_dropped(global_position)
+	_machete = null
 
 func _air_physics(delta : float):
 	if _is_attacking && velocity.y > 0:
@@ -36,8 +39,8 @@ func _air_physics(delta : float):
 		super._air_physics(delta)
 
 func _die():
-	if _has_sword:
-		drop_sword()
+	if _has_machete:
+		drop_machete()
 	super._die()
 	
 func _on_hit_box_area_entered(area : Area2D):
@@ -70,6 +73,7 @@ func _on_inventory_ui_closed():
 
 func _on_alamanac_main_menu_closed():
 	get_tree().paused = false
+	
 
 func _on_alamanac_main_menu_opened():
 	get_tree().paused = false
@@ -93,43 +97,36 @@ func auto_save():
 
 #Save Slot 1
 func save_slot1():
-	var _Save_Slot_1 = FileAccess.open_encrypted_with_pass(_fileprogressslot1,FileAccess.WRITE,"Bl1zz4rd03")
-	var _Data = ProgressedGame.new()
-	_Save_Slot_1.store_var(_Data)
-	_Save_Slot_1.close()
+	ResourceSaver.save(Progress,_fileprogressslot1)
+	print("Data Saved")
 
 #Save Slot 2
 func save_slot2():
-	var _Save_Slot_2 = FileAccess.open_encrypted_with_pass(_fileprogressslot2,FileAccess.WRITE,"Bl1zz4rd03")
-	# _Save_Slot_2.store_var(Data variable)
-	_Save_Slot_2.close()
+	ResourceSaver.save(Progress,_fileprogressslot2)
+	print("Data Saved")
 
 #Save Slot 3
 func save_slot3():
-	var _Save_Slot_3 = FileAccess.open_encrypted_with_pass(_fileprogressslot3,FileAccess.WRITE,"Bl1zz4rd03")
-	# _Save_Slot_3.store_var(Data variable)
-	_Save_Slot_3.close()
+	ResourceSaver.save(Progress,_fileprogressslot3)
+	print("Data Saved")
 
 #Save Slot 4
 func save_slot4():
-	var _Save_Slot_4 = FileAccess.open_encrypted_with_pass(_fileprogressslot4,FileAccess.WRITE,"Bl1zz4rd03")
-	# _Save_Slot_4.store_var(Data variable)
-	_Save_Slot_4.close()
+	ResourceSaver.save(Progress,_fileprogressslot4)
+	print("Data Saved")
 
 
 #Load Slot 1
 func load_slot1():
-	if FileAccess.file_exists(_fileprogressslot1):
-		var _Load_Slot_1 = FileAccess.open_encrypted_with_pass(_fileprogressslot1,FileAccess.READ,"Bl1zz4rd03")
-		#Data variable = _Load_Slot_1.get_var()
-		_Load_Slot_1.close()
+	Progress = ResourceLoader.load(_fileprogressslot1)
+	_start_load()
+	print("Data Loaded")
 
 #Load Slot 2
 func load_slot2():
-	if FileAccess.file_exists(_fileprogressslot2):
-		var _Load_Slot_2 = FileAccess.open_encrypted_with_pass(_fileprogressslot2,FileAccess.READ,"Bl1zz4rd03")
-		#Data variable = _Load_Slot_2.get_var()
-		_Load_Slot_2.close()
+	Progress = ResourceLoader.load(_fileprogressslot2)
+	_start_load()
+	print("Data Loaded")
 
 #Load Slot 3
 func load_slot3():
@@ -152,3 +149,21 @@ func load_auto_save():
 	print("Data Loaded")
 	
 
+func _on_save_slot_1_pressed():
+	save_slot1()
+	get_tree().root.remove_child(self)
+
+
+func _on_save_slot_2_pressed():
+	save_slot2()
+	get_tree().root.remove_child(self)
+
+
+func _on_save_slot_3_pressed():
+	save_slot3()
+	get_tree().root.remove_child(self)
+
+
+func _on_save_slot_4_pressed():
+	save_slot4()
+	get_tree().root.remove_child(self)

@@ -1,14 +1,34 @@
-[gd_scene load_steps=2 format=3 uid="uid://dwv0ooo1hx666"]
+[gd_scene load_steps=4 format=3 uid="uid://dwv0ooo1hx666"]
 
+[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Inventory/inventory_panel_slot.gd" id="1_gu63q"]
 [ext_resource type="Texture2D" uid="uid://darom2cdvh83v" path="res://Assets/Image/Background/Inventory/inventorySlot.png" id="1_lij51"]
+[ext_resource type="FontFile" uid="uid://fpssaux4ispl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="3_mb23g"]
 
 [node name="InventoryPanelSlot" type="Panel"]
 self_modulate = Color(1, 1, 1, 0)
-custom_minimum_size = Vector2(20, 20)
+custom_minimum_size = Vector2(64, 64)
 offset_right = 20.0
 offset_bottom = 20.0
+script = ExtResource("1_gu63q")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Background" type="Sprite2D" parent="."]
+scale = Vector2(3.2, 1.6)
 texture = ExtResource("1_lij51")
 centered = false
 vframes = 2
+
+[node name="Items" type="Sprite2D" parent="."]
+centered = false
+vframes = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 15.0
+offset_right = 62.0
+offset_bottom = 34.0
+theme_override_fonts/font = ExtResource("3_mb23g")
+theme_override_font_sizes/font_size = 18
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1

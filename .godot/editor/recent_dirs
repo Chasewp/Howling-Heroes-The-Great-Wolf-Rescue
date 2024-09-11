@@ -1,3 +1,16 @@
+res://Assets/Script/Class/Inventory
+res://Assets/Scences/UI/Inventory
+res://Assets/Scences
+res://Assets/Inventory/Player_Inventory
+res://Assets/Script/Controller/UI/Inventory
+res://Assets/Inventory/Items
+res://Assets/Inventory
+res://Assets/Scences/Biome/Tundra
+res://Assets/Scences/Biome/Bridge_Stone_Forest
+res://Assets/Fonts
+res://Assets/Script/Class/Hero
+res://Assets/Dialogue/TimeLines
+res://Assets/Scences/Cage/Taiga
 res://Assets/Script/Class/Character
 res://Assets/Tileset
 res://Assets/Scences/Enemy/sprites/Animal/Taiga
@@ -5,18 +18,6 @@ res://Assets/Image/Enemy/Taiga
 res://Assets/Script/Controller/Save/Save_Data
 res://Assets/Script/Class/Wolf/Wolf Alamanac/Menu
 res://Assets/Scences/UI/Wolf_Almanac/Main_Menu
-res://Assets/Script/Controller/UI/Inventory
 res://Assets/Script/Controller/UI/Credits
 res://Assets/Script/Controller/UI/Player_Input
-res://Assets/Music/All Button
-res://Assets/Script/Class/Wolf/Wolf Alamanac/Index
-res://Assets/Scences/UI/Wolf_Almanac/Index/Page 1
-res://Assets/Image/Buttons
-res://Assets/Fonts
-res://Assets/Image/Background/Wolf Almanac Index
-res://Assets/Scences/UI/Lock_Button
-res://Assets/Script/Class/Wolf/Wolf Alamanac/Class_Data
-res://Assets/Scences/Chest
 C:/Users/Blizzard/Documents/GitHub/Howling-Heroes-The-Great-Wolf-Rescue
-res://Assets/Script/Controller/Key/Taiga/Pine Tree
-res://Assets/Scences/Key/Taiga

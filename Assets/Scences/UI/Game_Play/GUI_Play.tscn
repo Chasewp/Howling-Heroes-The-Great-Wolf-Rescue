@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://c1ph53byo1unb"]
+[gd_scene load_steps=8 format=3 uid="uid://c1ph53byo1unb"]
 
-[ext_resource type="Texture2D" uid="uid://cqjtqmw853vfp" path="res://Assets/Image/Character/Player/templerun/Face-player.png" id="1_mpywy"]
+[ext_resource type="Texture2D" uid="uid://8rio3t24yo36" path="res://Assets/Image/Character/Player/templerun/Face-player.png" id="1_mpywy"]
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/GUI/GUI_Play.gd" id="1_xqce5"]
-[ext_resource type="FontFile" uid="uid://c2xxg2yydtlpl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="2_68s4u"]
+[ext_resource type="FontFile" uid="uid://fpssaux4ispl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="2_68s4u"]
 [ext_resource type="PackedScene" uid="uid://d2kow5kkphlx6" path="res://Assets/Scences/UI/Mission_Log/mission.tscn" id="3_t1rl4"]
+[ext_resource type="PackedScene" uid="uid://pd5jheoce1lf" path="res://Assets/Scences/UI/Pause Menu/Pause_Menu.tscn" id="5_5j5bc"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_grsui"]
 bg_color = Color(0, 0.392157, 0, 1)
@@ -12,6 +13,7 @@ bg_color = Color(0, 0.392157, 0, 1)
 bg_color = Color(0, 1, 1, 1)
 
 [node name="GuiPlay" type="Control"]
+custom_minimum_size = Vector2(1280, 720)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -20,9 +22,8 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_xqce5")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="Character_Profile" type="TextureRect" parent="CanvasLayer"]
+[node name="Character_Profile" type="TextureRect" parent="."]
+layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.1
 anchor_bottom = 0.178
@@ -30,7 +31,8 @@ offset_bottom = -0.160004
 texture = ExtResource("1_mpywy")
 expand_mode = 1
 
-[node name="Character_Name" type="Label" parent="CanvasLayer"]
+[node name="Character_Name" type="Label" parent="."]
+layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.112
 anchor_right = 0.307
@@ -43,7 +45,8 @@ theme_override_fonts/font = ExtResource("2_68s4u")
 theme_override_font_sizes/font_size = 18
 text = "LABEL"
 
-[node name="Health_Bar" type="ProgressBar" parent="CanvasLayer"]
+[node name="Health_Bar" type="ProgressBar" parent="."]
+layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.112
 anchor_top = 0.049
@@ -58,7 +61,8 @@ theme_override_styles/fill = SubResource("StyleBoxFlat_grsui")
 value = 100.0
 rounded = true
 
-[node name="Armor_Bar" type="ProgressBar" parent="CanvasLayer"]
+[node name="Armor_Bar" type="ProgressBar" parent="."]
+layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.112
 anchor_top = 0.097
@@ -72,7 +76,8 @@ theme_override_fonts/font = ExtResource("2_68s4u")
 theme_override_styles/fill = SubResource("StyleBoxFlat_74kd0")
 value = 100.0
 
-[node name="Biome_Location" type="Label" parent="CanvasLayer"]
+[node name="Biome_Location" type="Label" parent="."]
+layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.112
 anchor_top = 0.146
@@ -87,7 +92,10 @@ theme_override_font_sizes/font_size = 18
 text = "LABEL
 "
 
-[node name="Mission" parent="CanvasLayer" instance=ExtResource("3_t1rl4")]
+[node name="Mission" parent="." instance=ExtResource("3_t1rl4")]
+visible = false
+custom_minimum_size = Vector2(184, 216)
+layout_mode = 1
 anchor_left = 0.857
 anchor_top = 0.381
 anchor_right = 1.001
@@ -96,3 +104,7 @@ offset_left = 0.039917
 offset_top = -0.320007
 offset_right = -0.280029
 offset_bottom = -0.320038
+
+[node name="PauseMenu" parent="." instance=ExtResource("5_5j5bc")]
+visible = false
+layout_mode = 1

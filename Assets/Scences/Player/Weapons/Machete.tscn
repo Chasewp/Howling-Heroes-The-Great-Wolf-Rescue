@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cuh433hdbnick"]
 
-[ext_resource type="Texture2D" uid="uid://dg34d1mmnym8u" path="res://Assets/Image/Weapon/Player/machete.png" id="1_uj46q"]
+[ext_resource type="Texture2D" uid="uid://bxj80g7xsj4h4" path="res://Assets/Image/Weapon/Player/machete.png" id="1_uj46q"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rk5tw"]
 height = 98.0

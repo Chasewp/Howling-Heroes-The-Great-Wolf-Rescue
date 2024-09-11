@@ -29,7 +29,8 @@ var _is_in_water : bool
 var _is_below_surface : bool
 
 @export_category("Combat")
-@export_range(1, 100) var _max_health : int = 5
+@export_range(1, 100) var _max_health : int = 100
+@export_range(1,100) var _max_armor: int = 100
 @export_range(0, 5) var _invincible_duration : float = 0
 @export_range(0, 5) var _attack_damage : int = 1
 @export_range(0, 10) var _stagger : float = 5
@@ -38,6 +39,7 @@ var _is_below_surface : bool
 @export var _wants_to_attack : bool
 @export var _is_attacking : bool
 @onready var _current_health : int = _max_health
+@onready var _current_armor : int = _max_armor
 @onready var _hurt_box : Area2D = $HurtBox
 @onready var _hit_box : Area2D = get_node_or_null("HitBox")
 var _invincible_time : Timer
@@ -48,6 +50,7 @@ var _collision_mask : int = collision_mask
 signal changed_direction(is_facing_left : bool)
 signal landed(floor_height : float)
 signal health_changed(percentage : float)
+signal armor_changed(percentage : float)
 signal died()
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -61,7 +64,7 @@ func _ready():
 	_deceleration *= GlobalTilesets.ppt
 	_jump_height *= GlobalTilesets.ppt
 	_jump_velocity = sqrt(_jump_height * gravity * 2) * -1
-	face_left() if _is_facing_left else face_right()
+	#face_left() if _is_facing_left else face_right()
 	if _invincible_duration != 0:
 		_invincible_time = $HurtBox/Invincible
 	if _hit_box:
@@ -78,7 +81,9 @@ func attack():
 
 func take_damage(amount : int, direction : Vector2):
 	_current_health = max(_current_health - amount, 0)
-	health_changed.emit(float(_current_health) / _max_health)
+	_current_armor = max(_current_armor - amount,0)
+	health_changed.emit(float(_current_health) - _current_armor / _max_health)
+	armor_changed.emit(float(_current_armor)/ _max_armor)
 	velocity = direction * GlobalTilesets.ppt * _stagger
 	if _is_attacking:
 		_attack_interrupted()

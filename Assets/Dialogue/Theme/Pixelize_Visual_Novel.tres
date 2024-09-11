@@ -63,4 +63,4 @@ script = ExtResource("10_ypg06")
 name = "Pixelize_Visual_Novel"
 base_overrides = {}
 layers = Array[ExtResource("2_ctlfj")]([SubResource("Resource_4dphk"), SubResource("Resource_p7xcr"), SubResource("Resource_gmmgq"), SubResource("Resource_pbghq"), SubResource("Resource_pkhcv"), SubResource("Resource_6o0cp"), SubResource("Resource_frl7t"), SubResource("Resource_mexia")])
-metadata/_latest_layer = 2
+metadata/_latest_layer = 1

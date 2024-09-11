@@ -34,6 +34,7 @@ WolfData="*res://Assets/Script/Class/Wolf/Wolves_Save/Wolf_Data.gd"
 player="*res://Assets/Script/Class/Player/Player.gd"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 almanac="*res://Assets/Script/Class/Wolf/Wolf Alamanac/Class_Data/Almanac.gd"
+heros="*res://Assets/Script/Class/Hero/Hero.gd"
 
 [collada]
 
@@ -182,6 +183,8 @@ window/size/always_on_top=true
 window/subwindows/embed_subwindows=false
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
+window/stretch/scale_mode="integer"
+window/vsync/vsync_mode=0
 mouse_cursor/custom_image="res://Assets/Image/images/Cursor/Cursor 32x32.png"
 
 [dotnet]

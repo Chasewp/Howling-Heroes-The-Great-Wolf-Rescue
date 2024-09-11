@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Inventory" load_steps=3 format=3 uid="uid://i7yioowruvfu"]
+
+[ext_resource type="Script" path="res://Assets/Script/Controller/Save/Inventory/Inventory.gd" id="1_lp6j0"]
+[ext_resource type="Resource" uid="uid://cjlr016y8lc1n" path="res://Assets/Inventory/Items/Pine_Key.tres" id="1_w3x47"]
+
+[resource]
+script = ExtResource("1_lp6j0")
+items = Array[Resource("res://Assets/Script/Controller/Save/Inventory/Items/Items_Inventory.gd")]([ExtResource("1_w3x47"), null, null, null, null, null, null, null, null, null, null, null])

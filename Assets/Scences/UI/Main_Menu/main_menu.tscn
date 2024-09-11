@@ -1,17 +1,17 @@
 [gd_scene load_steps=15 format=3 uid="uid://capgwdnhn40bm"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Main_Menu/main_menu.gd" id="1_2ju3c"]
-[ext_resource type="AudioStream" uid="uid://duqvbf2inod2n" path="res://Assets/Music/Un Sorteted/Start_Buton_Sound/Start_Buton_Sound.mp3" id="2_5ule3"]
-[ext_resource type="Texture2D" uid="uid://dlqt788h5sfwa" path="res://Assets/Image/images/Background/Main_Menu/w2BsPEmg.jpeg" id="2_eo3sk"]
-[ext_resource type="AudioStream" uid="uid://buicw3u14lnss" path="res://Assets/Music/Un Sorteted/All Button/Quit_Button.mp3" id="3_15ajo"]
-[ext_resource type="Texture2D" uid="uid://frt0d8rjmdcd" path="res://Assets/Image/Logo/Logo Project Howling Heroes The Great Wolf Rescue.png" id="3_aqiha"]
-[ext_resource type="FontFile" uid="uid://cvsj742f3m82d" path="res://Assets/Fonts/WolfpackHalloweed-EaGOl.otf" id="4_c4irr"]
-[ext_resource type="FontFile" uid="uid://ctp6d02xix3tn" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="5_vrfc0"]
-[ext_resource type="AudioStream" uid="uid://bq1eewhoe0i3e" path="res://Assets/Music/Music/Main_Menu/Night Fullmoon wolf howling tock and roll horor-Mubert.mp3" id="6_h2jsk"]
-[ext_resource type="FontFile" uid="uid://b0dbrpth4h70i" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="9_b4xqu"]
-[ext_resource type="Texture2D" uid="uid://ctgp2sirgirdr" path="res://Assets/Image/images/Buttons/Discord.png" id="10_wohku"]
-[ext_resource type="Texture2D" uid="uid://c686rpegwx77j" path="res://Assets/Image/images/Buttons/Github.png" id="11_d0eax"]
-[ext_resource type="Texture2D" uid="uid://bjk1csr4xs15t" path="res://Assets/Image/images/Buttons/FA.png" id="12_qpg2x"]
+[ext_resource type="Texture2D" uid="uid://c2wybfr5aacjs" path="res://Assets/Image/images/Background/Main_Menu/w2BsPEmg.jpeg" id="2_eo3sk"]
+[ext_resource type="AudioStream" uid="uid://cxj3ste55sq3v" path="res://Assets/Music/Un Sorteted/All Button/Quit_Button.mp3" id="3_15ajo"]
+[ext_resource type="Texture2D" uid="uid://ccxwuovn0l72p" path="res://Assets/Image/Logo/Logo Project Howling Heroes The Great Wolf Rescue.png" id="3_aqiha"]
+[ext_resource type="FontFile" uid="uid://bwh5hh7b65jlm" path="res://Assets/Fonts/WolfpackHalloweed-EaGOl.otf" id="4_c4irr"]
+[ext_resource type="FontFile" uid="uid://djx6ba5h1a3qs" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="5_vrfc0"]
+[ext_resource type="AudioStream" uid="uid://df1kc2q0cpqsh" path="res://Assets/Music/SFX/Button/Werewolf Attack edited.mp3" id="6_fcybm"]
+[ext_resource type="AudioStream" uid="uid://dwqkoxe2ca2d2" path="res://Assets/Music/Music/Main_Menu/Night Fullmoon wolf howling tock and roll horor-Mubert.mp3" id="6_h2jsk"]
+[ext_resource type="FontFile" uid="uid://cnhshuaxal67w" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="9_b4xqu"]
+[ext_resource type="Texture2D" uid="uid://b7hnw8kjop6po" path="res://Assets/Image/images/Buttons/Discord.png" id="10_wohku"]
+[ext_resource type="Texture2D" uid="uid://lebfpjabsr2t" path="res://Assets/Image/images/Buttons/Github.png" id="11_d0eax"]
+[ext_resource type="Texture2D" uid="uid://dvo8x08m1122e" path="res://Assets/Image/images/Buttons/FA.png" id="12_qpg2x"]
 
 [sub_resource type="Theme" id="Theme_oaio5"]
 
@@ -190,7 +190,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_7vasw")
 text = "Quit"
 
 [node name="StartBtn" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_5ule3")
+stream = ExtResource("6_fcybm")
 bus = &"Sound Effects"
 
 [node name="Normal_button" type="AudioStreamPlayer" parent="."]
@@ -254,6 +254,7 @@ expand_icon = true
 [connection signal="pressed" from="Background/Continue Button" to="." method="_on_continue_main_menu_buttons_pressed"]
 [connection signal="pressed" from="Background/Option Button" to="." method="_on_options_main_menu_buttons_pressed"]
 [connection signal="pressed" from="Background/Quit Button" to="." method="_on_quit_main_menu_buttons_pressed"]
+[connection signal="finished" from="StartBtn" to="." method="_on_start_btn_finished"]
 [connection signal="pressed" from="Discord" to="." method="_on_discord_pressed"]
 [connection signal="pressed" from="Github" to="." method="_on_github_pressed"]
 [connection signal="pressed" from="Furafinity" to="." method="_on_furafinity_pressed"]

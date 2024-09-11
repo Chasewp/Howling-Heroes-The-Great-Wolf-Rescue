@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="InventoryItems" load_steps=3 format=3 uid="uid://cjlr016y8lc1n"]
+
+[ext_resource type="Script" path="res://Assets/Script/Controller/Save/Inventory/Items/Items_Inventory.gd" id="1_5ilo1"]
+[ext_resource type="Texture2D" uid="uid://qg4n5mjficsm" path="res://Assets/Image/Key/taiga/pine key.png" id="2_ddwlf"]
+
+[resource]
+script = ExtResource("1_5ilo1")
+_texture = ExtResource("2_ddwlf")
+_name = "Pine Key"
+_description_Item = "To Open Pine Cage"
+_quantity = 3

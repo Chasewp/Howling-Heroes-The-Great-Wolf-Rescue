@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cndqerygqtk6p"]
+
+[ext_resource type="Texture2D" uid="uid://dagf21ihqyxw" path="res://Assets/Image/Cage/Taiga/pine wood cage.png" id="1_qnbjd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sqqms"]
+size = Vector2(91, 105)
+
+[node name="Pine__Cage" type="StaticBody2D"]
+
+[node name="PineWoodCage" type="Sprite2D" parent="."]
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("1_qnbjd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_sqqms")

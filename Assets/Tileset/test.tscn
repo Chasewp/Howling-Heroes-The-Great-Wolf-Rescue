@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://c03wnkvwgy453"]
+[gd_scene load_steps=4 format=3 uid="uid://c03wnkvwgy453"]
 
 [ext_resource type="TileSet" uid="uid://v1yhquhbbtmr" path="res://Assets/Tileset/Taiga_Stage.tres" id="1_66p14"]
 [ext_resource type="PackedScene" uid="uid://w8tfinbfyqkd" path="res://Assets/Scences/Player/Player.tscn" id="2_ijja2"]
+[ext_resource type="PackedScene" uid="uid://cndqerygqtk6p" path="res://Assets/Scences/Cage/Taiga/pine__cage.tscn" id="3_53bwv"]
 
 [node name="test" type="Node2D"]
 
@@ -14,3 +15,6 @@ layer_0/tile_data = PackedInt32Array(131072, 0, 35, 196608, 0, 36, 262144, 0, 37
 position = Vector2(50, 14)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
+
+[node name="Pine__Cage" parent="." instance=ExtResource("3_53bwv")]
+position = Vector2(244, -82)

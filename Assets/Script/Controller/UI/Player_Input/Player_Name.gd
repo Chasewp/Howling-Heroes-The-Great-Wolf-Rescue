@@ -21,6 +21,6 @@ func _on_player_name_text_submitted(new_text):
 	player.setter_location("Taiga")
 	player.setter_armor(100)
 	player.setter_health(100)
-	 
+	heros.auto_save()
 	get_tree().change_scene_to_file("res://Assets/Scences/Biome/Bridge_Stone_Forest/Bridge_Stone_Forest.tscn")
 	
