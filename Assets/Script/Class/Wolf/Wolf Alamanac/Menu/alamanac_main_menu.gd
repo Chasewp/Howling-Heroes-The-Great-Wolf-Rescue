@@ -1,5 +1,5 @@
 class_name Wolf_alamanac_Main_Menu_Index
-extends Node2D
+extends Control
 
 signal opened
 signal closed

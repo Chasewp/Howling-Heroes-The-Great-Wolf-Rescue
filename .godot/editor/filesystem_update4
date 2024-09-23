@@ -1,4 +1,4 @@
-res://Assets/Scences/UI/Inventory/inventory.tscn
+res://Assets/Scences/Stages/Taiga/level_1-1.tscn
 res://Assets/Dialogue/Theme/Speaker_Mode.tres
 res://Assets/Dialogue/Theme/Pixelize_Visual_Novel.tres
 res://Assets/Theme/Dialouge/Bubble_Dialogue.tres
@@ -7,36 +7,9 @@ res://Assets/Script/Class/Wolf/Wolf Alamanac/Book/Wolf_Alamanac_Book.gd
 res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Index_Page_1.gd
 res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Index_Page_7.gd
 res://Assets/Script/Class/Wolf/Wolf Alamanac/Menu/alamanac_main_menu.gd
-res://Assets/Script/Controller/Save/Inventory/Inventory.gd
 res://Assets/Script/Controller/UI/Inventory/Inventory_UI.gd
 res://Assets/Inventory/Player_Inventory/Player_Inventory.tres
 res://Assets/Script/Controller/UI/Player_Input/Player_Name.gd
 res://Assets/Tileset/Taiga_Stage.tres
 res://Assets/Bullets/Animation_Player_Bullets.tres
 res://Assets/Scences/Biome/Tundra/auto_scroller.gdshader
-res://Assets/Scences/Player/Player.tscn
-res://Assets/Scences/Enemy/sprites/Animal/Taiga/red_fox.tscn
-res://Assets/Scences/Stages/Taiga/level_1-1.tscn
-res://Assets/Scences/Cage/Taiga/pine__cage.tscn
-res://Assets/Scences/UI/Game_Play/GUI_Play.tscn
-res://Assets/Scences/UI/Pause Menu/Pause_Menu.tscn
-res://Assets/Scences/UI/Saver/Saver_screen.tscn
-res://Assets/Scences/descriptions_items.tscn
-res://Assets/Scences/UI/Inventory/inventory_panel_slot.tscn
-res://Assets/Scences/Key/Taiga/pine_key.tscn
-res://Assets/Scences/Player/Weapons/brust_garou_riffle_player.tscn
-res://Assets/Bullets/bullets_player.tscn
-res://Assets/Scences/UI/Main_Menu/main_menu.tscn
-res://Assets/Scences/Stages/Taiga/level_1-2.tscn
-res://Assets/Scences/Dust/run_dust.tscn
-res://Assets/Scences/UI/Location/Taiga/taiga_background.tscn
-res://Assets/Scences/Hazzards/spikes_normal_rock.tscn
-res://Assets/Tileset/test.tscn
-res://Assets/Scences/Stages/Level_Taiga_Stage/taiga_biome.tscn
-res://Assets/Script/Class/Character/Character_class.gd
-res://Assets/Script/Class/Hero/Hero.gd
-res://Assets/Script/Controller/UI/Pause_Screen/Pause_Menu.gd
-res://Assets/Script/Controller/UI/Location/Taiga/Bridge_Stone_Forest.gd
-res://Assets/Script/Controller/UI/Camera/Camera2D.gd
-res://Assets/Script/Controller/UI/GUI/GUI_Play.gd
-res://Assets/Script/Controller/UI/Game Over/Game_Over.gd

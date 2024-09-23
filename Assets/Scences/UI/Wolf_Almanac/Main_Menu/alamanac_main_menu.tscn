@@ -9,7 +9,9 @@
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qqle6"]
 bg_color = Color(0, 0, 0, 0.427451)
 
-[node name="Alamanac_Main_Menu" type="Node2D"]
+[node name="Alamanac_Main_Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_lcncl")
 
 [node name="TextureRect" type="TextureRect" parent="."]

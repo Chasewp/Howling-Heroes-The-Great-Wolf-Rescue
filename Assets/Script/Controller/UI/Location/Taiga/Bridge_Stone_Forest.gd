@@ -4,7 +4,12 @@ extends Node2D
 @export var _game_over : AudioStream
 @onready var _camera : Camera2D = $Camera2D
 @onready var _player_character : CharacterBody2D = $Player
-@onready var game_controller : Node = $Player/Game_Control
+@onready var _game_controller : Node = $Player/Game_Control
+@onready var _inventory_menu : Control = $User_Interface/Inventory_UI
+@onready var _pause_menu : Control = $User_Interface/PauseMenu
+@onready var _inventory : Control = $User_Interface/Inventory_UI
+
+
 
 var _stage : Area2D
 var save_progress = ProgressedGame.new()
@@ -15,10 +20,7 @@ func _ready():
 	Input.set_custom_mouse_cursor(_crosshair)
 	_init_boundaries()
 	_spawn_player()
-	game_controller.set_enable(true)
-	
-	
-
+	_game_controller.set_enable(true)
 	
 func _init_boundaries():
 	# get the level boundaries from the level

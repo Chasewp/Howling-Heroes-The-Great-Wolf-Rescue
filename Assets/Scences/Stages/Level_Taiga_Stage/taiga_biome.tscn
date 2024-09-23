@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bbgu7x35mmpr1"]
+[gd_scene load_steps=12 format=3 uid="uid://bbgu7x35mmpr1"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Camera/Camera2D.gd" id="1_5it43"]
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Location/Taiga/Bridge_Stone_Forest.gd" id="1_6gdqc"]
@@ -10,6 +10,7 @@
 [ext_resource type="Script" path="res://Assets/Scences/Biome/Bridge_Stone_Forest/Game_Control.gd" id="5_dg2kq"]
 [ext_resource type="PackedScene" uid="uid://bli5mfb2fgf2e" path="res://Assets/Scences/UI/Inventory/inventory.tscn" id="5_k3xfu"]
 [ext_resource type="PackedScene" uid="uid://b8slyshlqv5fw" path="res://Assets/Scences/UI/Game over/Game_Over.tscn" id="10_hk3m4"]
+[ext_resource type="PackedScene" uid="uid://ljy4srl7uqw4" path="res://Assets/Scences/UI/Wolf_Almanac/Main_Menu/alamanac_main_menu.tscn" id="11_n7bec"]
 
 [node name="Taiga_Biome" type="Node2D"]
 script = ExtResource("1_6gdqc")
@@ -64,6 +65,10 @@ offset_right = 0.279968
 offset_bottom = -0.280029
 
 [node name="GameOver" parent="User_Interface" instance=ExtResource("10_hk3m4")]
+visible = false
+
+[node name="Alamanac_Main_Menu" parent="User_Interface" instance=ExtResource("11_n7bec")]
+visible = false
 
 [connection signal="armor_changed" from="Player" to="User_Interface/GuiPlay" method="_on_player_armor_changed"]
 [connection signal="changed_direction" from="Player" to="Camera2D" method="_on_subject_changed_direction"]

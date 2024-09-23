@@ -1,5 +1,5 @@
 3f3e2ec9f043b8e24488069cc9acba35
-::res://::1727062971
+::res://::1727102119
 default_bus_layout.tres::AudioBusLayout::196888898710771457::1713830022::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1713830022::0::1::::<><>::
 icon.svg::CompressedTexture2D::5876459423156655483::1713830022::1725295278::1::::<><>::
@@ -611,7 +611,7 @@ plugin.cfg::TextFile::-1::1723785162::0::1::::<><>::
 THIRDPARTY.md::TextFile::-1::1723785162::0::1::::<><>::
 ::res://addons/godot-git-plugin/linux/::1723785162
 ::res://addons/godot-git-plugin/macos/::1723785162
-::res://addons/godot-git-plugin/win64/::1727062949
+::res://addons/godot-git-plugin/win64/::1727102096
 ::res://addons/ldtk-importer/::1725446435
 ldtk-importer.gd::GDScript::-1::1725446435::0::1::::<>EditorImportPlugin<>::
 plugin.cfg::TextFile::-1::1725446435::0::1::::<><>::
@@ -653,17 +653,17 @@ tile-util.gd::GDScript::-1::1725446435::0::1::::<>RefCounted<>::
 util.gd::GDScript::-1::1725446435::0::1::::<>RefCounted<>::
 ::res://android/::1713830021
 ::res://Assets/::1726106769
-::res://Assets/Bullets/::1727019290
-Animation_Player_Bullets.tres::SpriteFrames::6956266298102328234::1727019290::0::1::::<><>::uid://iy0e1vwgsxp8::::res://Assets/Image/Bullets/All_Fire_Bullet_Pixel_16x16_04.png
+::res://Assets/Bullets/::1727075092
+Animation_Player_Bullets.tres::SpriteFrames::6956266298102328234::1727063085::0::1::::<><>::uid://iy0e1vwgsxp8::::res://Assets/Image/Bullets/All_Fire_Bullet_Pixel_16x16_04.png
 bullets_player.gd::GDScript::-1::1726373655::0::1::::<>AnimatedSprite2D<>::
-bullets_player.tscn::PackedScene::5174689583873203228::1727016587::0::1::::<><>::uid://c6dwxpgkaviqc::::res://Assets/Bullets/Animation_Player_Bullets.tres<>res://Assets/Bullets/bullets_player.gd
+bullets_player.tscn::PackedScene::5174689583873203228::1727075092::0::1::::<><>::uid://c6dwxpgkaviqc::::res://Assets/Bullets/Animation_Player_Bullets.tres<>res://Assets/Bullets/bullets_player.gd
 ::res://Assets/Dialogue/::1713830017
 ::res://Assets/Dialogue/Character/::1725324967
 Mr_Wolf.dch::Resource::-1::1725324967::0::1::::<><>::
 Player.dch::Resource::-1::1720081719::0::1::::<><>::
-::res://Assets/Dialogue/Theme/::1727019288
-Pixelize_Visual_Novel.tres::Resource/DialogicStyle::4396765608337922874::1727019288::0::1::::<><>::uid://c1k5m0w3r40xf::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://cy1y14inwkplb::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn<>uid://bquja8jyk8kbr::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_layer.tscn<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>uid://dsbwnp5hegnu3::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn<>uid://dhk6j6eb6e3q::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn<>uid://cvgf4c6gg0tsy::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn<>uid://lx24i8fl6uo::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn<>res://addons/dialogic/Resources/dialogic_style.gd
-Speaker_Mode.tres::Resource/DialogicStyle::5794453110338011654::1727019288::0::1::::<><>::uid://c1k5m0w3r40xf::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://by6waso0mjpjp::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_SpeakerPortraitTextbox/textbox_with_speaker_portrait.tscn<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>uid://dsbwnp5hegnu3::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn<>uid://dhk6j6eb6e3q::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn<>uid://cvgf4c6gg0tsy::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn<>uid://lx24i8fl6uo::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn<>res://addons/dialogic/Resources/dialogic_style.gd
+::res://Assets/Dialogue/Theme/::1727063081
+Pixelize_Visual_Novel.tres::Resource/DialogicStyle::4396765608337922874::1727063081::0::1::::<><>::uid://c1k5m0w3r40xf::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://cy1y14inwkplb::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn<>uid://bquja8jyk8kbr::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_layer.tscn<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>uid://dsbwnp5hegnu3::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn<>uid://dhk6j6eb6e3q::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn<>uid://cvgf4c6gg0tsy::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn<>uid://lx24i8fl6uo::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn<>res://addons/dialogic/Resources/dialogic_style.gd
+Speaker_Mode.tres::Resource/DialogicStyle::5794453110338011654::1727063081::0::1::::<><>::uid://c1k5m0w3r40xf::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://by6waso0mjpjp::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_SpeakerPortraitTextbox/textbox_with_speaker_portrait.tscn<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>uid://dsbwnp5hegnu3::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn<>uid://dhk6j6eb6e3q::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn<>uid://cvgf4c6gg0tsy::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn<>uid://lx24i8fl6uo::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn<>res://addons/dialogic/Resources/dialogic_style.gd
 ::res://Assets/Dialogue/TimeLines/::1725782298
 How To Play.dtl::Resource::-1::1721880270::0::1::::<><>::
 Intro.dtl::Resource::-1::1713830017::0::1::::<><>::
@@ -4182,8 +4182,8 @@ bluemarble-2048.png::CompressedTexture2D::7607469788481462163::1713830018::17252
 Brust Garou_riffle.tres::Resource/Resource::8368966292346423371::1726134707::0::1::::<><>::uid://c2ev3dontnqow::::res://Assets/Image/Weapon/Player/Brust Garou.png<>res://Assets/Script/Controller/Save/Inventory/Items/Items_Inventory.gd
 machete.tres::Resource/Resource::45263731291706554::1726050618::0::1::::<><>::uid://bxj80g7xsj4h4::::res://Assets/Image/Weapon/Player/machete.png<>res://Assets/Script/Controller/Save/Inventory/Items/Items_Inventory.gd
 Pine_Key.tres::Resource/Resource::5428327363778828849::1726772309::0::1::::<><>::res://Assets/Script/Controller/Save/Inventory/Items/Items_Inventory.gd<>uid://qg4n5mjficsm::::res://Assets/Image/Key/taiga/pine key.png
-::res://Assets/Inventory/Player_Inventory/::1727019288
-Player_Inventory.tres::Resource/Inventory::629043089389077634::1727019288::0::1::::<><>::res://Assets/Script/Controller/Save/Inventory/Inventory.gd<>uid://cjlr016y8lc1n::::res://Assets/Inventory/Items/Pine_Key.tres<>res://Assets/Script/Controller/Save/Inventory/Items/Inventory_Slot.gd
+::res://Assets/Inventory/Player_Inventory/::1727063921
+Player_Inventory.tres::Resource/Inventory::629043089389077634::1727063921::0::1::::<><>::res://Assets/Script/Controller/Save/Inventory/Inventory.gd<>res://Assets/Script/Controller/Save/Inventory/Items/Inventory_Slot.gd
 ::res://Assets/MountainsLayers/::1726029817
 far-clouds.png::CompressedTexture2D::2503747259136409349::1666652848::1726029817::1::::<><>::
 far-mountains.png::CompressedTexture2D::2554734763688315999::1666652907::1726029817::1::::<><>::
@@ -4677,8 +4677,8 @@ Start_Buton_Sound.mp3::AudioStreamMP3::6927933043177437158::1713830020::17252952
 exclamation-101soundboards.mp3::AudioStreamMP3::6224283256544083818::1713830021::1725295274::1::::<><>::
 ::res://Assets/Music/Warning/::1725295274
 exclamation-101soundboards.mp3::AudioStreamMP3::944194883123633879::1713830021::1725295274::1::::<><>::
-::res://Assets/Scences/::1727016587
-descriptions_items.tscn::PackedScene::3938179066572808837::1727016587::0::1::::<><>::uid://fpssaux4ispl::::res://Assets/Fonts/DisposableDroidBB.ttf<>res://Assets/Scences/UI/Inventory/Descriptions_Items.gd
+::res://Assets/Scences/::1727096745
+descriptions_items.tscn::PackedScene::3938179066572808837::1727064183::0::1::::<><>::uid://fpssaux4ispl::::res://Assets/Fonts/DisposableDroidBB.ttf<>res://Assets/Scences/UI/Inventory/Descriptions_Items.gd
 ::res://Assets/Scences/Biome/::1726029793
 ::res://Assets/Scences/Biome/Biome_Exit/::1725320217
 biome_exit.tscn::PackedScene::4553856033413209444::1725320217::0::1::::<><>::uid://xoa45aku30pl::::res://Assets/Image/Wolf Howl Coins/360/frame_00_delay-0.05s.png<>res://Assets/Script/Controller/UI/Location/Biome_Exit/biome_exit.gd<>uid://cax5oidbk7qys::::res://Assets/Image/Wolf Howl Coins/360/frame_01_delay-0.05s.png<>uid://8rme2qbb8ks4::::res://Assets/Image/Wolf Howl Coins/360/frame_02_delay-0.05s.png<>uid://bboy35bj8dwcq::::res://Assets/Image/Wolf Howl Coins/360/frame_03_delay-0.05s.png<>uid://cjmsvpdmc47ys::::res://Assets/Image/Wolf Howl Coins/360/frame_04_delay-0.05s.png<>uid://c58dhwaoaaqvo::::res://Assets/Image/Wolf Howl Coins/360/frame_05_delay-0.05s.png<>uid://dexfkwn8p4esg::::res://Assets/Image/Wolf Howl Coins/360/frame_06_delay-0.05s.png<>uid://cijlhjtiv81gy::::res://Assets/Image/Wolf Howl Coins/360/frame_07_delay-0.05s.png<>uid://bxuq5ytfop5ft::::res://Assets/Image/Wolf Howl Coins/360/frame_08_delay-0.05s.png<>uid://cfy57b61374qh::::res://Assets/Image/Wolf Howl Coins/360/frame_09_delay-0.05s.png<>uid://bbrlpk2ogvuit::::res://Assets/Image/Wolf Howl Coins/360/frame_10_delay-0.05s.png<>uid://bf64l3rrpcjkf::::res://Assets/Image/Wolf Howl Coins/360/frame_11_delay-0.05s.png<>uid://dl3pwupthnssg::::res://Assets/Image/Wolf Howl Coins/360/frame_12_delay-0.05s.png<>uid://d22jtq8nuvvld::::res://Assets/Image/Wolf Howl Coins/360/frame_13_delay-0.05s.png<>uid://clbmj8pot7ljn::::res://Assets/Image/Wolf Howl Coins/360/frame_14_delay-0.05s.png<>uid://bdf77rmi4fc53::::res://Assets/Image/Wolf Howl Coins/360/frame_15_delay-0.05s.png<>uid://d2u6j0xea4nuj::::res://Assets/Image/Wolf Howl Coins/360/frame_16_delay-0.05s.png<>uid://b1y7kgds1uds6::::res://Assets/Image/Wolf Howl Coins/360/frame_17_delay-0.05s.png<>uid://cs8mo6phd1orl::::res://Assets/Image/Wolf Howl Coins/360/frame_18_delay-0.05s.png<>uid://cablj010crxfg::::res://Assets/Image/Wolf Howl Coins/360/frame_19_delay-0.05s.png<>uid://cujb12nqd8wj2::::res://Assets/Image/Wolf Howl Coins/360/frame_20_delay-0.05s.png<>uid://ch81teg51vcd3::::res://Assets/Image/Wolf Howl Coins/360/frame_21_delay-0.05s.png<>uid://c8bq6afe1tfxe::::res://Assets/Image/Wolf Howl Coins/360/frame_22_delay-0.05s.png<>uid://cqprajc5wbt6g::::res://Assets/Image/Wolf Howl Coins/360/frame_23_delay-0.05s.png<>uid://c0nuxarrchvlo::::res://Assets/Image/Wolf Howl Coins/360/frame_24_delay-0.05s.png<>uid://c4lu46fxcwxk5::::res://Assets/Image/Wolf Howl Coins/360/frame_25_delay-0.05s.png<>uid://fsb6dxgk1plv::::res://Assets/Image/Wolf Howl Coins/360/frame_26_delay-0.05s.png<>uid://d2xtc2i7r6t4o::::res://Assets/Image/Wolf Howl Coins/360/frame_27_delay-0.05s.png<>uid://buxy8kctc4wqb::::res://Assets/Image/Wolf Howl Coins/360/frame_28_delay-0.05s.png<>uid://bbhqjxrkrtvp0::::res://Assets/Image/Wolf Howl Coins/360/frame_29_delay-0.05s.png<>uid://dq1lag4pscsik::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_00_delay-0.05s.png<>uid://b1l6eisrpghh0::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_01_delay-0.05s.png<>uid://ce2m0afmrpjbx::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_02_delay-0.05s.png<>uid://cbedplxt1qmb::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_03_delay-0.05s.png<>uid://degnecpx62cjk::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_04_delay-0.05s.png<>uid://wwpl4x4j8nle::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_05_delay-0.05s.png<>uid://c3sgerg40ej16::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_06_delay-0.05s.png<>uid://cn03wh08bt7l4::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_07_delay-0.05s.png<>uid://dpwx0707qm1xh::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_08_delay-0.05s.png<>uid://bes58u2rtx4r7::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_09_delay-0.05s.png<>uid://cmb3v8cm8xjck::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_10_delay-0.05s.png<>uid://bi4hdsy7vdn8i::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_11_delay-0.05s.png<>uid://io5vm1briodk::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_12_delay-0.05s.png<>uid://dosdac2jdpkea::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_13_delay-0.05s.png<>uid://dd5xgiru123ow::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_14_delay-0.05s.png<>uid://dmp2ts1m07t4l::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_15_delay-0.05s.png<>uid://ckiuriq2a5prs::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_16_delay-0.05s.png<>uid://c85aoma1vodi3::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_17_delay-0.05s.png<>uid://ct4uk6tuh51c::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_18_delay-0.05s.png<>uid://c3lhakgs4oh6x::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_19_delay-0.05s.png<>uid://de2mithjimh4e::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_20_delay-0.05s.png<>uid://clu4bjb1q5kv5::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_21_delay-0.05s.png<>uid://dgg00xgmnwt54::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_22_delay-0.05s.png<>uid://yunk8jop6g3w::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_23_delay-0.05s.png<>uid://pryivaha1mco::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_24_delay-0.05s.png<>uid://dv0hvp7nc56o::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_25_delay-0.05s.png<>uid://ci1cdrb5cqgae::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_26_delay-0.05s.png<>uid://i5aey1o8yjhr::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_27_delay-0.05s.png<>uid://dqvqcc68qj3ys::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_28_delay-0.05s.png<>uid://cpv73206bdr00::::res://Assets/Image/Wolf Howl Coins/Fanish/frame_29_delay-0.05s.png<>res://Assets/Script/Controller/UI/Location/Biome_Exit/Delay_Detected.gd
@@ -4686,45 +4686,47 @@ biome_exit.tscn::PackedScene::4553856033413209444::1725320217::0::1::::<><>::uid
 Game_Control.gd::GDScript::-1::1726378039::0::1::::<>Node<>::
 ::res://Assets/Scences/Biome/How_to_Play/::1725782243
 How_To_Play.tscn::PackedScene::5079252934453415338::1725782243::0::1::::<><>::res://Assets/Script/Controller/UI/How to play/How_To_Play.gd
-::res://Assets/Scences/Biome/Tundra/::1727056735
-auto_scroller.gdshader::Shader::-1::1727056735::0::1::::<><>::
+::res://Assets/Scences/Biome/Tundra/::1727102084
+auto_scroller.gdshader::Shader::-1::1727102084::0::1::::<><>::
 auto_scroller.tscn::PackedScene::6754858830163848465::1726877708::0::1::::<><>::uid://cidgla3oqkmoa::::res://Assets/MountainsLayers/sky.png<>res://Assets/Scences/Biome/Tundra/auto_scroller.gdshader<>uid://bbw3l7ns3qacb::::res://Assets/MountainsLayers/far-clouds.png<>uid://nei8g3fblyr7::::res://Assets/MountainsLayers/near-clouds.png<>uid://bcnsdxg457gf4::::res://Assets/MountainsLayers/far-mountains.png<>uid://cub65x0y0ym76::::res://Assets/MountainsLayers/mountains.png<>uid://dxjs1s2ge2yl0::::res://Assets/MountainsLayers/trees.png<>uid://lfkxxo68r08r::::res://Assets/Music/summer nights.ogg
 ::res://Assets/Scences/Cage/::1725702317
-::res://Assets/Scences/Cage/Taiga/::1727016586
-pine__cage.tscn::PackedScene::5692469013269697197::1727016586::0::1::::<><>::uid://dagf21ihqyxw::::res://Assets/Image/Cage/Taiga/pine wood cage.png
+::res://Assets/Scences/Cage/Taiga/::1727075091
+pine__cage.tscn::PackedScene::5692469013269697197::1727075091::0::1::::<><>::uid://dagf21ihqyxw::::res://Assets/Image/Cage/Taiga/pine wood cage.png
 ::res://Assets/Scences/Chest/::1725257437
 chest.tscn::PackedScene::4174221403268008691::1725257437::0::1::::<><>::uid://cqcyyw5eixkjx::::res://Assets/Image/Chest/Chest closed.png<>uid://cn3p1ve232fos::::res://Assets/Image/Chest/Chest Open.png
-::res://Assets/Scences/Dust/::1727016587
+::res://Assets/Scences/Dust/::1727075092
 explosion.tscn::PackedScene::6858702043885789897::1726769978::0::1::::<><>::uid://dd6itt8whtpdr::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Ball Explosion/1.png<>uid://c65rbwdq2yr4h::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Ball Explosion/2.png<>uid://dtrqlmggfjwdt::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Ball Explosion/3.png<>uid://c5m72flf6nn2n::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Ball Explosion/4.png<>uid://b6cxmnbljdtob::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Ball Explosion/5.png<>uid://djtoly5ou7g40::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Ball Explosion/6.png<>res://Assets/Script/Controller/UI/Dust/dust.gd<>uid://d1p04fiolc60c::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Ball Explosion/7.png
 fall_dust.tscn::PackedScene::5823897893994321081::1726416058::0::1::::<><>::uid://d0v04aevwknqj::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Fall 01.png<>uid://crav28ar3mvfx::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Fall 02.png<>uid://dic2wghmysgvy::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Fall 03.png<>uid://6m8nru3csjth::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Fall 04.png<>uid://coodt37i2n507::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Fall 05.png<>res://Assets/Script/Controller/UI/Dust/dust.gd
 jump_dust.tscn::PackedScene::6091430184400867695::1726380415::0::1::::<><>::uid://b3tt5eoc1jghv::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Jump 01.png<>uid://cegbkfrrbvhlx::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Jump 02.png<>uid://fqa4uffwbh1e::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Jump 03.png<>uid://bqsspd8bqn525::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Jump 04.png<>uid://dsw3lb8djiy1p::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Jump 05.png<>res://Assets/Script/Controller/UI/Dust/dust.gd<>uid://328jtbasr2e6::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Jump 06.png
-run_dust.tscn::PackedScene::7644154312116566913::1727016587::0::1::::<><>::uid://bvwlq6v7a3at1::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Run 01.png<>uid://3ciofkcilpuj::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Run 02.png<>uid://qhrairn8jad5::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Run 03.png<>uid://cm7a8lsvqrg3q::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Run 04.png<>uid://b5p7qnte5lxv8::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Run 05.png<>res://Assets/Script/Controller/UI/Dust/dust.gd
+run_dust.tscn::PackedScene::7644154312116566913::1727075092::0::1::::<><>::uid://bvwlq6v7a3at1::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Run 01.png<>uid://3ciofkcilpuj::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Run 02.png<>uid://qhrairn8jad5::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Run 03.png<>uid://cm7a8lsvqrg3q::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Run 04.png<>uid://b5p7qnte5lxv8::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Run 05.png<>res://Assets/Script/Controller/UI/Dust/dust.gd
 splash.tscn::PackedScene::7688063943659264292::1726770015::0::1::::<><>::uid://dxhye0wmfpoig::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Water/Water Splash 1/1.png<>uid://cx3r3xbeq0rcn::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Water/Water Splash 1/2.png<>uid://5kgkgb3chl0l::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Water/Water Splash 1/3.png<>uid://bdmwabwfpk26r::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Water/Water Splash 1/4.png<>uid://b6td102dirvh3::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Water/Water Splash 1/5.png<>res://Assets/Script/Controller/UI/Dust/dust.gd
 ::res://Assets/Scences/Enemy/::1725435897
 ::res://Assets/Scences/Enemy/sprites/::1725435903
 ::res://Assets/Scences/Enemy/sprites/Animal/::1725435907
-::res://Assets/Scences/Enemy/sprites/Animal/Taiga/::1727016586
-red_fox.tscn::PackedScene::9047199438249149270::1727016586::0::1::::<><>::res://Assets/Script/Class/Enemy/Enemy.gd<>uid://c1c1g36bqxioa::::res://Assets/Image/Enemy/Taiga/Red Fox/tile000.png<>uid://dvt2n0rt1dndf::::res://Assets/Image/Enemy/Taiga/Red Fox/tile001.png<>uid://dvn1aaksgne1s::::res://Assets/Image/Enemy/Taiga/Red Fox/tile002.png
+::res://Assets/Scences/Enemy/sprites/Animal/Taiga/::1727075091
+red_fox.tscn::PackedScene::9047199438249149270::1727075091::0::1::::<><>::res://Assets/Script/Class/Enemy/Enemy.gd<>uid://c1c1g36bqxioa::::res://Assets/Image/Enemy/Taiga/Red Fox/tile000.png<>uid://dvt2n0rt1dndf::::res://Assets/Image/Enemy/Taiga/Red Fox/tile001.png<>uid://dvn1aaksgne1s::::res://Assets/Image/Enemy/Taiga/Red Fox/tile002.png
 ::res://Assets/Scences/Enemy/Weapons/::1718419571
-::res://Assets/Scences/Hazzards/::1727016588
-spikes_normal_rock.tscn::PackedScene::4871661079282912513::1727016588::0::1::::<><>::res://Assets/Script/Controller/Hazzard/Hazzard.gd<>uid://bcyhugscb6qpj::::res://Assets/Scences/UI/Location/Taiga/stalagmite3.png
+::res://Assets/Scences/Hazzards/::1727075093
+spikes_normal_rock.tscn::PackedScene::4871661079282912513::1727075093::0::1::::<><>::res://Assets/Script/Controller/Hazzard/Hazzard.gd<>uid://bcyhugscb6qpj::::res://Assets/Scences/UI/Location/Taiga/stalagmite3.png
 ::res://Assets/Scences/Key/::1723548752
-::res://Assets/Scences/Key/Taiga/::1727016587
-pine_key.tscn::PackedScene::7094473705504119339::1727016587::0::1::::<><>::res://Assets/Script/Controller/Key/Taiga/Pine Tree/pine_key.gd<>uid://qg4n5mjficsm::::res://Assets/Image/Key/taiga/pine key.png<>uid://cjlr016y8lc1n::::res://Assets/Inventory/Items/Pine_Key.tres
-::res://Assets/Scences/Player/::1727016586
-Player.tscn::PackedScene::1613442018075110151::1727016586::0::1::::<><>::res://Assets/Script/Class/Hero/Hero.gd<>uid://cffft7hojn8rn::::res://Assets/Image/Character/Player/templerun/Idle__000.png<>uid://i7yioowruvfu::::res://Assets/Inventory/Player_Inventory/Player_Inventory.tres<>uid://3t5idevocxin::::res://Assets/Image/Character/Player/templerun/Idle__001.png<>uid://bgy0hlpkgeuih::::res://Assets/Image/Character/Player/templerun/Idle__002.png<>uid://c2ijjju015g35::::res://Assets/Image/Character/Player/templerun/Idle__003.png<>uid://bofmhelhklqpk::::res://Assets/Image/Character/Player/templerun/Idle__004.png<>uid://e2i3nm8dvmrq::::res://Assets/Image/Character/Player/templerun/Idle__005.png<>uid://bnq02kmhoy4q2::::res://Assets/Image/Character/Player/templerun/Idle__006.png<>uid://dpnng8ev6057n::::res://Assets/Image/Character/Player/templerun/Idle__007.png<>uid://c5xfjsa5qx4uv::::res://Assets/Image/Character/Player/templerun/Idle__008.png<>uid://bbt0cofwwtqts::::res://Assets/Image/Character/Player/templerun/Idle__009.png<>uid://c5220ipebeweh::::res://Assets/Image/Character/Player/templerun/Dead__000.png<>uid://df4770joocjgf::::res://Assets/Music/SFX/Player/deathknell-tlk-101soundboards-metalgarurumon. 1secmp3.mp3<>uid://dbh4fvfo7j7ot::::res://Assets/Image/Character/Player/templerun/Dead__001.png<>uid://bndjgewmrmcge::::res://Assets/Image/Character/Player/templerun/Dead__002.png<>uid://di72s5qv7pu2k::::res://Assets/Image/Character/Player/templerun/Dead__003.png<>uid://c0r7laqr6ro77::::res://Assets/Image/Character/Player/templerun/Dead__004.png<>uid://b8gro6plbvtap::::res://Assets/Image/Character/Player/templerun/Dead__005.png<>uid://cdijssjlg60c4::::res://Assets/Image/Character/Player/templerun/Dead__006.png<>uid://cl2lf558gjijv::::res://Assets/Image/Character/Player/templerun/Dead__007.png<>uid://bjt8hyg1orxny::::res://Assets/Image/Character/Player/templerun/Dead__008.png<>uid://wjrxqnanf0dk::::res://Assets/Image/Character/Player/templerun/Dead__009.png<>uid://dadmu3fcddrjk::::res://Assets/Image/Character/Player/templerun/Jump__000.png<>uid://blo55j5gtixm3::::res://Assets/Image/Character/Player/templerun/Jump__001.png<>uid://b87u3fka31jk6::::res://Assets/Image/Character/Player/templerun/Jump__002.png<>uid://c3nx1s1qks18w::::res://Assets/Image/Character/Player/templerun/Jump__003.png<>uid://dbp1ra63821gd::::res://Assets/Image/Character/Player/templerun/Jump__004.png<>uid://xyxvfrsemvf7::::res://Assets/Music/SFX/Player/grunt-tlk-101soundboards.mp3<>uid://dwrqtuxtd6bgm::::res://Assets/Image/Character/Player/templerun/Jump__005.png<>uid://y4iaer4q21ue::::res://Assets/Image/Character/Player/templerun/Jump__006.png<>uid://cwwxkwiopbxnj::::res://Assets/Image/Character/Player/templerun/Jump__007.png<>uid://dbcl1rca3smlu::::res://Assets/Image/Character/Player/templerun/Jump__008.png<>uid://meyqj428wx2v::::res://Assets/Image/Character/Player/templerun/Jump__009.png<>uid://b8oiwbhheqc24::::res://Assets/Music/SFX/Player/headbutt-101soundboards.Metalgarurumonmp3.mp3<>uid://5uylh8kekf45::::res://Assets/Music/SFX/Player/strain-tlk-101soundboards.mp3<>uid://biqjw1upqpf74::::res://Assets/Image/Character/Player/templerun/Hit/Hit_01.png<>uid://bhymkb8mofydy::::res://Assets/Image/Character/Player/templerun/Hit/Hit_02.png<>res://Assets/Script/Class/Character/Player/coordinate.gd<>uid://fpssaux4ispl::::res://Assets/Fonts/DisposableDroidBB.ttf<>uid://bi8ij5d1um800::::res://Assets/Image/Character/Player/templerun/Run/Run__000.png<>uid://b8krqm5mryy1l::::res://Assets/Image/Character/Player/templerun/Run/Run__001.png<>uid://sl5qloj1iywg::::res://Assets/Image/Character/Player/templerun/Run/Run__002.png<>uid://c5firou8tl0m8::::res://Assets/Image/Character/Player/templerun/Run/Run__003.png<>uid://yyrfwx8httt::::res://Assets/Image/Character/Player/templerun/Run/Run__004.png<>uid://cejbegygwfkuv::::res://Assets/Image/Character/Player/templerun/Run/Run__005.png<>uid://hkyg4nm747ve::::res://Assets/Image/Character/Player/templerun/Run/Run__006.png<>uid://c7nh81u262ohu::::res://Assets/Image/Character/Player/templerun/Run/Run__007.png<>uid://cgvhcmmdq11pb::::res://Assets/Image/Character/Player/templerun/Run/Run__008.png<>uid://d35g6qao6xjt7::::res://Assets/Image/Character/Player/templerun/Run/Run__009.png<>uid://bprhl5rvpql0w::::res://Assets/Music/SFX/Player/Download Metal Shoes Royalty-Free Music & Sound Effects.mp3<>uid://bvsoi4ra2w4nb::::res://Assets/Image/Character/Player/templerun/Jump/Jump__009.png<>uid://dg55dta7sxucv::::res://Assets/Scences/Dust/run_dust.tscn<>uid://dijet0ajwrrgm::::res://Assets/Image/Bullets/All_Fire_Bullet_Pixel_16x16_02.png
+::res://Assets/Scences/Key/Taiga/::1727064183
+pine_key.tscn::PackedScene::7094473705504119339::1727064183::0::1::::<><>::res://Assets/Script/Controller/Key/Taiga/Pine Tree/pine_key.gd<>uid://qg4n5mjficsm::::res://Assets/Image/Key/taiga/pine key.png<>uid://cjlr016y8lc1n::::res://Assets/Inventory/Items/Pine_Key.tres
+::res://Assets/Scences/Platfromer/::1727096811
+platfrom_taiga.tscn::PackedScene::4270150655289938588::1727096754::0::1::::<><>::uid://v1yhquhbbtmr::::res://Assets/Tileset/Taiga_Stage.tres
+::res://Assets/Scences/Player/::1727075090
+Player.tscn::PackedScene::1613442018075110151::1727075090::0::1::::<><>::res://Assets/Script/Class/Hero/Hero.gd<>uid://cffft7hojn8rn::::res://Assets/Image/Character/Player/templerun/Idle__000.png<>uid://i7yioowruvfu::::res://Assets/Inventory/Player_Inventory/Player_Inventory.tres<>uid://3t5idevocxin::::res://Assets/Image/Character/Player/templerun/Idle__001.png<>uid://bgy0hlpkgeuih::::res://Assets/Image/Character/Player/templerun/Idle__002.png<>uid://c2ijjju015g35::::res://Assets/Image/Character/Player/templerun/Idle__003.png<>uid://bofmhelhklqpk::::res://Assets/Image/Character/Player/templerun/Idle__004.png<>uid://e2i3nm8dvmrq::::res://Assets/Image/Character/Player/templerun/Idle__005.png<>uid://bnq02kmhoy4q2::::res://Assets/Image/Character/Player/templerun/Idle__006.png<>uid://dpnng8ev6057n::::res://Assets/Image/Character/Player/templerun/Idle__007.png<>uid://c5xfjsa5qx4uv::::res://Assets/Image/Character/Player/templerun/Idle__008.png<>uid://bbt0cofwwtqts::::res://Assets/Image/Character/Player/templerun/Idle__009.png<>uid://c5220ipebeweh::::res://Assets/Image/Character/Player/templerun/Dead__000.png<>uid://df4770joocjgf::::res://Assets/Music/SFX/Player/deathknell-tlk-101soundboards-metalgarurumon. 1secmp3.mp3<>uid://dbh4fvfo7j7ot::::res://Assets/Image/Character/Player/templerun/Dead__001.png<>uid://bndjgewmrmcge::::res://Assets/Image/Character/Player/templerun/Dead__002.png<>uid://di72s5qv7pu2k::::res://Assets/Image/Character/Player/templerun/Dead__003.png<>uid://c0r7laqr6ro77::::res://Assets/Image/Character/Player/templerun/Dead__004.png<>uid://b8gro6plbvtap::::res://Assets/Image/Character/Player/templerun/Dead__005.png<>uid://cdijssjlg60c4::::res://Assets/Image/Character/Player/templerun/Dead__006.png<>uid://cl2lf558gjijv::::res://Assets/Image/Character/Player/templerun/Dead__007.png<>uid://bjt8hyg1orxny::::res://Assets/Image/Character/Player/templerun/Dead__008.png<>uid://wjrxqnanf0dk::::res://Assets/Image/Character/Player/templerun/Dead__009.png<>uid://dadmu3fcddrjk::::res://Assets/Image/Character/Player/templerun/Jump__000.png<>uid://blo55j5gtixm3::::res://Assets/Image/Character/Player/templerun/Jump__001.png<>uid://b87u3fka31jk6::::res://Assets/Image/Character/Player/templerun/Jump__002.png<>uid://c3nx1s1qks18w::::res://Assets/Image/Character/Player/templerun/Jump__003.png<>uid://dbp1ra63821gd::::res://Assets/Image/Character/Player/templerun/Jump__004.png<>uid://xyxvfrsemvf7::::res://Assets/Music/SFX/Player/grunt-tlk-101soundboards.mp3<>uid://dwrqtuxtd6bgm::::res://Assets/Image/Character/Player/templerun/Jump__005.png<>uid://y4iaer4q21ue::::res://Assets/Image/Character/Player/templerun/Jump__006.png<>uid://cwwxkwiopbxnj::::res://Assets/Image/Character/Player/templerun/Jump__007.png<>uid://dbcl1rca3smlu::::res://Assets/Image/Character/Player/templerun/Jump__008.png<>uid://meyqj428wx2v::::res://Assets/Image/Character/Player/templerun/Jump__009.png<>uid://b8oiwbhheqc24::::res://Assets/Music/SFX/Player/headbutt-101soundboards.Metalgarurumonmp3.mp3<>uid://5uylh8kekf45::::res://Assets/Music/SFX/Player/strain-tlk-101soundboards.mp3<>uid://biqjw1upqpf74::::res://Assets/Image/Character/Player/templerun/Hit/Hit_01.png<>uid://bhymkb8mofydy::::res://Assets/Image/Character/Player/templerun/Hit/Hit_02.png<>res://Assets/Script/Class/Character/Player/coordinate.gd<>uid://fpssaux4ispl::::res://Assets/Fonts/DisposableDroidBB.ttf<>uid://bi8ij5d1um800::::res://Assets/Image/Character/Player/templerun/Run/Run__000.png<>uid://b8krqm5mryy1l::::res://Assets/Image/Character/Player/templerun/Run/Run__001.png<>uid://sl5qloj1iywg::::res://Assets/Image/Character/Player/templerun/Run/Run__002.png<>uid://c5firou8tl0m8::::res://Assets/Image/Character/Player/templerun/Run/Run__003.png<>uid://yyrfwx8httt::::res://Assets/Image/Character/Player/templerun/Run/Run__004.png<>uid://cejbegygwfkuv::::res://Assets/Image/Character/Player/templerun/Run/Run__005.png<>uid://hkyg4nm747ve::::res://Assets/Image/Character/Player/templerun/Run/Run__006.png<>uid://c7nh81u262ohu::::res://Assets/Image/Character/Player/templerun/Run/Run__007.png<>uid://cgvhcmmdq11pb::::res://Assets/Image/Character/Player/templerun/Run/Run__008.png<>uid://d35g6qao6xjt7::::res://Assets/Image/Character/Player/templerun/Run/Run__009.png<>uid://bprhl5rvpql0w::::res://Assets/Music/SFX/Player/Download Metal Shoes Royalty-Free Music & Sound Effects.mp3<>uid://bvsoi4ra2w4nb::::res://Assets/Image/Character/Player/templerun/Jump/Jump__009.png<>uid://dg55dta7sxucv::::res://Assets/Scences/Dust/run_dust.tscn<>uid://dijet0ajwrrgm::::res://Assets/Image/Bullets/All_Fire_Bullet_Pixel_16x16_02.png
 ::res://Assets/Scences/Player/Animation/::1726162058
 Player.tres::AnimationNodeStateMachine::5361439723185604746::1726162058::0::1::::<><>::
-::res://Assets/Scences/Player/Weapons/::1727016587
-brust_garou_riffle_player.tscn::PackedScene::7106799051982819679::1727016587::0::1::::<><>::res://Assets/Script/Controller/Weapons/brust_garou_riffle_player.gd<>uid://c2ev3dontnqow::::res://Assets/Image/Weapon/Player/Brust Garou.png<>uid://cfywm76eklecq::::res://Assets/Bullets/bullets_player.tscn<>uid://dgs3yp2wuodpc::::res://Assets/Music/SFX/Weapon/Reload/Reload.mp3<>uid://fpssaux4ispl::::res://Assets/Fonts/DisposableDroidBB.ttf<>uid://cnhshuaxal67w::::res://Assets/Fonts/DisposableDroidBB_bldital.ttf
+::res://Assets/Scences/Player/Weapons/::1727075092
+brust_garou_riffle_player.tscn::PackedScene::7106799051982819679::1727075092::0::1::::<><>::res://Assets/Script/Controller/Weapons/brust_garou_riffle_player.gd<>uid://c2ev3dontnqow::::res://Assets/Image/Weapon/Player/Brust Garou.png<>uid://cfywm76eklecq::::res://Assets/Bullets/bullets_player.tscn<>uid://dgs3yp2wuodpc::::res://Assets/Music/SFX/Weapon/Reload/Reload.mp3<>uid://fpssaux4ispl::::res://Assets/Fonts/DisposableDroidBB.ttf<>uid://cnhshuaxal67w::::res://Assets/Fonts/DisposableDroidBB_bldital.ttf
 Machete.tscn::PackedScene::6192881161050430598::1725884781::0::1::::<><>::uid://bxj80g7xsj4h4::::res://Assets/Image/Weapon/Player/machete.png
 ::res://Assets/Scences/Stages/::1727019582
 ::res://Assets/Scences/Stages/Dessert/::1717601154
-::res://Assets/Scences/Stages/Level_Taiga_Stage/::1727019644
-taiga_biome.tscn::PackedScene::2470268531786943352::1727019644::0::1::::<><>::res://Assets/Script/Controller/UI/Camera/Camera2D.gd<>uid://duapb0cjxsh0d::::res://Assets/Scences/UI/Location/Taiga/taiga_background.tscn<>uid://c1ph53byo1unb::::res://Assets/Scences/UI/Game_Play/GUI_Play.tscn<>uid://d2kow5kkphlx6::::res://Assets/Scences/UI/Mission_Log/mission.tscn<>uid://pd5jheoce1lf::::res://Assets/Scences/UI/Pause Menu/Pause_Menu.tscn<>uid://bli5mfb2fgf2e::::res://Assets/Scences/UI/Inventory/inventory.tscn
-::res://Assets/Scences/Stages/Taiga/::1727016587
-level_1-1.tscn::PackedScene::2880070106523642665::1727016586::0::1::::<><>::res://Assets/Script/Controller/UI/Biomes/Taiga_Stage.gd<>uid://v1yhquhbbtmr::::res://Assets/Tileset/Taiga_Stage.tres<>uid://ctyfcjvef5jlv::::res://Assets/Scences/UI/Check_Points/Check_Points.tscn<>uid://b00ws5eol5y1x::::res://Assets/Music/Healing/mixkit-bless-choir-655.wav<>uid://cndqerygqtk6p::::res://Assets/Scences/Cage/Taiga/pine__cage.tscn<>uid://cbn4storx858p::::res://Assets/Scences/Hazzards/spikes_normal_rock.tscn
-level_1-2.tscn::PackedScene::5816041756857931401::1727016587::0::1::::<><>::uid://bh380pqumfa5r::::res://Assets/Image/tilesets/forest_tileset.png
+::res://Assets/Scences/Stages/Level_Taiga_Stage/::1727096757
+taiga_biome.tscn::PackedScene::2470268531786943352::1727096757::0::1::::<><>::res://Assets/Script/Controller/UI/Camera/Camera2D.gd<>res://Assets/Script/Controller/UI/Location/Taiga/Bridge_Stone_Forest.gd<>uid://duapb0cjxsh0d::::res://Assets/Scences/UI/Location/Taiga/taiga_background.tscn<>uid://c1ph53byo1unb::::res://Assets/Scences/UI/Game_Play/GUI_Play.tscn<>uid://d2kow5kkphlx6::::res://Assets/Scences/UI/Mission_Log/mission.tscn<>uid://pd5jheoce1lf::::res://Assets/Scences/UI/Pause Menu/Pause_Menu.tscn<>uid://w8tfinbfyqkd::::res://Assets/Scences/Player/Player.tscn<>res://Assets/Scences/Biome/Bridge_Stone_Forest/Game_Control.gd<>uid://bli5mfb2fgf2e::::res://Assets/Scences/UI/Inventory/inventory.tscn<>uid://b8slyshlqv5fw::::res://Assets/Scences/UI/Game over/Game_Over.tscn<>uid://ljy4srl7uqw4::::res://Assets/Scences/UI/Wolf_Almanac/Main_Menu/alamanac_main_menu.tscn
+::res://Assets/Scences/Stages/Taiga/::1727102082
+level_1-1.tscn::PackedScene::2880070106523642665::1727102082::0::1::::<><>::res://Assets/Script/Controller/UI/Biomes/Taiga_Stage.gd<>uid://v1yhquhbbtmr::::res://Assets/Tileset/Taiga_Stage.tres<>uid://ctyfcjvef5jlv::::res://Assets/Scences/UI/Check_Points/Check_Points.tscn<>uid://b00ws5eol5y1x::::res://Assets/Music/Healing/mixkit-bless-choir-655.wav<>uid://cndqerygqtk6p::::res://Assets/Scences/Cage/Taiga/pine__cage.tscn<>uid://b13q00tqak8pk::::res://Assets/Scences/Platfromer/platfrom_taiga.tscn<>uid://cbn4storx858p::::res://Assets/Scences/Hazzards/spikes_normal_rock.tscn
+level_1-2.tscn::PackedScene::5816041756857931401::1727075092::0::1::::<><>::uid://bh380pqumfa5r::::res://Assets/Image/tilesets/forest_tileset.png
 ::res://Assets/Scences/Stages/Tundra/::1717601163
 ::res://Assets/Scences/UI/::1725945690
 ::res://Assets/Scences/UI/Character_Name/::1725954734
@@ -4742,32 +4744,32 @@ Exit_Confirmation.tscn::PackedScene::3820247117874205729::1726877708::0::1::::<>
 Exit_Game_Over.tscn::PackedScene::4906985681088954846::1726877708::0::1::::<><>::res://Assets/Script/Controller/UI/Exit_Game_Over/Exit_Game_Over.gd<>uid://c7fiof38bxfj7::::res://Assets/Music/Dialogues/Good bye/Goodbye.mp3<>uid://bwh5hh7b65jlm::::res://Assets/Fonts/WolfpackHalloweed-EaGOl.otf
 ::res://Assets/Scences/UI/Game over/::1726877708
 Game_Over.tscn::PackedScene::4740523026051359104::1726877708::0::1::::<><>::res://Assets/Script/Controller/UI/Game Over/Game_Over.gd<>uid://bkk56as8wgcth::::res://Assets/Image/images/Background/Game_Over/_05103563-7cfd-43ed-b5bd-2cb1f01de6a0.jpeg<>uid://djx6ba5h1a3qs::::res://Assets/Fonts/DisposableDroidBB_bld.ttf<>uid://carbax1x2d4q2::::res://Assets/Music/Dialogue/Game Over/Game Over.mp3
-::res://Assets/Scences/UI/Game_Play/::1727016586
-GUI_Play.tscn::PackedScene::6629197034361265659::1727016586::0::1::::<><>::uid://8rio3t24yo36::::res://Assets/Image/Character/Player/templerun/Face-player.png<>res://Assets/Script/Controller/UI/GUI/GUI_Play.gd<>uid://fpssaux4ispl::::res://Assets/Fonts/DisposableDroidBB.ttf
-::res://Assets/Scences/UI/Inventory/::1727019392
+::res://Assets/Scences/UI/Game_Play/::1727075091
+GUI_Play.tscn::PackedScene::6629197034361265659::1727075091::0::1::::<><>::uid://8rio3t24yo36::::res://Assets/Image/Character/Player/templerun/Face-player.png<>res://Assets/Script/Controller/UI/GUI/GUI_Play.gd<>uid://fpssaux4ispl::::res://Assets/Fonts/DisposableDroidBB.ttf
+::res://Assets/Scences/UI/Inventory/::1727075091
 Descriptions_Items.gd::GDScript::-1::1726039640::0::1::::detail_items<>RichTextLabel<>::
-inventory.tscn::PackedScene::3176856190449023950::1727019392::0::1::::<><>::res://Assets/Script/Controller/UI/Inventory/Inventory_UI.gd<>uid://dmpbxk5kwi7ik::::res://Assets/Image/Background/Inventory/InventoryRect.png<>uid://dwv0ooo1hx666::::res://Assets/Scences/UI/Inventory/inventory_panel_slot.tscn<>uid://fpssaux4ispl::::res://Assets/Fonts/DisposableDroidBB.ttf
-inventory_panel_slot.tscn::PackedScene::8748312228030881185::1727016587::0::1::::<><>::res://Assets/Script/Controller/UI/Inventory/inventory_panel_slot.gd<>uid://darom2cdvh83v::::res://Assets/Image/Background/Inventory/inventorySlot.png<>uid://fpssaux4ispl::::res://Assets/Fonts/DisposableDroidBB.ttf
+inventory.tscn::PackedScene::3176856190449023950::1727075091::0::1::::<><>::res://Assets/Script/Controller/UI/Inventory/Inventory_UI.gd<>uid://dmpbxk5kwi7ik::::res://Assets/Image/Background/Inventory/InventoryRect.png<>uid://dwv0ooo1hx666::::res://Assets/Scences/UI/Inventory/inventory_panel_slot.tscn<>uid://fpssaux4ispl::::res://Assets/Fonts/DisposableDroidBB.ttf
+inventory_panel_slot.tscn::PackedScene::8748312228030881185::1727064183::0::1::::<><>::res://Assets/Script/Controller/UI/Inventory/inventory_panel_slot.gd<>uid://darom2cdvh83v::::res://Assets/Image/Background/Inventory/inventorySlot.png<>uid://fpssaux4ispl::::res://Assets/Fonts/DisposableDroidBB.ttf
 ::res://Assets/Scences/UI/Loading_Screen/::1725257438
 loading_screen.tscn::PackedScene::6266683255097803947::1725257438::0::1::::<><>::res://Assets/Script/Controller/UI/Loading/loading_screen_Menu.gd<>uid://g2ctbjkrsbeb::::res://Assets/Image/Background/Loading_Screen/Firefly Gray Wolf-Howling night fullmoon pixel art 1441.jpeg<>uid://b0dbrpth4h70i::::res://Assets/Fonts/DisposableDroidBB_bldital.ttf
 ::res://Assets/Scences/UI/Load_slot/::1725960358
 loader_screen.tscn::PackedScene::3471102995414826311::1725960358::0::1::::<><>::uid://w4uxyskdxhsi::::res://Assets/Image/images/Moonlight Night Scenery Acrylic Painting for beginners 2019.png<>res://Assets/Script/Class/Hero/Hero.gd<>uid://bm4s5et4qfvc::::res://Assets/Fonts/DEADLY CLAWS[.ttf<>uid://djx6ba5h1a3qs::::res://Assets/Fonts/DisposableDroidBB_bld.ttf<>uid://fpssaux4ispl::::res://Assets/Fonts/DisposableDroidBB.ttf
 ::res://Assets/Scences/UI/Location/::1717586928
-::res://Assets/Scences/UI/Location/Taiga/::1727016588
+::res://Assets/Scences/UI/Location/Taiga/::1727075092
 stalagmite3.png::CompressedTexture2D::2576804514934088591::1726797355::1726797363::1::::<><>::
-taiga_background.tscn::PackedScene::8563952781139086097::1727016588::0::1::::<><>::uid://c8kbkyytjnr0c::::res://Assets/Image/images/Background/Bridge Stone Forest/pixel_art_A_breathtaking_scene.jpeg
+taiga_background.tscn::PackedScene::8563952781139086097::1727075092::0::1::::<><>::uid://c8kbkyytjnr0c::::res://Assets/Image/images/Background/Bridge Stone Forest/pixel_art_A_breathtaking_scene.jpeg
 ::res://Assets/Scences/UI/Lock_Button/::1725284499
 Lock_buttons.tres::AtlasTexture::5083820262633780236::1725284499::0::1::::<><>::uid://da13nuc1gskxn::::res://Assets/Image/Buttons/Button.png
-::res://Assets/Scences/UI/Main_Menu/::1727016587
-main_menu.tscn::PackedScene::4804210801108702186::1727016587::0::1::::<><>::res://Assets/Script/Controller/UI/Main_Menu/main_menu.gd<>uid://c2wybfr5aacjs::::res://Assets/Image/images/Background/Main_Menu/w2BsPEmg.jpeg<>uid://cxj3ste55sq3v::::res://Assets/Music/Un Sorteted/All Button/Quit_Button.mp3<>uid://ccxwuovn0l72p::::res://Assets/Image/Logo/Logo Project Howling Heroes The Great Wolf Rescue.png<>uid://bwh5hh7b65jlm::::res://Assets/Fonts/WolfpackHalloweed-EaGOl.otf<>uid://djx6ba5h1a3qs::::res://Assets/Fonts/DisposableDroidBB_bld.ttf<>uid://df1kc2q0cpqsh::::res://Assets/Music/SFX/Button/Werewolf Attack edited.mp3<>uid://dwqkoxe2ca2d2::::res://Assets/Music/Music/Main_Menu/Night Fullmoon wolf howling tock and roll horor-Mubert.mp3<>uid://cnhshuaxal67w::::res://Assets/Fonts/DisposableDroidBB_bldital.ttf<>uid://b7hnw8kjop6po::::res://Assets/Image/images/Buttons/Discord.png<>uid://lebfpjabsr2t::::res://Assets/Image/images/Buttons/Github.png<>uid://dvo8x08m1122e::::res://Assets/Image/images/Buttons/FA.png
+::res://Assets/Scences/UI/Main_Menu/::1727075092
+main_menu.tscn::PackedScene::4804210801108702186::1727075092::0::1::::<><>::res://Assets/Script/Controller/UI/Main_Menu/main_menu.gd<>uid://c2wybfr5aacjs::::res://Assets/Image/images/Background/Main_Menu/w2BsPEmg.jpeg<>uid://cxj3ste55sq3v::::res://Assets/Music/Un Sorteted/All Button/Quit_Button.mp3<>uid://ccxwuovn0l72p::::res://Assets/Image/Logo/Logo Project Howling Heroes The Great Wolf Rescue.png<>uid://bwh5hh7b65jlm::::res://Assets/Fonts/WolfpackHalloweed-EaGOl.otf<>uid://djx6ba5h1a3qs::::res://Assets/Fonts/DisposableDroidBB_bld.ttf<>uid://df1kc2q0cpqsh::::res://Assets/Music/SFX/Button/Werewolf Attack edited.mp3<>uid://dwqkoxe2ca2d2::::res://Assets/Music/Music/Main_Menu/Night Fullmoon wolf howling tock and roll horor-Mubert.mp3<>uid://cnhshuaxal67w::::res://Assets/Fonts/DisposableDroidBB_bldital.ttf<>uid://b7hnw8kjop6po::::res://Assets/Image/images/Buttons/Discord.png<>uid://lebfpjabsr2t::::res://Assets/Image/images/Buttons/Github.png<>uid://dvo8x08m1122e::::res://Assets/Image/images/Buttons/FA.png
 ::res://Assets/Scences/UI/Mission_Log/::1726774710
 mission.tscn::PackedScene::9075895523834649921::1726774710::0::1::::<><>::res://Assets/Script/Controller/UI/Mission_Log/mission.gd<>uid://qufpattfuq0y::::res://Assets/Image/Background/Mission Log/1x/Asset 3.png<>uid://cya18eaoptu42::::res://Assets/Theme/Player_Name/Player_Name.tres<>uid://fpssaux4ispl::::res://Assets/Fonts/DisposableDroidBB.ttf<>uid://djx6ba5h1a3qs::::res://Assets/Fonts/DisposableDroidBB_bld.ttf<>uid://btxatlr1vkceb::::res://Assets/Fonts/DisposableDroidBB_ital.ttf
 ::res://Assets/Scences/UI/Options/::1722233620
 Options_Menu.tscn::PackedScene::1560212918064034487::1722233620::0::1::::<><>::res://Assets/Script/Controller/UI/Options_Menu/Options_Menu.gd<>uid://binjwgp4qse04::::res://Assets/Image/images/Background/Option/Settings.jpeg<>uid://b1bqdo4jtrst1::::res://Assets/Fonts/DisposableDroidBB.ttf<>uid://3m1q8h4j6pqo::::res://Assets/Theme/Options_Menu/Options_Menu_Grabber_Hightlight.tres<>uid://cx2jakxqhnvbt::::res://Assets/Fonts/DisposableDroidBB_bld.ttf<>uid://d027sgc8yfxhr::::res://Assets/Theme/Options_Menu/Options_Menu_Grabber_Theme.tres<>uid://co4npg680m0gi::::res://Assets/Theme/Options_Menu/Options_Menu_Slider.tres<>uid://byp7dyvr65jj2::::res://Assets/Fonts/DisposableDroidBB_ital.ttf<>uid://bq75vxl454nso::::res://Assets/Theme/Options_Menu/Options_Menu_Grabber_Area_Highlight.tres<>uid://6thsxv1vtpj8::::res://Assets/Fonts/DisposableDroidBB_bldital.ttf
-::res://Assets/Scences/UI/Pause Menu/::1727016586
-Pause_Menu.tscn::PackedScene::1060863744242428003::1727016586::0::1::::<><>::res://Assets/Script/Controller/UI/Pause_Screen/Pause_Menu.gd<>uid://fpssaux4ispl::::res://Assets/Fonts/DisposableDroidBB.ttf<>uid://c1j6eji0op5wa::::res://Assets/Fonts/Bloodthirsty-3j0p.ttf<>uid://dfyg5ghbue5e0::::res://Assets/Fonts/Wwwolfspirit-xR0m.ttf<>uid://c0lhrui6o2e72::::res://Assets/Music/All Button/Button.mp3
-::res://Assets/Scences/UI/Saver/::1727016586
-Saver_screen.tscn::PackedScene::8212767247907130787::1727016586::0::1::::<><>::res://Assets/Script/Class/Hero/Hero.gd<>uid://c2emamaxb1hlu::::res://Assets/Image/images/Background/Moonlight Clift/Clift.png<>uid://bm4s5et4qfvc::::res://Assets/Fonts/DEADLY CLAWS[.ttf<>uid://djx6ba5h1a3qs::::res://Assets/Fonts/DisposableDroidBB_bld.ttf
+::res://Assets/Scences/UI/Pause Menu/::1727075091
+Pause_Menu.tscn::PackedScene::1060863744242428003::1727075091::0::1::::<><>::res://Assets/Script/Controller/UI/Pause_Screen/Pause_Menu.gd<>uid://fpssaux4ispl::::res://Assets/Fonts/DisposableDroidBB.ttf<>uid://c1j6eji0op5wa::::res://Assets/Fonts/Bloodthirsty-3j0p.ttf<>uid://dfyg5ghbue5e0::::res://Assets/Fonts/Wwwolfspirit-xR0m.ttf<>uid://c0lhrui6o2e72::::res://Assets/Music/All Button/Button.mp3
+::res://Assets/Scences/UI/Saver/::1727075091
+Saver_screen.tscn::PackedScene::8212767247907130787::1727075091::0::1::::<><>::uid://c2emamaxb1hlu::::res://Assets/Image/images/Background/Moonlight Clift/Clift.png<>uid://bm4s5et4qfvc::::res://Assets/Fonts/DEADLY CLAWS[.ttf<>uid://djx6ba5h1a3qs::::res://Assets/Fonts/DisposableDroidBB_bld.ttf
 ::res://Assets/Scences/UI/Settings_Confrimation/::1722078116
 settings_confrimation.tscn::PackedScene::4792057750461397828::1722078116::0::1::::<><>::res://Assets/Script/Controller/UI/Settings_Confirmation/settings_confrimation.gd<>uid://cv0cpoo8qdrc3::::res://Assets/Music/Un Sorteted/All Button/Quit_Button.mp3<>uid://dlb8udois134n::::res://Assets/Music/Un Sorteted/Warning/exclamation-101soundboards.mp3<>uid://br2uoqpi38ygc::::res://Assets/Theme/Dialouge/Exit_Confirmation.tres
 ::res://Assets/Scences/UI/Splash/::1722960045
@@ -4850,8 +4852,8 @@ Wolf_Alamac_Index_Page_7.tscn::PackedScene::6769930754315405403::1726877708::0::
 Wolf_Alamac_Index_Page_8.tscn::PackedScene::2339126808489303446::1726877708::0::1::::<><>::res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Index_Page_8.gd<>uid://c8vpwhgqrvpou::::res://Assets/Image/images/Background/Wolf Almanac Index/Wood Texture.png<>uid://cnhshuaxal67w::::res://Assets/Fonts/DisposableDroidBB_bldital.ttf<>uid://dk2f873t2ffc2::::res://Assets/Theme/Wolf_Almanac_Idex/Button.tres<>uid://rydxjf2k4x0c::::res://Assets/Image/Buttons/Button.png<>uid://c0lhrui6o2e72::::res://Assets/Music/All Button/Button.mp3
 ::res://Assets/Scences/UI/Wolf_Almanac/Index/Page 9/::1726877708
 Wolf_Alamac_Index_Page_9.tscn::PackedScene::4306230980942613234::1726877708::0::1::::<><>::res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Index_Page_9.gd<>uid://c8vpwhgqrvpou::::res://Assets/Image/images/Background/Wolf Almanac Index/Wood Texture.png<>uid://cnhshuaxal67w::::res://Assets/Fonts/DisposableDroidBB_bldital.ttf<>uid://ceov1ogbf4c2w::::res://Assets/Scences/UI/Lock_Button/Lock_buttons.tres<>uid://dk2f873t2ffc2::::res://Assets/Theme/Wolf_Almanac_Idex/Button.tres<>uid://c0lhrui6o2e72::::res://Assets/Music/All Button/Button.mp3<>uid://rydxjf2k4x0c::::res://Assets/Image/Buttons/Button.png
-::res://Assets/Scences/UI/Wolf_Almanac/Main_Menu/::1726877708
-alamanac_main_menu.tscn::PackedScene::792166647879866761::1726877708::0::1::::<><>::uid://p302qv1oc7j8::::res://Assets/Image/Background/Wolf Almanac Index/Wood Texture.png<>res://Assets/Script/Class/Wolf/Wolf Alamanac/Menu/alamanac_main_menu.gd<>uid://djx6ba5h1a3qs::::res://Assets/Fonts/DisposableDroidBB_bld.ttf<>uid://cnhshuaxal67w::::res://Assets/Fonts/DisposableDroidBB_bldital.ttf<>uid://c0lhrui6o2e72::::res://Assets/Music/All Button/Button.mp3
+::res://Assets/Scences/UI/Wolf_Almanac/Main_Menu/::1727075446
+alamanac_main_menu.tscn::PackedScene::792166647879866761::1727075446::0::1::::<><>::uid://p302qv1oc7j8::::res://Assets/Image/Background/Wolf Almanac Index/Wood Texture.png<>res://Assets/Script/Class/Wolf/Wolf Alamanac/Menu/alamanac_main_menu.gd<>uid://djx6ba5h1a3qs::::res://Assets/Fonts/DisposableDroidBB_bld.ttf<>uid://cnhshuaxal67w::::res://Assets/Fonts/DisposableDroidBB_bldital.ttf<>uid://c0lhrui6o2e72::::res://Assets/Music/All Button/Button.mp3
 ::res://Assets/Scences/UI/Word map/::1722273051
 World Map.tscn::PackedScene::9142651575982287958::1722273051::0::1::::<><>::res://Assets/Script/Controller/UI/World_Map/World Map.gd<>uid://cip6bv3iupqo6::::res://Assets/Image/World Map/bluemarble-2048.png<>uid://b1bqdo4jtrst1::::res://Assets/Fonts/DisposableDroidBB.ttf<>uid://b2hv8umjpka6d::::res://Assets/Image/Pin/Pin 2.png<>uid://cgyku8ugltku8::::res://Assets/Image/Pin/Pin 1.png<>uid://be7t3ut5ce03::::res://Assets/Image/Pin/Pin 7.png<>uid://bt0uoj1i6bdyi::::res://Assets/Image/Pin/Pin 5.png<>uid://ci72mfnedc0v5::::res://Assets/Image/Pin/Pin 6.png<>uid://c3uwfigpffkdl::::res://Assets/Image/Pin/Pin 4.png
 ::res://Assets/Scences/Wolves/::1719680010
@@ -4919,17 +4921,17 @@ Tundra_Wolf.tscn::PackedScene::3500194930277331146::1719677219::0::1::::<><>::ui
 Word_Games.tscn::PackedScene::276431280711115737::1727016588::0::1::::<><>::uid://fldrife7s05d::::res://Assets/Scences/Biome/Bridge_Stone_Forest/Bridge_Stone_Forest.tscn
 ::res://Assets/Script/::1717425602
 ::res://Assets/Script/Class/::1726051381
-::res://Assets/Script/Class/Character/::1726878003
-Character_class.gd::GDScript::-1::1726878003::0::1::::Character<>CharacterBody2D<>::
+::res://Assets/Script/Class/Character/::1727063278
+Character_class.gd::GDScript::-1::1727063278::0::1::::Characters<>CharacterBody2D<>::
 ::res://Assets/Script/Class/Character/Player/::1726771235
 coordinate.gd::GDScript::-1::1726771235::0::1::::<>Control<>::
 ::res://Assets/Script/Class/Enemy/::1726160623
 Enemy.gd::GDScript::-1::1726160623::0::1::::Enemy<>Character<>::
 patrol.gd::GDScript::-1::1726108423::0::1::::<>Node2D<>::
-::res://Assets/Script/Class/Hero/::1726928064
-Hero.gd::GDScript::-1::1726928064::0::1::::Hero<>Character<>::
-::res://Assets/Script/Class/Inventory/::1727019288
-inventoryclass.gd::GDScript::-1::1727019288::0::1::::inventory_details_name<>Node<>::
+::res://Assets/Script/Class/Hero/::1727063813
+Hero.gd::GDScript::-1::1727063813::0::1::::Hero<>Characters<>::
+::res://Assets/Script/Class/Inventory/::1727063081
+inventoryclass.gd::GDScript::-1::1727063081::0::1::::inventory_details_name<>Node<>::
 ::res://Assets/Script/Class/Item/::1713830021
 items.gd::GDScript::-1::1721661393::0::1::::Items<>Node<>::
 ::res://Assets/Script/Class/Items/::1726092088
@@ -4938,22 +4940,22 @@ Collectable.gd::GDScript::-1::1726092088::0::1::::<>Area2D<>::
 Player.gd::GDScript::-1::1726121559::0::1::::<>Node<>::
 ::res://Assets/Script/Class/Wolf/::1720997474
 ::res://Assets/Script/Class/Wolf/Wolf Alamanac/::1724760869
-::res://Assets/Script/Class/Wolf/Wolf Alamanac/Book/::1727019288
-Wolf_Alamanac_Book.gd::GDScript::-1::1727019288::0::1::::Wolf_Almanac_Book<>Node<>::
+::res://Assets/Script/Class/Wolf/Wolf Alamanac/Book/::1727063081
+Wolf_Alamanac_Book.gd::GDScript::-1::1727063081::0::1::::Wolf_Almanac_Book<>Node<>::
 ::res://Assets/Script/Class/Wolf/Wolf Alamanac/Class_Data/::1724760927
 Almanac.gd::GDScript::-1::1724760927::0::1::::Almanac<>Node<>::
-::res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/::1727019288
-Wolf_Almanac_Index_Page_1.gd::GDScript::-1::1727019288::0::1::::Wolf_Index_Page_1<>Node2D<>::
+::res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/::1727063082
+Wolf_Almanac_Index_Page_1.gd::GDScript::-1::1727063081::0::1::::Wolf_Index_Page_1<>Node2D<>::
 Wolf_Almanac_Index_Page_2.gd::GDScript::-1::1725336444::0::1::::Wolf_Index_Page_2<>Node2D<>::
 Wolf_Almanac_Index_Page_3.gd::GDScript::-1::1725337552::0::1::::Wolf_Index_Page_3<>Node2D<>::
 Wolf_Almanac_Index_Page_4.gd::GDScript::-1::1725338595::0::1::::Wolf_Index_Page_4<>Node2D<>::
 Wolf_Almanac_Index_Page_5.gd::GDScript::-1::1725339715::0::1::::Wolf_Index_Page_5<>Node2D<>::
 Wolf_Almanac_Index_Page_6.gd::GDScript::-1::1725339532::0::1::::Wolf_Index_Page_6<>Node2D<>::
-Wolf_Almanac_Index_Page_7.gd::GDScript::-1::1727019288::0::1::::Wolf_Index_Page_7<>Node2D<>::
+Wolf_Almanac_Index_Page_7.gd::GDScript::-1::1727063082::0::1::::Wolf_Index_Page_7<>Node2D<>::
 Wolf_Almanac_Index_Page_8.gd::GDScript::-1::1725339971::0::1::::Wolf_Index_Page_8<>Node2D<>::
 Wolf_Almanac_Index_Page_9.gd::GDScript::-1::1725340359::0::1::::Wolf_Index_Page_9<>Node2D<>::
-::res://Assets/Script/Class/Wolf/Wolf Alamanac/Menu/::1727019288
-alamanac_main_menu.gd::GDScript::-1::1727019288::0::1::::Wolf_alamanac_Main_Menu_Index<>Node2D<>::
+::res://Assets/Script/Class/Wolf/Wolf Alamanac/Menu/::1727075446
+alamanac_main_menu.gd::GDScript::-1::1727075446::0::1::::Wolf_alamanac_Main_Menu_Index<>Control<>::
 Wolf_almanac_menu.gd::GDScript::-1::1726036511::0::1::::<>CanvasLayer<>::
 ::res://Assets/Script/Class/Wolf/Wolf_Rescue/::1726157978
 Wolf_Rescue.gd::GDScript::-1::1719681413::0::1::::Wolf_Rescue<>Node<>::
@@ -4979,8 +4981,8 @@ mission_class.gd::GDScript::-1::1726159993::0::1::::MissionClass<>Node<>::
 ::res://Assets/Script/Controller/Save/::1726379300
 ::res://Assets/Script/Controller/Save/Global_Settings/::1713830021
 Global_Settings.gd::GDScript::-1::1713830021::0::1::::<>Node<>::
-::res://Assets/Script/Controller/Save/Inventory/::1727019288
-Inventory.gd::GDScript::-1::1727019288::0::1::::Inventory<>Resource<>::
+::res://Assets/Script/Controller/Save/Inventory/::1727063082
+Inventory.gd::GDScript::-1::1727063082::0::1::::Inventory<>Resource<>::
 ::res://Assets/Script/Controller/Save/Inventory/Items/::1726773295
 Inventory_Slot.gd::GDScript::-1::1726375340::0::1::::InventorySlot<>Resource<>::
 Items_Inventory.gd::GDScript::-1::1726773295::0::1::::InventoryItems<>Resource<>::
@@ -4990,11 +4992,11 @@ Saved_Data.gd::GDScript::-1::1721903574::0::1::::SavedData<>Resource<>::
 ::res://Assets/Script/Controller/Save/Settings/::1718522438
 save_settings.gd::GDScript::-1::1721875807::0::1::::save_settings<>Node<>::
 ::res://Assets/Script/Controller/UI/::1726379888
-::res://Assets/Script/Controller/UI/Biomes/::1726107652
+::res://Assets/Script/Controller/UI/Biomes/::1727099214
 Biomes.gd::GDScript::-1::1721904110::0::1::::Biomes<>Node2D<>::
-Taiga_Stage.gd::GDScript::-1::1726107652::0::1::::<>Area2D<>::
-::res://Assets/Script/Controller/UI/Camera/::1718020600
-Camera2D.gd::GDScript::-1::1718020600::0::1::::<>Camera2D<>::
+Taiga_Stage.gd::GDScript::-1::1727099214::0::1::::<>Area2D<>::
+::res://Assets/Script/Controller/UI/Camera/::1727067326
+Camera2D.gd::GDScript::-1::1727067326::0::1::::<>Camera2D<>::
 ::res://Assets/Script/Controller/UI/Check_Poinys/::1718005821
 CheckPoints.gd::GDScript::-1::1718005821::0::1::::Checkpoin<>Area2D<>::
 ::res://Assets/Script/Controller/UI/Credits/::1725325689
@@ -5007,16 +5009,16 @@ dust.gd::GDScript::-1::1716795913::0::1::::<>AnimatedSprite2D<>::
 Exit Confirmation.gd::GDScript::-1::1713854410::0::1::::<>Control<>::
 ::res://Assets/Script/Controller/UI/Exit_Game_Over/::1725327570
 Exit_Game_Over.gd::GDScript::-1::1725327570::0::1::::<>Control<>::
-::res://Assets/Script/Controller/UI/Game Over/::1725871653
-Game_Over.gd::GDScript::-1::1725871653::0::1::::<>Control<>::
-::res://Assets/Script/Controller/UI/GUI/::1726156931
-GUI_Play.gd::GDScript::-1::1726156931::0::1::::<>Control<>::
+::res://Assets/Script/Controller/UI/Game Over/::1727068490
+Game_Over.gd::GDScript::-1::1727068490::0::1::::<>Control<>::
+::res://Assets/Script/Controller/UI/GUI/::1727067371
+GUI_Play.gd::GDScript::-1::1727067371::0::1::::<>Control<>::
 ::res://Assets/Script/Controller/UI/How to play/::1725327570
 How_To_Play.gd::GDScript::-1::1725327570::0::1::::<>Node2D<>::
-::res://Assets/Script/Controller/UI/Inventory/::1727019288
+::res://Assets/Script/Controller/UI/Inventory/::1727063082
 Inventory_Menu.gd::GDScript::-1::1725340496::0::1::::<>CanvasLayer<>::
 inventory_panel_slot.gd::GDScript::-1::1726775170::0::1::::<>Panel<>::
-Inventory_UI.gd::GDScript::-1::1727019288::0::1::::Inventory_Player_Item<>Control<>::
+Inventory_UI.gd::GDScript::-1::1727063082::0::1::::Inventory_Player_Item<>Control<>::
 ::res://Assets/Script/Controller/UI/Loading/::1713830021
 loading_screen.gd::GDScript::-1::1713830021::0::1::::<>Node<>::
 loading_screen_Menu.gd::GDScript::-1::1713830021::0::1::::<>CanvasLayer<>::
@@ -5026,18 +5028,18 @@ loader_screen.gd::GDScript::-1::1713830021::0::1::::<>RefCounted<>::
 ::res://Assets/Script/Controller/UI/Location/Biome_Exit/::1721961771
 biome_exit.gd::GDScript::-1::1721961771::0::1::::<>Node2D<>::
 Delay_Detected.gd::GDScript::-1::1721961771::0::1::::<>Area2D<>::
-::res://Assets/Script/Controller/UI/Location/Taiga/::1726928897
-Bridge_Stone_Forest.gd::GDScript::-1::1726928897::0::1::::<>Node2D<>::
+::res://Assets/Script/Controller/UI/Location/Taiga/::1727075090
+Bridge_Stone_Forest.gd::GDScript::-1::1727075090::0::1::::<>Node2D<>::
 ::res://Assets/Script/Controller/UI/Main_Menu/::1725884762
 main_menu.gd::GDScript::-1::1725884762::0::1::::Main_Menu<>Control<>::
 ::res://Assets/Script/Controller/UI/Mission_Log/::1726160306
 mission.gd::GDScript::-1::1726160306::0::1::::mission_log<>Control<>::
 ::res://Assets/Script/Controller/UI/Options_Menu/::1718537244
 Options_Menu.gd::GDScript::-1::1718537244::0::1::::Option_Menu<>Control<>::
-::res://Assets/Script/Controller/UI/Pause_Screen/::1726107598
-Pause_Menu.gd::GDScript::-1::1726107598::0::1::::pause_menu<>Control<>::
-::res://Assets/Script/Controller/UI/Player_Input/::1727019288
-Player_Name.gd::GDScript::-1::1727019288::0::1::::<>Control<>::
+::res://Assets/Script/Controller/UI/Pause_Screen/::1727063575
+Pause_Menu.gd::GDScript::-1::1727063575::0::1::::pause_menu<>Control<>::
+::res://Assets/Script/Controller/UI/Player_Input/::1727063082
+Player_Name.gd::GDScript::-1::1727063082::0::1::::<>Control<>::
 ::res://Assets/Script/Controller/UI/Settings_Confirmation/::1718537758
 settings_confrimation.gd::GDScript::-1::1718537758::0::1::::<>Control<>::
 ::res://Assets/Script/Controller/UI/Splash_Screen/::1721785138
@@ -5056,8 +5058,8 @@ Global_Tilesets.gd::GDScript::-1::1717598585::0::1::::<>Node<>::
 Buttons.tres::Theme::2067174858020845069::1726769943::0::1::::<><>::uid://fpssaux4ispl::::res://Assets/Fonts/DisposableDroidBB.ttf
 Label Details.tres::Theme::7353469045376178712::1726769943::0::1::::<><>::uid://dsiccyde5hohl::::res://Assets/Fonts/Roboto/Roboto-BoldItalic.ttf
 Tittles.tres::Theme::6918300631427409798::1726769943::0::1::::<><>::
-::res://Assets/Theme/Dialouge/::1727019288
-Bubble_Dialogue.tres::Resource/DialogicStyle::7394029707513099234::1727019288::0::1::::<><>::res://addons/dialogic/Modules/DefaultLayoutParts/Base_TextBubble/text_bubble_base.gd<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://d2it0xiap3gnt::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/text_bubble_layer.tscn<>res://addons/dialogic/Resources/dialogic_style.gd
+::res://Assets/Theme/Dialouge/::1727063081
+Bubble_Dialogue.tres::Resource/DialogicStyle::7394029707513099234::1727063081::0::1::::<><>::res://addons/dialogic/Modules/DefaultLayoutParts/Base_TextBubble/text_bubble_base.gd<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://d2it0xiap3gnt::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/text_bubble_layer.tscn<>res://addons/dialogic/Resources/dialogic_style.gd
 Exit_Confirmation.tres::Theme::3636609429817157686::1725327570::0::1::::<><>::uid://fpssaux4ispl::::res://Assets/Fonts/DisposableDroidBB.ttf
 ::res://Assets/Theme/Main Menu/::1713830021
 main_menu_button.tres::StyleBoxFlat::5387923169860628167::1713830021::0::1::::<><>::
@@ -5070,6 +5072,6 @@ Options_Menu_Slider.tres::StyleBoxLine::5816168605563242376::1718191272::0::1:::
 Player_Name.tres::Theme::6459011398460081421::1713830021::0::1::::<><>::uid://bv6xsykw7vcai::::res://Assets/Fonts/DisposableDroidBB_bld.ttf
 ::res://Assets/Theme/Wolf_Almanac_Idex/::1722053205
 Button.tres::Theme::7917252927883219627::1722053205::0::1::::<><>::uid://cx2jakxqhnvbt::::res://Assets/Fonts/DisposableDroidBB_bld.ttf
-::res://Assets/Tileset/::1727019290
-Taiga_Stage.tres::TileSet::1529110117977100269::1727019290::0::1::::<><>::uid://dgl61n7b0io6j::::res://Assets/Image/tilesets/Outside_A4.png<>uid://cxu43vespywry::::res://Assets/Image/tilesets/Outside_B.png<>uid://bh380pqumfa5r::::res://Assets/Image/tilesets/forest_tileset.png
-test.tscn::PackedScene::6586724583295280684::1727016695::0::1::::<><>::uid://v1yhquhbbtmr::::res://Assets/Tileset/Taiga_Stage.tres<>uid://w8tfinbfyqkd::::res://Assets/Scences/Player/Player.tscn<>uid://cs1y72y70b50n::::res://Assets/Scences/Dust/jump_dust.tscn<>uid://cndqerygqtk6p::::res://Assets/Scences/Cage/Taiga/pine__cage.tscn<>res://Assets/Scences/Biome/Bridge_Stone_Forest/Game_Control.gd
+::res://Assets/Tileset/::1727099476
+Taiga_Stage.tres::TileSet::1529110117977100269::1727099476::0::1::::<><>::uid://dgl61n7b0io6j::::res://Assets/Image/tilesets/Outside_A4.png<>uid://cxu43vespywry::::res://Assets/Image/tilesets/Outside_B.png<>uid://bh380pqumfa5r::::res://Assets/Image/tilesets/forest_tileset.png
+test.tscn::PackedScene::6586724583295280684::1727075093::0::1::::<><>::uid://v1yhquhbbtmr::::res://Assets/Tileset/Taiga_Stage.tres<>uid://w8tfinbfyqkd::::res://Assets/Scences/Player/Player.tscn<>uid://cndqerygqtk6p::::res://Assets/Scences/Cage/Taiga/pine__cage.tscn<>res://Assets/Scences/Biome/Bridge_Stone_Forest/Game_Control.gd
