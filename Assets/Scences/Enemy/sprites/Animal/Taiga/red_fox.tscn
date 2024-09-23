@@ -1,29 +1,94 @@
-[gd_scene load_steps=5 format=3 uid="uid://d15sb2gtywq1s"]
+[gd_scene load_steps=14 format=3 uid="uid://d15sb2gtywq1s"]
 
-[ext_resource type="SpriteFrames" uid="uid://xhdut66tkog4" path="res://Assets/Scences/Enemy/sprites/Animal/Taiga/red_fox.tres" id="1_18d8h"]
-
-[sub_resource type="GDScript" id="GDScript_6d8kr"]
-script/source = "
-"
+[ext_resource type="Script" path="res://Assets/Script/Class/Enemy/Enemy.gd" id="1_nfw4b"]
+[ext_resource type="Texture2D" uid="uid://c1c1g36bqxioa" path="res://Assets/Image/Enemy/Taiga/Red Fox/tile000.png" id="2_77ym6"]
+[ext_resource type="Texture2D" uid="uid://dvt2n0rt1dndf" path="res://Assets/Image/Enemy/Taiga/Red Fox/tile001.png" id="3_rol3g"]
+[ext_resource type="Texture2D" uid="uid://dvn1aaksgne1s" path="res://Assets/Image/Enemy/Taiga/Red Fox/tile002.png" id="4_yli5e"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xbp3o"]
 radius = 25.0
 height = 66.0
 
+[sub_resource type="Animation" id="Animation_i510e"]
+resource_name = "Iddle"
+length = 0.3
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("2_77ym6"), ExtResource("3_rol3g"), ExtResource("4_yli5e")]
+}
+
+[sub_resource type="Animation" id="Animation_ehk2m"]
+resource_name = "Jump"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_77ym6")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3gcbj"]
+_data = {
+"Iddle": SubResource("Animation_i510e"),
+"Jump": SubResource("Animation_ehk2m")
+}
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_cvcm2"]
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_in4p1"]
+states/Locomotion/node = SubResource("AnimationNodeStateMachine_cvcm2")
+states/Locomotion/position = Vector2(542, 108)
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_2ypp1"]
+states/Movement/node = SubResource("AnimationNodeStateMachine_in4p1")
+states/Movement/position = Vector2(536, 105)
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_4erw6"]
+states/Attack/node = SubResource("AnimationNodeStateMachine_2ypp1")
+states/Attack/position = Vector2(501, 100)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1dlvb"]
 size = Vector2(43, 18)
 
 [node name="red_fox" type="CharacterBody2D"]
-script = SubResource("GDScript_6d8kr")
+script = ExtResource("1_nfw4b")
+_max_armor = 75
+_stagger = 3.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_xbp3o")
 one_way_collision_margin = 64.0
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = ExtResource("1_18d8h")
-animation = &"iddle"
-autoplay = "iddle"
+[node name="AnimatedSprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_77ym6")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatedSprite2D"]
+libraries = {
+"": SubResource("AnimationLibrary_3gcbj")
+}
+
+[node name="AnimationTree" type="AnimationTree" parent="AnimatedSprite2D/AnimationPlayer"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_3gcbj")
+}
+tree_root = SubResource("AnimationNodeStateMachine_4erw6")
+advance_expression_base_node = NodePath("../../..")
+anim_player = NodePath("..")
 
 [node name="hurtbox" type="Area2D" parent="."]
 

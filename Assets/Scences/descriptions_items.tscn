@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://d17jaiebk4fch"]
+[gd_scene load_steps=3 format=3 uid="uid://bwdxh7lj5ueif"]
 
 [ext_resource type="FontFile" uid="uid://fpssaux4ispl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="1_bq0a7"]
 [ext_resource type="Script" path="res://Assets/Scences/UI/Inventory/Descriptions_Items.gd" id="2_75y1n"]

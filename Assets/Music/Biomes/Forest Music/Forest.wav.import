@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cyxyhxgafe2tr"
+path="res://.godot/imported/Forest.wav-7579c07d773707f35a58429c5c3c9294.sample"
+
+[deps]
+
+source_file="res://Assets/Music/Biomes/Forest Music/Forest.wav"
+dest_files=["res://.godot/imported/Forest.wav-7579c07d773707f35a58429c5c3c9294.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

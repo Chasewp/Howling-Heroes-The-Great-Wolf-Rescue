@@ -1,25 +1,28 @@
-[gd_scene load_steps=5 format=3 uid="uid://bli5mfb2fgf2e"]
+[gd_scene load_steps=6 format=3 uid="uid://bli5mfb2fgf2e"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Inventory/Inventory_UI.gd" id="1_450pq"]
 [ext_resource type="Texture2D" uid="uid://dmpbxk5kwi7ik" path="res://Assets/Image/Background/Inventory/InventoryRect.png" id="2_kuskw"]
 [ext_resource type="PackedScene" uid="uid://dwv0ooo1hx666" path="res://Assets/Scences/UI/Inventory/inventory_panel_slot.tscn" id="3_1nhd4"]
 [ext_resource type="FontFile" uid="uid://fpssaux4ispl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="4_shqg0"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kfkd0"]
+bg_color = Color(0.305882, 0.305882, 0.305882, 1)
+
 [node name="Inventory_UI" type="Control"]
 custom_minimum_size = Vector2(109, 84)
 layout_mode = 3
-anchor_right = 0.085
-anchor_bottom = 0.117
-offset_right = 0.199997
-offset_bottom = -0.240005
+anchor_right = 0.296
+anchor_bottom = 0.564
+offset_right = 0.119995
+offset_bottom = -0.0800171
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_450pq")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 layout_mode = 0
-offset_right = 304.0
-offset_bottom = 224.0
+offset_right = 377.0
+offset_bottom = 275.0
 texture = ExtResource("2_kuskw")
 patch_margin_left = 6
 patch_margin_top = 6
@@ -33,12 +36,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -46.0
-offset_top = -34.0
-offset_right = 46.0
-offset_bottom = 35.0
+offset_left = -165.5
+offset_top = -99.5
+offset_right = 165.5
+offset_bottom = 100.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/h_separation = 25
+theme_override_constants/v_separation = 25
 columns = 4
 
 [node name="InventoryPanelSlot" parent="NinePatchRect/GridContainer" instance=ExtResource("3_1nhd4")]
@@ -77,29 +82,18 @@ layout_mode = 2
 [node name="InventoryPanelSlot12" parent="NinePatchRect/GridContainer" instance=ExtResource("3_1nhd4")]
 layout_mode = 2
 
-[node name="Name" type="Label" parent="."]
+[node name="Details_Items" type="RichTextLabel" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_top = 2.726
-anchor_right = 2.743
-anchor_bottom = 3.012
-offset_top = 0.0159912
-offset_right = 0.0130005
-offset_bottom = -0.00801086
-theme_override_fonts/font = ExtResource("4_shqg0")
-theme_override_font_sizes/font_size = 18
-
-[node name="Description" type="Label" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 3.06
-anchor_right = 2.743
-anchor_bottom = 3.488
-offset_top = -0.0400085
-offset_right = 0.0130005
-offset_bottom = 0.00799561
-theme_override_fonts/font = ExtResource("4_shqg0")
-theme_override_font_sizes/font_size = 18
+anchor_top = 0.675
+anchor_right = 1.0
+anchor_bottom = 1.01
+offset_top = -0.0500183
+offset_right = -1.0
+offset_bottom = -0.0599976
+theme_override_fonts/normal_font = ExtResource("4_shqg0")
+theme_override_font_sizes/normal_font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_kfkd0")
 
 [connection signal="mouse_entered" from="NinePatchRect/GridContainer/InventoryPanelSlot" to="." method="_on_inventory_panel_slot_mouse_entered"]
 [connection signal="mouse_exited" from="NinePatchRect/GridContainer/InventoryPanelSlot" to="." method="_on_inventory_panel_slot_mouse_exited"]

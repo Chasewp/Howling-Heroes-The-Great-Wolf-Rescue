@@ -1,8 +1,10 @@
-class_name Hero extends Character
+class_name Hero extends Characters
 
 signal update_coordinate
+signal update_ammo
 
 @export var _has_machete : bool
+@export var _has_brust_garou : bool
 @export var warehouse : Inventory
 @onready var _attack_input_buffer : Timer = $HitBox/InputBuffer
 @warning_ignore("unused_private_class_variable")
@@ -10,7 +12,7 @@ signal update_coordinate
 var _machete : RigidBody2D
 var _brust_garou : RigidBody2D
 var Progress = ProgressedGame.new()
-
+var _is_enabled : bool
 
 func attack():
 	_wants_to_attack = true
@@ -38,6 +40,9 @@ func _air_physics(delta : float):
 	else:
 		super._air_physics(delta)
 
+func shoot_brust_garou_riffle(_delta:float):
+	pass
+	
 func _die():
 	if _has_machete:
 		drop_machete()
@@ -53,10 +58,13 @@ func _on_hit_box_area_entered(area : Area2D):
 func verify_save_directory(path: String):
 	DirAccess.make_dir_absolute(path)
 	
-func _process(delta):
-	emit_signal("update_coordinate",self.position)	
+func _process(_delta):
+	emit_signal("update_coordinate",self.position)
+	#emit_signal("update_ammo",)	
 	Progress.UpdatePos(self.position)
-	
+
+
+
 #func is_Dead():
 	#if getter_health()==0:
 		#get_tree().change_scene_to_packed(game_over)
@@ -77,6 +85,12 @@ func _on_alamanac_main_menu_closed():
 
 func _on_alamanac_main_menu_opened():
 	get_tree().paused = false
+
+
+func _on_hurt_box_area_entered(area):
+	if area.has_method("collect"):
+		area.collect("inventory")
+		
 
 """Save Manager"""
 #Directory File Slot 1
@@ -163,7 +177,7 @@ func _on_save_slot_3_pressed():
 	save_slot3()
 	get_tree().root.remove_child(self)
 
-
 func _on_save_slot_4_pressed():
 	save_slot4()
 	get_tree().root.remove_child(self)
+

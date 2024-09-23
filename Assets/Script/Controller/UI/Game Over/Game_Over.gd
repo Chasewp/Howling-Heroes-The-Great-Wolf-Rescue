@@ -10,4 +10,4 @@ func _on_quit_pressed():
 
 
 func _on_retry_pressed():
-	pass # Replace with function body.
+	get_tree().

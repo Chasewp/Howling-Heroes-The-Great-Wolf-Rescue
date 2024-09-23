@@ -8,4 +8,4 @@ script = ExtResource("1_5ilo1")
 _texture = ExtResource("2_ddwlf")
 _name = "Pine Key"
 _description_Item = "To Open Pine Cage"
-_quantity = 3
+_max_quantity = 3

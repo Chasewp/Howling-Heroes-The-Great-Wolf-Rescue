@@ -7,28 +7,52 @@
 [node name="InventoryPanelSlot" type="Panel"]
 self_modulate = Color(1, 1, 1, 0)
 custom_minimum_size = Vector2(64, 64)
-offset_right = 20.0
-offset_bottom = 20.0
+anchors_preset = -1
+anchor_right = 0.05
+anchor_bottom = 0.089
+offset_bottom = -0.0800018
+size_flags_horizontal = 3
+size_flags_vertical = 3
 script = ExtResource("1_gu63q")
 
 [node name="Background" type="Sprite2D" parent="."]
-scale = Vector2(3.2, 1.6)
+scale = Vector2(3.2, 3.2)
 texture = ExtResource("1_lij51")
 centered = false
 vframes = 2
 
-[node name="Items" type="Sprite2D" parent="."]
-centered = false
-vframes = 2
+[node name="Items" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(64, 64)
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
 
 [node name="Label" type="Label" parent="."]
-layout_mode = 0
-offset_left = 52.0
-offset_top = 15.0
-offset_right = 62.0
-offset_bottom = 34.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.781
+anchor_top = 0.687
+anchor_right = 0.937
+anchor_bottom = 0.984
+offset_left = 0.0159988
+offset_top = 0.0319977
+offset_right = 0.0319977
+offset_bottom = 0.0239983
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_mb23g")
 theme_override_font_sizes/font_size = 18
 text = "0"
-horizontal_alignment = 1
+horizontal_alignment = 2
 vertical_alignment = 1

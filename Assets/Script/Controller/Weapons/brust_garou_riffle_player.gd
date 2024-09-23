@@ -1,11 +1,17 @@
 extends RigidBody2D
 
+@export var bullets : PackedScene
+@export var reloading_audio : AudioStream
+@export var ammo_empty: AudioStream
+@onready var _project_tile_spawn:Node2D = %Projectiles
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	#if Input.is_action_just_pressed("shoot_fire") and ammomag !=0:
+		pass
+
+
+
+
+

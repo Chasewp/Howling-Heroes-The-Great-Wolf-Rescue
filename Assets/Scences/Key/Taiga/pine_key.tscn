@@ -1,13 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://c8cu7e5s4idvf"]
+[gd_scene load_steps=5 format=3 uid="uid://c8cu7e5s4idvf"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/Key/Taiga/Pine Tree/pine_key.gd" id="1_uvo78"]
 [ext_resource type="Texture2D" uid="uid://qg4n5mjficsm" path="res://Assets/Image/Key/taiga/pine key.png" id="1_xq2ri"]
+[ext_resource type="Resource" uid="uid://cjlr016y8lc1n" path="res://Assets/Inventory/Items/Pine_Key.tres" id="2_41i87"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_l22n6"]
 radius = 22.0
 
-[node name="Pine_Key" type="StaticBody2D"]
+[node name="Pine_Key" type="Area2D"]
 script = ExtResource("1_uvo78")
+itemRes = ExtResource("2_41i87")
 
 [node name="PineKey" type="Sprite2D" parent="."]
 texture = ExtResource("1_xq2ri")

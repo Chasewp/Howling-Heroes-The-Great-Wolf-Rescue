@@ -12,7 +12,7 @@ extends Resource
 @export var mission_wolf_rescued : int
 @export var screnshoot_image : Image
 @export var checkpoints : int
-
+@export var stage:PackedScene
 
 
 #@export var level

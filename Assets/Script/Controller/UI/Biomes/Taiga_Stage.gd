@@ -21,6 +21,3 @@ func get_min() -> Vector2:
 func get_max() -> Vector2:
 	return _area.position + _half_size
 
-
-func _on_rest_body_entered(body):
-	pass # Replace with function body.

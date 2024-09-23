@@ -1,0 +1,40 @@
+[gd_scene load_steps=8 format=3 uid="uid://dhsfj4exww2f5"]
+
+[ext_resource type="Texture2D" uid="uid://dxhye0wmfpoig" path="res://Assets/Image/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Water/Water Splash 1/1.png" id="1_hptts"]
+[ext_resource type="Texture2D" uid="uid://cx3r3xbeq0rcn" path="res://Assets/Image/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Water/Water Splash 1/2.png" id="2_oimih"]
+[ext_resource type="Texture2D" uid="uid://5kgkgb3chl0l" path="res://Assets/Image/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Water/Water Splash 1/3.png" id="3_e4la4"]
+[ext_resource type="Texture2D" uid="uid://bdmwabwfpk26r" path="res://Assets/Image/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Water/Water Splash 1/4.png" id="4_sd2q0"]
+[ext_resource type="Texture2D" uid="uid://b6td102dirvh3" path="res://Assets/Image/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Water/Water Splash 1/5.png" id="5_fqoxb"]
+[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Dust/dust.gd" id="6_ytb6c"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_53av0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_hptts")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_oimih")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_e4la4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_sd2q0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_fqoxb")
+}],
+"loop": false,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="Splash" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_53av0")
+frame = 4
+frame_progress = 1.0
+offset = Vector2(0, -10)
+script = ExtResource("6_ytb6c")
+
+[connection signal="animation_finished" from="." to="." method="_on_animation_finished"]

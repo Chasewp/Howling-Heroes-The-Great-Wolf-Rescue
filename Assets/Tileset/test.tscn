@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://c03wnkvwgy453"]
+[gd_scene load_steps=5 format=3 uid="uid://c03wnkvwgy453"]
 
 [ext_resource type="TileSet" uid="uid://v1yhquhbbtmr" path="res://Assets/Tileset/Taiga_Stage.tres" id="1_66p14"]
 [ext_resource type="PackedScene" uid="uid://w8tfinbfyqkd" path="res://Assets/Scences/Player/Player.tscn" id="2_ijja2"]
 [ext_resource type="PackedScene" uid="uid://cndqerygqtk6p" path="res://Assets/Scences/Cage/Taiga/pine__cage.tscn" id="3_53bwv"]
+[ext_resource type="Script" path="res://Assets/Scences/Biome/Bridge_Stone_Forest/Game_Control.gd" id="4_q6qyw"]
 
 [node name="test" type="Node2D"]
 
@@ -13,6 +14,13 @@ layer_0/tile_data = PackedInt32Array(131072, 0, 35, 196608, 0, 36, 262144, 0, 37
 
 [node name="Player" parent="." instance=ExtResource("2_ijja2")]
 position = Vector2(50, 14)
+
+[node name="Game Control" type="Control" parent="Player"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("4_q6qyw")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 

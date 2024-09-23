@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="InventoryItems" load_steps=3 format=3 uid="uid://drh8wf3w7861t"]
+
+[ext_resource type="Texture2D" uid="uid://c2ev3dontnqow" path="res://Assets/Image/Weapon/Player/Brust Garou.png" id="1_5uncu"]
+[ext_resource type="Script" path="res://Assets/Script/Controller/Save/Inventory/Items/Items_Inventory.gd" id="2_7vv58"]
+
+[resource]
+script = ExtResource("2_7vv58")
+_texture = ExtResource("1_5uncu")
+_name = "Brust Garou"
+_description_Item = "Assault Riffle Given By Sir Fenrir"
+_quantity = 1

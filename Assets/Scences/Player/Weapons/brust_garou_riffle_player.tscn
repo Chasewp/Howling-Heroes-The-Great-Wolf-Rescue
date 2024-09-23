@@ -1,12 +1,22 @@
-[gd_scene load_steps=5 format=3 uid="uid://c8it7bbd20xdf"]
+[gd_scene load_steps=11 format=3 uid="uid://c8it7bbd20xdf"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/Weapons/brust_garou_riffle_player.gd" id="1_fipu5"]
 [ext_resource type="Texture2D" uid="uid://c2ev3dontnqow" path="res://Assets/Image/Weapon/Player/Brust Garou.png" id="1_okxly"]
+[ext_resource type="PackedScene" uid="uid://cfywm76eklecq" path="res://Assets/Bullets/bullets_player.tscn" id="2_nep86"]
+[ext_resource type="AudioStream" uid="uid://dgs3yp2wuodpc" path="res://Assets/Music/SFX/Weapon/Reload/Reload.mp3" id="3_i62my"]
+[ext_resource type="FontFile" uid="uid://fpssaux4ispl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="5_fwfmm"]
+[ext_resource type="FontFile" uid="uid://cnhshuaxal67w" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="6_15sp6"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_2ykg5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bp37m"]
 size = Vector2(91, 40)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bfffu"]
+bg_color = Color(0.447059, 0.243137, 0.0941176, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aaixy"]
+bg_color = Color(0.0705882, 1, 0.0117647, 1)
 
 [node name="Brust Garou-Riffle-Player" type="RigidBody2D"]
 physics_material_override = SubResource("PhysicsMaterial_2ykg5")
@@ -16,6 +26,7 @@ freeze_mode = 1
 max_contacts_reported = 2
 contact_monitor = true
 script = ExtResource("1_fipu5")
+bullets = ExtResource("2_nep86")
 
 [node name="BrustGarou" type="Sprite2D" parent="."]
 scale = Vector2(0.3, 0.381)
@@ -23,3 +34,69 @@ texture = ExtResource("1_okxly")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_bp37m")
+
+[node name="Projectiles" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(42, 0)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_i62my")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ammo" type="Label" parent="CanvasLayer"]
+offset_left = -48.0
+offset_top = 24.0
+offset_right = 48.0
+offset_bottom = 40.0
+theme_override_fonts/font = ExtResource("5_fwfmm")
+theme_override_font_sizes/font_size = 10
+text = "Ammo :  30 / 90"
+
+[node name="Reloading_Progress" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -48.0
+offset_top = 40.0
+offset_right = 40.0
+offset_bottom = 80.0
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Reloading_Progress"]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = -13.5
+offset_right = 52.0
+offset_bottom = -3.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_bfffu")
+theme_override_styles/fill = SubResource("StyleBoxFlat_aaixy")
+max_value = 1.0
+step = 0.001
+show_percentage = false
+
+[node name="Label" type="Label" parent="CanvasLayer/Reloading_Progress"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.273
+anchor_top = 0.175
+anchor_right = 0.727
+anchor_bottom = 0.425
+offset_left = -0.0240002
+offset_right = 0.0239944
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_15sp6")
+theme_override_font_sizes/font_size = 10
+text = "Reloading"
+
+[node name="Reloadtimer" type="Timer" parent="."]
+
+[node name="Shoottimer" type="Timer" parent="."]

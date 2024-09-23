@@ -3,7 +3,6 @@ class_name Enemy extends Character
 @onready var _vision : Area2D = get_node_or_null("Vision")
 @onready var _line_of_sight : RayCast2D = get_node_or_null("Vision/LineOfSight")
 @onready var _patrol : Node2D = get_node_or_null("Patrol")
-
 var _hero : Hero
 var _can_see_hero : bool
 

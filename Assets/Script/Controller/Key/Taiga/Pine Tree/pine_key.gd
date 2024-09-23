@@ -1,12 +1,9 @@
-extends StaticBody2D
+extends "res://Assets/Script/Class/Items/Collectable.gd"
 
 signal pine_cage_opened
 
 var keytaken = false
 var in_pine_cage_zone = false
-
-
-
 
 func _on_area_2d_body_entered(body:CharacterBody2D):
 	if keytaken == false :
@@ -20,3 +17,6 @@ func _process(delta):
 			if Input.is_action_just_pressed("interact"):
 				print("pine_cage_opened")
 				emit_signal("pine_cage_opened")
+				
+func collect(inventory : Inventory):
+	super(inventory)

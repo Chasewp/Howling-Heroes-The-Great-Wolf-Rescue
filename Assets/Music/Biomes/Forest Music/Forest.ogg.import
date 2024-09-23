@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bjl17x5tt7buj"
+path="res://.godot/imported/Forest.ogg-d3aa4d52c7c7b2fd01d868d2d5e5aee7.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Music/Biomes/Forest Music/Forest.ogg"
+dest_files=["res://.godot/imported/Forest.ogg-d3aa4d52c7c7b2fd01d868d2d5e5aee7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

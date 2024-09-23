@@ -1,6 +1,5 @@
 extends Node
  
-
 # Variables class
 @export var name_character : String : set = setter_name, get= getter_name
 @export var health : int : set = setter_health, get= getter_health
@@ -12,8 +11,8 @@ extends Node
 
 
 #Setter Name Character
-func setter_name(name):
-	name_character = name
+func setter_name(nm):
+	name_character = nm
 	
 #Getter Name Character
 func getter_name():

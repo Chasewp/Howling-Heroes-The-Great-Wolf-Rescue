@@ -2,9 +2,9 @@ class_name pause_menu
 extends Control
 
 var save = ProgressedGame.new()
-var save_menu = preload("res://Assets/Scences/UI/Saver/Saver_screen.tscn").instantiate()
-var exit = preload("res://Assets/Scences/UI/Exit_Game_Over/Exit_Game_Over.tscn").instantiate()
-
+var save_menu = load("res://Assets/Scences/UI/Saver/Saver_screen.tscn").instantiate()
+var exit = load("res://Assets/Scences/UI/Exit_Game_Over/Exit_Game_Over.tscn").instantiate()
+#var heros = Hero.new()
 @onready var sfx = $button
 
 func set_save_game_image(img : Image):
@@ -23,7 +23,7 @@ func _on_quit_pressed():
 
 func _on_save_and_quit_pressed():
 	sfx.play()
-	heros.auto_save()
+	#heros.auto_save()
 	get_parent().remove_child(self)
 	
 
