@@ -155,8 +155,4 @@ func _on_inventory_panel_slot_11_mouse_exited():
 func _on_inventory_panel_slot_12_mouse_exited():
 	_details_items_clear()
 
-func _input(event : InputEvent):
-	if event.is_action_pressed("open_inventory"):
-		open()
-	else :
-		close()
+

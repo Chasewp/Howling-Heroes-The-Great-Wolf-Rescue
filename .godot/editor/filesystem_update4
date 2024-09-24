@@ -6,3 +6,4 @@ res://Assets/Script/Controller/UI/Inventory/Inventory_UI.gd
 res://test.gd
 res://Assets/Scences/Biome/Bridge_Stone_Forest/Game_Control.gd
 res://Assets/Scences/UI/Inventory/inventory.tscn
+res://Assets/Script/Controller/UI/Inventory/Inventory_Menu.gd
