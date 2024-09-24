@@ -256,8 +256,7 @@ position = Vector2(1082, 252)
 [node name="Platforms" type="Node" parent="."]
 
 [node name="Plafrom" parent="Platforms" instance=ExtResource("6_57q2f")]
-visible = false
-position = Vector2(6037, 139.819)
+position = Vector2(6037, 106.511)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Platforms/Plafrom"]
 libraries = {

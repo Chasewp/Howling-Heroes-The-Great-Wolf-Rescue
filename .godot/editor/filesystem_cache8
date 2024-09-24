@@ -1,5 +1,5 @@
 3f3e2ec9f043b8e24488069cc9acba35
-::res://::1727102119
+::res://::1727175653
 default_bus_layout.tres::AudioBusLayout::196888898710771457::1713830022::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1713830022::0::1::::<><>::
 icon.svg::CompressedTexture2D::5876459423156655483::1713830022::1725295278::1::::<><>::
@@ -611,7 +611,7 @@ plugin.cfg::TextFile::-1::1723785162::0::1::::<><>::
 THIRDPARTY.md::TextFile::-1::1723785162::0::1::::<><>::
 ::res://addons/godot-git-plugin/linux/::1723785162
 ::res://addons/godot-git-plugin/macos/::1723785162
-::res://addons/godot-git-plugin/win64/::1727102096
+::res://addons/godot-git-plugin/win64/::1727175628
 ::res://addons/ldtk-importer/::1725446435
 ldtk-importer.gd::GDScript::-1::1725446435::0::1::::<>EditorImportPlugin<>::
 plugin.cfg::TextFile::-1::1725446435::0::1::::<><>::
@@ -712,7 +712,7 @@ Roboto-MediumItalic.ttf::FontFile::2067685333431823757::1713830017::1725295274::
 Roboto-Regular.ttf::FontFile::4942315300986923715::1713830017::1725295274::1::::<><>::
 Roboto-Thin.ttf::FontFile::2047563588542463206::1713830017::1725295274::1::::<><>::
 Roboto-ThinItalic.ttf::FontFile::7846316198178092759::1713830017::1725295274::1::::<><>::
-::res://Assets/Image/::1727168915
+::res://Assets/Image/::1727175481
 Arcanine.png::CompressedTexture2D::2627018358703333154::1713830017::1727168951::1::::<><>::
 Brown wolf.png::CompressedTexture2D::1603842934134616575::1713830017::1727168949::1::::<><>::
 Castle Battle.png::CompressedTexture2D::8342070320947355934::1713830017::1727168949::1::::<><>::
@@ -746,7 +746,7 @@ wereegarurumon.png::CompressedTexture2D::8105541788651065390::1713830020::172716
 Wolf.png::CompressedTexture2D::7945171876344287783::1713830018::1727168956::1::::<><>::
 wolf_gray_full.png::CompressedTexture2D::6789734686187396434::1713830020::1727168956::1::::<><>::
 wolf_spritesheet_by_halt77_d3ax14b.jpg::CompressedTexture2D::547506977876822297::1713830020::1727168956::1::::<><>::
-::res://Assets/Image/animations/::1727168920
+::res://Assets/Image/animations/::1727168957
 Absorb.png::CompressedTexture2D::253032761829954074::1713830018::1727168956::1::::<><>::
 ArrowSpecial.png::CompressedTexture2D::5006710217890885903::1713830018::1727168956::1::::<><>::
 Blow.png::CompressedTexture2D::6862794555488836351::1713830018::1727168956::1::::<><>::
@@ -866,25 +866,25 @@ Wind4.png::CompressedTexture2D::1858132490523152045::1713830018::1727168943::1::
 Wind5.png::CompressedTexture2D::4779819726965393561::1713830018::1727168944::1::::<><>::
 ::res://Assets/Image/Background/::1727168910
 ::res://Assets/Image/Background/Battle/::1727168920
-::res://Assets/Image/Background/Battle/Forest/::1727168920
+::res://Assets/Image/Background/Battle/Forest/::1727168944
 Foreset 5.png::CompressedTexture2D::1738224047961247567::1713830017::1727168944::1::::<><>::
 Forest 1.png::CompressedTexture2D::7452379237346242896::1713830017::1727168944::1::::<><>::
 Forest 2.png::CompressedTexture2D::6722074772083528029::1713830017::1727168944::1::::<><>::
 Forest 3.png::CompressedTexture2D::7209762208364221355::1713830017::1727168944::1::::<><>::
 Forest 4.png::CompressedTexture2D::3216504385166346990::1713830017::1727168944::1::::<><>::
-::res://Assets/Image/Background/Bridge Stone Forest/::1727168920
+::res://Assets/Image/Background/Bridge Stone Forest/::1727168944
 corkboard.jpg::CompressedTexture2D::7366211796104575827::1713830017::1727168944::1::::<><>::
 pixel_art_A_breathtaking_scene.jpeg::CompressedTexture2D::7109796858425224944::1717590162::1727168944::1::::<><>::
 wolf-den-cave-taiga-forest.png::CompressedTexture2D::751599052789009581::1713830017::1727168944::1::::<><>::
-::res://Assets/Image/Background/Character Selector/::1727168920
+::res://Assets/Image/Background/Character Selector/::1727168944
 wolf-den-cave-taiga-forest 800x 600.png::CompressedTexture2D::2320923003067846725::1713830017::1727168944::1::::<><>::
-::res://Assets/Image/Background/Game_Over/::1727168920
+::res://Assets/Image/Background/Game_Over/::1727168944
 _05103563-7cfd-43ed-b5bd-2cb1f01de6a0.jpeg::CompressedTexture2D::3110829796343555013::1713852360::1727168944::1::::<><>::
-::res://Assets/Image/Background/House/::1727168920
+::res://Assets/Image/Background/House/::1727168944
 bathroom-tile.jpg::CompressedTexture2D::2509076503361453516::1713830017::1727168944::1::::<><>::
-::res://Assets/Image/Background/Info_Intro/::1727168920
+::res://Assets/Image/Background/Info_Intro/::1727168944
 Hill.png::CompressedTexture2D::6432060652188496336::1713830017::1727168944::1::::<><>::
-::res://Assets/Image/Background/Intro/::1727168920
+::res://Assets/Image/Background/Intro/::1727168944
 Burned Forest.png::CompressedTexture2D::9119897309862866549::1713830017::1727168944::1::::<><>::
 Bwbd1Y9Fa9bYowt41VcH--1--pmpjy.jpg::CompressedTexture2D::7053990312632760389::1713830017::1727168944::1::::<><>::
 ::res://Assets/Image/Background/Inventory/::1725327929
@@ -892,24 +892,24 @@ InventoryRect.png::CompressedTexture2D::8032596203360906746::1725327799::1725327
 inventorySlot.png::CompressedTexture2D::7195229361708654905::1725327790::1725327929::1::::<><>::
 ::res://Assets/Image/Background/Loading_Screen/::1725295282
 Firefly Gray Wolf-Howling night fullmoon pixel art 1441.jpeg::CompressedTexture2D::3317555976995765299::1713830017::1725295282::1::::<><>::
-::res://Assets/Image/Background/Main Menu/::1725295291
+::res://Assets/Image/Background/Main Menu/::1727168944
 timber wolf howling.jpg::CompressedTexture2D::7640242577829532457::1713830017::1727168944::1::::<><>::
-::res://Assets/Image/Background/Main_Menu/::1727168920
+::res://Assets/Image/Background/Main_Menu/::1727168944
 w2BsPEmg.jpeg::CompressedTexture2D::6714815740064182732::1713830017::1727168944::1::::<><>::
 ::res://Assets/Image/Background/Mission Log/::1714804092
 ::res://Assets/Image/Background/Mission Log/1x/::1725295282
 Asset 3.png::CompressedTexture2D::1164639455384163514::1714804089::1725295282::1::::<><>::
-::res://Assets/Image/Background/Moonlight Clift/::1727168920
+::res://Assets/Image/Background/Moonlight Clift/::1727168944
 Clift.png::CompressedTexture2D::6676926891870096358::1713830017::1727168944::1::::<><>::
-::res://Assets/Image/Background/Option/::1727168920
+::res://Assets/Image/Background/Option/::1727168945
 Settings.jpeg::CompressedTexture2D::1056799240087737800::1713830017::1727168945::1::::<><>::
-::res://Assets/Image/Background/Splash Screen/::1727168920
+::res://Assets/Image/Background/Splash Screen/::1727168947
 —Pngtree—flat wind keyboard mouse vector_5458958.png::CompressedTexture2D::8422960817339366076::1717597436::1727168947::1::::<><>::
 ::res://Assets/Image/Background/Splash Screen 2/::1725295282
 Splash Screen.png::CompressedTexture2D::3148729091822235059::1713830017::1725295282::1::::<><>::
-::res://Assets/Image/Background/Wolf Almanac Index/::1727168920
+::res://Assets/Image/Background/Wolf Almanac Index/::1727168944
 Wood Texture.png::CompressedTexture2D::7133375560316735972::1713830017::1727168944::1::::<><>::
-::res://Assets/Image/battlebacks1/::1725295291
+::res://Assets/Image/battlebacks1/::1727168954
 Castle1.png::CompressedTexture2D::9180386752814570215::1713830018::1727168952::1::::<><>::
 Castle2.png::CompressedTexture2D::5749850483191775529::1713830018::1727168952::1::::<><>::
 Clouds.png::CompressedTexture2D::5567601441359371944::1713830018::1727168951::1::::<><>::
@@ -960,7 +960,7 @@ Wasteland.png::CompressedTexture2D::8970215470678125429::1713830018::1727168951:
 WireMesh.png::CompressedTexture2D::3693655961703256942::1713830018::1727168951::1::::<><>::
 Wood1.png::CompressedTexture2D::7276855811857122438::1713830018::1727168952::1::::<><>::
 Wood2.png::CompressedTexture2D::7087770724415890146::1713830018::1727168954::1::::<><>::
-::res://Assets/Image/battlebacks2/::1725295292
+::res://Assets/Image/battlebacks2/::1727168955
 Brick.png::CompressedTexture2D::3069333293845368245::1713830018::1727168954::1::::<><>::
 Bridge.png::CompressedTexture2D::30894267769877435::1713830018::1727168954::1::::<><>::
 Castle1.png::CompressedTexture2D::1678466450181583212::1713830018::1727168954::1::::<><>::
@@ -1011,12 +1011,12 @@ Town3.png::CompressedTexture2D::31718757778159939::1713830019::1727168954::1::::
 Town4.png::CompressedTexture2D::2410447712810344040::1713830019::1727168954::1::::<><>::
 Town5.png::CompressedTexture2D::2548718478280742814::1713830019::1727168954::1::::<><>::
 Wasteland.png::CompressedTexture2D::7945893968865330651::1713830019::1727168949::1::::<><>::
-::res://Assets/Image/Book Open/::1727168920
+::res://Assets/Image/Book Open/::1727168944
 opened_notebook_isolated_on_background.png::CompressedTexture2D::560615806051997882::1713830017::1727168944::1::::<><>::
 ::res://Assets/Image/Bullets/::1726105586
 All_Fire_Bullet_Pixel_16x16_02.png::CompressedTexture2D::7739630311548118948::1679889546::1726105586::1::::<><>::
 All_Fire_Bullet_Pixel_16x16_04.png::CompressedTexture2D::612582282252803307::1679889546::1726105586::1::::<><>::
-::res://Assets/Image/Buttons/::1727168920
+::res://Assets/Image/Buttons/::1727168940
 Button.png::CompressedTexture2D::1242979113857557592::1724868866::1725295285::1::::<><>::
 Closee.png::CompressedTexture2D::6789492519530286462::1713830017::1727168940::1::::<><>::
 Discord.png::CompressedTexture2D::4647744681907279872::1713830017::1727168940::1::::<><>::
@@ -1255,7 +1255,7 @@ Werewolf.png::CompressedTexture2D::90506305782797527::1713830019::1725295283::1:
 Willowisp.png::CompressedTexture2D::1756427433335147978::1713830019::1725295283::1::::<><>::
 Windspirit.png::CompressedTexture2D::3624740398844592562::1713830019::1725295283::1::::<><>::
 Zombie.png::CompressedTexture2D::8084351598614134737::1713830019::1725295283::1::::<><>::
-::res://Assets/Image/characters/::1727168921
+::res://Assets/Image/characters/::1727168942
 !$Gate1.png::CompressedTexture2D::2522126494334501378::1713830019::1727168941::1::::<><>::
 !$Gate2.png::CompressedTexture2D::7137164247702174745::1713830019::1727168941::1::::<><>::
 !$kage1.png::CompressedTexture2D::800456447719256064::1713830019::1727168942::1::::<><>::
@@ -1293,7 +1293,7 @@ PlayerMaleDamage.png::CompressedTexture2D::3257065793248045828::1713830019::1727
 Vehicle.png::CompressedTexture2D::5816195370474130883::1713830019::1727168940::1::::<><>::
 Werewolf1.1.png::CompressedTexture2D::4672534182415083401::1713830019::1727168940::1::::<><>::
 White Wolf.png::CompressedTexture2D::4313397318691863798::1713830019::1727168940::1::::<><>::
-::res://Assets/Image/Check_Points/::1727168921
+::res://Assets/Image/Check_Points/::1727168941
 UWF_FLAG CHECK_POINT 01.png::CompressedTexture2D::6834560462748630353::1717846610::1727168940::1::::<><>::
 UWF_FLAG CHECK_POINT 02.png::CompressedTexture2D::303380507705720719::1717846641::1727168940::1::::<><>::
 UWF_FLAG CHECK_POINT 03.png::CompressedTexture2D::4109126056636186431::1717846669::1727168940::1::::<><>::
@@ -1323,7 +1323,7 @@ UWF_FLAG CHECK_POINT 26.png::CompressedTexture2D::6656848708120738662::171799221
 ::res://Assets/Image/Chest/::1725295293
 Chest closed.png::CompressedTexture2D::1476554361440664155::1723711822::1725295293::1::::<><>::
 Chest Open.png::CompressedTexture2D::7982443981907258520::1723711585::1725295293::1::::<><>::
-::res://Assets/Image/Credits/::1727168921
+::res://Assets/Image/Credits/::1727168941
 pixel_art_A_breathtaking_lands (1).jpeg::CompressedTexture2D::6346850305339002417::1713830017::1727168941::1::::<><>::
 pixel_art_A_breathtaking_lands.jpeg::CompressedTexture2D::6574442554820860758::1713830017::1727168941::1::::<><>::
 pixel_art_A_breathtaking_view_ (1).jpeg::CompressedTexture2D::3448718326387973215::1713830017::1727168941::1::::<><>::
@@ -1331,14 +1331,14 @@ pixel_art_A_breathtaking_view_ (2).jpeg::CompressedTexture2D::484877585352809715
 pixel_art_A_breathtaking_view_.jpeg::CompressedTexture2D::521102050069825388::1713830017::1727168941::1::::<><>::
 pixel_art_A_stunning_and_capti (1).jpeg::CompressedTexture2D::3440996823219964979::1713830017::1727168941::1::::<><>::
 pixel_art_A_stunning_and_capti.jpeg::CompressedTexture2D::3296966335169935018::1713830017::1727168941::1::::<><>::
-::res://Assets/Image/Cursor/::1727168921
+::res://Assets/Image/Cursor/::1727168941
 Cursor 32x32.png::CompressedTexture2D::533510808857115616::1713830017::1727168941::1::::<><>::
 Cursor.png::CompressedTexture2D::3189485560374583382::1713830017::1727168941::1::::<><>::
-::res://Assets/Image/Cursor/1x/::1725295291
+::res://Assets/Image/Cursor/1x/::1727168941
 Layer 1.png::CompressedTexture2D::1986817462332049199::1715085388::1727168941::1::::<><>::
 ::res://Assets/Image/Cursor/Cross_Hair/::1725295293
 Layer 1.png::CompressedTexture2D::3808149786882524894::1715085388::1725295293::1::::<><>::
-::res://Assets/Image/Dialogue/::1727168921
+::res://Assets/Image/Dialogue/::1727168941
 Dialogbox-transformed 600x150.png::CompressedTexture2D::5342577490623127865::1713830017::1727168941::1::::<><>::
 ::res://Assets/Image/Effect/::1718004224
 ::res://Assets/Image/Effect/Slash Effefct/::1725295293
@@ -1350,7 +1350,7 @@ Dialogbox-transformed 600x150.png::CompressedTexture2D::5342577490623127865::171
 6.png::CompressedTexture2D::3699400321195906267::1691670710::1725295293::1::::<><>::
 7.png::CompressedTexture2D::781379320579745238::1691670713::1725295293::1::::<><>::
 8.png::CompressedTexture2D::4017997924891166892::1691670754::1725295293::1::::<><>::
-::res://Assets/Image/enemies/::1727168922
+::res://Assets/Image/enemies/::1727168948
 Actor1_3.png::CompressedTexture2D::8124537124382849066::1713830019::1727168941::1::::<><>::
 Actor1_4.png::CompressedTexture2D::4317547194422802765::1713830019::1727168941::1::::<><>::
 Actor1_5.png::CompressedTexture2D::6766134557533583134::1713830019::1727168941::1::::<><>::
@@ -1485,7 +1485,7 @@ tile052.png::CompressedTexture2D::1043180072177830095::1726382653::1726382843::1
 tile053.png::CompressedTexture2D::8187909489642315673::1726382653::1726382843::1::::<><>::
 ::res://Assets/Image/Enemy/Tundra/::1725295295
 Artic Fox.png::CompressedTexture2D::7622683400542882756::1724960872::1725295295::1::::<><>::
-::res://Assets/Image/faces/::1727168922
+::res://Assets/Image/faces/::1727168949
 Actor1.png::CompressedTexture2D::2011592531092634506::1713830019::1727168948::1::::<><>::
 Actor2.png::CompressedTexture2D::1034570733153259984::1713830019::1727168949::1::::<><>::
 Actor3.png::CompressedTexture2D::4193768171666342617::1713830019::1727168949::1::::<><>::
@@ -1511,20 +1511,7 @@ CloudsFront.png::CompressedTexture2D::6599489430626616895::1523098452::172612222
 Tileset.png::CompressedTexture2D::7831126918437621213::1523097434::1726122224::1::::<><>::
 TilesExamples.png::CompressedTexture2D::4564388022805753228::1523097255::1726122224::1::::<><>::
 Trees.png::CompressedTexture2D::6538299412069691165::1523096633::1726122224::1::::<><>::
-::res://Assets/Image/Funitures/::1725295276
-Bed.jpg::CompressedTexture2D::7484368497447742324::1713830017::1727168949::1::::<><>::
-Clock.jpg::CompressedTexture2D::6580006829680682038::1713830017::1727168949::1::::<><>::
-Clock.png::CompressedTexture2D::8135039136407491850::1713830017::1727168949::1::::<><>::
-Cupboard.png::CompressedTexture2D::6604238546514294623::1713830017::1727168949::1::::<><>::
-Curtain.png::CompressedTexture2D::8391700729559817147::1713830017::1727168949::1::::<><>::
-Heater.png::CompressedTexture2D::7345209123539605469::1713830017::1727168949::1::::<><>::
-house-05.png::CompressedTexture2D::2576837601065429735::1713830017::1727168949::1::::<><>::
-house-08.png::CompressedTexture2D::1946982632392367646::1713830017::1727168949::1::::<><>::
-Karpet.png::CompressedTexture2D::1806386414495468545::1713830017::1727168948::1::::<><>::
-RoundTable.png::CompressedTexture2D::8340766389165454622::1713830017::1727168948::1::::<><>::
-Table.png::CompressedTexture2D::6313467731168301423::1713830017::1727168948::1::::<><>::
-Window.png::CompressedTexture2D::675508015662913244::1713830017::1727168948::1::::<><>::
-::res://Assets/Image/grass/::1725295277
+::res://Assets/Image/grass/::1727168949
 desktop.ini::TextFile::-1::1713830019::0::1::::<><>::
 grass0  50x50.png::CompressedTexture2D::6579089351173871299::1713830019::1727168949::1::::<><>::
 grass0-dirt-mix1 50x50.png::CompressedTexture2D::4862772383313226620::1713830019::1727168949::1::::<><>::
@@ -1574,7 +1561,6 @@ grass_sw 50x50.png::CompressedTexture2D::4800014743594640676::1713830019::172716
 grass_sw.png::CompressedTexture2D::4653875392783502234::1713830019::1727168949::1::::<><>::
 grass_w 50x50.png::CompressedTexture2D::5011884016849512791::1713830019::1727168949::1::::<><>::
 grass_w.png::CompressedTexture2D::8833361631872189625::1713830019::1727168949::1::::<><>::
-::res://Assets/Image/images/::1727168923
 ::res://Assets/Image/Item/::1719224095
 ::res://Assets/Image/Item/Wolf_Stone/::1725295281
 Wolf_Stone.png::CompressedTexture2D::7309527015564854599::1719224102::1725295281::1::::<><>::
@@ -1583,20 +1569,20 @@ Wolf_Stone.png::CompressedTexture2D::7309527015564854599::1719224102::1725295281
 pine key.png::CompressedTexture2D::1137193367497943080::1723470152::1725295280::1::::<><>::
 ::res://Assets/Image/Keyboard and Mouse/::1725295280
 478401-PHEZK8-856.png::CompressedTexture2D::9116563539136503936::1713830017::1725295280::1::::<><>::
-::res://Assets/Image/Logo/::1727168922
+::res://Assets/Image/Logo/::1727168948
 Logo Project Howling Heroes The Great Wolf Rescue.png::CompressedTexture2D::4962072001116935789::1713830017::1725295281::1::::<><>::
 Logo.png::CompressedTexture2D::8081300338469213090::1713830017::1727168948::1::::<><>::
 WPA TEAM LOGO.png::CompressedTexture2D::4054214262266829870::1713830017::1727168948::1::::<><>::
 ::res://Assets/Image/Movement/::1718190510
 ::res://Assets/Image/Movement/Female/::1718190509
-::res://Assets/Image/Movement/Female/Artic Wolf/::1725295277
+::res://Assets/Image/Movement/Female/Artic Wolf/::1727168949
 Artic.png::CompressedTexture2D::2701263543321286778::1713830017::1727168949::1::::<><>::
 wolf_gray_full.png::CompressedTexture2D::1210112915705075530::1713830017::1727168949::1::::<><>::
-::res://Assets/Image/Movement/Female/Metal She Wolf/::1725295278
+::res://Assets/Image/Movement/Female/Metal She Wolf/::1727168951
 metalgarurumon_merciful_mode_by_dragonnova52_dcydynr.png::CompressedTexture2D::1100977038394669375::1713830017::1727168951::1::::<><>::
 ::res://Assets/Image/Movement/Male/::1718190509
 ::res://Assets/Image/Movement/Male/Metal Wolf/::1718190509
-::res://Assets/Image/Movement/Male/Metal Wolf/Attack/::1725295277
+::res://Assets/Image/Movement/Male/Metal Wolf/Attack/::1727168949
 Metal Wolf Attack 1.png::CompressedTexture2D::8866977470071658858::1713830017::1727168949::1::::<><>::
 Metal Wolf Attack 2.png::CompressedTexture2D::4965174053685988947::1713830017::1727168949::1::::<><>::
 Metal Wolf Attack 3.png::CompressedTexture2D::2816516056150181586::1713830017::1727168949::1::::<><>::
@@ -1607,46 +1593,46 @@ Metal Wolf Attack 7.png::CompressedTexture2D::2459271319940666653::1713830017::1
 Metal Wolf Attack 8.png::CompressedTexture2D::5871305317769257348::1713830017::1727168949::1::::<><>::
 Metal Wolf Attack 9.png::CompressedTexture2D::4328600395710463662::1713830017::1727168949::1::::<><>::
 Metal Wolf Attack 10.png::CompressedTexture2D::4027098362160656803::1713830017::1727168949::1::::<><>::
-::res://Assets/Image/Movement/Male/Metal Wolf/Left/::1725295277
+::res://Assets/Image/Movement/Male/Metal Wolf/Left/::1727168949
 Metalgarurumon move left up 1.png::CompressedTexture2D::335572481542248261::1713830017::1727168949::1::::<><>::
 Metalgarurumon move left up 2.png::CompressedTexture2D::2177628192954816112::1713830017::1727168949::1::::<><>::
 Metalgarurumon move left up 3.png::CompressedTexture2D::7773860001708971411::1713830017::1727168949::1::::<><>::
 ::res://Assets/Image/Movement/Male/Metal Wolf/Pic/::1718190509
-::res://Assets/Image/Movement/Male/Metal Wolf/Right/::1725295277
+::res://Assets/Image/Movement/Male/Metal Wolf/Right/::1727168949
 Metalgarurumon move right Down 1.png::CompressedTexture2D::1901469585238304589::1713830017::1727168949::1::::<><>::
 Metalgarurumon move right Down 2.png::CompressedTexture2D::7340532459140461374::1713830017::1727168949::1::::<><>::
 Metalgarurumon move right Down 3.png::CompressedTexture2D::1348738457704456190::1713830017::1727168949::1::::<><>::
-::res://Assets/Image/Movement/Male/Timber Wolf/::1725295276
+::res://Assets/Image/Movement/Male/Timber Wolf/::1727168956
 Timber Wolf.png::CompressedTexture2D::2839688641542757827::1713830017::1727168956::1::::<><>::
-::res://Assets/Image/Movement/Male/Timber Wolf/Attack/::1725295277
+::res://Assets/Image/Movement/Male/Timber Wolf/Attack/::1727168949
 Wolf Attack 1.png::CompressedTexture2D::6723200555101166954::1713830017::1727168949::1::::<><>::
 Wolf Attack 2.png::CompressedTexture2D::2804048032158069920::1713830017::1727168949::1::::<><>::
 Wolf Attack 3.png::CompressedTexture2D::5785241647874191785::1713830017::1727168949::1::::<><>::
-::res://Assets/Image/Movement/Male/Timber Wolf/Down/::1725295277
+::res://Assets/Image/Movement/Male/Timber Wolf/Down/::1727168949
 Move down 1.png::CompressedTexture2D::3457701896277592211::1713830017::1727168949::1::::<><>::
 Move down 2.png::CompressedTexture2D::3928278840171456326::1713830017::1727168949::1::::<><>::
 Move down 3.png::CompressedTexture2D::2540359382542146953::1713830017::1727168949::1::::<><>::
-::res://Assets/Image/Movement/Male/Timber Wolf/Howl/::1725295277
+::res://Assets/Image/Movement/Male/Timber Wolf/Howl/::1727168949
 Howl.png::CompressedTexture2D::4369052991428597387::1713830017::1727168949::1::::<><>::
 Sit Left.png::CompressedTexture2D::7921979810325364816::1713830017::1727168949::1::::<><>::
-::res://Assets/Image/Movement/Male/Timber Wolf/Left/::1725295276
+::res://Assets/Image/Movement/Male/Timber Wolf/Left/::1727168949
 Move left 1.png::CompressedTexture2D::7096466154736871221::1713830017::1727168949::1::::<><>::
 Move left 2.png::CompressedTexture2D::7532559223925448347::1713830017::1727168949::1::::<><>::
 Move left 3.png::CompressedTexture2D::1421547091685385508::1713830017::1727168949::1::::<><>::
-::res://Assets/Image/Movement/Male/Timber Wolf/Picture/::1725295276
+::res://Assets/Image/Movement/Male/Timber Wolf/Picture/::1727168956
 Timberwolf.png::CompressedTexture2D::451235088151480196::1713830017::1727168956::1::::<><>::
-::res://Assets/Image/Movement/Male/Timber Wolf/Right/::1725295276
+::res://Assets/Image/Movement/Male/Timber Wolf/Right/::1727168956
 Move Right 1.png::CompressedTexture2D::11228047759012214::1713830017::1727168956::1::::<><>::
 Move Right 2.png::CompressedTexture2D::3909678781317728789::1713830017::1727168956::1::::<><>::
 Move Right 3.png::CompressedTexture2D::4771664709910143784::1713830017::1727168956::1::::<><>::
-::res://Assets/Image/Movement/Male/Timber Wolf/Start/::1725295276
+::res://Assets/Image/Movement/Male/Timber Wolf/Start/::1727168956
 Sit Right.png::CompressedTexture2D::6959163802748751675::1713830017::1727168956::1::::<><>::
-::res://Assets/Image/Movement/Male/Timber Wolf/Up/::1725295276
+::res://Assets/Image/Movement/Male/Timber Wolf/Up/::1727168956
 Move Up 1.png::CompressedTexture2D::280974530456097577::1713830017::1727168956::1::::<><>::
 Move Up 2.png::CompressedTexture2D::9055950021236444402::1713830017::1727168956::1::::<><>::
 Move Up 3.png::CompressedTexture2D::126509902031807343::1713830017::1727168956::1::::<><>::
 ::res://Assets/Image/Movement/Metal Wolf/::1718190510
-::res://Assets/Image/Movement/Metal Wolf/Attack/::1725295277
+::res://Assets/Image/Movement/Metal Wolf/Attack/::1727168956
 Metal Wolf Attack 1.png::CompressedTexture2D::6107332399891038540::1713830017::1727168956::1::::<><>::
 Metal Wolf Attack 2.png::CompressedTexture2D::6606301988867739405::1713830017::1727168956::1::::<><>::
 Metal Wolf Attack 3.png::CompressedTexture2D::5293995838818551387::1713830017::1727168956::1::::<><>::
@@ -1657,54 +1643,54 @@ Metal Wolf Attack 7.png::CompressedTexture2D::4068807682039220350::1713830017::1
 Metal Wolf Attack 8.png::CompressedTexture2D::2425817341118139787::1713830017::1727168956::1::::<><>::
 Metal Wolf Attack 9.png::CompressedTexture2D::2434933822941757097::1713830017::1727168956::1::::<><>::
 Metal Wolf Attack 10.png::CompressedTexture2D::5069110395356700166::1713830017::1727168956::1::::<><>::
-::res://Assets/Image/Movement/Metal Wolf/Left/::1725295277
+::res://Assets/Image/Movement/Metal Wolf/Left/::1727168956
 Metalgarurumon move left up 1.png::CompressedTexture2D::7124990547771486709::1713830017::1727168956::1::::<><>::
 Metalgarurumon move left up 2.png::CompressedTexture2D::3475060495521632719::1713830017::1727168956::1::::<><>::
 Metalgarurumon move left up 3.png::CompressedTexture2D::5795922545518795066::1713830017::1727168956::1::::<><>::
 ::res://Assets/Image/Movement/Metal Wolf/Pic/::1718190510
-::res://Assets/Image/Movement/Metal Wolf/Right/::1725295277
+::res://Assets/Image/Movement/Metal Wolf/Right/::1727168956
 Metalgarurumon move right Down 1.png::CompressedTexture2D::4558530147396213960::1713830017::1727168956::1::::<><>::
 Metalgarurumon move right Down 2.png::CompressedTexture2D::8465243486737205118::1713830017::1727168956::1::::<><>::
 Metalgarurumon move right Down 3.png::CompressedTexture2D::2154843797035017383::1713830017::1727168956::1::::<><>::
 ::res://Assets/Image/Movement/Timber Wolf/::1718190510
-::res://Assets/Image/Movement/Timber Wolf/Attack/::1725295277
+::res://Assets/Image/Movement/Timber Wolf/Attack/::1727168956
 Wolf Attack 1.png::CompressedTexture2D::7843323960362376660::1713830017::1727168956::1::::<><>::
 Wolf Attack 2.png::CompressedTexture2D::7920242059489402128::1713830017::1727168956::1::::<><>::
 Wolf Attack 3.png::CompressedTexture2D::863605767407039536::1713830017::1727168956::1::::<><>::
-::res://Assets/Image/Movement/Timber Wolf/Down/::1725295277
+::res://Assets/Image/Movement/Timber Wolf/Down/::1727168956
 Move down 1.png::CompressedTexture2D::1288128376783591056::1713830017::1727168956::1::::<><>::
 Move down 2.png::CompressedTexture2D::7812965604572907665::1713830017::1727168956::1::::<><>::
 Move down 3.png::CompressedTexture2D::7383349853743996391::1713830017::1727168956::1::::<><>::
-::res://Assets/Image/Movement/Timber Wolf/Howl/::1725295277
+::res://Assets/Image/Movement/Timber Wolf/Howl/::1727168956
 Howl.png::CompressedTexture2D::3041034151666526838::1713830017::1727168956::1::::<><>::
 Sit Left.png::CompressedTexture2D::5169807129087284942::1713830017::1727168956::1::::<><>::
-::res://Assets/Image/Movement/Timber Wolf/Left/::1725295275
+::res://Assets/Image/Movement/Timber Wolf/Left/::1727168956
 Move left 1.png::CompressedTexture2D::782183921806162995::1713830017::1727168956::1::::<><>::
 Move left 2.png::CompressedTexture2D::1363006760718231937::1713830017::1727168956::1::::<><>::
 Move left 3.png::CompressedTexture2D::851774670333538434::1713830017::1727168956::1::::<><>::
-::res://Assets/Image/Movement/Timber Wolf/Picture/::1725295275
+::res://Assets/Image/Movement/Timber Wolf/Picture/::1727168956
 Timberwolf.png::CompressedTexture2D::9108746219215620824::1713830017::1727168956::1::::<><>::
-::res://Assets/Image/Movement/Timber Wolf/Right/::1725295275
+::res://Assets/Image/Movement/Timber Wolf/Right/::1727168956
 Move Right 1.png::CompressedTexture2D::7942310375977487818::1713830017::1727168956::1::::<><>::
 Move Right 2.png::CompressedTexture2D::867992259855471498::1713830017::1727168956::1::::<><>::
 Move Right 3.png::CompressedTexture2D::894140081544566970::1713830017::1727168956::1::::<><>::
-::res://Assets/Image/Movement/Timber Wolf/Start/::1725295275
+::res://Assets/Image/Movement/Timber Wolf/Start/::1727168956
 Sit Right.png::CompressedTexture2D::4196301228622876179::1713830017::1727168956::1::::<><>::
-::res://Assets/Image/Movement/Timber Wolf/Up/::1725295275
+::res://Assets/Image/Movement/Timber Wolf/Up/::1727168956
 Move Up 1.png::CompressedTexture2D::4910556748964283779::1713830017::1727168956::1::::<><>::
 Move Up 2.png::CompressedTexture2D::8741777544957606101::1713830017::1727168956::1::::<><>::
 Move Up 3.png::CompressedTexture2D::2239606384237907731::1713830017::1727168956::1::::<><>::
 ::res://Assets/Image/NPC/::1718190510
-::res://Assets/Image/NPC/Bridge Stone Forest/::1725295275
+::res://Assets/Image/NPC/Bridge Stone Forest/::1727168956
 Cerberus.png::CompressedTexture2D::4916087509142135684::1713830017::1727168956::1::::<><>::
 Pup1.png::CompressedTexture2D::4289011747965179039::1713830017::1727168956::1::::<><>::
 pup2.png::CompressedTexture2D::4779860021751383001::1713830017::1727168956::1::::<><>::
 Ryuza 40x40.png::CompressedTexture2D::2102049858751805679::1713830017::1727168956::1::::<><>::
 Werewol 40x40.png::CompressedTexture2D::6583418327964609994::1713830017::1727168956::1::::<><>::
 Wolf-link.png::CompressedTexture2D::2701502134510943405::1713830017::1727168956::1::::<><>::
-::res://Assets/Image/NPC/Kate/::1725295278
+::res://Assets/Image/NPC/Kate/::1727168959
 She Wolf 2.png::CompressedTexture2D::2108948009830944141::1713830017::1727168959::1::::<><>::
-::res://Assets/Image/NPC/Metal Wolf Anthro MK CCCLX/::1725295276
+::res://Assets/Image/NPC/Metal Wolf Anthro MK CCCLX/::1727168957
 Metal Wolf Anthro MK CCCLX lets go.png::CompressedTexture2D::2091574787234315360::1713830017::1727168957::1::::<><>::
 Metal Wolf Anthro MK CCCLX missle 407 x 687.png::CompressedTexture2D::5979075525614688667::1713830017::1727168957::1::::<><>::
 Metal Wolf Anthro MK CCCLX missle.png::CompressedTexture2D::57821260057451784::1713830017::1727168957::1::::<><>::
@@ -1712,18 +1698,18 @@ Metal Wolf Anthro MK CCCLX standby glanting 2 407 x 687.png::CompressedTexture2D
 Metal Wolf Anthro MK CCCLX standby glanting 2.png::CompressedTexture2D::5297824256245432178::1713830017::1727168957::1::::<><>::
 Metal Wolf Anthro MK CCCLX standby Glanting.png::CompressedTexture2D::5426867654997056308::1713830017::1727168957::1::::<><>::
 Metal Wolf Anthro MK CCCLX standby normal.png::CompressedTexture2D::4460141031772045816::1713830017::1727168957::1::::<><>::
-::res://Assets/Image/NPC/Parents House/::1725295276
+::res://Assets/Image/NPC/Parents House/::1727168957
 Arcicwolf Pixel Art.png::CompressedTexture2D::517531259918724083::1713830017::1727168957::1::::<><>::
 BlackWolf_pixel Art.png::CompressedTexture2D::1228799014298956798::1713830017::1727168957::1::::<><>::
-::res://Assets/Image/Obj/::1727168922
+::res://Assets/Image/Obj/::1727168948
 Warping.png::CompressedTexture2D::4150821562723302391::1713830017::1727168948::1::::<><>::
-::res://Assets/Image/Obj/Bridge Stone Forest/::1727168922
+::res://Assets/Image/Obj/Bridge Stone Forest/::1727168948
 Tree - Pine 00 60x100.png::CompressedTexture2D::6587914170285283469::1713830017::1727168948::1::::<><>::
 Tree - Pine 00.png::CompressedTexture2D::1504069912440996989::1713830017::1727168948::1::::<><>::
 Tree - Pine 01.png::CompressedTexture2D::5753162689408030359::1713830017::1727168948::1::::<><>::
 Tree - Pine 02.png::CompressedTexture2D::2326172744142859967::1713830017::1727168948::1::::<><>::
 WolfStatue.png::CompressedTexture2D::944013816115749003::1713830017::1727168948::1::::<><>::
-::res://Assets/Image/parallaxes/::1727168922
+::res://Assets/Image/parallaxes/::1727168949
 BlueSky.png::CompressedTexture2D::4150851296340513171::1713830019::1727168948::1::::<><>::
 CloudySky1.png::CompressedTexture2D::1070561355476539024::1713830019::1727168948::1::::<><>::
 CloudySky2.png::CompressedTexture2D::3776683746055859683::1713830019::1727168948::1::::<><>::
@@ -1739,7 +1725,7 @@ Ocean2.png::CompressedTexture2D::422531968551251239::1713830019::1727168949::1::
 SeaofClouds.png::CompressedTexture2D::6526730881093255239::1713830019::1727168949::1::::<><>::
 StarlitSky.png::CompressedTexture2D::8314128137975357855::1713830019::1727168946::1::::<><>::
 Sunset.png::CompressedTexture2D::1661206092432206293::1713830019::1727168946::1::::<><>::
-::res://Assets/Image/pictures/::1727168922
+::res://Assets/Image/pictures/::1727168946
 0fog1.png::CompressedTexture2D::318606764840914358::1713830019::1727168946::1::::<><>::
 0fog2.png::CompressedTexture2D::4939874797336784842::1713830019::1727168946::1::::<><>::
 0fog3.png::CompressedTexture2D::6462082973158751429::1713830019::1727168946::1::::<><>::
@@ -1747,7 +1733,7 @@ Sunset.png::CompressedTexture2D::1661206092432206293::1713830019::1727168946::1:
 0shadow.png::CompressedTexture2D::4563737153949026565::1713830019::1727168946::1::::<><>::
 light2.png::CompressedTexture2D::3756962398254184040::1713830019::1727168946::1::::<><>::
 light.png::CompressedTexture2D::7911898155068988398::1713830019::1727168946::1::::<><>::
-::res://Assets/Image/Pin/::1727168922
+::res://Assets/Image/Pin/::1727168946
 Pin 1.png::CompressedTexture2D::203561947075679297::1713830017::1727168946::1::::<><>::
 Pin 2.png::CompressedTexture2D::4313077242185434027::1713830017::1727168946::1::::<><>::
 Pin 3.png::CompressedTexture2D::1369278144141086056::1713830017::1727168946::1::::<><>::
@@ -1757,7 +1743,7 @@ Pin 6.png::CompressedTexture2D::6976338060955915237::1713830017::1727168946::1::
 Pin 7.png::CompressedTexture2D::2832640129042532154::1713830017::1727168946::1::::<><>::
 ::res://Assets/Image/Pine/::1727168922
 desktop.ini::TextFile::-1::1713830017::0::1::::<><>::
-::res://Assets/Image/Pine/Pine Trees/::1727168923
+::res://Assets/Image/Pine/Pine Trees/::1727168946
 Tree - Pine 00 60x100.png::CompressedTexture2D::5377382120292333813::1713830017::1727168946::1::::<><>::
 Tree - Pine 00.png::CompressedTexture2D::7549032164190029282::1713830017::1727168946::1::::<><>::
 Tree - Pine 01.png::CompressedTexture2D::9124419403317018616::1713830017::1727168946::1::::<><>::
@@ -1823,7 +1809,7 @@ stalagmite5.png::CompressedTexture2D::7548823558001030542::1668516196::172677029
 ::res://Assets/Image/Splash Screen/::1725295281
 Splash Screen.png::CompressedTexture2D::2448006489822649201::1713830017::1725295281::1::::<><>::
 ::res://Assets/Image/SumRndmDde/::1718190510
-::res://Assets/Image/sv_actors/::1725295276
+::res://Assets/Image/sv_actors/::1727168957
 Actor1_1.png::CompressedTexture2D::692274104552325511::1713830019::1727168957::1::::<><>::
 Actor1_2.png::CompressedTexture2D::4140282803306127822::1713830019::1727168957::1::::<><>::
 Actor1_3.png::CompressedTexture2D::4469041595436743704::1713830019::1727168957::1::::<><>::
@@ -1846,7 +1832,7 @@ Actor3_7.png::CompressedTexture2D::550870677353815477::1713830019::1727168957::1
 Actor3_8.png::CompressedTexture2D::760603420906547899::1713830019::1727168957::1::::<><>::
 PlayerMale.png::CompressedTexture2D::7150199769350858744::1713830019::1727168957::1::::<><>::
 WerewolfScratchAttack.png::CompressedTexture2D::8469941937014691453::1713830019::1727168957::1::::<><>::
-::res://Assets/Image/sv_enemies/::1725295276
+::res://Assets/Image/sv_enemies/::1727168957
 Actor1_3.png::CompressedTexture2D::2368515363969051408::1713830019::1727168957::1::::<><>::
 Actor1_4.png::CompressedTexture2D::9035947531007684476::1713830019::1727168957::1::::<><>::
 Actor1_5.png::CompressedTexture2D::5935152689758489913::1713830019::1727168957::1::::<><>::
@@ -1917,7 +1903,7 @@ Werewolf.png::CompressedTexture2D::2843659360998549429::1713830019::1727168956::
 Willowisp.png::CompressedTexture2D::4238797813872886571::1713830019::1727168956::1::::<><>::
 Windspirit.png::CompressedTexture2D::4736329160750501549::1713830019::1727168956::1::::<><>::
 Zombie.png::CompressedTexture2D::7429096475618670386::1713830019::1727168956::1::::<><>::
-::res://Assets/Image/system/::1727168923
+::res://Assets/Image/system/::1727168945
 Balloon.png::CompressedTexture2D::5994685773438175132::1713830019::1727168945::1::::<><>::
 ButtonSet.png::CompressedTexture2D::5021836403170209331::1713830019::1727168945::1::::<><>::
 Damage.png::CompressedTexture2D::5550253458066391630::1713830019::1727168945::1::::<><>::
@@ -1931,7 +1917,7 @@ Weapons1.png::CompressedTexture2D::1461789269772647880::1713830019::1727168945::
 Weapons2.png::CompressedTexture2D::7570940524982039377::1713830019::1727168945::1::::<><>::
 Weapons3.png::CompressedTexture2D::3329587364009579542::1713830019::1725295280::1::::<><>::
 Window.png::CompressedTexture2D::5909786495434818509::1713830019::1725295280::1::::<><>::
-::res://Assets/Image/tilesets/::1727168923
+::res://Assets/Image/tilesets/::1727168948
 Dungeon_A1.png::CompressedTexture2D::7408842001803971951::1713830019::1725295280::1::::<><>::
 Dungeon_A1.txt::TextFile::-1::1713830019::0::1::::<><>::
 Dungeon_A2.png::CompressedTexture2D::8488260936018132767::1713830019::1725295280::1::::<><>::
@@ -2007,31 +1993,6 @@ World_B.png::CompressedTexture2D::295700530716409623::1713830020::1727168948::1:
 World_B.txt::TextFile::-1::1713830020::0::1::::<><>::
 World_C.png::CompressedTexture2D::1227978486127064413::1713830020::1727168948::1::::<><>::
 World_C.txt::TextFile::-1::1713830020::0::1::::<><>::
-::res://Assets/Image/titles1/::1725295280
-Book.png::CompressedTexture2D::2497488961160348547::1713830020::1727168946::1::::<><>::
-Castle.png::CompressedTexture2D::584584205470203098::1713830020::1727168946::1::::<><>::
-CrossedSwords.png::CompressedTexture2D::4194600173039346761::1713830020::1727168946::1::::<><>::
-Crystal.png::CompressedTexture2D::4671057607870568992::1713830020::1727168946::1::::<><>::
-DemonCastle.png::CompressedTexture2D::6850999963698038563::1713830020::1727168946::1::::<><>::
-Devil.png::CompressedTexture2D::4095828298768007340::1713830020::1727168946::1::::<><>::
-Dragon.png::CompressedTexture2D::6166596040142357939::1713830020::1727168946::1::::<><>::
-Fountain.png::CompressedTexture2D::3045584492320912787::1713830020::1727168946::1::::<><>::
-Gates.png::CompressedTexture2D::1433103257755170139::1713830020::1727168946::1::::<><>::
-Hexagram.png::CompressedTexture2D::4904157290189768710::1713830020::1727168946::1::::<><>::
-Island.png::CompressedTexture2D::7070704245841224362::1713830020::1727168946::1::::<><>::
-Main emnu.png::CompressedTexture2D::7954382315104232339::1713830020::1727168946::1::::<><>::
-Night.png::CompressedTexture2D::6781039945141332679::1713830020::1727168947::1::::<><>::
-Plain.png::CompressedTexture2D::3799954682200005012::1713830020::1727168947::1::::<><>::
-Sword.png::CompressedTexture2D::8729101466448335258::1713830020::1727168947::1::::<><>::
-Tower1.png::CompressedTexture2D::4864516011306970469::1713830020::1727168947::1::::<><>::
-Tower2.png::CompressedTexture2D::5916320307737976937::1713830020::1727168947::1::::<><>::
-Universe.png::CompressedTexture2D::9085539573156907766::1713830020::1727168947::1::::<><>::
-Volcano.png::CompressedTexture2D::8831801129832491374::1713830020::1727168947::1::::<><>::
-World.png::CompressedTexture2D::635413593103949631::1713830020::1727168947::1::::<><>::
-WorldMap.png::CompressedTexture2D::5580127767480192807::1713830020::1727168947::1::::<><>::
-::res://Assets/Image/titles2/::1725295280
-Floral.png::CompressedTexture2D::7162145680882928524::1713830020::1727168947::1::::<><>::
-Medieval.png::CompressedTexture2D::3836833666167633898::1713830020::1727168947::1::::<><>::
 ::res://Assets/Image/Treasure Hunters/::1726380005
 ::res://Assets/Image/Treasure Hunters/Treasure Hunters/::1726380003
 ::res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/::1726379998
@@ -3660,9 +3621,9 @@ Steppe-Wolf-Canis-lupus-campestris-or-Caspian-Sea-Wolf-in-the-Wild.jpg::Compress
 Tundra-Wolf-Canis-lupus-albus-in-Winter.jpg::CompressedTexture2D::5427383653532348606::1713830017::1725295279::1::::<><>::
 ::res://Assets/Image/Wolves/Vancouver Coastal Island Wolf/::1725295278
 Wolf_Coast.jpg::CompressedTexture2D::1610163444066027009::1713830017::1725295278::1::::<><>::
-::res://Assets/Image/Wood Board/::1727168923
+::res://Assets/Image/Wood Board/::1727168947
 Word Board.png::CompressedTexture2D::6097921024189119671::1713830018::1727168947::1::::<><>::
-::res://Assets/Image/World Map/::1727168923
+::res://Assets/Image/World Map/::1727168947
 bluemarble-2048.png::CompressedTexture2D::7965229259753913242::1713830018::1727168947::1::::<><>::
 ::res://Assets/Inventory/::1726031507
 ::res://Assets/Inventory/Items/::1726772309
@@ -4173,8 +4134,8 @@ biome_exit.tscn::PackedScene::4553856033413209444::1725320217::0::1::::<><>::uid
 Game_Control.gd::GDScript::-1::1726378039::0::1::::<>Node<>::
 ::res://Assets/Scences/Biome/How_to_Play/::1725782243
 How_To_Play.tscn::PackedScene::5079252934453415338::1725782243::0::1::::<><>::res://Assets/Script/Controller/UI/How to play/How_To_Play.gd
-::res://Assets/Scences/Biome/Tundra/::1727103001
-auto_scroller.gdshader::Shader::-1::1727103001::0::1::::<><>::
+::res://Assets/Scences/Biome/Tundra/::1727169026
+auto_scroller.gdshader::Shader::-1::1727169026::0::1::::<><>::
 auto_scroller.tscn::PackedScene::6754858830163848465::1726877708::0::1::::<><>::uid://cidgla3oqkmoa::::res://Assets/MountainsLayers/sky.png<>res://Assets/Scences/Biome/Tundra/auto_scroller.gdshader<>uid://bbw3l7ns3qacb::::res://Assets/MountainsLayers/far-clouds.png<>uid://nei8g3fblyr7::::res://Assets/MountainsLayers/near-clouds.png<>uid://bcnsdxg457gf4::::res://Assets/MountainsLayers/far-mountains.png<>uid://cub65x0y0ym76::::res://Assets/MountainsLayers/mountains.png<>uid://dxjs1s2ge2yl0::::res://Assets/MountainsLayers/trees.png<>uid://lfkxxo68r08r::::res://Assets/Music/summer nights.ogg
 ::res://Assets/Scences/Cage/::1725702317
 ::res://Assets/Scences/Cage/Taiga/::1727075091
@@ -4188,10 +4149,13 @@ jump_dust.tscn::PackedScene::6091430184400867695::1726380415::0::1::::<><>::uid:
 run_dust.tscn::PackedScene::7644154312116566913::1727075092::0::1::::<><>::uid://bvwlq6v7a3at1::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Run 01.png<>uid://3ciofkcilpuj::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Run 02.png<>uid://qhrairn8jad5::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Run 03.png<>uid://cm7a8lsvqrg3q::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Run 04.png<>uid://b5p7qnte5lxv8::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Run 05.png<>res://Assets/Script/Controller/UI/Dust/dust.gd
 splash.tscn::PackedScene::7688063943659264292::1726770015::0::1::::<><>::uid://dxhye0wmfpoig::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Water/Water Splash 1/1.png<>uid://cx3r3xbeq0rcn::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Water/Water Splash 1/2.png<>uid://5kgkgb3chl0l::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Water/Water Splash 1/3.png<>uid://bdmwabwfpk26r::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Water/Water Splash 1/4.png<>uid://b6td102dirvh3::::res://Assets/Image/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Water/Water Splash 1/5.png<>res://Assets/Script/Controller/UI/Dust/dust.gd
 ::res://Assets/Scences/Enemy/::1725435897
-::res://Assets/Scences/Enemy/sprites/::1725435903
+::res://Assets/Scences/Enemy/sprites/::1727168996
 ::res://Assets/Scences/Enemy/sprites/Animal/::1725435907
 ::res://Assets/Scences/Enemy/sprites/Animal/Taiga/::1727075091
 red_fox.tscn::PackedScene::9047199438249149270::1727075091::0::1::::<><>::res://Assets/Script/Class/Enemy/Enemy.gd<>uid://c1c1g36bqxioa::::res://Assets/Image/Enemy/Taiga/Red Fox/tile000.png<>uid://dvt2n0rt1dndf::::res://Assets/Image/Enemy/Taiga/Red Fox/tile001.png<>uid://dvn1aaksgne1s::::res://Assets/Image/Enemy/Taiga/Red Fox/tile002.png
+::res://Assets/Scences/Enemy/sprites/Humanoid/::1727169000
+::res://Assets/Scences/Enemy/sprites/Humanoid/Taiga/::1727169011
+taiga_hunter.tscn::PackedScene::8268885127785930483::1727169011::0::1::::<><>::
 ::res://Assets/Scences/Enemy/Weapons/::1718419571
 ::res://Assets/Scences/Hazzards/::1727075093
 spikes_normal_rock.tscn::PackedScene::4871661079282912513::1727075093::0::1::::<><>::res://Assets/Script/Controller/Hazzard/Hazzard.gd<>uid://bcyhugscb6qpj::::res://Assets/Scences/UI/Location/Taiga/stalagmite3.png
@@ -4211,8 +4175,8 @@ Machete.tscn::PackedScene::6192881161050430598::1725884781::0::1::::<><>::uid://
 ::res://Assets/Scences/Stages/Dessert/::1717601154
 ::res://Assets/Scences/Stages/Level_Taiga_Stage/::1727096757
 taiga_biome.tscn::PackedScene::2470268531786943352::1727096757::0::1::::<><>::res://Assets/Script/Controller/UI/Camera/Camera2D.gd<>res://Assets/Script/Controller/UI/Location/Taiga/Bridge_Stone_Forest.gd<>uid://duapb0cjxsh0d::::res://Assets/Scences/UI/Location/Taiga/taiga_background.tscn<>uid://c1ph53byo1unb::::res://Assets/Scences/UI/Game_Play/GUI_Play.tscn<>uid://d2kow5kkphlx6::::res://Assets/Scences/UI/Mission_Log/mission.tscn<>uid://pd5jheoce1lf::::res://Assets/Scences/UI/Pause Menu/Pause_Menu.tscn<>uid://w8tfinbfyqkd::::res://Assets/Scences/Player/Player.tscn<>res://Assets/Scences/Biome/Bridge_Stone_Forest/Game_Control.gd<>uid://bli5mfb2fgf2e::::res://Assets/Scences/UI/Inventory/inventory.tscn<>uid://b8slyshlqv5fw::::res://Assets/Scences/UI/Game over/Game_Over.tscn<>uid://ljy4srl7uqw4::::res://Assets/Scences/UI/Wolf_Almanac/Main_Menu/alamanac_main_menu.tscn
-::res://Assets/Scences/Stages/Taiga/::1727103001
-level_1-1.tscn::PackedScene::2880070106523642665::1727103001::0::1::::<><>::res://Assets/Script/Controller/UI/Biomes/Taiga_Stage.gd<>uid://v1yhquhbbtmr::::res://Assets/Tileset/Taiga_Stage.tres<>uid://ctyfcjvef5jlv::::res://Assets/Scences/UI/Check_Points/Check_Points.tscn<>uid://b00ws5eol5y1x::::res://Assets/Music/Healing/mixkit-bless-choir-655.wav<>uid://cndqerygqtk6p::::res://Assets/Scences/Cage/Taiga/pine__cage.tscn<>uid://b13q00tqak8pk::::res://Assets/Scences/Platfromer/platfrom_taiga.tscn<>uid://cbn4storx858p::::res://Assets/Scences/Hazzards/spikes_normal_rock.tscn<>uid://2lnetgnt75dr::::res://Assets/Scences/Wolves/Gray/Gray_Wolf/gray_wolf.tscn
+::res://Assets/Scences/Stages/Taiga/::1727169019
+level_1-1.tscn::PackedScene::2880070106523642665::1727169019::0::1::::<><>::res://Assets/Script/Controller/UI/Biomes/Taiga_Stage.gd<>uid://v1yhquhbbtmr::::res://Assets/Tileset/Taiga_Stage.tres<>uid://ctyfcjvef5jlv::::res://Assets/Scences/UI/Check_Points/Check_Points.tscn<>uid://b00ws5eol5y1x::::res://Assets/Music/Healing/mixkit-bless-choir-655.wav<>uid://cndqerygqtk6p::::res://Assets/Scences/Cage/Taiga/pine__cage.tscn<>uid://b13q00tqak8pk::::res://Assets/Scences/Platfromer/platfrom_taiga.tscn<>uid://cbn4storx858p::::res://Assets/Scences/Hazzards/spikes_normal_rock.tscn<>uid://2lnetgnt75dr::::res://Assets/Scences/Wolves/Gray/Gray_Wolf/gray_wolf.tscn
 level_1-2.tscn::PackedScene::5816041756857931401::1727075092::0::1::::<><>::uid://bh380pqumfa5r::::res://Assets/Image/tilesets/forest_tileset.png
 ::res://Assets/Scences/Stages/Tundra/::1717601163
 ::res://Assets/Scences/UI/::1725945690

@@ -8,10 +8,9 @@ res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Index_Page_1.gd
 res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Index_Page_7.gd
 res://Assets/Script/Class/Wolf/Wolf Alamanac/Menu/alamanac_main_menu.gd
 res://Assets/Script/Controller/UI/Inventory/Inventory_UI.gd
+res://Assets/Script/Controller/Save/Inventory/Inventory.gd
 res://Assets/Inventory/Player_Inventory/Player_Inventory.tres
 res://Assets/Script/Controller/UI/Player_Input/Player_Name.gd
 res://Assets/Tileset/Taiga_Stage.tres
 res://Assets/Bullets/Animation_Player_Bullets.tres
 res://Assets/Scences/Biome/Tundra/auto_scroller.gdshader
-res://Assets/Script/Controller/UI/Biomes/Taiga_Stage.gd
-res://Assets/Scences/Enemy/sprites/Humanoid/Taiga/taiga_hunter.tscn
