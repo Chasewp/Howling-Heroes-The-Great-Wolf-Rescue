@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bhbell7p0r466"]
+[gd_scene load_steps=17 format=3 uid="uid://bhbell7p0r466"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Biomes/Taiga_Stage.gd" id="1_kfjpg"]
 [ext_resource type="TileSet" uid="uid://v1yhquhbbtmr" path="res://Assets/Tileset/Taiga_Stage.tres" id="2_vgijr"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cndqerygqtk6p" path="res://Assets/Scences/Cage/Taiga/pine__cage.tscn" id="6_8nnnv"]
 [ext_resource type="PackedScene" uid="uid://b13q00tqak8pk" path="res://Assets/Scences/Platfromer/platfrom_taiga.tscn" id="6_57q2f"]
 [ext_resource type="PackedScene" uid="uid://cbn4storx858p" path="res://Assets/Scences/Hazzards/spikes_normal_rock.tscn" id="6_hl1lm"]
+[ext_resource type="PackedScene" uid="uid://2lnetgnt75dr" path="res://Assets/Scences/Wolves/Gray/Gray_Wolf/gray_wolf.tscn" id="8_w00mm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u87gb"]
 size = Vector2(10419, 746)
@@ -83,6 +84,12 @@ tracks/0/keys = {
 _data = {
 "move": SubResource("Animation_dyvbd")
 }
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kwpfr"]
+size = Vector2(10, 4)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v3jv8"]
+size = Vector2(13, 462)
 
 [node name="Level" type="Area2D"]
 collision_layer = 9
@@ -249,7 +256,8 @@ position = Vector2(1082, 252)
 [node name="Platforms" type="Node" parent="."]
 
 [node name="Plafrom" parent="Platforms" instance=ExtResource("6_57q2f")]
-position = Vector2(6037, 97.7424)
+visible = false
+position = Vector2(6037, 139.819)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Platforms/Plafrom"]
 libraries = {
@@ -262,11 +270,32 @@ light_mask = 524288
 visibility_layer = 524288
 
 [node name="Pine__Cage" parent="Cage" instance=ExtResource("6_8nnnv")]
-position = Vector2(4021, -211)
+position = Vector2(4025, -199)
+
+[node name="Gray_Wolf" parent="Cage/Pine__Cage" instance=ExtResource("8_w00mm")]
+visible = false
+position = Vector2(-2, 8)
 
 [node name="Bos_meet" type="Node2D" parent="."]
 position = Vector2(5153, -32)
 
-[node name="Area2D" type="Area2D" parent="Bos_meet"]
+[node name="Bos_Encouter" type="Area2D" parent="Bos_meet"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bos_meet/Bos_Encouter"]
+position = Vector2(5, -2)
+shape = SubResource("RectangleShape2D_kwpfr")
+
+[node name="Walls" type="StaticBody2D" parent="Bos_meet"]
+
+[node name="Wall" type="CollisionShape2D" parent="Bos_meet/Walls"]
+position = Vector2(-6.5, -230)
+shape = SubResource("RectangleShape2D_v3jv8")
+debug_color = Color(0.4, 0.662745, 1, 0.419608)
+
+[node name="Wall2" type="CollisionShape2D" parent="Bos_meet/Walls"]
+position = Vector2(851.5, -230)
+shape = SubResource("RectangleShape2D_v3jv8")
+debug_color = Color(0.4, 0.662745, 1, 0.419608)
 
 [connection signal="body_entered" from="Rest" to="." method="_on_rest_body_entered"]
+[connection signal="body_entered" from="Bos_meet/Bos_Encouter" to="." method="_on_bos_encounter_body_entered"]

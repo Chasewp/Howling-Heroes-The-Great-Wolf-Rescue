@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bnft6yt72rq7b"
+path="res://.godot/imported/ocean.ogg-8f3513bc91ad3126090f21851472399f.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Music/SFX/Biomes/Ocean Music/ocean.ogg"
+dest_files=["res://.godot/imported/ocean.ogg-8f3513bc91ad3126090f21851472399f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

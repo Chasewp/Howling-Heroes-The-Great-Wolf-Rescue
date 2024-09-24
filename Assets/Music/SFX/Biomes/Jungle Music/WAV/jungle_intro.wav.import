@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ku7ikflbbi18"
+path="res://.godot/imported/jungle_intro.wav-73809a25f23f6b8267f7a1e0639e35da.sample"
+
+[deps]
+
+source_file="res://Assets/Music/SFX/Biomes/Jungle Music/WAV/jungle_intro.wav"
+dest_files=["res://.godot/imported/jungle_intro.wav-73809a25f23f6b8267f7a1e0639e35da.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

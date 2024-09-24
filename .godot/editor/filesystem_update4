@@ -13,3 +13,5 @@ res://Assets/Script/Controller/UI/Player_Input/Player_Name.gd
 res://Assets/Tileset/Taiga_Stage.tres
 res://Assets/Bullets/Animation_Player_Bullets.tres
 res://Assets/Scences/Biome/Tundra/auto_scroller.gdshader
+res://Assets/Script/Controller/UI/Biomes/Taiga_Stage.gd
+res://Assets/Scences/Enemy/sprites/Humanoid/Taiga/taiga_hunter.tscn
