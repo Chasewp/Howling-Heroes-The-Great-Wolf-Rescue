@@ -11,9 +11,9 @@ func set_enabled(is_enabled : bool):
 func _input(event : InputEvent):
 	if not _is_enabled:
 		return
-	if event.is_action_pressed("jump"):
+	if event.is_action_pressed("Jump"):
 		_character.jump()
-	if event.is_action_released("jump"):
+	if event.is_action_released("Jump"):
 		_character.stop_jump()
 	#if event.is_action_pressed("slash_weapon"):
 		#_character.attack()

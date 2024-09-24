@@ -1,10 +1,20 @@
 [gd_scene load_steps=5 format=3 uid="uid://dpalcuvsrqsj0"]
 
-[ext_resource type="Texture2D" uid="uid://c2emamaxb1hlu" path="res://Assets/Image/images/Background/Moonlight Clift/Clift.png" id="2_6087o"]
+[ext_resource type="Texture2D" uid="uid://c2emamaxb1hlu" path="res://Assets/Image/Background/Moonlight Clift/Clift.png" id="2_6087o"]
 [ext_resource type="FontFile" uid="uid://bm4s5et4qfvc" path="res://Assets/Fonts/DEADLY CLAWS[.ttf" id="3_14ouc"]
 [ext_resource type="FontFile" uid="uid://djx6ba5h1a3qs" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="4_l478o"]
 
 [sub_resource type="GDScript" id="GDScript_sp6es"]
+script/source = "extends Node2D
+
+var _heros = Hero.new()
+
+func _on_save_slot_1_pressed():
+	_heros.save_slot1()
+
+func _on_save_slot_2_pressed():
+	_heros.save_slot2()
+"
 
 [node name="First_Save_Screen" type="Node2D"]
 script = SubResource("GDScript_sp6es")

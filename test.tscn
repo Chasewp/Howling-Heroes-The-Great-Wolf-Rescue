@@ -1,15 +1,19 @@
-[gd_scene load_steps=7 format=3 uid="uid://dyp88i5j83mnd"]
+[gd_scene load_steps=10 format=3 uid="uid://dyp88i5j83mnd"]
 
 [ext_resource type="Texture2D" uid="uid://cpyuos6sec4qx" path="res://icon.svg" id="1_c7fbu"]
-[ext_resource type="Script" path="res://Assets/Scences/Biome/Bridge_Stone_Forest/Camera2D.gd" id="1_ugmr3"]
+[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Camera/Camera2D.gd" id="1_ugmr3"]
+[ext_resource type="Script" path="res://test.gd" id="1_vtvip"]
 [ext_resource type="PackedScene" uid="uid://w8tfinbfyqkd" path="res://Assets/Scences/Player/Player.tscn" id="2_tlw7o"]
+[ext_resource type="PackedScene" uid="uid://bli5mfb2fgf2e" path="res://Assets/Scences/UI/Inventory/inventory.tscn" id="3_mmqkv"]
 [ext_resource type="PackedScene" uid="uid://c8cu7e5s4idvf" path="res://Assets/Scences/Key/Taiga/pine_key.tscn" id="4_mry6n"]
 [ext_resource type="PackedScene" uid="uid://cs1y72y70b50n" path="res://Assets/Scences/Dust/jump_dust.tscn" id="5_1ub7l"]
+[ext_resource type="Script" path="res://Assets/Scences/Biome/Bridge_Stone_Forest/Game_Control.gd" id="6_252g5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_56acy"]
 size = Vector2(1247, 70)
 
-[node name="Node2D" type="Node2D"]
+[node name="Test_Inevntory" type="Node2D"]
+script = ExtResource("1_vtvip")
 
 [node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("_subject")]
 script = ExtResource("1_ugmr3")
@@ -28,6 +32,14 @@ texture = ExtResource("1_c7fbu")
 position = Vector2(613.5, -25)
 shape = SubResource("RectangleShape2D_56acy")
 
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Inventory_UI" parent="UI" instance=ExtResource("3_mmqkv")]
+offset_left = -54.44
+offset_top = -42.04
+offset_right = -54.32
+offset_bottom = -42.12
+
 [node name="Pine_Key" parent="." instance=ExtResource("4_mry6n")]
 position = Vector2(550, 634)
 
@@ -35,5 +47,10 @@ position = Vector2(550, 634)
 position = Vector2(25, 593)
 _jump_dust = ExtResource("5_1ub7l")
 
+[node name="Game_controller" type="Node" parent="Player"]
+script = ExtResource("6_252g5")
+
+[connection signal="closed" from="UI/Inventory_UI" to="UI/Inventory_UI" method="close"]
+[connection signal="opened" from="UI/Inventory_UI" to="UI/Inventory_UI" method="open"]
 [connection signal="changed_direction" from="Player" to="Camera2D" method="_on_subject_changed_direction"]
 [connection signal="landed" from="Player" to="Camera2D" method="_on_subject_landed"]

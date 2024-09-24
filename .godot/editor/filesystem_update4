@@ -1,16 +1,8 @@
-res://Assets/Scences/Stages/Taiga/level_1-1.tscn
-res://Assets/Dialogue/Theme/Speaker_Mode.tres
-res://Assets/Dialogue/Theme/Pixelize_Visual_Novel.tres
-res://Assets/Theme/Dialouge/Bubble_Dialogue.tres
-res://Assets/Script/Class/Inventory/inventoryclass.gd
-res://Assets/Script/Class/Wolf/Wolf Alamanac/Book/Wolf_Alamanac_Book.gd
-res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Index_Page_1.gd
-res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Index_Page_7.gd
-res://Assets/Script/Class/Wolf/Wolf Alamanac/Menu/alamanac_main_menu.gd
-res://Assets/Script/Controller/UI/Inventory/Inventory_UI.gd
-res://Assets/Script/Controller/Save/Inventory/Inventory.gd
+res://Assets/Scences/UI/Splash/Splash_Screen_1.tscn
+res://test.tscn
 res://Assets/Inventory/Player_Inventory/Player_Inventory.tres
-res://Assets/Script/Controller/UI/Player_Input/Player_Name.gd
-res://Assets/Tileset/Taiga_Stage.tres
-res://Assets/Bullets/Animation_Player_Bullets.tres
-res://Assets/Scences/Biome/Tundra/auto_scroller.gdshader
+res://Assets/Scences/UI/Saver/Saver_screen.tscn
+res://Assets/Script/Controller/UI/Inventory/Inventory_UI.gd
+res://test.gd
+res://Assets/Scences/Biome/Bridge_Stone_Forest/Game_Control.gd
+res://Assets/Scences/UI/Inventory/inventory.tscn

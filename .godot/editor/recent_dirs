@@ -1,23 +1,2 @@
-res://Assets/Scences/Enemy/sprites/Humanoid/Taiga
-res://Assets/Scences/Platfromer
-res://Assets/Scences/Stages/Level_Taiga_Stage
-res://Assets/Scences/Hazzards
-res://Assets/Script/Controller/Hazzard
-res://Assets/Image/tilesets
-res://Assets/Script/Controller/UI/Dust
-res://Assets/Scences/Stages/Taiga
-res://Assets/Scences/Dust
-res://Assets/Image/Enemy/Taiga
-res://Assets/Image/Treasure Hunters/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles
-res://Assets/Script/Controller/Save/Inventory/Items
-res://Assets/Image/Bullets
-res://Assets/Scences/Player/Animation
-res://Assets/Script/Controller/Mission
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolf_Rescue_team
-res://
-res://Assets/Bullets
-res://Assets/Script/Class/Hero
-res://Assets/Inventory/Items
-res://Assets/Script/Class/Inventory
-res://Assets/Scences/UI/Inventory
-C:/Users/Blizzard/Documents/GitHub/Howling-Heroes-The-Great-Wolf-Rescue
+res://Assets/Script/Controller/UI/Camera
+res://Assets/Image/Keyboard and Mouse
