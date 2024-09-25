@@ -1,0 +1,720 @@
+[gd_resource type="AnimationLibrary" load_steps=63 format=3 uid="uid://bkgq1ncn5vt2d"]
+
+[ext_resource type="Texture2D" uid="uid://c5220ipebeweh" path="res://Assets/Image/Character/Player/templerun/Dead__000.png" id="1_gj2wj"]
+[ext_resource type="Texture2D" uid="uid://dbh4fvfo7j7ot" path="res://Assets/Image/Character/Player/templerun/Dead__001.png" id="2_pb87b"]
+[ext_resource type="Texture2D" uid="uid://bndjgewmrmcge" path="res://Assets/Image/Character/Player/templerun/Dead__002.png" id="3_kusxd"]
+[ext_resource type="Texture2D" uid="uid://di72s5qv7pu2k" path="res://Assets/Image/Character/Player/templerun/Dead__003.png" id="4_jhx1o"]
+[ext_resource type="Texture2D" uid="uid://c0r7laqr6ro77" path="res://Assets/Image/Character/Player/templerun/Dead__004.png" id="5_bhoml"]
+[ext_resource type="Texture2D" uid="uid://b8gro6plbvtap" path="res://Assets/Image/Character/Player/templerun/Dead__005.png" id="6_dfelu"]
+[ext_resource type="Texture2D" uid="uid://cdijssjlg60c4" path="res://Assets/Image/Character/Player/templerun/Dead__006.png" id="7_lfwlm"]
+[ext_resource type="Texture2D" uid="uid://cl2lf558gjijv" path="res://Assets/Image/Character/Player/templerun/Dead__007.png" id="8_21vpp"]
+[ext_resource type="Texture2D" uid="uid://cffft7hojn8rn" path="res://Assets/Image/Character/Player/templerun/Idle__000.png" id="9_8bg6t"]
+[ext_resource type="Texture2D" uid="uid://bjt8hyg1orxny" path="res://Assets/Image/Character/Player/templerun/Dead__008.png" id="10_f4n0n"]
+[ext_resource type="Texture2D" uid="uid://wjrxqnanf0dk" path="res://Assets/Image/Character/Player/templerun/Dead__009.png" id="11_hxo3s"]
+[ext_resource type="AudioStream" uid="uid://df4770joocjgf" path="res://Assets/Music/SFX/Player/deathknell-tlk-101soundboards-metalgarurumon. 1secmp3.mp3" id="12_i68rh"]
+[ext_resource type="Texture2D" uid="uid://dwrqtuxtd6bgm" path="res://Assets/Image/Character/Player/templerun/Jump__005.png" id="13_fkyoc"]
+[ext_resource type="Texture2D" uid="uid://y4iaer4q21ue" path="res://Assets/Image/Character/Player/templerun/Jump__006.png" id="14_tshuu"]
+[ext_resource type="Texture2D" uid="uid://cwwxkwiopbxnj" path="res://Assets/Image/Character/Player/templerun/Jump__007.png" id="15_2gxyq"]
+[ext_resource type="Texture2D" uid="uid://dbcl1rca3smlu" path="res://Assets/Image/Character/Player/templerun/Jump__008.png" id="16_py8np"]
+[ext_resource type="Texture2D" uid="uid://meyqj428wx2v" path="res://Assets/Image/Character/Player/templerun/Jump__009.png" id="17_bax6p"]
+[ext_resource type="AudioStream" uid="uid://b8oiwbhheqc24" path="res://Assets/Music/SFX/Player/headbutt-101soundboards.Metalgarurumonmp3.mp3" id="18_vs10x"]
+[ext_resource type="Texture2D" uid="uid://biqjw1upqpf74" path="res://Assets/Image/Character/Player/templerun/Hit/Hit_01.png" id="19_u8aj0"]
+[ext_resource type="Texture2D" uid="uid://bhymkb8mofydy" path="res://Assets/Image/Character/Player/templerun/Hit/Hit_02.png" id="20_2j6o8"]
+[ext_resource type="AudioStream" uid="uid://5uylh8kekf45" path="res://Assets/Music/SFX/Player/strain-tlk-101soundboards.mp3" id="21_dgcrm"]
+[ext_resource type="Texture2D" uid="uid://3t5idevocxin" path="res://Assets/Image/Character/Player/templerun/Idle__001.png" id="22_eubrm"]
+[ext_resource type="Texture2D" uid="uid://bgy0hlpkgeuih" path="res://Assets/Image/Character/Player/templerun/Idle__002.png" id="23_bq6lp"]
+[ext_resource type="Texture2D" uid="uid://c2ijjju015g35" path="res://Assets/Image/Character/Player/templerun/Idle__003.png" id="24_nuqtr"]
+[ext_resource type="Texture2D" uid="uid://bofmhelhklqpk" path="res://Assets/Image/Character/Player/templerun/Idle__004.png" id="25_vdc8r"]
+[ext_resource type="Texture2D" uid="uid://e2i3nm8dvmrq" path="res://Assets/Image/Character/Player/templerun/Idle__005.png" id="26_kvi8u"]
+[ext_resource type="Texture2D" uid="uid://bnq02kmhoy4q2" path="res://Assets/Image/Character/Player/templerun/Idle__006.png" id="27_lkalw"]
+[ext_resource type="Texture2D" uid="uid://dpnng8ev6057n" path="res://Assets/Image/Character/Player/templerun/Idle__007.png" id="28_3vg0w"]
+[ext_resource type="Texture2D" uid="uid://c5xfjsa5qx4uv" path="res://Assets/Image/Character/Player/templerun/Idle__008.png" id="29_g63rn"]
+[ext_resource type="Texture2D" uid="uid://bbt0cofwwtqts" path="res://Assets/Image/Character/Player/templerun/Idle__009.png" id="30_taxnp"]
+[ext_resource type="Texture2D" uid="uid://dadmu3fcddrjk" path="res://Assets/Image/Character/Player/templerun/Jump__000.png" id="31_0w3yi"]
+[ext_resource type="Texture2D" uid="uid://blo55j5gtixm3" path="res://Assets/Image/Character/Player/templerun/Jump__001.png" id="32_rh7sx"]
+[ext_resource type="Texture2D" uid="uid://b87u3fka31jk6" path="res://Assets/Image/Character/Player/templerun/Jump__002.png" id="33_ghd2e"]
+[ext_resource type="Texture2D" uid="uid://c3nx1s1qks18w" path="res://Assets/Image/Character/Player/templerun/Jump__003.png" id="34_5o1ir"]
+[ext_resource type="Texture2D" uid="uid://dbp1ra63821gd" path="res://Assets/Image/Character/Player/templerun/Jump__004.png" id="35_5jox8"]
+[ext_resource type="AudioStream" uid="uid://xyxvfrsemvf7" path="res://Assets/Music/SFX/Player/grunt-tlk-101soundboards.mp3" id="36_ryk4m"]
+[ext_resource type="Texture2D" uid="uid://bvsoi4ra2w4nb" path="res://Assets/Image/Character/Player/templerun/Jump/Jump__009.png" id="37_ekmxe"]
+[ext_resource type="Texture2D" uid="uid://bi8ij5d1um800" path="res://Assets/Image/Character/Player/templerun/Run/Run__000.png" id="38_65hho"]
+[ext_resource type="Texture2D" uid="uid://b8krqm5mryy1l" path="res://Assets/Image/Character/Player/templerun/Run/Run__001.png" id="39_l0ufg"]
+[ext_resource type="Texture2D" uid="uid://sl5qloj1iywg" path="res://Assets/Image/Character/Player/templerun/Run/Run__002.png" id="40_wf50n"]
+[ext_resource type="Texture2D" uid="uid://c5firou8tl0m8" path="res://Assets/Image/Character/Player/templerun/Run/Run__003.png" id="41_0g1v1"]
+[ext_resource type="Texture2D" uid="uid://yyrfwx8httt" path="res://Assets/Image/Character/Player/templerun/Run/Run__004.png" id="42_mc3uj"]
+[ext_resource type="Texture2D" uid="uid://cejbegygwfkuv" path="res://Assets/Image/Character/Player/templerun/Run/Run__005.png" id="43_3jcij"]
+[ext_resource type="Texture2D" uid="uid://hkyg4nm747ve" path="res://Assets/Image/Character/Player/templerun/Run/Run__006.png" id="44_02a0m"]
+[ext_resource type="Texture2D" uid="uid://c7nh81u262ohu" path="res://Assets/Image/Character/Player/templerun/Run/Run__007.png" id="45_galnb"]
+[ext_resource type="Texture2D" uid="uid://cgvhcmmdq11pb" path="res://Assets/Image/Character/Player/templerun/Run/Run__008.png" id="46_7mdn0"]
+[ext_resource type="Texture2D" uid="uid://d35g6qao6xjt7" path="res://Assets/Image/Character/Player/templerun/Run/Run__009.png" id="47_yymil"]
+[ext_resource type="AudioStream" uid="uid://bprhl5rvpql0w" path="res://Assets/Music/SFX/Player/Download Metal Shoes Royalty-Free Music & Sound Effects.mp3" id="48_1nfgm"]
+[ext_resource type="PackedScene" uid="uid://dg55dta7sxucv" path="res://Assets/Scences/Dust/run_dust.tscn" id="49_m1le2"]
+
+[sub_resource type="Animation" id="Animation_8d1l8"]
+resource_name = "Dead"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.8001, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_gj2wj"), ExtResource("2_pb87b"), ExtResource("3_kusxd"), ExtResource("4_jhx1o"), ExtResource("5_bhoml"), ExtResource("6_dfelu"), ExtResource("7_lfwlm"), ExtResource("8_21vpp"), ExtResource("9_8bg6t"), ExtResource("10_f4n0n"), ExtResource("11_hxo3s")]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SFX")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.051165,
+"stream": ExtResource("12_i68rh")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/1/use_blend = true
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Weapon:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_ohcuy"]
+resource_name = "Ground"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("13_fkyoc"), ExtResource("14_tshuu"), ExtResource("15_2gxyq"), ExtResource("16_py8np"), ExtResource("17_bax6p"), ExtResource("9_8bg6t")]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SFX")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("18_vs10x")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/1/use_blend = true
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Weapon:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_0pmwl"]
+resource_name = "Ground_machete"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("13_fkyoc"), ExtResource("14_tshuu"), ExtResource("15_2gxyq"), ExtResource("16_py8np"), ExtResource("17_bax6p"), ExtResource("9_8bg6t")]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SFX")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("18_vs10x")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/1/use_blend = true
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Weapon:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(23, 16), Vector2(7, -0.999999), Vector2(2, -5), Vector2(0, 0), Vector2(0, 0), Vector2(18, 29)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Weapon:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [3.83972, 4.18879, 4.71239, 4.71239, 4.27606, 5.75959]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Weapon:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_nm0j3"]
+resource_name = "Hit"
+length = 0.4
+step = 0.0001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1.07177, 1),
+"update": 1,
+"values": [ExtResource("19_u8aj0"), ExtResource("20_2j6o8")]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SFX")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0976785,
+"start_offset": 0.0,
+"stream": ExtResource("21_dgcrm")
+}],
+"times": PackedFloat32Array(0.0163)
+}
+tracks/1/use_blend = true
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:_is_hit")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.3956),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Weapon:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_kclyk"]
+resource_name = "Hit_machete"
+length = 0.4
+step = 0.0001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1.07177, 1),
+"update": 1,
+"values": [ExtResource("19_u8aj0"), ExtResource("20_2j6o8")]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SFX")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0976785,
+"start_offset": 0.0,
+"stream": ExtResource("21_dgcrm")
+}],
+"times": PackedFloat32Array(0.0163)
+}
+tracks/1/use_blend = true
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:_is_hit")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.42),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Weapon:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-34, 22)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Weapon:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.523599]
+}
+
+[sub_resource type="Animation" id="Animation_gwxgm"]
+resource_name = "Iddle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.8001, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("9_8bg6t"), ExtResource("22_eubrm"), ExtResource("23_bq6lp"), ExtResource("24_nuqtr"), ExtResource("25_vdc8r"), ExtResource("26_kvi8u"), ExtResource("27_lkalw"), ExtResource("28_3vg0w"), ExtResource("9_8bg6t"), ExtResource("29_g63rn"), ExtResource("30_taxnp")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Weapon:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_gnjkg"]
+resource_name = "Iddle_machete"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.8001, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("9_8bg6t"), ExtResource("22_eubrm"), ExtResource("23_bq6lp"), ExtResource("24_nuqtr"), ExtResource("25_vdc8r"), ExtResource("26_kvi8u"), ExtResource("27_lkalw"), ExtResource("28_3vg0w"), ExtResource("9_8bg6t"), ExtResource("29_g63rn"), ExtResource("30_taxnp")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Weapon:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(18, 28), Vector2(18, 29), Vector2(18, 30), Vector2(18, 31), Vector2(18, 32), Vector2(18, 33), Vector2(18, 32), Vector2(18, 31), Vector2(18, 30), Vector2(18, 29), Vector2(18, 28)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Weapon:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_xlc5k"]
+resource_name = "Jump"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("31_0w3yi"), ExtResource("32_rh7sx"), ExtResource("33_ghd2e"), ExtResource("34_5o1ir"), ExtResource("35_5jox8")]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SFX")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("36_ryk4m")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/1/use_blend = true
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Weapon:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_ep1ga"]
+resource_name = "Jump_machete"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("31_0w3yi"), ExtResource("32_rh7sx"), ExtResource("33_ghd2e"), ExtResource("34_5o1ir"), ExtResource("35_5jox8")]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SFX")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("36_ryk4m")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/1/use_blend = true
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Weapon:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-6, 42), Vector2(13, 33), Vector2(21, 12), Vector2(22, 12)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Weapon:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [-0.523599, -1.11701, -2.51327, -2.37365]
+}
+
+[sub_resource type="Animation" id="Animation_66r7j"]
+resource_name = "fall"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("37_ekmxe")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Weapon:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_0qba3"]
+resource_name = "fall_machete"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("37_ekmxe")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Weapon:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-2.19562]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Weapon:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 2)]
+}
+
+[sub_resource type="Animation" id="Animation_5p4cg"]
+resource_name = "run"
+length = 0.9
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("38_65hho"), ExtResource("39_l0ufg"), ExtResource("40_wf50n"), ExtResource("41_0g1v1"), ExtResource("42_mc3uj"), ExtResource("43_3jcij"), ExtResource("44_02a0m"), ExtResource("45_galnb"), ExtResource("46_7mdn0"), ExtResource("47_yymil")]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SFX")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 12.8137,
+"start_offset": 0.0,
+"stream": ExtResource("48_1nfgm")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/1/use_blend = true
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [ExtResource("49_m1le2")],
+"method": &"_spawn_dust"
+}]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Weapon:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_cfine"]
+resource_name = "run_machete"
+length = 0.9
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("38_65hho"), ExtResource("39_l0ufg"), ExtResource("40_wf50n"), ExtResource("41_0g1v1"), ExtResource("42_mc3uj"), ExtResource("43_3jcij"), ExtResource("44_02a0m"), ExtResource("45_galnb"), ExtResource("46_7mdn0"), ExtResource("47_yymil")]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SFX")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 12.8137,
+"start_offset": 0.0,
+"stream": ExtResource("48_1nfgm")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/1/use_blend = true
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [ExtResource("49_m1le2")],
+"method": &"_spawn_dust"
+}]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Weapon:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [-0.523599, -1.5708, -0.954695, -0.89311, -0.558505, -0.523599, -0.940732, -1.70344, -1.5708, -0.523599]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Weapon:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-3, 36), Vector2(1, 27), Vector2(-9, 29), Vector2(-8.14286, 30), Vector2(-4, 37), Vector2(4, 34), Vector2(15, 29), Vector2(23, 16), Vector2(23, 21), Vector2(6, 33)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Weapon:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[resource]
+resource_local_to_scene = true
+resource_name = "test1"
+_data = {
+"Dead": SubResource("Animation_8d1l8"),
+"Ground": SubResource("Animation_ohcuy"),
+"Ground_machete": SubResource("Animation_0pmwl"),
+"Hit": SubResource("Animation_nm0j3"),
+"Hit_machete": SubResource("Animation_kclyk"),
+"Iddle": SubResource("Animation_gwxgm"),
+"Iddle_machete": SubResource("Animation_gnjkg"),
+"Jump": SubResource("Animation_xlc5k"),
+"Jump_machete": SubResource("Animation_ep1ga"),
+"fall": SubResource("Animation_66r7j"),
+"fall_machete": SubResource("Animation_0qba3"),
+"run": SubResource("Animation_5p4cg"),
+"run_machete": SubResource("Animation_cfine")
+}

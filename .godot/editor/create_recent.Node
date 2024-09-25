@@ -1,7 +1,9 @@
+AnimationTree
+AnimationPlayer
+Node2D
 Area2D
 RigidBody2D
 AudioStreamPlayer2D
 CollisionShape2D
-Node2D
 CanvasLayer
 Node

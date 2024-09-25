@@ -14,3 +14,8 @@ func _on_body_entered(body : Node):
 		body.equip_machete(self)
 		visible = false
 		set_deferred("freeze", false)
+		
+
+	
+
+	
