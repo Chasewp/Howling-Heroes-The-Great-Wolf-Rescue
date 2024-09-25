@@ -1,4 +1,4 @@
-[gd_scene load_steps=102 format=3 uid="uid://w8tfinbfyqkd"]
+[gd_scene load_steps=104 format=3 uid="uid://w8tfinbfyqkd"]
 
 [ext_resource type="Script" path="res://Assets/Script/Class/Hero/Hero.gd" id="1_3n0i7"]
 [ext_resource type="Texture2D" uid="uid://cffft7hojn8rn" path="res://Assets/Image/Character/Player/templerun/Idle__000.png" id="2_mrea1"]
@@ -53,6 +53,7 @@
 [ext_resource type="AudioStream" uid="uid://bprhl5rvpql0w" path="res://Assets/Music/SFX/Player/Download Metal Shoes Royalty-Free Music & Sound Effects.mp3" id="49_88lxa"]
 [ext_resource type="Texture2D" uid="uid://bvsoi4ra2w4nb" path="res://Assets/Image/Character/Player/templerun/Jump/Jump__009.png" id="50_uiylm"]
 [ext_resource type="PackedScene" uid="uid://dg55dta7sxucv" path="res://Assets/Scences/Dust/run_dust.tscn" id="51_tkdd6"]
+[ext_resource type="PackedScene" uid="uid://cuh433hdbnick" path="res://Assets/Scences/Player/Weapons/Machete.tscn" id="55_qrsxm"]
 [ext_resource type="Texture2D" uid="uid://dijet0ajwrrgm" path="res://Assets/Image/Bullets/All_Fire_Bullet_Pixel_16x16_02.png" id="57_wk1pq"]
 
 [sub_resource type="Animation" id="Animation_8d1l8"]
@@ -284,6 +285,9 @@ tracks/2/keys = {
 }]
 }
 
+[sub_resource type="Animation" id="Animation_43boo"]
+resource_name = "attack1"
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_71fy2"]
 _data = {
 "Dead": SubResource("Animation_8d1l8"),
@@ -292,6 +296,7 @@ _data = {
 "Iddle": SubResource("Animation_gwxgm"),
 "Jump": SubResource("Animation_xlc5k"),
 "RESET": SubResource("Animation_a507v"),
+"attack1": SubResource("Animation_43boo"),
 "fall": SubResource("Animation_66r7j"),
 "run": SubResource("Animation_5p4cg")
 }
@@ -537,6 +542,7 @@ shape = SubResource("CapsuleShape2D_n8uk2")
 debug_color = Color(0.741176, 0.282353, 0.921569, 0.419608)
 
 [node name="HitBox" type="Area2D" parent="."]
+visible = false
 position = Vector2(-1, 0)
 
 [node name="InputBuffer" type="Timer" parent="HitBox"]
@@ -582,12 +588,19 @@ offset_bottom = 43.0
 text = "Ammo : "
 
 [node name="Slash_effect" type="AnimatedSprite2D" parent="."]
+visible = false
 position = Vector2(73, 16)
 scale = Vector2(5.625, 5.875)
 sprite_frames = SubResource("SpriteFrames_jk53m")
 animation = &"slash_attack_2"
 frame = 4
 frame_progress = 1.0
+
+[node name="Weaponary" type="Node2D" parent="."]
+position = Vector2(21, 29)
+
+[node name="Machete" parent="Weaponary" instance=ExtResource("55_qrsxm")]
+position = Vector2(49, 0)
 
 [connection signal="update_ammo" from="." to="Text" method="_on_player_update_ammo"]
 [connection signal="update_coordinate" from="." to="Text" method="_on_player_update_coordinate"]

@@ -1,4 +1,4 @@
-extends RigidBody2D
+extends Area2D
 
 @export var bullets : PackedScene
 @export var reloading_audio : AudioStream

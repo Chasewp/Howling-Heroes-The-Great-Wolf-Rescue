@@ -1,17 +1,30 @@
-[gd_scene load_steps=3 format=3 uid="uid://cuh433hdbnick"]
+[gd_scene load_steps=5 format=3 uid="uid://cuh433hdbnick"]
 
+[ext_resource type="Script" path="res://Assets/Script/Class/Item/Player/Machete/Machete.gd" id="1_knih7"]
 [ext_resource type="Texture2D" uid="uid://bxj80g7xsj4h4" path="res://Assets/Image/Weapon/Player/machete.png" id="1_uj46q"]
+[ext_resource type="AudioStream" uid="uid://ck3ty7yuojysc" path="res://Assets/Music/SFX/Weapon/Slash/sword-slash-and-swing-185432.mp3" id="3_wn2ht"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rk5tw"]
-height = 98.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_scwt1"]
+size = Vector2(73, 7)
 
 [node name="Machete" type="RigidBody2D"]
-mass = 0.6
+position = Vector2(27, -1)
+lock_rotation = true
+freeze = true
+freeze_mode = 1
+max_contacts_reported = 2
+contact_monitor = true
+script = ExtResource("1_knih7")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("1_uj46q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-rotation = 1.5708
-shape = SubResource("CapsuleShape2D_rk5tw")
+position = Vector2(10.5, 0.5)
+shape = SubResource("RectangleShape2D_scwt1")
+
+[node name="Sfx" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_wn2ht")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

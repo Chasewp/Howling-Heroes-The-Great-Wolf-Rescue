@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://c8it7bbd20xdf"]
+[gd_scene load_steps=10 format=3 uid="uid://c8it7bbd20xdf"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/Weapons/brust_garou_riffle_player.gd" id="1_fipu5"]
 [ext_resource type="Texture2D" uid="uid://c2ev3dontnqow" path="res://Assets/Image/Weapon/Player/Brust Garou.png" id="1_okxly"]
@@ -6,8 +6,6 @@
 [ext_resource type="AudioStream" uid="uid://dgs3yp2wuodpc" path="res://Assets/Music/SFX/Weapon/Reload/Reload.mp3" id="3_i62my"]
 [ext_resource type="FontFile" uid="uid://fpssaux4ispl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="5_fwfmm"]
 [ext_resource type="FontFile" uid="uid://cnhshuaxal67w" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="6_15sp6"]
-
-[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_2ykg5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bp37m"]
 size = Vector2(91, 40)
@@ -18,13 +16,7 @@ bg_color = Color(0.447059, 0.243137, 0.0941176, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aaixy"]
 bg_color = Color(0.0705882, 1, 0.0117647, 1)
 
-[node name="Brust Garou-Riffle-Player" type="RigidBody2D"]
-physics_material_override = SubResource("PhysicsMaterial_2ykg5")
-lock_rotation = true
-freeze = true
-freeze_mode = 1
-max_contacts_reported = 2
-contact_monitor = true
+[node name="Brust Garou-Riffle-Player" type="Area2D"]
 script = ExtResource("1_fipu5")
 bullets = ExtResource("2_nep86")
 

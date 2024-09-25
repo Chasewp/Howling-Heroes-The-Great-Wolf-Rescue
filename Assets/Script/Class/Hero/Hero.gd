@@ -20,6 +20,14 @@ func attack():
 	await _attack_input_buffer.timeout
 	_wants_to_attack = false
 
+func can_equip_brust_garou()-> bool:
+	return not _has_brust_garou && not _is_dead
+	
+func equip_brust_garou(brust_garou : RigidBody2D):
+	_brust_garou = brust_garou
+	_has_brust_garou = true
+	
+	
 func can_equip_machete() -> bool:
 	return not _has_machete && not _is_dead
 
@@ -89,7 +97,7 @@ func _on_alamanac_main_menu_opened():
 
 func _on_hurt_box_area_entered(area):
 	if area.has_method("collect"):
-		area.collect("inventory")
+		area.collect(warehouse)
 		
 
 """Save Manager"""

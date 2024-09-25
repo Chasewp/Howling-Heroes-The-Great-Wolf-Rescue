@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Player_Input/Player_Name.gd" id="1_fygib"]
 [ext_resource type="FontFile" uid="uid://djx6ba5h1a3qs" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="1_vi86i"]
 [ext_resource type="Theme" uid="uid://cya18eaoptu42" path="res://Assets/Theme/Player_Name/Player_Name.tres" id="2_jj1ar"]
-[ext_resource type="Texture2D" uid="uid://8cji605iuosj" path="res://Assets/Image/images/Background/Character Selector/wolf-den-cave-taiga-forest 800x 600.png" id="3_prlmh"]
+[ext_resource type="Texture2D" uid="uid://8cji605iuosj" path="res://Assets/Image/Background/Character Selector/wolf-den-cave-taiga-forest 800x 600.png" id="3_prlmh"]
 [ext_resource type="FontFile" uid="uid://fpssaux4ispl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="4_ru70u"]
 
 [node name="PlayerName" type="Control"]

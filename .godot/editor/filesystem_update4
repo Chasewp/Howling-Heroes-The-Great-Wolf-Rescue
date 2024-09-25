@@ -7,3 +7,26 @@ res://test.gd
 res://Assets/Scences/Biome/Bridge_Stone_Forest/Game_Control.gd
 res://Assets/Scences/UI/Inventory/inventory.tscn
 res://Assets/Script/Controller/UI/Inventory/Inventory_Menu.gd
+res://Assets/Scences/UI/Character_Name/Player_Name.tscn
+res://Assets/Script/Controller/UI/Player_Input/Player_Name.gd
+res://Assets/Script/Controller/UI/Cage/Taiga/pine__cage.gd
+res://Assets/Scences/Cage/Taiga/pine__cage.tscn
+res://Assets/Scences/Player/Weapons/Machete.tscn
+res://Assets/Scences/Player/Player.tscn
+res://Assets/Scences/Player/Weapons/brust_garou_riffle_player.tscn
+res://Assets/Bullets/Animation_Player_Bullets.tres
+res://Assets/Script/Controller/Weapons/brust_garou_riffle_player.gd
+res://Assets/Script/Class/Item/Player/Machete/Machete.gd
+res://Assets/Script/Class/Hero/Hero.gd
+res://Assets/Scences/Key/Taiga/pine_key.tscn
+res://Assets/Script/Class/Items/Collectable.gd
+res://Assets/Script/Controller/Key/Taiga/Pine Tree/pine_key.gd
+res://Assets/Scences/UI/Inventory/inventory_panel_slot.tscn
+res://Assets/Inventory/Items/Pine_Key.tres
+res://Assets/Script/Controller/Save/Inventory/Inventory.gd
+res://Assets/Script/Controller/Save/Inventory/Items/Items_Inventory.gd
+res://Assets/Script/Class/Wolf/Wolves_Save/Wolf_Data.gd
+res://Assets/Script/Class/Inventory/inventoryclass.gd
+res://Assets/Script/Class/Item/items.gd
+res://Assets/Script/Controller/UI/Inventory/inventory_panel_slot.gd
+res://Assets/Script/Controller/Save/Inventory/Items/Inventory_Slot.gd

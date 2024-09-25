@@ -3,26 +3,34 @@ extends Resource
 
 signal updated
 
-@export var slots : Array[InventorySlot]
+@export var items : Array[InventoryItems]
+#@export var slots : Array[InventorySlot]
 
-func insert(item: InventoryItems):
-	var itemslots = slots.filter(
-		func (slot):
-			return slot.item==item && slot._quantity<item._max_quantity
-			)
-	if!itemslots.is_empty():
-		itemslots[0]._quantity +=1
-		
-	else:
-		var emptySlots = slots.filter(
-			func(slot):
-				return slot.item == null
-		)	
-		if !emptySlots.is_empty():
-			emptySlots[0].item = item
-			emptySlots[0]._quantity=1
-	updated.emit()
+func insert_items(item : InventoryItems):
+	for a in range(items.size()):
+		if !items[a]:
+			items[a] = item
+			break
 	
+	updated.emit()
+#func insert(item: InventoryItems):
+	#var itemslots = slots.filter(
+		#func (slot):
+			#return slot.item==item && slot._quantity<item._max_quantity
+			#)
+	#if!itemslots.is_empty():
+		#itemslots[0]._quantity +=1
+		#
+	#else:
+		#var emptySlots = slots.filter(
+			#func(slot):
+				#return slot.item == null
+		#)	
+		#if !emptySlots.is_empty():
+			#emptySlots[0].item = item
+			#emptySlots[0]._quantity=1
+	#updated.emit()
+	#
 	#for slot in slots:
 		#if slot.item == item:
 			#slot._quantity +=1

@@ -1,56 +1,7 @@
-[gd_resource type="Resource" script_class="Inventory" load_steps=15 format=3 uid="uid://i7yioowruvfu"]
+[gd_resource type="Resource" script_class="Inventory" load_steps=2 format=3 uid="uid://i7yioowruvfu"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/Save/Inventory/Inventory.gd" id="1_lp6j0"]
-[ext_resource type="Script" path="res://Assets/Script/Controller/Save/Inventory/Items/Inventory_Slot.gd" id="2_lk6mo"]
-
-[sub_resource type="Resource" id="Resource_uo1ag"]
-script = ExtResource("2_lk6mo")
-_quantity = 0
-
-[sub_resource type="Resource" id="Resource_cpycs"]
-script = ExtResource("2_lk6mo")
-_quantity = 0
-
-[sub_resource type="Resource" id="Resource_72kyr"]
-script = ExtResource("2_lk6mo")
-_quantity = 0
-
-[sub_resource type="Resource" id="Resource_k7vom"]
-script = ExtResource("2_lk6mo")
-_quantity = 0
-
-[sub_resource type="Resource" id="Resource_ty2e7"]
-script = ExtResource("2_lk6mo")
-_quantity = 0
-
-[sub_resource type="Resource" id="Resource_15wpa"]
-script = ExtResource("2_lk6mo")
-_quantity = 0
-
-[sub_resource type="Resource" id="Resource_o80tt"]
-script = ExtResource("2_lk6mo")
-_quantity = 0
-
-[sub_resource type="Resource" id="Resource_dn0f5"]
-script = ExtResource("2_lk6mo")
-_quantity = 0
-
-[sub_resource type="Resource" id="Resource_1u2hw"]
-script = ExtResource("2_lk6mo")
-_quantity = 0
-
-[sub_resource type="Resource" id="Resource_q3cc5"]
-script = ExtResource("2_lk6mo")
-_quantity = 0
-
-[sub_resource type="Resource" id="Resource_emt5p"]
-script = ExtResource("2_lk6mo")
-_quantity = 0
-
-[sub_resource type="Resource" id="Resource_1nsfq"]
-script = ExtResource("2_lk6mo")
-_quantity = 0
 
 [resource]
 script = ExtResource("1_lp6j0")
-slots = Array[ExtResource("2_lk6mo")]([SubResource("Resource_uo1ag"), SubResource("Resource_cpycs"), SubResource("Resource_72kyr"), SubResource("Resource_k7vom"), SubResource("Resource_ty2e7"), SubResource("Resource_15wpa"), SubResource("Resource_o80tt"), SubResource("Resource_dn0f5"), SubResource("Resource_1u2hw"), SubResource("Resource_q3cc5"), SubResource("Resource_emt5p"), SubResource("Resource_1nsfq")])
+items = Array[Resource("res://Assets/Script/Controller/Save/Inventory/Items/Items_Inventory.gd")]([null, null, null, null, null, null, null, null, null, null, null, null])

@@ -4,19 +4,19 @@ extends Panel
 @onready var itemsspites : TextureRect = $Items
 @onready var qty: Label = $Label
 
-func update(slot : InventorySlot):
-		if!slot.item:
+func update(item : InventoryItems):
+		if!item:
 			backgroundSprite.frame = 0
 			itemsspites.visible = false
 			qty.visible = false
 		else:
 			backgroundSprite.frame = 1
 			itemsspites.visible = true
-			itemsspites.texture = slot.item._texture
+			itemsspites.texture = item._texture
 			
-			if slot._quantity>=1:
+			if item._qty>=1:
 				qty.visible = true
-				qty.set_text(str(slot._quantity))
+				qty.set_text(str(item._qty))
 			else:
 				qty.visible = false
 

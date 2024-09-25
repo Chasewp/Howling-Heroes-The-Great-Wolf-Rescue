@@ -5,6 +5,7 @@ extends Control
 @onready var infochar = $info_char
 
 var number_text
+var _heros = Hero.new()
 
 func _ready():
 	name_player.grab_focus()
@@ -21,6 +22,6 @@ func _on_player_name_text_submitted(new_text):
 	player.setter_location("Taiga")
 	player.setter_armor(100)
 	player.setter_health(100)
-	heros.auto_save()
+	_heros.auto_save()
 	get_tree().change_scene_to_file("res://Assets/Scences/Biome/Bridge_Stone_Forest/Bridge_Stone_Forest.tscn")
 	
