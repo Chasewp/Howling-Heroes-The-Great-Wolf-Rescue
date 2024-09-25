@@ -1,9 +1,9 @@
-[gd_scene load_steps=46 format=3 uid="uid://w8tfinbfyqkd"]
+[gd_scene load_steps=84 format=3 uid="uid://w8tfinbfyqkd"]
 
 [ext_resource type="Script" path="res://Assets/Script/Class/Hero/Hero.gd" id="1_3n0i7"]
 [ext_resource type="Resource" uid="uid://i7yioowruvfu" path="res://Assets/Inventory/Player_Inventory/Player_Inventory.tres" id="2_utc45"]
+[ext_resource type="Texture2D" uid="uid://bvsoi4ra2w4nb" path="res://Assets/Image/Character/Player/templerun/Jump/Jump__009.png" id="4_hwtq2"]
 [ext_resource type="AnimationLibrary" uid="uid://bkgq1ncn5vt2d" path="res://Assets/Scences/Player/Animation/Player_animations.tres" id="4_mutx1"]
-[ext_resource type="Texture2D" uid="uid://b8krqm5mryy1l" path="res://Assets/Image/Character/Player/templerun/Run/Run__001.png" id="4_ufoik"]
 [ext_resource type="AnimationLibrary" uid="uid://33b7x1utp1ah" path="res://Assets/Scences/Player/Weapons/Playersword_animations.tres" id="5_dhdlh"]
 [ext_resource type="Script" path="res://Assets/Script/Class/Character/Player/coordinate.gd" id="39_3g6ho"]
 [ext_resource type="FontFile" uid="uid://fpssaux4ispl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="39_bu8e3"]
@@ -11,16 +11,174 @@
 
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_4l72m"]
 
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_0l0ao"]
+animation = &"Player_animations/Iddle_machete"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_wt5yb"]
+animation = &"Player_animations/run_machete"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_2sdt4"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_u6s61"]
+advance_mode = 2
+advance_expression = "velocity.x != 0"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ggkty"]
+advance_mode = 2
+advance_expression = "velocity.x == 0"
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_wqku0"]
+states/Player_animations_Iddle_machete/node = SubResource("AnimationNodeAnimation_0l0ao")
+states/Player_animations_Iddle_machete/position = Vector2(448, 150)
+states/Player_animations_run_machete/node = SubResource("AnimationNodeAnimation_wt5yb")
+states/Player_animations_run_machete/position = Vector2(704, 240)
+transitions = ["Start", "Player_animations_Iddle_machete", SubResource("AnimationNodeStateMachineTransition_2sdt4"), "Player_animations_Iddle_machete", "Player_animations_run_machete", SubResource("AnimationNodeStateMachineTransition_u6s61"), "Player_animations_run_machete", "Player_animations_Iddle_machete", SubResource("AnimationNodeStateMachineTransition_ggkty")]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_exmwk"]
+animation = &"Player_animations/Ground_machete"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_w0h28"]
+animation = &"Player_animations/Jump_machete"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_rky7d"]
+animation = &"Player_animations/fall_machete"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_a8uyc"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_swiyi"]
+advance_mode = 2
+advance_expression = "not is_on_floor()"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_qfssm"]
+advance_mode = 2
+advance_expression = "velocity.y < 0"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_uabtf"]
+advance_mode = 2
+advance_expression = "velocity.y >= 0"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_bmcuo"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_vdx8j"]
+advance_mode = 2
+advance_expression = "is_on_floor()"
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_ofyd7"]
+states/End/position = Vector2(1284, 163)
+states/Locomotion/node = SubResource("AnimationNodeStateMachine_wqku0")
+states/Locomotion/position = Vector2(577, 328)
+states/Player_animations_Ground_machete/node = SubResource("AnimationNodeAnimation_exmwk")
+states/Player_animations_Ground_machete/position = Vector2(1052.14, 130.18)
+states/Player_animations_Jump_machete/node = SubResource("AnimationNodeAnimation_w0h28")
+states/Player_animations_Jump_machete/position = Vector2(463, 130.18)
+states/Player_animations_fall_machete/node = SubResource("AnimationNodeAnimation_rky7d")
+states/Player_animations_fall_machete/position = Vector2(701, -68.82)
+transitions = ["Start", "Locomotion", SubResource("AnimationNodeStateMachineTransition_a8uyc"), "Locomotion", "Player_animations_fall_machete", SubResource("AnimationNodeStateMachineTransition_swiyi"), "Locomotion", "Player_animations_Jump_machete", SubResource("AnimationNodeStateMachineTransition_qfssm"), "Player_animations_Jump_machete", "Player_animations_fall_machete", SubResource("AnimationNodeStateMachineTransition_uabtf"), "Player_animations_Ground_machete", "Locomotion", SubResource("AnimationNodeStateMachineTransition_bmcuo"), "Player_animations_fall_machete", "Player_animations_Ground_machete", SubResource("AnimationNodeStateMachineTransition_vdx8j")]
+graph_offset = Vector2(217.135, -179.82)
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_0seoi"]
+animation = &"Sword_swing_right_1"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_np20p"]
+animation = &"Sword_swing_right_2"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_a8of0"]
+animation = &"Sword_swing_right_3"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_aqw8e"]
+animation = &"Sword_swing_right_airattack_1"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_wv3af"]
+animation = &"Sword_swing_right_airattack_2"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_d2ws4"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_oijhs"]
+advance_mode = 2
+advance_expression = "_wants_to_attack && not is_on_floor() && _cooldown.is_stopped()"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_y48u8"]
+switch_mode = 2
+advance_mode = 2
+advance_expression = "_wants_to_attack && not is_on_floor()"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_2ljaj"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_166il"]
+switch_mode = 2
+advance_mode = 2
+advance_expression = "not _wants_to_attack || not is_on_floor()"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ahrhe"]
+advance_mode = 2
+advance_expression = "_wants_to_attack && is_on_floor() && _cooldown.is_stopped()"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ubg0b"]
+switch_mode = 2
+advance_mode = 2
+advance_expression = "_wants_to_attack && is_on_floor()"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_7uduf"]
+switch_mode = 2
+advance_mode = 2
+advance_expression = "_wants_to_attack && is_on_floor()"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_42y5l"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_srlmi"]
+switch_mode = 2
+advance_mode = 2
+advance_expression = "not _wants_to_attack || is_on_floor()"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_1u742"]
+switch_mode = 2
+advance_mode = 2
+
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_rtmhg"]
+states/Movement/node = SubResource("AnimationNodeStateMachine_ofyd7")
+states/Movement/position = Vector2(570, 100)
+states/Sword_swing_right_1/node = SubResource("AnimationNodeAnimation_0seoi")
+states/Sword_swing_right_1/position = Vector2(321.106, 279.758)
+states/Sword_swing_right_2/node = SubResource("AnimationNodeAnimation_np20p")
+states/Sword_swing_right_2/position = Vector2(601.106, 351.758)
+states/Sword_swing_right_3/node = SubResource("AnimationNodeAnimation_a8of0")
+states/Sword_swing_right_3/position = Vector2(931.106, 334.758)
+states/Sword_swing_right_airattack_1/node = SubResource("AnimationNodeAnimation_aqw8e")
+states/Sword_swing_right_airattack_1/position = Vector2(367.106, -82.9959)
+states/Sword_swing_right_airattack_2/node = SubResource("AnimationNodeAnimation_wv3af")
+states/Sword_swing_right_airattack_2/position = Vector2(866.106, -82.9959)
+transitions = ["Start", "Movement", SubResource("AnimationNodeStateMachineTransition_d2ws4"), "Movement", "Sword_swing_right_airattack_1", SubResource("AnimationNodeStateMachineTransition_oijhs"), "Sword_swing_right_airattack_1", "Sword_swing_right_airattack_2", SubResource("AnimationNodeStateMachineTransition_y48u8"), "Sword_swing_right_airattack_2", "Movement", SubResource("AnimationNodeStateMachineTransition_2ljaj"), "Sword_swing_right_1", "Movement", SubResource("AnimationNodeStateMachineTransition_166il"), "Movement", "Sword_swing_right_1", SubResource("AnimationNodeStateMachineTransition_ahrhe"), "Sword_swing_right_1", "Sword_swing_right_2", SubResource("AnimationNodeStateMachineTransition_ubg0b"), "Sword_swing_right_2", "Sword_swing_right_3", SubResource("AnimationNodeStateMachineTransition_7uduf"), "Sword_swing_right_3", "Movement", SubResource("AnimationNodeStateMachineTransition_42y5l"), "Sword_swing_right_airattack_1", "Movement", SubResource("AnimationNodeStateMachineTransition_srlmi"), "Sword_swing_right_2", "Movement", SubResource("AnimationNodeStateMachineTransition_1u742")]
+graph_offset = Vector2(-48.8941, -128.366)
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_l6utg"]
 animation = &"Player_animations/Hit_machete"
 
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_tio3p"]
+advance_mode = 2
+advance_expression = "_is_hit"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_3rybj"]
+advance_mode = 2
+advance_expression = "not _is_hit"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_56kmm"]
+advance_mode = 2
+
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_08jqj"]
 states/Attack/node = SubResource("AnimationNodeStateMachine_rtmhg")
-states/Attack/position = Vector2(501, 106.225)
+states/Attack/position = Vector2(521, 124.225)
 states/Player_animations_Hit_machete/node = SubResource("AnimationNodeAnimation_l6utg")
 states/Player_animations_Hit_machete/position = Vector2(521, 23.2254)
+transitions = ["Attack", "Player_animations_Hit_machete", SubResource("AnimationNodeStateMachineTransition_tio3p"), "Player_animations_Hit_machete", "Attack", SubResource("AnimationNodeStateMachineTransition_3rybj"), "Start", "Attack", SubResource("AnimationNodeStateMachineTransition_56kmm")]
 graph_offset = Vector2(0, -24.7746)
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_bvlf8"]
@@ -91,10 +249,13 @@ states/Player_animations_Jump/position = Vector2(361, 39)
 states/Player_animations_fall/node = SubResource("AnimationNodeAnimation_c5hce")
 states/Player_animations_fall/position = Vector2(615, -84)
 transitions = ["Locomotion", "Player_animations_Jump", SubResource("AnimationNodeStateMachineTransition_5iyf1"), "Player_animations_Ground", "Locomotion", SubResource("AnimationNodeStateMachineTransition_nmcdr"), "Locomotion", "Player_animations_fall", SubResource("AnimationNodeStateMachineTransition_u17a3"), "Player_animations_fall", "Player_animations_Ground", SubResource("AnimationNodeStateMachineTransition_ml1ap"), "Player_animations_Jump", "Player_animations_fall", SubResource("AnimationNodeStateMachineTransition_ki713"), "Start", "Locomotion", SubResource("AnimationNodeStateMachineTransition_n1u86")]
-graph_offset = Vector2(0, -131.123)
+graph_offset = Vector2(0, 20.3524)
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_7woio"]
 animation = &"Player_animations/Dead"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_st34m"]
+animation = &"Player_animations/Dead_ground"
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_rj272"]
 animation = &"Player_animations/Hit"
@@ -118,15 +279,26 @@ advance_expression = "_is_dead"
 advance_mode = 2
 advance_expression = "not _is_dead"
 
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_p4l4b"]
+switch_mode = 2
+advance_mode = 2
+advance_expression = "is_on_floor()"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_khrjo"]
+advance_mode = 2
+advance_expression = "not _is_dead"
+
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_o8ml4"]
 states/Movement/node = SubResource("AnimationNodeStateMachine_osfs5")
 states/Movement/position = Vector2(449, 100)
 states/Player_animations_Dead/node = SubResource("AnimationNodeAnimation_7woio")
 states/Player_animations_Dead/position = Vector2(469, 247.225)
+states/Player_animations_Dead_ground/node = SubResource("AnimationNodeAnimation_st34m")
+states/Player_animations_Dead_ground/position = Vector2(813, 247.225)
 states/Player_animations_Hit/node = SubResource("AnimationNodeAnimation_rj272")
 states/Player_animations_Hit/position = Vector2(675, 17)
-transitions = ["Start", "Movement", SubResource("AnimationNodeStateMachineTransition_mulbu"), "Movement", "Player_animations_Hit", SubResource("AnimationNodeStateMachineTransition_pgogi"), "Player_animations_Hit", "Movement", SubResource("AnimationNodeStateMachineTransition_qx18v"), "Movement", "Player_animations_Dead", SubResource("AnimationNodeStateMachineTransition_3ch7f"), "Player_animations_Dead", "Movement", SubResource("AnimationNodeStateMachineTransition_ne5lh")]
-graph_offset = Vector2(0, -105.578)
+transitions = ["Start", "Movement", SubResource("AnimationNodeStateMachineTransition_mulbu"), "Movement", "Player_animations_Hit", SubResource("AnimationNodeStateMachineTransition_pgogi"), "Player_animations_Hit", "Movement", SubResource("AnimationNodeStateMachineTransition_qx18v"), "Movement", "Player_animations_Dead", SubResource("AnimationNodeStateMachineTransition_3ch7f"), "Player_animations_Dead", "Movement", SubResource("AnimationNodeStateMachineTransition_ne5lh"), "Player_animations_Dead", "Player_animations_Dead_ground", SubResource("AnimationNodeStateMachineTransition_p4l4b"), "Player_animations_Dead_ground", "Movement", SubResource("AnimationNodeStateMachineTransition_khrjo")]
+graph_offset = Vector2(0, -11.4468)
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ct6kf"]
 advance_mode = 2
@@ -173,16 +345,18 @@ collision_mask = 263
 script = ExtResource("1_3n0i7")
 _has_machete = true
 warehouse = ExtResource("2_utc45")
+_is_attacking = true
 
 [node name="Weapon" type="Node2D" parent="."]
 visible = false
+position = Vector2(1, 2)
 
 [node name="Machete" parent="Weapon" instance=ExtResource("55_qrsxm")]
 position = Vector2(48, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("4_ufoik")
+texture = ExtResource("4_hwtq2")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

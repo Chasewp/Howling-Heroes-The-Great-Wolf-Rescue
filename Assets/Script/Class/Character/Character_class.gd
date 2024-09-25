@@ -64,7 +64,7 @@ func _ready():
 	_deceleration *= GlobalTilesets.ppt
 	_jump_height *= GlobalTilesets.ppt
 	_jump_velocity = sqrt(_jump_height * gravity * 2) * -1
-	#face_left() if _is_facing_left else face_right()
+	face_left() if _is_facing_left else face_right()
 	if _invincible_duration != 0:
 		_invincible_time = $HurtBox/Invincible
 	if _hit_box:

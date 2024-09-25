@@ -51,6 +51,8 @@ func _air_physics(delta : float):
 func shoot_brust_garou_riffle(_delta:float):
 	pass
 	
+
+	
 func _die():
 	if _has_machete:
 		drop_machete()
@@ -70,7 +72,7 @@ func _process(_delta):
 	emit_signal("update_coordinate",self.position)
 	#emit_signal("update_ammo",)	
 	Progress.UpdatePos(self.position)
-
+	
 
 
 #func is_Dead():

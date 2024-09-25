@@ -5,7 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://ck3ty7yuojysc" path="res://Assets/Music/SFX/Weapon/Slash/sword-slash-and-swing-185432.mp3" id="3_wn2ht"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_scwt1"]
-size = Vector2(73, 7)
+size = Vector2(97, 13)
 
 [node name="Machete" type="RigidBody2D"]
 position = Vector2(27, -1)
@@ -21,7 +21,7 @@ scale = Vector2(0.1, 0.1)
 texture = ExtResource("1_uj46q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(10.5, 0.5)
+position = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_scwt1")
 
 [node name="Sfx" type="AudioStreamPlayer2D" parent="."]

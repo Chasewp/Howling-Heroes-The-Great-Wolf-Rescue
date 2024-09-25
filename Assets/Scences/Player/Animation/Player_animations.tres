@@ -1,4 +1,4 @@
-[gd_resource type="AnimationLibrary" load_steps=63 format=3 uid="uid://bkgq1ncn5vt2d"]
+[gd_resource type="AnimationLibrary" load_steps=74 format=3 uid="uid://bkgq1ncn5vt2d"]
 
 [ext_resource type="Texture2D" uid="uid://c5220ipebeweh" path="res://Assets/Image/Character/Player/templerun/Dead__000.png" id="1_gj2wj"]
 [ext_resource type="Texture2D" uid="uid://dbh4fvfo7j7ot" path="res://Assets/Image/Character/Player/templerun/Dead__001.png" id="2_pb87b"]
@@ -49,9 +49,19 @@
 [ext_resource type="Texture2D" uid="uid://d35g6qao6xjt7" path="res://Assets/Image/Character/Player/templerun/Run/Run__009.png" id="47_yymil"]
 [ext_resource type="AudioStream" uid="uid://bprhl5rvpql0w" path="res://Assets/Music/SFX/Player/Download Metal Shoes Royalty-Free Music & Sound Effects.mp3" id="48_1nfgm"]
 [ext_resource type="PackedScene" uid="uid://dg55dta7sxucv" path="res://Assets/Scences/Dust/run_dust.tscn" id="49_m1le2"]
+[ext_resource type="Texture2D" uid="uid://cnaycku14qxcf" path="res://Assets/Image/Character/Player/templerun/Dead/Dead__000.png" id="50_2jc13"]
+[ext_resource type="Texture2D" uid="uid://doqvcsoflte50" path="res://Assets/Image/Character/Player/templerun/Dead/Dead__001.png" id="51_fipvp"]
+[ext_resource type="Texture2D" uid="uid://c6b0cgcjr7ng4" path="res://Assets/Image/Character/Player/templerun/Dead/Dead__002.png" id="52_s6mm5"]
+[ext_resource type="Texture2D" uid="uid://bktpfdvx47umt" path="res://Assets/Image/Character/Player/templerun/Dead/Dead__003.png" id="53_g46f4"]
+[ext_resource type="Texture2D" uid="uid://bi1d5qa2mvbl4" path="res://Assets/Image/Character/Player/templerun/Dead/Dead__004.png" id="54_2cyoy"]
+[ext_resource type="Texture2D" uid="uid://8f1ev7greeck" path="res://Assets/Image/Character/Player/templerun/Dead/Dead__005.png" id="55_hc2me"]
+[ext_resource type="Texture2D" uid="uid://jt5mvo1bffsh" path="res://Assets/Image/Character/Player/templerun/Dead/Dead__006.png" id="56_huaft"]
+[ext_resource type="Texture2D" uid="uid://ddr74y8w4dlts" path="res://Assets/Image/Character/Player/templerun/Dead/Dead__007.png" id="57_15c45"]
+[ext_resource type="Texture2D" uid="uid://34prkdjec1m" path="res://Assets/Image/Character/Player/templerun/Dead/Dead__008.png" id="58_vx4md"]
+[ext_resource type="Texture2D" uid="uid://qv8ul65r38pt" path="res://Assets/Image/Character/Player/templerun/Dead/Dead__009.png" id="59_eki6d"]
 
 [sub_resource type="Animation" id="Animation_8d1l8"]
-resource_name = "Dead"
+resource_name = "Dead_ground"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -63,6 +73,48 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
 "values": [ExtResource("1_gj2wj"), ExtResource("2_pb87b"), ExtResource("3_kusxd"), ExtResource("4_jhx1o"), ExtResource("5_bhoml"), ExtResource("6_dfelu"), ExtResource("7_lfwlm"), ExtResource("8_21vpp"), ExtResource("9_8bg6t"), ExtResource("10_f4n0n"), ExtResource("11_hxo3s")]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SFX")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.051165,
+"stream": ExtResource("12_i68rh")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/1/use_blend = true
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Weapon:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_cunlt"]
+resource_name = "Dead_hit"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("19_u8aj0"), ExtResource("50_2jc13"), ExtResource("51_fipvp"), ExtResource("52_s6mm5"), ExtResource("53_g46f4"), ExtResource("54_2cyoy"), ExtResource("55_hc2me"), ExtResource("56_huaft"), ExtResource("57_15c45"), ExtResource("58_vx4md"), ExtResource("59_eki6d")]
 }
 tracks/1/type = "audio"
 tracks/1/imported = false
@@ -324,6 +376,18 @@ tracks/4/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [-0.523599]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Weapon:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
 }
 
 [sub_resource type="Animation" id="Animation_gwxgm"]
@@ -704,7 +768,8 @@ tracks/5/keys = {
 resource_local_to_scene = true
 resource_name = "test1"
 _data = {
-"Dead": SubResource("Animation_8d1l8"),
+"Dead_ground": SubResource("Animation_8d1l8"),
+"Dead_hit": SubResource("Animation_cunlt"),
 "Ground": SubResource("Animation_ohcuy"),
 "Ground_machete": SubResource("Animation_0pmwl"),
 "Hit": SubResource("Animation_nm0j3"),
