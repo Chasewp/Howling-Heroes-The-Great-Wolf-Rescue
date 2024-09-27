@@ -78,7 +78,7 @@ states/Player_animations_Jump_machete/position = Vector2(463, 130.18)
 states/Player_animations_fall_machete/node = SubResource("AnimationNodeAnimation_rky7d")
 states/Player_animations_fall_machete/position = Vector2(701, -68.82)
 transitions = ["Start", "Locomotion", SubResource("AnimationNodeStateMachineTransition_a8uyc"), "Locomotion", "Player_animations_fall_machete", SubResource("AnimationNodeStateMachineTransition_swiyi"), "Locomotion", "Player_animations_Jump_machete", SubResource("AnimationNodeStateMachineTransition_qfssm"), "Player_animations_Jump_machete", "Player_animations_fall_machete", SubResource("AnimationNodeStateMachineTransition_uabtf"), "Player_animations_Ground_machete", "Locomotion", SubResource("AnimationNodeStateMachineTransition_bmcuo"), "Player_animations_fall_machete", "Player_animations_Ground_machete", SubResource("AnimationNodeStateMachineTransition_vdx8j")]
-graph_offset = Vector2(217.135, -179.82)
+graph_offset = Vector2(217.135, 162.119)
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_0seoi"]
 animation = &"Sword_swing_right_1"
@@ -157,7 +157,7 @@ states/Sword_swing_right_airattack_1/position = Vector2(367.106, -82.9959)
 states/Sword_swing_right_airattack_2/node = SubResource("AnimationNodeAnimation_wv3af")
 states/Sword_swing_right_airattack_2/position = Vector2(866.106, -82.9959)
 transitions = ["Start", "Movement", SubResource("AnimationNodeStateMachineTransition_d2ws4"), "Movement", "Sword_swing_right_airattack_1", SubResource("AnimationNodeStateMachineTransition_oijhs"), "Sword_swing_right_airattack_1", "Sword_swing_right_airattack_2", SubResource("AnimationNodeStateMachineTransition_y48u8"), "Sword_swing_right_airattack_2", "Movement", SubResource("AnimationNodeStateMachineTransition_2ljaj"), "Sword_swing_right_1", "Movement", SubResource("AnimationNodeStateMachineTransition_166il"), "Movement", "Sword_swing_right_1", SubResource("AnimationNodeStateMachineTransition_ahrhe"), "Sword_swing_right_1", "Sword_swing_right_2", SubResource("AnimationNodeStateMachineTransition_ubg0b"), "Sword_swing_right_2", "Sword_swing_right_3", SubResource("AnimationNodeStateMachineTransition_7uduf"), "Sword_swing_right_3", "Movement", SubResource("AnimationNodeStateMachineTransition_42y5l"), "Sword_swing_right_airattack_1", "Movement", SubResource("AnimationNodeStateMachineTransition_srlmi"), "Sword_swing_right_2", "Movement", SubResource("AnimationNodeStateMachineTransition_1u742")]
-graph_offset = Vector2(-48.8941, -128.366)
+graph_offset = Vector2(-48.8941, 26.7487)
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_l6utg"]
 animation = &"Player_animations/Hit_machete"
@@ -345,7 +345,6 @@ collision_mask = 263
 script = ExtResource("1_3n0i7")
 _has_machete = true
 warehouse = ExtResource("2_utc45")
-_is_attacking = true
 
 [node name="Weapon" type="Node2D" parent="."]
 visible = false
@@ -379,7 +378,6 @@ position = Vector2(3, 51)
 shape = SubResource("RectangleShape2D_u3xmu")
 
 [node name="HurtBox" type="Area2D" parent="."]
-visible = false
 
 [node name="Invicible" type="Timer" parent="HurtBox"]
 
@@ -388,7 +386,6 @@ shape = SubResource("CapsuleShape2D_n8uk2")
 debug_color = Color(0.741176, 0.282353, 0.921569, 0.419608)
 
 [node name="HitBox" type="Area2D" parent="."]
-visible = false
 position = Vector2(-1, 0)
 
 [node name="InputBuffer" type="Timer" parent="HitBox"]

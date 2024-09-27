@@ -8,7 +8,7 @@ extends Area2D
 
 
 func _process(delta):
-	#if Input.is_action_just_pressed("shoot_fire") and ammomag !=0:
+	#if Input.is_action_just_pressed("shoot_fire") and ammo_empty !=0:
 		pass
 
 

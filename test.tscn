@@ -52,8 +52,8 @@ position = Vector2(550, 634)
 
 [node name="Player" parent="." instance=ExtResource("2_tlw7o")]
 position = Vector2(25, 593)
-_has_machete = false
 _jump_dust = ExtResource("5_1ub7l")
+_has_machete = false
 
 [node name="Game_controller" type="Node" parent="Player"]
 script = ExtResource("6_252g5")
