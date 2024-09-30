@@ -1,7 +1,56 @@
-[gd_resource type="Resource" script_class="Inventory" load_steps=2 format=3 uid="uid://i7yioowruvfu"]
+[gd_resource type="Resource" script_class="Inventory" load_steps=15 format=3 uid="uid://i7yioowruvfu"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/Save/Inventory/Inventory.gd" id="1_lp6j0"]
+[ext_resource type="Script" path="res://Assets/Script/Controller/Save/Inventory/Items/Inventory_Slot.gd" id="2_33i06"]
+
+[sub_resource type="Resource" id="Resource_ndclr"]
+script = ExtResource("2_33i06")
+_quantity = 0
+
+[sub_resource type="Resource" id="Resource_j3ea7"]
+script = ExtResource("2_33i06")
+_quantity = 0
+
+[sub_resource type="Resource" id="Resource_y4r2s"]
+script = ExtResource("2_33i06")
+_quantity = 0
+
+[sub_resource type="Resource" id="Resource_docxu"]
+script = ExtResource("2_33i06")
+_quantity = 0
+
+[sub_resource type="Resource" id="Resource_qvxha"]
+script = ExtResource("2_33i06")
+_quantity = 0
+
+[sub_resource type="Resource" id="Resource_0s6jr"]
+script = ExtResource("2_33i06")
+_quantity = 0
+
+[sub_resource type="Resource" id="Resource_qk0ha"]
+script = ExtResource("2_33i06")
+_quantity = 0
+
+[sub_resource type="Resource" id="Resource_ohgwq"]
+script = ExtResource("2_33i06")
+_quantity = 0
+
+[sub_resource type="Resource" id="Resource_uerap"]
+script = ExtResource("2_33i06")
+_quantity = 0
+
+[sub_resource type="Resource" id="Resource_8wii2"]
+script = ExtResource("2_33i06")
+_quantity = 0
+
+[sub_resource type="Resource" id="Resource_3eomk"]
+script = ExtResource("2_33i06")
+_quantity = 0
+
+[sub_resource type="Resource" id="Resource_yu50q"]
+script = ExtResource("2_33i06")
+_quantity = 0
 
 [resource]
 script = ExtResource("1_lp6j0")
-items = Array[Resource("res://Assets/Script/Controller/Save/Inventory/Items/Items_Inventory.gd")]([null, null, null, null, null, null, null, null, null, null, null, null])
+slots = Array[ExtResource("2_33i06")]([SubResource("Resource_ndclr"), SubResource("Resource_j3ea7"), SubResource("Resource_y4r2s"), SubResource("Resource_docxu"), SubResource("Resource_qvxha"), SubResource("Resource_0s6jr"), SubResource("Resource_qk0ha"), SubResource("Resource_ohgwq"), SubResource("Resource_uerap"), SubResource("Resource_8wii2"), SubResource("Resource_3eomk"), SubResource("Resource_yu50q")])

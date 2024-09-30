@@ -223,6 +223,9 @@ tracks/0/keys = {
 "values": [ExtResource("2_mrea1")]
 }
 
+[sub_resource type="Animation" id="Animation_43boo"]
+resource_name = "attack1"
+
 [sub_resource type="Animation" id="Animation_66r7j"]
 resource_name = "fall"
 length = 0.1
@@ -284,9 +287,6 @@ tracks/2/keys = {
 "method": &"_spawn_dust"
 }]
 }
-
-[sub_resource type="Animation" id="Animation_43boo"]
-resource_name = "attack1"
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_71fy2"]
 _data = {
