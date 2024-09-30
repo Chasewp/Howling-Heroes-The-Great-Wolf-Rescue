@@ -1,4 +1,4 @@
-class_name Enemy extends Character
+class_name Enemy extends Characters
 
 @onready var _vision : Area2D = get_node_or_null("Vision")
 @onready var _line_of_sight : RayCast2D = get_node_or_null("Vision/LineOfSight")

@@ -10,11 +10,12 @@ func be_dropped(position_dropped_from : Vector2):
 	visible = true
 
 func _on_body_entered(body : Node):
-	if body is Hero && body.equip_machete():
-		_sfx.play()
-		body.equip_machete(self)
-		visible = false
-		set_deferred("freeze", false)
+	pass
+	#if body is Hero && body.equip_machete():
+		#_sfx.play()
+		#body.equip_machete(self)
+		#visible = false
+		#set_deferred("freeze", false)
 		
 	
 

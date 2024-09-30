@@ -1,10 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://c8it7bbd20xdf"]
+[gd_scene load_steps=12 format=3 uid="uid://c8it7bbd20xdf"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/Weapons/brust_garou_riffle_player.gd" id="1_fipu5"]
 [ext_resource type="Texture2D" uid="uid://c2ev3dontnqow" path="res://Assets/Image/Weapon/Player/Brust Garou.png" id="1_okxly"]
-[ext_resource type="PackedScene" uid="uid://cfywm76eklecq" path="res://Assets/Bullets/bullets_player.tscn" id="2_nep86"]
 [ext_resource type="AudioStream" uid="uid://dgs3yp2wuodpc" path="res://Assets/Music/SFX/Weapon/Reload/Reload.mp3" id="3_i62my"]
+[ext_resource type="AudioStream" uid="uid://cejm1j5heqiyh" path="res://Assets/Music/SFX/Weapon/Player/Reloading.wav" id="4_m1u4k"]
 [ext_resource type="FontFile" uid="uid://fpssaux4ispl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="5_fwfmm"]
+[ext_resource type="AudioStream" uid="uid://d24tt8fim41cn" path="res://Assets/Music/SFX/Weapon/Riffle/Player_Riffle.mp3" id="5_oqax7"]
+[ext_resource type="AudioStream" uid="uid://dubtgjpdd0tsv" path="res://Assets/Music/SFX/Weapon/Player/Ammo_Empty.wav" id="6_5neqs"]
 [ext_resource type="FontFile" uid="uid://cnhshuaxal67w" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="6_15sp6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bp37m"]
@@ -16,9 +18,9 @@ bg_color = Color(0.447059, 0.243137, 0.0941176, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aaixy"]
 bg_color = Color(0.0705882, 1, 0.0117647, 1)
 
-[node name="Brust Garou-Riffle-Player" type="Area2D"]
+[node name="Brust Garou-Riffle-Player" type="RigidBody2D"]
+position = Vector2(125, 638)
 script = ExtResource("1_fipu5")
-bullets = ExtResource("2_nep86")
 
 [node name="BrustGarou" type="Sprite2D" parent="."]
 scale = Vector2(0.3, 0.381)
@@ -31,29 +33,69 @@ shape = SubResource("RectangleShape2D_bp37m")
 unique_name_in_owner = true
 position = Vector2(42, 0)
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+[node name="ammo_empty" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_5neqs")
+
+[node name="shoot" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_oqax7")
+
+[node name="reloading_audio_reloading" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_m1u4k")
+
+[node name="reloading_audio_riffle" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_i62my")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="ammo" type="Label" parent="CanvasLayer"]
-offset_left = -48.0
-offset_top = 24.0
-offset_right = 48.0
-offset_bottom = 40.0
+[node name="ammolabel" type="Label" parent="CanvasLayer"]
+offset_left = 81.0
+offset_top = 666.0
+offset_right = 116.0
+offset_bottom = 682.0
 theme_override_fonts/font = ExtResource("5_fwfmm")
 theme_override_font_sizes/font_size = 10
-text = "Ammo :  30 / 90"
+text = "Ammo :  "
+
+[node name="slash" type="Label" parent="CanvasLayer"]
+offset_left = 123.0
+offset_top = 666.0
+offset_right = 129.0
+offset_bottom = 682.0
+theme_override_fonts/font = ExtResource("5_fwfmm")
+theme_override_font_sizes/font_size = 10
+text = "/"
+
+[node name="current_ammo_label" type="Label" parent="CanvasLayer"]
+unique_name_in_owner = true
+offset_left = 110.0
+offset_top = 666.0
+offset_right = 120.0
+offset_bottom = 682.0
+theme_override_fonts/font = ExtResource("5_fwfmm")
+theme_override_font_sizes/font_size = 10
+text = "xx"
+
+[node name="reserve_ammo" type="Label" parent="CanvasLayer"]
+unique_name_in_owner = true
+offset_left = 130.0
+offset_top = 666.0
+offset_right = 145.0
+offset_bottom = 682.0
+theme_override_fonts/font = ExtResource("5_fwfmm")
+theme_override_font_sizes/font_size = 10
+text = "xxx"
 
 [node name="Reloading_Progress" type="Control" parent="CanvasLayer"]
+unique_name_in_owner = true
 layout_mode = 3
 anchors_preset = 0
-offset_left = -48.0
-offset_top = 40.0
-offset_right = 40.0
-offset_bottom = 80.0
+offset_left = 81.0
+offset_top = 682.0
+offset_right = 169.0
+offset_bottom = 722.0
 
-[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Reloading_Progress"]
+[node name="ReloadingProgressBar" type="ProgressBar" parent="CanvasLayer/Reloading_Progress"]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(10, 10)
 layout_mode = 1
 anchors_preset = 8
@@ -92,3 +134,5 @@ text = "Reloading"
 [node name="Reloadtimer" type="Timer" parent="."]
 
 [node name="Shoottimer" type="Timer" parent="."]
+
+[connection signal="finished" from="reloading_audio_reloading" to="." method="_on_reloading_audio_reloading_finished"]

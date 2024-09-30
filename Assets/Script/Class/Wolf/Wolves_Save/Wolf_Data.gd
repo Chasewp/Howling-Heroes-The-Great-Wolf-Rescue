@@ -453,7 +453,7 @@ func _get_Eastern_Wolf_Diets():
 	return _eastern_Wolf_Diets
 #Rescued
 func _get_Eastern_Wolf_Rescue_Status():
-	var _eastern_Wolf_Rescue_Status = Data_Wolves["Eastern Wolf"]["Rescued"]
+	var _eastern_Wolf_Rescue_Status = Data_Wolves["EasternWolf"]["Rescued"]
 	return _eastern_Wolf_Rescue_Status
 
 func _set_Eastern_Wolf_Rescue_Status(status:bool):
@@ -1336,7 +1336,7 @@ func _get_Mongolian_Wolf_Diets():
 	
 #Rescue
 func _get_Mongolian_Wolf_Rescue_Status():
-	var _mongolian_Wolf_Rescue_Status = Data_Wolves["Mongolian Wolf"]["Rescued"]
+	var _mongolian_Wolf_Rescue_Status = Data_Wolves["Mongolian Wolf"]["Diets"]
 	return _mongolian_Wolf_Rescue_Status 
 	
 func _set_Mongolian_Wolf_Rescue_Status(status:bool):
@@ -1723,3 +1723,4 @@ func _set_Vancover_Coastal_Island_Wolf_Rescue_Status(status:bool):
 	_vancover_Coastal_Island_Wolf_Rescue_Status_Rescued.store_line(JSON.stringify(Data_Wolves))
 	_vancover_Coastal_Island_Wolf_Rescue_Status_Rescued.close()
 #######################################################################
+

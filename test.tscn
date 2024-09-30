@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dyp88i5j83mnd"]
+[gd_scene load_steps=11 format=3 uid="uid://dyp88i5j83mnd"]
 
 [ext_resource type="Texture2D" uid="uid://cpyuos6sec4qx" path="res://icon.svg" id="1_c7fbu"]
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Camera/Camera2D.gd" id="1_ugmr3"]
@@ -9,7 +9,6 @@
 [ext_resource type="PackedScene" uid="uid://c8cu7e5s4idvf" path="res://Assets/Scences/Key/Taiga/pine_key.tscn" id="4_mry6n"]
 [ext_resource type="PackedScene" uid="uid://cs1y72y70b50n" path="res://Assets/Scences/Dust/jump_dust.tscn" id="5_1ub7l"]
 [ext_resource type="Script" path="res://Assets/Scences/Biome/Bridge_Stone_Forest/Game_Control.gd" id="6_252g5"]
-[ext_resource type="PackedScene" uid="uid://cuh433hdbnick" path="res://Assets/Scences/Player/Weapons/Machete.tscn" id="10_sjl7q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_56acy"]
 size = Vector2(1247, 70)
@@ -53,13 +52,9 @@ position = Vector2(550, 634)
 [node name="Player" parent="." instance=ExtResource("2_tlw7o")]
 position = Vector2(25, 593)
 _jump_dust = ExtResource("5_1ub7l")
-_has_machete = false
 
 [node name="Game_controller" type="Node" parent="Player"]
 script = ExtResource("6_252g5")
-
-[node name="Machete" parent="." instance=ExtResource("10_sjl7q")]
-position = Vector2(191, 635)
 
 [connection signal="changed_direction" from="Player" to="Camera2D" method="_on_subject_changed_direction"]
 [connection signal="landed" from="Player" to="Camera2D" method="_on_subject_landed"]

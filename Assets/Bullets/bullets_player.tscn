@@ -17,4 +17,4 @@ shape = SubResource("CircleShape2D_qhyya")
 sprite_frames = ExtResource("1_tq1dy")
 animation = &"Bullets_Player"
 
-[connection signal="body_entered" from="get_hit" to="." method="_on_HitBox_body_entered"]
+[connection signal="body_entered" from="get_hit" to="." method="_on_Bullet_body_entered"]

@@ -10,4 +10,4 @@ func _on_quit_pressed():
 
 
 func _on_retry_pressed():
-	get_tree().
+	get_parent().remove_child(self)

@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://cw6aifd8wkkw"]
+
+[ext_resource type="PackedScene" uid="uid://c8it7bbd20xdf" path="res://Assets/Scences/Player/Weapons/brust_garou_riffle_player.tscn" id="1_soque"]
+[ext_resource type="PackedScene" uid="uid://cfywm76eklecq" path="res://Assets/Bullets/bullets_player.tscn" id="2_c8at4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yugsx"]
+size = Vector2(1291, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jnlvk"]
+size = Vector2(11, 25)
+
+[node name="shoot test" type="Node2D"]
+
+[node name="Brust Garou-Riffle-Player" parent="." instance=ExtResource("1_soque")]
+bullet_scene = ExtResource("2_c8at4")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(635.5, 687)
+shape = SubResource("RectangleShape2D_yugsx")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(648, 642)
+
+[node name="hurtbox" type="Area2D" parent="CharacterBody2D"]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D/hurtbox"]
+position = Vector2(-3.5, 3.5)
+shape = SubResource("RectangleShape2D_jnlvk")
+debug_color = Color(0.882353, 0.313726, 0.329412, 0.419608)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_jnlvk")

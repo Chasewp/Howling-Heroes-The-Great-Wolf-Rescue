@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://Assets/Script/Class/Hero/Hero.gd" id="1_3n0i7"]
 [ext_resource type="Resource" uid="uid://i7yioowruvfu" path="res://Assets/Inventory/Player_Inventory/Player_Inventory.tres" id="2_utc45"]
-[ext_resource type="Texture2D" uid="uid://bvsoi4ra2w4nb" path="res://Assets/Image/Character/Player/templerun/Jump/Jump__009.png" id="4_hwtq2"]
 [ext_resource type="AnimationLibrary" uid="uid://bkgq1ncn5vt2d" path="res://Assets/Scences/Player/Animation/Player_animations.tres" id="4_mutx1"]
+[ext_resource type="Texture2D" uid="uid://bvsoi4ra2w4nb" path="res://Assets/Image/Character/Player/templerun/Jump/Jump__009.png" id="4_uyrth"]
 [ext_resource type="AnimationLibrary" uid="uid://33b7x1utp1ah" path="res://Assets/Scences/Player/Weapons/Playersword_animations.tres" id="5_dhdlh"]
 [ext_resource type="Script" path="res://Assets/Script/Class/Character/Player/coordinate.gd" id="39_3g6ho"]
 [ext_resource type="FontFile" uid="uid://fpssaux4ispl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="39_bu8e3"]
@@ -343,6 +343,7 @@ process_mode = 3
 collision_layer = 65535
 collision_mask = 263
 script = ExtResource("1_3n0i7")
+_is_attacking = true
 _has_machete = true
 warehouse = ExtResource("2_utc45")
 
@@ -351,11 +352,12 @@ visible = false
 position = Vector2(1, 2)
 
 [node name="Machete" parent="Weapon" instance=ExtResource("55_qrsxm")]
+visible = false
 position = Vector2(48, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("4_hwtq2")
+texture = ExtResource("4_uyrth")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

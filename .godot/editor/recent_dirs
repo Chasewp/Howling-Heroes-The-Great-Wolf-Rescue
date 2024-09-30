@@ -1,5 +1,9 @@
-res://Assets/Scences/Player/Animation
+res://
+res://Assets/Script/Controller/UI/Stage
+res://Assets/Script/Controller/UI/Fade
+res://Assets/Scences/fade
 res://Assets/Scences/Player/Weapons
+res://Assets/Scences/Player/Animation
 res://Assets/Script/Class/Item/Player/Machete
 res://Assets/Script/Controller/UI/Cage/Taiga
 res://Assets/Script/Controller/UI/Camera

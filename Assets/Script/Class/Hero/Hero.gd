@@ -42,7 +42,9 @@ var _is_below_surface : bool
 @onready var _current_armor : int = _max_armor
 @onready var _hurt_box : Area2D = $HurtBox
 @onready var _hit_box : Area2D = get_node_or_null("HitBox")
+@onready var _player_animmation : AnimationPlayer = $Sprite2D/AnimationPlayer
 var _invincible_time : Timer
+
 
 var _collision_layer : int = collision_layer
 var _collision_mask : int = collision_mask
@@ -188,8 +190,11 @@ func _attack_interrupted():
 func _physics_process(delta : float):
 	if not _is_facing_left && sign(_direction) == -1:
 		face_left()
+		
 	elif _is_facing_left && sign(_direction) == 1:
 		face_right()
+		
+			
 	if _is_in_water:
 		_water_physics(delta)
 	elif is_on_floor():
@@ -308,11 +313,11 @@ func _process(_delta):
 	emit_signal("update_coordinate",self.position)
 	#emit_signal("update_ammo",)	
 	Progress.UpdatePos(self.position)
-	if not _is_facing_left && sign(_direction) == -1:
-		face_left()
-	elif _is_facing_left && sign(_direction) == 1:
-		face_right()
-#func _physics_process(delta):
+	#if not _is_facing_left && sign(_direction) == -1:
+		#face_left()
+	#elif _is_facing_left && sign(_direction) == 1:
+		#face_right()
+
 	
 
 #func is_Dead():
@@ -430,4 +435,5 @@ func _on_save_slot_3_pressed():
 func _on_save_slot_4_pressed():
 	save_slot4()
 	get_tree().root.remove_child(self)
+
 

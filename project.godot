@@ -321,6 +321,7 @@ locale/test="en"
 2d_physics/layer_20="Enemy Target"
 2d_physics/layer_25="Tressure"
 2d_physics/layer_26="Machete"
+2d_physics/layer_27="Brust Garaou"
 
 [physics]
 

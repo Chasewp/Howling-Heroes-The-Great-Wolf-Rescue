@@ -13,7 +13,8 @@ extends Resource
 @export var screnshoot_image : Image
 @export var checkpoints : int
 @export var stage:PackedScene
-
+@export var World : int
+@export var Level : int
 
 #@export var level
 
@@ -24,6 +25,7 @@ extends Resource
 
 func UpdatePos(value : Vector2):
 	player_position = value
+
 
 
 	
