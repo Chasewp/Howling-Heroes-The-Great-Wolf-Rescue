@@ -1,16 +1,12 @@
-res://stage_test.tscn
+res://Assets/Scences/UI/Splash/Splash_Screen_1.tscn
 res://Assets/Dialogue/Theme/Speaker_Mode.tres
 res://Assets/Dialogue/Theme/Pixelize_Visual_Novel.tres
 res://Assets/Theme/Dialouge/Bubble_Dialogue.tres
 res://Assets/Inventory/Player_Inventory/Player_Inventory.tres
 res://Assets/Scences/Player/Animation/Player_animations.tres
 res://Assets/Scences/Player/Weapons/Playersword_animations.tres
-res://Assets/Inventory/Items/Pine_Key.tres
 res://Assets/Bullets/Animation_Player_Bullets.tres
 res://Assets/Tileset/Taiga_Stage.tres
-res://Assets/Scences/Stages/Taiga/level_1-22.tscn
-res://Assets/Scences/Stages/Taiga/level.gd
-res://Assets/Scences/UI/Splash/Splash_Screen_1.tscn
 res://Assets/Scences/UI/Saver/Saver_screen.tscn
 res://test.tscn
 res://Assets/Scences/UI/Inventory/inventory.tscn
@@ -27,3 +23,5 @@ res://Assets/Scences/Stages/Level_Taiga_Stage/taiga_biome.tscn
 res://Assets/Scences/fade/Fade.tscn
 res://Assets/Scences/UI/Game_Play/GUI_Play.tscn
 res://Assets/Scences/Stages/Taiga/level_1-1.tscn
+res://Assets/Scences/Stages/Taiga/level_1-22.tscn
+res://stage_test.tscn

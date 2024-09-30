@@ -49,6 +49,21 @@ offset_bottom = 5.0
 [node name="Pine_Key" parent="." instance=ExtResource("4_mry6n")]
 position = Vector2(550, 634)
 
+[node name="Pine_Key2" parent="." instance=ExtResource("4_mry6n")]
+position = Vector2(431, 637)
+
+[node name="Pine_Key3" parent="." instance=ExtResource("4_mry6n")]
+position = Vector2(327, 629)
+
+[node name="Pine_Key4" parent="." instance=ExtResource("4_mry6n")]
+position = Vector2(224, 631)
+
+[node name="Pine_Key5" parent="." instance=ExtResource("4_mry6n")]
+position = Vector2(999, 631)
+
+[node name="Pine_Key6" parent="." instance=ExtResource("4_mry6n")]
+position = Vector2(1135, 629)
+
 [node name="Player" parent="." instance=ExtResource("2_tlw7o")]
 position = Vector2(25, 593)
 _jump_dust = ExtResource("5_1ub7l")

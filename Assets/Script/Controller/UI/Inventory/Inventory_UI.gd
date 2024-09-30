@@ -25,8 +25,8 @@ func close() :
 	closed.emit()
 
 func update_inventory_items():
-	for a in range (min(inventory.items.size(),slots.size())):
-		slots[a].update(inventory.items[a])
+	for a in range (min(inventory.slots.size(),slots.size())):
+		slots[a].update_inventory_items(inventory.slots[a])
 		
 #func update(): 
 	#for a in range(min(inventory.slots.size(),slots.size())):
