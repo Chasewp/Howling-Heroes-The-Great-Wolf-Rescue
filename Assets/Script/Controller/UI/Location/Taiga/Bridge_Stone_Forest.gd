@@ -50,3 +50,11 @@ func _return_to_check_points():
 	_spawn_player()
 	_player_character.revive()
 	_player_character.set_enambled(true)
+
+
+func _on_inventory_ui_closed():
+	get_tree().paused = false
+
+
+func _on_inventory_ui_opened():
+	get_tree().paused = true

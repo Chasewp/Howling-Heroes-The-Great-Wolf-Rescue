@@ -4,7 +4,6 @@ extends Control
 @onready var Button_Sound = $Button_sound
 @onready var Bye = $Bye
 @onready var window = $ConfirmationDialog
-@onready var gbye = $Good_Bye_Label
 #For sound
 func _ready():
 	Warning.play()
@@ -17,7 +16,7 @@ func _on_confirmation_dialog_confirmed():
 func _on_confirmation_dialog_canceled():
 	Button_Sound.play()
 	LoadingScreen.load_scence("res://Assets/Scences/UI/Main_Menu/main_menu.tscn")
-	gbye.hide()
+
 #Qoutes
 func _on_bye_finished():
 	get_tree().quit()

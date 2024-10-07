@@ -1,9 +1,12 @@
 class_name Option_Menu
 extends Control
 
+"Cursor"
+var normal_cursor = load("res://Assets/Image/Cursor/Cursor 32x32.png")
+var hand_cursor = load("res://Assets/Image/Cursor/hand_paw.png")
+
 #Info Label
 @onready var info_lbl = $"Backkground/Info Label"
-
 #Button Sound
 @onready var button_sound = $Button
 
@@ -37,13 +40,18 @@ extends Control
 #Sound Effect Volume Max Label
 @onready var Max_Label_SFX_Volume = $"Backkground/Options Menu/Settings_Option_Tab_Menu/Audio/Audio_Settings/SFX_Volume_Setings/Max_SFX_Label"
 
+
+
 func _ready():
+	"""All Setings Data Save"""
 	Display_Mode.select(1 if SaveSettings.Data_Settings.FullScreen_on else 0)
 	V_Sync.button_pressed = SaveSettings.Data_Settings.V_Sync_on
 	Master_Volume.value = SaveSettings.Data_Settings.Master_Volume
 	Music_Volume.value = SaveSettings.Data_Settings.Music_Volume
 	sfx_Volume.value = SaveSettings.Data_Settings.SFX_Volume
 	Dialogue_Volume.value = SaveSettings.Data_Settings.Dialogue_Volume
+	
+	#Label Info Audio
 	info_lbl.hide()
 	
 	#Label V-Sync On/Off
@@ -82,16 +90,13 @@ func _on_v_sync_switch_pressed(button_pressed):
 			label_switch.set_text("OFF")	
 	GlobalSettings._toggle_vsync(button_pressed)
 
-
 func _on_master_slider_value_changed(value):
 	GlobalSettings._update_master_Volume(value)
 	Max_Label_Master_Volume.text=str(value) if value < Master_Volume.max_value else  "MAX"
 
-
 func _on_music_slider_value_changed(value):
 	GlobalSettings._update_music_Volume(value)
 	Max_Label_Music_Volume.text=str(value) if value < Music_Volume.max_value else "MAX"
-
 
 func _on_voice_slider_value_changed(value):
 	GlobalSettings._update_dialogue_Volume(value)
@@ -104,44 +109,42 @@ func _on_sfx_slider_value_changed(value):
 func _on_save_button_pressed():
 	button_sound.play()
 	GlobalSettings._toggle_fullscreen(SaveSettings.Data_Settings.FullScreen_on)
-	print("Settings Mode Saved")
 	LoadingScreen.load_scence("res://Assets/Scences/UI/Main_Menu/main_menu.tscn")
-
+	
 func _on_audio_mouse_entered():
 	info_lbl.show()
-
+	Input.set_custom_mouse_cursor(hand_cursor)
 
 func _on_audio_mouse_exited():
 	info_lbl.hide()
-
+	Input.set_custom_mouse_cursor(normal_cursor)
 
 func _on_sfx_slider_mouse_entered():
 	info_lbl.show()
 
-
 func _on_sfx_slider_mouse_exited():
 	info_lbl.hide()
-
 
 func _on_music_slider_mouse_exited():
 	info_lbl.hide()
 
-
 func _on_music_slider_mouse_entered():
 	info_lbl.show()
-
 
 func _on_master_slider_mouse_entered():
 	info_lbl.show()
 
-
 func _on_master_slider_mouse_exited():
 	info_lbl.hide()
-
 
 func _on_voice_slider_mouse_entered():
 	info_lbl.show()
 
-
 func _on_voice_slider_mouse_exited():
 	info_lbl.hide()
+
+func on_mouse_entered()-> void:
+	Input.set_custom_mouse_cursor(hand_cursor)
+	
+func on_mouse_exited()->void:
+	Input.set_custom_mouse_cursor(normal_cursor)

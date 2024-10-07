@@ -4,6 +4,10 @@ extends Control
 signal opened
 signal closed
 
+"Cursor"
+var normal_cursor = load("res://Assets/Image/Cursor/Cursor 32x32.png")
+var hand_cursor = load("res://Assets/Image/Cursor/hand_paw.png")
+
 """Instance Index Page Wolf Almanac"""
 var indexpage1 = preload("res://Assets/Scences/UI/Wolf_Almanac/Index/Page 1/Wolf_Almanac_Index_Page_1.tscn").instantiate()
 var indexpage2 = preload("res://Assets/Scences/UI/Wolf_Almanac/Index/Page 2/Wolf_Alamac_Index_Page_2.tscn").instantiate()
@@ -63,6 +67,10 @@ func _on_page_9_pressed():
 	get_tree().change_scene_to_packed(indexpage9)
 	get_tree().root.add_child(indexpage9)
 
-
+func on_mouse_entered()-> void:
+	Input.set_custom_mouse_cursor(hand_cursor)
+	
+func on_mouse_exited()->void:
+	Input.set_custom_mouse_cursor(normal_cursor)
 
 

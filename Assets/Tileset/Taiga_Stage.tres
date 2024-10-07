@@ -1,8 +1,8 @@
 [gd_resource type="TileSet" load_steps=7 format=3 uid="uid://v1yhquhbbtmr"]
 
-[ext_resource type="Texture2D" uid="uid://caooquwh10yry" path="res://Assets/Image/tilesets/Outside_A4.png" id="1_dvfub"]
-[ext_resource type="Texture2D" uid="uid://dd36usmc8x7jk" path="res://Assets/Image/tilesets/Outside_B.png" id="2_5vi5u"]
-[ext_resource type="Texture2D" uid="uid://bh380pqumfa5r" path="res://Assets/Image/tilesets/forest_tileset.png" id="3_lf41t"]
+[ext_resource type="Texture2D" uid="uid://c1ftjw4it2f5q" path="res://Assets/Image/tilesets/Outside_A4.png" id="1_dvfub"]
+[ext_resource type="Texture2D" uid="uid://r3c3bs5i02iw" path="res://Assets/Image/tilesets/Outside_B.png" id="2_5vi5u"]
+[ext_resource type="Texture2D" uid="uid://c6wyjiqeqb5vo" path="res://Assets/Image/tilesets/forest_tileset.png" id="3_lf41t"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4hjee"]
 resource_name = "Terains"

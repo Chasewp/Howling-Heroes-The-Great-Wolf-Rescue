@@ -1,12 +1,9 @@
 [gd_scene load_steps=84 format=3 uid="uid://w8tfinbfyqkd"]
 
 [ext_resource type="Script" path="res://Assets/Script/Class/Hero/Hero.gd" id="1_3n0i7"]
-[ext_resource type="Resource" uid="uid://i7yioowruvfu" path="res://Assets/Inventory/Player_Inventory/Player_Inventory.tres" id="2_utc45"]
-[ext_resource type="AnimationLibrary" uid="uid://bkgq1ncn5vt2d" path="res://Assets/Scences/Player/Animation/Player_animations.tres" id="4_mutx1"]
-[ext_resource type="Texture2D" uid="uid://bvsoi4ra2w4nb" path="res://Assets/Image/Character/Player/templerun/Jump/Jump__009.png" id="4_uyrth"]
-[ext_resource type="AnimationLibrary" uid="uid://33b7x1utp1ah" path="res://Assets/Scences/Player/Weapons/Playersword_animations.tres" id="5_dhdlh"]
+[ext_resource type="Texture2D" uid="uid://b86ww0ps3b8q8" path="res://Assets/Image/Character/Player/templerun/Jump/Jump__009.png" id="4_uyrth"]
 [ext_resource type="Script" path="res://Assets/Script/Class/Character/Player/coordinate.gd" id="39_3g6ho"]
-[ext_resource type="FontFile" uid="uid://fpssaux4ispl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="39_bu8e3"]
+[ext_resource type="FontFile" uid="uid://bc3fo6p06lixr" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="39_bu8e3"]
 [ext_resource type="PackedScene" uid="uid://cuh433hdbnick" path="res://Assets/Scences/Player/Weapons/Machete.tscn" id="55_qrsxm"]
 
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_4l72m"]
@@ -345,7 +342,7 @@ collision_mask = 263
 script = ExtResource("1_3n0i7")
 _is_attacking = true
 _has_machete = true
-warehouse = ExtResource("2_utc45")
+
 
 [node name="Weapon" type="Node2D" parent="."]
 visible = false
@@ -359,17 +356,7 @@ position = Vector2(48, 0)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("4_uyrth")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-"": ExtResource("5_dhdlh"),
-"Player_animations": ExtResource("4_mutx1")
-}
 
-[node name="AnimationTree" type="AnimationTree" parent="AnimationPlayer"]
-root_node = NodePath("../..")
-libraries = {
-"": ExtResource("5_dhdlh"),
-"Player_animations": ExtResource("4_mutx1")
 }
 tree_root = SubResource("AnimationNodeStateMachine_spo17")
 advance_expression_base_node = NodePath("../..")

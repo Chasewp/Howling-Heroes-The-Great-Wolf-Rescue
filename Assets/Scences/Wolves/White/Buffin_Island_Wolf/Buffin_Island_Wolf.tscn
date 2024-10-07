@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://cijomm6wj10yk"]
 
-[ext_resource type="Texture2D" uid="uid://cnxm2b38n54ub" path="res://Assets/Image/Wolves/Pixel Art/Character Sheets/Character Sheet Wolf - 6 white.png" id="1_ogupb"]
+[ext_resource type="Texture2D" uid="uid://bxtj16mod1ei" path="res://Assets/Image/Wolves/Pixel Art/Character Sheets/Character Sheet Wolf - 6 white.png" id="1_ogupb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eqo3g"]
 size = Vector2(64, 64)

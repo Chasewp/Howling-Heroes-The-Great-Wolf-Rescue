@@ -2,7 +2,7 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-uid="uid://dgs3yp2wuodpc"
+uid="uid://dfui72v5unq36"
 path="res://.godot/imported/Reload.mp3-db09946efa466afdcc2d04498c38cc70.mp3str"
 
 [deps]
@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/Reload.mp3-db09946efa466afdcc2d04498c38cc70.m
 [params]
 
 loop=false
-loop_offset=0.0
-bpm=0.0
+loop_offset=0
+bpm=0
 beat_count=0
 bar_beats=4

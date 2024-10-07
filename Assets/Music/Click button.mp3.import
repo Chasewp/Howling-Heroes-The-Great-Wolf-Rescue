@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bx5viwlichegr"
+path="res://.godot/imported/Click button.mp3-5a29e037f70130c1424fc117f2410fbd.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Click button.mp3"
+dest_files=["res://.godot/imported/Click button.mp3-5a29e037f70130c1424fc117f2410fbd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

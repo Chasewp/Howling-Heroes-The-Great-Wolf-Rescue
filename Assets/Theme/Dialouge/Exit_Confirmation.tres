@@ -1,7 +1,7 @@
 [gd_resource type="Theme" load_steps=2 format=3 uid="uid://br2uoqpi38ygc"]
 
-[ext_resource type="FontFile" uid="uid://fpssaux4ispl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="1_20jv5"]
+[ext_resource type="FontFile" uid="uid://bsmkjcem4b3i1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="1_20jv5"]
 
 [resource]
 default_font = ExtResource("1_20jv5")
-default_font_size = 18
+default_font_size = 45

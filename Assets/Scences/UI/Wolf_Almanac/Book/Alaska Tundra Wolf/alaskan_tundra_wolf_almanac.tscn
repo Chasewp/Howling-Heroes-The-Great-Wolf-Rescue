@@ -1,12 +1,12 @@
 [gd_scene load_steps=8 format=3 uid="uid://c0vlo77sdvbgi"]
 
 [ext_resource type="Script" path="res://Assets/Script/Class/Wolf/Wolf Alamanac/Book/Wolf_Alamanac_Book.gd" id="1_5o2tk"]
-[ext_resource type="Texture2D" uid="uid://h8ti4bq4icvy" path="res://Assets/Image/images/Book Open/opened_notebook_isolated_on_background.png" id="2_0arr5"]
-[ext_resource type="FontFile" uid="uid://djx6ba5h1a3qs" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="3_6jxqw"]
-[ext_resource type="FontFile" uid="uid://cnhshuaxal67w" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="4_ngxhc"]
-[ext_resource type="FontFile" uid="uid://fpssaux4ispl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="5_853po"]
-[ext_resource type="FontFile" uid="uid://btxatlr1vkceb" path="res://Assets/Fonts/DisposableDroidBB_ital.ttf" id="6_oof8w"]
-[ext_resource type="Texture2D" uid="uid://u4su3h7xs6e6" path="res://Assets/Image/Buttons/right-arrow.png" id="7_x4bvj"]
+[ext_resource type="Texture2D" uid="uid://de3uf3dpbsyhw" path="res://Assets/Image/Book Open/opened_notebook_isolated_on_background.png" id="2_0arr5"]
+[ext_resource type="FontFile" uid="uid://byrrpk8yu3w10" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="3_6jxqw"]
+[ext_resource type="FontFile" uid="uid://chsguujhey1bs" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="4_ngxhc"]
+[ext_resource type="FontFile" uid="uid://bc3fo6p06lixr" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="5_853po"]
+[ext_resource type="FontFile" uid="uid://dknuby8pwv0rl" path="res://Assets/Fonts/DisposableDroidBB_ital.ttf" id="6_oof8w"]
+[ext_resource type="Texture2D" uid="uid://dy5u82g7k5sjy" path="res://Assets/Image/Buttons/right-arrow.png" id="7_x4bvj"]
 
 [node name="Alaskan_Tundra_Wolf_Almanac" type="Control"]
 layout_mode = 3

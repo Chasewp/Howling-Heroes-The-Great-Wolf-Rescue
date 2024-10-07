@@ -1,0 +1,149 @@
+[gd_scene load_steps=7 format=3 uid="uid://di1n7q1yinifa"]
+
+[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Wolf Alamanac/Index/Wolf_Almanac_Idex.gd" id="1_72wef"]
+[ext_resource type="Texture2D" uid="uid://nv44ojjrc5vg" path="res://Assets/Image/images/Background/Wolf Almanac Index/Wood Texture.png" id="1_jarw5"]
+[ext_resource type="FontFile" uid="uid://byrrpk8yu3w10" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="2_vgvp7"]
+[ext_resource type="FontFile" uid="uid://bc3fo6p06lixr" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="4_vah5o"]
+[ext_resource type="FontFile" uid="uid://chsguujhey1bs" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="5_t037p"]
+[ext_resource type="AudioStream" uid="uid://ykxbdfo75nbb" path="res://Assets/Music/Start_Buton_Sound/Start_Buton_Sound.mp3" id="6_ct74t"]
+
+[node name="WolfAlmanacPage1Idex" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_72wef")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_jarw5")
+expand_mode = 1
+
+[node name="Tittle_Label" type="Label" parent="Background"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -139.0
+offset_right = 177.0
+offset_bottom = 44.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.87451, 0.87451, 0.87451, 1)
+theme_override_colors/font_shadow_color = Color(0.290196, 0.290196, 0.290196, 1)
+theme_override_colors/font_outline_color = Color(0.976471, 0.592157, 0.415686, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 9
+theme_override_fonts/font = ExtResource("2_vgvp7")
+theme_override_font_sizes/font_size = 44
+text = "Wolf Species List
+"
+
+[node name="Almanac Index" type="GridContainer" parent="Background"]
+clip_contents = true
+layout_direction = 1
+layout_mode = 0
+offset_left = 50.0
+offset_top = 44.0
+offset_right = 1236.0
+offset_bottom = 661.0
+theme_override_constants/h_separation = 25
+theme_override_constants/v_separation = 10
+columns = 3
+
+[node name="WolfVBoxContainer1" type="VBoxContainer" parent="Background/Almanac Index"]
+custom_minimum_size = Vector2(245, 245)
+layout_direction = 1
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Wolf 1" type="TextureRect" parent="Background/Almanac Index/WolfVBoxContainer1"]
+custom_minimum_size = Vector2(385, 555)
+layout_direction = 2
+layout_mode = 2
+expand_mode = 1
+
+[node name="Label_Wolf1" type="Label" parent="Background/Almanac Index/WolfVBoxContainer1"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_vgvp7")
+theme_override_font_sizes/font_size = 24
+text = "Wolf Label"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="WolfVBoxContainer2" type="VBoxContainer" parent="Background/Almanac Index"]
+layout_mode = 2
+
+[node name="Wolf 2" type="TextureRect" parent="Background/Almanac Index/WolfVBoxContainer2"]
+custom_minimum_size = Vector2(385, 555)
+layout_direction = 2
+layout_mode = 2
+expand_mode = 1
+
+[node name="Label Wolf2" type="Label" parent="Background/Almanac Index/WolfVBoxContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_vgvp7")
+theme_override_font_sizes/font_size = 24
+text = "Wolf Label"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="WolfVBoxContainer3" type="VBoxContainer" parent="Background/Almanac Index"]
+layout_mode = 2
+
+[node name="Wolf 3" type="TextureRect" parent="Background/Almanac Index/WolfVBoxContainer3"]
+custom_minimum_size = Vector2(385, 555)
+layout_direction = 2
+layout_mode = 2
+expand_mode = 1
+
+[node name="Label Wolf3" type="Label" parent="Background/Almanac Index/WolfVBoxContainer3"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_vgvp7")
+theme_override_font_sizes/font_size = 24
+text = "Wolf Label"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Next" type="Button" parent="Background"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.927
+anchor_top = 0.886
+anchor_right = 0.97
+anchor_bottom = 0.931
+offset_left = 0.439941
+offset_top = 0.0799561
+offset_right = -0.600098
+offset_bottom = -0.320068
+theme_override_fonts/font = ExtResource("4_vah5o")
+theme_override_font_sizes/font_size = 24
+text = "Next"
+flat = true
+
+[node name="Page Label" type="Label" parent="Background"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.466
+anchor_top = 0.901
+anchor_right = 0.55
+anchor_bottom = 0.935
+offset_left = 11.52
+offset_top = 1.27997
+offset_right = -12.0
+offset_bottom = -0.200073
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("5_t037p")
+theme_override_font_sizes/font_size = 24
+text = "Page 1 of 9"
+
+[node name="Button_Click" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_ct74t")

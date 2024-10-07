@@ -30,7 +30,7 @@ func start_load() -> void:
 		if state == OK :
 			set_process(true)
 			
-func _process(delta):
+func _process(_delta):
 	var _load_status = ResourceLoader.load_threaded_get_status(_scence_path,_progress)
 	match _load_status:
 		0,2 : #? THREAD_LOAD_INVALID_RESOURCE, THREAD_LOAD_FAILED

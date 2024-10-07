@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Biomes/Taiga_Stage.gd" id="1_kfjpg"]
 [ext_resource type="TileSet" uid="uid://v1yhquhbbtmr" path="res://Assets/Tileset/Taiga_Stage.tres" id="2_vgijr"]
 [ext_resource type="PackedScene" uid="uid://ctyfcjvef5jlv" path="res://Assets/Scences/UI/Check_Points/Check_Points.tscn" id="3_n68od"]
-[ext_resource type="AudioStream" uid="uid://b00ws5eol5y1x" path="res://Assets/Music/Healing/mixkit-bless-choir-655.wav" id="4_8heno"]
+[ext_resource type="AudioStream" uid="uid://cgyijgi27caol" path="res://Assets/Music/Healing/mixkit-bless-choir-655.wav" id="4_8heno"]
 [ext_resource type="PackedScene" uid="uid://cndqerygqtk6p" path="res://Assets/Scences/Cage/Taiga/pine__cage.tscn" id="6_8nnnv"]
 [ext_resource type="PackedScene" uid="uid://b13q00tqak8pk" path="res://Assets/Scences/Platfromer/platfrom_taiga.tscn" id="6_57q2f"]
 [ext_resource type="PackedScene" uid="uid://cbn4storx858p" path="res://Assets/Scences/Hazzards/spikes_normal_rock.tscn" id="6_hl1lm"]

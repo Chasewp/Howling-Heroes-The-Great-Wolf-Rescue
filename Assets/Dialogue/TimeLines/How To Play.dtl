@@ -1,5 +1,5 @@
 [style name="Pixelize_Visual_Novel"]
-[background arg="res://Assets/Image/images/Background/Info_Intro/Hill.png" fade="0.0"]
+[background arg="res://Assets/Image/Background/Info_Intro/Hill.png" fade="0.0"]
 [music path="res://Assets/Music/How_To_Play/Clift.mp3" fade="5.0" volume="0.0"]
 join Mr_Wolf (no_Background) 1 [animation="Slide In Left"]
 [voice path="res://Assets/Music/Dialogues/How to Play/How to play 1.mp3" volume="0.0"]

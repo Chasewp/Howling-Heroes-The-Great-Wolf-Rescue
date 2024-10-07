@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cemos3ej1q4dq"]
+
+[ext_resource type="Script" path="res://Assets/Script/Controller/UI/How to play/How_To_Play.gd" id="1_snc3p"]
+
+[node name="How_To_Play" type="Node2D"]
+script = ExtResource("1_snc3p")

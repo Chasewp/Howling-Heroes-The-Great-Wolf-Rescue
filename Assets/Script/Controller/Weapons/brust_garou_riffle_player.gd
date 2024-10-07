@@ -23,6 +23,7 @@ func _on_reloading_audio_reloading_finished():
 	reloading_riffle.play()
 
 func _physics_process(delta:float)->void:
+	
 	if Input.is_action_pressed("shoot_fire") and can_shoot:
 		if mag_count > 0:
 			current_ammo_label.text = str(mag_count)
@@ -43,7 +44,7 @@ func shoot(direction: float = 1.0)->bool:
 	var b = bullet_scene.instantiate() as Bullets
 	mag_count -= 1
 	b.global_position = global_position
-	b.direction = global_position.direction_to(get_global_mouse_position())
+	#b.direction = global_position.direction_to(get_global_mouse_position())
 	#b.linear_velocity = Vector2(direction * BULLET_VELOCITY, 0.0)
 	b.set_as_top_level(true)
 	add_child(b)

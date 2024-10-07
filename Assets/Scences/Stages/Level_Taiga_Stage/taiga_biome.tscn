@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bbgu7x35mmpr1"]
+[gd_scene load_steps=15 format=3 uid="uid://bbgu7x35mmpr1"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Camera/Camera2D.gd" id="1_5it43"]
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Location/Taiga/Bridge_Stone_Forest.gd" id="1_6gdqc"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://w8tfinbfyqkd" path="res://Assets/Scences/Player/Player.tscn" id="4_c6187"]
 [ext_resource type="Script" path="res://Assets/Scences/Biome/Bridge_Stone_Forest/Game_Control.gd" id="5_dg2kq"]
 [ext_resource type="PackedScene" uid="uid://bli5mfb2fgf2e" path="res://Assets/Scences/UI/Inventory/inventory.tscn" id="5_k3xfu"]
+[ext_resource type="Script" path="res://Assets/Scences/Stages/Level_Taiga_Stage/User_Interface.gd" id="7_3mfui"]
 [ext_resource type="PackedScene" uid="uid://b8slyshlqv5fw" path="res://Assets/Scences/UI/Game over/Game_Over.tscn" id="10_hk3m4"]
 [ext_resource type="PackedScene" uid="uid://ljy4srl7uqw4" path="res://Assets/Scences/UI/Wolf_Almanac/Main_Menu/alamanac_main_menu.tscn" id="11_n7bec"]
 [ext_resource type="PackedScene" uid="uid://b7o8w4cbk33px" path="res://Assets/Scences/fade/Fade.tscn" id="12_xpabx"]
@@ -35,6 +36,8 @@ unique_name_in_owner = true
 script = ExtResource("5_dg2kq")
 
 [node name="User_Interface" type="CanvasLayer" parent="."]
+process_mode = 3
+script = ExtResource("7_3mfui")
 
 [node name="GuiPlay" parent="User_Interface" instance=ExtResource("2_8jyu2")]
 
@@ -86,3 +89,5 @@ visible = false
 [connection signal="changed_direction" from="WorldRoot/Player" to="Camera2D" method="_on_subject_changed_direction"]
 [connection signal="health_changed" from="WorldRoot/Player" to="User_Interface/GuiPlay" method="_on_player_health_changed"]
 [connection signal="landed" from="WorldRoot/Player" to="Camera2D" method="_on_subject_landed"]
+[connection signal="closed" from="User_Interface/Inventory_UI" to="." method="_on_inventory_ui_closed"]
+[connection signal="opened" from="User_Interface/Inventory_UI" to="." method="_on_inventory_ui_opened"]

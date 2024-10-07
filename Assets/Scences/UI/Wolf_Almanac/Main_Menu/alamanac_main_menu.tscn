@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://ljy4srl7uqw4"]
 
-[ext_resource type="Texture2D" uid="uid://p302qv1oc7j8" path="res://Assets/Image/Background/Wolf Almanac Index/Wood Texture.png" id="1_3mosj"]
+[ext_resource type="Texture2D" uid="uid://biqr0ivlif7wk" path="res://Assets/Image/Background/Wolf Almanac Index/Wood Texture.png" id="1_3mosj"]
 [ext_resource type="Script" path="res://Assets/Script/Class/Wolf/Wolf Alamanac/Menu/alamanac_main_menu.gd" id="1_lcncl"]
-[ext_resource type="FontFile" uid="uid://djx6ba5h1a3qs" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="1_vhleb"]
-[ext_resource type="FontFile" uid="uid://cnhshuaxal67w" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="2_fv5yf"]
-[ext_resource type="AudioStream" uid="uid://c0lhrui6o2e72" path="res://Assets/Music/All Button/Button.mp3" id="4_xmvnl"]
+[ext_resource type="FontFile" uid="uid://byrrpk8yu3w10" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="1_vhleb"]
+[ext_resource type="FontFile" uid="uid://chsguujhey1bs" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="2_fv5yf"]
+[ext_resource type="AudioStream" uid="uid://c8hwked7dvue2" path="res://Assets/Music/All Button/Button.mp3" id="4_xmvnl"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qqle6"]
 bg_color = Color(0, 0, 0, 0.427451)
@@ -17,6 +17,7 @@ script = ExtResource("1_lcncl")
 [node name="TextureRect" type="TextureRect" parent="."]
 clip_contents = true
 custom_minimum_size = Vector2(1280, 720)
+layout_mode = 0
 offset_right = 1280.0
 offset_bottom = 720.0
 texture = ExtResource("1_3mosj")
@@ -140,12 +141,30 @@ text = "Page 9"
 [node name="Button_Click" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_xmvnl")
 
+[connection signal="mouse_entered" from="TextureRect/GridContainer/Page 1" to="." method="on_mouse_entered"]
+[connection signal="mouse_exited" from="TextureRect/GridContainer/Page 1" to="." method="on_mouse_exited"]
 [connection signal="pressed" from="TextureRect/GridContainer/Page 1" to="." method="_on_page_1_pressed"]
+[connection signal="mouse_entered" from="TextureRect/GridContainer/Page 2" to="." method="on_mouse_entered"]
+[connection signal="mouse_exited" from="TextureRect/GridContainer/Page 2" to="." method="on_mouse_exited"]
 [connection signal="pressed" from="TextureRect/GridContainer/Page 2" to="." method="_on_page_2_pressed"]
+[connection signal="mouse_entered" from="TextureRect/GridContainer/Page 3" to="." method="on_mouse_entered"]
+[connection signal="mouse_exited" from="TextureRect/GridContainer/Page 3" to="." method="on_mouse_exited"]
 [connection signal="pressed" from="TextureRect/GridContainer/Page 3" to="." method="_on_page_3_pressed"]
+[connection signal="mouse_entered" from="TextureRect/GridContainer/Page 4" to="." method="on_mouse_entered"]
+[connection signal="mouse_exited" from="TextureRect/GridContainer/Page 4" to="." method="on_mouse_exited"]
 [connection signal="pressed" from="TextureRect/GridContainer/Page 4" to="." method="_on_page_4_pressed"]
+[connection signal="mouse_entered" from="TextureRect/GridContainer/Page 5" to="." method="on_mouse_entered"]
+[connection signal="mouse_exited" from="TextureRect/GridContainer/Page 5" to="." method="on_mouse_exited"]
 [connection signal="pressed" from="TextureRect/GridContainer/Page 5" to="." method="_on_page_5_pressed"]
+[connection signal="mouse_entered" from="TextureRect/GridContainer/Page 6" to="." method="on_mouse_entered"]
+[connection signal="mouse_exited" from="TextureRect/GridContainer/Page 6" to="." method="on_mouse_exited"]
 [connection signal="pressed" from="TextureRect/GridContainer/Page 6" to="." method="_on_page_6_pressed"]
+[connection signal="mouse_entered" from="TextureRect/GridContainer/Page 7" to="." method="on_mouse_entered"]
+[connection signal="mouse_exited" from="TextureRect/GridContainer/Page 7" to="." method="on_mouse_exited"]
 [connection signal="pressed" from="TextureRect/GridContainer/Page 7" to="." method="_on_page_7_pressed"]
+[connection signal="mouse_entered" from="TextureRect/GridContainer/Page 8" to="." method="on_mouse_entered"]
+[connection signal="mouse_exited" from="TextureRect/GridContainer/Page 8" to="." method="on_mouse_exited"]
 [connection signal="pressed" from="TextureRect/GridContainer/Page 8" to="." method="_on_page_8_pressed"]
+[connection signal="mouse_entered" from="TextureRect/GridContainer/Page 9" to="." method="on_mouse_entered"]
+[connection signal="mouse_exited" from="TextureRect/GridContainer/Page 9" to="." method="on_mouse_exited"]
 [connection signal="pressed" from="TextureRect/GridContainer/Page 9" to="." method="_on_page_9_pressed"]

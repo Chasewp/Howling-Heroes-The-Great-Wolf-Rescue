@@ -14,31 +14,21 @@ config/name="HOWLING HEROES : THE GREAT WOLF RESCUE"
 config/description="An interactive role-playing game called Howling Heroes: The Great Wolf Rescue takes place in the fascinating world of wolves, more especially the Canis lupus species. Navigating through difficult platformer stages, players must solve puzzles and face enemies in order to save endangered wolf packs. It's an engrossing trip. The game conveys a strong message about conservation in addition to providing an interesting and instructive experience about the complex lives of wolves in the wild. Howling Heroes seeks to raise awareness of environmental issues and motivate players to take action to safeguard animals and preserve the environment by means of its breathtaking visuals and engrossing gameplay."
 config/version="V 1.0"
 config/tags=PackedStringArray("final_project")
-run/main_scene="res://Assets/Scences/UI/Splash/Splash_Screen_1.tscn"
-config/use_custom_user_dir=true
-config/custom_user_dir_name="HOWLING HEROES - THE GREAT WOLF RESCUE"
+run/main_scene="res://Assets/Scences/UI/Splash/Splash_Screen_Played.tscn"
 config/auto_accept_quit=false
 config/quit_on_go_back=false
-config/features=PackedStringArray("4.2", "C#")
+config/features=PackedStringArray("4.2")
 run/max_fps=144
 config/icon="res://Assets/Image/Logo/Logo Project Howling Heroes The Great Wolf Rescue.png"
-config/size/always_on_top=false
 
 [autoload]
 
 LoadingScreen="*res://Assets/Script/Controller/UI/Loading/loading_screen.gd"
 SaveSettings="*res://Assets/Script/Controller/Save/Settings/save_settings.gd"
 GlobalSettings="*res://Assets/Script/Controller/Save/Global_Settings/Global_Settings.gd"
-GlobalTilesets="*res://Assets/Script/Global_Tilesets/Global_Tilesets.gd"
-WolfData="*res://Assets/Script/Class/Wolf/Wolves_Save/Wolf_Data.gd"
-player="*res://Assets/Script/Class/Player/Player.gd"
-Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+Inventory="*res://Assets/Script/Class/Inventory/Inventory.gd"
 almanac="*res://Assets/Script/Class/Wolf/Wolf Alamanac/Class_Data/Almanac.gd"
-mission_stat="*res://Assets/Script/Controller/Mission/mission_class.gd"
-
-[collada]
-
-use_ambient=true
+WolfData="*res://Assets/Script/Class/Wolf/Wolves_Save/Wolf_Data.gd"
 
 [dialogic]
 
@@ -58,9 +48,6 @@ glossary/default_case_sensitive=true
 layout/mode=0
 text/autocolor_names=false
 variables={
-"Chosee": {
-"Var": "No"
-},
 "Stat": {
 "Attack": "",
 "Defences": "",
@@ -161,7 +148,7 @@ directories/dtl_directory={
 "Intro": "res://Assets/Dialogue/TimeLines/Intro.dtl",
 "Player": "res://Assets/Dialogue/TimeLines/Player.dtl"
 }
-layout/style_list=["res://Assets/Dialogue/Theme/Speaker_Mode.tres", "res://Assets/Dialogue/Theme/Pixelize_Visual_Novel.tres", "res://Assets/Theme/Dialouge/Bubble_Dialogue.tres"]
+layout/style_list=["res://Assets/Dialogue/Theme/Speaker_Mode.tres", "res://Assets/Dialogue/Theme/Pixelize_Visual_Novel.tres"]
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
 text/text_reveal_skip_delay=0.1
@@ -177,31 +164,14 @@ extensions_folder="res://addons/dialogic_additions"
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
-window/size/initial_position_type=0
 window/size/resizable=false
-window/size/always_on_top=true
-window/subwindows/embed_subwindows=false
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
-window/stretch/scale_mode="integer"
-window/vsync/vsync_mode=0
 mouse_cursor/custom_image="res://Assets/Image/images/Cursor/Cursor 32x32.png"
 
 [dotnet]
 
-project/assembly_name="HOWLING HEROES - THE GREAT WOLF RESCUE"
-
-[editor]
-
-movie_writer/speaker_mode=3
-movie_writer/mjpeg_quality=1.0
-movie_writer/fps=144
-version_control/plugin_name="GitPlugin"
-version_control/autoload_on_startup=true
-
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/dialogic/plugin.cfg", "res://addons/ldtk-importer/plugin.cfg")
+project/assembly_name="Dialogic Test Project"
 
 [input]
 
@@ -215,9 +185,14 @@ move_right={
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":68,"key_label":0,"unicode":100,"echo":false,"script":null)
 ]
 }
-Jump={
+move_up={
 "deadzone": 0.5,
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":87,"key_label":0,"unicode":119,"echo":false,"script":null)
+]
+}
+move_down={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":83,"key_label":0,"unicode":115,"echo":false,"script":null)
 ]
 }
 interact={
@@ -254,100 +229,35 @@ dialogic_default_action={
 , Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":0,"pressure":0.0,"pressed":false,"script":null)
 ]
 }
-Reload={
-"deadzone": 0.5,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":82,"key_label":0,"unicode":114,"echo":false,"script":null)
-]
-}
-shoot_fire={
-"deadzone": 0.5,
-"events": [null, Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"canceled":false,"pressed":false,"double_click":false,"script":null)
-]
-}
-slash_weapon={
-"deadzone": 0.5,
-"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":2,"canceled":false,"pressed":false,"double_click":false,"script":null)
-]
-}
-mission_log={
-"deadzone": 0.5,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":76,"key_label":0,"unicode":108,"echo":false,"script":null)
-]
-}
-menu_inventory={
-"deadzone": 0.2,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":4194306,"physical_keycode":0,"key_label":0,"unicode":0,"echo":false,"script":null)
-, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":73,"physical_keycode":0,"key_label":0,"unicode":0,"echo":false,"script":null)
-, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":4,"pressure":0.0,"pressed":false,"script":null)
-]
-}
-inventory_less={
-"deadzone": 0.01,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":4194328,"physical_keycode":0,"key_label":0,"unicode":0,"echo":false,"script":null)
-, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":9,"pressure":0.0,"pressed":false,"script":null)
-]
-}
-inventory_more={
-"deadzone": 0.01,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":4194325,"physical_keycode":0,"key_label":0,"unicode":0,"echo":false,"script":null)
-, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":10,"pressure":0.0,"pressed":false,"script":null)
-]
-}
-inventory_filter={
-"deadzone": 0.01,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":70,"physical_keycode":0,"key_label":0,"unicode":0,"echo":false,"script":null)
-, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":3,"pressure":0.0,"pressed":false,"script":null)
-]
-}
 
 [internationalization]
 
+locale/translations_pot_files=PackedStringArray("res://Assets/Dialogue/How_to_Play.dialogue")
 locale/test="en"
-
-[layer_names]
-
-2d_physics/layer_1="Terains"
-2d_physics/layer_2="Waters"
-2d_physics/layer_3="Hazzard"
-2d_physics/layer_4="Items"
-2d_physics/layer_5="Details"
-2d_physics/layer_6="Rest"
-2d_physics/layer_9="Player"
-2d_physics/layer_10="Player Hurt"
-2d_physics/layer_11="Player Hit"
-2d_physics/layer_17="Enemy"
-2d_physics/layer_18="Enemy Hurt"
-2d_physics/layer_19="Enemy Hitvision"
-2d_physics/layer_20="Enemy Target"
-2d_physics/layer_25="Tressure"
-2d_physics/layer_26="Machete"
-2d_physics/layer_27="Brust Garaou"
 
 [physics]
 
-2d/physics_engine="GodotPhysics2D"
-2d/default_gravity=1254.4
 common/enable_pause_aware_picking=true
 
 [rendering]
 
-textures/canvas_textures/default_texture_filter=0
 textures/vram_compression/import_etc2_astc=true
-textures/lossless_compression/force_png=true
-global_illumination/voxel_gi/quality=1
 shading/overrides/force_vertex_shading=true
 shading/overrides/force_lambert_over_burley=true
-textures/default_filters/anisotropic_filtering_level=4
 camera/depth_of_field/depth_of_field_bokeh_quality=3
 camera/depth_of_field/depth_of_field_use_jitter=true
 environment/ssao/quality=4
 environment/ssil/quality=4
-environment/glow/upscale_mode=0
 environment/screen_space_reflection/roughness_quality=3
 environment/subsurface_scattering/subsurface_scattering_quality=3
 environment/defaults/default_clear_color=Color(0.128906, 0.148438, 0.179688, 1)
+anti_aliasing/quality/msaa_2d=3
+anti_aliasing/quality/msaa_3d=3
 viewport/hdr_2d=true
+anti_aliasing/quality/screen_space_aa=1
+anti_aliasing/quality/use_taa=true
+anti_aliasing/quality/use_debanding=true
 
 [threading]
 
-worker_pool/max_threads=6
+worker_pool/max_threads=4

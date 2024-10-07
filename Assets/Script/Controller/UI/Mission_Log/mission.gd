@@ -28,9 +28,6 @@ func _ready():
 		total_boss_eleminated.set_text(""+"/"+str(4))
 		total_enemy_executed.set_text(""+"/"+str(8))	
 		
-func _process(delta):
-	if Input.is_action_just_pressed("mission_log"):
-		self.visible =!self.visible
 	
 
 

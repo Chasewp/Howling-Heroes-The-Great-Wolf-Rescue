@@ -1,17 +1,17 @@
 [gd_scene load_steps=15 format=3 uid="uid://capgwdnhn40bm"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Main_Menu/main_menu.gd" id="1_2ju3c"]
-[ext_resource type="Texture2D" uid="uid://c2wybfr5aacjs" path="res://Assets/Image/images/Background/Main_Menu/w2BsPEmg.jpeg" id="2_eo3sk"]
-[ext_resource type="AudioStream" uid="uid://cxj3ste55sq3v" path="res://Assets/Music/Un Sorteted/All Button/Quit_Button.mp3" id="3_15ajo"]
-[ext_resource type="Texture2D" uid="uid://ccxwuovn0l72p" path="res://Assets/Image/Logo/Logo Project Howling Heroes The Great Wolf Rescue.png" id="3_aqiha"]
-[ext_resource type="FontFile" uid="uid://bwh5hh7b65jlm" path="res://Assets/Fonts/WolfpackHalloweed-EaGOl.otf" id="4_c4irr"]
-[ext_resource type="FontFile" uid="uid://djx6ba5h1a3qs" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="5_vrfc0"]
-[ext_resource type="AudioStream" uid="uid://df1kc2q0cpqsh" path="res://Assets/Music/SFX/Button/Werewolf Attack edited.mp3" id="6_fcybm"]
-[ext_resource type="AudioStream" uid="uid://dwqkoxe2ca2d2" path="res://Assets/Music/Music/Main_Menu/Night Fullmoon wolf howling tock and roll horor-Mubert.mp3" id="6_h2jsk"]
-[ext_resource type="FontFile" uid="uid://cnhshuaxal67w" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="9_b4xqu"]
-[ext_resource type="Texture2D" uid="uid://b7hnw8kjop6po" path="res://Assets/Image/images/Buttons/Discord.png" id="10_wohku"]
-[ext_resource type="Texture2D" uid="uid://lebfpjabsr2t" path="res://Assets/Image/images/Buttons/Github.png" id="11_d0eax"]
-[ext_resource type="Texture2D" uid="uid://dvo8x08m1122e" path="res://Assets/Image/images/Buttons/FA.png" id="12_qpg2x"]
+[ext_resource type="AudioStream" uid="uid://ykxbdfo75nbb" path="res://Assets/Music/Start_Buton_Sound/Start_Buton_Sound.mp3" id="2_5ule3"]
+[ext_resource type="Texture2D" uid="uid://rye0xswna7xc" path="res://Assets/Image/Background/Main_Menu/w2BsPEmg.jpeg" id="2_eo3sk"]
+[ext_resource type="AudioStream" uid="uid://guchraf6vrit" path="res://Assets/Music/All Button/Quit_Button.mp3" id="3_15ajo"]
+[ext_resource type="Texture2D" uid="uid://3dfvlqa4alkq" path="res://Assets/Image/Logo/Logo Project Howling Heroes The Great Wolf Rescue.png" id="3_aqiha"]
+[ext_resource type="FontFile" uid="uid://crlgm0cmy2evj" path="res://Assets/Fonts/WolfpackHalloweed-EaGOl.otf" id="4_c4irr"]
+[ext_resource type="FontFile" uid="uid://byrrpk8yu3w10" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="5_vrfc0"]
+[ext_resource type="AudioStream" uid="uid://c53xm0j3hw5m1" path="res://Assets/Music/Main_Menu/Night Fullmoon wolf howling tock and roll horor-Mubert.mp3" id="6_h2jsk"]
+[ext_resource type="FontFile" uid="uid://chsguujhey1bs" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="9_b4xqu"]
+[ext_resource type="Texture2D" uid="uid://cwwmwnjoqo004" path="res://Assets/Image/images/Buttons/Discord.png" id="10_wohku"]
+[ext_resource type="Texture2D" uid="uid://dtdda0klg33di" path="res://Assets/Image/images/Buttons/Github.png" id="11_d0eax"]
+[ext_resource type="Texture2D" uid="uid://cld8falg052rk" path="res://Assets/Image/images/Buttons/FA.png" id="12_qpg2x"]
 
 [sub_resource type="Theme" id="Theme_oaio5"]
 
@@ -38,7 +38,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_eo3sk")
-metadata/_edit_lock_ = true
 
 [node name="Logo" type="TextureRect" parent="Background"]
 layout_mode = 1
@@ -56,14 +55,13 @@ expand_mode = 2
 
 [node name="Tittle 1" type="Label" parent="Background"]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.211
-anchor_right = 1.035
-anchor_bottom = 0.205
-offset_left = -0.0800171
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 270.0
 offset_top = -10.0
-offset_right = 0.199951
-offset_bottom = 31.4
+offset_right = 45.0
+offset_bottom = -541.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.831373, 0.898039, 0.941176, 1)
@@ -102,14 +100,10 @@ vertical_alignment = 1
 [node name="New Game Button" type="Button" parent="Background"]
 layout_direction = 1
 layout_mode = 2
-anchor_left = 0.594
-anchor_top = 0.292
-anchor_right = 0.945
-anchor_bottom = 0.382
-offset_left = -0.320068
-offset_top = -0.240021
-offset_right = 0.399902
-offset_bottom = -0.0400085
+offset_left = 760.0
+offset_top = 210.0
+offset_right = 1210.0
+offset_bottom = 275.0
 theme = SubResource("Theme_oaio5")
 theme_override_fonts/font = ExtResource("5_vrfc0")
 theme_override_font_sizes/font_size = 40
@@ -119,14 +113,10 @@ text = "New Game"
 [node name="Credits" type="Button" parent="Background"]
 layout_direction = 1
 layout_mode = 2
-anchor_left = 0.593
-anchor_top = 0.674
-anchor_right = 0.945
-anchor_bottom = 0.764
-offset_left = -0.0400391
-offset_top = -0.280029
-offset_right = -0.600098
-offset_bottom = -0.0800171
+offset_left = 759.0
+offset_top = 485.0
+offset_right = 1209.0
+offset_bottom = 550.0
 theme = SubResource("Theme_oaio5")
 theme_override_fonts/font = ExtResource("5_vrfc0")
 theme_override_font_sizes/font_size = 40
@@ -135,36 +125,25 @@ text = "Credits"
 
 [node name="Continue Button" type="Button" parent="Background"]
 layout_direction = 1
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.594
-anchor_top = 0.417
-anchor_right = 0.945
-anchor_bottom = 0.507
-offset_left = -0.320068
-offset_top = -0.240021
-offset_right = 0.399902
-offset_bottom = -0.0400085
+layout_mode = 0
+offset_left = 760.0
+offset_top = 300.0
+offset_right = 1210.0
+offset_bottom = 365.0
 theme = SubResource("Theme_oaio5")
 theme_override_fonts/font = ExtResource("5_vrfc0")
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_7vasw")
-action_mode = 0
 text = "Continue
 "
 
 [node name="Option Button" type="Button" parent="Background"]
 layout_direction = 1
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.594
-anchor_top = 0.542
-anchor_right = 0.945
-anchor_bottom = 0.632
-offset_left = -0.320068
-offset_top = -0.240051
-offset_right = 0.399902
-offset_bottom = -0.0400085
+layout_mode = 0
+offset_left = 760.0
+offset_top = 390.0
+offset_right = 1210.0
+offset_bottom = 455.0
 theme = SubResource("Theme_oaio5")
 theme_override_fonts/font = ExtResource("5_vrfc0")
 theme_override_font_sizes/font_size = 40
@@ -173,16 +152,11 @@ text = "Options"
 
 [node name="Quit Button" type="Button" parent="Background"]
 layout_direction = 1
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.591
-anchor_top = 0.799
-anchor_right = 0.943
-anchor_bottom = 0.889
-offset_left = 0.519958
-offset_top = -0.280029
-offset_right = -0.0400391
-offset_bottom = -0.0800171
+layout_mode = 0
+offset_left = 757.0
+offset_top = 575.0
+offset_right = 1207.0
+offset_bottom = 640.0
 theme = SubResource("Theme_oaio5")
 theme_override_fonts/font = ExtResource("5_vrfc0")
 theme_override_font_sizes/font_size = 40
@@ -190,7 +164,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_7vasw")
 text = "Quit"
 
 [node name="StartBtn" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("6_fcybm")
+stream = ExtResource("2_5ule3")
 bus = &"Sound Effects"
 
 [node name="Normal_button" type="AudioStreamPlayer" parent="."]
@@ -201,7 +175,7 @@ bus = &"Sound Effects"
 stream = ExtResource("6_h2jsk")
 bus = &"Sound Effects"
 
-[node name="Label_Version" type="Label" parent="."]
+[node name="Label" type="Label" parent="."]
 layout_mode = 0
 offset_left = 1206.0
 offset_top = 681.0
@@ -229,11 +203,10 @@ expand_icon = true
 [node name="Github" type="Button" parent="."]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
-anchor_right = 0.885
-anchor_bottom = 1.0
 offset_left = 1069.0
 offset_top = 656.0
-offset_right = 0.199951
+offset_right = 1133.0
+offset_bottom = 720.0
 icon = ExtResource("11_d0eax")
 flat = true
 expand_icon = true
@@ -249,12 +222,25 @@ icon = ExtResource("12_qpg2x")
 flat = true
 expand_icon = true
 
+[connection signal="mouse_entered" from="Background/New Game Button" to="." method="on_mouse_entered"]
+[connection signal="mouse_exited" from="Background/New Game Button" to="." method="on_mouse_exited"]
 [connection signal="pressed" from="Background/New Game Button" to="." method="_on_new_game_main_menu_buttons_pressed"]
+[connection signal="mouse_entered" from="Background/Credits" to="." method="on_mouse_entered"]
+[connection signal="mouse_exited" from="Background/Credits" to="." method="on_mouse_exited"]
 [connection signal="pressed" from="Background/Credits" to="." method="_on_credits_pressed"]
+[connection signal="mouse_entered" from="Background/Continue Button" to="." method="on_mouse_entered"]
+[connection signal="mouse_exited" from="Background/Continue Button" to="." method="on_mouse_exited"]
 [connection signal="pressed" from="Background/Continue Button" to="." method="_on_continue_main_menu_buttons_pressed"]
+[connection signal="mouse_entered" from="Background/Option Button" to="." method="on_mouse_entered"]
+[connection signal="mouse_exited" from="Background/Option Button" to="." method="on_mouse_exited"]
 [connection signal="pressed" from="Background/Option Button" to="." method="_on_options_main_menu_buttons_pressed"]
 [connection signal="pressed" from="Background/Quit Button" to="." method="_on_quit_main_menu_buttons_pressed"]
-[connection signal="finished" from="StartBtn" to="." method="_on_start_btn_finished"]
+[connection signal="mouse_entered" from="Discord" to="." method="on_mouse_entered"]
+[connection signal="mouse_exited" from="Discord" to="." method="on_mouse_exited"]
 [connection signal="pressed" from="Discord" to="." method="_on_discord_pressed"]
+[connection signal="mouse_entered" from="Github" to="." method="on_mouse_entered"]
+[connection signal="mouse_exited" from="Github" to="." method="on_mouse_exited"]
 [connection signal="pressed" from="Github" to="." method="_on_github_pressed"]
+[connection signal="mouse_entered" from="Furafinity" to="." method="on_mouse_entered"]
+[connection signal="mouse_exited" from="Furafinity" to="." method="on_mouse_exited"]
 [connection signal="pressed" from="Furafinity" to="." method="_on_furafinity_pressed"]

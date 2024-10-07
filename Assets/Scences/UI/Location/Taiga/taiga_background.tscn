@@ -1,10 +1,12 @@
 [gd_scene load_steps=2 format=3 uid="uid://duapb0cjxsh0d"]
 
-[ext_resource type="Texture2D" uid="uid://c8kbkyytjnr0c" path="res://Assets/Image/images/Background/Bridge Stone Forest/pixel_art_A_breathtaking_scene.jpeg" id="1_qapo8"]
+[ext_resource type="Texture2D" uid="uid://c134ui8jo4v2o" path="res://Assets/Image/Background/Bridge Stone Forest/pixel_art_A_breathtaking_scene.jpeg" id="1_qapo8"]
 
-[node name="Taiga Background" type="Node2D"]
+[node name="Taiga Background" type="ParallaxBackground"]
 
-[node name="PixelArtABreathtakingScene" type="Sprite2D" parent="."]
+[node name="ParallaxBackground" type="ParallaxLayer" parent="."]
+
+[node name="PixelArtABreathtakingScene" type="Sprite2D" parent="ParallaxBackground"]
 position = Vector2(641, 362)
 scale = Vector2(1.66667, 1.38672)
 texture = ExtResource("1_qapo8")

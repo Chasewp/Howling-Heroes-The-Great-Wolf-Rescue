@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://csyya0mjadpf7"]
+
+[ext_resource type="Script" path="res://Assets/Scences/UI/Inventory/items_stacking_GUI.gd" id="1_6eak3"]
+[ext_resource type="FontFile" uid="uid://fpssaux4ispl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="1_bgk81"]
+
+[node name="Panel" type="Panel"]
+script = ExtResource("1_6eak3")
+
+[node name="Items" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(64, 64)
+layout_direction = 1
+layout_mode = 2
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+offset_left = 23.0
+offset_top = 19.0
+offset_right = 40.0
+offset_bottom = 38.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_bgk81")
+theme_override_font_sizes/font_size = 18
+text = "99"
+horizontal_alignment = 2
+vertical_alignment = 1

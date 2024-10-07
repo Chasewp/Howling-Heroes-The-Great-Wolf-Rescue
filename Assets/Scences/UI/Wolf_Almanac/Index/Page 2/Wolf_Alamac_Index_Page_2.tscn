@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://cokoy6m8s3kf6"]
 
-[ext_resource type="Texture2D" uid="uid://c8vpwhgqrvpou" path="res://Assets/Image/images/Background/Wolf Almanac Index/Wood Texture.png" id="1_ec662"]
+[ext_resource type="Texture2D" uid="uid://c8vpwhgqrvpou" path="res://Assets/Image/Background/Wolf Almanac Index/Wood Texture.png" id="1_ec662"]
 [ext_resource type="Script" path="res://Assets/Script/Class/Wolf/Wolf Alamanac/Index/Wolf_Almanac_Index_Page_2.gd" id="1_fk30v"]
 [ext_resource type="FontFile" uid="uid://cnhshuaxal67w" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="2_i1e8y"]
 [ext_resource type="Theme" uid="uid://dk2f873t2ffc2" path="res://Assets/Theme/Wolf_Almanac_Idex/Button.tres" id="3_0nf77"]

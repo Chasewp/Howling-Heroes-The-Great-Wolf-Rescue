@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5oh08utk31s2"]
+
+[ext_resource type="Theme" uid="uid://cya18eaoptu42" path="res://Assets/Theme/Player_Name/Player_Name.tres" id="1_y2i2a"]
+
+[sub_resource type="GDScript" id="GDScript_36vk4"]
+script/source = "extends LineEdit
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	grab_focus()
+	#set_cursor_position(len(text))
+
+
+
+func _on_player_name_text_submitted(new_text):
+	pass # Replace with function body.
+"
+
+[node name="PlayerName" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = SubResource("GDScript_36vk4")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Player_Name" type="LineEdit" parent="CenterContainer"]
+layout_mode = 2
+theme = ExtResource("1_y2i2a")
+max_length = 32
+expand_to_text_length = true
+caret_blink = true
+
+[connection signal="text_submitted" from="CenterContainer/Player_Name" to="." method="_on_player_name_text_submitted"]

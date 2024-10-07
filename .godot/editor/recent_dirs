@@ -1,10 +1,5 @@
-res://
-res://Assets/Script/Controller/UI/Stage
-res://Assets/Script/Controller/UI/Fade
-res://Assets/Scences/fade
-res://Assets/Scences/Player/Weapons
-res://Assets/Scences/Player/Animation
-res://Assets/Script/Class/Item/Player/Machete
-res://Assets/Script/Controller/UI/Cage/Taiga
-res://Assets/Script/Controller/UI/Camera
-res://Assets/Image/Keyboard and Mouse
+res://Assets/Theme/Credit
+res://Assets/Script/Controller/UI/Credits
+res://Assets/Script/Class/Wolf/Wolves_Save
+res://Assets/Script/Class/Wolf/Wolf Alamanac/Class_Data
+res://Assets/Script/Class/Wolf/Wolf Almanac

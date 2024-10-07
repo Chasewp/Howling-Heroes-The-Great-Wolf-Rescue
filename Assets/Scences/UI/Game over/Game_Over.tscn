@@ -1,20 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://b8slyshlqv5fw"]
-
-[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Game Over/Game_Over.gd" id="1_5h17y"]
-[ext_resource type="Texture2D" uid="uid://bkk56as8wgcth" path="res://Assets/Image/images/Background/Game_Over/_05103563-7cfd-43ed-b5bd-2cb1f01de6a0.jpeg" id="1_j0xxr"]
-[ext_resource type="FontFile" uid="uid://djx6ba5h1a3qs" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="2_m2dxc"]
-[ext_resource type="AudioStream" uid="uid://carbax1x2d4q2" path="res://Assets/Music/Dialogue/Game Over/Game Over.mp3" id="4_xftlm"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qsqym"]
-bg_color = Color(0.992157, 0.505882, 0.301961, 1)
-border_color = Color(0, 0.54902, 0.356863, 1)
-border_blend = true
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-corner_detail = 10
-shadow_color = Color(0.0980392, 0.223529, 0.113725, 1)
+[gd_scene format=3 uid="uid://b8slyshlqv5fw"]
 
 [node name="GameOver" type="Control"]
 layout_mode = 3
@@ -23,7 +7,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_5h17y")
 
 [node name="Background" type="TextureRect" parent="."]
 layout_mode = 1
@@ -32,51 +15,3 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_j0xxr")
-expand_mode = 1
-
-[node name="Butoon Container" type="HBoxContainer" parent="Background"]
-clip_contents = true
-custom_minimum_size = Vector2(200, 40)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -479.5
-offset_top = 204.5
-offset_right = 479.5
-offset_bottom = 290.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/separation = 734
-alignment = 1
-
-[node name="Retry" type="Button" parent="Background/Butoon Container"]
-clip_contents = true
-custom_minimum_size = Vector2(164, 64)
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_fonts/font = ExtResource("2_m2dxc")
-theme_override_font_sizes/font_size = 58
-theme_override_styles/normal = SubResource("StyleBoxFlat_qsqym")
-text = "Retry"
-
-[node name="Quit" type="Button" parent="Background/Butoon Container"]
-clip_contents = true
-custom_minimum_size = Vector2(164, 64)
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_fonts/font = ExtResource("2_m2dxc")
-theme_override_font_sizes/font_size = 58
-theme_override_styles/normal = SubResource("StyleBoxFlat_qsqym")
-text = "Quit"
-
-[node name="SFX" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(1, 0)
-stream = ExtResource("4_xftlm")
-bus = &"Voices"
-
-[connection signal="pressed" from="Background/Butoon Container/Retry" to="." method="_on_retry_pressed"]
-[connection signal="pressed" from="Background/Butoon Container/Quit" to="." method="_on_quit_pressed"]
