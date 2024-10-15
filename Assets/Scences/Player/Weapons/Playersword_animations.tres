@@ -1,6 +1,6 @@
 [gd_resource type="AnimationLibrary" load_steps=8 format=3 uid="uid://33b7x1utp1ah"]
 
-[ext_resource type="AudioStream" uid="uid://ck3ty7yuojysc" path="res://Assets/Music/SFX/Weapon/Slash/sword-slash-and-swing-185432.mp3" id="1_wut0x"]
+[ext_resource type="AudioStream" uid="uid://cjjde10wuh4tp" path="res://Assets/Music/SFX/Weapon/Slash/sword-slash-and-swing-185432.mp3" id="1_wut0x"]
 
 [sub_resource type="Animation" id="Animation_tldlt"]
 length = 0.001

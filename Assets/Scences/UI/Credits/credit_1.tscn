@@ -1,26 +1,14 @@
-[gd_scene load_steps=20 format=3 uid="uid://bbyynyiqulvmb"]
+[gd_scene load_steps=14 format=3 uid="uid://bbyynyiqulvmb"]
 
-[ext_resource type="Texture2D" uid="uid://cebf1s7akyswg" path="res://Assets/Image/Credits/pixel_art_A_breathtaking_lands.jpeg" id="1_hxuib"]
+[ext_resource type="Texture2D" uid="uid://c0wydxignygk1" path="res://Assets/Image/Credits/pixel_art_A_breathtaking_lands.jpeg" id="1_hxuib"]
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Credits/credit_page1.gd" id="1_uhxsh"]
-[ext_resource type="FontFile" uid="uid://c7kxtmv713e3k" path="res://Assets/Fonts/Wolf Moon.ttf" id="2_n65go"]
+[ext_resource type="FontFile" uid="uid://ca4w7i8wmxilb" path="res://Assets/Fonts/Wolf Moon.ttf" id="2_n65go"]
 [ext_resource type="Theme" uid="uid://c5tjnvediwfog" path="res://Assets/Theme/Credit/Tittles.tres" id="3_5ueon"]
-[ext_resource type="FontFile" uid="uid://cdart6hw4f08i" path="res://Assets/Fonts/Roboto/Roboto-BoldItalic.ttf" id="3_be0qo"]
-[ext_resource type="FontFile" uid="uid://bc3fo6p06lixr" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="4_bimxs"]
+[ext_resource type="FontFile" uid="uid://dsiccyde5hohl" path="res://Assets/Fonts/Roboto/Roboto-BoldItalic.ttf" id="3_be0qo"]
+[ext_resource type="FontFile" uid="uid://fpssaux4ispl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="4_bimxs"]
 [ext_resource type="Theme" uid="uid://dc1ctcksywkhs" path="res://Assets/Theme/Credit/Label Details.tres" id="5_2dkor"]
 [ext_resource type="Theme" uid="uid://4pmckqqvpja8" path="res://Assets/Theme/Credit/Buttons.tres" id="6_l3soc"]
-[ext_resource type="AudioStream" uid="uid://fj045rk2p8oe" path="res://Assets/Music/Un Sorteted/All Button/Quit_Button.mp3" id="6_vu1eb"]
-[ext_resource type="StyleBox" uid="uid://q84pe8ssnf0x" path="res://Assets/Theme/Credit/button_credit_normal.tres" id="7_py01q"]
-[ext_resource type="StyleBox" uid="uid://cl55c2vherxft" path="res://Assets/Theme/Credit/button_credit_hover.tres" id="8_52073"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_22h6o"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nx4th"]
-bg_color = Color(0.356863, 0.356863, 0.356863, 0.866667)
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_neucw"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ahqgw"]
-bg_color = Color(0.356863, 0.356863, 0.356863, 0.866667)
+[ext_resource type="AudioStream" uid="uid://cxj3ste55sq3v" path="res://Assets/Music/Un Sorteted/All Button/Quit_Button.mp3" id="6_vu1eb"]
 
 [sub_resource type="Animation" id="Animation_dh4dg"]
 resource_name = "Fade_in"
@@ -240,6 +228,7 @@ texture = ExtResource("1_hxuib")
 metadata/_edit_lock_ = true
 
 [node name="Credit Tittle" type="Label" parent="TextureRect"]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.43
@@ -260,7 +249,7 @@ layout_mode = 0
 offset_left = 15.0
 offset_top = 85.0
 offset_right = 415.0
-offset_bottom = 664.0
+offset_bottom = 645.0
 theme_override_constants/h_separation = 20
 theme_override_constants/v_separation = 25
 columns = 2
@@ -326,16 +315,11 @@ text = "- Freepic
 "
 metadata/_edit_group_ = true
 
-[node name="Music" type="Button" parent="TextureRect/GridContainer 1"]
+[node name="Music" type="Label" parent="TextureRect/GridContainer 1"]
 layout_mode = 2
 theme = ExtResource("5_2dkor")
-theme_override_colors/font_color = Color(1, 0.878431, 0.447059, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("3_be0qo")
 theme_override_font_sizes/font_size = 24
-theme_override_styles/normal = ExtResource("7_py01q")
-theme_override_styles/hover = ExtResource("8_52073")
 text = "Music "
 
 [node name="Music List" type="VBoxContainer" parent="TextureRect/GridContainer 1"]
@@ -362,14 +346,6 @@ theme_override_fonts/font = ExtResource("3_be0qo")
 theme_override_font_sizes/font_size = 24
 text = "- Emely"
 
-[node name="etc" type="Label" parent="TextureRect/GridContainer 1/Music List"]
-layout_mode = 2
-theme = ExtResource("5_2dkor")
-theme_override_fonts/font = ExtResource("3_be0qo")
-theme_override_font_sizes/font_size = 24
-text = "...."
-horizontal_alignment = 1
-
 [node name="VA" type="Label" parent="TextureRect/GridContainer 1"]
 layout_mode = 2
 theme = ExtResource("5_2dkor")
@@ -385,16 +361,11 @@ theme_override_font_sizes/font_size = 24
 text = "Veed.io
 "
 
-[node name="SFX" type="Button" parent="TextureRect/GridContainer 1"]
+[node name="SFX" type="Label" parent="TextureRect/GridContainer 1"]
 layout_mode = 2
 theme = ExtResource("5_2dkor")
-theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("3_be0qo")
 theme_override_font_sizes/font_size = 24
-theme_override_styles/normal = SubResource("StyleBoxEmpty_22h6o")
-theme_override_styles/hover = SubResource("StyleBoxFlat_nx4th")
 text = "SFX
 "
 
@@ -406,7 +377,7 @@ layout_mode = 2
 theme = ExtResource("5_2dkor")
 theme_override_fonts/font = ExtResource("3_be0qo")
 theme_override_font_sizes/font_size = 24
-text = "- Warning - Microsoft
+text = "Warning - Microsoft
 "
 
 [node name="Player" type="Label" parent="TextureRect/GridContainer 1/SFX_List"]
@@ -414,50 +385,8 @@ layout_mode = 2
 theme = ExtResource("5_2dkor")
 theme_override_fonts/font = ExtResource("3_be0qo")
 theme_override_font_sizes/font_size = 24
-text = "- Player - Soundboards
+text = "Player - Soundboards
 "
-
-[node name="Howl" type="Label" parent="TextureRect/GridContainer 1/SFX_List"]
-layout_mode = 2
-theme = ExtResource("5_2dkor")
-theme_override_fonts/font = ExtResource("3_be0qo")
-theme_override_font_sizes/font_size = 24
-text = "- Wolf Howl : 
-"
-
-[node name="Wolf_Howl_list" type="VBoxContainer" parent="TextureRect/GridContainer 1/SFX_List/Howl"]
-layout_mode = 2
-anchor_top = 1.138
-anchor_right = 1.0
-anchor_bottom = 4.414
-offset_top = -0.0019989
-offset_bottom = -0.0059967
-alignment = 1
-
-[node name="Youtube" type="Label" parent="TextureRect/GridContainer 1/SFX_List/Howl/Wolf_Howl_list"]
-layout_mode = 2
-theme = ExtResource("5_2dkor")
-theme_override_fonts/font = ExtResource("3_be0qo")
-theme_override_font_sizes/font_size = 24
-text = "    - Youtube
-"
-
-[node name="Soundbouard" type="Label" parent="TextureRect/GridContainer 1/SFX_List/Howl/Wolf_Howl_list"]
-layout_mode = 2
-theme = ExtResource("5_2dkor")
-theme_override_fonts/font = ExtResource("3_be0qo")
-theme_override_font_sizes/font_size = 24
-text = "    -  Soundboards
-"
-
-[node name="etc" type="Label" parent="TextureRect/GridContainer 1/SFX_List/Howl/Wolf_Howl_list"]
-layout_mode = 2
-theme = ExtResource("5_2dkor")
-theme_override_fonts/font = ExtResource("3_be0qo")
-theme_override_font_sizes/font_size = 24
-text = ".....
-"
-horizontal_alignment = 1
 
 [node name="GridContainer 2" type="GridContainer" parent="TextureRect"]
 clip_contents = true
@@ -466,29 +395,23 @@ offset_left = 430.0
 offset_top = 85.0
 offset_right = 830.0
 offset_bottom = 645.0
-theme_override_constants/h_separation = 15
-theme_override_constants/v_separation = 15
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 25
 columns = 2
 
-[node name="Image" type="Button" parent="TextureRect/GridContainer 2"]
+[node name="Image" type="Label" parent="TextureRect/GridContainer 2"]
 layout_mode = 2
 theme = ExtResource("5_2dkor")
-theme_override_colors/font_color = Color(1, 0.839216, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("3_be0qo")
 theme_override_font_sizes/font_size = 24
-theme_override_styles/normal = SubResource("StyleBoxEmpty_neucw")
-theme_override_styles/hover = SubResource("StyleBoxFlat_ahqgw")
 text = "Images
 "
+horizontal_alignment = 1
 metadata/_edit_group_ = true
 
 [node name="List" type="Label" parent="TextureRect/GridContainer 2"]
 layout_mode = 2
 theme = ExtResource("5_2dkor")
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_be0qo")
 theme_override_font_sizes/font_size = 24
 text = "List"
@@ -498,8 +421,6 @@ metadata/_edit_group_ = true
 [node name="WPA TEAM Logo" type="Label" parent="TextureRect/GridContainer 2"]
 layout_mode = 2
 theme = ExtResource("5_2dkor")
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_be0qo")
 theme_override_font_sizes/font_size = 24
 text = "WPA TEAM"
@@ -508,8 +429,6 @@ metadata/_edit_group_ = true
 [node name="Zavir" type="Label" parent="TextureRect/GridContainer 2"]
 layout_mode = 2
 theme = ExtResource("5_2dkor")
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_be0qo")
 theme_override_font_sizes/font_size = 24
 text = "Zavair"
@@ -517,8 +436,6 @@ text = "Zavair"
 [node name="Game_Logo" type="Label" parent="TextureRect/GridContainer 2"]
 layout_mode = 2
 theme = ExtResource("5_2dkor")
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_be0qo")
 theme_override_font_sizes/font_size = 24
 text = "Game Logo"
@@ -529,8 +446,6 @@ layout_mode = 2
 [node name="Sword & Sheild" type="Label" parent="TextureRect/GridContainer 2/Logo_List"]
 layout_mode = 2
 theme = ExtResource("5_2dkor")
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_be0qo")
 theme_override_font_sizes/font_size = 24
 text = "- Sword & Sheild : Rudall 3D"
@@ -538,8 +453,6 @@ text = "- Sword & Sheild : Rudall 3D"
 [node name="Wolf Howl" type="Label" parent="TextureRect/GridContainer 2/Logo_List"]
 layout_mode = 2
 theme = ExtResource("5_2dkor")
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_be0qo")
 theme_override_font_sizes/font_size = 24
 text = "- Wolf Howl : Maciej Koza"
@@ -547,8 +460,6 @@ text = "- Wolf Howl : Maciej Koza"
 [node name="UWF Logo" type="Label" parent="TextureRect/GridContainer 2"]
 layout_mode = 2
 theme = ExtResource("5_2dkor")
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_be0qo")
 theme_override_font_sizes/font_size = 24
 text = "UWF Logo"
@@ -556,8 +467,6 @@ text = "UWF Logo"
 [node name="Wahyu Krisna" type="Label" parent="TextureRect/GridContainer 2"]
 layout_mode = 2
 theme = ExtResource("5_2dkor")
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_be0qo")
 theme_override_font_sizes/font_size = 24
 text = "Wahyu Krisna
@@ -566,8 +475,6 @@ text = "Wahyu Krisna
 [node name="Player Character" type="Label" parent="TextureRect/GridContainer 2"]
 layout_mode = 2
 theme = ExtResource("5_2dkor")
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_be0qo")
 theme_override_font_sizes/font_size = 24
 text = "Player Character"
@@ -575,8 +482,6 @@ text = "Player Character"
 [node name="Link Player Character" type="Label" parent="TextureRect/GridContainer 2"]
 layout_mode = 2
 theme = ExtResource("5_2dkor")
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_be0qo")
 theme_override_font_sizes/font_size = 24
 text = "GameArt2D.com"
@@ -584,8 +489,6 @@ text = "GameArt2D.com"
 [node name="Flag Pole" type="Label" parent="TextureRect/GridContainer 2"]
 layout_mode = 2
 theme = ExtResource("5_2dkor")
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_be0qo")
 theme_override_font_sizes/font_size = 24
 text = "Flag Pole
@@ -594,8 +497,6 @@ text = "Flag Pole
 [node name="Link" type="Label" parent="TextureRect/GridContainer 2"]
 layout_mode = 2
 theme = ExtResource("5_2dkor")
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_be0qo")
 theme_override_font_sizes/font_size = 24
 text = "https://krikienoid.github.io/flagwaver/"
@@ -603,8 +504,6 @@ text = "https://krikienoid.github.io/flagwaver/"
 [node name="Bow" type="Label" parent="TextureRect/GridContainer 2"]
 layout_mode = 2
 theme = ExtResource("5_2dkor")
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_be0qo")
 theme_override_font_sizes/font_size = 24
 text = "Bow"
@@ -612,8 +511,6 @@ text = "Bow"
 [node name="Emly" type="Label" parent="TextureRect/GridContainer 2"]
 layout_mode = 2
 theme = ExtResource("5_2dkor")
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_be0qo")
 theme_override_font_sizes/font_size = 24
 text = "Emely"
@@ -621,8 +518,6 @@ text = "Emely"
 [node name="Wolf Paw" type="Label" parent="TextureRect/GridContainer 2"]
 layout_mode = 2
 theme = ExtResource("5_2dkor")
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_be0qo")
 theme_override_font_sizes/font_size = 24
 text = "Wolf Paw Cursor"
@@ -630,8 +525,6 @@ text = "Wolf Paw Cursor"
 [node name="Vadymstock" type="Label" parent="TextureRect/GridContainer 2"]
 layout_mode = 2
 theme = ExtResource("5_2dkor")
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_be0qo")
 theme_override_font_sizes/font_size = 24
 text = "Vadymstock"
@@ -639,8 +532,6 @@ text = "Vadymstock"
 [node name="Wolf Charsheet" type="Label" parent="TextureRect/GridContainer 2"]
 layout_mode = 2
 theme = ExtResource("5_2dkor")
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_be0qo")
 theme_override_font_sizes/font_size = 24
 text = "Wolves Character
@@ -649,8 +540,6 @@ text = "Wolves Character
 [node name="hiddenone\'s Resource Warehouse" type="Label" parent="TextureRect/GridContainer 2"]
 layout_mode = 2
 theme = ExtResource("5_2dkor")
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_be0qo")
 theme_override_font_sizes/font_size = 24
 text = "hiddenone's Resource Warehouse "
@@ -658,8 +547,6 @@ text = "hiddenone's Resource Warehouse "
 [node name="Hill Background" type="Label" parent="TextureRect/GridContainer 2"]
 layout_mode = 2
 theme = ExtResource("5_2dkor")
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_be0qo")
 theme_override_font_sizes/font_size = 24
 text = "Hill Background"
@@ -667,31 +554,9 @@ text = "Hill Background"
 [node name="Sheng L" type="Label" parent="TextureRect/GridContainer 2"]
 layout_mode = 2
 theme = ExtResource("5_2dkor")
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_be0qo")
 theme_override_font_sizes/font_size = 24
 text = "Sheng L"
-
-[node name="etc" type="Label" parent="TextureRect/GridContainer 2"]
-layout_mode = 2
-theme = ExtResource("5_2dkor")
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_be0qo")
-theme_override_font_sizes/font_size = 24
-text = "....."
-horizontal_alignment = 1
-
-[node name="etc2" type="Label" parent="TextureRect/GridContainer 2"]
-layout_mode = 2
-theme = ExtResource("5_2dkor")
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_be0qo")
-theme_override_font_sizes/font_size = 24
-text = "....."
-horizontal_alignment = 1
 
 [node name="Fade_Effect" type="ColorRect" parent="."]
 visible = false
@@ -701,7 +566,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(1, 1, 1, 0)
+color = Color(0, 0, 0, 1)
 
 [node name="Animate1" type="AnimationPlayer" parent="."]
 libraries = {
@@ -725,6 +590,7 @@ grow_vertical = 0
 theme_override_constants/separation = 1022
 
 [node name="Back_Main_Menu_Button" type="Button" parent="Butons"]
+modulate = Color(1, 1, 1, 0)
 clip_contents = true
 custom_minimum_size = Vector2(128, 64)
 layout_mode = 2
@@ -746,13 +612,5 @@ text = "Next
 "
 flat = true
 
-[connection signal="mouse_entered" from="TextureRect/GridContainer 1/Music" to="." method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="TextureRect/GridContainer 1/Music" to="." method="_on_mouse_exited"]
-[connection signal="mouse_entered" from="TextureRect/GridContainer 1/SFX" to="." method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="TextureRect/GridContainer 1/SFX" to="." method="_on_mouse_exited"]
-[connection signal="pressed" from="TextureRect/GridContainer 1/SFX" to="." method="_on_sfx_pressed"]
-[connection signal="mouse_entered" from="TextureRect/GridContainer 2/Image" to="." method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="TextureRect/GridContainer 2/Image" to="." method="_on_mouse_exited"]
-[connection signal="pressed" from="TextureRect/GridContainer 2/Image" to="." method="_on_image_pressed"]
 [connection signal="pressed" from="Butons/Back_Main_Menu_Button" to="." method="_on_back_main_menu_button_pressed"]
 [connection signal="pressed" from="Butons/Next_Page_2_Button" to="." method="_on_next_page_2_button_pressed"]

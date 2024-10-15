@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dt0kea3oyoml7"
+path="res://.godot/imported/Intro-7(Player- 3) full_radio.wav-078986d9f55624545d8e8fbc0ad02917.sample"
+
+[deps]
+
+source_file="res://Assets/Music/Dialogue/Intro/Intro-7(Player- 3) full_radio.wav"
+dest_files=["res://.godot/imported/Intro-7(Player- 3) full_radio.wav-078986d9f55624545d8e8fbc0ad02917.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

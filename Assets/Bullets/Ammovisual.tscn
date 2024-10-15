@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://da434t1a1vtbs"]
+
+[ext_resource type="Texture2D" uid="uid://bybgnwx2wfh8q" path="res://Assets/Image/Bullets/All_Fire_Bullet_Pixel_16x16_04.png" id="1_r3qxd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gy3xy"]
+atlas = ExtResource("1_r3qxd")
+region = Rect2(256, 176, 16, 16)
+margin = Rect2(0, 0, 16, 16)
+
+[node name="Ammovisual" type="TextureRect"]
+offset_right = 32.0
+offset_bottom = 32.0
+texture = SubResource("AtlasTexture_gy3xy")
+expand_mode = 1

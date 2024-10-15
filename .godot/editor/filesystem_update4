@@ -1,20 +1,27 @@
-res://Assets/Scences/UI/Wolf_Almanac/Book/Alexander Archipelago Wolf/alexander_archipelago_wolf_almanac.tscn
-res://Assets/Theme/Credit/Buttons.tres
-res://Assets/Tileset/Taiga_Stage.tres
-res://Assets/Script/Class/Wolf/Wolves_Save/Wolves.json
-res://Assets/Scences/UI/Wolf_Almanac/Book/Alaska Tundra Wolf/alaskan_tundra_wolf_almanac.tscn
-res://Assets/Scences/UI/Credits/credit_3.tscn
-res://Assets/Scences/UI/Options/Options_Menu.tscn
+res://Assets/Dialogue/TimeLines/Intro_Player.dtl
 res://Assets/Scences/UI/Splash/Splash_Screen_Played.tscn
-res://Assets/Scences/Location/Bridge_Stone_Forest/Bridge_Stone_Forest.tscn
-res://Assets/Scences/Stages/Taiga/level_1-1.tscn
+res://Assets/Dialogue/Theme/Speaker_Mode.tres
+res://Assets/Dialogue/Theme/Pixelize_Visual_Novel.tres
+res://Assets/Dialogue/Theme/Pixelize_speaker.tres
+res://Assets/Script/Controller/Weapons/brust_garou_riffle_player.gd
+res://Assets/Bullets/Animation_Player_Bullets.tres
+res://Assets/Scences/Player/Animation/Player_animations.tres
+res://Assets/Scences/Player/Weapons/Playersword_animations.tres
+res://Assets/Tileset/Taiga_Stage.tres
+res://Assets/Scences/Player/Weapons/brust_garou_riffle_player.tscn
+res://Assets/Bullets/bullets_player.tscn
+res://test.tscn
+res://Assets/Scences/UI/Player_Name.tscn
+res://Assets/Scences/Player/Player.tscn
+res://Assets/Scences/Level/main_menu_level.tscn
+res://Assets/Scences/Level/level_1.tscn
+res://Assets/Scences/Player/Weapons/Machete.tscn
+res://Assets/Scences/UI/Wolf_Almanac/Index/wolf_almanac_idex_page_5.tscn
+res://Assets/Scences/UI/Wolf_Almanac/Index/wolf_almanac_idex_page_4.tscn
+res://Assets/Scences/UI/Wolf_Almanac/Index/wolf_almanac_idex_page_3.tscn
+res://Assets/Scences/UI/Wolf_Almanac/Index/wolf_almanac_idex_page_2.tscn
+res://Assets/Scences/UI/Wolf_Almanac/Index/Wolf_Almanac_Idex_Page 1.tscn
+res://Assets/Scences/UI/Wolf_Almanac/Index/Page 1/Wolf_Almanac_Index_Page_1.tscn
 res://Assets/Scences/UI/Wolf_Almanac/Main_Menu/alamanac_main_menu.tscn
-res://Assets/Scences/Biome/Biome_Exit/biome_exit.tscn
-res://Assets/Scences/Location/How_to_Play/How_To_Play.tscn
-res://Assets/Scences/UI/Credits/credit_2.tscn
-res://Assets/Scences/UI/Credits/credit_4.tscn
-res://Assets/Scences/UI/Credits/credit_1.tscn
-res://Assets/Script/Controller/UI/Credits/credit_page 3.gd
-res://Assets/Scences/UI/Credits/credit_5.tscn
-res://Assets/Script/Controller/UI/Credits/credit_page1.gd
-res://Assets/Script/Controller/UI/Credits/credit_page 2.gd
+res://Assets/Dialogue/Character/Sergant Lupine.dch
+res://Assets/Dialogue/Character/Player.dch

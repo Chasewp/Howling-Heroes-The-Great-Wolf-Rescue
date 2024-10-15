@@ -1,7 +1,11 @@
-[gd_scene load_steps=84 format=3 uid="uid://w8tfinbfyqkd"]
+[gd_scene load_steps=85 format=3 uid="uid://w8tfinbfyqkd"]
 
 [ext_resource type="Script" path="res://Assets/Script/Class/Hero/Hero.gd" id="1_3n0i7"]
+[ext_resource type="PackedScene" uid="uid://cs1y72y70b50n" path="res://Assets/Scences/Dust/jump_dust.tscn" id="2_b24lx"]
+[ext_resource type="PackedScene" uid="uid://c8it7bbd20xdf" path="res://Assets/Scences/Player/Weapons/brust_garou_riffle_player.tscn" id="2_nrsk8"]
+[ext_resource type="AnimationLibrary" uid="uid://bkgq1ncn5vt2d" path="res://Assets/Scences/Player/Animation/Player_animations.tres" id="4_mutx1"]
 [ext_resource type="Texture2D" uid="uid://b86ww0ps3b8q8" path="res://Assets/Image/Character/Player/templerun/Jump/Jump__009.png" id="4_uyrth"]
+[ext_resource type="AnimationLibrary" uid="uid://33b7x1utp1ah" path="res://Assets/Scences/Player/Weapons/Playersword_animations.tres" id="5_dhdlh"]
 [ext_resource type="Script" path="res://Assets/Script/Class/Character/Player/coordinate.gd" id="39_3g6ho"]
 [ext_resource type="FontFile" uid="uid://bc3fo6p06lixr" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="39_bu8e3"]
 [ext_resource type="PackedScene" uid="uid://cuh433hdbnick" path="res://Assets/Scences/Player/Weapons/Machete.tscn" id="55_qrsxm"]
@@ -340,33 +344,45 @@ process_mode = 3
 collision_layer = 65535
 collision_mask = 263
 script = ExtResource("1_3n0i7")
-_is_attacking = true
+_jump_dust = ExtResource("2_b24lx")
 _has_machete = true
 
+[node name="Brust Garou-Riffle-Player" parent="." instance=ExtResource("2_nrsk8")]
 
 [node name="Weapon" type="Node2D" parent="."]
 visible = false
 position = Vector2(1, 2)
 
 [node name="Machete" parent="Weapon" instance=ExtResource("55_qrsxm")]
-visible = false
 position = Vector2(48, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("4_uyrth")
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": ExtResource("5_dhdlh"),
+"Player_animations": ExtResource("4_mutx1")
+}
 
+[node name="AnimationTree" type="AnimationTree" parent="AnimationPlayer"]
+root_node = NodePath("../..")
+libraries = {
+"": ExtResource("5_dhdlh"),
+"Player_animations": ExtResource("4_mutx1")
 }
 tree_root = SubResource("AnimationNodeStateMachine_spo17")
 advance_expression_base_node = NodePath("../..")
 anim_player = NodePath("..")
 
 [node name="foot" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(3, 51)
 shape = SubResource("RectangleShape2D_u3xmu")
 
 [node name="HurtBox" type="Area2D" parent="."]
+visible = false
 
 [node name="Invicible" type="Timer" parent="HurtBox"]
 
@@ -375,6 +391,7 @@ shape = SubResource("CapsuleShape2D_n8uk2")
 debug_color = Color(0.741176, 0.282353, 0.921569, 0.419608)
 
 [node name="HitBox" type="Area2D" parent="."]
+visible = false
 position = Vector2(-1, 0)
 
 [node name="InputBuffer" type="Timer" parent="HitBox"]
@@ -387,6 +404,7 @@ shape = SubResource("RectangleShape2D_6vr3q")
 debug_color = Color(1, 0, 0, 0.682353)
 
 [node name="Text" type="Control" parent="."]
+visible = false
 custom_minimum_size = Vector2(350, 0)
 layout_mode = 3
 anchors_preset = 0

@@ -1,0 +1,759 @@
+[gd_scene load_steps=20 format=3 uid="uid://bbyynyiqulvmb"]
+
+[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Credits/credit_page1.gd" id="1_pbdmp"]
+[ext_resource type="Texture2D" uid="uid://cebf1s7akyswg" path="res://Assets/Image/Credits/pixel_art_A_breathtaking_lands.jpeg" id="2_ptdg5"]
+[ext_resource type="Theme" uid="uid://c5tjnvediwfog" path="res://Assets/Theme/Credit/Tittles.tres" id="3_mrkmu"]
+[ext_resource type="FontFile" uid="uid://c7kxtmv713e3k" path="res://Assets/Fonts/Wolf Moon.ttf" id="4_kc1ch"]
+[ext_resource type="Theme" uid="uid://dc1ctcksywkhs" path="res://Assets/Theme/Credit/Label Details.tres" id="5_y6uyw"]
+[ext_resource type="FontFile" uid="uid://cdart6hw4f08i" path="res://Assets/Fonts/Roboto/Roboto-BoldItalic.ttf" id="6_e7u8k"]
+[ext_resource type="StyleBox" uid="uid://q84pe8ssnf0x" path="res://Assets/Theme/Credit/button_credit_normal.tres" id="7_lsdx5"]
+[ext_resource type="StyleBox" uid="uid://cl55c2vherxft" path="res://Assets/Theme/Credit/button_credit_hover.tres" id="8_0xfe5"]
+[ext_resource type="AudioStream" uid="uid://fj045rk2p8oe" path="res://Assets/Music/Un Sorteted/All Button/Quit_Button.mp3" id="9_i2yaf"]
+[ext_resource type="Theme" uid="uid://4pmckqqvpja8" path="res://Assets/Theme/Credit/Buttons.tres" id="10_yxcwm"]
+[ext_resource type="FontFile" uid="uid://bc3fo6p06lixr" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="11_r5lqc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_22h6o"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nx4th"]
+bg_color = Color(0.356863, 0.356863, 0.356863, 0.866667)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_neucw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ahqgw"]
+bg_color = Color(0.356863, 0.356863, 0.356863, 0.866667)
+
+[sub_resource type="Animation" id="Animation_dh4dg"]
+resource_name = "Fade_in"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fade_Effect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect/Credit Tittle:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.6, 0.9),
+"transitions": PackedFloat32Array(2, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextureRect/GridContainer 1:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.9, 1.3),
+"transitions": PackedFloat32Array(1.51572, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("TextureRect/GridContainer 2:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1.1, 1.7),
+"transitions": PackedFloat32Array(1, 2.07053),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Butons/Back_Main_Menu_Button:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(1.5, 1.8),
+"transitions": PackedFloat32Array(3.24901, 4.14106),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Butons/Next_Page_2_Button:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(1.6, 1.9),
+"transitions": PackedFloat32Array(5.27803, 6.9644),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_lbs3k"]
+resource_name = "Fade_out"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fade_Effect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect/Credit Tittle:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.6, 0.9),
+"transitions": PackedFloat32Array(2, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextureRect/GridContainer 1:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.9, 1.3),
+"transitions": PackedFloat32Array(1.51572, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("TextureRect/GridContainer 2:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1.1, 1.7),
+"transitions": PackedFloat32Array(1, 2.07053),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Butons/Back_Main_Menu_Button:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(1.5, 1.8),
+"transitions": PackedFloat32Array(3.24901, 4.14106),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Butons/Next_Page_2_Button:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(1.6, 1.9),
+"transitions": PackedFloat32Array(5.27803, 6.9644),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_07web"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect/GridContainer 1:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect/GridContainer 2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Butons/Next_Page_2_Button:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7dd0w"]
+_data = {
+"Fade_in": SubResource("Animation_dh4dg"),
+"Fade_out": SubResource("Animation_lbs3k"),
+"RESET": SubResource("Animation_07web")
+}
+
+[node name="Credit-1" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pbdmp")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ptdg5")
+metadata/_edit_lock_ = true
+
+[node name="Credit Tittle" type="Label" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.43
+anchor_right = 0.589
+anchor_bottom = 0.092
+offset_left = -0.400024
+offset_top = 2.0
+offset_right = 0.0799561
+offset_bottom = -0.240005
+theme = ExtResource("3_mrkmu")
+theme_override_fonts/font = ExtResource("4_kc1ch")
+theme_override_font_sizes/font_size = 32
+text = "CREDITS"
+
+[node name="GridContainer 1" type="GridContainer" parent="TextureRect"]
+clip_contents = true
+layout_mode = 0
+offset_left = 15.0
+offset_top = 85.0
+offset_right = 415.0
+offset_bottom = 705.0
+theme_override_constants/h_separation = 15
+theme_override_constants/v_separation = 15
+columns = 2
+
+[node name="Developer" type="Label" parent="TextureRect/GridContainer 1"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "Developer
+"
+metadata/_edit_group_ = true
+
+[node name="WPA Team" type="Label" parent="TextureRect/GridContainer 1"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "WPA TEAM"
+metadata/_edit_group_ = true
+
+[node name="Pixel art" type="Label" parent="TextureRect/GridContainer 1"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "Pixel Art "
+metadata/_edit_group_ = true
+
+[node name="Pixel Art List" type="VBoxContainer" parent="TextureRect/GridContainer 1"]
+layout_mode = 2
+
+[node name="Adobee Firefly" type="Label" parent="TextureRect/GridContainer 1/Pixel Art List"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "- Adobe Firefly"
+metadata/_edit_group_ = true
+
+[node name="Bing" type="Label" parent="TextureRect/GridContainer 1/Pixel Art List"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "- Bing Image Creator"
+metadata/_edit_group_ = true
+
+[node name="Pretty AI" type="Label" parent="TextureRect/GridContainer 1/Pixel Art List"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "- Pretty AI"
+metadata/_edit_group_ = true
+
+[node name="Freepic" type="Label" parent="TextureRect/GridContainer 1/Pixel Art List"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "- Freepic
+"
+metadata/_edit_group_ = true
+
+[node name="Music" type="Button" parent="TextureRect/GridContainer 1"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_colors/font_color = Color(1, 0.878431, 0.447059, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = ExtResource("7_lsdx5")
+theme_override_styles/hover = ExtResource("8_0xfe5")
+text = "Music "
+
+[node name="Music List" type="VBoxContainer" parent="TextureRect/GridContainer 1"]
+layout_mode = 2
+
+[node name="Aiva" type="Label" parent="TextureRect/GridContainer 1/Music List"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "- Aiva"
+
+[node name="Youtube" type="Label" parent="TextureRect/GridContainer 1/Music List"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "- Youtube"
+
+[node name="Emely" type="Label" parent="TextureRect/GridContainer 1/Music List"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "- Emely"
+
+[node name="etc" type="Label" parent="TextureRect/GridContainer 1/Music List"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "...."
+horizontal_alignment = 1
+
+[node name="VA" type="Label" parent="TextureRect/GridContainer 1"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "Voice Actor"
+
+[node name="Veed" type="Label" parent="TextureRect/GridContainer 1"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "Veed.io
+"
+
+[node name="SFX" type="Button" parent="TextureRect/GridContainer 1"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxEmpty_22h6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nx4th")
+text = "SFX
+"
+
+[node name="SFX_List" type="VBoxContainer" parent="TextureRect/GridContainer 1"]
+layout_mode = 2
+
+[node name="Warning" type="Label" parent="TextureRect/GridContainer 1/SFX_List"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "- Warning - Microsoft
+"
+
+[node name="Player" type="Label" parent="TextureRect/GridContainer 1/SFX_List"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "- Player - Soundboards
+"
+
+[node name="Howl" type="Label" parent="TextureRect/GridContainer 1/SFX_List"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "- Wolf Howl : 
+"
+
+[node name="Wolf_Howl_list" type="VBoxContainer" parent="TextureRect/GridContainer 1/SFX_List/Howl"]
+layout_mode = 2
+anchor_top = 1.138
+anchor_right = 1.0
+anchor_bottom = 4.414
+offset_top = -0.0019989
+offset_bottom = -0.0059967
+alignment = 1
+
+[node name="Youtube" type="Label" parent="TextureRect/GridContainer 1/SFX_List/Howl/Wolf_Howl_list"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "    - Youtube
+"
+
+[node name="Soundbouard" type="Label" parent="TextureRect/GridContainer 1/SFX_List/Howl/Wolf_Howl_list"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "    -  Soundboards
+"
+
+[node name="etc" type="Label" parent="TextureRect/GridContainer 1/SFX_List/Howl/Wolf_Howl_list"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = ".....
+"
+horizontal_alignment = 1
+
+[node name="GridContainer 2" type="GridContainer" parent="TextureRect"]
+clip_contents = true
+layout_mode = 0
+offset_left = 430.0
+offset_top = 85.0
+offset_right = 830.0
+offset_bottom = 645.0
+theme_override_constants/h_separation = 15
+theme_override_constants/v_separation = 15
+columns = 2
+
+[node name="Image" type="Button" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_colors/font_color = Color(1, 0.839216, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxEmpty_neucw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ahqgw")
+text = "Images
+"
+metadata/_edit_group_ = true
+
+[node name="List" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "List"
+horizontal_alignment = 1
+metadata/_edit_group_ = true
+
+[node name="WPA TEAM Logo" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "WPA TEAM"
+metadata/_edit_group_ = true
+
+[node name="Zavir" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "Zavair"
+
+[node name="Game_Logo" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "Game Logo"
+
+[node name="Logo_List" type="VBoxContainer" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+
+[node name="Sword & Sheild" type="Label" parent="TextureRect/GridContainer 2/Logo_List"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "- Sword & Sheild : Rudall 3D"
+
+[node name="Wolf Howl" type="Label" parent="TextureRect/GridContainer 2/Logo_List"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "- Wolf Howl : Maciej Koza"
+
+[node name="UWF Logo" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "UWF Logo"
+
+[node name="Wahyu Krisna" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "Wahyu Krisna
+"
+
+[node name="Player Character" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "Player Character"
+
+[node name="Link Player Character" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "GameArt2D.com"
+
+[node name="Flag Pole" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "Flag Pole
+"
+
+[node name="Link" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "https://krikienoid.github.io/flagwaver/"
+
+[node name="Bow" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "Bow"
+
+[node name="Emly" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "Emely"
+
+[node name="Wolf Paw" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "Wolf Paw Cursor"
+
+[node name="Vadymstock" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "Vadymstock"
+
+[node name="Wolf Charsheet" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "Wolves Character
+ Sheet"
+
+[node name="hiddenone\'s Resource Warehouse" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "hiddenone"
+
+[node name="Hill Background" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "Hill Background"
+
+[node name="Sheng L" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "Sheng L"
+
+[node name="etc" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "....."
+horizontal_alignment = 1
+
+[node name="etc2" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("5_y6uyw")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_e7u8k")
+theme_override_font_sizes/font_size = 24
+text = "....."
+horizontal_alignment = 1
+
+[node name="Fade_Effect" type="ColorRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0)
+
+[node name="Animate1" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_7dd0w")
+}
+
+[node name="Button_Click" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_i2yaf")
+bus = &"Sound Effects"
+
+[node name="Butons" type="HBoxContainer" parent="."]
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.906
+anchor_right = 1.002
+anchor_bottom = 1.0
+offset_top = -0.320007
+offset_right = 0.439941
+offset_bottom = -4.0
+grow_vertical = 0
+theme_override_constants/separation = 1022
+
+[node name="Back_Main_Menu_Button" type="Button" parent="Butons"]
+clip_contents = true
+custom_minimum_size = Vector2(128, 64)
+layout_mode = 2
+theme = ExtResource("10_yxcwm")
+theme_override_font_sizes/font_size = 24
+text = "Back"
+flat = true
+
+[node name="Next_Page_2_Button" type="Button" parent="Butons"]
+custom_minimum_size = Vector2(128, 64)
+layout_mode = 2
+theme = ExtResource("10_yxcwm")
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("11_r5lqc")
+theme_override_font_sizes/font_size = 24
+text = "Next
+"
+flat = true
+
+[connection signal="mouse_entered" from="TextureRect/GridContainer 1/Music" to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="TextureRect/GridContainer 1/Music" to="." method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="TextureRect/GridContainer 1/SFX" to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="TextureRect/GridContainer 1/SFX" to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="TextureRect/GridContainer 1/SFX" to="." method="_on_sfx_pressed"]
+[connection signal="mouse_entered" from="TextureRect/GridContainer 2/Image" to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="TextureRect/GridContainer 2/Image" to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="TextureRect/GridContainer 2/Image" to="." method="_on_image_pressed"]
+[connection signal="pressed" from="Butons/Back_Main_Menu_Button" to="." method="_on_back_main_menu_button_pressed"]
+[connection signal="pressed" from="Butons/Next_Page_2_Button" to="." method="_on_next_page_2_button_pressed"]

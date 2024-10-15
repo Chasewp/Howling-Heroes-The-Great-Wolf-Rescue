@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://di1n7q1yinifa"]
+[gd_scene load_steps=7 format=3 uid="uid://bo8ky70qah4nu"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Wolf Alamanac/Index/Wolf_Almanac_Idex.gd" id="1_72wef"]
 [ext_resource type="Texture2D" uid="uid://nv44ojjrc5vg" path="res://Assets/Image/images/Background/Wolf Almanac Index/Wood Texture.png" id="1_jarw5"]

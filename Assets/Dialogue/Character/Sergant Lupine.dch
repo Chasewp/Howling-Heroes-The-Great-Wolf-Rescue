@@ -1,0 +1,29 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "",
+"color": Color(0, 1, 0.0392157, 1),
+"custom_info": {
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "Pixelize_Visual_Novel"
+},
+"default_portrait": "Normal",
+"description": "",
+"display_name": "Sergant Lupine",
+"mirror": false,
+"nicknames": [""],
+"offset": Vector2(0, 0),
+"portraits": {
+"Normal": {
+"export_overrides": {
+"image": "\"res://Assets/Image/Character/Sergeant Lupine/pixel art character, profession as forest guard and wolf biologist in semi-military uniform, wolf anthromorphic, detailed.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.85,
+"scene": ""
+}
+},
+"scale": 1.0
+}

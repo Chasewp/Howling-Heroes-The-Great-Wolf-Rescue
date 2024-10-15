@@ -1,0 +1,438 @@
+[gd_scene load_steps=15 format=3 uid="uid://bvh6ow5o6m517"]
+
+[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Credits/credit_page 2.gd" id="1_vxyj8"]
+[ext_resource type="Texture2D" uid="uid://cfppwerhbg42l" path="res://Assets/Image/Credits/pixel_art_A_breathtaking_view_ (2).jpeg" id="2_0uvcw"]
+[ext_resource type="FontFile" uid="uid://c7kxtmv713e3k" path="res://Assets/Fonts/Wolf Moon.ttf" id="3_4lloh"]
+[ext_resource type="Theme" uid="uid://dc1ctcksywkhs" path="res://Assets/Theme/Credit/Label Details.tres" id="3_i5i6g"]
+[ext_resource type="Theme" uid="uid://c5tjnvediwfog" path="res://Assets/Theme/Credit/Tittles.tres" id="3_iuhup"]
+[ext_resource type="FontFile" uid="uid://cdart6hw4f08i" path="res://Assets/Fonts/Roboto/Roboto-BoldItalic.ttf" id="4_vfcm5"]
+[ext_resource type="Theme" uid="uid://4pmckqqvpja8" path="res://Assets/Theme/Credit/Buttons.tres" id="7_x7vas"]
+[ext_resource type="AudioStream" uid="uid://fj045rk2p8oe" path="res://Assets/Music/Un Sorteted/All Button/Quit_Button.mp3" id="8_lm81o"]
+[ext_resource type="StyleBox" uid="uid://q84pe8ssnf0x" path="res://Assets/Theme/Credit/button_credit_normal.tres" id="9_a2lf8"]
+
+[sub_resource type="Animation" id="Animation_dh4dg"]
+resource_name = "Fade_in"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fade_Effect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect/Credit Tittle:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.6, 0.9),
+"transitions": PackedFloat32Array(2, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextureRect/GridContainer 2:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1.1, 1.7),
+"transitions": PackedFloat32Array(1, 2.07053),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Butons/Back_Page_1:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1.5, 1.9),
+"transitions": PackedFloat32Array(3.605, 4.92458),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_v5gbi"]
+resource_name = "Fade_out"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fade_Effect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect/Credit Tittle:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.6, 0.9),
+"transitions": PackedFloat32Array(2, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextureRect/GridContainer 2:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1.1, 1.7),
+"transitions": PackedFloat32Array(1, 2.07053),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Butons/Back_Page_1:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1.5, 1.9),
+"transitions": PackedFloat32Array(3.605, 4.92458),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_tmklp"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Butons/Back_Page_1:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7dd0w"]
+_data = {
+"Fade_in": SubResource("Animation_dh4dg"),
+"Fade_out": SubResource("Animation_v5gbi"),
+"RESET": SubResource("Animation_tmklp")
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ahgg"]
+bg_color = Color(0.356863, 0.356863, 0.356863, 0.866667)
+
+[node name="Credit-2" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vxyj8")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_0uvcw")
+metadata/_edit_lock_ = true
+
+[node name="Credit Tittle" type="Label" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.43
+anchor_right = 0.589
+anchor_bottom = 0.092
+offset_left = -0.400024
+offset_top = 2.0
+offset_right = 0.0799561
+offset_bottom = -0.240005
+theme = ExtResource("3_iuhup")
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 2
+theme_override_constants/shadow_outline_size = 4
+theme_override_fonts/font = ExtResource("3_4lloh")
+theme_override_font_sizes/font_size = 32
+text = "CREDITS"
+
+[node name="GridContainer 2" type="GridContainer" parent="TextureRect"]
+clip_contents = true
+layout_mode = 0
+offset_left = 25.0
+offset_top = 75.0
+offset_right = 1225.0
+offset_bottom = 635.0
+theme = ExtResource("3_i5i6g")
+theme_override_constants/h_separation = 15
+theme_override_constants/v_separation = 5
+columns = 2
+
+[node name="Font" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "Font
+"
+horizontal_alignment = 1
+metadata/_edit_group_ = true
+
+[node name="List" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "List"
+horizontal_alignment = 1
+metadata/_edit_group_ = true
+
+[node name="Bloodthirsty" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "Bloodthirsty"
+metadata/_edit_group_ = true
+
+[node name="tatowoo" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "tattowoo (https://www.dafont.com/bloodthirsty.font)"
+
+[node name="DEADLY CLAWS" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "DEADLY CLAWS "
+
+[node name="CconceptLab" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "CconcepltLab(https://www.dafont.com/deadly-claws.font)"
+
+[node name="DisposableDroid font family" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "DisposableDroid 
+font family 
+"
+
+[node name="Blambot Comic Font" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "Blambot Comic Font (https://www.1001fonts.com/
+disposabledroid-bb-font.html)"
+
+[node name="Kenney Pixel" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "Kenney Pixel "
+
+[node name="Kenny" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "Kenney (https://www.kenney.nl/assets/kenney-fonts)"
+
+[node name="Running Wolf" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "Running Wolf "
+
+[node name="Senekaligrafika" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "Senekaligrafika (https://www.1001fonts.com/
+running-wolf-font.html)"
+
+[node name="Unispace bd" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "Unispace bd"
+
+[node name="Typodemic Font" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "Typodemic Font (https://www.dafont.com/unispace.font)"
+
+[node name="Wolf Moon" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "Wolf Moon"
+
+[node name="Sinister Fonts" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "Sinister Fonts (https://www.dafont.com/wolf-moon.font)"
+
+[node name="WolfpackHalloweed-EaGOl" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "WolfpackHalloweed-EaGOl"
+
+[node name="Fery Fauzy - Afterthem_Studio" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "Fery Fauzy - Afterthem_Studio (https://www.fontspace.com/wolfpack-
+halloweed-font-f49659)"
+
+[node name="Wwwolfspirit-xR0m" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "wwwolfspirit-xR0m"
+
+[node name="WindWalker64" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "WindWalker64 (https://www.fontspace.com/wwwolfspirit-font-f3406)"
+
+[node name="Roboto Family Font" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "Roboto Font Family"
+
+[node name="Christian Robertson" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "Christian Robertson (https://fonts.google.com/specimen/Roboto)"
+
+[node name="Caveat Brush" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "Caveat Brush"
+
+[node name="Impallari Type" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "Impallari Type (https://fonts.google.com/specimen/Caveat+Brush)"
+
+[node name="Comic_Neue font family" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "Comic_Neue font family"
+
+[node name="Craig Rozynski, Hrant Papazian" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "Craig Rozynski, Hrant Papazian ( https://fonts.google.com/specimen/Comic+Neue)"
+
+[node name="STENCIL" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "STENCIL"
+
+[node name="Gerry Powell (https___fonts_adobe_com_fonts_stencil)" type="Label" parent="TextureRect/GridContainer 2"]
+layout_mode = 2
+theme = ExtResource("3_i5i6g")
+theme_override_fonts/font = ExtResource("4_vfcm5")
+theme_override_font_sizes/font_size = 24
+text = "Gerry Powell (https://fonts.adobe.com/fonts/stencil)"
+
+[node name="Fade_Effect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0)
+
+[node name="Animate2" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_7dd0w")
+}
+
+[node name="Button_Click" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_lm81o")
+
+[node name="Butons" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -68.0
+offset_right = 1278.0
+offset_bottom = -4.0
+grow_vertical = 0
+theme_override_constants/separation = 1022
+
+[node name="Back_Page_1" type="Button" parent="Butons"]
+custom_minimum_size = Vector2(128, 64)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("7_x7vas")
+theme_override_styles/normal = ExtResource("9_a2lf8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8ahgg")
+text = "Back"
+
+[connection signal="mouse_entered" from="Butons/Back_Page_1" to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Butons/Back_Page_1" to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="Butons/Back_Page_1" to="." method="_on_back_page_1_pressed"]

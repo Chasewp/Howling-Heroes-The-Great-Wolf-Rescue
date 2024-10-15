@@ -1,11 +1,11 @@
 [gd_scene load_steps=7 format=3 uid="uid://c3hr4c2nmppdk"]
 
 [ext_resource type="Script" path="res://Assets/Script/Class/Wolf/Wolf Alamanac/Book/Wolf_Alamanac_Book.gd" id="1_yn7mp"]
-[ext_resource type="FontFile" uid="uid://byrrpk8yu3w10" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="3_gxvn8"]
-[ext_resource type="FontFile" uid="uid://chsguujhey1bs" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="4_5g0tk"]
-[ext_resource type="FontFile" uid="uid://bc3fo6p06lixr" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="5_oynsq"]
-[ext_resource type="FontFile" uid="uid://dknuby8pwv0rl" path="res://Assets/Fonts/DisposableDroidBB_ital.ttf" id="6_v0ux1"]
-[ext_resource type="Texture2D" uid="uid://dy5u82g7k5sjy" path="res://Assets/Image/Buttons/right-arrow.png" id="7_uprof"]
+[ext_resource type="FontFile" uid="uid://djx6ba5h1a3qs" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="3_gxvn8"]
+[ext_resource type="FontFile" uid="uid://cnhshuaxal67w" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="4_5g0tk"]
+[ext_resource type="FontFile" uid="uid://fpssaux4ispl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="5_oynsq"]
+[ext_resource type="FontFile" uid="uid://btxatlr1vkceb" path="res://Assets/Fonts/DisposableDroidBB_ital.ttf" id="6_v0ux1"]
+[ext_resource type="Texture2D" uid="uid://c428p7jyibbvi" path="res://Assets/Image/Buttons/right-arrow.png" id="7_uprof"]
 
 [node name="Baffin_Island_Wolf_Almanac" type="Control"]
 layout_mode = 3
@@ -23,6 +23,7 @@ custom_minimum_size = Vector2(1280, 0)
 layout_mode = 0
 offset_right = 1280.0
 offset_bottom = 903.0
+texture = null
 expand_mode = 1
 metadata/_edit_lock_ = true
 

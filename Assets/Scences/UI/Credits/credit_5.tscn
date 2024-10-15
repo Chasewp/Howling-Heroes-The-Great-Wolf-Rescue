@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://cqfsku8lj0hd"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Credits/credit_page 3.gd" id="1_k6s3j"]
-[ext_resource type="Texture2D" uid="uid://dilmdj6cr6xk0" path="res://Assets/Image/images/Credits/pixel_art_A_breathtaking_view_ (1).jpeg" id="2_wntgx"]
+[ext_resource type="Texture2D" uid="uid://dhe1kt6ipvw81" path="res://Assets/Image/images/Credits/pixel_art_A_breathtaking_view_.jpeg" id="2_4qi4r"]
 [ext_resource type="Theme" uid="uid://c5tjnvediwfog" path="res://Assets/Theme/Credit/Tittles.tres" id="3_w6jbs"]
 [ext_resource type="FontFile" uid="uid://c7kxtmv713e3k" path="res://Assets/Fonts/Wolf Moon.ttf" id="4_duftd"]
 [ext_resource type="Theme" uid="uid://dc1ctcksywkhs" path="res://Assets/Theme/Credit/Label Details.tres" id="5_cxcls"]
@@ -151,7 +151,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_wntgx")
+texture = ExtResource("2_4qi4r")
 metadata/_edit_lock_ = true
 
 [node name="Credit Tittle" type="Label" parent="TextureRect"]
@@ -185,12 +185,17 @@ theme_override_constants/h_separation = 15
 theme_override_constants/v_separation = 5
 columns = 2
 
-[node name="Image" type="Label" parent="TextureRect/GridContainer 4"]
+[node name="Music" type="Label" parent="TextureRect/GridContainer 4"]
 layout_mode = 2
 theme = ExtResource("5_cxcls")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("6_qe5rh")
 theme_override_font_sizes/font_size = 24
-text = "Wolf Image
+text = "Music
 "
 horizontal_alignment = 1
 metadata/_edit_group_ = true
@@ -198,190 +203,152 @@ metadata/_edit_group_ = true
 [node name="List" type="Label" parent="TextureRect/GridContainer 4"]
 layout_mode = 2
 theme = ExtResource("5_cxcls")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("6_qe5rh")
 theme_override_font_sizes/font_size = 24
 text = "List"
 horizontal_alignment = 1
 metadata/_edit_group_ = true
 
-[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect/GridContainer 4"]
+[node name="Sirential" type="HBoxContainer" parent="TextureRect/GridContainer 4"]
 layout_mode = 2
-theme_override_constants/separation = 10
 
-[node name="Alaskan Tundra Wolf" type="Label" parent="TextureRect/GridContainer 4/VBoxContainer"]
-layout_mode = 2
-theme = ExtResource("5_cxcls")
-theme_override_fonts/font = ExtResource("6_qe5rh")
-theme_override_font_sizes/font_size = 24
-text = "- Alaskan Tundra Wolf - rjime31
-"
-metadata/_edit_group_ = true
-
-[node name="Alexander Archipelago Wolf" type="Label" parent="TextureRect/GridContainer 4/VBoxContainer"]
-layout_mode = 2
-theme = ExtResource("5_cxcls")
-theme_override_fonts/font = ExtResource("6_qe5rh")
-theme_override_font_sizes/font_size = 24
-text = "- Alexander Archipelago Wolf - Wolf, et al
-"
-metadata/_edit_group_ = true
-
-[node name="Arabian Wolf" type="Label" parent="TextureRect/GridContainer 4/VBoxContainer"]
-layout_mode = 2
-theme = ExtResource("5_cxcls")
-theme_override_fonts/font = ExtResource("6_qe5rh")
-theme_override_font_sizes/font_size = 24
-text = "- Arabian Wolf - Dave Johnson
-"
-metadata/_edit_group_ = true
-
-[node name="Arctic Wolf" type="Label" parent="TextureRect/GridContainer 4/VBoxContainer"]
-layout_mode = 2
-theme = ExtResource("5_cxcls")
-theme_override_fonts/font = ExtResource("6_qe5rh")
-theme_override_font_sizes/font_size = 24
-text = "- Left Button - iconsDB.com
-"
-metadata/_edit_group_ = true
-
-[node name="Discord logo" type="Label" parent="TextureRect/GridContainer 4/VBoxContainer"]
-layout_mode = 2
-theme = ExtResource("5_cxcls")
-theme_override_fonts/font = ExtResource("6_qe5rh")
-theme_override_font_sizes/font_size = 24
-text = "- Discord Logo - Discord
-"
-metadata/_edit_group_ = true
-
-[node name="Github Logo" type="Label" parent="TextureRect/GridContainer 4/VBoxContainer"]
-layout_mode = 2
-theme = ExtResource("5_cxcls")
-theme_override_fonts/font = ExtResource("6_qe5rh")
-theme_override_font_sizes/font_size = 24
-text = "- Github Logo - Github
-"
-metadata/_edit_group_ = true
-
-[node name="Tent Tileset" type="Label" parent="TextureRect/GridContainer 4/VBoxContainer"]
-layout_mode = 2
-theme = ExtResource("5_cxcls")
-theme_override_fonts/font = ExtResource("6_qe5rh")
-theme_override_font_sizes/font_size = 24
-text = "- Tent Tileset - RPG Maker MV
-"
-metadata/_edit_group_ = true
-
-[node name="Open Book" type="Label" parent="TextureRect/GridContainer 4/VBoxContainer"]
-layout_mode = 2
-theme = ExtResource("5_cxcls")
-theme_override_fonts/font = ExtResource("6_qe5rh")
-theme_override_font_sizes/font_size = 24
-text = "- Open Book Texture - Vector_corp
-"
-metadata/_edit_group_ = true
-
-[node name="Taiga Tileset" type="Label" parent="TextureRect/GridContainer 4/VBoxContainer"]
-layout_mode = 2
-theme = ExtResource("5_cxcls")
-theme_override_fonts/font = ExtResource("6_qe5rh")
-theme_override_font_sizes/font_size = 24
-text = "- Taiga Tileset - vnitti
-"
-metadata/_edit_group_ = true
-
-[node name="Lion charshet" type="Label" parent="TextureRect/GridContainer 4/VBoxContainer"]
+[node name="Sirental" type="Label" parent="TextureRect/GridContainer 4/Sirential"]
 layout_mode = 2
 theme = ExtResource("5_cxcls")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
 theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("6_qe5rh")
 theme_override_font_sizes/font_size = 24
-text = "- Lion Character Sheet - hiddenone
-"
-clip_text = true
+text = "- Sirental : "
 metadata/_edit_group_ = true
 
-[node name="Fox Charshet" type="Label" parent="TextureRect/GridContainer 4/VBoxContainer"]
+[node name="Sirental Music List" type="VBoxContainer" parent="TextureRect/GridContainer 4/Sirential"]
+layout_mode = 2
+
+[node name="Forest" type="Label" parent="TextureRect/GridContainer 4/Sirential/Sirental Music List"]
 layout_mode = 2
 theme = ExtResource("5_cxcls")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
 theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("6_qe5rh")
 theme_override_font_sizes/font_size = 24
-text = "- Foxes Character Sheet - hiddenone
+text = "- Forest.mp3
 "
 metadata/_edit_group_ = true
 
-[node name="Fox Charshet2" type="Label" parent="TextureRect/GridContainer 4/VBoxContainer"]
+[node name="Snowland" type="Label" parent="TextureRect/GridContainer 4/Sirential/Sirental Music List"]
 layout_mode = 2
 theme = ExtResource("5_cxcls")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
 theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("6_qe5rh")
 theme_override_font_sizes/font_size = 24
-text = "- Black Mamba Character Sheet - hiddenone
+text = "- Snowland.mp3
 "
 metadata/_edit_group_ = true
 
-[node name="Arctic Owl Charshet" type="Label" parent="TextureRect/GridContainer 4/VBoxContainer"]
+[node name="savanna_full" type="Label" parent="TextureRect/GridContainer 4/Sirential/Sirental Music List"]
 layout_mode = 2
 theme = ExtResource("5_cxcls")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
 theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("6_qe5rh")
 theme_override_font_sizes/font_size = 24
-text = "- Arctic Owl Character Sheet - hiddenone
+text = "- savanna_full.mp3
 "
 metadata/_edit_group_ = true
 
-[node name="Bears Charshet2" type="Label" parent="TextureRect/GridContainer 4/VBoxContainer"]
+[node name="Maktub_ytv" type="HBoxContainer" parent="TextureRect/GridContainer 4"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="Maktub_ytv" type="Label" parent="TextureRect/GridContainer 4/Maktub_ytv"]
 layout_mode = 2
 theme = ExtResource("5_cxcls")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
 theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("6_qe5rh")
 theme_override_font_sizes/font_size = 24
-text = "- Bears Character Sheet - Admurin
+text = "- Maktub_ytv
 "
 metadata/_edit_group_ = true
 
-[node name="Traps" type="Label" parent="TextureRect/GridContainer 4/VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect/GridContainer 4/Maktub_ytv"]
+layout_mode = 2
+
+[node name="Wolf Howl 1" type="Label" parent="TextureRect/GridContainer 4/Maktub_ytv/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("5_cxcls")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
 theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("6_qe5rh")
 theme_override_font_sizes/font_size = 24
-text = "- Traps - BDragon1727
+text = "- Wolf Howl 1.mp3
 "
 metadata/_edit_group_ = true
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="TextureRect/GridContainer 4"]
-layout_mode = 2
-
-[node name="Image3" type="Label" parent="TextureRect/GridContainer 4/VBoxContainer2"]
+[node name="Wolf Howl 2" type="Label" parent="TextureRect/GridContainer 4/Maktub_ytv/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("5_cxcls")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("6_qe5rh")
 theme_override_font_sizes/font_size = 24
-text = "- Taiga Tileset - 
+text = "- Wolf Howl 2.mp3
 "
-horizontal_alignment = 1
 metadata/_edit_group_ = true
 
-[node name="Label" type="Label" parent="TextureRect/GridContainer 4/VBoxContainer2"]
+[node name="Wolf Howl 3" type="Label" parent="TextureRect/GridContainer 4/Maktub_ytv/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("5_cxcls")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("6_qe5rh")
 theme_override_font_sizes/font_size = 24
-text = "- Taiga Tileset - 
+text = "- Wolf Howl 3.mp3
 "
+metadata/_edit_group_ = true
+
+[node name="List2" type="Label" parent="TextureRect/GridContainer 4"]
+layout_mode = 2
+theme = ExtResource("5_cxcls")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("6_qe5rh")
+theme_override_font_sizes/font_size = 24
+text = "List"
 horizontal_alignment = 1
 metadata/_edit_group_ = true
 
@@ -422,7 +389,11 @@ custom_minimum_size = Vector2(128, 64)
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("8_oy5t3")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
 text = "Back"
 flat = true
 
+[connection signal="mouse_entered" from="Butons/Back_Page_1" to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Butons/Back_Page_1" to="." method="_on_mouse_exited"]
 [connection signal="pressed" from="Butons/Back_Page_1" to="." method="_on_back_page_1_pressed"]

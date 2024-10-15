@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3 uid="uid://dylk0u3ewc5am"]
+
+[ext_resource type="PackedScene" uid="uid://c8it7bbd20xdf" path="res://Assets/Scences/Player/Weapons/brust_garou_riffle_player.tscn" id="1_sliar"]
+[ext_resource type="Script" path="res://Assets/Script/Class/Enemy/Enemy.gd" id="2_0q31k"]
+[ext_resource type="Texture2D" uid="uid://c6msi4w0w5js" path="res://Assets/Image/images/enemies_081719_zp.png" id="3_gm6ah"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fvvoo"]
+size = Vector2(1265.5, 80)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_540vs"]
+size = Vector2(20, 39)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p2m66"]
+atlas = ExtResource("3_gm6ah")
+region = Rect2(8, 9, 82, 41)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(636.25, 723)
+shape = SubResource("RectangleShape2D_fvvoo")
+
+[node name="Brust Garou-Riffle-Player" parent="." instance=ExtResource("1_sliar")]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(620, 668)
+script = ExtResource("2_0q31k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(0, -3.5)
+shape = SubResource("RectangleShape2D_540vs")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture = SubResource("AtlasTexture_p2m66")

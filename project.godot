@@ -29,6 +29,9 @@ GlobalSettings="*res://Assets/Script/Controller/Save/Global_Settings/Global_Sett
 Inventory="*res://Assets/Script/Class/Inventory/Inventory.gd"
 almanac="*res://Assets/Script/Class/Wolf/Wolf Alamanac/Class_Data/Almanac.gd"
 WolfData="*res://Assets/Script/Class/Wolf/Wolves_Save/Wolf_Data.gd"
+Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+player="*res://Assets/Script/Class/Player/Player.gd"
+GlobalTilesets="*res://Assets/Script/Global_Tilesets/Global_Tilesets.gd"
 
 [dialogic]
 
@@ -141,14 +144,17 @@ text/input_action="interact"
 save/autosave=true
 directories/dch_directory={
 "Mr_Wolf": "res://Assets/Dialogue/Character/Mr_Wolf.dch",
-"Player": "res://Assets/Dialogue/Character/Player.dch"
+"Player": "res://Assets/Dialogue/Character/Player.dch",
+"Sergant Lupine": "res://Assets/Dialogue/Character/Sergant Lupine.dch",
+"unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
 directories/dtl_directory={
 "How To Play": "res://Assets/Dialogue/TimeLines/How To Play.dtl",
 "Intro": "res://Assets/Dialogue/TimeLines/Intro.dtl",
+"Intro_Player": "res://Assets/Dialogue/TimeLines/Intro_Player.dtl",
 "Player": "res://Assets/Dialogue/TimeLines/Player.dtl"
 }
-layout/style_list=["res://Assets/Dialogue/Theme/Speaker_Mode.tres", "res://Assets/Dialogue/Theme/Pixelize_Visual_Novel.tres"]
+layout/style_list=["res://Assets/Dialogue/Theme/Speaker_Mode.tres", "res://Assets/Dialogue/Theme/Pixelize_Visual_Novel.tres", "res://Assets/Dialogue/Theme/Pixelize_speaker.tres"]
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
 text/text_reveal_skip_delay=0.1
@@ -159,6 +165,8 @@ save/encryption_password="Blizzard03"
 save/default_slot="Blizzard"
 translation/save_mode=0
 extensions_folder="res://addons/dialogic_additions"
+text/advance_delay=0.1
+animations/cross_fade_default_length=0.5
 
 [display]
 
@@ -168,10 +176,15 @@ window/size/resizable=false
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 mouse_cursor/custom_image="res://Assets/Image/images/Cursor/Cursor 32x32.png"
+mouse_cursor/name_localized={}
 
 [dotnet]
 
 project/assembly_name="Dialogic Test Project"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
 
 [input]
 
@@ -229,6 +242,16 @@ dialogic_default_action={
 , Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":0,"pressure":0.0,"pressed":false,"script":null)
 ]
 }
+shoot_fire={
+"deadzone": 0.5,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":1,"position":Vector2(105, 21),"global_position":Vector2(109, 62),"factor":1.0,"button_index":1,"canceled":false,"pressed":true,"double_click":true,"script":null)
+]
+}
+Reloading={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":82,"key_label":0,"unicode":114,"echo":false,"script":null)
+]
+}
 
 [internationalization]
 
@@ -241,6 +264,7 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 textures/vram_compression/import_etc2_astc=true
 shading/overrides/force_vertex_shading=true
 shading/overrides/force_lambert_over_burley=true

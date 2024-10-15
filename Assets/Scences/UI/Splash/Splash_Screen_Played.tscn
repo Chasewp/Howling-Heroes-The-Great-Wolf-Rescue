@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://nxesci8m8pft"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Splash_Screen/Splash_Screen_Played.gd" id="1_x25oj"]
-[ext_resource type="Texture2D" uid="uid://ieydux8uysii" path="res://Assets/Image/Background/Splash Screen/—Pngtree—flat wind keyboard mouse vector_5458958.png" id="2_osmva"]
+[ext_resource type="Texture2D" uid="uid://cspfwege3ncpm" path="res://Assets/Image/Keyboard and Mouse/478401-PHEZK8-856.png" id="2_o3kdc"]
 [ext_resource type="FontFile" uid="uid://byrrpk8yu3w10" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="3_6teo4"]
 
 [sub_resource type="Animation" id="Animation_dtfix"]
@@ -67,31 +67,25 @@ offset_bottom = 718.0
 color = Color(0.078125, 0.148438, 0.15625, 1)
 
 [node name="TextureRect" type="TextureRect" parent="."]
-custom_minimum_size = Vector2(1127, 461)
-anchors_preset = -1
-anchor_left = 0.06
-anchor_top = 0.11
-anchor_right = 0.94
-anchor_bottom = 0.751
-offset_left = -0.300003
-offset_top = 0.299995
-offset_right = 0.299927
-offset_bottom = -0.220032
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 104.0
+offset_right = -49.0
+offset_bottom = -259.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_osmva")
+texture = ExtResource("2_o3kdc")
 expand_mode = 1
 
 [node name="Label" type="Label" parent="."]
-anchors_preset = -1
-anchor_left = 0.292
-anchor_top = 0.843
-anchor_right = 0.708
-anchor_bottom = 0.899
-offset_left = 0.23996
-offset_top = 0.039978
-offset_right = -0.23999
-offset_bottom = -0.280029
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 311.0
+offset_top = 495.0
+offset_right = -314.0
+offset_bottom = -113.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_6teo4")

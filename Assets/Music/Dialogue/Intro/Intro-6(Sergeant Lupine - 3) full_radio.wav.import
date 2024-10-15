@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://xkb4be5hwhru"
+path="res://.godot/imported/Intro-6(Sergeant Lupine - 3) full_radio.wav-3c22377d39fa9f46b93b1259bcb34c55.sample"
+
+[deps]
+
+source_file="res://Assets/Music/Dialogue/Intro/Intro-6(Sergeant Lupine - 3) full_radio.wav"
+dest_files=["res://.godot/imported/Intro-6(Sergeant Lupine - 3) full_radio.wav-3c22377d39fa9f46b93b1259bcb34c55.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

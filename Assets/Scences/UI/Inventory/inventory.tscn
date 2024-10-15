@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://bli5mfb2fgf2e"]
 
-[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Inventory/Inventory_UI.gd" id="1_450pq"]
+[ext_resource type="Script" path="res://Assets/Scences/UI/Inventory/items_stacking_GUI.gd" id="1_450pq"]
 [ext_resource type="Texture2D" uid="uid://dmpbxk5kwi7ik" path="res://Assets/Image/Background/Inventory/InventoryRect.png" id="2_kuskw"]
 [ext_resource type="PackedScene" uid="uid://dwv0ooo1hx666" path="res://Assets/Scences/UI/Inventory/inventory_panel_slot.tscn" id="3_1nhd4"]
-[ext_resource type="FontFile" uid="uid://fpssaux4ispl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="4_shqg0"]
+[ext_resource type="FontFile" uid="uid://bsmkjcem4b3i1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="4_shqg0"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kfkd0"]
 bg_color = Color(0.305882, 0.305882, 0.305882, 1)

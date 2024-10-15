@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0gr42wovvi7r"]
+
+[ext_resource type="Texture2D" uid="uid://bytsp58fb1h6c" path="res://icon.svg" id="1_xlbv3"]
+[ext_resource type="PackedScene" uid="uid://c8it7bbd20xdf" path="res://Assets/Scences/Player/Weapons/brust_garou_riffle_player.tscn" id="2_ykl6u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xsfl5"]
+size = Vector2(1277, 105)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Icon" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(635, 663)
+scale = Vector2(10.0469, 1)
+texture = ExtResource("1_xlbv3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(640.5, 663.5)
+shape = SubResource("RectangleShape2D_xsfl5")
+
+[node name="Brust Garou-Riffle-Player" parent="." instance=ExtResource("2_ykl6u")]

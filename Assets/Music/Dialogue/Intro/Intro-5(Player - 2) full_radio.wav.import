@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://toprto4qi4eg"
+path="res://.godot/imported/Intro-5(Player - 2) full_radio.wav-035691590c007233099062232d4536cb.sample"
+
+[deps]
+
+source_file="res://Assets/Music/Dialogue/Intro/Intro-5(Player - 2) full_radio.wav"
+dest_files=["res://.godot/imported/Intro-5(Player - 2) full_radio.wav-035691590c007233099062232d4536cb.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

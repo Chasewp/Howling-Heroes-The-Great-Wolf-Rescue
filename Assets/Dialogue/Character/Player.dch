@@ -6,14 +6,24 @@
 "custom_info": {
 "sound_mood_default": "",
 "sound_moods": {},
-"style": ""
+"style": "Pixelize_Visual_Novel"
 },
-"default_portrait": "",
+"default_portrait": "Normal",
 "description": "",
 "display_name": "Player",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),
-"portraits": {},
+"portraits": {
+"Normal": {
+"export_overrides": {
+"image": "\"res://Assets/Image/Character/Player/templerun/Iddle/Idle__000.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.75,
+"scene": ""
+}
+},
 "scale": 1.0
 }
