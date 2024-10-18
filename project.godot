@@ -29,9 +29,10 @@ GlobalSettings="*res://Assets/Script/Controller/Save/Global_Settings/Global_Sett
 Inventory="*res://Assets/Script/Class/Inventory/Inventory.gd"
 almanac="*res://Assets/Script/Class/Wolf/Wolf Alamanac/Class_Data/Almanac.gd"
 WolfData="*res://Assets/Script/Class/Wolf/Wolves_Save/Wolf_Data.gd"
-Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 player="*res://Assets/Script/Class/Player/Player.gd"
 GlobalTilesets="*res://Assets/Script/Global_Tilesets/Global_Tilesets.gd"
+Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+save_progress="*res://Assets/Script/Controller/Save/Save_Data/player/save_progress.gd"
 
 [dialogic]
 
@@ -145,8 +146,7 @@ save/autosave=true
 directories/dch_directory={
 "Mr_Wolf": "res://Assets/Dialogue/Character/Mr_Wolf.dch",
 "Player": "res://Assets/Dialogue/Character/Player.dch",
-"Sergant Lupine": "res://Assets/Dialogue/Character/Sergant Lupine.dch",
-"unit_test_character": "res://Tests/Resources/unit_test_character.dch"
+"Sergant Lupine": "res://Assets/Dialogue/Character/Sergant Lupine.dch"
 }
 directories/dtl_directory={
 "How To Play": "res://Assets/Dialogue/TimeLines/How To Play.dtl",

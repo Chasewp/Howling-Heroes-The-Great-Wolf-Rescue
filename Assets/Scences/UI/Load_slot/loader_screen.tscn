@@ -1,20 +1,28 @@
-[gd_scene load_steps=5 format=3 uid="uid://bppotao2cssdj"]
+[gd_scene load_steps=8 format=3 uid="uid://bppotao2cssdj"]
 
-[ext_resource type="Texture2D" uid="uid://d1sw3q5r06tf8" path="res://Assets/Image/images/Moonlight Night Scenery Acrylic Painting for beginners 2019.png" id="1_jgcl1"]
+[ext_resource type="Texture2D" uid="uid://dvvrkocf0bwb" path="res://Assets/Image/images/Moonlight Night Scenery Acrylic Painting for beginners 2019.png" id="1_jgcl1"]
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Load_slot/loader_screen.gd" id="1_kd02q"]
-[ext_resource type="FontFile" uid="uid://c4ipkih8u305j" path="res://Assets/Fonts/DEADLY CLAWS[.ttf" id="2_n7m1k"]
-[ext_resource type="FontFile" uid="uid://bv6xsykw7vcai" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="4_6rv3h"]
+[ext_resource type="FontFile" uid="uid://84flwwd4pvq5" path="res://Assets/Fonts/DEADLY CLAWS[.ttf" id="2_n7m1k"]
+[ext_resource type="FontFile" uid="uid://byrrpk8yu3w10" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="4_6rv3h"]
+[ext_resource type="FontFile" uid="uid://chsguujhey1bs" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="5_0od6w"]
+[ext_resource type="FontFile" uid="uid://bc3fo6p06lixr" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="6_a8i2w"]
+[ext_resource type="AudioStream" uid="uid://c8hwked7dvue2" path="res://Assets/Music/All Button/Button.mp3" id="7_bny4u"]
 
 [node name="Loader_Screen" type="Node2D"]
 script = ExtResource("1_kd02q")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="Background" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(1280, 720)
-offset_right = 1268.0
-offset_bottom = 692.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1280.0
+offset_bottom = 720.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("1_jgcl1")
 
-[node name="Action Label" type="Label" parent="TextureRect"]
+[node name="Action Label" type="Label" parent="Background"]
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -34,7 +42,7 @@ text = "LOAD GAME"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Back Button" type="Button" parent="TextureRect"]
+[node name="Back Button" type="Button" parent="Background"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.472
@@ -52,18 +60,209 @@ theme_override_font_sizes/font_size = 30
 text = "Back"
 flat = true
 
-[node name="CenterContainer" type="CenterContainer" parent="TextureRect"]
+[node name="CenterContainer" type="CenterContainer" parent="Background"]
 layout_mode = 1
 anchors_preset = -1
 anchor_top = 0.094
-anchor_right = 0.998
+anchor_right = 0.558
 anchor_bottom = 0.904
-offset_top = 0.32
-offset_right = 0.559937
-offset_bottom = 0.119995
+offset_left = 140.0
+offset_top = 129.32
+offset_right = -224.24
+offset_bottom = -152.88
 grow_horizontal = 2
 grow_vertical = 2
-use_top_left = true
 
-[node name="Slot Container" type="VBoxContainer" parent="TextureRect/CenterContainer"]
+[node name="Slot Container" type="VBoxContainer" parent="Background/CenterContainer"]
 layout_mode = 2
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="SLOT 1" type="Button" parent="Background/CenterContainer/Slot Container"]
+custom_minimum_size = Vector2(450, 128)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("5_0od6w")
+theme_override_font_sizes/font_size = 32
+text = "LOAD SLOT 1"
+
+[node name="SLOT 2" type="Button" parent="Background/CenterContainer/Slot Container"]
+custom_minimum_size = Vector2(450, 128)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("5_0od6w")
+theme_override_font_sizes/font_size = 32
+text = "LOAD SLOT 2"
+
+[node name="SLOT 3" type="Button" parent="Background/CenterContainer/Slot Container"]
+custom_minimum_size = Vector2(450, 128)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("5_0od6w")
+theme_override_font_sizes/font_size = 32
+text = "LOAD SLOT 3"
+
+[node name="SLOT 4" type="Button" parent="Background/CenterContainer/Slot Container"]
+custom_minimum_size = Vector2(450, 128)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("5_0od6w")
+theme_override_font_sizes/font_size = 32
+text = "LOAD SLOT 4"
+
+[node name="Screen_Shoot" type="TextureRect" parent="Background"]
+custom_minimum_size = Vector2(600, 360)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.514
+anchor_top = 0.122
+anchor_right = 0.95
+anchor_bottom = 0.628
+offset_left = -57.92
+offset_top = 0.159996
+offset_right = -16.0
+offset_bottom = -4.16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 608.0
+offset_top = 468.0
+offset_right = 648.0
+offset_bottom = 508.0
+
+[node name="Player Name" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Player Name" type="Label" parent="VBoxContainer/Player Name"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.635294, 0.32549, 0.0823529, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("6_a8i2w")
+theme_override_font_sizes/font_size = 32
+text = "Player Name
+"
+
+[node name="is" type="Label" parent="VBoxContainer/Player Name"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.635294, 0.32549, 0.0823529, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("6_a8i2w")
+theme_override_font_sizes/font_size = 32
+text = ":"
+
+[node name="name" type="Label" parent="VBoxContainer/Player Name"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.635294, 0.32549, 0.0823529, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("6_a8i2w")
+theme_override_font_sizes/font_size = 32
+text = "Name"
+
+[node name="Player Location" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Player Location" type="Label" parent="VBoxContainer/Player Location"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.635294, 0.32549, 0.0823529, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("6_a8i2w")
+theme_override_font_sizes/font_size = 32
+text = "Player Location"
+
+[node name="is" type="Label" parent="VBoxContainer/Player Location"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.635294, 0.32549, 0.0823529, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("6_a8i2w")
+theme_override_font_sizes/font_size = 32
+text = ":"
+
+[node name="Location" type="Label" parent="VBoxContainer/Player Location"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.635294, 0.32549, 0.0823529, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("6_a8i2w")
+theme_override_font_sizes/font_size = 32
+text = "Location"
+
+[node name="Player_Coordinate" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Player Coordinate" type="Label" parent="VBoxContainer/Player_Coordinate"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.635294, 0.32549, 0.0823529, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("6_a8i2w")
+theme_override_font_sizes/font_size = 32
+text = "Player Coordinate"
+
+[node name="is" type="Label" parent="VBoxContainer/Player_Coordinate"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.635294, 0.32549, 0.0823529, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("6_a8i2w")
+theme_override_font_sizes/font_size = 32
+
+[node name="Coordinate" type="Label" parent="VBoxContainer/Player_Coordinate"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.635294, 0.32549, 0.0823529, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("6_a8i2w")
+theme_override_font_sizes/font_size = 32
+text = "Coordinate"
+
+[node name="button_click" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_bny4u")
+bus = &"Sound Effects"
+
+[connection signal="mouse_entered" from="Background/CenterContainer/Slot Container/SLOT 1" to="." method="_on_slot_1_mouse_entered"]
+[connection signal="mouse_exited" from="Background/CenterContainer/Slot Container/SLOT 1" to="." method="_on_slot_1_mouse_exited"]
+[connection signal="mouse_entered" from="Background/CenterContainer/Slot Container/SLOT 2" to="." method="_on_slot_2_mouse_entered"]
+[connection signal="mouse_exited" from="Background/CenterContainer/Slot Container/SLOT 2" to="." method="_on_slot_2_mouse_exited"]
+[connection signal="mouse_entered" from="Background/CenterContainer/Slot Container/SLOT 3" to="." method="_on_slot_3_mouse_entered"]
+[connection signal="mouse_exited" from="Background/CenterContainer/Slot Container/SLOT 3" to="." method="_on_slot_3_mouse_exited"]
+[connection signal="mouse_entered" from="Background/CenterContainer/Slot Container/SLOT 4" to="." method="_on_slot_4_mouse_entered"]
+[connection signal="mouse_exited" from="Background/CenterContainer/Slot Container/SLOT 4" to="." method="_on_slot_4_mouse_exited"]

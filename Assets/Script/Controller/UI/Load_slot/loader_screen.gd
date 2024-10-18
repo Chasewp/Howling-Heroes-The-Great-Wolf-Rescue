@@ -1,22 +1,48 @@
-#extends Node2D
+extends Node2D
 
-enum {LOAD,SAVE}
+@onready var button_click = $button_click
+@onready var screen_Shoot = $Background/Screen_Shoot
+@onready var player_name = $"VBoxContainer/Player Name/name"
+@onready var player_location = $"VBoxContainer/Player Location/Location"
+@onready var player_coordinate = $VBoxContainer/Player_Coordinate/Coordinate
 
-@onready var Action_Label = $"TextureRect/Action Label"
-@onready var back_btn = $"TextureRect/Back Button"
-@onready var yes_no_dialog = ""
-var action
-var clicked_save_num
+const saveslot1 = preload("")
+const saveslot2 = preload("")
+const saveslot3 = preload("")
+const saveslot4 = preload("")
 
-signal  load_done
-signal back_btn_pressed
+func _on_slot_1_mouse_entered():
+	save_file.load_data()
+	player_name.text=save_file.player_name
+	player_location.text = save_file.player_biome_location
+	player_coordinate.text = save_file.player_position
+	
 
-func _process(delta):
-	#super._process(delta)
-	if GlobalUi.is_yes_no_dialog_blocking:
-			back_btn.process_mode = Node.PROCESS_MODE_DISABLED
-	else :
-					back_btn.process_mode = Node.PROCESS_MODE_INHERIT
+func _on_slot_1_mouse_exited():
+	pass # Replace with function body.
+	
+	
 
-func _init_slots():
-	pass
+
+func _on_slot_2_mouse_entered():
+	pass # Replace with function body.
+
+
+func _on_slot_2_mouse_exited():
+	pass # Replace with function body.
+
+
+func _on_slot_3_mouse_entered():
+	pass # Replace with function body.
+
+
+func _on_slot_3_mouse_exited():
+	pass # Replace with function body.
+
+
+func _on_slot_4_mouse_entered():
+	pass # Replace with function body.
+
+
+func _on_slot_4_mouse_exited():
+	pass # Replace with function body.

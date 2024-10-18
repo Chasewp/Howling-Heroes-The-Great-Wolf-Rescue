@@ -13,7 +13,7 @@ shape = SubResource("CircleShape2D_qhyya")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = ExtResource("1_tq1dy")
-animation = &"Bullets_Player"
+animation = &"Hit_Bullet_Player"
 
 [node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
 

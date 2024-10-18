@@ -91,9 +91,6 @@ func _gui_input(event):
 # Toggle the selected lines as comments
 func toggle_comment() -> void:
 	var cursor: Vector2 = Vector2(get_caret_column(), get_caret_line())
-	var selection := Rect2i(
-		Vector2i(get_selection_origin_line(), get_selection_origin_column()),
-		Vector2i(get_caret_line(), get_caret_column()))
 	var from: int = cursor.y
 	var to: int = cursor.y
 	if has_selection():
@@ -101,27 +98,14 @@ func toggle_comment() -> void:
 		to = get_selection_to_line()
 
 	var lines: PackedStringArray = text.split("\n")
-	var will_comment: bool = false
-	for i in range(from, to+1):
-		if not lines[i].begins_with("#"):
-			will_comment = true
-	
+	var will_comment: bool = not lines[from].begins_with("# ")
 	for i in range(from, to + 1):
-		if will_comment:
-			lines[i] = "#" + lines[i]
-		else:
-			lines[i] = lines[i].trim_prefix("#")
+		lines[i] = "# " + lines[i] if will_comment else lines[i].substr(2)
 
 	text = "\n".join(lines)
-	if will_comment:
-		cursor.x += 1
-		selection.position.y += 1
-		selection.size.y += 1
-	else:
-		cursor.x -= 1
-		selection.position.y -= 1
-		selection.size.y -= 1
-	select(selection.position.x, selection.position.y, selection.size.x, selection.size.y)
+	select(from, 0, to, get_line_width(to))
+	set_caret_line(cursor.y)
+	set_caret_column(cursor.x)
 	text_changed.emit()
 
 

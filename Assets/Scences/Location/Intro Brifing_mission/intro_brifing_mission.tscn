@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dr0g8aopnd1hv"]
+
+[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Intro_briving_mission/intro_brifing_mission.gd" id="1_t46s0"]
+
+[node name="Intro_Brifing_mission" type="Node2D"]
+script = ExtResource("1_t46s0")

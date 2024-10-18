@@ -1,27 +1,24 @@
-res://Assets/Dialogue/TimeLines/Intro_Player.dtl
 res://Assets/Scences/UI/Splash/Splash_Screen_Played.tscn
 res://Assets/Dialogue/Theme/Speaker_Mode.tres
 res://Assets/Dialogue/Theme/Pixelize_Visual_Novel.tres
 res://Assets/Dialogue/Theme/Pixelize_speaker.tres
-res://Assets/Script/Controller/Weapons/brust_garou_riffle_player.gd
+res://Assets/Script/Controller/UI/Player_Input/Player_Name.gd
+res://Assets/Tileset/Taiga_Stage.tres
 res://Assets/Bullets/Animation_Player_Bullets.tres
 res://Assets/Scences/Player/Animation/Player_animations.tres
 res://Assets/Scences/Player/Weapons/Playersword_animations.tres
-res://Assets/Tileset/Taiga_Stage.tres
+res://Assets/Theme/Credit/Buttons.tres
+res://Assets/Scences/Location/How_to_Play/How_To_Play.tscn
+res://Assets/Scences/UI/Character_Name/Player_Name.tscn
+res://Assets/Scences/Level/main_menu_level.tscn
+res://Assets/Scences/Platfromer/platfrom_taiga.tscn
+res://Assets/Scences/UI/Saver/Saver_screen.tscn
+res://Assets/Scences/UI/Credits/credit_1_Main.tscn
+res://Assets/Scences/UI/Credits/credit_5.tscn
+res://Assets/Scences/UI/Credits/credit_4_images.tscn
+res://Assets/Scences/UI/Load_slot/loader_screen.tscn
 res://Assets/Scences/Player/Weapons/brust_garou_riffle_player.tscn
 res://Assets/Bullets/bullets_player.tscn
+res://Assets/Tileset/test.tscn
 res://test.tscn
-res://Assets/Scences/UI/Player_Name.tscn
 res://Assets/Scences/Player/Player.tscn
-res://Assets/Scences/Level/main_menu_level.tscn
-res://Assets/Scences/Level/level_1.tscn
-res://Assets/Scences/Player/Weapons/Machete.tscn
-res://Assets/Scences/UI/Wolf_Almanac/Index/wolf_almanac_idex_page_5.tscn
-res://Assets/Scences/UI/Wolf_Almanac/Index/wolf_almanac_idex_page_4.tscn
-res://Assets/Scences/UI/Wolf_Almanac/Index/wolf_almanac_idex_page_3.tscn
-res://Assets/Scences/UI/Wolf_Almanac/Index/wolf_almanac_idex_page_2.tscn
-res://Assets/Scences/UI/Wolf_Almanac/Index/Wolf_Almanac_Idex_Page 1.tscn
-res://Assets/Scences/UI/Wolf_Almanac/Index/Page 1/Wolf_Almanac_Index_Page_1.tscn
-res://Assets/Scences/UI/Wolf_Almanac/Main_Menu/alamanac_main_menu.tscn
-res://Assets/Dialogue/Character/Sergant Lupine.dch
-res://Assets/Dialogue/Character/Player.dch

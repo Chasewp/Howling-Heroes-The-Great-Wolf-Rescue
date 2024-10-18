@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Data_Progress" load_steps=2 format=3 uid="uid://4xn1017pcbpf"]
+
+[ext_resource type="Script" path="res://Assets/Script/Controller/Save/Save_Data/ProgressGameData.gd" id="1_hrow3"]
+
+[resource]
+script = ExtResource("1_hrow3")
+player_position = Vector2(0, 0)
+player_name = ""
+player_biome_location = ""
+player_health = 0
+player_armor = 0
+mission_wolf_rescued = 0
+checkpoints = 0

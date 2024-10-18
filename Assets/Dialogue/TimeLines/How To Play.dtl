@@ -20,10 +20,6 @@ Mr_Wolf: To [b]Access The Map Region[/b], Please Press The [wave amp=45 freq=3][
 Mr_Wolf: To [b]Shoot[/b], Press [wave amp=45 freq=3][b]Right Button[/b][/wave] On The Mouse
 [voice path="res://Assets/Music/Dialogues/How to Play/How to Slash.mp3" volume="0.0"]
 Mr_Wolf: To [b]Slash[b], Press [wave amp=45 freq=3][b]Left Button[/b][/wave] On The Mouse
-[voice path="res://Assets/Music/Dialogues/How to Play/Mission 1 .mp3" volume="0.0"]
-Mr_Wolf: Your Objective Is To Liberate All The Wolves From Their Captors. In The Process, You Must Neutralize Any Hostile Forces And Eliminate Any Formidable Opponents.
-[voice path="res://Assets/Music/Dialogues/How to Play/Mission 2 .mp3" volume="0.0"]
-Mr_Wolf: Once These Threats Are Vanquished, Locate The Key Secured Within A Chest.  The Possession Of This Key Will Grant You Access To The Wolves' Enclosure, Allowing For Their Escape.
 [voice path="res://Assets/Music/Dialogues/How to Play/How to play 8.mp3" volume="0.0"]
 Mr_Wolf: With this knowledge bestowed upon you, may your quest be successful! Farewell, and good fortune in your endeavors.
 [voice volume="0.0"]

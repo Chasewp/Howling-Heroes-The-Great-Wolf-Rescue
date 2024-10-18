@@ -55,7 +55,11 @@ func shoot() -> void:
 	var bullet := BULETSSCENCE.instantiate() 
 	bullet.global_position = projectiles.global_position
 	bullet.direction = global_position.direction_to(get_global_mouse_position())
-	add_child(bullet)
+	bullet.transform = projectiles.global_transform
+	get_tree().root.add_child(bullet)
+	
+	#
+	
 
 	_ammo_display.get_child(0).queue_free()
 	shooting_riffle.play()

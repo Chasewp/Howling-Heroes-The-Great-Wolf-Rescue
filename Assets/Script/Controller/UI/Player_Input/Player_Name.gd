@@ -5,8 +5,7 @@ extends Control
 @onready var infochar = $info_char
 
 var number_text
-var _heros = Hero.new()
-
+var auto_save = preload("res://Assets/Script/Class/Player/Save/Save.tres")
 func _ready():
 	name_player.grab_focus()
 	#set_caret_collom(len(name_player.text))
@@ -22,6 +21,11 @@ func _on_player_name_text_submitted(new_text):
 	player.setter_location("Taiga")
 	player.setter_armor(100)
 	player.setter_health(100)
-	_heros.auto_save()
-	get_tree().change_scene_to_file("res://Assets/Scences/Biome/Bridge_Stone_Forest/Bridge_Stone_Forest.tscn")
+	auto_save.player_name = player.getter_name()
+	auto_save.player_biome_location = player.getter_location()
+	auto_save.player_health = player.getter_health()
+	auto_save.player_armor = player.getter_armor()
+	auto_save.stage = preload("res://Assets/Scences/Level/main_menu_level.tscn").instantiate()
+	save_progress.save_data(save_progress.SAVE_PATH,auto_save,"Auto_Save")
+	get_tree().change_scene_to_file("res://Assets/Scences/Level/main_menu_level.tscn")
 	

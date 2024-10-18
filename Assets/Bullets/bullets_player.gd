@@ -4,13 +4,16 @@ extends Area2D
 var speed := 600
 var direction := Vector2.ZERO
 var enemy = Enemy.new()
+
 func _ready():
 	self.set_as_top_level(true)
 	$AnimatedSprite2D.play("Bullets_Player")
 	
 func _on_Bullet_body_entered(body):
-	if body is Enemy:
-		(body as Enemy).exploded()
+	if body.is_in_group("Enemy"):
+		body.queue_free()
+		queue_free()
+		#(body as Enemy)
 		
 func exploded()->void:
 	$AnimatedSprite2D.play("Hit_Bullets_Player")

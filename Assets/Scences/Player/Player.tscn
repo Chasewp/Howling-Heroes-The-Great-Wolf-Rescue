@@ -347,7 +347,9 @@ script = ExtResource("1_3n0i7")
 _jump_dust = ExtResource("2_b24lx")
 _has_machete = true
 
-[node name="Brust Garou-Riffle-Player" parent="." instance=ExtResource("2_nrsk8")]
+[node name="Riffle" type="Node2D" parent="."]
+
+[node name="Brust Garou-Riffle-Player" parent="Riffle" instance=ExtResource("2_nrsk8")]
 
 [node name="Weapon" type="Node2D" parent="."]
 visible = false

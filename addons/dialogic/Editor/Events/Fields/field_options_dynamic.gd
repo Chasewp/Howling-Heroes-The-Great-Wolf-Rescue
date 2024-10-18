@@ -76,10 +76,7 @@ func _autofocus() -> void:
 ################################################################################
 
 func _ready() -> void:
-	var focus := get_theme_stylebox("focus", "LineEdit")
-	if has_theme_stylebox("focus", "DialogicEventEdit"):
-		focus = get_theme_stylebox('focus', 'DialogicEventEdit')
-	%Focus.add_theme_stylebox_override('panel', focus)
+	%Focus.add_theme_stylebox_override('panel', get_theme_stylebox('focus', 'DialogicEventEdit'))
 
 	%Search.text_changed.connect(_on_Search_text_changed)
 	%Search.text_submitted.connect(_on_Search_text_entered)

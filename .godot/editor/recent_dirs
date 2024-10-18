@@ -1,10 +1,5 @@
-res://Assets/Music/Dialogue/Intro
-res://Assets/Image/Background/Bridge Stone Forest
-res://Assets/Image/Background/Intro_Com-link
-res://Assets/Dialogue/TimeLines
-res://Assets/Image/Character/Sergeant Lupine
-res://Assets/Dialogue/Character
-res://Assets/Image/Character/Player/templerun/Iddle
-res://Assets/Dialogue/Theme
-res://Assets/Scences/Level
 res://
+res://Assets/Script/Controller/Save/Save_Data/player
+res://Assets/Script/Class/Hero
+res://Assets/Script/Controller/UI/Intro_briving_mission
+res://Assets/Scences/Location/Intro Brifing_mission

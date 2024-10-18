@@ -1,10 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://c0gr42wovvi7r"]
+[gd_scene load_steps=6 format=3 uid="uid://c0gr42wovvi7r"]
 
 [ext_resource type="Texture2D" uid="uid://bytsp58fb1h6c" path="res://icon.svg" id="1_xlbv3"]
 [ext_resource type="PackedScene" uid="uid://c8it7bbd20xdf" path="res://Assets/Scences/Player/Weapons/brust_garou_riffle_player.tscn" id="2_ykl6u"]
+[ext_resource type="Script" path="res://Assets/Script/Class/Enemy/Enemy.gd" id="3_khws0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xsfl5"]
 size = Vector2(1277, 105)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l5ykh"]
+size = Vector2(131.75, 126.75)
 
 [node name="Node2D" type="Node2D"]
 
@@ -19,4 +23,39 @@ texture = ExtResource("1_xlbv3")
 position = Vector2(640.5, 663.5)
 shape = SubResource("RectangleShape2D_xsfl5")
 
-[node name="Brust Garou-Riffle-Player" parent="." instance=ExtResource("2_ykl6u")]
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Brust Garou-Riffle-Player" parent="Node2D" instance=ExtResource("2_ykl6u")]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." groups=["Enemy"]]
+position = Vector2(864, 600)
+script = ExtResource("3_khws0")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("1_xlbv3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(1.125, 2.625)
+shape = SubResource("RectangleShape2D_l5ykh")
+
+[node name="CharacterBody2D2" type="CharacterBody2D" parent="." groups=["Enemy"]]
+position = Vector2(1094, 598)
+script = ExtResource("3_khws0")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D2"]
+texture = ExtResource("1_xlbv3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D2"]
+position = Vector2(1.125, 2.625)
+shape = SubResource("RectangleShape2D_l5ykh")
+
+[node name="CharacterBody2D3" type="CharacterBody2D" parent="." groups=["Enemy"]]
+position = Vector2(970, 427)
+script = ExtResource("3_khws0")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D3"]
+texture = ExtResource("1_xlbv3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D3"]
+position = Vector2(1.125, 2.625)
+shape = SubResource("RectangleShape2D_l5ykh")

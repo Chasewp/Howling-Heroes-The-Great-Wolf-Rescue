@@ -20,7 +20,7 @@ bg_color = Color(0.447059, 0.243137, 0.0941176, 1)
 bg_color = Color(0.0705882, 1, 0.0117647, 1)
 
 [node name="Brust Garou-Riffle-Player" type="RigidBody2D"]
-position = Vector2(75, 650)
+position = Vector2(28, 29)
 script = ExtResource("1_fipu5")
 
 [node name="BrustGarou" type="Sprite2D" parent="."]
@@ -49,10 +49,10 @@ stream = ExtResource("3_i62my")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
-offset_left = 30.0
-offset_top = 673.0
-offset_right = 49.0
-offset_bottom = 683.0
+offset_left = 23.0
+offset_top = 51.0
+offset_right = 114.0
+offset_bottom = 81.0
 theme_override_constants/separation = 3
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/HBoxContainer"]
@@ -83,10 +83,10 @@ columns = 10
 unique_name_in_owner = true
 layout_mode = 3
 anchors_preset = 0
-offset_left = 66.0
-offset_top = 704.0
-offset_right = 66.0
-offset_bottom = 714.0
+offset_left = 59.0
+offset_top = 82.0
+offset_right = 59.0
+offset_bottom = 92.0
 metadata/_edit_use_anchors_ = true
 
 [node name="ReloadingProgressBar" type="ProgressBar" parent="CanvasLayer/Reloading_Progress"]
