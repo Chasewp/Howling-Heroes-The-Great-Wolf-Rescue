@@ -6,7 +6,8 @@ extends Node
 @export var health : int : set = setter_health, get= getter_health
 @export var armor : int : set = setter_armor, get = getter_armor
 @export var location : String : set = setter_location, get=getter_location
-
+var machete_equip : bool
+var burst_garou : bool
 
 #Setter Name Character
 func setter_name(nm):

@@ -16,7 +16,7 @@ join "Sergant Lupine" rightmost [animation="Slide In Right" length="0.6"]
 [voice path="res://Assets/Music/Dialogue/Intro/Intro-4(Sergeant Lupine - 2) full_radio.wav" volume="0.0"]
 "Sergant Lupine": Your mission is to rescue 27 wolves species across four biomes\: taiga, tundra, grassland, and desert. You will be equipped with a machete and an assault rifle. In order to obtain the key to the cages, you must eliminate the designated boss. Upon completing this objective, the chest containing the key will be dropped, allowing you to proceed with the rescue. Over.
 leave "Sergant Lupine" [animation="Instant Out" length="0.3"]
-[background arg="pixel_art_A_breathtaking_scene.jpeg" fade="0.2"]
+[background arg="res://Assets/Image/Background/Bridge Stone Forest/pixel_art_A_breathtaking_scene.jpeg" fade="0.2"]
 join Player leftmost [animation="Slide In Left"]
 [voice path="res://Assets/Music/Dialogue/Intro/Intro-5(Player - 2) full_radio.wav" volume="0.0"]
 Player: Roger that, Sergeant. Ready and reporting for duty. Over.

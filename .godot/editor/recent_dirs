@@ -1,3 +1,18 @@
+res://Assets/Scences/Level
+res://Assets/Script/Level
+res://Assets/Image/Character/Player/templerun/Machete/Jump_Machete
+res://Assets/Image/Character/Player/templerun/Burst Garou/Iddle_Garou
+res://Assets/Image/Background/Bridge Stone Forest
+res://Assets/Image/Character/Player/templerun/Normal/Iddle
+res://Assets/Image/Character/Player/templerun/Machete/Machete_Air_Ataack_2
+res://Assets/Image/Character/Player/templerun/Machete/Machete_Attack_1
+res://Assets/Image/Character/Player/templerun/Normal/Dead
+res://Assets/Image/Character/Player/templerun/Burst Garou/Run_Garou
+res://Assets/Image/Character/Player/templerun/Machete/iddle_machete
+res://Assets/Scences/Player/Weapons
+res://Assets/Scences/Player/Animation
+res://Assets/Script/Class/Character/Player
+res://Assets/Script/Class/Character/Player/Weapon
 res://
 res://Assets/Script/Controller/Save/Save_Data/player
 res://Assets/Script/Class/Hero

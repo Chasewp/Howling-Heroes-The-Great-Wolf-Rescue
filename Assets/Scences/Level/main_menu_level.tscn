@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://7rxo4e7m6443"]
+[gd_scene load_steps=8 format=3 uid="uid://7rxo4e7m6443"]
 
 [ext_resource type="Texture2D" uid="uid://c134ui8jo4v2o" path="res://Assets/Image/Background/Bridge Stone Forest/pixel_art_A_breathtaking_scene.jpeg" id="1_ne5sm"]
 [ext_resource type="TileSet" uid="uid://v1yhquhbbtmr" path="res://Assets/Tileset/Taiga_Stage.tres" id="2_dhtqf"]
 [ext_resource type="Texture2D" uid="uid://c6wyjiqeqb5vo" path="res://Assets/Image/tilesets/forest_tileset.png" id="3_s8khg"]
 [ext_resource type="PackedScene" uid="uid://w8tfinbfyqkd" path="res://Assets/Scences/Player/Player.tscn" id="4_jfqc7"]
+[ext_resource type="PackedScene" uid="uid://c1ph53byo1unb" path="res://Assets/Scences/UI/Game_Play/GUI_Play.tscn" id="5_5363a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_twdqj"]
 texture = ExtResource("3_s8khg")
@@ -352,6 +353,16 @@ position = Vector2(6, 67)
 polygon = PackedVector2Array(-6, -4, 9.99988, -3, 9, 183, 1097, 184, 1098, 270, 1100, 666, 1237, 667, 1216, -32, 1269, -80, 1294, 779, -155, 765, -212, -156)
 
 [node name="Player" parent="." instance=ExtResource("4_jfqc7")]
-position = Vector2(45, 0)
+position = Vector2(86, 3)
 
-[node name="game_controll" type="Node" parent="Player"]
+[node name="backsound" type="AudioStreamPlayer2D" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+limit_left = -720
+limit_top = -1280
+limit_right = 720
+limit_bottom = 1280
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="GuiPlay" parent="UI" instance=ExtResource("5_5363a")]

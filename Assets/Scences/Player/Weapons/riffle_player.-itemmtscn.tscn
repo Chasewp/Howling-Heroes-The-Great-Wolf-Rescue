@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://ch41pn11nujn7"]
+
+[ext_resource type="Script" path="res://Assets/Script/Class/Character/Player/Weapon/Riffle_Player.gd" id="1_tcwhs"]
+[ext_resource type="Texture2D" uid="uid://b24mc24qnasch" path="res://Assets/Image/Weapon/Player/Brust Garou.png" id="2_85d1c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vycp3"]
+size = Vector2(88, 40)
+
+[node name="Riffle_Player" type="Area2D"]
+script = ExtResource("1_tcwhs")
+
+[node name="BrustGarou" type="Sprite2D" parent="."]
+scale = Vector2(0.3, 0.381)
+texture = ExtResource("2_85d1c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, 1)
+shape = SubResource("RectangleShape2D_vycp3")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,419 +1,740 @@
-[gd_scene load_steps=85 format=3 uid="uid://w8tfinbfyqkd"]
+[gd_scene load_steps=102 format=3 uid="uid://w8tfinbfyqkd"]
 
-[ext_resource type="Script" path="res://Assets/Script/Class/Hero/Hero.gd" id="1_3n0i7"]
-[ext_resource type="PackedScene" uid="uid://cs1y72y70b50n" path="res://Assets/Scences/Dust/jump_dust.tscn" id="2_b24lx"]
-[ext_resource type="PackedScene" uid="uid://c8it7bbd20xdf" path="res://Assets/Scences/Player/Weapons/brust_garou_riffle_player.tscn" id="2_nrsk8"]
-[ext_resource type="AnimationLibrary" uid="uid://bkgq1ncn5vt2d" path="res://Assets/Scences/Player/Animation/Player_animations.tres" id="4_mutx1"]
-[ext_resource type="Texture2D" uid="uid://b86ww0ps3b8q8" path="res://Assets/Image/Character/Player/templerun/Jump/Jump__009.png" id="4_uyrth"]
-[ext_resource type="AnimationLibrary" uid="uid://33b7x1utp1ah" path="res://Assets/Scences/Player/Weapons/Playersword_animations.tres" id="5_dhdlh"]
+[ext_resource type="Script" path="res://Assets/Script/Class/Character/Player/Player.gd" id="1_jwwc7"]
+[ext_resource type="Texture2D" uid="uid://dd2633hm05rbx" path="res://Assets/Image/Character/Player/templerun/Normal/Hit/Hit_01.png" id="2_e77pk"]
+[ext_resource type="PackedScene" uid="uid://cfywm76eklecq" path="res://Assets/Bullets/bullets_player.tscn" id="2_kni5a"]
+[ext_resource type="Texture2D" uid="uid://dyhousb5jwi62" path="res://Assets/Image/Character/Player/templerun/Normal/Dead/Dead__000.png" id="2_qofxl"]
+[ext_resource type="Texture2D" uid="uid://bhmh84fvg0ihq" path="res://Assets/Image/Character/Player/templerun/Burst Garou/Run_Garou/Run_Garou_00.png" id="3_jsmgv"]
+[ext_resource type="Texture2D" uid="uid://cembsc0fpgqk7" path="res://Assets/Image/Character/Player/templerun/Normal/Dead/Dead__001.png" id="3_li0ch"]
+[ext_resource type="Texture2D" uid="uid://b68atvqpm1pyv" path="res://Assets/Image/Character/Player/templerun/Normal/Hit/Hit_02.png" id="3_r06yy"]
+[ext_resource type="Texture2D" uid="uid://ck7ldhk6vbea5" path="res://Assets/Image/Character/Player/templerun/Burst Garou/Run_Garou/Run_Garou_01.png" id="4_3glrk"]
+[ext_resource type="Texture2D" uid="uid://dqk44h2c1wqy8" path="res://Assets/Image/Character/Player/templerun/Normal/Dead/Dead__002.png" id="4_g0w08"]
+[ext_resource type="Texture2D" uid="uid://byd7rvtrbnjxu" path="res://Assets/Image/Character/Player/templerun/Burst Garou/Run_Garou/Run_Garou_02.png" id="5_4t2ur"]
+[ext_resource type="Texture2D" uid="uid://dvrcampeixkr7" path="res://Assets/Image/Character/Player/templerun/Normal/Dead/Dead__003.png" id="5_khtrs"]
+[ext_resource type="Texture2D" uid="uid://bqplv2l6dxbpb" path="res://Assets/Image/Character/Player/templerun/Normal/Dead/Dead__004.png" id="6_04ua3"]
+[ext_resource type="Texture2D" uid="uid://btswfm0kmw84v" path="res://Assets/Image/Character/Player/templerun/Burst Garou/Run_Garou/Run_Garou_03.png" id="6_h4dvo"]
+[ext_resource type="Texture2D" uid="uid://dmf7y8thbevwk" path="res://Assets/Image/Character/Player/templerun/Burst Garou/Run_Garou/Run_Garou_04.png" id="7_03m82"]
+[ext_resource type="Texture2D" uid="uid://cj5fcjdit0i5v" path="res://Assets/Image/Character/Player/templerun/Normal/Dead/Dead__005.png" id="7_db718"]
+[ext_resource type="Texture2D" uid="uid://f8qrh0ibhr2a" path="res://Assets/Image/Character/Player/templerun/Burst Garou/Run_Garou/Run_Garou_05.png" id="8_65xnq"]
+[ext_resource type="Texture2D" uid="uid://d3pv3uj44o567" path="res://Assets/Image/Character/Player/templerun/Normal/Dead/Dead__006.png" id="8_qea6d"]
+[ext_resource type="Texture2D" uid="uid://bi6tkvd3finl0" path="res://Assets/Image/Character/Player/templerun/Burst Garou/Run_Garou/Run_Garou_06.png" id="9_5y4dj"]
+[ext_resource type="Texture2D" uid="uid://cicinmobxy7o3" path="res://Assets/Image/Character/Player/templerun/Normal/Dead/Dead__007.png" id="9_nxc2u"]
+[ext_resource type="Texture2D" uid="uid://dowdxvaocb12q" path="res://Assets/Image/Character/Player/templerun/Normal/Dead/Dead__008.png" id="10_l4ubt"]
+[ext_resource type="Texture2D" uid="uid://bwt5u8pos3t6i" path="res://Assets/Image/Character/Player/templerun/Burst Garou/Run_Garou/Run_Garou_07.png" id="10_qe7ue"]
+[ext_resource type="Texture2D" uid="uid://dkdtwsyu4gj2q" path="res://Assets/Image/Character/Player/templerun/Burst Garou/Run_Garou/Run_Garou_08.png" id="11_8crrv"]
+[ext_resource type="Texture2D" uid="uid://v82witrlb0pk" path="res://Assets/Image/Character/Player/templerun/Normal/Dead/Dead__009.png" id="11_wldgf"]
+[ext_resource type="Texture2D" uid="uid://b4a2rcaifc8yb" path="res://Assets/Image/Character/Player/templerun/Burst Garou/Run_Garou/Run_Garou_09.png" id="12_e8eg8"]
+[ext_resource type="Texture2D" uid="uid://drxheegmv2tpr" path="res://Assets/Image/Character/Player/templerun/Machete/iddle_machete/iddle_machete_0.png" id="14_68ug1"]
+[ext_resource type="Texture2D" uid="uid://dt5km3pgg431f" path="res://Assets/Image/Character/Player/templerun/Normal/Run/Run__000.png" id="14_vgtri"]
+[ext_resource type="Texture2D" uid="uid://rc8eyv1ooqaj" path="res://Assets/Image/Character/Player/templerun/Machete/iddle_machete/iddle_machete_1.png" id="15_831dn"]
+[ext_resource type="Texture2D" uid="uid://docanamjwjddb" path="res://Assets/Image/Character/Player/templerun/Normal/Run/Run__001.png" id="15_gm3us"]
+[ext_resource type="Texture2D" uid="uid://ceaiisoqh0n0x" path="res://Assets/Image/Character/Player/templerun/Normal/Iddle/Idle__000.png" id="15_mfm2e"]
+[ext_resource type="Texture2D" uid="uid://bcvad8luu2u14" path="res://Assets/Image/Character/Player/templerun/Machete/iddle_machete/iddle_machete_2.png" id="16_hn5ve"]
+[ext_resource type="Texture2D" uid="uid://dk4wp6hu0nvxk" path="res://Assets/Image/Character/Player/templerun/Normal/Run/Run__002.png" id="16_rw7bl"]
+[ext_resource type="Texture2D" uid="uid://sobo6qiaed4t" path="res://Assets/Image/Character/Player/templerun/Normal/Iddle/Idle__001.png" id="16_tfixt"]
+[ext_resource type="Texture2D" uid="uid://b4rdjyarknfgp" path="res://Assets/Image/Character/Player/templerun/Normal/Iddle/Idle__002.png" id="17_03qnf"]
+[ext_resource type="Texture2D" uid="uid://8sgygqf2q6u7" path="res://Assets/Image/Character/Player/templerun/Normal/Run/Run__003.png" id="17_oo4tb"]
+[ext_resource type="Texture2D" uid="uid://d0pwdivsp63l8" path="res://Assets/Image/Character/Player/templerun/Machete/iddle_machete/iddle_machete_3.png" id="17_xo245"]
+[ext_resource type="Texture2D" uid="uid://hinluxxtlb0f" path="res://Assets/Image/Character/Player/templerun/Normal/Run/Run__004.png" id="18_0ri52"]
+[ext_resource type="Texture2D" uid="uid://cejeiv1cu48qk" path="res://Assets/Image/Character/Player/templerun/Machete/iddle_machete/iddle_machete_4.png" id="18_rwhvg"]
+[ext_resource type="Texture2D" uid="uid://btgyg5nntg2ap" path="res://Assets/Image/Character/Player/templerun/Normal/Iddle/Idle__003.png" id="18_u6iwt"]
+[ext_resource type="Texture2D" uid="uid://b3ilxbn2k0xub" path="res://Assets/Image/Character/Player/templerun/Machete/iddle_machete/iddle_machete_5.png" id="19_h4vhk"]
+[ext_resource type="Texture2D" uid="uid://crvrp2ndrxk" path="res://Assets/Image/Character/Player/templerun/Normal/Iddle/Idle__004.png" id="19_juuy1"]
+[ext_resource type="Texture2D" uid="uid://dp114xkl2fitm" path="res://Assets/Image/Character/Player/templerun/Normal/Run/Run__005.png" id="19_kkmyt"]
+[ext_resource type="Texture2D" uid="uid://cs5frtmw8lbvn" path="res://Assets/Image/Character/Player/templerun/Normal/Run/Run__006.png" id="20_47hkv"]
+[ext_resource type="Texture2D" uid="uid://cpaqkbma6i2qp" path="res://Assets/Image/Character/Player/templerun/Machete/iddle_machete/iddle_machete_6.png" id="20_feaeq"]
+[ext_resource type="Texture2D" uid="uid://dojmtotshyt12" path="res://Assets/Image/Character/Player/templerun/Normal/Iddle/Idle__005.png" id="20_syltd"]
+[ext_resource type="Texture2D" uid="uid://ddb4aowcqn18r" path="res://Assets/Image/Character/Player/templerun/Normal/Iddle/Idle__006.png" id="21_gqlsn"]
+[ext_resource type="Texture2D" uid="uid://bh8p06tklb04s" path="res://Assets/Image/Character/Player/templerun/Machete/iddle_machete/iddle_machete_7.png" id="21_h02oe"]
+[ext_resource type="Texture2D" uid="uid://cg81flhvigpoi" path="res://Assets/Image/Character/Player/templerun/Normal/Run/Run__007.png" id="21_odthc"]
+[ext_resource type="Texture2D" uid="uid://v5jcmbqvntyg" path="res://Assets/Image/Character/Player/templerun/Normal/Iddle/Idle__007.png" id="22_15j20"]
+[ext_resource type="Texture2D" uid="uid://747yk2tedd70" path="res://Assets/Image/Character/Player/templerun/Machete/iddle_machete/iddle_machete_8.png" id="22_fiy66"]
+[ext_resource type="Texture2D" uid="uid://c3f0qymyx145y" path="res://Assets/Image/Character/Player/templerun/Normal/Run/Run__008.png" id="22_qu07u"]
+[ext_resource type="Texture2D" uid="uid://dag1b7lrvo67s" path="res://Assets/Image/Character/Player/templerun/Machete/iddle_machete/iddle_machete_9.png" id="23_0wmkv"]
+[ext_resource type="Texture2D" uid="uid://664lwhvjrltg" path="res://Assets/Image/Character/Player/templerun/Normal/Iddle/Idle__008.png" id="23_245qy"]
+[ext_resource type="Texture2D" uid="uid://x1xtsq1ta2ob" path="res://Assets/Image/Character/Player/templerun/Normal/Run/Run__009.png" id="23_ftrw7"]
+[ext_resource type="Texture2D" uid="uid://b4pa8ndnaguat" path="res://Assets/Image/Character/Player/templerun/Normal/Jump/Jump__000.png" id="24_bxehv"]
+[ext_resource type="Texture2D" uid="uid://c858738ucbgtj" path="res://Assets/Image/Character/Player/templerun/Burst Garou/Iddle_Garou/Iddle_Garou _00.png" id="24_jbxdu"]
+[ext_resource type="Texture2D" uid="uid://dfagt7xf5jc6a" path="res://Assets/Image/Character/Player/templerun/Normal/Iddle/Idle__009.png" id="24_kgn2c"]
+[ext_resource type="Texture2D" uid="uid://dhvof8qo3fjje" path="res://Assets/Image/Character/Player/templerun/Normal/Jump/Jump__005.png" id="24_nu4s0"]
+[ext_resource type="Texture2D" uid="uid://dqih54xac8qmu" path="res://Assets/Image/Character/Player/templerun/Normal/Jump/Jump__006.png" id="25_52jm5"]
+[ext_resource type="Texture2D" uid="uid://7iclhkixwcmp" path="res://Assets/Image/Character/Player/templerun/Normal/Jump/Jump__001.png" id="25_u07rk"]
+[ext_resource type="Texture2D" uid="uid://djg6c4c64cke2" path="res://Assets/Image/Character/Player/templerun/Burst Garou/Iddle_Garou/Iddle_Garou _01.png" id="25_vmyl1"]
+[ext_resource type="Texture2D" uid="uid://wgh82vayyebt" path="res://Assets/Image/Character/Player/templerun/Normal/Jump/Jump__002.png" id="26_7wdo6"]
+[ext_resource type="Texture2D" uid="uid://bfcdien18yi2u" path="res://Assets/Image/Character/Player/templerun/Normal/Jump/Jump__007.png" id="26_d8ku5"]
+[ext_resource type="Texture2D" uid="uid://bgkdergt4wiq2" path="res://Assets/Image/Character/Player/templerun/Burst Garou/Iddle_Garou/Iddle_Garou _02.png" id="26_uj11a"]
+[ext_resource type="Texture2D" uid="uid://c66cm3p6kadrt" path="res://Assets/Image/Character/Player/templerun/Normal/Jump/Jump__008.png" id="27_73cx7"]
+[ext_resource type="Texture2D" uid="uid://dtffq08t0wagl" path="res://Assets/Image/Character/Player/templerun/Normal/Jump/Jump__003.png" id="27_dhw4m"]
+[ext_resource type="Texture2D" uid="uid://bd1lnsbdtqcs6" path="res://Assets/Image/Character/Player/templerun/Burst Garou/Iddle_Garou/Iddle_Garou _03.png" id="27_dkc3q"]
+[ext_resource type="Texture2D" uid="uid://j2sxgj4ylv8t" path="res://Assets/Image/Character/Player/templerun/Burst Garou/Iddle_Garou/Iddle_Garou _04.png" id="28_0r2yb"]
+[ext_resource type="Texture2D" uid="uid://b86ww0ps3b8q8" path="res://Assets/Image/Character/Player/templerun/Normal/Jump/Jump__009.png" id="28_656xk"]
+[ext_resource type="Texture2D" uid="uid://b08snaysbd45u" path="res://Assets/Image/Character/Player/templerun/Normal/Jump/Jump__004.png" id="28_twjxx"]
+[ext_resource type="Texture2D" uid="uid://m5kpidfkpq41" path="res://Assets/Image/Character/Player/templerun/Burst Garou/Iddle_Garou/Iddle_Garou _05.png" id="29_ksgey"]
+[ext_resource type="Texture2D" uid="uid://bbw1smk1i2wlg" path="res://Assets/Image/Character/Player/templerun/Burst Garou/Iddle_Garou/Iddle_Garou _06.png" id="30_i8sdc"]
+[ext_resource type="Texture2D" uid="uid://bjegyat6323lf" path="res://Assets/Image/Character/Player/templerun/Burst Garou/Iddle_Garou/Iddle_Garou _07.png" id="31_su173"]
+[ext_resource type="Texture2D" uid="uid://t8ymmhk8s5g0" path="res://Assets/Image/Character/Player/templerun/Burst Garou/Iddle_Garou/Iddle_Garou _08.png" id="32_30uly"]
+[ext_resource type="Texture2D" uid="uid://c2hccc6f13qfg" path="res://Assets/Image/Character/Player/templerun/Burst Garou/Iddle_Garou/Iddle_Garou _09.png" id="33_3bqsx"]
 [ext_resource type="Script" path="res://Assets/Script/Class/Character/Player/coordinate.gd" id="39_3g6ho"]
 [ext_resource type="FontFile" uid="uid://bc3fo6p06lixr" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="39_bu8e3"]
-[ext_resource type="PackedScene" uid="uid://cuh433hdbnick" path="res://Assets/Scences/Player/Weapons/Machete.tscn" id="55_qrsxm"]
-
-[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_4l72m"]
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_0l0ao"]
-animation = &"Player_animations/Iddle_machete"
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_wt5yb"]
-animation = &"Player_animations/run_machete"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_2sdt4"]
-advance_mode = 2
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_u6s61"]
-advance_mode = 2
-advance_expression = "velocity.x != 0"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ggkty"]
-advance_mode = 2
-advance_expression = "velocity.x == 0"
-
-[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_wqku0"]
-states/Player_animations_Iddle_machete/node = SubResource("AnimationNodeAnimation_0l0ao")
-states/Player_animations_Iddle_machete/position = Vector2(448, 150)
-states/Player_animations_run_machete/node = SubResource("AnimationNodeAnimation_wt5yb")
-states/Player_animations_run_machete/position = Vector2(704, 240)
-transitions = ["Start", "Player_animations_Iddle_machete", SubResource("AnimationNodeStateMachineTransition_2sdt4"), "Player_animations_Iddle_machete", "Player_animations_run_machete", SubResource("AnimationNodeStateMachineTransition_u6s61"), "Player_animations_run_machete", "Player_animations_Iddle_machete", SubResource("AnimationNodeStateMachineTransition_ggkty")]
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_exmwk"]
-animation = &"Player_animations/Ground_machete"
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_w0h28"]
-animation = &"Player_animations/Jump_machete"
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_rky7d"]
-animation = &"Player_animations/fall_machete"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_a8uyc"]
-advance_mode = 2
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_swiyi"]
-advance_mode = 2
-advance_expression = "not is_on_floor()"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_qfssm"]
-advance_mode = 2
-advance_expression = "velocity.y < 0"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_uabtf"]
-advance_mode = 2
-advance_expression = "velocity.y >= 0"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_bmcuo"]
-switch_mode = 2
-advance_mode = 2
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_vdx8j"]
-advance_mode = 2
-advance_expression = "is_on_floor()"
-
-[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_ofyd7"]
-states/End/position = Vector2(1284, 163)
-states/Locomotion/node = SubResource("AnimationNodeStateMachine_wqku0")
-states/Locomotion/position = Vector2(577, 328)
-states/Player_animations_Ground_machete/node = SubResource("AnimationNodeAnimation_exmwk")
-states/Player_animations_Ground_machete/position = Vector2(1052.14, 130.18)
-states/Player_animations_Jump_machete/node = SubResource("AnimationNodeAnimation_w0h28")
-states/Player_animations_Jump_machete/position = Vector2(463, 130.18)
-states/Player_animations_fall_machete/node = SubResource("AnimationNodeAnimation_rky7d")
-states/Player_animations_fall_machete/position = Vector2(701, -68.82)
-transitions = ["Start", "Locomotion", SubResource("AnimationNodeStateMachineTransition_a8uyc"), "Locomotion", "Player_animations_fall_machete", SubResource("AnimationNodeStateMachineTransition_swiyi"), "Locomotion", "Player_animations_Jump_machete", SubResource("AnimationNodeStateMachineTransition_qfssm"), "Player_animations_Jump_machete", "Player_animations_fall_machete", SubResource("AnimationNodeStateMachineTransition_uabtf"), "Player_animations_Ground_machete", "Locomotion", SubResource("AnimationNodeStateMachineTransition_bmcuo"), "Player_animations_fall_machete", "Player_animations_Ground_machete", SubResource("AnimationNodeStateMachineTransition_vdx8j")]
-graph_offset = Vector2(217.135, 162.119)
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_0seoi"]
-animation = &"Sword_swing_right_1"
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_np20p"]
-animation = &"Sword_swing_right_2"
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_a8of0"]
-animation = &"Sword_swing_right_3"
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_aqw8e"]
-animation = &"Sword_swing_right_airattack_1"
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_wv3af"]
-animation = &"Sword_swing_right_airattack_2"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_d2ws4"]
-advance_mode = 2
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_oijhs"]
-advance_mode = 2
-advance_expression = "_wants_to_attack && not is_on_floor() && _cooldown.is_stopped()"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_y48u8"]
-switch_mode = 2
-advance_mode = 2
-advance_expression = "_wants_to_attack && not is_on_floor()"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_2ljaj"]
-switch_mode = 2
-advance_mode = 2
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_166il"]
-switch_mode = 2
-advance_mode = 2
-advance_expression = "not _wants_to_attack || not is_on_floor()"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ahrhe"]
-advance_mode = 2
-advance_expression = "_wants_to_attack && is_on_floor() && _cooldown.is_stopped()"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ubg0b"]
-switch_mode = 2
-advance_mode = 2
-advance_expression = "_wants_to_attack && is_on_floor()"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_7uduf"]
-switch_mode = 2
-advance_mode = 2
-advance_expression = "_wants_to_attack && is_on_floor()"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_42y5l"]
-switch_mode = 2
-advance_mode = 2
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_srlmi"]
-switch_mode = 2
-advance_mode = 2
-advance_expression = "not _wants_to_attack || is_on_floor()"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_1u742"]
-switch_mode = 2
-advance_mode = 2
-
-[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_rtmhg"]
-states/Movement/node = SubResource("AnimationNodeStateMachine_ofyd7")
-states/Movement/position = Vector2(570, 100)
-states/Sword_swing_right_1/node = SubResource("AnimationNodeAnimation_0seoi")
-states/Sword_swing_right_1/position = Vector2(321.106, 279.758)
-states/Sword_swing_right_2/node = SubResource("AnimationNodeAnimation_np20p")
-states/Sword_swing_right_2/position = Vector2(601.106, 351.758)
-states/Sword_swing_right_3/node = SubResource("AnimationNodeAnimation_a8of0")
-states/Sword_swing_right_3/position = Vector2(931.106, 334.758)
-states/Sword_swing_right_airattack_1/node = SubResource("AnimationNodeAnimation_aqw8e")
-states/Sword_swing_right_airattack_1/position = Vector2(367.106, -82.9959)
-states/Sword_swing_right_airattack_2/node = SubResource("AnimationNodeAnimation_wv3af")
-states/Sword_swing_right_airattack_2/position = Vector2(866.106, -82.9959)
-transitions = ["Start", "Movement", SubResource("AnimationNodeStateMachineTransition_d2ws4"), "Movement", "Sword_swing_right_airattack_1", SubResource("AnimationNodeStateMachineTransition_oijhs"), "Sword_swing_right_airattack_1", "Sword_swing_right_airattack_2", SubResource("AnimationNodeStateMachineTransition_y48u8"), "Sword_swing_right_airattack_2", "Movement", SubResource("AnimationNodeStateMachineTransition_2ljaj"), "Sword_swing_right_1", "Movement", SubResource("AnimationNodeStateMachineTransition_166il"), "Movement", "Sword_swing_right_1", SubResource("AnimationNodeStateMachineTransition_ahrhe"), "Sword_swing_right_1", "Sword_swing_right_2", SubResource("AnimationNodeStateMachineTransition_ubg0b"), "Sword_swing_right_2", "Sword_swing_right_3", SubResource("AnimationNodeStateMachineTransition_7uduf"), "Sword_swing_right_3", "Movement", SubResource("AnimationNodeStateMachineTransition_42y5l"), "Sword_swing_right_airattack_1", "Movement", SubResource("AnimationNodeStateMachineTransition_srlmi"), "Sword_swing_right_2", "Movement", SubResource("AnimationNodeStateMachineTransition_1u742")]
-graph_offset = Vector2(-48.8941, 26.7487)
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_l6utg"]
-animation = &"Player_animations/Hit_machete"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_tio3p"]
-advance_mode = 2
-advance_expression = "_is_hit"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_3rybj"]
-advance_mode = 2
-advance_expression = "not _is_hit"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_56kmm"]
-advance_mode = 2
-
-[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_08jqj"]
-states/Attack/node = SubResource("AnimationNodeStateMachine_rtmhg")
-states/Attack/position = Vector2(521, 124.225)
-states/Player_animations_Hit_machete/node = SubResource("AnimationNodeAnimation_l6utg")
-states/Player_animations_Hit_machete/position = Vector2(521, 23.2254)
-transitions = ["Attack", "Player_animations_Hit_machete", SubResource("AnimationNodeStateMachineTransition_tio3p"), "Player_animations_Hit_machete", "Attack", SubResource("AnimationNodeStateMachineTransition_3rybj"), "Start", "Attack", SubResource("AnimationNodeStateMachineTransition_56kmm")]
-graph_offset = Vector2(0, -24.7746)
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_bvlf8"]
-animation = &"Player_animations/Iddle"
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_d0tsr"]
-animation = &"Player_animations/run"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_k08dh"]
-advance_mode = 2
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_u0puo"]
-advance_mode = 2
-advance_expression = "velocity.x != 0"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_2o22a"]
-advance_mode = 2
-advance_expression = "velocity.x == 0"
-
-[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_lo3xr"]
-states/End/position = Vector2(1005, 45)
-states/Player_animations_Iddle/node = SubResource("AnimationNodeAnimation_bvlf8")
-states/Player_animations_Iddle/position = Vector2(400, 100)
-states/Player_animations_run/node = SubResource("AnimationNodeAnimation_d0tsr")
-states/Player_animations_run/position = Vector2(757, 100)
-transitions = ["Start", "Player_animations_Iddle", SubResource("AnimationNodeStateMachineTransition_k08dh"), "Player_animations_Iddle", "Player_animations_run", SubResource("AnimationNodeStateMachineTransition_u0puo"), "Player_animations_run", "Player_animations_Iddle", SubResource("AnimationNodeStateMachineTransition_2o22a")]
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_53qgc"]
-animation = &"Player_animations/Ground"
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_7a17p"]
-animation = &"Player_animations/Jump"
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_c5hce"]
-animation = &"Player_animations/fall"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_5iyf1"]
-advance_mode = 2
-advance_expression = "velocity.y < 0"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_nmcdr"]
-switch_mode = 2
-advance_mode = 2
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_u17a3"]
-advance_mode = 2
-advance_expression = "not is_on_floor()"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ml1ap"]
-advance_mode = 2
-advance_expression = "is_on_floor()"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ki713"]
-advance_mode = 2
-advance_expression = "velocity.y >= 0"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_n1u86"]
-advance_mode = 2
-
-[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_osfs5"]
-states/End/position = Vector2(1015, 100)
-states/Locomotion/node = SubResource("AnimationNodeStateMachine_lo3xr")
-states/Locomotion/position = Vector2(615, 124.5)
-states/Player_animations_Ground/node = SubResource("AnimationNodeAnimation_53qgc")
-states/Player_animations_Ground/position = Vector2(909, 9)
-states/Player_animations_Jump/node = SubResource("AnimationNodeAnimation_7a17p")
-states/Player_animations_Jump/position = Vector2(361, 39)
-states/Player_animations_fall/node = SubResource("AnimationNodeAnimation_c5hce")
-states/Player_animations_fall/position = Vector2(615, -84)
-transitions = ["Locomotion", "Player_animations_Jump", SubResource("AnimationNodeStateMachineTransition_5iyf1"), "Player_animations_Ground", "Locomotion", SubResource("AnimationNodeStateMachineTransition_nmcdr"), "Locomotion", "Player_animations_fall", SubResource("AnimationNodeStateMachineTransition_u17a3"), "Player_animations_fall", "Player_animations_Ground", SubResource("AnimationNodeStateMachineTransition_ml1ap"), "Player_animations_Jump", "Player_animations_fall", SubResource("AnimationNodeStateMachineTransition_ki713"), "Start", "Locomotion", SubResource("AnimationNodeStateMachineTransition_n1u86")]
-graph_offset = Vector2(0, 20.3524)
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_7woio"]
-animation = &"Player_animations/Dead"
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_st34m"]
-animation = &"Player_animations/Dead_ground"
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_rj272"]
-animation = &"Player_animations/Hit"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_mulbu"]
-advance_mode = 2
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_pgogi"]
-advance_mode = 2
-advance_expression = "_is_hit"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_qx18v"]
-advance_mode = 2
-advance_expression = "not _is_hit"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_3ch7f"]
-advance_mode = 2
-advance_expression = "_is_dead"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ne5lh"]
-advance_mode = 2
-advance_expression = "not _is_dead"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_p4l4b"]
-switch_mode = 2
-advance_mode = 2
-advance_expression = "is_on_floor()"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_khrjo"]
-advance_mode = 2
-advance_expression = "not _is_dead"
-
-[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_o8ml4"]
-states/Movement/node = SubResource("AnimationNodeStateMachine_osfs5")
-states/Movement/position = Vector2(449, 100)
-states/Player_animations_Dead/node = SubResource("AnimationNodeAnimation_7woio")
-states/Player_animations_Dead/position = Vector2(469, 247.225)
-states/Player_animations_Dead_ground/node = SubResource("AnimationNodeAnimation_st34m")
-states/Player_animations_Dead_ground/position = Vector2(813, 247.225)
-states/Player_animations_Hit/node = SubResource("AnimationNodeAnimation_rj272")
-states/Player_animations_Hit/position = Vector2(675, 17)
-transitions = ["Start", "Movement", SubResource("AnimationNodeStateMachineTransition_mulbu"), "Movement", "Player_animations_Hit", SubResource("AnimationNodeStateMachineTransition_pgogi"), "Player_animations_Hit", "Movement", SubResource("AnimationNodeStateMachineTransition_qx18v"), "Movement", "Player_animations_Dead", SubResource("AnimationNodeStateMachineTransition_3ch7f"), "Player_animations_Dead", "Movement", SubResource("AnimationNodeStateMachineTransition_ne5lh"), "Player_animations_Dead", "Player_animations_Dead_ground", SubResource("AnimationNodeStateMachineTransition_p4l4b"), "Player_animations_Dead_ground", "Movement", SubResource("AnimationNodeStateMachineTransition_khrjo")]
-graph_offset = Vector2(0, -11.4468)
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ct6kf"]
-advance_mode = 2
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_oxh1d"]
-advance_mode = 2
-advance_expression = "_has_machete"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_i5yk5"]
-advance_mode = 2
-advance_expression = "not _has_machete"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_sn2du"]
-advance_mode = 2
-advance_expression = "_has_brust_garou"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_s7e8i"]
-advance_mode = 2
-advance_expression = "not _has_brust_garou"
-
-[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_spo17"]
-"states/With Brush Garou/node" = SubResource("AnimationNodeStateMachine_4l72m")
-"states/With Brush Garou/position" = Vector2(673, 171)
-"states/With Machele/node" = SubResource("AnimationNodeStateMachine_08jqj")
-"states/With Machele/position" = Vector2(620, 18)
-states/Without_weapon/node = SubResource("AnimationNodeStateMachine_o8ml4")
-states/Without_weapon/position = Vector2(457, 100)
-transitions = ["Start", "Without_weapon", SubResource("AnimationNodeStateMachineTransition_ct6kf"), "Without_weapon", "With Machele", SubResource("AnimationNodeStateMachineTransition_oxh1d"), "With Machele", "Without_weapon", SubResource("AnimationNodeStateMachineTransition_i5yk5"), "Without_weapon", "With Brush Garou", SubResource("AnimationNodeStateMachineTransition_sn2du"), "With Brush Garou", "Without_weapon", SubResource("AnimationNodeStateMachineTransition_s7e8i")]
+[ext_resource type="Texture2D" uid="uid://bicqoyn8dg5ne" path="res://Assets/Image/Character/Player/templerun/Machete/Machete_Attack_1/Attack 1.png" id="44_aswcd"]
+[ext_resource type="Texture2D" uid="uid://0ktggmp6xwm0" path="res://Assets/Image/Character/Player/templerun/Machete/Machete_Air_Ataack_2/Air_Attack_2_3.png" id="44_fy5ao"]
+[ext_resource type="Texture2D" uid="uid://b0ovh4run5d7n" path="res://Assets/Image/Character/Player/templerun/Machete/Machete_Attack_1/Attack 2.png" id="45_d6rpd"]
+[ext_resource type="Texture2D" uid="uid://cm8ibbf7lxftj" path="res://Assets/Image/Character/Player/templerun/Machete/Machete_Air_Ataack_2/Air_Attack_2_2.png" id="45_sidip"]
+[ext_resource type="Texture2D" uid="uid://bl0jukckmvcly" path="res://Assets/Image/Character/Player/templerun/Machete/Machete_Air_Ataack_2/Air_Attack_2_1.png" id="46_02lja"]
+[ext_resource type="Texture2D" uid="uid://coe3goknci4wv" path="res://Assets/Image/Character/Player/templerun/Machete/Machete_Attack_1/Attack 3.png" id="46_dy44f"]
+[ext_resource type="Texture2D" uid="uid://dvlgslvldxv38" path="res://Assets/Image/Character/Player/templerun/Machete/Jump_Machete/Jump_Machete_0.png" id="55_d6o0w"]
+[ext_resource type="Texture2D" uid="uid://ct4o1etco0r3l" path="res://Assets/Image/Character/Player/templerun/Machete/Jump_Machete/Jump_Machete_1.png" id="56_keew1"]
+[ext_resource type="Texture2D" uid="uid://1n77t6l4fdlx" path="res://Assets/Image/Character/Player/templerun/Machete/Jump_Machete/Jump_Machete_2.png" id="57_bg5n5"]
+[ext_resource type="Texture2D" uid="uid://bjhwv1e7uuo5y" path="res://Assets/Image/Character/Player/templerun/Machete/Jump_Machete/Jump_Machete_3.png" id="58_63pn0"]
+[ext_resource type="Texture2D" uid="uid://c7m0bal5ggqri" path="res://Assets/Image/Character/Player/templerun/Machete/Jump_Machete/Jump_Machete_4.png" id="59_me8lr"]
+[ext_resource type="Texture2D" uid="uid://d12qj66aawmi8" path="res://Assets/Image/Character/Player/templerun/Machete/Jump_Machete/Jump_Machete_5.png" id="60_55bce"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pm05c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_qofxl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_li0ch")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_g0w08")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_khtrs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_04ua3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_db718")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_qea6d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_nxc2u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_l4ubt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_wldgf")
+}],
+"loop": true,
+"name": &"died",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_e77pk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_r06yy")
+}],
+"loop": false,
+"name": &"hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_mfm2e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_tfixt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_03qnf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_u6iwt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_juuy1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_syltd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_gqlsn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_15j20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_245qy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_kgn2c")
+}],
+"loop": true,
+"name": &"iddle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_jbxdu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_vmyl1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_uj11a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_dkc3q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_0r2yb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_ksgey")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_i8sdc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_su173")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_30uly")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_3bqsx")
+}],
+"loop": true,
+"name": &"iddle_brust_garou",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_68ug1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_831dn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_hn5ve")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_xo245")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_rwhvg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_h4vhk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_feaeq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_h02oe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_fiy66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_0wmkv")
+}],
+"loop": true,
+"name": &"iddle_machete",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_nu4s0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_52jm5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_d8ku5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_73cx7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_656xk")
+}],
+"loop": false,
+"name": &"jump_down",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"jump_down_machete",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_bxehv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_u07rk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_7wdo6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_dhw4m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_twjxx")
+}],
+"loop": false,
+"name": &"jump_up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("55_d6o0w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_keew1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_bg5n5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_63pn0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_me8lr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_55bce")
+}],
+"loop": false,
+"name": &"jump_up_machete",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("44_fy5ao")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_sidip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_02lja")
+}],
+"loop": false,
+"name": &"machete_air_attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("44_aswcd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_d6rpd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_dy44f")
+}],
+"loop": false,
+"name": &"machete_attack",
+"speed": 9.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"machete_running",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_vgtri")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_gm3us")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_rw7bl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_oo4tb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_0ri52")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_kkmyt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_47hkv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_odthc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_qu07u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_ftrw7")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_jsmgv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3glrk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_4t2ur")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_h4dvo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_03m82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_65xnq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_5y4dj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_qe7ue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_8crrv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_e8eg8")
+}],
+"loop": false,
+"name": &"run_shoot",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_cmxj0"]
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["died"]
+}
+
+[sub_resource type="Animation" id="Animation_lfn4t"]
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["hurt"]
+}
+
+[sub_resource type="Animation" id="Animation_k4hw4"]
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["iddle"]
+}
+
+[sub_resource type="Animation" id="Animation_3f3ui"]
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["iddle_machete"]
+}
+
+[sub_resource type="Animation" id="Animation_rulpj"]
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["jump_down"]
+}
+
+[sub_resource type="Animation" id="Animation_ps3s0"]
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["jump_up"]
+}
+
+[sub_resource type="Animation" id="Animation_1sn6d"]
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 2]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["machete_air_attack"]
+}
+
+[sub_resource type="Animation" id="Animation_2akq7"]
+length = 0.333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.111111, 0.222222),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 2]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["machete_attack"]
+}
+
+[sub_resource type="Animation" id="Animation_21e22"]
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["run"]
+}
+
+[sub_resource type="Animation" id="Animation_s21l3"]
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["run_shoot"]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_du124"]
+_data = {
+"died": SubResource("Animation_cmxj0"),
+"hurt": SubResource("Animation_lfn4t"),
+"iddle": SubResource("Animation_k4hw4"),
+"iddle_machete": SubResource("Animation_3f3ui"),
+"jump_down": SubResource("Animation_rulpj"),
+"jump_up": SubResource("Animation_ps3s0"),
+"machete_air_attack": SubResource("Animation_1sn6d"),
+"machete_attack": SubResource("Animation_2akq7"),
+"run": SubResource("Animation_21e22"),
+"run_shoot": SubResource("Animation_s21l3")
+}
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u3xmu"]
 size = Vector2(56, 20)
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_n8uk2"]
-radius = 23.0
-height = 96.0
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6vr3q"]
-size = Vector2(55, 58)
 
 [node name="Player" type="CharacterBody2D"]
 process_mode = 3
 collision_layer = 65535
 collision_mask = 263
-script = ExtResource("1_3n0i7")
-_jump_dust = ExtResource("2_b24lx")
-_has_machete = true
+script = ExtResource("1_jwwc7")
+bullet_scence = ExtResource("2_kni5a")
 
-[node name="Riffle" type="Node2D" parent="."]
-
-[node name="Brust Garou-Riffle-Player" parent="Riffle" instance=ExtResource("2_nrsk8")]
-
-[node name="Weapon" type="Node2D" parent="."]
-visible = false
-position = Vector2(1, 2)
-
-[node name="Machete" parent="Weapon" instance=ExtResource("55_qrsxm")]
-position = Vector2(48, 0)
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("4_uyrth")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.257053, 0.227881)
+sprite_frames = SubResource("SpriteFrames_pm05c")
+animation = &"jump_up_machete"
+frame = 5
+frame_progress = 1.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": ExtResource("5_dhdlh"),
-"Player_animations": ExtResource("4_mutx1")
+"": SubResource("AnimationLibrary_du124")
 }
-
-[node name="AnimationTree" type="AnimationTree" parent="AnimationPlayer"]
-root_node = NodePath("../..")
-libraries = {
-"": ExtResource("5_dhdlh"),
-"Player_animations": ExtResource("4_mutx1")
-}
-tree_root = SubResource("AnimationNodeStateMachine_spo17")
-advance_expression_base_node = NodePath("../..")
-anim_player = NodePath("..")
+autoplay = "iddle"
 
 [node name="foot" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2(3, 51)
+position = Vector2(3, 45)
 shape = SubResource("RectangleShape2D_u3xmu")
 
-[node name="HurtBox" type="Area2D" parent="."]
-visible = false
-
-[node name="Invicible" type="Timer" parent="HurtBox"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
-shape = SubResource("CapsuleShape2D_n8uk2")
-debug_color = Color(0.741176, 0.282353, 0.921569, 0.419608)
-
-[node name="HitBox" type="Area2D" parent="."]
-visible = false
-position = Vector2(-1, 0)
-
-[node name="InputBuffer" type="Timer" parent="HitBox"]
-
-[node name="Cooldown" type="Timer" parent="HitBox"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
-position = Vector2(3.5, 32)
-shape = SubResource("RectangleShape2D_6vr3q")
-debug_color = Color(1, 0, 0, 0.682353)
-
 [node name="Text" type="Control" parent="."]
-visible = false
-custom_minimum_size = Vector2(350, 0)
+custom_minimum_size = Vector2(300, 0)
 layout_mode = 3
 anchors_preset = 0
 offset_left = -80.0
 offset_top = -82.0
 offset_right = 270.0
 offset_bottom = -61.0
+size_flags_horizontal = 3
 script = ExtResource("39_3g6ho")
 
 [node name="Coordinate" type="RichTextLabel" parent="Text"]
@@ -421,29 +742,29 @@ custom_minimum_size = Vector2(300, 32)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.02
-anchor_top = 1.0
 anchor_right = 0.877
-anchor_bottom = 2.905
-offset_top = -21.0
+anchor_bottom = 1.524
 offset_right = 0.0499878
-offset_bottom = -21.005
+offset_bottom = -0.00400162
 theme_override_constants/outline_size = 1
 theme_override_fonts/normal_font = ExtResource("39_bu8e3")
 theme_override_font_sizes/normal_font_size = 18
 text = "Coordinate : (???.????, ???.????)"
 
-[node name="Ammo" type="Label" parent="Text"]
-layout_mode = 0
-offset_top = 20.0
-offset_right = 40.0
-offset_bottom = 43.0
-text = "Ammo : "
-
 [node name="SFX" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(0, -1.90735e-06)
 bus = &"Sound Effects"
 
-[connection signal="update_ammo" from="." to="Text" method="_on_player_update_ammo"]
-[connection signal="update_coordinate" from="." to="Text" method="_on_player_update_coordinate"]
-[connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]
-[connection signal="area_entered" from="HitBox" to="." method="_on_hit_box_area_entered"]
+[node name="Bullets" type="Node" parent="."]
+
+[node name="bullets_shoot" type="Marker2D" parent="Bullets"]
+unique_name_in_owner = true
+position = Vector2(74, 17)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+enabled = false
+zoom = Vector2(2.5, 2.5)
+limit_left = -5
+limit_top = -64
+limit_right = 1280
+limit_bottom = 360
