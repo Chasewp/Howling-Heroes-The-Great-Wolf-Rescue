@@ -4,13 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://bvig0puakvmja" path="res://Assets/Image/Weapon/Player/machete.png" id="1_uj46q"]
 [ext_resource type="AudioStream" uid="uid://cjjde10wuh4tp" path="res://Assets/Music/SFX/Weapon/Slash/sword-slash-and-swing-185432.mp3" id="3_wn2ht"]
 
-[node name="Machete" type="RigidBody2D"]
+[node name="Machete" type="Area2D"]
 position = Vector2(27, -1)
-lock_rotation = true
-freeze = true
-freeze_mode = 1
-max_contacts_reported = 2
-contact_monitor = true
 script = ExtResource("1_knih7")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

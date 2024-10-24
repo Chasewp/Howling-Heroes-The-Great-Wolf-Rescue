@@ -59,7 +59,7 @@ signal died()
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 var _direction : float
-
+var coordinate = Data_Progress.new()
 func _ready():
 	_speed *= GlobalTilesets.ppt
 	_acceleration *= GlobalTilesets.ppt
@@ -312,7 +312,7 @@ func verify_save_directory(path: String):
 func _process(_delta):
 	emit_signal("update_coordinate",self.position)
 	#emit_signal("update_ammo",)	
-	save_progress.progress_data.UpdatePos(self.position)
+	coordinate.UpdatePos(self.position)
 	#if not _is_facing_left && sign(_direction) == -1:
 		#face_left()
 	#elif _is_facing_left && sign(_direction) == 1:

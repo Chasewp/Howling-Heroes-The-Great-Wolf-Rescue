@@ -1,19 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://d2kow5kkphlx6"]
+[gd_scene load_steps=7 format=3 uid="uid://d2kow5kkphlx6"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Mission_Log/mission.gd" id="1_3lxni"]
-[ext_resource type="Texture2D" uid="uid://qufpattfuq0y" path="res://Assets/Image/Background/Mission Log/1x/Asset 3.png" id="1_is4q6"]
+[ext_resource type="Texture2D" uid="uid://cc182xnmc7mgk" path="res://Assets/Image/Background/Mission Log/1x/Asset 3.png" id="1_is4q6"]
 [ext_resource type="Theme" uid="uid://cya18eaoptu42" path="res://Assets/Theme/Player_Name/Player_Name.tres" id="1_ljw8f"]
-[ext_resource type="FontFile" uid="uid://fpssaux4ispl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="1_ng2ve"]
-[ext_resource type="FontFile" uid="uid://djx6ba5h1a3qs" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="4_dgrlg"]
-[ext_resource type="FontFile" uid="uid://btxatlr1vkceb" path="res://Assets/Fonts/DisposableDroidBB_ital.ttf" id="5_ob1tj"]
-
-[sub_resource type="Animation" id="Animation_jfsuu"]
-resource_name = "Close"
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_fv4so"]
-_data = {
-"Close": SubResource("Animation_jfsuu")
-}
+[ext_resource type="FontFile" uid="uid://bc3fo6p06lixr" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="1_ng2ve"]
+[ext_resource type="FontFile" uid="uid://byrrpk8yu3w10" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="4_dgrlg"]
+[ext_resource type="FontFile" uid="uid://dknuby8pwv0rl" path="res://Assets/Fonts/DisposableDroidBB_ital.ttf" id="5_ob1tj"]
 
 [node name="Mission" type="Control"]
 layout_mode = 3
@@ -26,6 +18,7 @@ grow_vertical = 2
 script = ExtResource("1_3lxni")
 
 [node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(184, 216)
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.122
@@ -112,8 +105,3 @@ theme_override_fonts/font = ExtResource("5_ob1tj")
 text = " 0 / 0"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="Animate_UI" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_fv4so")
-}

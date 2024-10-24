@@ -1,34 +1,37 @@
-[style name="Pixelize_Visual_Novel"]
-[voice path="res://Assets/Music/Dialogue/Intro/Intro -1.wav" volume="0.0"]
-At UWF HQ (United Wolves Federation Headquarters Sergeant Lupine Calls player via Com-link"
-[background arg="res://Assets/Image/Background/Intro_Com-link/Intro_com-link.png" fade="0.2" transition="Simple Fade"]
-join "Sergant Lupine" rightmost [animation="Slide In Right" length="0.6"]
-[voice path="res://Assets/Music/Dialogue/Intro/Intro-2(Sergeant Lupine - 1) full_radio.wav" volume="0.0"]
-"Sergant Lupine": This is Sergeant Lupine from United Wolves Federation Headquarters. Do you copy? Over.
-leave "Sergant Lupine" [animation="Instant Out" length="0.3"]
-[background arg="res://Assets/Image/Background/Bridge Stone Forest/pixel_art_A_breathtaking_scene.jpeg" fade="0.2"]
-join Player leftmost [animation="Slide In Left"]
-[voice path="res://Assets/Music/Dialogue/Intro/Intro-3(Player - 1) full_radio.wav" volume="0.0"]
-Player: Copy and clear, Sergeant. This is the Player the wolf ranger and wolf biologist. Over.
-leave Player [animation="Instant Out"]
-[background arg="res://Assets/Image/Background/Intro_Com-link/Intro_com-link.png" fade="0.2" transition="Simple Fade"]
-join "Sergant Lupine" rightmost [animation="Slide In Right" length="0.6"]
-[voice path="res://Assets/Music/Dialogue/Intro/Intro-4(Sergeant Lupine - 2) full_radio.wav" volume="0.0"]
-"Sergant Lupine": Your mission is to rescue 27 wolves species across four biomes\: taiga, tundra, grassland, and desert. You will be equipped with a machete and an assault rifle. In order to obtain the key to the cages, you must eliminate the designated boss. Upon completing this objective, the chest containing the key will be dropped, allowing you to proceed with the rescue. Over.
-leave "Sergant Lupine" [animation="Instant Out" length="0.3"]
-[background arg="res://Assets/Image/Background/Bridge Stone Forest/pixel_art_A_breathtaking_scene.jpeg" fade="0.2"]
-join Player leftmost [animation="Slide In Left"]
-[voice path="res://Assets/Music/Dialogue/Intro/Intro-5(Player - 2) full_radio.wav" volume="0.0"]
-Player: Roger that, Sergeant. Ready and reporting for duty. Over.
-leave Player [animation="Instant Out"]
-[background arg="res://Assets/Image/Background/Intro_Com-link/Intro_com-link.png" fade="0.2" transition="Simple Fade"]
-join "Sergant Lupine" rightmost [animation="Slide In Right" length="0.6"]
-[voice path="res://Assets/Music/Dialogue/Intro/Intro-6(Sergeant Lupine - 3) full_radio.wav" volume="0.0" bus="Master"]
-"Sergant Lupine": Very well. If you are prepared, proceed with caution. Farewell, and good luck on your mission. Sergeant Lupine, over and out.
-leave "Sergant Lupine" [animation="Instant Out" length="0.3"]
-[background arg="res://Assets/Image/Background/Bridge Stone Forest/pixel_art_A_breathtaking_scene.jpeg" fade="0.2"]
-join Player leftmost [animation="Slide In Left"]
-[voice path="res://Assets/Music/Dialogue/Intro/Intro-7(Player- 3) full_radio.wav" volume="0.0" bus="Master"]
-Player: Player, over and out.
-leave Player [animation="Instant Out"]
-[signal arg="Change_Scence"]
+- Do you want skip the mission briffing?
+- Yes
+	[signal arg="Change_Scence"]
+- No
+	[style name="Pixelize_Visual_Novel"]
+	[voice path="res://Assets/Music/Dialogue/Intro/Intro -1.wav" volume="0.0"]
+	At UWF HQ (United Wolves Federation Headquarters Sergeant Lupine Calls player via Com-link"
+	[background arg="res://Assets/Image/Background/Intro_Com-link/Intro_com-link.png" fade="0.2" transition="Simple Fade"]
+	join "Sergant Lupine" rightmost [animation="Slide In Right" length="0.6"]
+	[voice path="res://Assets/Music/Dialogue/Intro/Intro-2(Sergeant Lupine - 1) full_radio.wav" volume="0.0"]
+	"Sergant Lupine": This is Sergeant Lupine from United Wolves Federation Headquarters. Do you copy? Over.
+	leave "Sergant Lupine" [animation="Instant Out" length="0.3"]
+	[background arg="res://Assets/Image/Background/Bridge Stone Forest/pixel_art_A_breathtaking_scene.jpeg" fade="0.2"]
+	join Player leftmost [animation="Slide In Left"]
+	[voice path="res://Assets/Music/Dialogue/Intro/Intro-3(Player - 1) full_radio.wav" volume="0.0"]
+	Player: Copy and clear, Sergeant. This is the Player the wolf ranger and wolf biologist. Over.
+	leave Player [animation="Instant Out"]
+	join "Sergant Lupine" rightmost [animation="Slide In Right" length="0.6"]
+	[voice path="res://Assets/Music/Dialogue/Intro/Intro-4(Sergeant Lupine - 2) full_radio.wav" volume="0.0"]
+	"Sergant Lupine": Your mission is to rescue 27 wolves species across four biomes\: taiga, tundra, grassland, and desert. You will be equipped with a machete and an assault rifle. In order to obtain the key to the cages, you must eliminate the designated boss. Upon completing this objective, the chest containing the key will be dropped, allowing you to proceed with the rescue. Over.
+	leave "Sergant Lupine" [animation="Instant Out" length="0.3"]
+	[background arg="res://Assets/Image/Background/Bridge Stone Forest/pixel_art_A_breathtaking_scene.jpeg" fade="0.2"]
+	join Player leftmost [animation="Slide In Left"]
+	[voice path="res://Assets/Music/Dialogue/Intro/Intro-5(Player - 2) full_radio.wav" volume="0.0"]
+	Player: Roger that, Sergeant. Ready and reporting for duty. Over.
+	leave Player [animation="Instant Out"]
+	[background arg="res://Assets/Image/Background/Intro_Com-link/Intro_com-link.png" fade="0.2" transition="Simple Fade"]
+	join "Sergant Lupine" rightmost [animation="Slide In Right" length="0.6"]
+	[voice path="res://Assets/Music/Dialogue/Intro/Intro-6(Sergeant Lupine - 3) full_radio.wav" volume="0.0" bus="Master"]
+	"Sergant Lupine": Very well. If you are prepared, proceed with caution. Farewell, and good luck on your mission. Sergeant Lupine, over and out.
+	leave "Sergant Lupine" [animation="Instant Out" length="0.3"]
+	[background arg="res://Assets/Image/Background/Bridge Stone Forest/pixel_art_A_breathtaking_scene.jpeg" fade="0.2"]
+	join Player leftmost [animation="Slide In Left"]
+	[voice path="res://Assets/Music/Dialogue/Intro/Intro-7(Player- 3) full_radio.wav" volume="0.0" bus="Master"]
+	Player: Player, over and out.
+	leave Player [animation="Instant Out"]
+	[signal arg="Change_Scence"]

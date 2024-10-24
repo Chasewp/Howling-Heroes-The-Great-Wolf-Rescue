@@ -6,19 +6,14 @@ extends Control
 @onready var Armor = $Armor_Bar
 @onready var pause = $PauseMenu
 
-var pausemenu = load("res://Assets/Scences/UI/Pause Menu/Pause_Menu.tscn").instantiate()
-func _ready():
-	character_name.set_text(player.getter_name())
-	biome_location.set_text("Location : "+ player.getter_location())
-	Health.set_value_no_signal(player.getter_health())
-	Armor.set_value_no_signal(player.getter_armor())
+var save_progress = preload("user://Save/Progress/Save_Progress.tres")
 
-func _input(_event):
-	if Input.is_action_just_pressed("pause"):
-		pause.visible = !pause.visible
-		var img = get_viewport().get_texture().get_image()
-		pausemenu.set_save_game_image(img)
-		
+func _ready():
+	character_name.set_text(save_progress.player_name)
+	biome_location.set_text("Location : "+ save_progress.player_biome_location)
+	Health.set_value_no_signal(save_progress.player_health)
+	Armor.set_value_no_signal(save_progress.player_armor)
+	
 	
 func _on_player_health_changed(percentage:float):
 	Health.set_value_no_signal(percentage)

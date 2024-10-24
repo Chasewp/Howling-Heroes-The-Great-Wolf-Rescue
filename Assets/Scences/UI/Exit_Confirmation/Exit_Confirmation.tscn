@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Exit_Confirmation/Exit Confirmation.gd" id="1_fief4"]
 [ext_resource type="Theme" uid="uid://br2uoqpi38ygc" path="res://Assets/Theme/Dialouge/Exit_Confirmation.tres" id="2_0k7ty"]
-[ext_resource type="AudioStream" uid="uid://c8ygb4nqbs03p" path="res://Assets/Music/Warning/exclamation-101soundboards.mp3" id="3_ct1th"]
-[ext_resource type="AudioStream" uid="uid://ty2bg0clrp0t" path="res://Assets/Music/All Button/Quit_Button.mp3" id="4_87xpo"]
-[ext_resource type="AudioStream" uid="uid://bpkfmkyhxykdk" path="res://Assets/Music/Dialogues/Good bye/Goodbye.mp3" id="5_5hn7p"]
-[ext_resource type="FontFile" uid="uid://daews5bmpatgf" path="res://Assets/Fonts/WolfpackHalloweed-EaGOl.otf" id="6_lj7vy"]
+[ext_resource type="AudioStream" uid="uid://bp1h3g43kro78" path="res://Assets/Music/Warning/exclamation-101soundboards.mp3" id="3_ct1th"]
+[ext_resource type="AudioStream" uid="uid://guchraf6vrit" path="res://Assets/Music/All Button/Quit_Button.mp3" id="4_87xpo"]
+[ext_resource type="AudioStream" uid="uid://cs6b1pydvqdxc" path="res://Assets/Music/Dialogues/Good bye/Goodbye.mp3" id="5_5hn7p"]
+[ext_resource type="FontFile" uid="uid://crlgm0cmy2evj" path="res://Assets/Fonts/WolfpackHalloweed-EaGOl.otf" id="6_lj7vy"]
 
 [node name="ExitConfirmation" type="Control"]
 layout_mode = 3

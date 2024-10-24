@@ -14,4 +14,4 @@ func _on_area_2d_body_entered(body):
 		get_tree().root.remove_child(self)
 	
 func _on_rescue():
-	mission_stat.update_wolf_rescue()
+	missiondatastat.update_wolf_rescue()

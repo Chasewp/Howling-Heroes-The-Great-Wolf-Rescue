@@ -1,0 +1,67 @@
+[gd_scene load_steps=10 format=3 uid="uid://hq77207glf4i"]
+
+[ext_resource type="Texture2D" uid="uid://dmxtrl3j6foon" path="res://Assets/Image/Sprites/Pickups/item-feedback.png" id="1_wj5ik"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gepdf"]
+atlas = ExtResource("1_wj5ik")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qte17"]
+atlas = ExtResource("1_wj5ik")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0imko"]
+atlas = ExtResource("1_wj5ik")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_espjd"]
+atlas = ExtResource("1_wj5ik")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ootk0"]
+atlas = ExtResource("1_wj5ik")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_33atc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gepdf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qte17")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0imko")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_espjd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ootk0")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_5yf2p"]
+resource_name = "vanish"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_g08b2"]
+_data = {
+"vanish": SubResource("Animation_5yf2p")
+}
+
+[node name="Vanish" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(25, 25)
+sprite_frames = SubResource("SpriteFrames_33atc")
+frame = 4
+frame_progress = 1.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_g08b2")
+}

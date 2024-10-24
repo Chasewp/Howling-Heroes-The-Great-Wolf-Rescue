@@ -1,3 +1,4 @@
+"Singleton-Loading Screen"
 extends Node
 
 signal progress_changed(progress)

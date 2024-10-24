@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://d651u6odpixd"]
-
-[ext_resource type="PackedScene" uid="uid://fldrife7s05d" path="res://Assets/Scences/Biome/Bridge_Stone_Forest/Bridge_Stone_Forest.tscn" id="1_vmjww"]
-
-[node name="WordGames" type="Node2D"]
-
-[node name="Taiga_Biome" parent="." instance=ExtResource("1_vmjww")]

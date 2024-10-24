@@ -1,20 +1,22 @@
-res://Assets/Scences/Level
+res://Assets/Fonts
+res://Assets/Script/Controller/UI/Sugestion
+res://Assets/Scences/UI
+res://Assets/Scences/Item
+res://Assets/Image/Sprites/Pickups
+res://Assets/Script/Class/utilities/music
+res://Assets/Script/Controller/Save/Save_Data/player
+res://Assets/Script/Controller/UI/Camera
+res://Assets/Scences/Camera
 res://Assets/Script/Level
+res://Assets/Scences/World
+res://Assets/Script/Class/Player/spawner
+res://Assets/Scences/Player/spawner
+res://Save/Progress
+C:/Users/Blizzard/Documents/Project/Copy-howling/Save/Progress
+res://Assets/Script/Controller/Weapons/Ammo_Mag
+res://Assets/Script/Controller/Mission
+res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species
+res://Assets/Scences/Level
 res://Assets/Image/Character/Player/templerun/Machete/Jump_Machete
 res://Assets/Image/Character/Player/templerun/Burst Garou/Iddle_Garou
 res://Assets/Image/Background/Bridge Stone Forest
-res://Assets/Image/Character/Player/templerun/Normal/Iddle
-res://Assets/Image/Character/Player/templerun/Machete/Machete_Air_Ataack_2
-res://Assets/Image/Character/Player/templerun/Machete/Machete_Attack_1
-res://Assets/Image/Character/Player/templerun/Normal/Dead
-res://Assets/Image/Character/Player/templerun/Burst Garou/Run_Garou
-res://Assets/Image/Character/Player/templerun/Machete/iddle_machete
-res://Assets/Scences/Player/Weapons
-res://Assets/Scences/Player/Animation
-res://Assets/Script/Class/Character/Player
-res://Assets/Script/Class/Character/Player/Weapon
-res://
-res://Assets/Script/Controller/Save/Save_Data/player
-res://Assets/Script/Class/Hero
-res://Assets/Script/Controller/UI/Intro_briving_mission
-res://Assets/Scences/Location/Intro Brifing_mission

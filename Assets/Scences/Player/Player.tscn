@@ -1,4 +1,4 @@
-[gd_scene load_steps=102 format=3 uid="uid://w8tfinbfyqkd"]
+[gd_scene load_steps=113 format=3 uid="uid://w8tfinbfyqkd"]
 
 [ext_resource type="Script" path="res://Assets/Script/Class/Character/Player/Player.gd" id="1_jwwc7"]
 [ext_resource type="Texture2D" uid="uid://dd2633hm05rbx" path="res://Assets/Image/Character/Player/templerun/Normal/Hit/Hit_01.png" id="2_e77pk"]
@@ -7,9 +7,13 @@
 [ext_resource type="Texture2D" uid="uid://bhmh84fvg0ihq" path="res://Assets/Image/Character/Player/templerun/Burst Garou/Run_Garou/Run_Garou_00.png" id="3_jsmgv"]
 [ext_resource type="Texture2D" uid="uid://cembsc0fpgqk7" path="res://Assets/Image/Character/Player/templerun/Normal/Dead/Dead__001.png" id="3_li0ch"]
 [ext_resource type="Texture2D" uid="uid://b68atvqpm1pyv" path="res://Assets/Image/Character/Player/templerun/Normal/Hit/Hit_02.png" id="3_r06yy"]
+[ext_resource type="AudioStream" uid="uid://dfui72v5unq36" path="res://Assets/Music/SFX/Weapon/Reload/Reload.mp3" id="3_ydveu"]
 [ext_resource type="Texture2D" uid="uid://ck7ldhk6vbea5" path="res://Assets/Image/Character/Player/templerun/Burst Garou/Run_Garou/Run_Garou_01.png" id="4_3glrk"]
 [ext_resource type="Texture2D" uid="uid://dqk44h2c1wqy8" path="res://Assets/Image/Character/Player/templerun/Normal/Dead/Dead__002.png" id="4_g0w08"]
+[ext_resource type="AudioStream" uid="uid://bhcg31qh4ew47" path="res://Assets/Music/SFX/Weapon/Player/Reloading2.wav" id="4_qroeb"]
 [ext_resource type="Texture2D" uid="uid://byd7rvtrbnjxu" path="res://Assets/Image/Character/Player/templerun/Burst Garou/Run_Garou/Run_Garou_02.png" id="5_4t2ur"]
+[ext_resource type="AudioStream" uid="uid://dpn38yc0fhmbc" path="res://Assets/Music/SFX/Weapon/Player/Ammo_Empty2.wav" id="5_5g2xx"]
+[ext_resource type="AudioStream" uid="uid://dbwkcjhtf2gr3" path="res://Assets/Music/SFX/Weapon/Riffle/Player_Riffle.mp3" id="5_gm5ng"]
 [ext_resource type="Texture2D" uid="uid://dvrcampeixkr7" path="res://Assets/Image/Character/Player/templerun/Normal/Dead/Dead__003.png" id="5_khtrs"]
 [ext_resource type="Texture2D" uid="uid://bqplv2l6dxbpb" path="res://Assets/Image/Character/Player/templerun/Normal/Dead/Dead__004.png" id="6_04ua3"]
 [ext_resource type="Texture2D" uid="uid://btswfm0kmw84v" path="res://Assets/Image/Character/Player/templerun/Burst Garou/Run_Garou/Run_Garou_03.png" id="6_h4dvo"]
@@ -88,6 +92,13 @@
 [ext_resource type="Texture2D" uid="uid://bjhwv1e7uuo5y" path="res://Assets/Image/Character/Player/templerun/Machete/Jump_Machete/Jump_Machete_3.png" id="58_63pn0"]
 [ext_resource type="Texture2D" uid="uid://c7m0bal5ggqri" path="res://Assets/Image/Character/Player/templerun/Machete/Jump_Machete/Jump_Machete_4.png" id="59_me8lr"]
 [ext_resource type="Texture2D" uid="uid://d12qj66aawmi8" path="res://Assets/Image/Character/Player/templerun/Machete/Jump_Machete/Jump_Machete_5.png" id="60_55bce"]
+[ext_resource type="AudioStream" uid="uid://y668j52mr4hc" path="res://Assets/Music/SFX/Player/deathknell-tlk-101soundboards-metalgarurumon.mp3" id="91_mio7l"]
+[ext_resource type="AudioStream" uid="uid://db7o6fpfblt3h" path="res://Assets/Music/SFX/Player/headbutt-101soundboards.Metalgarurumonmp3.mp3" id="92_3r0xj"]
+[ext_resource type="AudioStream" uid="uid://b8c3gba2ocnj" path="res://Assets/Music/SFX/Player/grunt-tlk-101soundboards.mp3" id="92_m1n6n"]
+[ext_resource type="AudioStream" uid="uid://bt4nvwq8oos1a" path="res://Assets/Music/SFX/Player/strain-tlk-101soundboards.mp3" id="92_psq6a"]
+[ext_resource type="AudioStream" uid="uid://bt2dhnv4m2u4c" path="res://Assets/Music/SFX/Player/Download Metal Shoes Royalty-Free Music & Sound Effects.mp3" id="92_ufkxa"]
+[ext_resource type="AudioStream" uid="uid://cjjde10wuh4tp" path="res://Assets/Music/SFX/Weapon/Slash/sword-slash-and-swing-185432.mp3" id="95_s5sfv"]
+[ext_resource type="AudioStream" uid="uid://bdrrxhd35f56r" path="res://Assets/Music/SFX/Player/slashing.wav" id="96_ad02j"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pm05c"]
 animations = [{
@@ -440,9 +451,24 @@ tracks/1/keys = {
 "update": 1,
 "values": ["died"]
 }
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SFX")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("91_mio7l")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/2/use_blend = true
 
 [sub_resource type="Animation" id="Animation_lfn4t"]
-length = 0.4
+length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -450,7 +476,7 @@ tracks/0/path = NodePath("AnimatedSprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2),
+"times": PackedFloat32Array(0, 0.4),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [0, 1]
@@ -467,6 +493,21 @@ tracks/1/keys = {
 "update": 1,
 "values": ["hurt"]
 }
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SFX")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("92_psq6a")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/2/use_blend = true
 
 [sub_resource type="Animation" id="Animation_k4hw4"]
 length = 2.0
@@ -549,6 +590,21 @@ tracks/1/keys = {
 "update": 1,
 "values": ["jump_down"]
 }
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SFX")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("92_3r0xj")
+}],
+"times": PackedFloat32Array(0.1)
+}
+tracks/2/use_blend = true
 
 [sub_resource type="Animation" id="Animation_ps3s0"]
 tracks/0/type = "value"
@@ -575,6 +631,21 @@ tracks/1/keys = {
 "update": 1,
 "values": ["jump_up"]
 }
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SFX")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("92_m1n6n")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/2/use_blend = false
 
 [sub_resource type="Animation" id="Animation_1sn6d"]
 length = 0.6
@@ -602,9 +673,39 @@ tracks/1/keys = {
 "update": 1,
 "values": ["machete_air_attack"]
 }
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SFX")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.985232,
+"start_offset": 0.0488041,
+"stream": ExtResource("95_s5sfv")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/2/use_blend = false
+tracks/3/type = "audio"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SFX")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("96_ad02j")
+}],
+"times": PackedFloat32Array(-0.2)
+}
+tracks/3/use_blend = true
 
 [sub_resource type="Animation" id="Animation_2akq7"]
-length = 0.333333
+length = 0.6
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -612,7 +713,7 @@ tracks/0/path = NodePath("AnimatedSprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.111111, 0.222222),
+"times": PackedFloat32Array(0, 0.2, 0.4),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [0, 1, 2]
@@ -629,6 +730,36 @@ tracks/1/keys = {
 "update": 1,
 "values": ["machete_attack"]
 }
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SFX")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 1.18742,
+"start_offset": 0.0,
+"stream": ExtResource("95_s5sfv")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/2/use_blend = false
+tracks/3/type = "audio"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SFX")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("96_ad02j")
+}],
+"times": PackedFloat32Array(-0.2)
+}
+tracks/3/use_blend = true
 
 [sub_resource type="Animation" id="Animation_21e22"]
 length = 2.0
@@ -657,6 +788,21 @@ tracks/1/keys = {
 "update": 1,
 "values": ["run"]
 }
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SFX")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 10.9712,
+"start_offset": 0.0,
+"stream": ExtResource("92_ufkxa")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/2/use_blend = true
 
 [sub_resource type="Animation" id="Animation_s21l3"]
 length = 2.0
@@ -684,6 +830,21 @@ tracks/1/keys = {
 "update": 1,
 "values": ["run_shoot"]
 }
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SFX")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 10.9151,
+"start_offset": 0.0,
+"stream": ExtResource("92_ufkxa")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/2/use_blend = true
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_du124"]
 _data = {
@@ -702,19 +863,21 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u3xmu"]
 size = Vector2(56, 20)
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["camera_target", "player"]]
 process_mode = 3
 collision_layer = 65535
 collision_mask = 263
 script = ExtResource("1_jwwc7")
 bullet_scence = ExtResource("2_kni5a")
+reloading_riffle = ExtResource("3_ydveu")
+reloading_voice = ExtResource("4_qroeb")
+shoot_riffle = ExtResource("5_gm5ng")
+ammo_empty = ExtResource("5_5g2xx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.257053, 0.227881)
 sprite_frames = SubResource("SpriteFrames_pm05c")
-animation = &"jump_up_machete"
-frame = 5
-frame_progress = 1.0
+animation = &"jump_down"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -761,10 +924,4 @@ bus = &"Sound Effects"
 unique_name_in_owner = true
 position = Vector2(74, 17)
 
-[node name="Camera2D" type="Camera2D" parent="."]
-enabled = false
-zoom = Vector2(2.5, 2.5)
-limit_left = -5
-limit_top = -64
-limit_right = 1280
-limit_bottom = 360
+[connection signal="update_coordinate" from="." to="Text" method="_on_player_update_coordinate"]

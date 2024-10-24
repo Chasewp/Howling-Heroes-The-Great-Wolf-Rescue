@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://d4gsgircvxx2m" path="res://Assets/Image/Background/Character Selector/wolf-den-cave-taiga-forest 800x 600.png" id="3_prlmh"]
 [ext_resource type="FontFile" uid="uid://bc3fo6p06lixr" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="4_ru70u"]
 
-[node name="PlayerName" type="Control"]
+[node name="PlayerName" type="Control" groups=["level"]]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

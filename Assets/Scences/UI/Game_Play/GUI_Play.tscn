@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://c1ph53byo1unb"]
+[gd_scene load_steps=7 format=3 uid="uid://c1ph53byo1unb"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/GUI/GUI_Play.gd" id="1_xqce5"]
 [ext_resource type="Texture2D" uid="uid://bxtqe4sgeb3qu" path="res://Assets/Image/Character/Player/templerun/Machete/Face/Face.png" id="2_5c6aw"]
 [ext_resource type="FontFile" uid="uid://bc3fo6p06lixr" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="2_68s4u"]
+[ext_resource type="PackedScene" uid="uid://d2kow5kkphlx6" path="res://Assets/Scences/UI/Mission_Log/mission.tscn" id="4_e365i"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_grsui"]
 bg_color = Color(0, 0.392157, 0, 1)
@@ -78,14 +79,26 @@ value = 100.0
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.112
-anchor_top = 0.146
-anchor_right = 0.307
-anchor_bottom = 0.179
+anchor_top = 0.132
+anchor_right = 0.309
+anchor_bottom = 0.165
 offset_left = 2.64
-offset_top = -10.12
-offset_right = 3.03998
-offset_bottom = -9.87999
+offset_top = -0.0400085
+offset_right = 0.47998
+offset_bottom = 0.200012
 theme_override_fonts/font = ExtResource("2_68s4u")
 theme_override_font_sizes/font_size = 18
 text = "LABEL
 "
+
+[node name="Mission" parent="." instance=ExtResource("4_e365i")]
+layout_mode = 1
+anchor_left = 0.855
+anchor_top = 0.367
+anchor_right = 1.0
+anchor_bottom = 0.667
+offset_left = -0.400024
+offset_top = -0.240021
+offset_right = -2.0
+offset_bottom = -0.240051
+grow_horizontal = 0
