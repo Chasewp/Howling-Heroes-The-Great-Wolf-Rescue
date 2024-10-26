@@ -1,67 +1,68 @@
-[gd_scene load_steps=65 format=3 uid="uid://b546lxevyfe5q"]
+[gd_scene load_steps=66 format=3 uid="uid://b546lxevyfe5q"]
 
-[ext_resource type="Texture2D" uid="uid://xoa45aku30pl" path="res://Assets/Image/Wolf Howl Coins/360/frame_00_delay-0.05s.png" id="1_6fcg3"]
+[ext_resource type="Texture2D" uid="uid://bun6sxnpr13v8" path="res://Assets/Image/Wolf Howl Coins/360/frame_00_delay-0.05s.png" id="1_6fcg3"]
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Location/Biome_Exit/biome_exit.gd" id="1_y7rdt"]
-[ext_resource type="Texture2D" uid="uid://cax5oidbk7qys" path="res://Assets/Image/Wolf Howl Coins/360/frame_01_delay-0.05s.png" id="2_hania"]
-[ext_resource type="Texture2D" uid="uid://8rme2qbb8ks4" path="res://Assets/Image/Wolf Howl Coins/360/frame_02_delay-0.05s.png" id="3_xcnde"]
-[ext_resource type="Texture2D" uid="uid://bboy35bj8dwcq" path="res://Assets/Image/Wolf Howl Coins/360/frame_03_delay-0.05s.png" id="4_ywh5n"]
-[ext_resource type="Texture2D" uid="uid://cjmsvpdmc47ys" path="res://Assets/Image/Wolf Howl Coins/360/frame_04_delay-0.05s.png" id="5_187i5"]
-[ext_resource type="Texture2D" uid="uid://c58dhwaoaaqvo" path="res://Assets/Image/Wolf Howl Coins/360/frame_05_delay-0.05s.png" id="6_l2t1r"]
-[ext_resource type="Texture2D" uid="uid://dexfkwn8p4esg" path="res://Assets/Image/Wolf Howl Coins/360/frame_06_delay-0.05s.png" id="7_abmr0"]
-[ext_resource type="Texture2D" uid="uid://cijlhjtiv81gy" path="res://Assets/Image/Wolf Howl Coins/360/frame_07_delay-0.05s.png" id="8_v4wnd"]
-[ext_resource type="Texture2D" uid="uid://bxuq5ytfop5ft" path="res://Assets/Image/Wolf Howl Coins/360/frame_08_delay-0.05s.png" id="9_wb0ae"]
-[ext_resource type="Texture2D" uid="uid://cfy57b61374qh" path="res://Assets/Image/Wolf Howl Coins/360/frame_09_delay-0.05s.png" id="10_oh7bh"]
-[ext_resource type="Texture2D" uid="uid://bbrlpk2ogvuit" path="res://Assets/Image/Wolf Howl Coins/360/frame_10_delay-0.05s.png" id="11_fd7jt"]
-[ext_resource type="Texture2D" uid="uid://bf64l3rrpcjkf" path="res://Assets/Image/Wolf Howl Coins/360/frame_11_delay-0.05s.png" id="12_xriyg"]
-[ext_resource type="Texture2D" uid="uid://dl3pwupthnssg" path="res://Assets/Image/Wolf Howl Coins/360/frame_12_delay-0.05s.png" id="13_yk1qw"]
-[ext_resource type="Texture2D" uid="uid://d22jtq8nuvvld" path="res://Assets/Image/Wolf Howl Coins/360/frame_13_delay-0.05s.png" id="14_0igj5"]
-[ext_resource type="Texture2D" uid="uid://clbmj8pot7ljn" path="res://Assets/Image/Wolf Howl Coins/360/frame_14_delay-0.05s.png" id="15_a5ejq"]
-[ext_resource type="Texture2D" uid="uid://bdf77rmi4fc53" path="res://Assets/Image/Wolf Howl Coins/360/frame_15_delay-0.05s.png" id="16_wmiw3"]
-[ext_resource type="Texture2D" uid="uid://d2u6j0xea4nuj" path="res://Assets/Image/Wolf Howl Coins/360/frame_16_delay-0.05s.png" id="17_0ndw1"]
-[ext_resource type="Texture2D" uid="uid://b1y7kgds1uds6" path="res://Assets/Image/Wolf Howl Coins/360/frame_17_delay-0.05s.png" id="18_j42nu"]
-[ext_resource type="Texture2D" uid="uid://cs8mo6phd1orl" path="res://Assets/Image/Wolf Howl Coins/360/frame_18_delay-0.05s.png" id="19_7ab8q"]
-[ext_resource type="Texture2D" uid="uid://cablj010crxfg" path="res://Assets/Image/Wolf Howl Coins/360/frame_19_delay-0.05s.png" id="20_aamtu"]
-[ext_resource type="Texture2D" uid="uid://cujb12nqd8wj2" path="res://Assets/Image/Wolf Howl Coins/360/frame_20_delay-0.05s.png" id="21_datt1"]
-[ext_resource type="Texture2D" uid="uid://ch81teg51vcd3" path="res://Assets/Image/Wolf Howl Coins/360/frame_21_delay-0.05s.png" id="22_fx1nk"]
-[ext_resource type="Texture2D" uid="uid://c8bq6afe1tfxe" path="res://Assets/Image/Wolf Howl Coins/360/frame_22_delay-0.05s.png" id="23_jitcj"]
-[ext_resource type="Texture2D" uid="uid://cqprajc5wbt6g" path="res://Assets/Image/Wolf Howl Coins/360/frame_23_delay-0.05s.png" id="24_4c524"]
-[ext_resource type="Texture2D" uid="uid://c0nuxarrchvlo" path="res://Assets/Image/Wolf Howl Coins/360/frame_24_delay-0.05s.png" id="25_p46m5"]
-[ext_resource type="Texture2D" uid="uid://c4lu46fxcwxk5" path="res://Assets/Image/Wolf Howl Coins/360/frame_25_delay-0.05s.png" id="26_tk8yv"]
-[ext_resource type="Texture2D" uid="uid://fsb6dxgk1plv" path="res://Assets/Image/Wolf Howl Coins/360/frame_26_delay-0.05s.png" id="27_u42ap"]
-[ext_resource type="Texture2D" uid="uid://d2xtc2i7r6t4o" path="res://Assets/Image/Wolf Howl Coins/360/frame_27_delay-0.05s.png" id="28_flx2r"]
-[ext_resource type="Texture2D" uid="uid://buxy8kctc4wqb" path="res://Assets/Image/Wolf Howl Coins/360/frame_28_delay-0.05s.png" id="29_xtax5"]
-[ext_resource type="Texture2D" uid="uid://bbhqjxrkrtvp0" path="res://Assets/Image/Wolf Howl Coins/360/frame_29_delay-0.05s.png" id="30_pm2ky"]
-[ext_resource type="Texture2D" uid="uid://dq1lag4pscsik" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_00_delay-0.05s.png" id="31_bj5n0"]
-[ext_resource type="Texture2D" uid="uid://b1l6eisrpghh0" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_01_delay-0.05s.png" id="32_dncpe"]
-[ext_resource type="Texture2D" uid="uid://ce2m0afmrpjbx" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_02_delay-0.05s.png" id="33_mw7or"]
-[ext_resource type="Texture2D" uid="uid://cbedplxt1qmb" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_03_delay-0.05s.png" id="34_3fqeu"]
-[ext_resource type="Texture2D" uid="uid://degnecpx62cjk" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_04_delay-0.05s.png" id="35_ugeaa"]
-[ext_resource type="Texture2D" uid="uid://wwpl4x4j8nle" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_05_delay-0.05s.png" id="36_7exov"]
-[ext_resource type="Texture2D" uid="uid://c3sgerg40ej16" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_06_delay-0.05s.png" id="37_c3ove"]
-[ext_resource type="Texture2D" uid="uid://cn03wh08bt7l4" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_07_delay-0.05s.png" id="38_q1qpt"]
-[ext_resource type="Texture2D" uid="uid://dpwx0707qm1xh" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_08_delay-0.05s.png" id="39_30wsp"]
-[ext_resource type="Texture2D" uid="uid://bes58u2rtx4r7" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_09_delay-0.05s.png" id="40_ver4c"]
-[ext_resource type="Texture2D" uid="uid://cmb3v8cm8xjck" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_10_delay-0.05s.png" id="41_jhlty"]
-[ext_resource type="Texture2D" uid="uid://bi4hdsy7vdn8i" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_11_delay-0.05s.png" id="42_dcsf3"]
-[ext_resource type="Texture2D" uid="uid://io5vm1briodk" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_12_delay-0.05s.png" id="43_8vv0n"]
-[ext_resource type="Texture2D" uid="uid://dosdac2jdpkea" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_13_delay-0.05s.png" id="44_4dt2a"]
-[ext_resource type="Texture2D" uid="uid://dd5xgiru123ow" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_14_delay-0.05s.png" id="45_scf87"]
-[ext_resource type="Texture2D" uid="uid://dmp2ts1m07t4l" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_15_delay-0.05s.png" id="46_7rb1a"]
-[ext_resource type="Texture2D" uid="uid://ckiuriq2a5prs" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_16_delay-0.05s.png" id="47_qamak"]
-[ext_resource type="Texture2D" uid="uid://c85aoma1vodi3" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_17_delay-0.05s.png" id="48_janc7"]
-[ext_resource type="Texture2D" uid="uid://ct4uk6tuh51c" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_18_delay-0.05s.png" id="49_5osul"]
-[ext_resource type="Texture2D" uid="uid://c3lhakgs4oh6x" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_19_delay-0.05s.png" id="50_idt0q"]
-[ext_resource type="Texture2D" uid="uid://de2mithjimh4e" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_20_delay-0.05s.png" id="51_cm2a1"]
-[ext_resource type="Texture2D" uid="uid://clu4bjb1q5kv5" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_21_delay-0.05s.png" id="52_jyglg"]
-[ext_resource type="Texture2D" uid="uid://dgg00xgmnwt54" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_22_delay-0.05s.png" id="53_r5uuf"]
-[ext_resource type="Texture2D" uid="uid://yunk8jop6g3w" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_23_delay-0.05s.png" id="54_t66ef"]
-[ext_resource type="Texture2D" uid="uid://pryivaha1mco" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_24_delay-0.05s.png" id="55_dw18h"]
-[ext_resource type="Texture2D" uid="uid://dv0hvp7nc56o" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_25_delay-0.05s.png" id="56_onl5d"]
-[ext_resource type="Texture2D" uid="uid://ci1cdrb5cqgae" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_26_delay-0.05s.png" id="57_cs6qg"]
-[ext_resource type="Texture2D" uid="uid://i5aey1o8yjhr" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_27_delay-0.05s.png" id="58_kxuj5"]
-[ext_resource type="Texture2D" uid="uid://dqvqcc68qj3ys" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_28_delay-0.05s.png" id="59_01xkd"]
-[ext_resource type="Texture2D" uid="uid://cpv73206bdr00" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_29_delay-0.05s.png" id="60_b5bwj"]
+[ext_resource type="Texture2D" uid="uid://b4uuflu31af33" path="res://Assets/Image/Wolf Howl Coins/360/frame_01_delay-0.05s.png" id="2_hania"]
+[ext_resource type="Texture2D" uid="uid://16ox3ecftlbr" path="res://Assets/Image/Wolf Howl Coins/360/frame_02_delay-0.05s.png" id="3_xcnde"]
+[ext_resource type="Texture2D" uid="uid://w68yo4703dpk" path="res://Assets/Image/Wolf Howl Coins/360/frame_03_delay-0.05s.png" id="4_ywh5n"]
+[ext_resource type="Texture2D" uid="uid://qd3rpg5sbuy7" path="res://Assets/Image/Wolf Howl Coins/360/frame_04_delay-0.05s.png" id="5_187i5"]
+[ext_resource type="Texture2D" uid="uid://b4sgu8m7qjbll" path="res://Assets/Image/Wolf Howl Coins/360/frame_05_delay-0.05s.png" id="6_l2t1r"]
+[ext_resource type="Texture2D" uid="uid://dd5yyhsj7e4t2" path="res://Assets/Image/Wolf Howl Coins/360/frame_06_delay-0.05s.png" id="7_abmr0"]
+[ext_resource type="Texture2D" uid="uid://oxgklm7pclw7" path="res://Assets/Image/Wolf Howl Coins/360/frame_07_delay-0.05s.png" id="8_v4wnd"]
+[ext_resource type="Texture2D" uid="uid://ddumaqjbkvhg2" path="res://Assets/Image/Wolf Howl Coins/360/frame_08_delay-0.05s.png" id="9_wb0ae"]
+[ext_resource type="Texture2D" uid="uid://bdx5p77grhfau" path="res://Assets/Image/Wolf Howl Coins/360/frame_09_delay-0.05s.png" id="10_oh7bh"]
+[ext_resource type="Texture2D" uid="uid://dcdppwf0ukiou" path="res://Assets/Image/Wolf Howl Coins/360/frame_10_delay-0.05s.png" id="11_fd7jt"]
+[ext_resource type="Texture2D" uid="uid://qam07k08qk4m" path="res://Assets/Image/Wolf Howl Coins/360/frame_11_delay-0.05s.png" id="12_xriyg"]
+[ext_resource type="Texture2D" uid="uid://pjtf1ogns4vj" path="res://Assets/Image/Wolf Howl Coins/360/frame_12_delay-0.05s.png" id="13_yk1qw"]
+[ext_resource type="Texture2D" uid="uid://l2tu2nag5f4b" path="res://Assets/Image/Wolf Howl Coins/360/frame_13_delay-0.05s.png" id="14_0igj5"]
+[ext_resource type="Texture2D" uid="uid://bnyut5i6em8y2" path="res://Assets/Image/Wolf Howl Coins/360/frame_14_delay-0.05s.png" id="15_a5ejq"]
+[ext_resource type="Texture2D" uid="uid://cp85qt2v58dwe" path="res://Assets/Image/Wolf Howl Coins/360/frame_15_delay-0.05s.png" id="16_wmiw3"]
+[ext_resource type="Texture2D" uid="uid://cv5ft3lgcrof" path="res://Assets/Image/Wolf Howl Coins/360/frame_16_delay-0.05s.png" id="17_0ndw1"]
+[ext_resource type="Texture2D" uid="uid://b17lpvnxogw34" path="res://Assets/Image/Wolf Howl Coins/360/frame_17_delay-0.05s.png" id="18_j42nu"]
+[ext_resource type="Texture2D" uid="uid://dx0mlj2bg5flu" path="res://Assets/Image/Wolf Howl Coins/360/frame_18_delay-0.05s.png" id="19_7ab8q"]
+[ext_resource type="Texture2D" uid="uid://cwonikvocxhbq" path="res://Assets/Image/Wolf Howl Coins/360/frame_19_delay-0.05s.png" id="20_aamtu"]
+[ext_resource type="Texture2D" uid="uid://b5thd25rcdvnq" path="res://Assets/Image/Wolf Howl Coins/360/frame_20_delay-0.05s.png" id="21_datt1"]
+[ext_resource type="Texture2D" uid="uid://grcsk3xe4pqv" path="res://Assets/Image/Wolf Howl Coins/360/frame_21_delay-0.05s.png" id="22_fx1nk"]
+[ext_resource type="Texture2D" uid="uid://coeykkm87foec" path="res://Assets/Image/Wolf Howl Coins/360/frame_22_delay-0.05s.png" id="23_jitcj"]
+[ext_resource type="Texture2D" uid="uid://bfeumolvjkudp" path="res://Assets/Image/Wolf Howl Coins/360/frame_23_delay-0.05s.png" id="24_4c524"]
+[ext_resource type="Texture2D" uid="uid://8v61gnrrn425" path="res://Assets/Image/Wolf Howl Coins/360/frame_24_delay-0.05s.png" id="25_p46m5"]
+[ext_resource type="Texture2D" uid="uid://cvpoan6btqwy1" path="res://Assets/Image/Wolf Howl Coins/360/frame_25_delay-0.05s.png" id="26_tk8yv"]
+[ext_resource type="Texture2D" uid="uid://b211nqfubwc1l" path="res://Assets/Image/Wolf Howl Coins/360/frame_26_delay-0.05s.png" id="27_u42ap"]
+[ext_resource type="Texture2D" uid="uid://byqgfldktfy2i" path="res://Assets/Image/Wolf Howl Coins/360/frame_27_delay-0.05s.png" id="28_flx2r"]
+[ext_resource type="Texture2D" uid="uid://bd8ce203hxwkj" path="res://Assets/Image/Wolf Howl Coins/360/frame_28_delay-0.05s.png" id="29_xtax5"]
+[ext_resource type="Texture2D" uid="uid://cqehfvxs188hm" path="res://Assets/Image/Wolf Howl Coins/360/frame_29_delay-0.05s.png" id="30_pm2ky"]
+[ext_resource type="Texture2D" uid="uid://bx37fjdtkgvja" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_00_delay-0.05s.png" id="31_bj5n0"]
+[ext_resource type="Texture2D" uid="uid://cnwskuv78oy10" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_01_delay-0.05s.png" id="32_dncpe"]
+[ext_resource type="Texture2D" uid="uid://bbiqfh3iinjkd" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_02_delay-0.05s.png" id="33_mw7or"]
+[ext_resource type="Texture2D" uid="uid://qbm607i8oj0q" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_03_delay-0.05s.png" id="34_3fqeu"]
+[ext_resource type="Texture2D" uid="uid://b0ja2sos63py4" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_04_delay-0.05s.png" id="35_ugeaa"]
+[ext_resource type="Texture2D" uid="uid://dag4cnpvos8s3" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_05_delay-0.05s.png" id="36_7exov"]
+[ext_resource type="Texture2D" uid="uid://cr1uwm0bpr3yr" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_06_delay-0.05s.png" id="37_c3ove"]
+[ext_resource type="Texture2D" uid="uid://cxr1fnrl3omgt" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_07_delay-0.05s.png" id="38_q1qpt"]
+[ext_resource type="Texture2D" uid="uid://dthdxd7dglp5o" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_08_delay-0.05s.png" id="39_30wsp"]
+[ext_resource type="Texture2D" uid="uid://dgy6akekb8f1q" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_09_delay-0.05s.png" id="40_ver4c"]
+[ext_resource type="Texture2D" uid="uid://ddggyb7dqigxe" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_10_delay-0.05s.png" id="41_jhlty"]
+[ext_resource type="Texture2D" uid="uid://cw78iwxap40vu" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_11_delay-0.05s.png" id="42_dcsf3"]
+[ext_resource type="Texture2D" uid="uid://cs3c5l0myktgl" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_12_delay-0.05s.png" id="43_8vv0n"]
+[ext_resource type="Texture2D" uid="uid://c34atl263myd0" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_13_delay-0.05s.png" id="44_4dt2a"]
+[ext_resource type="Texture2D" uid="uid://ct0j6ha76qkrp" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_14_delay-0.05s.png" id="45_scf87"]
+[ext_resource type="Texture2D" uid="uid://b43l1rai55u58" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_15_delay-0.05s.png" id="46_7rb1a"]
+[ext_resource type="Texture2D" uid="uid://cagyau38q2k6e" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_16_delay-0.05s.png" id="47_qamak"]
+[ext_resource type="Texture2D" uid="uid://b24g8dyj77qbf" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_17_delay-0.05s.png" id="48_janc7"]
+[ext_resource type="Texture2D" uid="uid://d3cbgs6t8s3am" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_18_delay-0.05s.png" id="49_5osul"]
+[ext_resource type="Texture2D" uid="uid://c3scukgf8p7kb" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_19_delay-0.05s.png" id="50_idt0q"]
+[ext_resource type="Texture2D" uid="uid://cvkvujpu07dsy" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_20_delay-0.05s.png" id="51_cm2a1"]
+[ext_resource type="Texture2D" uid="uid://uvc38ocw4usg" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_21_delay-0.05s.png" id="52_jyglg"]
+[ext_resource type="Texture2D" uid="uid://dmg3ha0yuk617" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_22_delay-0.05s.png" id="53_r5uuf"]
+[ext_resource type="Texture2D" uid="uid://bof5nk6ew7lmb" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_23_delay-0.05s.png" id="54_t66ef"]
+[ext_resource type="Texture2D" uid="uid://ixsg2c3lfgfv" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_24_delay-0.05s.png" id="55_dw18h"]
+[ext_resource type="Texture2D" uid="uid://dkrglo3cknep3" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_25_delay-0.05s.png" id="56_onl5d"]
+[ext_resource type="Texture2D" uid="uid://bl1f8dx6rd7qy" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_26_delay-0.05s.png" id="57_cs6qg"]
+[ext_resource type="Texture2D" uid="uid://cmdyuns1jtk65" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_27_delay-0.05s.png" id="58_kxuj5"]
+[ext_resource type="Texture2D" uid="uid://d2xgvvdmtwhk6" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_28_delay-0.05s.png" id="59_01xkd"]
+[ext_resource type="Texture2D" uid="uid://i63w00b135hv" path="res://Assets/Image/Wolf Howl Coins/Fanish/frame_29_delay-0.05s.png" id="60_b5bwj"]
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Location/Biome_Exit/Delay_Detected.gd" id="62_jx88v"]
+[ext_resource type="AudioStream" uid="uid://cr417linfrrsg" path="res://Assets/Music/Howling/wolfhowl_Luna.wav" id="63_wx0e6"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ufdn7"]
 resource_local_to_scene = true
@@ -159,7 +160,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"360_Flip",
-"speed": 5.0
+"speed": 15.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -254,19 +255,18 @@ animations = [{
 }],
 "loop": false,
 "name": &"Spiral and Vanish",
-"speed": 5.0
+"speed": 15.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8ssp0"]
 
-[node name="BiomeExit" type="Node2D"]
+[node name="BiomeExit" type="Node2D" groups=["level_exit"]]
 script = ExtResource("1_y7rdt")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ufdn7")
-animation = &"Spiral and Vanish"
-frame = 29
-frame_progress = 1.0
+animation = &"360_Flip"
+frame_progress = 0.154115
 
 [node name="DetectionArea" type="Area2D" parent="."]
 unique_name_in_owner = true
@@ -277,5 +277,6 @@ scale = Vector2(6, 6)
 shape = SubResource("CircleShape2D_8ssp0")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("63_wx0e6")
 
 [connection signal="body_exited" from="DetectionArea" to="." method="_on_detect_area_body_entered"]

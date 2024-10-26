@@ -1,0 +1,97 @@
+[gd_scene load_steps=14 format=3 uid="uid://dh2ukgj61d7gm"]
+
+[ext_resource type="Script" path="res://Assets/Script/Level/Word_Games1.gd" id="1_ct8de"]
+[ext_resource type="Script" path="res://Assets/Script/Level/WorldRoot.gd" id="2_beq02"]
+[ext_resource type="PackedScene" uid="uid://ljy4srl7uqw4" path="res://Assets/Scences/UI/Wolf_Almanac/Main_Menu/alamanac_main_menu.tscn" id="3_b84pv"]
+[ext_resource type="PackedScene" uid="uid://w8tfinbfyqkd" path="res://Assets/Scences/Player/Player.tscn" id="3_swar0"]
+[ext_resource type="PackedScene" uid="uid://7rxo4e7m6443" path="res://Assets/Scences/Level/main_menu_level.tscn" id="4_utoke"]
+[ext_resource type="PackedScene" uid="uid://d2kow5kkphlx6" path="res://Assets/Scences/UI/Mission_Log/mission.tscn" id="5_go5qk"]
+[ext_resource type="PackedScene" uid="uid://c1ph53byo1unb" path="res://Assets/Scences/UI/Game_Play/GUI_Play.tscn" id="5_k23sw"]
+[ext_resource type="FontFile" uid="uid://chsguujhey1bs" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="5_qobp7"]
+[ext_resource type="PackedScene" uid="uid://pd5jheoce1lf" path="res://Assets/Scences/UI/Pause Menu/Pause_Menu.tscn" id="6_g1xfh"]
+[ext_resource type="Script" path="res://Assets/Script/Controller/Save/Save_Data/player/save_file.gd" id="7_3fx2h"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o348o"]
+bg_color = Color(0, 0, 0, 0.443137)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mxafi"]
+bg_color = Color(0, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s4811"]
+bg_color = Color(1, 0, 1, 1)
+
+[node name="Game" type="Node2D"]
+process_mode = 3
+script = ExtResource("1_ct8de")
+
+[node name="UI2" type="CanvasLayer" parent="."]
+
+[node name="GuiPlay" parent="UI2" instance=ExtResource("5_k23sw")]
+metadata/_edit_use_anchors_ = true
+
+[node name="Alamanac_Main_Menu" parent="UI2" instance=ExtResource("3_b84pv")]
+unique_name_in_owner = true
+visible = false
+
+[node name="PauseMenu" parent="UI2" instance=ExtResource("6_g1xfh")]
+unique_name_in_owner = true
+visible = false
+
+[node name="Mission" parent="UI2" instance=ExtResource("5_go5qk")]
+offset_left = 1094.0
+offset_top = 264.0
+offset_right = 1093.68
+offset_bottom = 264.0
+
+[node name="save" type="Button" parent="UI2"]
+custom_minimum_size = Vector2(64, 32)
+offset_left = 300.0
+offset_top = 681.0
+offset_right = 344.0
+offset_bottom = 712.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("5_qobp7")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_o348o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mxafi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_s4811")
+text = "Save"
+
+[node name="Load" type="Button" parent="UI2"]
+custom_minimum_size = Vector2(64, 32)
+offset_left = 669.0
+offset_top = 681.0
+offset_right = 733.0
+offset_bottom = 713.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("5_qobp7")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_o348o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mxafi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_s4811")
+text = "Load"
+
+[node name="utility" type="Node" parent="."]
+
+[node name="SaveLoadManagerFile" type="Node" parent="utility"]
+unique_name_in_owner = true
+script = ExtResource("7_3fx2h")
+
+[node name="WorldRoot" type="Node2D" parent="."]
+unique_name_in_owner = true
+process_mode = 1
+script = ExtResource("2_beq02")
+
+[node name="Main_Menu_Level" parent="WorldRoot" groups=["level"] instance=ExtResource("4_utoke")]
+
+[node name="Player" parent="WorldRoot" groups=["world_root_no_touch"] instance=ExtResource("3_swar0")]
+unique_name_in_owner = true
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="pressed" from="UI2/save" to="." method="_on_save_game"]
+[connection signal="pressed" from="UI2/Load" to="." method="_on_load_game"]
+[connection signal="exit_reached" from="WorldRoot/Main_Menu_Level" to="WorldRoot" method="_on_level_exit_reached"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

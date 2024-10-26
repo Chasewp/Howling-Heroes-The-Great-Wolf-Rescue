@@ -29,10 +29,11 @@ GlobalSettings="*res://Assets/Script/Controller/Save/Global_Settings/Global_Sett
 Inventory="*res://Assets/Script/Class/Inventory/Inventory.gd"
 almanac="*res://Assets/Script/Class/Wolf/Wolf Alamanac/Class_Data/Almanac.gd"
 WolfData="*res://Assets/Script/Class/Wolf/Wolves_Save/Wolf_Data.gd"
-player="*res://Assets/Script/Class/Player/Player.gd"
+player_singleton="*res://Assets/Script/Class/Player/Player_Singleton.gd"
 GlobalTilesets="*res://Assets/Script/Global_Tilesets/Global_Tilesets.gd"
+mission_data_stat="*res://Assets/Script/Controller/Mission/mission_class.gd"
+Music="*res://Assets/Script/Class/utilities/music/music.gd"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
-save_progress="*res://Assets/Script/Controller/Save/Save_Data/player/save_progress.gd"
 
 [dialogic]
 
@@ -52,10 +53,13 @@ glossary/default_case_sensitive=true
 layout/mode=0
 text/autocolor_names=false
 variables={
+"Choosen": {
+"Chose": false
+},
 "Stat": {
-"Attack": "",
-"Defences": "",
-"Health": "100"
+"Attack": 0,
+"Defences": 0,
+"Health": 100
 }
 }
 event_default_overrides={
@@ -252,6 +256,16 @@ Reloading={
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":82,"key_label":0,"unicode":114,"echo":false,"script":null)
 ]
 }
+Quick_Save={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":88,"key_label":0,"unicode":120,"echo":false,"script":null)
+]
+}
+Quick_Load={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":67,"key_label":0,"unicode":99,"echo":false,"script":null)
+]
+}
 
 [internationalization]
 
@@ -277,11 +291,7 @@ environment/ssil/quality=4
 environment/screen_space_reflection/roughness_quality=3
 environment/subsurface_scattering/subsurface_scattering_quality=3
 environment/defaults/default_clear_color=Color(0.128906, 0.148438, 0.179688, 1)
-anti_aliasing/quality/msaa_2d=3
-anti_aliasing/quality/msaa_3d=3
 viewport/hdr_2d=true
-anti_aliasing/quality/screen_space_aa=1
-anti_aliasing/quality/use_taa=true
 anti_aliasing/quality/use_debanding=true
 
 [threading]

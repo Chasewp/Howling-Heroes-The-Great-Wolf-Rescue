@@ -1,4 +1,4 @@
-class_name WorldRoot
+class_name Worldroot
 extends Node2D
 
 signal level_exit_reached(next_level:String)

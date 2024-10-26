@@ -218,9 +218,33 @@ metadata/_edit_group_ = true
 [node name="Werewolf_Roar_Attack" type="Label" parent="TextureRect/GridContainer 3/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("5_5k8m1")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("6_vraqc")
 theme_override_font_sizes/font_size = 24
 text = "- Werewolf Roar Attack - TibaSound"
+metadata/_edit_group_ = true
+
+[node name="Get_Wolf" type="Label" parent="TextureRect/GridContainer 3/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("5_5k8m1")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("6_vraqc")
+theme_override_font_sizes/font_size = 24
+text = "- Get_Wolf - floraphobic
+"
+metadata/_edit_group_ = true
+
+[node name="Get_Wolf2" type="Label" parent="TextureRect/GridContainer 3/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("5_5k8m1")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("6_vraqc")
+theme_override_font_sizes/font_size = 24
+text = "- Gun
+"
 metadata/_edit_group_ = true
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="TextureRect/GridContainer 3"]

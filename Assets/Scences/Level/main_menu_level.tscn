@@ -1,10 +1,16 @@
-[gd_scene load_steps=8 format=3 uid="uid://7rxo4e7m6443"]
+[gd_scene load_steps=14 format=3 uid="uid://7rxo4e7m6443"]
 
+[ext_resource type="Script" path="res://Assets/Script/Level/level.gd" id="1_0g0aq"]
 [ext_resource type="Texture2D" uid="uid://c134ui8jo4v2o" path="res://Assets/Image/Background/Bridge Stone Forest/pixel_art_A_breathtaking_scene.jpeg" id="1_ne5sm"]
+[ext_resource type="AudioStream" uid="uid://cbmxmnggiva4u" path="res://Assets/Music/Intro_Backsound/Taiga_Sound.wav" id="2_5eltf"]
 [ext_resource type="TileSet" uid="uid://v1yhquhbbtmr" path="res://Assets/Tileset/Taiga_Stage.tres" id="2_dhtqf"]
+[ext_resource type="AudioStream" uid="uid://nschuhpsfkd5" path="res://Assets/Music/SFX/Biomes/Snowlands/snowlands.wav" id="3_p43w1"]
 [ext_resource type="Texture2D" uid="uid://c6wyjiqeqb5vo" path="res://Assets/Image/tilesets/forest_tileset.png" id="3_s8khg"]
-[ext_resource type="PackedScene" uid="uid://w8tfinbfyqkd" path="res://Assets/Scences/Player/Player.tscn" id="4_jfqc7"]
-[ext_resource type="PackedScene" uid="uid://c1ph53byo1unb" path="res://Assets/Scences/UI/Game_Play/GUI_Play.tscn" id="5_5363a"]
+[ext_resource type="AudioStream" uid="uid://c18x7x4d356rb" path="res://Assets/Music/SFX/Biomes/Savanna/Loop/savanna_loop.wav" id="4_h8osp"]
+[ext_resource type="AudioStream" uid="uid://bl8d0arfdt0fi" path="res://Assets/Music/SFX/Biomes/Beach/beach.wav" id="5_krnqo"]
+[ext_resource type="PackedScene" uid="uid://b546lxevyfe5q" path="res://Assets/Scences/Biome/Biome_Exit/biome_exit.tscn" id="6_1l7ll"]
+[ext_resource type="PackedScene" uid="uid://ba35mjv7il18j" path="res://Assets/Scences/Player/spawner/player_spawn_point.tscn" id="6_uawil"]
+[ext_resource type="PackedScene" uid="uid://hq77207glf4i" path="res://Assets/Scences/Item/vanish.tscn" id="11_535en"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_twdqj"]
 texture = ExtResource("3_s8khg")
@@ -327,6 +333,12 @@ texture = ExtResource("3_s8khg")
 sources/0 = SubResource("TileSetAtlasSource_twdqj")
 
 [node name="Main_Menu_Level" type="Node2D"]
+script = ExtResource("1_0g0aq")
+taiga_music = ExtResource("2_5eltf")
+tundra_music = ExtResource("3_p43w1")
+grassland_music = ExtResource("4_h8osp")
+dessert_music = ExtResource("5_krnqo")
+next_level = "res://Assets/Scences/Level/level_1.tscn"
 
 [node name="BackgroundSprites" type="StaticBody2D" parent="."]
 
@@ -352,17 +364,16 @@ layer_1/tile_data = PackedInt32Array(917504, 524288, 3, 851968, 524288, 3, 78643
 position = Vector2(6, 67)
 polygon = PackedVector2Array(-6, -4, 9.99988, -3, 9, 183, 1097, 184, 1098, 270, 1100, 666, 1237, 667, 1216, -32, 1269, -80, 1294, 779, -155, 765, -212, -156)
 
-[node name="Player" parent="." instance=ExtResource("4_jfqc7")]
-position = Vector2(86, 3)
-
 [node name="backsound" type="AudioStreamPlayer2D" parent="."]
+bus = &"Music"
 
-[node name="Camera2D" type="Camera2D" parent="."]
-limit_left = -720
-limit_top = -1280
-limit_right = 720
-limit_bottom = 1280
+[node name="Player_spawn_point" parent="." instance=ExtResource("6_uawil")]
+position = Vector2(42, 185)
 
-[node name="UI" type="CanvasLayer" parent="."]
+[node name="BiomeExit" parent="." instance=ExtResource("6_1l7ll")]
+position = Vector2(1052, 194)
+scale = Vector2(0.75, 0.75)
 
-[node name="GuiPlay" parent="UI" instance=ExtResource("5_5363a")]
+[node name="Vanish" parent="." instance=ExtResource("11_535en")]
+visible = false
+position = Vector2(119, 213)

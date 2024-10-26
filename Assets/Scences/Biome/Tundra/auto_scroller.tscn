@@ -1,13 +1,13 @@
 [gd_scene load_steps=14 format=3 uid="uid://c3idsj77kmk8h"]
 
-[ext_resource type="Texture2D" uid="uid://cidgla3oqkmoa" path="res://Assets/MountainsLayers/sky.png" id="1_m6rvc"]
+[ext_resource type="Texture2D" uid="uid://dcrhtiw4d2rcx" path="res://Assets/MountainsLayers/sky.png" id="1_m6rvc"]
 [ext_resource type="Shader" path="res://Assets/Scences/Biome/Tundra/auto_scroller.gdshader" id="2_s8vwb"]
-[ext_resource type="Texture2D" uid="uid://bbw3l7ns3qacb" path="res://Assets/MountainsLayers/far-clouds.png" id="3_hfew3"]
-[ext_resource type="Texture2D" uid="uid://nei8g3fblyr7" path="res://Assets/MountainsLayers/near-clouds.png" id="4_w07ck"]
-[ext_resource type="Texture2D" uid="uid://bcnsdxg457gf4" path="res://Assets/MountainsLayers/far-mountains.png" id="5_f3q5h"]
-[ext_resource type="Texture2D" uid="uid://cub65x0y0ym76" path="res://Assets/MountainsLayers/mountains.png" id="6_leaik"]
-[ext_resource type="Texture2D" uid="uid://dxjs1s2ge2yl0" path="res://Assets/MountainsLayers/trees.png" id="7_f76io"]
-[ext_resource type="AudioStream" uid="uid://lfkxxo68r08r" path="res://Assets/Music/summer nights.ogg" id="8_oxnix"]
+[ext_resource type="Texture2D" uid="uid://d0iw8wpiyqytc" path="res://Assets/MountainsLayers/far-clouds.png" id="3_hfew3"]
+[ext_resource type="Texture2D" uid="uid://02ro6wtj0b40" path="res://Assets/MountainsLayers/near-clouds.png" id="4_w07ck"]
+[ext_resource type="Texture2D" uid="uid://bti01d45g47mx" path="res://Assets/MountainsLayers/far-mountains.png" id="5_f3q5h"]
+[ext_resource type="Texture2D" uid="uid://c6kbsux2ovinr" path="res://Assets/MountainsLayers/mountains.png" id="6_leaik"]
+[ext_resource type="Texture2D" uid="uid://dj0f8jrafnsbx" path="res://Assets/MountainsLayers/trees.png" id="7_f76io"]
+[ext_resource type="AudioStream" uid="uid://c0v00i3rfekdk" path="res://Assets/Music/summer nights.ogg" id="8_oxnix"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jv7m2"]
 shader = ExtResource("2_s8vwb")

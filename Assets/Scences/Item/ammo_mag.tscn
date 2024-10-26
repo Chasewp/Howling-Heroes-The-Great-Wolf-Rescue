@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://bpdu64ipwmqbk"]
+
+[ext_resource type="AudioStream" uid="uid://dpvi2eedxwo0d" path="res://Assets/Music/SFX/Weapon/Player/Ammo_Mag.wav" id="1_73jvk"]
+[ext_resource type="Texture2D" uid="uid://cmy5g6cxe0bq2" path="res://Assets/Image/Item/Ammmo_Mag/Ammo_Mag.png" id="1_dhu4p"]
+[ext_resource type="Script" path="res://Assets/Script/Controller/Weapons/Ammo_Mag/ammo_mag.gd" id="1_n7fn2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6q2fx"]
+size = Vector2(45, 66)
+
+[node name="Ammo_Mag" type="Area2D"]
+script = ExtResource("1_n7fn2")
+
+[node name="Ammo_Mag" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_73jvk")
+
+[node name="Ammo_Mag2" type="Sprite2D" parent="."]
+scale = Vector2(0.075, 0.075)
+texture = ExtResource("1_dhu4p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3.5, 0)
+shape = SubResource("RectangleShape2D_6q2fx")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

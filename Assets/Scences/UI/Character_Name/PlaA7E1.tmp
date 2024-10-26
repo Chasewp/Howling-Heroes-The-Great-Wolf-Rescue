@@ -1,0 +1,119 @@
+[gd_scene load_steps=6 format=3 uid="uid://c5oh08utk31s2"]
+
+[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Player_Input/Player_Name.gd" id="1_fygib"]
+[ext_resource type="FontFile" uid="uid://byrrpk8yu3w10" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="1_vi86i"]
+[ext_resource type="Theme" uid="uid://cya18eaoptu42" path="res://Assets/Theme/Player_Name/Player_Name.tres" id="2_jj1ar"]
+[ext_resource type="Texture2D" uid="uid://d4gsgircvxx2m" path="res://Assets/Image/Background/Character Selector/wolf-den-cave-taiga-forest 800x 600.png" id="3_prlmh"]
+[ext_resource type="FontFile" uid="uid://bc3fo6p06lixr" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="4_ru70u"]
+
+[node name="PlayerName" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fygib")
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("3_prlmh")
+expand_mode = 1
+
+[node name="Comand Info" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.413
+anchor_top = 0.444
+anchor_right = 0.587
+anchor_bottom = 0.471
+offset_left = 0.359985
+offset_top = 0.319977
+offset_right = -0.359985
+offset_bottom = -0.120026
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.647059, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_constants/line_spacing = 2
+theme_override_fonts/font = ExtResource("1_vi86i")
+theme_override_font_sizes/font_size = 18
+text = "INPUT YOUR CHARACTER NAME : "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="info_char" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.453
+anchor_top = 0.531
+anchor_right = 0.547
+anchor_bottom = 0.553
+offset_left = 0.159973
+offset_top = -0.320007
+offset_right = -0.160034
+offset_bottom = -0.160034
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.647059, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_constants/line_spacing = 2
+theme_override_fonts/font = ExtResource("1_vi86i")
+theme_override_font_sizes/font_size = 16
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.361
+anchor_top = 0.556
+anchor_right = 0.639
+anchor_bottom = 0.582
+offset_left = -0.580048
+offset_top = -0.320038
+offset_right = 0.579956
+offset_bottom = -0.0400085
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.647059, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_constants/line_spacing = 2
+theme_override_fonts/font = ExtResource("1_vi86i")
+theme_override_font_sizes/font_size = 18
+text = "PLEASE PRESS 'ENTER' AFTER ENTERING THE NAME"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Player_Name" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(320, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -16.0
+offset_right = 32.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_jj1ar")
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/selection_color = Color(0, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_ru70u")
+alignment = 1
+max_length = 32
+expand_to_text_length = true
+caret_blink = true
+
+[connection signal="text_submitted" from="Player_Name" to="." method="_on_player_name_text_submitted"]
