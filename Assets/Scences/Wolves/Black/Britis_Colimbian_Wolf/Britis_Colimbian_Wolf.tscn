@@ -1,9 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://bwvgckm0q8354"]
+[gd_scene load_steps=11 format=3 uid="uid://bwvgckm0q8354"]
 
-[ext_resource type="Texture2D" uid="uid://dx63rt6g3k2us" path="res://Assets/Image/Wolves/Pixel Art/Character Sheets/Character Sheet Wolf - 2 Black.png" id="1_0q01a"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_eqo3g"]
-size = Vector2(64, 64)
+[ext_resource type="Texture2D" uid="uid://kixyig7yhewt" path="res://Assets/Image/Wolves/Pixel Art/Character Sheets/Character Sheet Wolf - 2 Black.png" id="1_0q01a"]
+[ext_resource type="Script" path="res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/British Columbian Wolf/Britisth_Colimbian_Wolf.gd" id="1_l40jy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x3cws"]
 atlas = ExtResource("1_0q01a")
@@ -60,10 +58,11 @@ animations = [{
 "speed": 4.0
 }]
 
-[node name="Britis_Colimbian_Wolf" type="CharacterBody2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eqo3g"]
+size = Vector2(64, 64)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_eqo3g")
+[node name="Britis_Colimbian_Wolf" type="CharacterBody2D"]
+script = ExtResource("1_l40jy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_rdvkc")
@@ -71,3 +70,10 @@ animation = &"Howling"
 autoplay = "Iddle"
 frame = 2
 frame_progress = 1.0
+
+[node name="Howling" type="AudioStreamPlayer2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_eqo3g")

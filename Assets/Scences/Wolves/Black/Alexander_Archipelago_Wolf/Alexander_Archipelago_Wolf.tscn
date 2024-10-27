@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://vfwlq86whyf3"]
 
-[ext_resource type="Script" path="res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Alexander_Archipelago_Wolf.gd" id="1_i1bye"]
+[ext_resource type="Script" path="res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Alexander Archipelago Wolf/Alexander_Archipelago_Wolf.gd" id="1_i1bye"]
 [ext_resource type="Texture2D" uid="uid://kixyig7yhewt" path="res://Assets/Image/Wolves/Pixel Art/Character Sheets/Character Sheet Wolf - 2 Black.png" id="1_vigls"]
 [ext_resource type="AudioStream" uid="uid://ceusnsamrm1tb" path="res://Assets/Music/Howling/Wolf Howl 1.mp3" id="2_qmw0d"]
 [ext_resource type="AudioStream" uid="uid://c0u4ou82yo1i8" path="res://Assets/Music/Get_Wolf/Get_Wolf.wav" id="3_dctdq"]

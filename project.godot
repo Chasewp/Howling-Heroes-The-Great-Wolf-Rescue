@@ -31,9 +31,9 @@ almanac="*res://Assets/Script/Class/Wolf/Wolf Alamanac/Class_Data/Almanac.gd"
 WolfData="*res://Assets/Script/Class/Wolf/Wolves_Save/Wolf_Data.gd"
 player_singleton="*res://Assets/Script/Class/Player/Player_Singleton.gd"
 GlobalTilesets="*res://Assets/Script/Global_Tilesets/Global_Tilesets.gd"
-Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 mission_data_stat="*res://Assets/Script/Controller/Mission/mission_class.gd"
 Music="*res://Assets/Script/Class/utilities/music/music.gd"
+Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
@@ -53,10 +53,13 @@ glossary/default_case_sensitive=true
 layout/mode=0
 text/autocolor_names=false
 variables={
+"Choosen": {
+"Chose": false
+},
 "Stat": {
-"Attack": "",
-"Defences": "",
-"Health": "100"
+"Attack": 0,
+"Defences": 0,
+"Health": 100
 }
 }
 event_default_overrides={

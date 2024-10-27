@@ -158,9 +158,9 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("30_pm2ky")
 }],
-"loop": false,
+"loop": true,
 "name": &"360_Flip",
-"speed": 5.0
+"speed": 15.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -265,9 +265,8 @@ script = ExtResource("1_y7rdt")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ufdn7")
-animation = &"Spiral and Vanish"
-frame = 29
-frame_progress = 1.0
+animation = &"360_Flip"
+frame_progress = 0.154115
 
 [node name="DetectionArea" type="Area2D" parent="."]
 unique_name_in_owner = true

@@ -375,4 +375,5 @@ position = Vector2(1052, 194)
 scale = Vector2(0.75, 0.75)
 
 [node name="Vanish" parent="." instance=ExtResource("11_535en")]
+visible = false
 position = Vector2(119, 213)

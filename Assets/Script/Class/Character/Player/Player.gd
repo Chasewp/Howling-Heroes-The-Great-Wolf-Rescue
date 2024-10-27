@@ -15,6 +15,11 @@ signal update_coordinate
 @export var ammo_empty : AudioStream
 @export var attack_riffle : float = 4.5
 @export var attack_machete : float = 4.45
+@export var player_name: String
+@export var player_health : int
+@export var player_armor : int
+@export var player_biome : String
+
 enum state {IDDLE, IDDLE_MACHETE, IDDLE_BRUST_GAROU, RUNNING, JUMPUP, JUMPDOWN, HURT,DIED,ATTACKMACHETE,AIR_ATTACKMACHETE,SHOOT}
 
 var anim_state = state.IDDLE
@@ -34,7 +39,7 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 func _ready():
 	brust_garou_equip = false
 	machete_equip = false
-
+	get_player_data()
 			
 func update_state():
 		if anim_state == state.HURT: 
@@ -99,6 +104,15 @@ func _physics_process(delta):
 	move_and_slide()
 
 
-	
+func get_player_data():
+	var data = preload("user://Save/Progress/Save_Progress.tres")
+	player_singleton.setter_name(data.player_name)
+	player_singleton.setter_health(data.player_health)
+	player_singleton.setter_location(data.player_biome_location)
+	player_singleton.setter_armor(data.player_armor)
+	player_name = player_singleton.getter_name()
+	player_health = player_singleton.getter_health()
+	player_armor = player_singleton.getter_armor()
+	player_biome = player_singleton.getter_location()
 func shoot():
 	pass

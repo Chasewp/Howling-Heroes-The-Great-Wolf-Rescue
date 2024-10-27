@@ -32,8 +32,6 @@ func _on_continue_main_menu_buttons_pressed():
 	else :
 		print("Failed open stage")
 	
-	
-	
 
 #Options Button
 func _on_options_main_menu_buttons_pressed():

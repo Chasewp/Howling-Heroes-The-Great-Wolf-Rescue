@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://dxn2vmhrlk5qx"]
 
 [ext_resource type="Texture2D" uid="uid://cehh6p2t3jaa1" path="res://Assets/Image/Wolves/Pixel Art/Character Sheets/Character Sheet Wolf - 6 white.png" id="1_2qhis"]
-[ext_resource type="Script" path="res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Alaska_Tundra_Wolf.gd" id="1_cy0mp"]
+[ext_resource type="Script" path="res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Alaskan Tundra Wolf/Alaskan_Tundra_Wolf.gd" id="1_cy0mp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ccde0"]
 atlas = ExtResource("1_2qhis")

@@ -6,13 +6,18 @@ extends Control
 @onready var Armor = $Armor_Bar
 @onready var pause = $PauseMenu
 
-var save_progress = preload("user://Save/Progress/Save_Progress.tres")
+var save = preload("user://Save/Progress/Save_Progress.tres")
 
 func _ready():
-	character_name.set_text(save_progress.player_name)
-	biome_location.set_text("Location : "+ save_progress.player_biome_location)
-	Health.set_value_no_signal(save_progress.player_health)
-	Armor.set_value_no_signal(save_progress.player_armor)
+	player_singleton.setter_armor(save.player_armor)
+	player_singleton.setter_name(save.player_name)
+	player_singleton.setter_health(save.player_health)
+	player_singleton.setter_location(save.player_biome_location)
+	character_name.set_text(player_singleton.getter_name())
+	biome_location.set_text("Location : "+ player_singleton.getter_location())
+	Health.set_value_no_signal(player_singleton.getter_health())
+	Armor.set_value_no_signal(player_singleton.getter_armor())
+
 	
 	
 func _on_player_health_changed(percentage:float):

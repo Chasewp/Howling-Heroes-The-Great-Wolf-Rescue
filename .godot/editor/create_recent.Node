@@ -1,14 +1,14 @@
+Area2D
 AudioStreamPlayer2D
+Timer
+Button
 RichTextLabel
 Label
 ColorRect
 AnimatedSprite2D
 AnimationPlayer
-Area2D
 TextureRect
 ParallaxLayer
 ParallaxBackground
-Timer
 Node
 Marker2D
-Node2D
