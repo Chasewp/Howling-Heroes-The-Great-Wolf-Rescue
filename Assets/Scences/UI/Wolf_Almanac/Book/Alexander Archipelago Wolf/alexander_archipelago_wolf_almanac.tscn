@@ -1,11 +1,11 @@
 [gd_scene load_steps=7 format=3 uid="uid://dmtr6wxtkohn7"]
 
 [ext_resource type="Script" path="res://Assets/Script/Class/Wolf/Wolf Alamanac/Book/Wolf_Alamanac_Book.gd" id="1_heqvv"]
-[ext_resource type="FontFile" uid="uid://byrrpk8yu3w10" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="3_axkwv"]
-[ext_resource type="FontFile" uid="uid://chsguujhey1bs" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="4_nmiv4"]
-[ext_resource type="FontFile" uid="uid://bc3fo6p06lixr" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="5_11jp6"]
-[ext_resource type="FontFile" uid="uid://dknuby8pwv0rl" path="res://Assets/Fonts/DisposableDroidBB_ital.ttf" id="6_5627p"]
-[ext_resource type="Texture2D" uid="uid://dy5u82g7k5sjy" path="res://Assets/Image/Buttons/right-arrow.png" id="7_dr8br"]
+[ext_resource type="FontFile" uid="uid://cuecxy0807xft" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="3_axkwv"]
+[ext_resource type="FontFile" uid="uid://b87r0uf4usp0v" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="4_nmiv4"]
+[ext_resource type="FontFile" uid="uid://ddipvfn75bmvn" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="5_11jp6"]
+[ext_resource type="FontFile" uid="uid://cu2dbfhhq1sdh" path="res://Assets/Fonts/DisposableDroidBB_ital.ttf" id="6_5627p"]
+[ext_resource type="Texture2D" uid="uid://dn1egw5yq2k1v" path="res://Assets/Image/Buttons/right-arrow.png" id="7_dr8br"]
 
 [node name="Alexander_Archipelago_Wolf_Almanac" type="Control"]
 layout_mode = 3

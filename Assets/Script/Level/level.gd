@@ -23,7 +23,7 @@ func _ready():
 	for exit in level_exits:
 		exit.exit_reached.connect(_on_exit_reached)
 		
-		var data = preload("user://Save/Progress/Save_Progress.tres")
+		var _data = preload("user://Save/Progress/Save_Progress.tres")
 		if player_singleton.location == "Taiga":
 			Music.start_track(taiga_music)
 		elif player_singleton.location == "Tundra":

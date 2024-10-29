@@ -99,7 +99,7 @@ func _get_Alexander_Archipelago_Wolf_Name():
 	return _alexander_Archipelago_Wolf_Name
 
 #Species
-func _get_Alexander_ArchipelagoWolf_Species():
+func _get_Alexander_Archipelago_Wolf_Species():
 	var _alexander_Archipelago_Wolf_Species = Data_Wolves["Alexander Archipelago Wolf"]["Species"]
 	return _alexander_Archipelago_Wolf_Species
 #Hight
@@ -709,7 +709,7 @@ func _get_Greenland_Wolf_Rescue_Status():
 	var _greenland_Wolf_Rescue_Status = Data_Wolves["Greenland Wolf"]["Rescued"]
 	return _greenland_Wolf_Rescue_Status
 
-func _set_Greenland_Wolf_Rescue(status:bool):
+func _set_Greenland_Wolf_Rescue_Status(status:bool):
 	Data_Wolves["Greenland Wolf"]["Rescued"] = status
 	var _greenland_Wolf_Rescue_Status_Rescued = FileAccess.open(WOLVES_LIST_DATA,FileAccess.WRITE)
 	_greenland_Wolf_Rescue_Status_Rescued.store_line(JSON.stringify(Data_Wolves))

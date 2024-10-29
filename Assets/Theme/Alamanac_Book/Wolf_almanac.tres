@@ -1,0 +1,26 @@
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://b0wacjljud6at"]
+
+[ext_resource type="FontFile" uid="uid://cuecxy0807xft" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="1_o47vp"]
+[ext_resource type="FontFile" uid="uid://b87r0uf4usp0v" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="2_ne1ya"]
+[ext_resource type="FontFile" uid="uid://cu2dbfhhq1sdh" path="res://Assets/Fonts/DisposableDroidBB_ital.ttf" id="3_8s5fa"]
+[ext_resource type="FontFile" uid="uid://ddipvfn75bmvn" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="4_yr2qv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wxf3h"]
+
+[resource]
+default_font = ExtResource("4_yr2qv")
+Label/colors/font_color = Color(1, 1, 1, 1)
+Label/colors/font_outline_color = Color(1, 1, 1, 1)
+Label/colors/font_shadow_color = Color(0, 0, 0, 0)
+Label/constants/line_spacing = 3
+Label/constants/outline_size = 0
+Label/constants/shadow_offset_x = 1
+Label/constants/shadow_offset_y = 1
+Label/constants/shadow_outline_size = 1
+Label/font_sizes/font_size = 24
+Label/fonts/font = ExtResource("1_o47vp")
+Label/styles/normal = SubResource("StyleBoxEmpty_wxf3h")
+RichTextLabel/fonts/bold_font = ExtResource("1_o47vp")
+RichTextLabel/fonts/bold_italics_font = ExtResource("2_ne1ya")
+RichTextLabel/fonts/italics_font = ExtResource("3_8s5fa")
+RichTextLabel/fonts/normal_font = ExtResource("4_yr2qv")

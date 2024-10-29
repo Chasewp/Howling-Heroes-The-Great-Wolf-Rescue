@@ -6,16 +6,18 @@ extends Node2D
 @onready var player_location = $"VBoxContainer/Player Location/Location"
 @onready var player_coordinate = $VBoxContainer/Player_Coordinate/Coordinate
 
-const saveslot1 = preload("")
-const saveslot2 = preload("")
-const saveslot3 = preload("")
-const saveslot4 = preload("")
+# const saveslot1 = preload("")
+# const saveslot2 = preload("")
+# const saveslot3 = preload("")
+# const saveslot4 = preload("")
 
 func _on_slot_1_mouse_entered():
-	save_file.load_data()
-	player_name.text=save_file.player_name
-	player_location.text = save_file.player_biome_location
-	player_coordinate.text = save_file.player_position
+	pass # Replace with function body.
+
+	# save_file.load_data()
+	# player_name.text=save_file.player_name
+	# player_location.text = save_file.player_biome_location
+	# player_coordinate.text = save_file.player_position
 	
 
 func _on_slot_1_mouse_exited():

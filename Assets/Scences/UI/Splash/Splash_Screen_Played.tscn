@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://nxesci8m8pft"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Splash_Screen/Splash_Screen_Played.gd" id="1_x25oj"]
-[ext_resource type="Texture2D" uid="uid://ieydux8uysii" path="res://Assets/Image/Background/Splash Screen/—Pngtree—flat wind keyboard mouse vector_5458958.png" id="2_4dhaj"]
-[ext_resource type="FontFile" uid="uid://byrrpk8yu3w10" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="3_6teo4"]
+[ext_resource type="Texture2D" uid="uid://tuwqn3d1jod8" path="res://Assets/Image/Background/Splash Screen/—Pngtree—flat wind keyboard mouse vector_5458958.png" id="2_4dhaj"]
+[ext_resource type="FontFile" uid="uid://cuecxy0807xft" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="3_6teo4"]
 
 [sub_resource type="Animation" id="Animation_dtfix"]
 resource_name = "Fade_In"

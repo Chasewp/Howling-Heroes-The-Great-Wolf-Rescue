@@ -1,6 +1,6 @@
 [gd_resource type="Theme" load_steps=3 format=3 uid="uid://4pmckqqvpja8"]
 
-[ext_resource type="FontFile" uid="uid://bc3fo6p06lixr" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="1_t8spf"]
+[ext_resource type="FontFile" uid="uid://ddipvfn75bmvn" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="1_t8spf"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jf2qh"]
 content_margin_left = 4.0

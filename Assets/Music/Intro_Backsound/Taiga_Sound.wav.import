@@ -2,7 +2,7 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://cbmxmnggiva4u"
+uid="uid://cfaoy2o6v6ur7"
 path="res://.godot/imported/Taiga_Sound.wav-92ec398d12d28df462c9fdc02ecb1762.sample"
 
 [deps]
@@ -14,11 +14,11 @@ dest_files=["res://.godot/imported/Taiga_Sound.wav-92ec398d12d28df462c9fdc02ecb1
 
 force/8_bit=false
 force/mono=false
-force/max_rate=true
+force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop_mode=2
+edit/loop_mode=0
 edit/loop_begin=0
 edit/loop_end=-1
 compress/mode=0

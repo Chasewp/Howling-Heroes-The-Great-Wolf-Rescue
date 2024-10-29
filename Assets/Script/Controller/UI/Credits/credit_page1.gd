@@ -8,9 +8,9 @@ var normal_cursor = load("res://Assets/Image/Cursor/Cursor 32x32.png")
 var hand_cursor = load("res://Assets/Image/Cursor/hand_paw.png")
 
 #Credit stage others
-var _credit_sfx = preload("res://Assets/Scences/UI/Credits/credit_3.tscn").instantiate()
-var _credit_image = preload("res://Assets/Scences/UI/Credits/credit_4.tscn").instantiate()
-var _credit_music 
+var _credit_sfx = preload("res://Assets/Scences/UI/Credits/credit_3-sfx.tscn").instantiate()
+var _credit_image = preload("res://Assets/Scences/UI/Credits/credit_4_images.tscn").instantiate()
+var _credit_music = preload("res://Assets/Scences/UI/Credits/credit_5_music.tscn").instantiate()
 
 
 
@@ -61,5 +61,5 @@ func _on_music_pressed()->void:
 	button_sfx.play()
 	animation1.play("Fade_out")
 	await get_tree().create_timer(3).timeout
-	get_tree().change_scene_to_packed(_credit_image)
+	get_tree().change_scene_to_packed(_credit_music)
 	

@@ -2,7 +2,7 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://c18x7x4d356rb"
+uid="uid://dpmjk5j6ygo2x"
 path="res://.godot/imported/savanna_loop.wav-6002b24b0a74732cddeb427800e5ad44.sample"
 
 [deps]
@@ -14,11 +14,11 @@ dest_files=["res://.godot/imported/savanna_loop.wav-6002b24b0a74732cddeb427800e5
 
 force/8_bit=false
 force/mono=false
-force/max_rate=true
+force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop_mode=2
+edit/loop_mode=0
 edit/loop_begin=0
 edit/loop_end=-1
 compress/mode=0

@@ -27,7 +27,7 @@ func _on_area_2d_body_entered(body):
 		#Name
 		almanac.setter_Wolf_Name(WolfData._get_Alexander_Archipelago_Wolf_Name())
 		#Species
-		almanac.setter_Wolf_Species(WolfData._get_Alexander_ArchipelagoWolf_Species())
+		almanac.setter_Wolf_Species(WolfData._get_Alexander_Archipelago_Wolf_Species())
 		#Height
 		almanac.setter_Wolf_Height(WolfData._get_Alexander_Archipelago_Wolf_Height())
 		#Weight

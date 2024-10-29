@@ -1,0 +1,84 @@
+[gd_scene load_steps=13 format=3 uid="uid://clus5nmm3eyw8"]
+
+[ext_resource type="Texture2D" uid="uid://cuvstslrto20h" path="res://Assets/Image/Wolves/Pixel Art/Character Sheets/Character Sheet Wolf - 5 silver.png" id="1_8wnlm"]
+[ext_resource type="Script" path="res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Northern Rocky Mountain Wolf/Northern_Rocky_Mountain_Wolf.gd" id="1_rwk02"]
+[ext_resource type="AudioStream" uid="uid://qmrbkt3vxyej" path="res://Assets/Music/Howling/Wolf Howl 22.mp3" id="2_i1n6w"]
+[ext_resource type="AudioStream" uid="uid://bju5n8rglq501" path="res://Assets/Music/Get_Wolf/Get_Wolf.wav" id="3_nmt36"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yxmnj"]
+atlas = ExtResource("1_8wnlm")
+region = Rect2(192, 256, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4cc1y"]
+atlas = ExtResource("1_8wnlm")
+region = Rect2(256, 256, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qucyt"]
+atlas = ExtResource("1_8wnlm")
+region = Rect2(320, 256, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7uqe3"]
+atlas = ExtResource("1_8wnlm")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ak5un"]
+atlas = ExtResource("1_8wnlm")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0v6ur"]
+atlas = ExtResource("1_8wnlm")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rdvkc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yxmnj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4cc1y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qucyt")
+}],
+"loop": false,
+"name": &"Howling",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7uqe3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ak5un")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0v6ur")
+}],
+"loop": true,
+"name": &"Iddle",
+"speed": 4.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j86m3"]
+size = Vector2(64, 64)
+
+[node name="Northern_Rocky_Mounthain_Wolf" type="CharacterBody2D"]
+script = ExtResource("1_rwk02")
+howl = ExtResource("2_i1n6w")
+get_wolf = ExtResource("3_nmt36")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_rdvkc")
+animation = &"Iddle"
+autoplay = "Iddle"
+
+[node name="Howling" type="AudioStreamPlayer2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_j86m3")
+
+[connection signal="rescue" from="." to="." method="_on_rescue"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

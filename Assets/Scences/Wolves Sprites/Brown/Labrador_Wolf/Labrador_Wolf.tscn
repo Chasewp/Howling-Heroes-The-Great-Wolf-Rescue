@@ -1,0 +1,86 @@
+[gd_scene load_steps=13 format=3 uid="uid://hayak3tg0ads"]
+
+[ext_resource type="Script" path="res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Labrador Wolf/Labrador_Wolf.gd" id="1_0vyyn"]
+[ext_resource type="AudioStream" uid="uid://bju5n8rglq501" path="res://Assets/Music/Get_Wolf/Get_Wolf.wav" id="2_5ef8t"]
+[ext_resource type="AudioStream" uid="uid://cd2rohqbda3a5" path="res://Assets/Music/Howling/Wolf Howl 18.mp3" id="2_32mpd"]
+[ext_resource type="Texture2D" uid="uid://bcj4f1ym2xqi0" path="res://Assets/Image/Wolves/Pixel Art/Character Sheets/Character Sheet Wolf - 3 brown.png" id="2_qq0qb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qbkdj"]
+atlas = ExtResource("2_qq0qb")
+region = Rect2(192, 256, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7uwjx"]
+atlas = ExtResource("2_qq0qb")
+region = Rect2(256, 256, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l063d"]
+atlas = ExtResource("2_qq0qb")
+region = Rect2(320, 256, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ve2j5"]
+atlas = ExtResource("2_qq0qb")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b7feo"]
+atlas = ExtResource("2_qq0qb")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5cltw"]
+atlas = ExtResource("2_qq0qb")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rdvkc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qbkdj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7uwjx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l063d")
+}],
+"loop": false,
+"name": &"Howling",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ve2j5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b7feo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5cltw")
+}],
+"loop": true,
+"name": &"Iddle",
+"speed": 4.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pxplb"]
+size = Vector2(64, 64)
+
+[node name="Labrador_Wolf" type="CharacterBody2D"]
+script = ExtResource("1_0vyyn")
+howl = ExtResource("2_32mpd")
+get_wolf = ExtResource("2_5ef8t")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_rdvkc")
+animation = &"Howling"
+autoplay = "Iddle"
+frame = 2
+frame_progress = 1.0
+
+[node name="Howling" type="AudioStreamPlayer2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_pxplb")
+
+[connection signal="rescue" from="." to="." method="_on_rescue"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

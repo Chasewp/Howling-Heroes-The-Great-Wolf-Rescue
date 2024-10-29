@@ -23,7 +23,7 @@ func _on_area_2d_body_entered(body):
 			get_wolf.play()
 		WolfData._set_Arabian_Wolf_Rescue_Status(true)
 		#Image
-		almanac.setter_Wolf_Image(WolfData._get_Araian_Wolf_Image_Path())
+		almanac.setter_Wolf_Image(WolfData._get_Arabian_Wolf_Image_Path())
 		#Name
 		almanac.setter_Wolf_Name(WolfData._get_Arabian_Wolf_Name())
 		#Species

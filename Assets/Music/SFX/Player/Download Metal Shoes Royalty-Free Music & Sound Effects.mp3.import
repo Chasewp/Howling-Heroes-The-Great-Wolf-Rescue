@@ -2,7 +2,7 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-uid="uid://bt2dhnv4m2u4c"
+uid="uid://bc3322x2xths5"
 path="res://.godot/imported/Download Metal Shoes Royalty-Free Music & Sound Effects.mp3-1d995b25186ef0a4bace085f017389b8.mp3str"
 
 [deps]
@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/Download Metal Shoes Royalty-Free Music & Sou
 [params]
 
 loop=false
-loop_offset=0.0
-bpm=85.0
+loop_offset=0
+bpm=0
 beat_count=0
 bar_beats=4
