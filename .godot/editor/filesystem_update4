@@ -1,77 +1,26 @@
-res://Assets/Script/Level/level.gd
-res://Assets/Script/Controller/UI/Settings_Confirmation/settings_confrimation.gd
-res://Assets/Script/Controller/Save/Settings/save_settings.gd
-res://Assets/Script/Class/Item/Player/Machete/Machete.gd
-res://Assets/Script/Class/Character/Player/Weapon/Riffle_Player.gd
-res://Assets/Script/Class/Character/Character_class.gd
-res://Assets/Script/Controller/UI/Stage/level_1-1.gd
-res://Assets/Script/Controller/UI/Location/Taiga/Bridge_Stone_Forest.gd
-res://Assets/Script/Class/Items/Collectable.gd
-res://Assets/Scences/UI/Inventory/items_stacking_GUI.gd
-res://Assets/Scences/UI/Inventory/Descriptions_Items.gd
-res://Assets/Script/Controller/UI/Load_slot/loader_screen.gd
-res://addons/dialogic/Modules/Save/subsystem_save.gd
-res://Assets/Script/Controller/UI/Credits/credit_page1.gd
-res://Assets/Script/Controller/UI/Credits/credit_page 3.gd
-res://Assets/Script/Controller/UI/Credits/credit_page 2.gd
-res://Assets/Script/Controller/Key/Taiga/Pine Tree/pine_key.gd
-res://Assets/Script/Level/level_1.gd
 res://Assets/Script/Controller/Weapons/brust_garou_riffle_player.gd
-res://Assets/Scences/Wolves Sprites/White/Greenland_Wolf/Greenland_Wolf.tscn
-res://Assets/Dialogue/Theme/Speaker_Mode.tres
-res://Assets/Dialogue/Theme/Pixelize_Visual_Novel.tres
-res://Assets/Dialogue/Theme/Pixelize_speaker.tres
-res://Assets/Theme/Alamanac_Book/Wolf_almanac.tres
-res://Assets/Bullets/Animation_Player_Bullets.tres
-res://Assets/Theme/Credit/Buttons.tres
-res://Assets/Scences/Wolves Sprites/White/Hudson_Bay_Wolf/Hudson_Bay_Wolf.tscn
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Hudson Bay Wolf/Hudson_Bay_Wolf.gd
-res://Assets/Scences/Wolves Sprites/White/Machenzie_River_Wolf/Machenzie_River_Wolf.tscn
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Mackenzie River Wolf/Mackenzie_River_Wolf.gd
-res://Assets/Scences/Wolves Sprites/White/Alaska_Tundra_Wolf/Alaska_Tundra_Wolf.tscn
-res://Assets/Scences/Wolves Sprites/White/Tundra_Wolf/Tundra_Wolf.tscn
-res://Assets/Scences/Wolves Sprites/Brown/Indian_Wolf/Indian_Wolf.tscn
-res://Assets/Scences/Wolves Sprites/Brown/Iberian Wolf/Iberian Wolf.tscn
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Tundra Wolf/Tundra_Wolf.gd
-res://Assets/Scences/Wolves Sprites/White/Buffin_Island_Wolf/Buffin_Island_Wolf.tscn
-res://Assets/Scences/Wolves Sprites/White/Artic_Wolf/Artic_Wolf.tscn
-res://Assets/Scences/Wolves Sprites/Silver/Steppe_Wolf/Steppe_Wolf.tscn
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Mexican Wolf/Mexican_Wolf.gd
-res://Assets/Scences/Wolves Sprites/Gray/Mexian_Wolf/Mexican_Wolf.tscn
-res://Assets/Scences/Wolves Sprites/Gray/Great_Plains_Wolf/Great_Plains_Wolf.tscn
-res://Assets/Scences/Wolves Sprites/Gray/Gray_Wolf/gray_wolf.tscn
+res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Arctic Wolf/Arctic_Wolf.gd
+res://Assets/Script/Class/Item/Player/Machete/Machete.gd
+res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Baffin Island Wolf/Baffin_Island_Wolf.gd
+res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Eastern Wolf/Eastern_Wolf.gd
+res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Gray Wolf/Gray_Wolf.gd
 res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Great Plains Wolf/Great_Plains_Wolf.gd
 res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Greenland Wolf/Greenland_Wolf.gd
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Baffin Island Wolf/Baffin_Island_Wolf.gd
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Arctic Wolf/Arctic_Wolf.gd
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Alaskan Tundra Wolf/Alaskan_Tundra_Wolf.gd
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Steppe Wolf (Caspian Sea Wolf)/Steppe_Wolf_(Caspian_Sea_Wolf).gd
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Northern Rocky Mountain Wolf/Northern_Rocky_Mountain_Wolf.gd
-res://Assets/Scences/Wolves Sprites/Silver/Northern_Rocky_Mounthain_Wolf/Northern_Rocky_Mounthain_Wolf.tscn
-res://Assets/Scences/Wolves Sprites/Gray/Eurasian Wolf/Eurasian_Wolf.tscn
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Eurasian Wolf/Eurasian_Wolf.gd
-res://Assets/Scences/Wolves Sprites/Gray/Eastern_Wolf/Eastern_Wolf.tscn
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Eastern Wolf/Eastern_Wolf.gd
-res://Assets/Scences/Wolves Sprites/Golden/North_West_Wolf/North_West_Wolf.tscn
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Northwestern Wolf/Northwestern_Wolf.gd
-res://Assets/Scences/Wolves Sprites/Golden/Italian_Wolf/Italian_Wolf.tscn
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Italian Wolf/Italian_Wolf..gd
-res://Assets/Scences/Wolves Sprites/Golden/Himalayan_Wolf/Himalayan_Wolf.tscn
 res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Himalayan Wolf/Himalayan_Wolf.gd
-res://Assets/Scences/Wolves Sprites/Golden/Arabian_Wolf/Arabian_Wolf.tscn
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Arabian Wolf/Arabbian_Wolf.gd
-res://Assets/Scences/Wolves Sprites/Brown/Yukon_Wolf/Yukon_Wolf.tscn
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Interior Alaskan Wolf (Yukon Wolf)/Interior_Alaskan_Wolf_(Yukon_Wolf).gd
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Vancouver Coastal Island Wolf/Vancouver_Coastal_Island_Wolf.gd
-res://Assets/Scences/Wolves Sprites/Brown/Vancouver_Coastal_Island_Wolf/Vancouver_Coastal_Island_Wolf .tscn
-res://Assets/Scences/Wolves Sprites/Brown/Red_Wolf/Red_Wolf.tscn
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Red Wolf/Red_Wolf.gd
-res://Assets/Scences/Wolves Sprites/Brown/Mongolian_Wolf/Mongolian_Wolf.tscn
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Mongolian Wolf/Mongolian_Wolf.gd
-res://Assets/Scences/Wolves Sprites/Brown/Labrador_Wolf/Labrador_Wolf.tscn
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Labrador Wolf/Labrador_Wolf.gd
+res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Hudson Bay Wolf/Hudson_Bay_Wolf.gd
 res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Indian Wolf/Indian_Wolf.gd
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Iberian Wolf/Iberian Wolf.gd
-res://Assets/Scences/Wolves Sprites/Black/Britis_Colimbian_Wolf/Britis_Colimbian_Wolf.tscn
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/British Columbian Wolf/Britisth_Colimbian_Wolf.gd
-res://Assets/Scences/Wolves Sprites/Black/Alexander_Archipelago_Wolf/Alexander_Archipelago_Wolf.tscn
+res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Interior Alaskan Wolf (Yukon Wolf)/Interior_Alaskan_Wolf_(Yukon_Wolf).gd
+res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Italian Wolf/Italian_Wolf..gd
+res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Mackenzie River Wolf/Mackenzie_River_Wolf.gd
+res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Mexican Wolf/Mexican_Wolf.gd
+res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Mongolian Wolf/Mongolian_Wolf.gd
+res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Northern Rocky Mountain Wolf/Northern_Rocky_Mountain_Wolf.gd
+res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Northwestern Wolf/Northwestern_Wolf.gd
+res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Red Wolf/Red_Wolf.gd
+res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Steppe Wolf (Caspian Sea Wolf)/Steppe_Wolf_(Caspian_Sea_Wolf).gd
+res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Tundra Wolf/Tundra_Wolf.gd
+res://Assets/Script/Level/level.gd
+res://Assets/Script/Controller/UI/Settings_Confirmation/settings_confrimation.gd
+res://Assets/Script/Controller/UI/Location/Taiga/Bridge_Stone_Forest.gd
+res://Assets/Script/Controller/UI/Load_slot/loader_screen.gd
+res://Assets/Script/Controller/UI/Credits/credit_page1.gd

@@ -14,7 +14,7 @@ var Red_Wolf_almanac = preload("res://Assets/Scences/UI/Wolf_Almanac/Book/Red Wo
 @onready var sprites = $AnimatedSprite2D
 
 func _on_area_2d_body_entered(body):
-	if body as Players:
+	if body.is_in_group("player"):
 		_on_rescue()
 		sprites.play("Howling")
 		howl.play()

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cndqerygqtk6p"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Cage/Taiga/pine__cage.gd" id="1_pywgo"]
-[ext_resource type="Texture2D" uid="uid://dagf21ihqyxw" path="res://Assets/Image/Cage/Taiga/pine wood cage.png" id="1_qnbjd"]
+[ext_resource type="Texture2D" uid="uid://mte5uiwf7pad" path="res://Assets/Image/Cage/Taiga/pine wood cage.png" id="1_qnbjd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sqqms"]
 size = Vector2(91, 105)

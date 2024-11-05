@@ -14,7 +14,7 @@ var northern_rocky_mountain_wolf_almanac = preload("res://Assets/Scences/UI/Wolf
 @onready var sprites = $AnimatedSprite2D
 
 func _on_area_2d_body_entered(body):
-	if body as Players:
+	if body.is_in_group("player"):
 		_on_rescue()
 		sprites.play("Howling")
 		howl.play()
