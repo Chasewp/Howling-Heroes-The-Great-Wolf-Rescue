@@ -12,3 +12,16 @@ res://Assets/Script/Class/Inventory Items/inventory_items.gd
 res://Assets/Script/Controller/UI/Inventoryslot/Inventory_Slots.gd
 res://Assets/Scences/UI/Inventory/Inventory_Slots.tscn
 res://Assets/Script/Class/Character/Player/Player.gd
+res://Assets/Scences/Cage/Taiga/pine__cage.tscn
+res://Assets/Scences/Player/Weapons/riffle_player.-itemmtscn.tscn
+res://Assets/Scences/Player/Player.tscn
+res://Assets/Scences/Cage/Taiga/Stone_cage.tscn
+res://Assets/Scences/Cage/Taiga/Ice__cage.tscn
+res://Assets/Scences/Interaction/Interaction_Manager/InteractionManager.tscn
+res://Assets/Scences/NPC/Commander_Dreatna.tscn
+res://Assets/Scences/Interaction/interaction_Area/InteractionsArea.tscn
+res://Assets/Scences/Key/Taiga/Pine_Key.tscn
+res://Assets/Scences/Chest/chest.tscn
+res://Assets/Scences/Biome/Biome_Exit/biome_exit.tscn
+res://Assets/Scences/UI/Main_Menu/main_menu.tscn
+res://Assets/Scences/UI/Inventory/inventory_items.tscn
