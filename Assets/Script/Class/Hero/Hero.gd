@@ -263,7 +263,7 @@ signal update_ammo
 
 @export var _has_machete : bool
 @export var _has_brust_garou : bool
-@export var warehouse : Inventory
+#@export var warehouse : Inventory
 @onready var _attack_input_buffer : Timer = $HitBox/InputBuffer
 @warning_ignore("unused_private_class_variable")
 @onready var _cooldown : Timer = $HitBox/Cooldown
@@ -342,7 +342,8 @@ func _on_alamanac_main_menu_opened():
 
 func _on_hurt_box_area_entered(area):
 	if area.has_method("collect"):
-		area.collect(warehouse)
+		pass
+		#area.collect(warehouse)
 		
 
 

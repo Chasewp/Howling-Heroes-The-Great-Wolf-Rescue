@@ -1,12 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://b0qa21bvnhish"]
+[gd_scene load_steps=5 format=3 uid="uid://b0qa21bvnhish"]
 
-[ext_resource type="Texture2D" uid="uid://vbivtusmeppb" path="res://Assets/Image/Chest/Chest closed.png" id="1_dxo7b"]
-[ext_resource type="Texture2D" uid="uid://dly0xlf0mkbxw" path="res://Assets/Image/Chest/Chest Open.png" id="2_kp7ni"]
+[ext_resource type="Texture2D" uid="uid://cfdm7q2jnqtge" path="res://Assets/Image/Chest/Chest closed.png" id="1_dxo7b"]
+[ext_resource type="Script" path="res://Assets/Script/Class/Items/chest/chest.gd" id="1_q2fqp"]
+[ext_resource type="Texture2D" uid="uid://bfalonj4j2yu2" path="res://Assets/Image/Chest/Chest Open.png" id="2_kp7ni"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8b3mb"]
 radius = 32.0
 
 [node name="Chest" type="StaticBody2D"]
+script = ExtResource("1_q2fqp")
 
 [node name="Area2D" type="Area2D" parent="."]
 
@@ -21,3 +23,6 @@ texture = ExtResource("2_kp7ni")
 [node name="ChestClosed" type="Sprite2D" parent="."]
 scale = Vector2(0.067, 0.076)
 texture = ExtResource("1_dxo7b")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

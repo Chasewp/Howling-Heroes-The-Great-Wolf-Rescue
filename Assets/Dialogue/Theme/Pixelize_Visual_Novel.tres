@@ -30,6 +30,8 @@ overrides = {
 "box_margin_bottom": "10.0",
 "italic_font": "\"res://Assets/Fonts/DisposableDroidBB_ital.ttf\"",
 "name_label_font": "\"res://Assets/Fonts/DisposableDroidBB.ttf\"",
+"next_indicator_size": "Vector2(50, 50)",
+"next_indicator_texture": "\"res://Assets/Image/Dialogue/NEXT_LINE_INDICATOR/7116bae26a854748edad8552e503e776H0f4LoJC35cXIVjD-0.png\"",
 "normal_font": "\"res://Assets/Fonts/DisposableDroidBB.ttf\""
 }
 
@@ -67,4 +69,4 @@ script = ExtResource("10_ypg06")
 name = "Pixelize_Visual_Novel"
 base_overrides = {}
 layers = Array[ExtResource("2_ctlfj")]([SubResource("Resource_4dphk"), SubResource("Resource_p7xcr"), SubResource("Resource_gmmgq"), SubResource("Resource_pbghq"), SubResource("Resource_pkhcv"), SubResource("Resource_6o0cp"), SubResource("Resource_frl7t"), SubResource("Resource_mexia")])
-metadata/_latest_layer = 5
+metadata/_latest_layer = 2

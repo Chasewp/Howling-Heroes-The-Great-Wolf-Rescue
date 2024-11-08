@@ -33,6 +33,8 @@ var coordinate = Data_Progress.new()
 @onready var animator = $AnimatedSprite2D
 @onready var animation_player = $AnimationPlayer
 @onready var projectiles = %bullets_shoot
+@onready var interact_ui = $"interacct Ui"
+@onready var inventory_ui = $Inventory
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
@@ -40,7 +42,8 @@ func _ready():
 	brust_garou_equip = false
 	machete_equip = false
 	get_player_data()
-			
+	Inventory_Global.set_player_reference(self)
+	
 func update_state():
 		if anim_state == state.HURT: 
 			return
@@ -80,6 +83,8 @@ func update_animation(direction):
 			animation_player.play("machete_attack")
 			
 func _physics_process(delta):
+	if DialogueManager.is_dialog_active:
+		return
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y += gravity * delta
@@ -106,13 +111,26 @@ func _physics_process(delta):
 
 func get_player_data():
 	var data = preload("user://Save/Progress/Save_Progress.tres")
-	player_singleton.setter_name(data.player_name)
-	player_singleton.setter_health(data.player_health)
-	player_singleton.setter_location(data.player_biome_location)
-	player_singleton.setter_armor(data.player_armor)
-	player_name = player_singleton.getter_name()
-	player_health = player_singleton.getter_health()
-	player_armor = player_singleton.getter_armor()
-	player_biome = player_singleton.getter_location()
+	if data is Data_Progress : 
+		player_singleton.setter_name(data.player_name)
+		player_singleton.setter_health(data.player_health)
+		player_singleton.setter_location(data.player_biome_location)
+		player_singleton.setter_armor(data.player_armor)
+		player_name = player_singleton.getter_name()
+		player_health = player_singleton.getter_health()
+		player_armor = player_singleton.getter_armor()
+		player_biome = player_singleton.getter_location()
+	else:
+		print("Failed to load resource data.")
+		
 func shoot():
 	pass
+
+func _input(event):
+	if event.is_action_pressed("open_inventory"):
+		inventory_ui.visible != inventory_ui.visible
+		get_tree().paused != get_tree().paused
+
+func apply_item_effect():
+	#match item["effect"]:
+		pass

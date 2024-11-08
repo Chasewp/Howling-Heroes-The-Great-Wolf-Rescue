@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://7rxo4e7m6443" path="res://Assets/Scences/Level/main_menu_level.tscn" id="4_utoke"]
 [ext_resource type="PackedScene" uid="uid://d2kow5kkphlx6" path="res://Assets/Scences/UI/Mission_Log/mission.tscn" id="5_go5qk"]
 [ext_resource type="PackedScene" uid="uid://c1ph53byo1unb" path="res://Assets/Scences/UI/Game_Play/GUI_Play.tscn" id="5_k23sw"]
-[ext_resource type="FontFile" uid="uid://chsguujhey1bs" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="5_qobp7"]
+[ext_resource type="FontFile" uid="uid://b87r0uf4usp0v" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="5_qobp7"]
 [ext_resource type="PackedScene" uid="uid://pd5jheoce1lf" path="res://Assets/Scences/UI/Pause Menu/Pause_Menu.tscn" id="6_g1xfh"]
 [ext_resource type="Script" path="res://Assets/Script/Controller/Save/Save_Data/player/save_file.gd" id="7_3fx2h"]
 

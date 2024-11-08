@@ -1,0 +1,153 @@
+[gd_scene load_steps=9 format=3 uid="uid://dcows0mr31nc2"]
+
+[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Inventoryslot/Inventory_Slots.gd" id="1_5xr3u"]
+[ext_resource type="Texture2D" uid="uid://bvlw2drfmmdit" path="res://Assets/Image/Background/Inventory/inventorySlot.png" id="1_n1115"]
+[ext_resource type="FontFile" uid="uid://b87r0uf4usp0v" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="2_3yfb4"]
+[ext_resource type="Texture2D" uid="uid://bpupjy1b1usel" path="res://Assets/Image/Item/Key/taiga/pine key.png" id="2_hns5m"]
+[ext_resource type="FontFile" uid="uid://cuecxy0807xft" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="4_bi5p0"]
+[ext_resource type="FontFile" uid="uid://ddipvfn75bmvn" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="5_r6y3m"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mm7er"]
+atlas = ExtResource("1_n1115")
+region = Rect2(0, 0, 20, 20)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a1swc"]
+
+[node name="InventorySlots" type="Control"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 150.0
+offset_bottom = 150.0
+script = ExtResource("1_5xr3u")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(76, 75)
+scale = Vector2(7.5, 7.5)
+texture = SubResource("AtlasTexture_mm7er")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(76, 75)
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("2_hns5m")
+
+[node name="Item_Quantity" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -58.0
+offset_top = -52.0
+offset_right = -10.0
+offset_bottom = -1.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_3yfb4")
+theme_override_font_sizes/font_size = 50
+text = "99"
+
+[node name="itemButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_a1swc")
+
+[node name="DetailPanel" type="ColorRect" parent="."]
+visible = false
+custom_minimum_size = Vector2(240, 130)
+layout_mode = 0
+offset_left = 6.0
+offset_top = -135.0
+offset_right = 246.0
+offset_bottom = -5.0
+
+[node name="Item_Name" type="Label" parent="DetailPanel"]
+layout_mode = 1
+offset_left = 5.0
+offset_right = 86.0
+offset_bottom = 40.0
+theme_override_colors/font_color = Color(0.0745098, 0.0745098, 0.0745098, 1)
+theme_override_fonts/font = ExtResource("4_bi5p0")
+theme_override_font_sizes/font_size = 40
+text = "NAME"
+
+[node name="Item_Type" type="Label" parent="DetailPanel"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 5.0
+offset_top = -20.0
+offset_right = 86.0
+offset_bottom = 20.0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.0745098, 0.0745098, 0.0745098, 0.784314)
+theme_override_fonts/font = ExtResource("4_bi5p0")
+theme_override_font_sizes/font_size = 40
+text = "TYPE"
+
+[node name="Item_Effect" type="Label" parent="DetailPanel"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = -40.0
+offset_right = 86.0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.0745098, 0.0745098, 0.0745098, 0.588235)
+theme_override_fonts/font = ExtResource("4_bi5p0")
+theme_override_font_sizes/font_size = 40
+text = "NAME"
+
+[node name="Usage UI" type="ColorRect" parent="."]
+visible = false
+custom_minimum_size = Vector2(230, 130)
+layout_mode = 0
+offset_top = -135.0
+offset_right = 230.0
+offset_bottom = -5.0
+color = Color(0.596078, 0.933333, 0.8, 1)
+
+[node name="UseButton" type="Button" parent="Usage UI"]
+custom_minimum_size = Vector2(230, 43)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -115.0
+offset_top = 10.0
+offset_right = 115.0
+offset_bottom = 53.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("5_r6y3m")
+theme_override_font_sizes/font_size = 40
+text = "USE"
+
+[node name="DropButton" type="Button" parent="Usage UI"]
+custom_minimum_size = Vector2(230, 43)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -115.0
+offset_top = -59.0
+offset_right = 115.0
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("5_r6y3m")
+theme_override_font_sizes/font_size = 40
+text = "DROP"
+
+[connection signal="mouse_entered" from="itemButton" to="." method="_on_item_button_mouse_entered"]
+[connection signal="mouse_exited" from="itemButton" to="." method="_on_item_button_mouse_exited"]
+[connection signal="pressed" from="itemButton" to="." method="_on_item_button_pressed"]
+[connection signal="pressed" from="Usage UI/DropButton" to="." method="_on_drop_button_pressed"]

@@ -26,15 +26,16 @@ config/icon="res://Assets/Image/Logo/Logo Project Howling Heroes The Great Wolf 
 LoadingScreen="*res://Assets/Script/Controller/handler-single_tons/Loading_Screen/loading_screen.gd"
 SaveSettings="*res://Assets/Script/Controller/Save/Settings/save_settings.gd"
 GlobalSettings="*res://Assets/Script/Controller/Save/Global_Settings/Global_Settings.gd"
-Inventory="*res://Assets/Script/Class/Inventory/Inventory.gd"
+Inventory_Global="*res://Assets/Script/Controller/handler-single_tons/Inventory/Inventory.gd"
 almanac="*res://Assets/Script/Class/Wolf/Wolf Alamanac/Class_Data/Almanac.gd"
-WolfData="*res://Assets/Script/Class/Wolf/Wolves_Save/Wolf_Data.gd"
+GlobalTilesets="*res://Assets/Script/Controller/handler-single_tons/Global_Tilesets/Global_Tilesets.gd"
 player_singleton="*res://Assets/Script/Class/Player/Player_Singleton.gd"
-GlobalTilesets="*res://Assets/Script/Global_Tilesets/Global_Tilesets.gd"
-mission_data_stat="*res://Assets/Script/Controller/Mission/mission_class.gd"
 Music="*res://Assets/Script/Class/utilities/music/music.gd"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 InteractionManager="*res://Assets/Script/Controller/handler-single_tons/InteractionManager.gd"
+DialogueManager="*res://Assets/Script/Controller/handler-single_tons/Dialogue/Dialogue_manager.gd"
+mission_data_stat="*res://Assets/Script/Controller/handler-single_tons/Mission/mission_class.gd"
+WolfData="*res://Assets/Script/Class/Wolf/Wolves_Save/Wolf_Data.gd"
 
 [dialogic]
 

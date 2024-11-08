@@ -1,0 +1,151 @@
+[gd_scene load_steps=35 format=3 uid="uid://drcmiucjx1j31"]
+
+[ext_resource type="Script" path="res://Assets/Script/Class/NPC/Commander_Dreatna.gd" id="1_3hir7"]
+[ext_resource type="Texture2D" uid="uid://dy8mcxv4fyp70" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-0.png" id="1_hkot7"]
+[ext_resource type="PackedScene" uid="uid://b6ltkojldlwls" path="res://Assets/Scences/Interaction/interaction_Area/InteractionsArea.tscn" id="1_xkp7l"]
+[ext_resource type="Texture2D" uid="uid://mxcfut3vfm3g" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-1.png" id="2_ur6nv"]
+[ext_resource type="Texture2D" uid="uid://dpilaqhbgr72l" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-2.png" id="3_tltsh"]
+[ext_resource type="Texture2D" uid="uid://b5fi43b612ej7" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-3.png" id="4_xgjhr"]
+[ext_resource type="Texture2D" uid="uid://ce4phgoxbghwe" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-4.png" id="5_orc8m"]
+[ext_resource type="Texture2D" uid="uid://2gb8ui11g6uo" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-5.png" id="6_ks6cj"]
+[ext_resource type="Texture2D" uid="uid://dfrea5bumh6cc" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-6.png" id="7_ij1mj"]
+[ext_resource type="Texture2D" uid="uid://d2wirgsvui88k" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-7.png" id="8_eslno"]
+[ext_resource type="Texture2D" uid="uid://bv5tuci670qk5" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-8.png" id="9_cwqb1"]
+[ext_resource type="Texture2D" uid="uid://c1vnc37krj3w6" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-9.png" id="10_a805m"]
+[ext_resource type="Texture2D" uid="uid://dfsb4fdfsblfe" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-10.png" id="11_7d07f"]
+[ext_resource type="Texture2D" uid="uid://dtxtg8hhookam" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-11.png" id="12_mx7wd"]
+[ext_resource type="Texture2D" uid="uid://csvf55l1ivx7o" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-12.png" id="13_ul4ie"]
+[ext_resource type="Texture2D" uid="uid://jbpwp2srwhfy" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-13.png" id="14_k8t1j"]
+[ext_resource type="Texture2D" uid="uid://db5ksapqm17l5" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-14.png" id="15_3i2b1"]
+[ext_resource type="Texture2D" uid="uid://dhv4y8pqjyi4t" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-15.png" id="16_3ecrl"]
+[ext_resource type="Texture2D" uid="uid://nhosygghx1oc" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-16.png" id="17_oouku"]
+[ext_resource type="Texture2D" uid="uid://bw4sjygngvlmh" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-17.png" id="18_3f3p4"]
+[ext_resource type="Texture2D" uid="uid://b1d4osyjcwaqh" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-18.png" id="19_vgs3q"]
+[ext_resource type="Texture2D" uid="uid://dmxqpd0fbme1c" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-19.png" id="20_52ixn"]
+[ext_resource type="Texture2D" uid="uid://df3cywfnp0akj" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-20.png" id="21_tokjw"]
+[ext_resource type="Texture2D" uid="uid://bxgixw85phrwm" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-21.png" id="22_dieei"]
+[ext_resource type="Texture2D" uid="uid://bic11ml4bwlov" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-22.png" id="23_5ippb"]
+[ext_resource type="Texture2D" uid="uid://daanb4qux4abt" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-23.png" id="24_qsglm"]
+[ext_resource type="Texture2D" uid="uid://cm8hmf1qj416e" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-24.png" id="25_c8lxx"]
+[ext_resource type="Texture2D" uid="uid://cdj8kn8njk6kd" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-25.png" id="26_vpkvn"]
+[ext_resource type="Texture2D" uid="uid://dpi3o5rws3sly" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-26.png" id="27_nrdml"]
+[ext_resource type="Texture2D" uid="uid://b0yosdcnji2gq" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-27.png" id="28_7ujlp"]
+[ext_resource type="Texture2D" uid="uid://cs1fmkvgvedlm" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-28.png" id="29_62cw2"]
+[ext_resource type="Texture2D" uid="uid://cei0k5rdtwbxg" path="res://Assets/Image/Character/Commander_Dreatna/Commander_Dreatna/73b70a288c2d4848f6cf259b79f2c530J83bQZVFWkRreYt8-29.png" id="30_dif6e"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_062eu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_hkot7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ur6nv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_tltsh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_xgjhr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_orc8m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ks6cj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ij1mj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_eslno")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_cwqb1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_a805m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_7d07f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_mx7wd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ul4ie")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_k8t1j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_3i2b1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_3ecrl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_oouku")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_3f3p4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_vgs3q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_52ixn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_tokjw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_dieei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_5ippb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_qsglm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_c8lxx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_vpkvn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_nrdml")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_7ujlp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_62cw2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_dif6e")
+}],
+"loop": true,
+"name": &"Iddle",
+"speed": 15.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uxadw"]
+radius = 60.407
+
+[node name="Commander_Dreatna" type="Node2D"]
+script = ExtResource("1_3hir7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.65, 0.65)
+sprite_frames = SubResource("SpriteFrames_062eu")
+animation = &"Iddle"
+frame_progress = 0.310571
+
+[node name="InteractionsArea" parent="." instance=ExtResource("1_xkp7l")]
+actions_name = "talk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionsArea"]
+position = Vector2(3, 4)
+shape = SubResource("CircleShape2D_uxadw")

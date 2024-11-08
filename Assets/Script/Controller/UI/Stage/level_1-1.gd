@@ -1,4 +1,4 @@
-class_name Level
+class_name level_1_1
 extends Node2D
 
 signal exit_reached(next_level:String)

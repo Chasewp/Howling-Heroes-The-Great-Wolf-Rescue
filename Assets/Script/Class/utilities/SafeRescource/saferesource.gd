@@ -5,7 +5,7 @@ class_name SafeResourceLoader
 ## loading will be aborted so embedded scripts cannote be executed.
 ## If loading fails for any reason, an error message will be printed
 ## and this function returns null.
-static func load(path:String, type_hint:String = "", \
+static func load(path:String, type_hint:String = "", 
 		cache_mode:ResourceLoader.CacheMode = ResourceLoader.CacheMode.CACHE_MODE_REUSE) -> Resource:
 	
 	# We only really support .tres files, so refuse to load anything else.

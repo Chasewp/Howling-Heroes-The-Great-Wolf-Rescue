@@ -1,10 +1,35 @@
-[gd_scene load_steps=3 format=3 uid="uid://csyya0mjadpf7"]
+[gd_scene load_steps=5 format=3 uid="uid://ccknbjn0r7k8a"]
 
-[ext_resource type="Script" path="res://Assets/Scences/UI/Inventory/items_stacking_GUI.gd" id="1_6eak3"]
-[ext_resource type="FontFile" uid="uid://fpssaux4ispl" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="1_bgk81"]
+[ext_resource type="FontFile" uid="uid://ddipvfn75bmvn" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="1_bgk81"]
+[ext_resource type="Texture2D" uid="uid://bvlw2drfmmdit" path="res://Assets/Image/Background/Inventory/inventorySlot.png" id="2_kho8h"]
+
+[sub_resource type="GDScript" id="GDScript_ese6w"]
+script/source = "class_name  ItemStackGui
+extends Control
+
+@onready var grid_ui = $NinePatchRect/GridContainer
+
+func _ready():
+	Inventory_Global.connect(\"inventory_updated\",_on_inventory_updated)
+	_on_inventory_updated()
+
+func _on_inventory_updated():
+	clear_grid_continer()
+	
+func clear_grid_continer():
+	while  grid_ui.get_child_count()>0:
+		var child = grid_ui.get_child(0)
+		grid_ui.remove_child(child)
+		child.queue_free()
+			
+"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mamy2"]
+atlas = ExtResource("2_kho8h")
+region = Rect2(0, 0, 20, 20)
 
 [node name="Panel" type="Panel"]
-script = ExtResource("1_6eak3")
+script = SubResource("GDScript_ese6w")
 
 [node name="Items" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(64, 64)
@@ -31,3 +56,6 @@ theme_override_font_sizes/font_size = 18
 text = "99"
 horizontal_alignment = 2
 vertical_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_mamy2")

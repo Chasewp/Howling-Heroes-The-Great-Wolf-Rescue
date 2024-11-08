@@ -18,6 +18,7 @@ extends Node
 var machete_equip : bool
 var burst_garou : bool
 
+
 #Setter Name Character
 func setter_name(nm):
 	name_character = nm

@@ -1,26 +1,14 @@
-res://Assets/Script/Controller/Weapons/brust_garou_riffle_player.gd
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Arctic Wolf/Arctic_Wolf.gd
-res://Assets/Script/Class/Item/Player/Machete/Machete.gd
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Baffin Island Wolf/Baffin_Island_Wolf.gd
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Eastern Wolf/Eastern_Wolf.gd
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Gray Wolf/Gray_Wolf.gd
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Great Plains Wolf/Great_Plains_Wolf.gd
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Greenland Wolf/Greenland_Wolf.gd
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Himalayan Wolf/Himalayan_Wolf.gd
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Hudson Bay Wolf/Hudson_Bay_Wolf.gd
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Indian Wolf/Indian_Wolf.gd
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Interior Alaskan Wolf (Yukon Wolf)/Interior_Alaskan_Wolf_(Yukon_Wolf).gd
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Italian Wolf/Italian_Wolf..gd
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Mackenzie River Wolf/Mackenzie_River_Wolf.gd
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Mexican Wolf/Mexican_Wolf.gd
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Mongolian Wolf/Mongolian_Wolf.gd
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Northern Rocky Mountain Wolf/Northern_Rocky_Mountain_Wolf.gd
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Northwestern Wolf/Northwestern_Wolf.gd
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Red Wolf/Red_Wolf.gd
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Steppe Wolf (Caspian Sea Wolf)/Steppe_Wolf_(Caspian_Sea_Wolf).gd
-res://Assets/Script/Class/Wolf/Wolf_Rescue/Wolves Species/Tundra Wolf/Tundra_Wolf.gd
-res://Assets/Script/Level/level.gd
-res://Assets/Script/Controller/UI/Settings_Confirmation/settings_confrimation.gd
-res://Assets/Script/Controller/UI/Location/Taiga/Bridge_Stone_Forest.gd
-res://Assets/Script/Controller/UI/Load_slot/loader_screen.gd
-res://Assets/Script/Controller/UI/Credits/credit_page1.gd
+res://Assets/Scences/UI/Inventory/inventory.tscn
+res://Assets/Dialogue/Theme/Speaker_Mode.tres
+res://Assets/Dialogue/Theme/Pixelize_Visual_Novel.tres
+res://Assets/Dialogue/Theme/Pixelize_speaker.tres
+res://Assets/Script/Controller/Save/Save_Data/player/save_file.gd
+res://Assets/Script/Controller/UI/GUI/GUI_Play.gd
+res://Assets/Script/Controller/UI/Main_Menu/main_menu.gd
+res://Assets/Script/Controller/UI/Mission_Log/mission.gd
+res://Assets/Bullets/Animation_Player_Bullets.tres
+res://Assets/Script/Controller/handler-single_tons/Inventory/Inventory.gd
+res://Assets/Script/Class/Inventory Items/inventory_items.gd
+res://Assets/Script/Controller/UI/Inventoryslot/Inventory_Slots.gd
+res://Assets/Scences/UI/Inventory/Inventory_Slots.tscn
+res://Assets/Script/Class/Character/Player/Player.gd

@@ -1,10 +1,10 @@
 [gd_scene load_steps=10 format=3 uid="uid://cxiqvgvtlmt7j"]
 
 [ext_resource type="Script" path="res://Assets/Script/Level/level.gd" id="1_iedyo"]
-[ext_resource type="Texture2D" uid="uid://c6wyjiqeqb5vo" path="res://Assets/Image/tilesets/forest_tileset.png" id="1_nmcjj"]
+[ext_resource type="Texture2D" uid="uid://c8gs52lywm4m" path="res://Assets/Image/tilesets/forest_tileset.png" id="1_nmcjj"]
 [ext_resource type="PackedScene" uid="uid://ba35mjv7il18j" path="res://Assets/Scences/Player/spawner/player_spawn_point.tscn" id="3_7q51k"]
 [ext_resource type="PackedScene" uid="uid://duad0b1o7t0lk" path="res://Assets/Scences/Camera/camera.tscn" id="3_o2q4x"]
-[ext_resource type="Texture2D" uid="uid://c134ui8jo4v2o" path="res://Assets/Image/Background/Bridge Stone Forest/pixel_art_A_breathtaking_scene.jpeg" id="5_i3yo7"]
+[ext_resource type="Texture2D" uid="uid://bmkxjqvdbclsn" path="res://Assets/Image/Background/Bridge Stone Forest/pixel_art_A_breathtaking_scene.jpeg" id="5_i3yo7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5ltrh"]
 texture = ExtResource("1_nmcjj")

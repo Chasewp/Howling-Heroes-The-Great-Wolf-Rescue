@@ -1,20 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://c8cu7e5s4idvf"]
+[gd_scene load_steps=4 format=3 uid="uid://eq7oojtgqppo"]
 
-[ext_resource type="Script" path="res://Assets/Script/Controller/Key/Taiga/Pine Tree/pine_key.gd" id="1_uvo78"]
-[ext_resource type="Texture2D" uid="uid://qg4n5mjficsm" path="res://Assets/Image/Key/taiga/pine key.png" id="1_xq2ri"]
-[ext_resource type="Resource" uid="uid://cjlr016y8lc1n" path="res://Assets/Inventory/Items/Pine_Key.tres" id="2_41i87"]
+[ext_resource type="Script" path="res://Assets/Script/Class/Items/key/taiga/Pine_Key.gd" id="1_jskam"]
+[ext_resource type="Texture2D" uid="uid://bpupjy1b1usel" path="res://Assets/Image/Item/Key/taiga/pine key.png" id="1_m8xrp"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_l22n6"]
-radius = 22.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_5ew0a"]
+radius = 24.0832
 
-[node name="Pine_Key" type="Area2D"]
-script = ExtResource("1_uvo78")
-itemRes = ExtResource("2_41i87")
+[node name="PineKey" type="Area2D" groups=["pine_key"]]
+script = ExtResource("1_jskam")
 
-[node name="PineKey" type="Sprite2D" parent="."]
-texture = ExtResource("1_xq2ri")
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_m8xrp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_l22n6")
-
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+shape = SubResource("CircleShape2D_5ew0a")

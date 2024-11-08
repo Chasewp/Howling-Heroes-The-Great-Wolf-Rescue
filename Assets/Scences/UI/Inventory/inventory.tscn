@@ -1,28 +1,67 @@
-[gd_scene load_steps=6 format=3 uid="uid://bli5mfb2fgf2e"]
+[gd_scene load_steps=3 format=3 uid="uid://bli5mfb2fgf2e"]
 
-[ext_resource type="Script" path="res://Assets/Scences/UI/Inventory/items_stacking_GUI.gd" id="1_450pq"]
-[ext_resource type="Texture2D" uid="uid://dmpbxk5kwi7ik" path="res://Assets/Image/Background/Inventory/InventoryRect.png" id="2_kuskw"]
-[ext_resource type="PackedScene" uid="uid://dwv0ooo1hx666" path="res://Assets/Scences/UI/Inventory/inventory_panel_slot.tscn" id="3_1nhd4"]
-[ext_resource type="FontFile" uid="uid://bsmkjcem4b3i1" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="4_shqg0"]
+[ext_resource type="Texture2D" uid="uid://clqnmuuebbkmu" path="res://Assets/Image/Background/Inventory/InventoryRect.png" id="2_kuskw"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kfkd0"]
-bg_color = Color(0.305882, 0.305882, 0.305882, 1)
+[sub_resource type="GDScript" id="GDScript_ese6w"]
+script/source = "class_name  ItemStackGui
+extends Control
+
+@onready var grid_ui = $NinePatchRect/GridContainer
+
+func _ready():
+	Inventory_Global.connect(\"inventory_updated\",_on_inventory_updated)
+	_on_inventory_updated()
+
+func _on_inventory_updated():
+	clear_grid_continer()
+	for item in Inventory_Global.inventory:
+		var slot = Inventory_Global.inventory_Slot.instantiate()
+		grid_ui.add_child(slot)
+		
+		if item !=null:
+			slot.set_item(item)	
+		else:
+			slot.set_empty()	
+		
+	
+func clear_grid_continer():
+	while  grid_ui.get_child_count()>0:
+		var child = grid_ui.get_child(0)
+		grid_ui.remove_child(child)
+		child.queue_free()
+			
+"
 
 [node name="Inventory_UI" type="Control"]
-custom_minimum_size = Vector2(109, 84)
+custom_minimum_size = Vector2(379, 406)
 layout_mode = 3
-anchor_right = 0.296
-anchor_bottom = 0.564
-offset_right = 0.119995
-offset_bottom = -0.0800171
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -189.5
+offset_top = -203.0
+offset_right = 189.5
+offset_bottom = 203.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_450pq")
+script = SubResource("GDScript_ese6w")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
-layout_mode = 0
-offset_right = 377.0
-offset_bottom = 275.0
+custom_minimum_size = Vector2(800, 600)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -300.0
+offset_right = 400.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("2_kuskw")
 patch_margin_left = 6
 patch_margin_top = 6
@@ -30,92 +69,19 @@ patch_margin_right = 6
 patch_margin_bottom = 6
 
 [node name="GridContainer" type="GridContainer" parent="NinePatchRect"]
+custom_minimum_size = Vector2(707, 539)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -165.5
-offset_top = -99.5
-offset_right = 165.5
-offset_bottom = 100.5
+offset_left = -353.0
+offset_top = -269.0
+offset_right = 354.0
+offset_bottom = 270.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/h_separation = 25
 theme_override_constants/v_separation = 25
 columns = 4
-
-[node name="InventoryPanelSlot" parent="NinePatchRect/GridContainer" instance=ExtResource("3_1nhd4")]
-layout_mode = 2
-
-[node name="InventoryPanelSlot2" parent="NinePatchRect/GridContainer" instance=ExtResource("3_1nhd4")]
-layout_mode = 2
-
-[node name="InventoryPanelSlot3" parent="NinePatchRect/GridContainer" instance=ExtResource("3_1nhd4")]
-layout_mode = 2
-
-[node name="InventoryPanelSlot4" parent="NinePatchRect/GridContainer" instance=ExtResource("3_1nhd4")]
-layout_mode = 2
-
-[node name="InventoryPanelSlot5" parent="NinePatchRect/GridContainer" instance=ExtResource("3_1nhd4")]
-layout_mode = 2
-
-[node name="InventoryPanelSlot6" parent="NinePatchRect/GridContainer" instance=ExtResource("3_1nhd4")]
-layout_mode = 2
-
-[node name="InventoryPanelSlot7" parent="NinePatchRect/GridContainer" instance=ExtResource("3_1nhd4")]
-layout_mode = 2
-
-[node name="InventoryPanelSlot8" parent="NinePatchRect/GridContainer" instance=ExtResource("3_1nhd4")]
-layout_mode = 2
-
-[node name="InventoryPanelSlot9" parent="NinePatchRect/GridContainer" instance=ExtResource("3_1nhd4")]
-layout_mode = 2
-
-[node name="InventoryPanelSlot10" parent="NinePatchRect/GridContainer" instance=ExtResource("3_1nhd4")]
-layout_mode = 2
-
-[node name="InventoryPanelSlot11" parent="NinePatchRect/GridContainer" instance=ExtResource("3_1nhd4")]
-layout_mode = 2
-
-[node name="InventoryPanelSlot12" parent="NinePatchRect/GridContainer" instance=ExtResource("3_1nhd4")]
-layout_mode = 2
-
-[node name="Details_Items" type="RichTextLabel" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.675
-anchor_right = 1.0
-anchor_bottom = 1.01
-offset_top = -0.0500183
-offset_right = -1.0
-offset_bottom = -0.0599976
-theme_override_fonts/normal_font = ExtResource("4_shqg0")
-theme_override_font_sizes/normal_font_size = 18
-theme_override_styles/normal = SubResource("StyleBoxFlat_kfkd0")
-
-[connection signal="mouse_entered" from="NinePatchRect/GridContainer/InventoryPanelSlot" to="." method="_on_inventory_panel_slot_mouse_entered"]
-[connection signal="mouse_exited" from="NinePatchRect/GridContainer/InventoryPanelSlot" to="." method="_on_inventory_panel_slot_mouse_exited"]
-[connection signal="mouse_entered" from="NinePatchRect/GridContainer/InventoryPanelSlot2" to="." method="_on_inventory_panel_slot_2_mouse_entered"]
-[connection signal="mouse_exited" from="NinePatchRect/GridContainer/InventoryPanelSlot2" to="." method="_on_inventory_panel_slot_2_mouse_exited"]
-[connection signal="mouse_entered" from="NinePatchRect/GridContainer/InventoryPanelSlot3" to="." method="_on_inventory_panel_slot_3_mouse_entered"]
-[connection signal="mouse_exited" from="NinePatchRect/GridContainer/InventoryPanelSlot3" to="." method="_on_inventory_panel_slot_3_mouse_exited"]
-[connection signal="mouse_entered" from="NinePatchRect/GridContainer/InventoryPanelSlot4" to="." method="_on_inventory_panel_slot_4_mouse_entered"]
-[connection signal="mouse_exited" from="NinePatchRect/GridContainer/InventoryPanelSlot4" to="." method="_on_inventory_panel_slot_4_mouse_exited"]
-[connection signal="mouse_entered" from="NinePatchRect/GridContainer/InventoryPanelSlot5" to="." method="_on_inventory_panel_slot_5_mouse_entered"]
-[connection signal="mouse_exited" from="NinePatchRect/GridContainer/InventoryPanelSlot5" to="." method="_on_inventory_panel_slot_5_mouse_exited"]
-[connection signal="mouse_entered" from="NinePatchRect/GridContainer/InventoryPanelSlot6" to="." method="_on_inventory_panel_slot_6_mouse_entered"]
-[connection signal="mouse_exited" from="NinePatchRect/GridContainer/InventoryPanelSlot6" to="." method="_on_inventory_panel_slot_6_mouse_exited"]
-[connection signal="mouse_entered" from="NinePatchRect/GridContainer/InventoryPanelSlot7" to="." method="_on_inventory_panel_slot_7_mouse_entered"]
-[connection signal="mouse_exited" from="NinePatchRect/GridContainer/InventoryPanelSlot7" to="." method="_on_inventory_panel_slot_7_mouse_exited"]
-[connection signal="mouse_entered" from="NinePatchRect/GridContainer/InventoryPanelSlot8" to="." method="_on_inventory_panel_slot_8_mouse_entered"]
-[connection signal="mouse_exited" from="NinePatchRect/GridContainer/InventoryPanelSlot8" to="." method="_on_inventory_panel_slot_8_mouse_exited"]
-[connection signal="mouse_entered" from="NinePatchRect/GridContainer/InventoryPanelSlot9" to="." method="_on_inventory_panel_slot_9_mouse_entered"]
-[connection signal="mouse_exited" from="NinePatchRect/GridContainer/InventoryPanelSlot9" to="." method="_on_inventory_panel_slot_9_mouse_exited"]
-[connection signal="mouse_entered" from="NinePatchRect/GridContainer/InventoryPanelSlot10" to="." method="_on_inventory_panel_slot_10_mouse_entered"]
-[connection signal="mouse_exited" from="NinePatchRect/GridContainer/InventoryPanelSlot10" to="." method="_on_inventory_panel_slot_10_mouse_exited"]
-[connection signal="mouse_entered" from="NinePatchRect/GridContainer/InventoryPanelSlot11" to="." method="_on_inventory_panel_slot_11_mouse_entered"]
-[connection signal="mouse_exited" from="NinePatchRect/GridContainer/InventoryPanelSlot11" to="." method="_on_inventory_panel_slot_11_mouse_exited"]
-[connection signal="mouse_entered" from="NinePatchRect/GridContainer/InventoryPanelSlot12" to="." method="_on_inventory_panel_slot_12_mouse_entered"]
-[connection signal="mouse_exited" from="NinePatchRect/GridContainer/InventoryPanelSlot12" to="." method="_on_inventory_panel_slot_12_mouse_exited"]

@@ -14,7 +14,7 @@ extends Node2D
 
 
 
-var save_progress = ProgressedGame.new()
+var save_progress = Data_Progress.new()
 var _crosshair = load("res://Assets/Image/images/Cursor/1x/Layer 1.png")
 var _Stage = Area2D
 

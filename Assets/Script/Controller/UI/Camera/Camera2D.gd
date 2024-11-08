@@ -32,14 +32,14 @@ func set_bounds(min_boundary : Vector2, max_boundary : Vector2):
 
 func pan_to_marker(marker : Marker2D, duration : float = 1):
 	_is_following_subject = false
-	if _pan && _pan.is_running():
+	if _pan and _pan.is_running():
 		_pan.kill()
 	_pan = create_tween()
 	_pan.tween_property(self, "position", marker.global_position, duration)
 
 func follow_subject():
 	_is_following_subject = true
-	if _pan && _pan.is_running():
+	if _pan and _pan.is_running():
 		_pan.kill()
 	_look_ahead_distance = position.x - _subject.global_position.x
 	_floor_height = position.y - _offset.y
@@ -56,13 +56,13 @@ func _process(_delta : float):
 		position.y = clamp(position.y, _min.y, _max.y)
 
 func _on_subject_changed_direction(is_facing_left : bool):
-	if _look_ahead_tween && _look_ahead_tween.is_running():
+	if _look_ahead_tween and _look_ahead_tween.is_running():
 		_look_ahead_tween.kill()
 	_look_ahead_tween = create_tween().set_trans(_look_ahead_trans_type).set_ease(_look_ahead_ease_type)
 	_look_ahead_tween.tween_property(self, "_look_ahead_distance", _offset.x * (-1 if is_facing_left else 1), _look_ahead_duration)
 
 func _on_subject_landed(floor_height):
-	if _floor_height_tween && _floor_height_tween.is_running():
+	if _floor_height_tween and _floor_height_tween.is_running():
 		_floor_height_tween.kill()
 	_floor_height_tween = create_tween().set_trans(_floor_height_trans_type).set_ease(_floor_height_ease_type)
 	_floor_height_tween.tween_property(self, "_floor_height", floor_height, _floor_height_duration)

@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://dwv0ooo1hx666"]
+[gd_scene load_steps=2 format=3 uid="uid://cepxbpjyw6fgq"]
 
-[ext_resource type="Script" path="res://Assets/Script/Controller/UI/Inventory/inventory_panel_slot.gd" id="1_gu63q"]
-[ext_resource type="Texture2D" uid="uid://darom2cdvh83v" path="res://Assets/Image/Background/Inventory/inventorySlot.png" id="1_lij51"]
+[ext_resource type="Texture2D" uid="uid://bvlw2drfmmdit" path="res://Assets/Image/Background/Inventory/inventorySlot.png" id="1_lij51"]
 
 [node name="InventoryPanelSlot" type="Button"]
 self_modulate = Color(1, 1, 1, 0)
@@ -12,7 +11,6 @@ anchor_bottom = 0.089
 offset_bottom = -0.0800018
 size_flags_horizontal = 3
 size_flags_vertical = 3
-script = ExtResource("1_gu63q")
 
 [node name="Background" type="Sprite2D" parent="."]
 scale = Vector2(3.2, 3.2)

@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://c1ph53byo1unb"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/GUI/GUI_Play.gd" id="1_xqce5"]
-[ext_resource type="Texture2D" uid="uid://bxtqe4sgeb3qu" path="res://Assets/Image/Character/Player/templerun/Machete/Face/Face.png" id="2_5c6aw"]
-[ext_resource type="FontFile" uid="uid://bc3fo6p06lixr" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="2_68s4u"]
+[ext_resource type="Texture2D" uid="uid://dlo8s0btgs16h" path="res://Assets/Image/Character/Player/templerun/Machete/Face/Face.png" id="2_5c6aw"]
+[ext_resource type="FontFile" uid="uid://ddipvfn75bmvn" path="res://Assets/Fonts/DisposableDroidBB.ttf" id="2_68s4u"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_grsui"]
 bg_color = Color(0, 0.392157, 0, 1)

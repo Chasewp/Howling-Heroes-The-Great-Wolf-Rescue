@@ -1,7 +1,7 @@
 class_name pause_menu
 extends Control
 
-@onready var _save_progress:SaveLoadManagerFile =%Data_Progress
+@onready var _save_progress:SaveLoadManagerFile
 var save_menu = load("res://Assets/Scences/UI/Saver/Saver_screen.tscn").instantiate()
 var exit = load("res://Assets/Scences/UI/Exit_Game_Over/Exit_Game_Over.tscn").instantiate()
 

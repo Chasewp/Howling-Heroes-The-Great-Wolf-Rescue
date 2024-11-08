@@ -5,18 +5,16 @@ extends Control
 @onready var backsound = $Back_Sound
 @onready var startbtn = $StartBtn
 @onready var normalbutton = $Normal_button
-@onready var _save_progress = SaveLoadManagerFile.new()
 @onready var _continue_button = $"Background/Continue Button"
-#var loading
+var save_load = SaveLoadManagerFile.new()
 
 "Cursor"
 var normal_cursor = load("res://Assets/Image/Cursor/Cursor 32x32.png")
 var hand_cursor = load("res://Assets/Image/Cursor/hand_paw.png")
 
-#var save_progress = preload("user://Save/Progress/Save_Progress.tres")
 func _ready():
 	backsound.play()
-	if _save_progress.save_file_exist() == false:
+	if save_load.save_file_exist() == false:
 		_continue_button.disabled = true
 		
 #New Game Button
@@ -27,7 +25,7 @@ func _on_new_game_main_menu_buttons_pressed():
 #Continue Game Button
 func _on_continue_main_menu_buttons_pressed():
 	startbtn.play()
-	if _save_progress.save_file_exist()== true:
+	if save_load.save_file_exist()== true:
 		get_tree().change_scene_to_file("res://Assets/Scences/World/World_Games.tscn")
 	else :
 		print("Failed open stage")
