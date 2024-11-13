@@ -1,4 +1,4 @@
-[gd_scene load_steps=114 format=3 uid="uid://w8tfinbfyqkd"]
+[gd_scene load_steps=138 format=3 uid="uid://w8tfinbfyqkd"]
 
 [ext_resource type="Script" path="res://Assets/Script/Class/Character/Player/Player.gd" id="1_jwwc7"]
 [ext_resource type="Texture2D" uid="uid://da234ljflsfvp" path="res://Assets/Image/Character/Player/templerun/Normal/Hit/Hit_01.png" id="2_e77pk"]
@@ -87,11 +87,25 @@
 [ext_resource type="Texture2D" uid="uid://dyccnv7d02bgi" path="res://Assets/Image/Character/Player/templerun/Machete/Machete_Air_Ataack_2/Air_Attack_2_1.png" id="46_02lja"]
 [ext_resource type="Texture2D" uid="uid://cpgbdf0vkl5jt" path="res://Assets/Image/Character/Player/templerun/Machete/Machete_Attack_1/Attack 3.png" id="46_dy44f"]
 [ext_resource type="Texture2D" uid="uid://clxpq8xgu8hjt" path="res://Assets/Image/Character/Player/templerun/Machete/Jump_Machete/Jump_Machete_0.png" id="55_d6o0w"]
+[ext_resource type="Texture2D" uid="uid://ddtw3rs4p65ld" path="res://Assets/Image/Character/Player/templerun/Machete/Jump_Machete/Jump_Machete_6.png" id="55_e5pe8"]
 [ext_resource type="Texture2D" uid="uid://xtvybt0i3y0x" path="res://Assets/Image/Character/Player/templerun/Machete/Jump_Machete/Jump_Machete_1.png" id="56_keew1"]
+[ext_resource type="Texture2D" uid="uid://bhy0raci2f1aq" path="res://Assets/Image/Character/Player/templerun/Machete/Jump_Machete/Jump_Machete_7.png" id="56_vccbq"]
 [ext_resource type="Texture2D" uid="uid://bs8o3ekqyuryr" path="res://Assets/Image/Character/Player/templerun/Machete/Jump_Machete/Jump_Machete_2.png" id="57_bg5n5"]
+[ext_resource type="Texture2D" uid="uid://csu7rdo5rd6ks" path="res://Assets/Image/Character/Player/templerun/Machete/Jump_Machete/Jump_Machete_8.png" id="57_v0mgk"]
 [ext_resource type="Texture2D" uid="uid://dd12oj6bf8a7t" path="res://Assets/Image/Character/Player/templerun/Machete/Jump_Machete/Jump_Machete_3.png" id="58_63pn0"]
+[ext_resource type="Texture2D" uid="uid://888rp6kssgd3" path="res://Assets/Image/Character/Player/templerun/Machete/Jump_Machete/Jump_Machete_9.png" id="58_p58gf"]
 [ext_resource type="Texture2D" uid="uid://btitd3t4uv8qe" path="res://Assets/Image/Character/Player/templerun/Machete/Jump_Machete/Jump_Machete_4.png" id="59_me8lr"]
 [ext_resource type="Texture2D" uid="uid://da6t37u0y31l2" path="res://Assets/Image/Character/Player/templerun/Machete/Jump_Machete/Jump_Machete_5.png" id="60_55bce"]
+[ext_resource type="Texture2D" uid="uid://e2ekmo0xet3h" path="res://Assets/Image/Character/Player/templerun/Machete/Run_Machete/Run_00.png" id="75_44rly"]
+[ext_resource type="Texture2D" uid="uid://sd412bq8f8kv" path="res://Assets/Image/Character/Player/templerun/Machete/Run_Machete/Run_01.png" id="76_8ir84"]
+[ext_resource type="Texture2D" uid="uid://cngrco1e7m4h0" path="res://Assets/Image/Character/Player/templerun/Machete/Run_Machete/Run_02.png" id="77_mtxp0"]
+[ext_resource type="Texture2D" uid="uid://bmtlr1k243y5q" path="res://Assets/Image/Character/Player/templerun/Machete/Run_Machete/Run_03.png" id="78_b1o0c"]
+[ext_resource type="Texture2D" uid="uid://b5rfs7wmwupq7" path="res://Assets/Image/Character/Player/templerun/Machete/Run_Machete/Run_04.png" id="79_y0xlr"]
+[ext_resource type="Texture2D" uid="uid://cnmw25svrtiqb" path="res://Assets/Image/Character/Player/templerun/Machete/Run_Machete/Run_05.png" id="80_koxf7"]
+[ext_resource type="Texture2D" uid="uid://ddqcnbkukyoh7" path="res://Assets/Image/Character/Player/templerun/Machete/Run_Machete/Run_06.png" id="81_vkego"]
+[ext_resource type="Texture2D" uid="uid://b02s6i7mw5o3r" path="res://Assets/Image/Character/Player/templerun/Machete/Run_Machete/Run_07.png" id="82_jiv6e"]
+[ext_resource type="Texture2D" uid="uid://deph1eqmymvoc" path="res://Assets/Image/Character/Player/templerun/Machete/Run_Machete/Run_08.png" id="83_uh57i"]
+[ext_resource type="Texture2D" uid="uid://ejunwwfqq2g2" path="res://Assets/Image/Character/Player/templerun/Machete/Run_Machete/Run_09.png" id="84_x313g"]
 [ext_resource type="AudioStream" uid="uid://bld2ox4a7iso6" path="res://Assets/Music/SFX/Player/deathknell-tlk-101soundboards-metalgarurumon.mp3" id="91_mio7l"]
 [ext_resource type="AudioStream" uid="uid://bfajbrw2rihuo" path="res://Assets/Music/SFX/Player/headbutt-101soundboards.Metalgarurumonmp3.mp3" id="92_3r0xj"]
 [ext_resource type="AudioStream" uid="uid://bp3aodmetp5mf" path="res://Assets/Music/SFX/Player/grunt-tlk-101soundboards.mp3" id="92_m1n6n"]
@@ -100,6 +114,15 @@
 [ext_resource type="AudioStream" uid="uid://bm2wm38qt6v1f" path="res://Assets/Music/SFX/Weapon/Slash/sword-slash-and-swing-185432.mp3" id="95_s5sfv"]
 [ext_resource type="AudioStream" uid="uid://u8m6rr3522vf" path="res://Assets/Music/SFX/Player/slashing.wav" id="96_ad02j"]
 [ext_resource type="PackedScene" uid="uid://bli5mfb2fgf2e" path="res://Assets/Scences/UI/Inventory/inventory.tscn" id="100_dkn5u"]
+[ext_resource type="FontFile" uid="uid://cuecxy0807xft" path="res://Assets/Fonts/DisposableDroidBB_bld.ttf" id="114_4tv3v"]
+[ext_resource type="Theme" uid="uid://b0wacjljud6at" path="res://Assets/Theme/Alamanac_Book/Wolf_almanac.tres" id="115_i3nx2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7orh4"]
+radius = 40.66
+height = 124.24
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u3xmu"]
+size = Vector2(56, 20)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pm05c"]
 animations = [{
@@ -134,7 +157,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("11_wldgf")
 }],
-"loop": true,
+"loop": false,
 "name": &"died",
 "speed": 5.0
 }, {
@@ -274,8 +297,23 @@ animations = [{
 "name": &"jump_down",
 "speed": 5.0
 }, {
-"frames": [],
-"loop": true,
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("60_55bce")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_e5pe8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_vccbq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_v0mgk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_p58gf")
+}],
+"loop": false,
 "name": &"jump_down_machete",
 "speed": 5.0
 }, {
@@ -350,7 +388,37 @@ animations = [{
 "name": &"machete_attack",
 "speed": 9.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("75_44rly")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_8ir84")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_mtxp0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_b1o0c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_y0xlr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_koxf7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_vkego")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_jiv6e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_uh57i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_x313g")
+}],
 "loop": true,
 "name": &"machete_running",
 "speed": 5.0
@@ -421,7 +489,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("12_e8eg8")
 }],
-"loop": false,
+"loop": true,
 "name": &"run_shoot",
 "speed": 5.0
 }]
@@ -455,7 +523,7 @@ tracks/1/keys = {
 tracks/2/type = "audio"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("SFX")
+tracks/2/path = NodePath("SFX/SFX")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -469,7 +537,7 @@ tracks/2/keys = {
 tracks/2/use_blend = true
 
 [sub_resource type="Animation" id="Animation_lfn4t"]
-length = 0.5
+length = 0.4
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -477,7 +545,7 @@ tracks/0/path = NodePath("AnimatedSprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.4),
+"times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [0, 1]
@@ -497,7 +565,7 @@ tracks/1/keys = {
 tracks/2/type = "audio"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("SFX")
+tracks/2/path = NodePath("SFX/SFX")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -536,6 +604,34 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": ["iddle"]
+}
+
+[sub_resource type="Animation" id="Animation_qjivu"]
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["iddle_brust_garou"]
 }
 
 [sub_resource type="Animation" id="Animation_3f3ui"]
@@ -594,7 +690,7 @@ tracks/1/keys = {
 tracks/2/type = "audio"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("SFX")
+tracks/2/path = NodePath("SFX/SFX")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -606,6 +702,32 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0.1)
 }
 tracks/2/use_blend = true
+
+[sub_resource type="Animation" id="Animation_5f12q"]
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["jump_down_machete"]
+}
 
 [sub_resource type="Animation" id="Animation_ps3s0"]
 tracks/0/type = "value"
@@ -635,7 +757,7 @@ tracks/1/keys = {
 tracks/2/type = "audio"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("SFX")
+tracks/2/path = NodePath("SFX/SFX")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -647,6 +769,48 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0)
 }
 tracks/2/use_blend = false
+
+[sub_resource type="Animation" id="Animation_tghbp"]
+length = 1.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["jump_up_machete"]
+}
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SFX/SFX")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("92_m1n6n")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/2/use_blend = true
 
 [sub_resource type="Animation" id="Animation_1sn6d"]
 length = 0.6
@@ -677,25 +841,10 @@ tracks/1/keys = {
 tracks/2/type = "audio"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("SFX")
+tracks/2/path = NodePath("SFX/SFX")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"clips": [{
-"end_offset": 0.985232,
-"start_offset": 0.0488041,
-"stream": ExtResource("95_s5sfv")
-}],
-"times": PackedFloat32Array(0)
-}
-tracks/2/use_blend = false
-tracks/3/type = "audio"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("SFX")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
 "clips": [{
 "end_offset": 0.0,
 "start_offset": 0.0,
@@ -703,10 +852,25 @@ tracks/3/keys = {
 }],
 "times": PackedFloat32Array(-0.2)
 }
-tracks/3/use_blend = true
+tracks/2/use_blend = true
+tracks/3/type = "audio"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SFX/SFX")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"clips": [{
+"end_offset": 0.985232,
+"start_offset": 0.0488041,
+"stream": ExtResource("95_s5sfv")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/3/use_blend = false
 
 [sub_resource type="Animation" id="Animation_2akq7"]
-length = 0.6
+length = 0.4
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -714,7 +878,7 @@ tracks/0/path = NodePath("AnimatedSprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4),
+"times": PackedFloat32Array(0, 0.111111, 0.222222),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [0, 1, 2]
@@ -734,33 +898,46 @@ tracks/1/keys = {
 tracks/2/type = "audio"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("SFX")
+tracks/2/path = NodePath("SFX/SFX")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "clips": [{
-"end_offset": 1.18742,
+"end_offset": 1.0848,
 "start_offset": 0.0,
 "stream": ExtResource("95_s5sfv")
 }],
-"times": PackedFloat32Array(0)
+"times": PackedFloat32Array(-0.1)
 }
 tracks/2/use_blend = false
-tracks/3/type = "audio"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("SFX")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"clips": [{
-"end_offset": 0.0,
-"start_offset": 0.0,
-"stream": ExtResource("96_ad02j")
-}],
-"times": PackedFloat32Array(-0.2)
+
+[sub_resource type="Animation" id="Animation_tegws"]
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 }
-tracks/3/use_blend = true
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["machete_running"]
+}
 
 [sub_resource type="Animation" id="Animation_21e22"]
 length = 2.0
@@ -792,21 +969,22 @@ tracks/1/keys = {
 tracks/2/type = "audio"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("SFX")
+tracks/2/path = NodePath("SFX/SFX")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "clips": [{
-"end_offset": 10.9712,
+"end_offset": 10.9862,
 "start_offset": 0.0,
 "stream": ExtResource("92_ufkxa")
 }],
 "times": PackedFloat32Array(0)
 }
-tracks/2/use_blend = true
+tracks/2/use_blend = false
 
 [sub_resource type="Animation" id="Animation_s21l3"]
 length = 2.0
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -834,7 +1012,7 @@ tracks/1/keys = {
 tracks/2/type = "audio"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("SFX")
+tracks/2/path = NodePath("SFX/SFX")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -852,17 +1030,27 @@ _data = {
 "died": SubResource("Animation_cmxj0"),
 "hurt": SubResource("Animation_lfn4t"),
 "iddle": SubResource("Animation_k4hw4"),
+"iddle_brust_garou": SubResource("Animation_qjivu"),
 "iddle_machete": SubResource("Animation_3f3ui"),
 "jump_down": SubResource("Animation_rulpj"),
+"jump_down_machete": SubResource("Animation_5f12q"),
 "jump_up": SubResource("Animation_ps3s0"),
+"jump_up_machete": SubResource("Animation_tghbp"),
 "machete_air_attack": SubResource("Animation_1sn6d"),
 "machete_attack": SubResource("Animation_2akq7"),
+"machete_running": SubResource("Animation_tegws"),
 "run": SubResource("Animation_21e22"),
 "run_shoot": SubResource("Animation_s21l3")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_u3xmu"]
-size = Vector2(56, 20)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l27ah"]
+bg_color = Color(1, 0, 1, 0.470588)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7hh16"]
+bg_color = Color(0, 1, 1, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vs3wm"]
+size = Vector2(19, 29)
 
 [node name="Player" type="CharacterBody2D" groups=["camera_target", "player"]]
 process_mode = 3
@@ -870,15 +1058,23 @@ collision_layer = 2
 collision_mask = 257
 script = ExtResource("1_jwwc7")
 bullet_scence = ExtResource("2_kni5a")
-reloading_riffle = ExtResource("3_ydveu")
-reloading_voice = ExtResource("4_qroeb")
-shoot_riffle = ExtResource("5_gm5ng")
-ammo_empty = ExtResource("5_5g2xx")
+
+[node name="entry body" type="CollisionShape2D" parent="."]
+light_mask = 2
+visibility_layer = 2
+shape = SubResource("CapsuleShape2D_7orh4")
+debug_color = Color(0, 0, 0, 0.419608)
+
+[node name="foot" type="CollisionShape2D" parent="."]
+position = Vector2(3, 45)
+shape = SubResource("RectangleShape2D_u3xmu")
+one_way_collision = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.257053, 0.227881)
 sprite_frames = SubResource("SpriteFrames_pm05c")
-animation = &"jump_down"
+animation = &"run_shoot"
+frame = 5
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -886,44 +1082,146 @@ libraries = {
 }
 autoplay = "iddle"
 
-[node name="foot" type="CollisionShape2D" parent="."]
-position = Vector2(3, 45)
-shape = SubResource("RectangleShape2D_u3xmu")
-
 [node name="Text" type="Control" parent="."]
 custom_minimum_size = Vector2(300, 0)
 layout_mode = 3
 anchors_preset = 0
-offset_left = -80.0
-offset_top = -82.0
-offset_right = 270.0
-offset_bottom = -61.0
+offset_left = -38.0
+offset_top = 90.0
+offset_right = 312.0
+offset_bottom = 111.0
 size_flags_horizontal = 3
 script = ExtResource("39_3g6ho")
 
 [node name="Coordinate" type="RichTextLabel" parent="Text"]
-custom_minimum_size = Vector2(300, 32)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.02
+anchor_top = -1.524
 anchor_right = 0.877
-anchor_bottom = 1.524
-offset_right = 0.0499878
-offset_bottom = -0.00400162
+offset_top = 0.00400162
+offset_right = 0.0500183
 theme_override_constants/outline_size = 1
 theme_override_fonts/normal_font = ExtResource("39_bu8e3")
 theme_override_font_sizes/normal_font_size = 18
 text = "Coordinate : (???.????, ???.????)"
 
-[node name="SFX" type="AudioStreamPlayer2D" parent="."]
+[node name="Ammo_Label" type="HBoxContainer" parent="Text"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = -7.0
+offset_right = 132.0
+offset_bottom = 12.0
+
+[node name="Ammo_Label" type="Label" parent="Text/Ammo_Label"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("114_4tv3v")
+theme_override_font_sizes/font_size = 18
+text = "Ammo : "
+vertical_alignment = 1
+
+[node name="bullets_caps" type="Label" parent="Text/Ammo_Label"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("114_4tv3v")
+theme_override_font_sizes/font_size = 18
+text = "xx"
+vertical_alignment = 1
+
+[node name="slash" type="Label" parent="Text/Ammo_Label"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("114_4tv3v")
+theme_override_font_sizes/font_size = 18
+text = "/"
+vertical_alignment = 1
+
+[node name="mag_label" type="Label" parent="Text/Ammo_Label"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("114_4tv3v")
+theme_override_font_sizes/font_size = 18
+text = "xxx"
+vertical_alignment = 1
+
+[node name="reload_progress_display" type="Control" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(27, 0)
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 371.0
+offset_top = 681.0
+offset_right = 656.0
+offset_bottom = 708.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Reload_ProgressBar" type="ProgressBar" parent="reload_progress_display"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(285, 27)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/background = SubResource("StyleBoxFlat_l27ah")
+theme_override_styles/fill = SubResource("StyleBoxFlat_7hh16")
+show_percentage = false
+
+[node name="Label" type="Label" parent="reload_progress_display"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.365
+anchor_top = 0.074
+anchor_right = 0.635
+anchor_bottom = 0.926
+offset_left = -0.0250015
+offset_top = 0.00199997
+offset_right = 0.0249786
+offset_bottom = -0.00200081
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("115_i3nx2")
+text = "Reloading"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SFX" type="Node" parent="."]
+
+[node name="Ammo_Empty" type="AudioStreamPlayer2D" parent="SFX"]
+stream = ExtResource("5_5g2xx")
+bus = &"Sound Effects"
+
+[node name="reloading_riffle" type="AudioStreamPlayer2D" parent="SFX"]
+stream = ExtResource("3_ydveu")
+bus = &"Sound Effects"
+
+[node name="reloading_voice" type="AudioStreamPlayer2D" parent="SFX"]
+stream = ExtResource("4_qroeb")
+bus = &"Sound Effects"
+
+[node name="shoot" type="AudioStreamPlayer2D" parent="SFX"]
+stream = ExtResource("5_gm5ng")
+bus = &"Sound Effects"
+
+[node name="SFX" type="AudioStreamPlayer2D" parent="SFX"]
 position = Vector2(0, -1.90735e-06)
 bus = &"Sound Effects"
 
-[node name="Bullets" type="Node" parent="."]
-
-[node name="bullets_shoot" type="Marker2D" parent="Bullets"]
-unique_name_in_owner = true
+[node name="bullets_shoot" type="Marker2D" parent="." groups=["projectile"]]
+self_modulate = Color(1, 0, 1, 1)
+light_mask = 2
+visibility_layer = 2
 position = Vector2(74, 17)
+
+[node name="shoot_timer" type="Timer" parent="."]
+wait_time = 0.8
+one_shot = true
+
+[node name="reloading_timer" type="Timer" parent="."]
+one_shot = true
 
 [node name="interacct Ui" type="CanvasLayer" parent="."]
 visible = false
@@ -976,10 +1274,10 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -72.5
-offset_top = 50.0
-offset_right = 72.5
-offset_bottom = 81.0
+offset_left = -121.0
+offset_top = 2.0
+offset_right = 121.0
+offset_bottom = 62.0
 grow_horizontal = 2
 theme_override_fonts/font = ExtResource("39_bu8e3")
 theme_override_font_sizes/font_size = 60
@@ -990,4 +1288,17 @@ vertical_alignment = 1
 [node name="Inventory_UI" parent="Inventory/ColorRect" instance=ExtResource("100_dkn5u")]
 layout_mode = 1
 
+[node name="hurt_area" type="Area2D" parent="."]
+collision_layer = 26
+collision_mask = 26
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hurt_area"]
+light_mask = 26
+visibility_layer = 26
+position = Vector2(3.5, 15.5)
+shape = SubResource("RectangleShape2D_vs3wm")
+debug_color = Color(0.729412, 0.47451, 0, 0.419608)
+
+[connection signal="update_ammo" from="." to="Text" method="_on_player_update_ammo"]
 [connection signal="update_coordinate" from="." to="Text" method="_on_player_update_coordinate"]
+[connection signal="finished" from="SFX/reloading_voice" to="." method="_on_reloading_voice_finished"]

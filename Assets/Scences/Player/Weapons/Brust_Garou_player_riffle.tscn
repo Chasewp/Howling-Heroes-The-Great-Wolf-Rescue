@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://cnfr2d50iqsdd"]
+
+[ext_resource type="Script" path="res://Assets/Script/Controller/Weapons/brust_garou/Brust_Garou_player_riffle.gd" id="1_6fbrk"]
+[ext_resource type="Texture2D" uid="uid://bglcntib7url5" path="res://Assets/Image/Item/Weapon/Player/Brust Garou.png" id="1_dhjgr"]
+[ext_resource type="AudioStream" uid="uid://bqggq3s6op3lj" path="res://Assets/Music/SFX/Weapon/Reload/Reload.mp3" id="3_6vmjb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8us7a"]
+size = Vector2(92, 41)
+
+[node name="BrustGarouPlayerRiffle" type="Area2D"]
+script = ExtResource("1_6fbrk")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_dhjgr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_8us7a")
+debug_color = Color(0, 1, 0.447059, 0.419608)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_6vmjb")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_finished"]

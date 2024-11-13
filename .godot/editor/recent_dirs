@@ -1,3 +1,7 @@
+res://Assets/Image/Item/Weapon/Player
+res://Assets/Script/Controller/Weapons/brust_garou
+res://Assets/Image/Character/Player/templerun/Machete/Run_Machete
+res://Assets/Image/Character/Player/templerun/Machete/Jump_Machete
 res://Assets/Script/Controller/UI/Inventoryslot
 res://Assets/Script/Controller/Save/Save_Data/player
 res://Assets/Script/Class/Wolf/Wolves_Save
@@ -16,6 +20,3 @@ res://Assets/Script/Controller/Uttilities/Interact
 res://Assets/Scences/NPC
 res://Assets/Script/Controller/handler-single_tons/Dialogue
 res://Assets/Script/Controller/Uttilities/Dialogue
-res://Assets/Script/Controller/handler-single_tons/Interection
-res://Assets/Scences/UI/Text_box
-res://Assets/Theme/Alamanac_Book

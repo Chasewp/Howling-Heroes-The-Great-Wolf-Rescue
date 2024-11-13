@@ -1,12 +1,11 @@
-extends RigidBody2D
+extends Area2D
 
-@onready var _sfx : AudioStreamPlayer2D = $Sfx
-
-func collected():
-	pass
 	
 func _on_body_entered(body):
 	if body.is_in_group("player"):
-		collected()
-		queue_free()
-		
+		$Sfx.play()
+
+
+func _on_sfx_finished():
+	player_singleton.setter_machete_equip(true)
+	queue_free()

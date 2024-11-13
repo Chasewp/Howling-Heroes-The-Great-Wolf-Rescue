@@ -280,3 +280,4 @@ shape = SubResource("CircleShape2D_8ssp0")
 stream = ExtResource("63_wx0e6")
 
 [connection signal="body_exited" from="DetectionArea" to="." method="_on_detect_area_body_entered"]
+[connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_finished"]

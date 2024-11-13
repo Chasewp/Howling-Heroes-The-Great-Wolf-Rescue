@@ -1,14 +1,14 @@
 [gd_scene load_steps=13 format=3 uid="uid://c8it7bbd20xdf"]
 
 [ext_resource type="Script" path="res://Assets/Script/Controller/Weapons/brust_garou_riffle_player.gd" id="1_fipu5"]
-[ext_resource type="Texture2D" uid="uid://b24mc24qnasch" path="res://Assets/Image/Weapon/Player/Brust Garou.png" id="1_okxly"]
-[ext_resource type="AudioStream" uid="uid://dfui72v5unq36" path="res://Assets/Music/SFX/Weapon/Reload/Reload.mp3" id="3_i62my"]
-[ext_resource type="AudioStream" uid="uid://btwdf8p2stwhq" path="res://Assets/Music/SFX/Weapon/Player/Reloading.wav" id="4_m1u4k"]
-[ext_resource type="AudioStream" uid="uid://dbwkcjhtf2gr3" path="res://Assets/Music/SFX/Weapon/Riffle/Player_Riffle.mp3" id="5_oqax7"]
-[ext_resource type="AudioStream" uid="uid://de4lraver0lfy" path="res://Assets/Music/SFX/Weapon/Player/Ammo_Empty.wav" id="6_5neqs"]
-[ext_resource type="FontFile" uid="uid://chsguujhey1bs" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="6_15sp6"]
-[ext_resource type="Texture2D" uid="uid://b1i7vtsfa8sij" path="res://Assets/Image/Palyer bulelts/Player_bullets.png" id="7_3nsxj"]
-[ext_resource type="FontFile" uid="uid://dpbimwtlmt0wm" path="res://Assets/Fonts/Roboto/Roboto-Regular.ttf" id="8_5p0qu"]
+[ext_resource type="Texture2D" uid="uid://bglcntib7url5" path="res://Assets/Image/Item/Weapon/Player/Brust Garou.png" id="1_okxly"]
+[ext_resource type="AudioStream" uid="uid://bqggq3s6op3lj" path="res://Assets/Music/SFX/Weapon/Reload/Reload.mp3" id="3_i62my"]
+[ext_resource type="AudioStream" uid="uid://dsajul77w10ti" path="res://Assets/Music/SFX/Weapon/Player/Reloading.wav" id="4_m1u4k"]
+[ext_resource type="AudioStream" uid="uid://bm7gou3ggqmv7" path="res://Assets/Music/SFX/Weapon/Riffle/Player_Riffle.mp3" id="5_oqax7"]
+[ext_resource type="AudioStream" uid="uid://dd5vk72oylud" path="res://Assets/Music/SFX/Weapon/Player/Ammo_Empty.wav" id="6_5neqs"]
+[ext_resource type="FontFile" uid="uid://b87r0uf4usp0v" path="res://Assets/Fonts/DisposableDroidBB_bldital.ttf" id="6_15sp6"]
+[ext_resource type="Texture2D" uid="uid://do76kd0di4jvj" path="res://Assets/Image/Palyer bulelts/Player_bullets.png" id="7_3nsxj"]
+[ext_resource type="FontFile" uid="uid://cmw6kjqy1j081" path="res://Assets/Fonts/Roboto/Roboto-Regular.ttf" id="8_5p0qu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bp37m"]
 size = Vector2(91, 40)

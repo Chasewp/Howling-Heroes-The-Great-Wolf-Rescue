@@ -1,82 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://cfywm76eklecq"]
+[gd_scene load_steps=4 format=3 uid="uid://cfywm76eklecq"]
 
 [ext_resource type="SpriteFrames" uid="uid://c6dwxpgkaviqc" path="res://Assets/Bullets/Animation_Player_Bullets.tres" id="1_tq1dy"]
 [ext_resource type="Script" path="res://Assets/Bullets/bullets_player.gd" id="2_x1o2s"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qhyya"]
-
-[sub_resource type="Animation" id="Animation_vu3lq"]
-length = 0.8
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("AnimatedSprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
-"values": [0, 1, 2, 3]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("AnimatedSprite2D:animation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": ["Bullets_Player"]
-}
-
-[sub_resource type="Animation" id="Animation_qpedx"]
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("AnimatedSprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 1,
-"values": [0, 1, 2, 3, 4]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("AnimatedSprite2D:animation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": ["Hit_Bullet_Player"]
-}
-tracks/2/type = "method"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath(".")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(1),
-"transitions": PackedFloat32Array(1),
-"values": [{
-"args": [],
-"method": &"queue_free"
-}]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_div8g"]
-_data = {
-"Bullets_Player": SubResource("Animation_vu3lq"),
-"Hit_Bullet_Player": SubResource("Animation_qpedx")
-}
 
 [node name="Bullets_Player" type="Area2D"]
 script = ExtResource("2_x1o2s")
@@ -86,15 +13,9 @@ shape = SubResource("CircleShape2D_qhyya")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = ExtResource("1_tq1dy")
-animation = &"Hit_Bullet_Player"
-frame = 4
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_div8g")
-}
+animation = &"Bullets_Player"
 
 [node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
 
-[connection signal="body_entered" from="." to="." method="_on_Bullet_body_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]

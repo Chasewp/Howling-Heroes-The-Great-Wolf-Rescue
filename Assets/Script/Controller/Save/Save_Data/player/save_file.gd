@@ -67,9 +67,9 @@ func load_game():
 	# verify & restore player armor
 	player_singleton.armor = min(save_progress.player_armor,100)
 	# verify & restore player ammo
-	play.bullet = min(save_progress.ammmo,30)
+	player_singleton.ammo_bullets = min(save_progress.ammmo,30)
 	# verify & restore player Mag
-	play.magazine = min(save_progress.mag,150)
+	player_singleton.magazine_stock = min(save_progress.mag,150)
 	
 	# restore all dynamic game elements	
 	for item in save_progress.saved_data:

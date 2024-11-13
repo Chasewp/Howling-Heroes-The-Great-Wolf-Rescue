@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://7rxo4e7m6443"]
+[gd_scene load_steps=15 format=3 uid="uid://7rxo4e7m6443"]
 
 [ext_resource type="Script" path="res://Assets/Script/Level/level.gd" id="1_0g0aq"]
 [ext_resource type="Texture2D" uid="uid://bmkxjqvdbclsn" path="res://Assets/Image/Background/Bridge Stone Forest/pixel_art_A_breathtaking_scene.jpeg" id="1_ne5sm"]
@@ -332,6 +332,9 @@ texture = ExtResource("3_s8khg")
 [sub_resource type="TileSet" id="TileSet_hnfig"]
 sources/0 = SubResource("TileSetAtlasSource_twdqj")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cbv3k"]
+size = Vector2(175.5, 251)
+
 [node name="Main_Menu_Level" type="Node2D"]
 script = ExtResource("1_0g0aq")
 taiga_music = ExtResource("2_5eltf")
@@ -363,6 +366,10 @@ layer_1/tile_data = PackedInt32Array(917504, 524288, 3, 851968, 524288, 3, 78643
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="Colutions"]
 position = Vector2(6, 67)
 polygon = PackedVector2Array(-6, -4, 9.99988, -3, 9, 183, 1097, 184, 1098, 270, 1100, 666, 1237, 667, 1216, -32, 1269, -80, 1294, 779, -155, 765, -212, -156)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Colutions"]
+position = Vector2(1192.25, 126.5)
+shape = SubResource("RectangleShape2D_cbv3k")
 
 [node name="backsound" type="AudioStreamPlayer2D" parent="."]
 bus = &"Music"
