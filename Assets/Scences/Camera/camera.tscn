@@ -3,7 +3,6 @@
 [ext_resource type="Script" path="res://Assets/Script/Controller/UI/Camera/camera.gd" id="1_of1kd"]
 
 [node name="Camera2D" type="Camera2D"]
-position = Vector2(644, 0)
 limit_left = 0
 limit_top = -200
 limit_right = 4200

@@ -88,7 +88,7 @@ script = ExtResource("2_beq02")
 
 [node name="Player" parent="WorldRoot" groups=["world_root_no_touch"] instance=ExtResource("3_swar0")]
 unique_name_in_owner = true
-position = Vector2(106, 6)
+brust_garou_equip = true
 
 [connection signal="mouse_entered" from="UI2/save" to="." method="mouse_entered"]
 [connection signal="mouse_exited" from="UI2/save" to="." method="mouse_exited"]

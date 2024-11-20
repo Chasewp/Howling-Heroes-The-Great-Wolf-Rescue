@@ -20,15 +20,15 @@ var attack_machete : float = 4.45
 @export var player_mag : int = 150 : set = set_max_reserved_ammo
 @export var machete_equip : bool
 @export var brust_garou_equip : bool
-enum state {IDDLE, IDDLE_MACHETE, IDDLE_BRUST_GAROU, RUNNING, JUMPUP, JUMPDOWN, HURT,DIED,ATTACKMACHETE,AIR_ATTACKMACHETE,SHOOT}
+enum state {IDDLE, IDDLE_MACHETE, IDDLE_BRUST_GAROU, RUNNING, JUMPUP,JUMPUPMACHETE, JUMPDOWN,JUMPDOWNMACHETE, HURT,DIED,ATTACKMACHETE,AIR_ATTACKMACHETE,SHOOT}
 
-var anim_state = state.IDDLE
+#var anim_state = state.IDDLE
 var coordinate = Data_Progress.new()
 var current_ammo = player_ammo
-var shooting = true
 var _reload_time := 3.5 : set = set_reload_time
 var _fire_rate := 0.13 : set = set_fire_rate
 var data = preload("user://Save/Progress/Save_Progress.tres")
+var anim_state = state.IDDLE
 
 #node variable
 @onready var animator = $AnimatedSprite2D
@@ -57,6 +57,8 @@ func _ready():
 	Inventory_Global.set_player_reference(self)
 	reloading_timer.connect("timeout",Callable(self,"refill_ammo"))	
 	refill_ammo()
+	maganize_lbl.text=str(player_mag)
+	bullets_caps_lbl.text = str(current_ammo)
 	
 func update_state():
 		if anim_state == state.HURT: 
@@ -72,32 +74,93 @@ func update_state():
 			else:
 				anim_state = state.JUMPDOWN
 	
+	# Equip Machete Animation
+		if machete_equip:
+			if anim_state == state.HURT: 
+				return
+			if is_on_floor():
+				if velocity == Vector2.ZERO:
+					anim_state = state.IDDLE_MACHETE
+				elif  velocity.x != 0:
+					anim_state = state.RUNNING
+			else: 
+				if velocity.y <0 :
+					anim_state = state.JUMPUP
+				else:
+					anim_state = state.JUMPDOWN
+					
+		if brust_garou_equip:
+			if anim_state == state.HURT: 
+				return
+			if is_on_floor():
+				if velocity == Vector2.ZERO:
+					anim_state = state.IDDLE_BRUST_GAROU
+				elif  velocity.x != 0:
+					anim_state = state.SHOOT
+			else: 
+				if velocity.y <0 :
+					anim_state = state.JUMPUP
+				else:
+					anim_state = state.JUMPDOWN
+				
 func update_animation(direction):
 	if direction > 0 :
 		animator.flip_h = false
+		projectiles.set_position(Vector2(111,17))
+		
 	elif direction <0:
 		animator.flip_h = true
-		projectiles.set_position(Vector2(-75,17))
+		projectiles.set_position(Vector2(-111,17))
+		
 	match  anim_state:
+		#Iddle Normal
 		state.IDDLE:
 			animation_player.play("iddle")
+		
+		#Iddle Machete
 		state.IDDLE_MACHETE:
 			animation_player.play("iddle_machete")
+		
+		#Iddle Riffle
+		state.IDDLE_BRUST_GAROU:
+			animation_player.play("iddle_brust_garou")
+		
+		#Normal Running
 		state.RUNNING:
 			animation_player.play("run")
+		
+		#Riffle Running
+		state.SHOOT:
+			animation_player.play("run_shoot")
+			
+		#Normal Jump	
 		state.JUMPUP:
 			animation_player.play("jump_up")
+			
+		#Machete Jump	
+		state.JUMPUPMACHETE:
+			animation_player.play("jump_up_machete")
+		
+		#Normal Fall
 		state.JUMPDOWN:
 			animation_player.play("jump_down")
+			
+		#Machete Fall	
+		state.JUMPDOWNMACHETE:
+			animation_player.play("jump_down_machete")
+		
+		#Hurt	
 		state.HURT:
 			animation_player.play("hurt")
+		
+		#Died
 		state.DIED:
 			animation_player.play("died")
 		state.ATTACKMACHETE:
 			animation_player.play("machete_attack")
-		state.SHOOT:
-			animation_player.play("run_shoot")
-			
+		
+		
+	
 func _physics_process(delta):
 	if DialogueManager.is_dialog_active:
 		return
@@ -119,10 +182,10 @@ func _physics_process(delta):
 	
 	coordinate.UpdatePos(self.position)
 	emit_signal("update_coordinate",self.position)
-	
 	update_animation(direction)
 	update_state()
 	move_and_slide()
+	
 	
 	var mouse_position = get_global_mouse_position()
 	projectiles.look_at(mouse_position)
@@ -130,8 +193,8 @@ func _physics_process(delta):
 	if not reloading_timer.is_stopped():
 		return
 		
-	if Input.is_action_just_pressed("shoot_fire"):
-		if current_ammo > 0 :
+	if Input.is_action_just_pressed("shoot_fire") and brust_garou_equip:
+		if current_ammo > 0 and state.SHOOT and state.IDDLE_BRUST_GAROU:
 			shoot()
 		else: 
 			ammo_empty_sfx.play()
@@ -139,7 +202,7 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("Reloading") and current_ammo < player_mag:
 		reloading()
 		
-	if Input.is_action_just_pressed("slash"):
+	if Input.is_action_just_pressed("slash") and machete_equip:
 		pass		
 	
 

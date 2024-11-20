@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://7rxo4e7m6443"]
+[gd_scene load_steps=16 format=3 uid="uid://7rxo4e7m6443"]
 
 [ext_resource type="Script" path="res://Assets/Script/Level/level.gd" id="1_0g0aq"]
 [ext_resource type="Texture2D" uid="uid://bmkxjqvdbclsn" path="res://Assets/Image/Background/Bridge Stone Forest/pixel_art_A_breathtaking_scene.jpeg" id="1_ne5sm"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://b546lxevyfe5q" path="res://Assets/Scences/Biome/Biome_Exit/biome_exit.tscn" id="6_1l7ll"]
 [ext_resource type="PackedScene" uid="uid://ba35mjv7il18j" path="res://Assets/Scences/Player/spawner/player_spawn_point.tscn" id="6_uawil"]
 [ext_resource type="PackedScene" uid="uid://hq77207glf4i" path="res://Assets/Scences/Item/vanish.tscn" id="11_535en"]
+[ext_resource type="PackedScene" uid="uid://duad0b1o7t0lk" path="res://Assets/Scences/Camera/camera.tscn" id="12_rkvqc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_twdqj"]
 texture = ExtResource("3_s8khg")
@@ -382,5 +383,9 @@ position = Vector2(1052, 194)
 scale = Vector2(0.75, 0.75)
 
 [node name="Vanish" parent="." instance=ExtResource("11_535en")]
-visible = false
 position = Vector2(119, 213)
+
+[node name="Camera2D" parent="." instance=ExtResource("12_rkvqc")]
+zoom = Vector2(3, 3)
+position_smoothing_enabled = true
+rotation_smoothing_enabled = true
