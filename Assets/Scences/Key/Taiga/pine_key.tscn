@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bpupjy1b1usel" path="res://Assets/Image/Item/Key/taiga/pine key.png" id="1_m8xrp"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_5ew0a"]
-radius = 24.0832
+radius = 25.0
 
 [node name="PineKey" type="Area2D" groups=["pine_key"]]
 script = ExtResource("1_jskam")

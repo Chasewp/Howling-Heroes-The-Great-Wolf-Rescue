@@ -27,7 +27,7 @@ var coordinate = Data_Progress.new()
 var current_ammo = player_ammo
 var _reload_time := 3.5 : set = set_reload_time
 var _fire_rate := 0.13 : set = set_fire_rate
-var data = preload("user://Save/Progress/Save_Progress.tres")
+var data = load("user://Save/Progress/Save_Progress.tres")
 var anim_state = state.IDDLE
 
 #node variable

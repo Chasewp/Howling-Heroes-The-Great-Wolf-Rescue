@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://coc1oqsj2s56u"]
+
+[ext_resource type="Texture2D" uid="uid://s0a1nyi17oo1" path="res://Assets/Image/Item/Key/taiga/Ice key.png" id="1_hxcpl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_o3rjo"]
+radius = 19.0
+
+[node name="Ice_Key" type="Area2D"]
+
+[node name="IceKey" type="Sprite2D" parent="."]
+rotation = 0.698132
+scale = Vector2(0.09, 0.09)
+texture = ExtResource("1_hxcpl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_o3rjo")
