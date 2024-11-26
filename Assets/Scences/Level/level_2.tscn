@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dlvgwwt6n8s0u"]
 
-[ext_resource type="Texture2D" uid="uid://c6wyjiqeqb5vo" path="res://Assets/Image/tilesets/forest_tileset.png" id="1_l8akb"]
+[ext_resource type="Texture2D" uid="uid://bp6k6re42xl8y" path="res://Assets/Image/tilesets/forest_tileset.png" id="1_l8akb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t4gjd"]
 texture = ExtResource("1_l8akb")
@@ -1079,7 +1079,7 @@ terrain_set_0/terrain_0/name = "Ematrix"
 terrain_set_0/terrain_0/color = Color(0.905882, 0.745098, 1, 1)
 sources/0 = SubResource("TileSetAtlasSource_t4gjd")
 
-[node name="Level-1" type="Node2D"]
+[node name="Level-2" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_87txl")

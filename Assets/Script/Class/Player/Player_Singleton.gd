@@ -31,7 +31,9 @@ extends Node
 	set = setter_brust_garou_equip,
 	get = getter_brust_garou_equip
 	
-
+@export var is_has_pine_key:bool:
+	set = setter_pine_key,
+	get = getter_pine_key
 
 #Setter Name Character
 func setter_name(nm):
@@ -97,4 +99,11 @@ func setter_brust_garou_equip(brust_garou):
 func getter_brust_garou_equip():
 	return is_burst_garou_equip
 
+#Setter Pine_Key
+func setter_pine_key(value:bool):
+	is_has_pine_key = value
+	
+#Getter Pine_Key
+func getter_pine_key():
+	return is_has_pine_key
 	

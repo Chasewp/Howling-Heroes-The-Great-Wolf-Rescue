@@ -1,8 +1,9 @@
 [style name="Pixelize_Visual_Novel"]
+
 - Would you prefer to skip the mission briefing?
-	- Yes
-		[signal arg="Change_Scence"]
-	- No
+- Yes
+	[signal arg="Change_Scence"]
+- No
 		[style name="Pixelize_Visual_Novel"]
 		[voice path="res://Assets/Music/Dialogue/Intro/Intro -1.wav" volume="0.0"]
 		At UWF HQ (United Wolves Federation Headquarters Sergeant Lupine Calls player via Com-link"

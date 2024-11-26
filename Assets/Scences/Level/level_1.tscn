@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://cxiqvgvtlmt7j"]
+[gd_scene load_steps=11 format=3 uid="uid://cxiqvgvtlmt7j"]
 
 [ext_resource type="Script" path="res://Assets/Script/Level/level.gd" id="1_iedyo"]
-[ext_resource type="Texture2D" uid="uid://c8gs52lywm4m" path="res://Assets/Image/tilesets/forest_tileset.png" id="1_nmcjj"]
+[ext_resource type="Texture2D" uid="uid://bp6k6re42xl8y" path="res://Assets/Image/tilesets/forest_tileset.png" id="1_nmcjj"]
 [ext_resource type="PackedScene" uid="uid://ba35mjv7il18j" path="res://Assets/Scences/Player/spawner/player_spawn_point.tscn" id="3_7q51k"]
 [ext_resource type="PackedScene" uid="uid://duad0b1o7t0lk" path="res://Assets/Scences/Camera/camera.tscn" id="3_o2q4x"]
-[ext_resource type="Texture2D" uid="uid://bmkxjqvdbclsn" path="res://Assets/Image/Background/Bridge Stone Forest/pixel_art_A_breathtaking_scene.jpeg" id="5_i3yo7"]
+[ext_resource type="Texture2D" uid="uid://cin5l5pa2cq7u" path="res://Assets/Image/Background/Bridge Stone Forest/pixel_art_A_breathtaking_scene.jpeg" id="5_i3yo7"]
+[ext_resource type="PackedScene" uid="uid://b13q00tqak8pk" path="res://Assets/Scences/Platfromer/platfrom_taiga.tscn" id="6_opmoa"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5ltrh"]
 texture = ExtResource("1_nmcjj")
@@ -366,3 +367,6 @@ motion_mirroring = Vector2(768, 0)
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("5_i3yo7")
+
+[node name="Plafrom" parent="." instance=ExtResource("6_opmoa")]
+position = Vector2(1216, 273)

@@ -1,5 +1,15 @@
-res://Assets/Scences/Player/Player.tscn
-res://Assets/Theme/Credit/Buttons.tres
-res://Assets/Bullets/Animation_Player_Bullets.tres
-res://Assets/Script/Class/Character/Player/Player.gd
-res://Assets/Scences/Key/Taiga/pine_key.tscn
+res://Assets/Scences/Level/level_1.tscn
+res://Assets/Dialogue/Theme/Speaker_Mode.tres
+res://Assets/Dialogue/Theme/Pixelize_Visual_Novel.tres
+res://Assets/Dialogue/Theme/Pixelize_speaker.tres
+res://Assets/Tileset/Taiga_Stage.tres
+res://Assets/Scences/UI/Splash/Splash_Screen_Played.tscn
+res://Assets/Scences/Level/level_2.tscn
+res://Assets/Scences/Level/main_menu_level.tscn
+res://Assets/Scences/UI/Character_Name/Player_Name.tscn
+res://Assets/Scences/UI/Mission_Log/mission.tscn
+res://Assets/Scences/UI/Game_Play/GUI_Play.tscn
+res://Assets/Scences/Location/Intro Brifing_mission/intro_brifing_mission.tscn
+res://addons/dialogic/Modules/Choice/settings_choices.tscn
+res://addons/dialogic/Modules/Choice/ui_choice_end.tscn
+res://Assets/Scences/Enemy/sprites/Animal/Taiga/red_fox.tscn

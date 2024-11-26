@@ -31,11 +31,11 @@ almanac="*res://Assets/Script/Class/Wolf/Wolf Alamanac/Class_Data/Almanac.gd"
 GlobalTilesets="*res://Assets/Script/Controller/handler-single_tons/Global_Tilesets/Global_Tilesets.gd"
 player_singleton="*res://Assets/Script/Class/Player/Player_Singleton.gd"
 Music="*res://Assets/Script/Class/utilities/music/music.gd"
-Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 InteractionManager="*res://Assets/Script/Controller/handler-single_tons/InteractionManager.gd"
 DialogueManager="*res://Assets/Script/Controller/handler-single_tons/Dialogue/Dialogue_manager.gd"
 mission_data_stat="*res://Assets/Script/Controller/handler-single_tons/Mission/mission_class.gd"
 WolfData="*res://Assets/Script/Class/Wolf/Wolves_Save/Wolf_Data.gd"
+Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
@@ -43,7 +43,7 @@ animations/join_default_length=0.5
 animations/leave_default_length=0.5
 animations/leave_default_wait=true
 animations/join_default_wait=true
-choices/autofocus_first=true
+choices/autofocus_first=false
 choices/delay=0.2
 save/autosave_delay=60.0
 settings/text_speed=0.01
@@ -81,7 +81,7 @@ event_default_overrides={
 "hide_textbox": false
 }
 }
-translation/enabled=true
+translation/enabled=false
 translation/original_locale="en"
 translation/file_mode=1
 translation/translation_folder=""
@@ -173,6 +173,15 @@ translation/save_mode=0
 extensions_folder="res://addons/dialogic_additions"
 text/advance_delay=0.1
 animations/cross_fade_default_length=0.5
+audio/max_channels=4.0
+history/simple_history_enabled=false
+history/simple_history_save=false
+history/full_history_enabled=false
+history/full_history_save=false
+history/visited_event_history_enabled=false
+history/save_on_autosave=false
+history/save_on_save=false
+translation/add_separator=false
 
 [display]
 

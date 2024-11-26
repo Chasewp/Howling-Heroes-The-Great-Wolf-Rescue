@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DialogicStyle" load_steps=17 format=3 uid="uid://cq1c2r32t1nc3"]
+[gd_resource type="Resource" script_class="DialogicStyle" load_steps=18 format=3 uid="uid://cq1c2r32t1nc3"]
 
 [ext_resource type="PackedScene" uid="uid://c1k5m0w3r40xf" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn" id="1_keics"]
 [ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="2_015xb"]
@@ -10,37 +10,41 @@
 [ext_resource type="PackedScene" uid="uid://lx24i8fl6uo" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn" id="8_iffu5"]
 [ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style.gd" id="9_0at3n"]
 
-[sub_resource type="Resource" id="Resource_8b5bq"]
+[sub_resource type="Resource" id="Resource_hkxbx"]
+script = ExtResource("2_015xb")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_hb6qd"]
 script = ExtResource("2_015xb")
 scene = ExtResource("1_keics")
 overrides = {}
 
-[sub_resource type="Resource" id="Resource_84k46"]
+[sub_resource type="Resource" id="Resource_rlov6"]
 script = ExtResource("2_015xb")
 scene = ExtResource("3_k63qf")
 overrides = {}
 
-[sub_resource type="Resource" id="Resource_1ct13"]
+[sub_resource type="Resource" id="Resource_o2qa8"]
 script = ExtResource("2_015xb")
 scene = ExtResource("4_1ok0u")
 overrides = {}
 
-[sub_resource type="Resource" id="Resource_qlo5s"]
+[sub_resource type="Resource" id="Resource_iqhha"]
 script = ExtResource("2_015xb")
 scene = ExtResource("5_evoof")
 overrides = {}
 
-[sub_resource type="Resource" id="Resource_dipoy"]
+[sub_resource type="Resource" id="Resource_fgeox"]
 script = ExtResource("2_015xb")
 scene = ExtResource("6_3ydy2")
 overrides = {}
 
-[sub_resource type="Resource" id="Resource_fn75f"]
+[sub_resource type="Resource" id="Resource_4xdsj"]
 script = ExtResource("2_015xb")
 scene = ExtResource("7_txr8k")
 overrides = {}
 
-[sub_resource type="Resource" id="Resource_e4cfi"]
+[sub_resource type="Resource" id="Resource_j8ara"]
 script = ExtResource("2_015xb")
 scene = ExtResource("8_iffu5")
 overrides = {}
@@ -48,8 +52,17 @@ overrides = {}
 [resource]
 script = ExtResource("9_0at3n")
 name = "Pixelize_speaker"
-base_overrides = {
-"global_bg_color": "Color(0.298039, 0.2, 0.113725, 0.901961)"
+layer_list = Array[String](["10", "11", "12", "13", "14", "15", "16"])
+layer_info = {
+"": SubResource("Resource_hkxbx"),
+"10": SubResource("Resource_hb6qd"),
+"11": SubResource("Resource_rlov6"),
+"12": SubResource("Resource_o2qa8"),
+"13": SubResource("Resource_iqhha"),
+"14": SubResource("Resource_fgeox"),
+"15": SubResource("Resource_4xdsj"),
+"16": SubResource("Resource_j8ara")
 }
-layers = Array[ExtResource("2_015xb")]([SubResource("Resource_8b5bq"), SubResource("Resource_84k46"), SubResource("Resource_1ct13"), SubResource("Resource_qlo5s"), SubResource("Resource_dipoy"), SubResource("Resource_fn75f"), SubResource("Resource_e4cfi")])
+base_overrides = {}
+layers = Array[ExtResource("2_015xb")]([])
 metadata/_latest_layer = -1
