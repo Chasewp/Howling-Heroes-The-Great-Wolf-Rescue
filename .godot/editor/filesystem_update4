@@ -13,3 +13,8 @@ res://Assets/Scences/Location/Intro Brifing_mission/intro_brifing_mission.tscn
 res://addons/dialogic/Modules/Choice/settings_choices.tscn
 res://addons/dialogic/Modules/Choice/ui_choice_end.tscn
 res://Assets/Scences/Enemy/sprites/Animal/Taiga/red_fox.tscn
+res://Assets/Theme/Credit/Buttons.tres
+res://Assets/Scences/Platfromer/platfrom_taiga.tscn
+res://Assets/Scences/Player/Player.tscn
+res://Assets/Bullets/Animation_Player_Bullets.tres
+res://Assets/Script/Class/Character/Player/Player.gd

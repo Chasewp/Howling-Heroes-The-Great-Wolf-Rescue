@@ -55,8 +55,9 @@ func _ready():
 	brust_garou_equip = false
 	machete_equip = false
 	Inventory_Global.set_player_reference(self)
-	reloading_timer.connect("timeout",Callable(self,"refill_ammo"))	
-	refill_ammo()
+	if brust_garou_equip == true:
+		reloading_timer.connect("timeout",Callable(self,"refill_ammo"))	
+		refill_ammo()
 	maganize_lbl.text=str(player_mag)
 	bullets_caps_lbl.text = str(current_ammo)
 	
@@ -294,3 +295,6 @@ func set_reload_time(value: float)-> void:
 	
 func set_fire_rate(value: float)-> void :
 	_fire_rate = value
+
+func hide_ammo():
+	

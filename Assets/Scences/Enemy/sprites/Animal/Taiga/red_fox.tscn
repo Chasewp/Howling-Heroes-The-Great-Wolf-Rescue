@@ -51,16 +51,18 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1dlvb"]
-size = Vector2(43, 18)
+size = Vector2(61.5, 18)
 
 [node name="red_fox" type="CharacterBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(2, 2)
 shape = SubResource("CapsuleShape2D_xbp3o")
 one_way_collision_margin = 64.0
 
 [node name="AnimatedSprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("6_ut6it")
+scale = Vector2(2, 2)
+texture = ExtResource("4_vpr7o")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatedSprite2D"]
 libraries = {
@@ -70,5 +72,6 @@ libraries = {
 [node name="hurtbox" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hurtbox"]
-position = Vector2(-2.5, 10)
+position = Vector2(-9, 19)
+rotation = -0.74002
 shape = SubResource("RectangleShape2D_1dlvb")
